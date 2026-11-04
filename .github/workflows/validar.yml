@@ -33,6 +33,7 @@ jobs:
       - name: Os datos coinciden coas fontes
         run: |
           python ferramentas/importar.py
+          python ferramentas/capas.py
           git diff --stat --exit-code datos/
       - name: Hunspell recoñece todas as formas
         run: python ferramentas/validar.py --hunspell

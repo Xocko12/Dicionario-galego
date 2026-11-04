@@ -114,11 +114,15 @@ def buscar(todas: bool = False) -> dict[str, list]:
     """Anomalías novas (ou todas, con todas=True) agrupadas por comprobación."""
     xa_revisadas = set() if todas else revisadas()
     contas = defaultdict(list)
-    for liña in (RAIZ / "datos" / "conxugacions.jsonl").open(encoding="utf-8"):
-        v = json.loads(liña)
-        for clave, obtido, esperado in comprobacions(v["lema"], v["taboa"]):
-            if (v["lema"], clave) not in xa_revisadas:
-                contas[clave].append((v["lema"], obtido, esperado))
+    ficheiros = [RAIZ / "datos" / "conxugacions.jsonl"] + sorted((RAIZ / "datos" / "capas").glob("*.jsonl"))
+    for ficheiro in ficheiros:
+        for liña in ficheiro.open(encoding="utf-8"):
+            v = json.loads(liña)
+            if "taboa" not in v:
+                continue
+            for clave, obtido, esperado in comprobacions(v["lema"], v["taboa"]):
+                if (v["lema"], clave) not in xa_revisadas:
+                    contas[clave].append((v["lema"], obtido, esperado))
     return contas
 
 

@@ -98,6 +98,11 @@ def validar_estrutura() -> tuple[list[str], set[str]]:
     for n, r in ler_jsonl(DATOS / "nomes.jsonl"):
         if not r.get("nome") or not r["nome"][0].isupper() or r.get("tipo") != "antropónimo":
             erros.append(f"nomes.jsonl:{n}: nome incorrecto {r}")
+    for n, r in ler_jsonl(DATOS / "locucions.jsonl"):
+        if not r.get("locucion") or " " not in r["locucion"] or not r.get("categorias"):
+            erros.append(f"locucions.jsonl:{n}: locución incorrecta {r}")
+    erros += validar_capas(formas)
+
     dous_tiles = re.compile(r"[áéíóú].*[áéíóú]")
     for forma in formas:
         if dous_tiles.search(forma) and "-" not in forma:
@@ -105,6 +110,47 @@ def validar_estrutura() -> tuple[list[str], set[str]]:
     for lema in sorted(verbos - con_taboa):
         erros.append(f"lemas.jsonl: o verbo {lema} non ten táboa en conxugacions.jsonl")
     return erros, formas
+
+
+def validar_capas(formas: set[str]) -> list[str]:
+    """Estrutura de datos/capas/*.jsonl segundo o tipo de cada capa."""
+    erros = []
+    config = json.loads((RAIZ / "fontes" / "capas.json").read_text(encoding="utf-8"))["capas"]
+    ids_core = {r["id"] for _, r in ler_jsonl(DATOS / "lemas.jsonl")}
+    vistos = set()
+    for capa, cfg in config.items():
+        ruta = DATOS / "capas" / f"{capa}.jsonl"
+        if not ruta.exists():
+            erros.append(f"falta datos/capas/{capa}.jsonl")
+            continue
+        for n, r in ler_jsonl(ruta):
+            onde = f"capas/{capa}.jsonl:{n}"
+            if r.get("capa") != capa:
+                erros.append(f"{onde}: campo capa incorrecto")
+            if cfg["tipo"] == "lexico":
+                if r.get("id") in ids_core or r.get("id") in vistos:
+                    erros.append(f"{onde}: {r.get('id')} repetido (núcleo ou capa anterior)")
+                vistos.add(r.get("id"))
+                if r.get("categoria") not in CATEGORIAS or not r.get("fontes"):
+                    erros.append(f"{onde}: categoría ou fontes incorrectas")
+                if r.get("categoria") == "verbo":
+                    taboa = r.get("taboa", {})
+                    for clave, _ in C.TEMPOS:
+                        if len(taboa.get(clave, [])) != 6:
+                            erros.append(f"{onde}: {r.get('lema')}: '{clave}' debe ter 6 celas")
+                    formas.update(f for f, _, _ in C.formas(taboa))
+                else:
+                    formas.update(f for lista in r.get("formas", {}).values() for f in lista)
+            elif cfg["tipo"] == "siglas":
+                if not r.get("forma") or not r.get("tipo"):
+                    erros.append(f"{onde}: sigla sen forma ou tipo")
+            elif cfg["tipo"] == "onomastica":
+                if not r.get("nome") or not r.get("tipo") or r["nome"] != r["nome"].strip():
+                    erros.append(f"{onde}: nome incorrecto {r}")
+            elif cfg["tipo"] == "codigos":
+                if not r.get("codigo"):
+                    erros.append(f"{onde}: código baleiro")
+    return erros
 
 
 def formas_corrixidas() -> set[str]:

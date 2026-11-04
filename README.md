@@ -20,16 +20,36 @@ con licenza GPL e permiso explícito do ILG-RAG. **Non inclúe definicións.**
 | Nomes propios | 1 260 nomes de persoa da *Guía de nomes galegos* da RAG |
 | Palabras gramaticais | artigos, 26 pronomes persoais, posesivos, demostrativos, indefinidos, relativos, interrogativos, exclamativos, 55 preposicións, 37 conxuncións e 50 contraccións coa súa composición (*do* = *de* + *o*, *cho* = *che* + *o*) |
 
-Non se inclúen (polo de agora) siglas, abreviaturas nin locucións: nos módulos da
-RAG de Hunspell-gl as locucións só están como palabras soltas, ás veces sen orde
-(*pesar_de_a* por *a pesar de*), e as abreviaturas son as propias do dicionario
-(*adv.*, *adx.*). Habería que tomalas doutra fonte.
+| Locucións | 431 da RAG (*a pesar de*, *ao redor*, *de súpeto*), en `datos/locucions.jsonl` |
+
+### Capas opcionais (`datos/capas/`)
+
+Sobre o núcleo normativo hai capas separadas, cada unha coa súa procedencia
+(`fontes/capas.json`), que as aplicacións poden incluír ou non:
+
+| Capa | Contido | Rexistros |
+|---|---|---|
+| `digalego` | léxico do Digalego (Xunta) que non está na RAG, con flexión e conxugación | 3 043 (51 verbos) |
+| `comunidade` | léxico de uso real achegado á comunidade de Hunspell-gl (informática, neoloxismos), sen revisión normativa | 816 (101 verbos) |
+| `terminoloxia` | bUSCatermos (USC), TERGAL, Estraviz adaptado, Trasno, Wikipedia galega por áreas, unidades | 378 (19 verbos) |
+| `siglas` | siglas, abreviaturas e símbolos coa súa expansión (Concello de Santiago, UDC, UVigo, CEG, Wikipedia, DRAG) | 2 157 |
+| `toponimos` | lugares de Galicia, localidades, rexións e accidentes xeográficos (Wikipedia e Wiktionary galegos) | 24 071 |
+| `antroponimos` | nomes e apelidos de persoa en contexto galego (INE revisado, Wikipedia e Wiktionary galegos) | 6 708 |
+| `antroponimos-outras-linguas` | nomes de persoa en inglés, castelán, portugués e húngaro | 85 354 |
+| `organizacions` | organizacións, obras, empresas, produtos (Wikipedia) | 10 354 |
+| `codigos` | códigos ISO 639 (linguas) e ISO 4217 (moedas) | 8 258 |
+
+Os verbos das capas léxicas pasan as mesmas comprobacións ca os do núcleo. Os
+nomes compostos (*Santiago de Compostela*, *Galileo Galilei*) reconstrúense das
+etiquetas de n-grama de Hunspell-gl. Todas as capas veñen de Hunspell-gl (GPL-3.0).
 
 ## Estrutura
 
 ```
 datos/                  o catálogo (xerado e revisado)
-  lemas.jsonl           un lema por liña
+  lemas.jsonl           un lema por liña (núcleo normativo: RAG)
+  locucions.jsonl       locucións da RAG
+  capas/                capas opcionais (Digalego, terminoloxía, siglas, topónimos...)
   conxugacions.jsonl    táboa de conxugación de cada verbo
   encliticos.jsonl      formas verbais con pronomes enclíticos de uso real
   nomes.jsonl           nomes propios de persoa
@@ -128,8 +148,8 @@ Decisións tomadas onde a norma admite dúbida (revisadas, non cambiar sen motiv
 
 ## Como se garante a calidade
 
-- **Só fontes da RAG** para o vocabulario; o resto de módulos de Hunspell-gl
-  (Wikipedia, terminoloxías, nomes…) non se usan.
+- **Só fontes da RAG** no núcleo (`datos/lemas.jsonl`); o resto de módulos de
+  Hunspell-gl van en capas separadas e etiquetadas (`datos/capas/`).
 - **Comprobacións automáticas** en cada cambio (`.github/workflows/validar.yml`):
   - estrutura dos datos (`ferramentas/validar.py`);
   - táboas de referencia de verbos regulares e irregulares, pronomes,
@@ -154,7 +174,8 @@ Precisa Python 3.10 ou superior.
 
 ```sh
 python3 ferramentas/descargar.py     # descarga as fontes en fontes/cache/
-python3 ferramentas/importar.py      # rexenera datos/
+python3 ferramentas/importar.py      # rexenera datos/ (núcleo)
+python3 ferramentas/capas.py         # rexenera datos/capas/
 python3 ferramentas/validar.py       # estrutura
 python3 ferramentas/anomalias.py     # patróns de conxugación
 python3 -m unittest discover -s probas
@@ -170,8 +191,8 @@ python3 ferramentas/construir.py --kobo
 
 | Ficheiro | Para que serve |
 |---|---|
-| `dicionario.sqlite` | Táboas `lemas`, `formas` (forma → lema + trazo gramatical), `encliticos` (~800 000, con `orixe`) e `nomes`. ~130 MB. |
-| `teclado/gl_wordlist.combined` | ~1,2 millóns de palabras (con enclíticos e nomes) con frecuencia no formato dos teclados AOSP; con `dicttool` convértese no `.dict` de HeliBoard e similares. |
+| `dicionario.sqlite` | Táboas `lemas` (con `capa`: `rag` = núcleo), `formas` (forma → lema + trazo gramatical), `encliticos` (~800 000, con `orixe`), `locucions`, `siglas`, `onomastica`, `codigos`, `nomes`. ~140 MB. |
+| `teclado/gl_wordlist.combined` | ~1,3 millóns de palabras (núcleo, enclíticos, capas léxicas, siglas, topónimos e nomes galegos) con frecuencia no formato dos teclados AOSP; con `dicttool` convértese no `.dict` de HeliBoard e similares. |
 | `teclado/palabras.tsv` | `forma<TAB>frecuencia`, para outros teclados. |
 | `kobo/dicthtml-gl.zip` | Dicionario para Kobo: ao tocar unha forma (*dixeches*) abre o lema (*dicir*) coa súa categoría e conxugación. Pendente de probar nun dispositivo. |
 | `kobo/galego.tsv` | O mesmo en formato tabulado (fonte dos tres seguintes, vía [pyglossary](https://github.com/ilius/pyglossary)). |
@@ -203,7 +224,8 @@ Todo o proxecto (datos e código) publícase baixo a **GPL-3.0 ou posterior**
 
 ## Folla de ruta
 
-- [ ] Locucións, siglas e abreviaturas de uso xeral (precisan outra fonte).
+- [ ] Definicións abertas (Wiktionary galego, CC BY-SA) como capa separada.
+- [ ] Sinónimos (tesauro de LibreOffice para o galego).
 - [ ] Ampliar as formas con enclíticos atestadas cun corpus maior.
 - [ ] Revisar unha mostra das formas sistemáticas con enclíticos contra a RAG.
 - [ ] Probar `apple/Galego.apple` nun Mac e o StarDict nunha app de iOS.

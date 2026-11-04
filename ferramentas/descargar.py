@@ -2,7 +2,7 @@
 
 Para Hunspell-gl descárgase o código fonte na versión fixada en fontes.json
 e xúntanse as regras do módulo «norma» nun único fontes/cache/hunspell-gl/gl.aff,
-como fai o seu SConstruct. Os .dic dos módulos quedan en src/.
+como fai o seu SConstruct. Todos os módulos (.dic) quedan en src/.
 """
 
 import json
@@ -36,7 +36,7 @@ def preparar_hunspell(fonte: dict, forzar: bool) -> None:
     with tarfile.open(arquivo) as tar:
         for membro in tar.getmembers():
             partes = Path(membro.name).parts[1:]       # quitar o cartafol raíz
-            if not partes or not (partes[0] == "LICENSE" or partes[:2] in (("src", "norma"), ("src", "rag"))):
+            if not partes or not (partes[0] in ("LICENSE", "README.rst", "CHANGELOG.rst") or partes[0] == "src"):
                 continue
             membro.name = str(Path(*partes))
             tar.extract(membro, HUNSPELL, filter="data")

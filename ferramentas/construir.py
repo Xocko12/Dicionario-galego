@@ -57,10 +57,25 @@ def cargar():
     return lemas, conx, frec, nomes, encl
 
 
+def cargar_capas() -> dict:
+    """Capas opcionais, agrupadas polo seu tipo: lexico, siglas, onomastica, codigos; e as locucións."""
+    config = json.loads((RAIZ / "fontes" / "capas.json").read_text(encoding="utf-8"))["capas"]
+    capas = {"lexico": [], "siglas": [], "onomastica": [], "codigos": [], "locucions": []}
+    for capa, cfg in config.items():
+        ruta = DATOS / "capas" / f"{capa}.jsonl"
+        if ruta.exists():
+            capas[cfg["tipo"]] += [json.loads(l) for l in ruta.open(encoding="utf-8")]
+    ruta = DATOS / "locucions.jsonl"
+    if ruta.exists():
+        capas["locucions"] = [json.loads(l) for l in ruta.open(encoding="utf-8")]
+    return capas
+
+
 def formas_do_lema(r: dict, conx: dict):
     """(forma, trazo) de cada forma dun lema."""
     if r["categoria"] == "verbo":
-        for forma, clave, persoa in C.formas(conx[r["lema"]]["taboa"]):
+        taboa = r["taboa"] if "taboa" in r else conx[r["lema"]]["taboa"]
+        for forma, clave, persoa in C.formas(taboa):
             yield forma, f"{clave}.{persoa}" if persoa else clave
     else:
         vistas = False
@@ -73,14 +88,21 @@ def formas_do_lema(r: dict, conx: dict):
 
 
 # -- SQLite ------------------------------------------------------------------
-def construir_sqlite(lemas, conx, frec, nomes, encl) -> None:
+def construir_sqlite(lemas, conx, frec, nomes, encl, capas) -> None:
     ruta = DIST / "dicionario.sqlite"
     ruta.unlink(missing_ok=True)
     db = sqlite3.connect(ruta)
     db.executescript("""
         CREATE TABLE lemas (id TEXT PRIMARY KEY, lema TEXT NOT NULL, categoria TEXT NOT NULL,
                             xenero TEXT, tipos TEXT, estado TEXT, composicion TEXT,
-                            frecuencia INTEGER, fontes TEXT);
+                            frecuencia INTEGER, fontes TEXT,
+                            capa TEXT NOT NULL DEFAULT 'rag');  -- rag = núcleo normativo
+        CREATE TABLE locucions (locucion TEXT NOT NULL, categorias TEXT NOT NULL, fontes TEXT);
+        CREATE TABLE siglas (forma TEXT NOT NULL, tipo TEXT NOT NULL, nota TEXT, fontes TEXT);
+        CREATE TABLE onomastica (nome TEXT NOT NULL, tipo TEXT NOT NULL, capa TEXT NOT NULL, fontes TEXT, nota TEXT);
+        CREATE TABLE codigos (codigo TEXT NOT NULL, tipo TEXT NOT NULL, nota TEXT);
+        CREATE INDEX siglas_forma ON siglas(forma);
+        CREATE INDEX onomastica_nome ON onomastica(nome);
         CREATE TABLE formas (forma TEXT NOT NULL, lema_id TEXT NOT NULL REFERENCES lemas(id),
                              trazo TEXT NOT NULL, frecuencia INTEGER);
         CREATE TABLE nomes (nome TEXT PRIMARY KEY);
@@ -91,15 +113,22 @@ def construir_sqlite(lemas, conx, frec, nomes, encl) -> None:
         CREATE INDEX formas_forma ON formas(forma);
         CREATE INDEX lemas_lema ON lemas(lema);
     """)
-    for r in lemas:
-        db.execute("INSERT INTO lemas VALUES (?,?,?,?,?,?,?,?,?)", (
+    for r in lemas + capas["lexico"]:
+        db.execute("INSERT INTO lemas VALUES (?,?,?,?,?,?,?,?,?,?)", (
             r["id"], r["lema"], r["categoria"], r.get("xenero"),
-            ",".join(r.get("tipos", [])) or None, r["estado"],
+            ",".join(r.get("tipos", [])) or None, r.get("estado"),
             "+".join(r["composicion"]) if r.get("composicion") else None,
-            r["frecuencia"], ",".join(r["fontes"])))
+            r["frecuencia"], ",".join(r["fontes"]), r.get("capa", "rag")))
         db.executemany("INSERT INTO formas VALUES (?,?,?,?)", [
             (forma, r["id"], trazo, frec.get(forma, 0)) for forma, trazo in formas_do_lema(r, conx)])
     db.executemany("INSERT INTO nomes VALUES (?)", [(n,) for n in nomes])
+    db.executemany("INSERT INTO locucions VALUES (?,?,?)",
+                   [(r["locucion"], ",".join(r["categorias"]), ",".join(r["fontes"])) for r in capas["locucions"]])
+    db.executemany("INSERT INTO siglas VALUES (?,?,?,?)",
+                   [(r["forma"], r["tipo"], r.get("nota"), ",".join(r["fontes"])) for r in capas["siglas"]])
+    db.executemany("INSERT INTO onomastica VALUES (?,?,?,?,?)",
+                   [(r["nome"], r["tipo"], r["capa"], ",".join(r["fontes"]), r.get("nota")) for r in capas["onomastica"]])
+    db.executemany("INSERT INTO codigos VALUES (?,?,?)", [(r["codigo"], r["tipo"], r.get("nota")) for r in capas["codigos"]])
     db.executemany("INSERT INTO encliticos VALUES (?,?,?,?,?,?)", [
         (r["forma"], f"{r['lema']}#verbo", ",".join(r["base"]), "+".join(r["pronomes"]), r["frecuencia"], r["orixe"])
         for r in encl])
@@ -108,11 +137,21 @@ def construir_sqlite(lemas, conx, frec, nomes, encl) -> None:
 
 
 # -- Teclado ----------------------------------------------------------------
-def construir_teclado(lemas, conx, frec, nomes, encl) -> int:
+# Capas que van ao teclado (as demais son enormes ou nomes doutras linguas).
+CAPAS_TECLADO = {"digalego", "comunidade", "terminoloxia", "siglas", "toponimos", "antroponimos"}
+
+
+def construir_teclado(lemas, conx, frec, nomes, encl, capas) -> int:
     formas: dict[str, int] = {}
-    for r in lemas:
+    for r in lemas + [r for r in capas["lexico"] if r["capa"] in CAPAS_TECLADO]:
         for forma, _ in formas_do_lema(r, conx):
             formas[forma] = frec.get(forma, 0)
+    for r in capas["siglas"]:
+        if r["capa"] in CAPAS_TECLADO:
+            formas.setdefault(r["forma"], frec.get(r["forma"].lower(), 0))
+    for r in capas["onomastica"]:
+        if r["capa"] in CAPAS_TECLADO and " " not in r["nome"]:
+            formas.setdefault(r["nome"], frec.get(r["nome"].lower(), 0))
     for nome in nomes:
         formas.setdefault(nome, frec.get(nome.lower(), 0))
     for r in encl:
@@ -142,6 +181,8 @@ def construir_teclado(lemas, conx, frec, nomes, encl) -> int:
 
 # -- Glosario / Kobo ----------------------------------------------------------
 def html_lema(r: dict, conx: dict) -> str:
+    if "locucion" in r:
+        return f"<p><b>{html.escape(r['locucion'])}</b> <i>{html.escape(', '.join(r['categorias']))}</i></p>"
     partes = [f"<p><b>{html.escape(r['lema'])}</b> <i>{html.escape(r['categoria'].replace('_', ' '))}"]
     if r.get("xenero"):
         partes.append(f" {html.escape(r['xenero'])}")
@@ -149,11 +190,13 @@ def html_lema(r: dict, conx: dict) -> str:
         partes.append(" (" + ", ".join(html.escape(t) for t in r["tipos"]) + ")")
     if r.get("estado") == "tolerado":
         partes.append(" — forma tolerada")
+    if r.get("capa") in NOMES_CAPAS:
+        partes.append(f" — {NOMES_CAPAS[r['capa']]}, non recollido pola RAG")
     partes.append("</i></p>")
     if r.get("composicion"):
         partes.append(f"<p>{html.escape(' + '.join(r['composicion']))}</p>")
     if r["categoria"] == "verbo":
-        t = conx[r["lema"]]["taboa"]
+        t = r["taboa"] if "taboa" in r else conx[r["lema"]]["taboa"]
         partes.append("<table>")
         for clave, nome in C.TEMPOS:
             celas = ["/".join(c) or "—" for c in t[clave]]
@@ -171,12 +214,17 @@ def html_lema(r: dict, conx: dict) -> str:
     return "".join(partes)
 
 
-def construir_glosario(lemas, conx, encl, kobo: bool) -> None:
+NOMES_CAPAS = {"digalego": "Digalego", "comunidade": "comunidade", "terminoloxia": "terminoloxía"}
+
+
+def construir_glosario(lemas, conx, encl, capas, kobo: bool) -> None:
     saida = DIST / "kobo"
     saida.mkdir(parents=True, exist_ok=True)
     por_lema: dict[str, list[dict]] = {}
-    for r in lemas:
+    for r in lemas + capas["lexico"]:
         por_lema.setdefault(r["lema"], []).append(r)
+    for r in capas["locucions"]:
+        por_lema.setdefault(r["locucion"], []).append(r)
     encl_por_lema: dict[str, list[str]] = {}
     for r in encl:
         encl_por_lema.setdefault(r["lema"], []).append(r["forma"])
@@ -187,6 +235,8 @@ def construir_glosario(lemas, conx, encl, kobo: bool) -> None:
             # "dixeches" ábrese a entrada de "dicir".
             alternativas = []
             for r in rexistros:
+                if "locucion" in r:
+                    continue
                 for forma, _ in formas_do_lema(r, conx):
                     if forma != lema and forma not in alternativas:
                         alternativas.append(forma)
@@ -242,6 +292,7 @@ def encliticos_sistematicos(lemas, conx, n_verbos: int) -> list[dict]:
 def main() -> None:
     DIST.mkdir(exist_ok=True)
     lemas, conx, frec, nomes, encl = cargar()
+    capas = cargar_capas()
     n_verbos = 600
     if "--encliticos" in sys.argv:
         n_verbos = int(sys.argv[sys.argv.index("--encliticos") + 1])
@@ -261,11 +312,11 @@ def main() -> None:
             for hun, cor, lema, base in sorted(set(encliticos.CORRECCIONS_TIL)):
                 fh.write(f"{hun}\t{cor}\t{lema}\t{base}\n")
         print(f"tiles corrixidos: {len(set(encliticos.CORRECCIONS_TIL))} (dist/encliticos_corrixidos.tsv)")
-    construir_sqlite(lemas, conx, frec, nomes, encl)
+    construir_sqlite(lemas, conx, frec, nomes, encl, capas)
     print("dist/dicionario.sqlite")
-    n = construir_teclado(lemas, conx, frec, nomes, encl)
+    n = construir_teclado(lemas, conx, frec, nomes, encl, capas)
     print(f"dist/teclado/: {n} formas")
-    construir_glosario(lemas, conx, encl, "--kobo" in sys.argv)
+    construir_glosario(lemas, conx, encl, capas, "--kobo" in sys.argv)
     print("dist/kobo/galego.tsv" + (" + Kobo, StarDict e AppleDict" if "--kobo" in sys.argv else ""))
 
 

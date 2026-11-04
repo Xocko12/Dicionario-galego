@@ -13,6 +13,7 @@ Xera:
     datos/conxugacions.jsonl  táboa de conxugación de cada verbo
     datos/frecuencias.tsv     frecuencia de cada forma no corpus
     datos/nomes.jsonl         nomes propios de persoa (Guía de nomes galegos da RAG)
+    datos/locucions.jsonl     locucións da RAG (a pesar de, ao redor, a miúdo...)
     datos/encliticos.jsonl    formas verbais con pronomes enclíticos de uso real
 """
 
@@ -176,6 +177,52 @@ def escribir_nomes() -> int:
         for nome in sorted(nomes, key=clave_orde):
             fh.write(json.dumps(nomes[nome], ensure_ascii=False) + "\n")
     return len(nomes)
+
+
+LOCUCION_POR_CATEGORIA = {"adverbio": "locución adverbial", "preposición": "locución preposicional",
+                          "conxunción": "locución conxuntiva", "adxectivo": "locución adxectiva",
+                          "pronome": "locución pronominal", "interxección": "locución interxectiva"}
+FUNCIONAIS = {"a", "á", "ao", "ó", "ás", "ós", "aos", "de", "do", "da", "dos", "das", "en", "no", "na",
+              "nos", "nas", "por", "polo", "pola", "con", "co", "coa", "sen", "ata", "tras", "o", "os", "as",
+              "un", "unha", "dun", "dunha", "nun", "nunha"}
+
+
+def escribir_locucions(h, fonte_de) -> int:
+    """datos/locucions.jsonl: locucións da RAG, reconstruídas das etiquetas
+    is:ngrama_ (cada palabra da locución é unha entrada co n-grama completo)."""
+    locucions: dict[str, dict] = {}
+    for e in h.entries:
+        if e.source not in fonte_de:
+            continue
+        ngrama = next((m[len("is:ngrama_"):] for m in e.morph if m.startswith("is:ngrama_")), None)
+        if not ngrama or ngrama[0].isupper():
+            continue
+        fonte, _ = fonte_de[e.source]
+        frase = ngrama.replace("_", " ")
+        palabras = frase.split()
+        # o VOLGa garda algunhas coa palabra clave diante («pesar de a»)
+        while len(palabras) > 1 and palabras[-1] in FUNCIONAIS and palabras[0] not in FUNCIONAIS:
+            palabras.insert(0, palabras.pop())
+        frase = " ".join(palabras)
+        categorias = set()
+        for po in e.fields("po"):
+            if po.startswith("locución"):
+                categorias.add(po.replace("_", " "))
+            elif po.startswith("substantivo"):
+                categorias.add("locución substantiva")
+            elif po in LOCUCION_POR_CATEGORIA:
+                categorias.add(LOCUCION_POR_CATEGORIA[po])
+        r = locucions.setdefault(frase, {"locucion": frase, "categorias": set(), "fontes": []})
+        r["categorias"] |= categorias
+        if fonte not in r["fontes"]:
+            r["fontes"].append(fonte)
+    with (DATOS / "locucions.jsonl").open("w", encoding="utf-8") as fh:
+        for frase in sorted(locucions, key=clave_orde):
+            r = locucions[frase]
+            r["categorias"] = sorted(r["categorias"]) or ["locución"]
+            r["fontes"] = [f for f in ("drag", "volga") if f in r["fontes"]]
+            fh.write(json.dumps(r, ensure_ascii=False) + "\n")
+    return len(locucions)
 
 
 def ler_frecuencias(ruta: Path) -> dict[str, int]:
@@ -372,6 +419,7 @@ def main() -> None:
                 fh.write(f"{forma}\t{frecuencias[forma]}\n")
 
     n_nomes = escribir_nomes()
+    n_loc = escribir_locucions(h, fonte_de)
 
     encl = encliticos.buscar(h, set(verbos), admitir_verbo, frecuencias, formas_catalogo,
                              {v["lema"]: v["taboa"] for v in saidas_verbos})
@@ -385,7 +433,7 @@ def main() -> None:
 
     n_verbos = sum(1 for r in escollidos if r["categoria"] == "verbo")
     print(f"{len(escollidos)} lemas ({n_verbos} verbos), {len(formas_catalogo)} formas, "
-          f"{len(encl)} formas con enclíticos, {n_nomes} nomes propios.")
+          f"{len(encl)} formas con enclíticos, {n_nomes} nomes propios, {n_loc} locucións.")
     if sen_completar:
         print(f"{len(sen_completar)} verbos con celas baleiras: {', '.join(sen_completar[:40])}")
 
