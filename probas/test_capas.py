@@ -65,3 +65,24 @@ class ProbasSinonimos(unittest.TestCase):
         self.assertIn("faldra", sin["aba"])
         self.assertIn("bastar", sin["abastar"])
         self.assertGreater(len(sin), 6000)
+
+
+class ProbasSemantica(unittest.TestCase):
+    def test_wordnet(self):
+        w = {}
+        for r in ler("capas/wordnet.jsonl"):
+            w.setdefault(r["lema"], []).append(r)
+        can = next(r for r in w["can"] if r["categoria"] == "substantivo")
+        self.assertTrue(any("Canis" in x.get("definicion_en", "") for x in can["sentidos"]))
+        self.assertTrue(any("perro" in x.get("es", []) for x in can["sentidos"]))
+        self.assertGreater(len(w), 20000)
+
+    def test_traducions(self):
+        t = {}
+        for r in ler("capas/traducions.jsonl"):
+            t.setdefault(r["lema"], []).append(r)
+        xanela = t["xanela"][0]
+        self.assertIn("ventana", xanela["es"])
+        self.assertIn("janela", xanela["pt"])
+        self.assertIn("window", xanela["en"])
+        self.assertIn("silla", t["cadeira"][0]["es"])

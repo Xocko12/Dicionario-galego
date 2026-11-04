@@ -22,7 +22,33 @@ con licenza GPL e permiso explícito do ILG-RAG. **Non inclúe definicións.**
 
 | Locucións | 431 da RAG (*a pesar de*, *ao redor*, *de súpeto*), en `datos/locucions.jsonl` |
 | Sinónimos | 6 997 entradas do thesaurus do VOLGa (GPL), en `datos/sinonimos.jsonl`, con marca das formas toleradas |
+| Sentidos (WordNet) | 27 137 sentidos de 23 409 lemas (Galnet, CC BY): definición en inglés, sinónimos galegos, equivalentes es/pt/en |
+| Traducións | 30 427 lemas con equivalentes en castelán (25 718), portugués (5 430) e inglés (13 914), de Apertium (GPL) |
+| Definicións en galego | pendentes: ver «Definicións» máis abaixo |
 | Separación silábica | patróns `hyph_gl.dic` de Trasno, en `dist/hyphenation/` |
+
+### Definicións
+
+O contido do dicionario da RAG ten dereitos de autor e non se copia. As fontes
+abertas de definicións son:
+
+| Capa | Fonte | Licenza | Estado |
+|---|---|---|---|
+| `wordnet` | Galnet (Open Multilingual Wordnet): cada sentido coa **definición en inglés** do WordNet de Princeton, os sinónimos galegos e os equivalentes es/pt/en | CC BY 3.0 | **feita** (`ferramentas/wordnet.py`) |
+| `traducions` | Apertium es-gl, spa-glg, pt-gl, en-gl | GPL | **feita** (`ferramentas/traducions.py`) |
+| `definicions-gl` | **Wiktionary galego**: definicións en galego | CC BY-SA | pendente de executar `ferramentas/wiktionary.py` nunha máquina con acceso a wikimedia.org (desde o contorno de construción non se pode). O analizador está feito e probado con mostras. |
+| `definicions-en` | Wiktionary inglés (entradas galegas, vía kaikki.org): definicións en inglés, con exemplos | CC BY-SA | pendente, igual ca anterior |
+
+Para xerar as dúas últimas:
+
+```sh
+python3 ferramentas/wiktionary.py --descargar   # baixa o volcado de gl.wiktionary e o JSONL de kaikki.org
+python3 ferramentas/wiktionary.py               # escribe datos/capas/definicions-gl.jsonl e definicions-en.jsonl
+```
+
+Despois, `construir.py` inclúeas automaticamente no SQLite (táboa `definicions`)
+e nos dicionarios Kobo/StarDict/Apple. Convén revisar unha mostra do Wiktionary
+galego ao primeiro uso: o analizador é conservador e descarta o que non recoñece.
 
 ### Capas opcionais (`datos/capas/`)
 
@@ -40,10 +66,13 @@ Sobre o núcleo normativo hai capas separadas, cada unha coa súa procedencia
 | `antroponimos-outras-linguas` | nomes de persoa en inglés, castelán, portugués e húngaro | 85 354 |
 | `organizacions` | organizacións, obras, empresas, produtos (Wikipedia) | 10 354 |
 | `codigos` | códigos ISO 639 (linguas) e ISO 4217 (moedas) | 8 258 |
+| `wordnet` | sentidos de Galnet (ver «Definicións») | 23 409 |
+| `traducions` | equivalentes es/pt/en de Apertium | 30 427 |
 
 Os verbos das capas léxicas pasan as mesmas comprobacións ca os do núcleo. Os
 nomes compostos (*Santiago de Compostela*, *Galileo Galilei*) reconstrúense das
-etiquetas de n-grama de Hunspell-gl. Todas as capas veñen de Hunspell-gl (GPL-3.0).
+etiquetas de n-grama de Hunspell-gl. As capas de Hunspell-gl son GPL-3.0; a de
+WordNet, CC BY 3.0; a de Apertium, GPL-2.0.
 
 ## Estrutura
 
@@ -215,10 +244,10 @@ python3 ferramentas/construir.py --kobo
 
 | Ficheiro | Para que serve |
 |---|---|
-| `dicionario.sqlite` | Táboas `lemas` (con `capa`: `rag` = núcleo), `formas` (forma → lema + trazo gramatical), `encliticos` (~800 000, con `orixe`), `locucions`, `siglas`, `onomastica`, `codigos`, `nomes`. ~140 MB. |
+| `dicionario.sqlite` | Táboas `lemas` (con `capa`: `rag` = núcleo), `formas` (forma → lema + trazo gramatical), `encliticos` (~800 000, con `orixe`), `locucions`, `sinonimos`, `sentidos` (WordNet), `traducions`, `definicions`, `siglas`, `onomastica`, `codigos`, `nomes`. ~150 MB. |
 | `teclado/gl_wordlist.combined` | ~1,3 millóns de palabras (núcleo, enclíticos, capas léxicas, siglas, topónimos e nomes galegos) con frecuencia no formato dos teclados AOSP; con `dicttool` convértese no `.dict` de HeliBoard e similares. |
 | `teclado/palabras.tsv` | `forma<TAB>frecuencia`, para outros teclados. |
-| `kobo/dicthtml-gl.zip` | Dicionario para Kobo: ao tocar unha forma (*dixeches*) abre o lema (*dicir*) coa súa categoría, conxugación e sinónimos. Pendente de probar nun dispositivo. |
+| `kobo/dicthtml-gl.zip` | Dicionario para Kobo: ao tocar unha forma (*dixeches*) abre o lema (*dicir*) coa súa categoría, conxugación, sinónimos, traducións, sentidos do WordNet e, cando existan, as definicións do Wiktionary. Pendente de probar nun dispositivo. |
 | `kobo/galego.tsv` | O mesmo en formato tabulado (fonte dos tres seguintes, vía [pyglossary](https://github.com/ilius/pyglossary)). |
 | `stardict/galego.*` | StarDict: GoldenDict (Linux/Windows/Android) e apps de dicionario de iOS e Android que lean StarDict. |
 | `hyphenation/hyph_gl.dic` | Patróns de separación silábica (orixinal ISO-8859-1 e copia UTF-8), para LibreOffice, a biblioteca Hyphen e lectores electrónicos. |
@@ -234,6 +263,9 @@ Tampouco macOS nin iOS aceptan listas de palabras para o teclado do sistema.
 |---|---|---|
 | Vocabulario do DRAG e VOLGa, vía [Hunspell-gl](https://gitlab.com/trasno/hunspell-gl) (Proxecto Trasno), versión fixada en `fontes/fontes.json` | GPL-3.0 | lemas, categorías, flexión e conxugación |
 | Thesaurus do VOLGa (Miguel Solla, 2010; extensión de LibreOffice de Trasno) | GPL-3.0 | sinónimos |
+| [Open Multilingual Wordnet 1.4](https://github.com/omwn/omw-data): Galnet (MCR), omw-en, omw-es, omw-pt | CC BY 3.0 / WordNet License | sentidos, definicións en inglés, equivalentes |
+| [Apertium](https://github.com/apertium) es-gl, spa-glg, pt-gl, en-gl | GPL-2.0 | traducións |
+| Wiktionary galego e inglés (pendente) | CC BY-SA 4.0 | definicións |
 | `hyph_gl.dic` (extensión de LibreOffice de Trasno) | GPL-3.0 | separación silábica |
 | [FrequencyWords](https://github.com/hermitdave/FrequencyWords) (OpenSubtitles 2018) | CC BY-SA 4.0 | frecuencias |
 | Revisión manual | GPL-3.0 | correccións segundo as *Normas ortográficas e morfolóxicas do idioma galego* (RAG/ILG) |
@@ -251,7 +283,7 @@ Todo o proxecto (datos e código) publícase baixo a **GPL-3.0 ou posterior**
 
 ## Folla de ruta
 
-- [ ] Definicións abertas (Wiktionary galego, CC BY-SA) como capa separada.
+- [ ] Executar `ferramentas/wiktionary.py` (definicións en galego e inglés) nunha máquina con rede e revisar unha mostra.
 - [ ] Ampliar as formas con enclíticos atestadas cun corpus maior.
 - [ ] Revisar unha mostra das formas sistemáticas con enclíticos contra a RAG.
 - [ ] Probar `apple/Galego.apple` nun Mac e o StarDict nunha app de iOS.

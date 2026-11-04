@@ -222,6 +222,8 @@ def main() -> None:
     referencia.pop("_descricion", None)
     referencia = compostos.con_compostos(referencia)
 
+    config = {capa: cfg for capa, cfg in config.items() if "modulos" in cfg}   # as de «script» van á parte
+    pedidas = [c for c in pedidas if c in config]
     rutas_capa = {capa: [r for m in cfg["modulos"] for r in ficheiros(m)] for capa, cfg in config.items()}
     lexicas = [c for c in config if config[c]["tipo"] == "lexico"]
     h = Hunspell(I.HUNSPELL / "gl.aff", [r for c in lexicas for r in rutas_capa[c]])

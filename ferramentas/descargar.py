@@ -75,12 +75,33 @@ def montar_aff() -> None:
     (HUNSPELL / "gl.aff").write_text("\n".join(liñas) + "\n", encoding="utf-8")
 
 
+def extraer_arquivo(nome: str, arquivo: str, cfg: dict, forzar: bool) -> None:
+    """Descarga un .tar.* e extrae só os cartafoles indicados en fontes/cache/<nome>/."""
+    destino = CACHE / nome
+    marca = destino / ".extraido"
+    if marca.exists() and not forzar:
+        print(f"xa existe  {destino.relative_to(RAIZ)}")
+        return
+    ruta = CACHE / arquivo
+    descargar(cfg["url"], ruta)
+    destino.mkdir(parents=True, exist_ok=True)
+    with tarfile.open(ruta) as tar:
+        for membro in tar.getmembers():
+            if any(membro.name.startswith(prefixo) for prefixo in cfg["extraer"]):
+                membro.name = "/".join(membro.name.split("/")[1:])   # sen o cartafol raíz
+                tar.extract(membro, destino, filter="data")
+    ruta.unlink()
+    marca.write_text(cfg["url"] + "\n")
+
+
 def main() -> None:
     forzar = "--forzar" in sys.argv
     fontes = json.loads((RAIZ / "fontes" / "fontes.json").read_text(encoding="utf-8"))
     preparar_hunspell(fontes["hunspell-gl"], forzar)
     montar_aff()   # sempre, por se cambiaron os parches
     for nome, fonte in fontes.items():
+        for arquivo, cfg in fonte.get("arquivos", {}).items():
+            extraer_arquivo(nome, arquivo, cfg, forzar)
         for ficheiro, url in fonte.get("ficheiros", {}).items():
             destino = CACHE / nome / ficheiro
             if destino.exists() and not forzar:

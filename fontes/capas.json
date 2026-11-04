@@ -1,59 +1,146 @@
 {
-  "_descricion": "Capas opcionais sobre o núcleo normativo (datos/lemas.jsonl = RAG). Cada capa vén de módulos de Hunspell-gl (GPL-3.0-or-later; https://gitlab.com/trasno/hunspell-gl, versión fixada en fontes.json). 'tipo': lexico (lemas con flexión e conxugación), siglas, onomastica (nomes propios), codigos. As rutas son relativas a src/ de Hunspell-gl; un cartafol inclúe todos os .dic que contén; admítense comodíns.",
+  "_descricion": "Capas opcionais sobre o núcleo normativo (datos/lemas.jsonl = RAG). Cada capa vén de módulos de Hunspell-gl (GPL-3.0-or-later; https://gitlab.com/trasno/hunspell-gl, versión fixada en fontes.json). 'tipo': lexico (lemas con flexión e conxugación), siglas, onomastica (nomes propios), codigos, semantica (sentidos do WordNet), traducions, definicions. As capas sen 'modulos' xéranse con outro script ('script'). As rutas son relativas a src/ de Hunspell-gl; un cartafol inclúe todos os .dic que contén; admítense comodíns.",
   "capas": {
     "digalego": {
       "tipo": "lexico",
       "nome": "Vocabulario do Digalego (Dicionario de galego da Xunta de Galicia), adaptado por Proxecto Trasno",
       "web": "https://digalego.xunta.gal/",
-      "modulos": ["xunta"]
+      "modulos": [
+        "xunta"
+      ]
     },
     "comunidade": {
       "tipo": "lexico",
       "nome": "Vocabulario achegado pola comunidade de Hunspell-gl, pendente de repartir entre outras fontes",
       "web": "https://gitlab.com/trasno/hunspell-gl/-/tree/master/src/comunidade",
       "nota": "Palabras de uso real non recollidas pola RAG (informática, neoloxismos). Revisar antes de usalas como normativas.",
-      "modulos": ["comunidade/vocabulario.dic"]
+      "modulos": [
+        "comunidade/vocabulario.dic"
+      ]
     },
     "terminoloxia": {
       "tipo": "lexico",
       "nome": "Terminoloxía: bUSCatermos (USC), TERGAL, Estraviz (adaptado á norma RAG), glosario de Trasno, AETG, CLG, Galaxia, INTEF, IGE, Wikipedia en galego (vocabulario por áreas), unidades de medida",
-      "modulos": ["usc", "tergal", "estraviz", "trasno", "aetg", "clg", "galaxia", "intef", "ige", "col",
-                  "unidades/vocabulario.dic", "wikipedia/gl/*.dic", "rag/es-gl", "rag/gl-es"]
+      "modulos": [
+        "usc",
+        "tergal",
+        "estraviz",
+        "trasno",
+        "aetg",
+        "clg",
+        "galaxia",
+        "intef",
+        "ige",
+        "col",
+        "unidades/vocabulario.dic",
+        "wikipedia/gl/*.dic",
+        "rag/es-gl",
+        "rag/gl-es"
+      ]
     },
     "siglas": {
       "tipo": "siglas",
       "nome": "Siglas, abreviaturas e símbolos: Concello de Santiago, UDC, UVigo, CEG, Wikipedia en galego, abreviaturas do DRAG, Microsoft",
-      "modulos": ["santiago", "udc", "uvigo", "ceg", "wikipedia/gl/siglas", "rag/gl/abreviaturas.dic", "microsoft"]
+      "modulos": [
+        "santiago",
+        "udc",
+        "uvigo",
+        "ceg",
+        "wikipedia/gl/siglas",
+        "rag/gl/abreviaturas.dic",
+        "microsoft"
+      ]
     },
     "toponimos": {
       "tipo": "onomastica",
       "nome": "Topónimos: Wikipedia en galego (lugares de Galicia, localidades, rexións, accidentes xeográficos) e Wiktionary galego",
-      "modulos": ["wikipedia/gl/onomástica/toponimia", "wiktionary/gl/toponimia", "wikipedia/gl/xeografía"]
+      "modulos": [
+        "wikipedia/gl/onomástica/toponimia",
+        "wiktionary/gl/toponimia",
+        "wikipedia/gl/xeografía"
+      ]
     },
     "antroponimos": {
       "tipo": "onomastica",
       "nome": "Nomes e apelidos de persoa no contexto galego: INE (revisados), Wikipedia en galego, Wiktionary galego",
-      "modulos": ["ine", "wikipedia/gl/onomástica/antroponimia", "wiktionary/gl/*.dic"]
+      "modulos": [
+        "ine",
+        "wikipedia/gl/onomástica/antroponimia",
+        "wiktionary/gl/*.dic"
+      ]
     },
     "antroponimos-outras-linguas": {
       "tipo": "onomastica",
       "nome": "Nomes de persoa doutras linguas: Wikipedia en inglés, castelán, portugués e húngaro; Wiktionary inglés",
       "nota": "Moi voluminosa (~110 000). Útil para correctores; non para teclados.",
-      "modulos": ["wikipedia/en/antroponimia", "wikipedia/es/antroponimia", "wikipedia/pt/antroponimia", "wikipedia/hu", "wiktionary/en"]
+      "modulos": [
+        "wikipedia/en/antroponimia",
+        "wikipedia/es/antroponimia",
+        "wikipedia/pt/antroponimia",
+        "wikipedia/hu",
+        "wiktionary/en"
+      ]
     },
     "organizacions": {
       "tipo": "onomastica",
       "nome": "Nomes de organizacións, obras, empresas, produtos: Wikipedia en galego e castelán, comunidade de Hunspell-gl",
-      "modulos": ["wikipedia/gl/onomástica/administración", "wikipedia/gl/onomástica/arquitectura", "wikipedia/gl/onomástica/arte",
-                  "wikipedia/gl/onomástica/astronomía", "wikipedia/gl/onomástica/deporte", "wikipedia/gl/onomástica/economía",
-                  "wikipedia/gl/onomástica/historia", "wikipedia/gl/onomástica/informática", "wikipedia/gl/onomástica/música",
-                  "wikipedia/gl/onomástica/organizacións", "wikipedia/gl/onomástica/política", "wikipedia/gl/onomástica/televisión",
-                  "wikipedia/gl/onomástica/transporte", "wikipedia/es/empresas", "comunidade/onomástica.dic"]
+      "modulos": [
+        "wikipedia/gl/onomástica/administración",
+        "wikipedia/gl/onomástica/arquitectura",
+        "wikipedia/gl/onomástica/arte",
+        "wikipedia/gl/onomástica/astronomía",
+        "wikipedia/gl/onomástica/deporte",
+        "wikipedia/gl/onomástica/economía",
+        "wikipedia/gl/onomástica/historia",
+        "wikipedia/gl/onomástica/informática",
+        "wikipedia/gl/onomástica/música",
+        "wikipedia/gl/onomástica/organizacións",
+        "wikipedia/gl/onomástica/política",
+        "wikipedia/gl/onomástica/televisión",
+        "wikipedia/gl/onomástica/transporte",
+        "wikipedia/es/empresas",
+        "comunidade/onomástica.dic"
+      ]
     },
     "codigos": {
       "tipo": "codigos",
       "nome": "Códigos ISO 639 (linguas) e ISO 4217 (moedas)",
-      "modulos": ["iso639", "iso4217"]
+      "modulos": [
+        "iso639",
+        "iso4217"
+      ]
+    },
+    "wordnet": {
+      "tipo": "semantica",
+      "nome": "Galnet (Open Multilingual Wordnet 1.4, MCR): sentidos con definición en inglés, sinónimos galegos e equivalentes es/pt/en",
+      "web": "https://github.com/omwn/omw-data",
+      "licenza": "CC-BY-3.0 (Galnet), WordNet License (definicións)",
+      "script": "ferramentas/wordnet.py"
+    },
+    "traducions": {
+      "tipo": "traducions",
+      "nome": "Equivalentes en castelán, portugués e inglés dos dicionarios bilingües de Apertium",
+      "web": "https://github.com/apertium",
+      "licenza": "GPL-2.0-or-later",
+      "script": "ferramentas/traducions.py"
+    },
+    "definicions-gl": {
+      "tipo": "definicions",
+      "nome": "Definicións en galego do Wiktionary galego (gl.wiktionary.org)",
+      "web": "https://gl.wiktionary.org/",
+      "licenza": "CC-BY-SA-4.0",
+      "script": "ferramentas/wiktionary.py",
+      "nota": "Xérase nunha máquina con acceso a wikimedia.org; opcional ata entón.",
+      "opcional": true
+    },
+    "definicions-en": {
+      "tipo": "definicions",
+      "nome": "Definicións en inglés das entradas galegas do Wiktionary inglés (kaikki.org / wiktextract)",
+      "web": "https://kaikki.org/dictionary/Galician/",
+      "licenza": "CC-BY-SA-4.0",
+      "script": "ferramentas/wiktionary.py",
+      "nota": "Xérase nunha máquina con acceso a kaikki.org; opcional ata entón.",
+      "opcional": true
     }
   }
 }

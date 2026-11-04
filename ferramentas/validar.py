@@ -124,7 +124,8 @@ def validar_capas(formas: set[str]) -> list[str]:
     for capa, cfg in config.items():
         ruta = DATOS / "capas" / f"{capa}.jsonl"
         if not ruta.exists():
-            erros.append(f"falta datos/capas/{capa}.jsonl")
+            if not cfg.get("opcional"):
+                erros.append(f"falta datos/capas/{capa}.jsonl")
             continue
         for n, r in ler_jsonl(ruta):
             onde = f"capas/{capa}.jsonl:{n}"
@@ -153,6 +154,15 @@ def validar_capas(formas: set[str]) -> list[str]:
             elif cfg["tipo"] == "codigos":
                 if not r.get("codigo"):
                     erros.append(f"{onde}: código baleiro")
+            elif cfg["tipo"] == "semantica":
+                if not r.get("lema") or not r.get("sentidos") or any("ili" not in x for x in r["sentidos"]):
+                    erros.append(f"{onde}: sentido incorrecto")
+            elif cfg["tipo"] == "traducions":
+                if not r.get("lema") or not any(r.get(l) for l in ("es", "pt", "en")):
+                    erros.append(f"{onde}: sen traducións")
+            elif cfg["tipo"] == "definicions":
+                if not r.get("lema") or not r.get("acepcions") or any(not a.get("definicion") for a in r["acepcions"]):
+                    erros.append(f"{onde}: definición incorrecta")
     return erros
 
 

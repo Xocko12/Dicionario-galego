@@ -70,5 +70,34 @@
     "web": "https://academia.gal/normas-ortograficas-e-morfoloxicas",
     "licenza": "GPL-3.0-or-later",
     "uso": "Correccións feitas a man neste proxecto (datos/correccions/)."
+  },
+  "omw": {
+    "nome": "Open Multilingual Wordnet 1.4: Galnet (MCR, galego), omw-en (Princeton WordNet, definicións en inglés), omw-es e omw-pt",
+    "web": "https://github.com/omwn/omw-data",
+    "licenza": "CC-BY-3.0 (Galnet, MCR), WordNet License (omw-en), CC-BY-3.0 (es, pt)",
+    "uso": "Capa wordnet: sentidos de cada lema galego (sinónimos, definición en inglés, equivalentes es/pt/en).",
+    "arquivos": {
+      "omw-1.4.tar.xz": {
+        "url": "https://github.com/omwn/omw-data/releases/download/v1.4/omw-1.4.tar.xz",
+        "extraer": [
+          "omw-1.4/omw-gl/",
+          "omw-1.4/omw-en/",
+          "omw-1.4/omw-es/",
+          "omw-1.4/omw-pt/"
+        ]
+      }
+    }
+  },
+  "apertium": {
+    "nome": "Dicionarios bilingües de Apertium: es-gl, spa-glg, pt-gl, en-gl",
+    "web": "https://github.com/apertium",
+    "licenza": "GPL-2.0-or-later",
+    "uso": "Capa traducions: equivalentes en castelán, portugués e inglés.",
+    "ficheiros": {
+      "es-gl.dix": "https://raw.githubusercontent.com/apertium/apertium-es-gl/master/apertium-es-gl.es-gl.dix",
+      "spa-glg.dix": "https://raw.githubusercontent.com/apertium/apertium-spa-glg/master/apertium-spa-glg.spa-glg.dix",
+      "pt-gl.dix": "https://raw.githubusercontent.com/apertium/apertium-pt-gl/master/apertium-pt-gl.pt-gl.dix",
+      "en-gl.dix": "https://raw.githubusercontent.com/apertium/apertium-en-gl/master/apertium-en-gl.en-gl.dix"
+    }
   }
 }
