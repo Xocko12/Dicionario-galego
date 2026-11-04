@@ -138,7 +138,7 @@ def completar(taboa: dict, lema: str) -> None:
     - copretérito e antepretérito: P1 = P3 = P2 sen -s (e viceversa);
     - futuro de subxuntivo: P1 = P3 = P2 sen -es; P6 = P2 con -en;
     - imperativo P2 = presente P3 (agás ser, que vai nas correccións);
-      o imperativo só ten P2 e P5;
+      o imperativo só ten P2 e P5 (e a P4 «vamos» de ir);
     - futuro de subxuntivo baleiro = infinitivo conxugado (pretérito regular);
     - os verbos unipersoais (chover) non se completan.
     """
@@ -174,7 +174,8 @@ def completar(taboa: dict, lema: str) -> None:
     # "vén" perde o til diacrítico: "ven".
     imp = taboa["imperativo"]
     imp[1] = [_IMPERATIVO_SEN_TIL.get(f, f) for f in taboa["indicativo.presente"][2]]
-    for p in (0, 2, 3, 5):
+    # O imperativo só ten P2 e P5; a P4 consérvase se Hunspell a dá (só «vamos», de ir).
+    for p in (0, 2, 5):
         imp[p] = []
 
 
@@ -357,7 +358,7 @@ def baleiras(taboa: dict) -> list[str]:
     for clave, _ in TEMPOS:
         for i, cela in enumerate(taboa[clave]):
             if clave == "imperativo" and (i not in (1, 4) or so_terceiras):
-                continue
+                continue   # a P4 só a ten ir («vamos»); non conta como baleira
             if so_terceiras and i not in (2, 5):
                 continue
             if not cela:

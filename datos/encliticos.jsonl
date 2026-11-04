@@ -16559,6 +16559,8 @@
 {"forma": "valórase", "lema": "valorar", "base": ["indicativo.presente.P3", "imperativo.P2"], "pronomes": ["se"], "frecuencia": 1}
 {"forma": "valorizalos", "lema": "valorizar", "base": ["infinitivo.conxugado.P1", "subxuntivo.futuro.P1", "subxuntivo.futuro.P3"], "pronomes": ["os"], "frecuencia": 1}
 {"forma": "valorízanse", "lema": "valorizar", "base": ["indicativo.presente.P6"], "pronomes": ["se"], "frecuencia": 1}
+{"forma": "vámolo", "lema": "ir", "base": ["imperativo.P4"], "pronomes": ["o"], "frecuencia": 2}
+{"forma": "vámonos", "lema": "ir", "base": ["imperativo.P4"], "pronomes": ["nos"], "frecuencia": 26}
 {"forma": "vanchas", "lema": "ir", "base": ["indicativo.presente.P6"], "pronomes": ["che", "as"], "frecuencia": 1}
 {"forma": "vanche", "lema": "ir", "base": ["indicativo.presente.P6"], "pronomes": ["che"], "frecuencia": 6}
 {"forma": "vanglóriase", "lema": "vangloriar", "base": ["indicativo.presente.P3"], "pronomes": ["se"], "frecuencia": 1}

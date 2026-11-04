@@ -29785,7 +29785,7 @@
 {"id": "ipecacuaña#substantivo", "lema": "ipecacuaña", "categoria": "substantivo", "xenero": "feminino", "formas": {"fs": ["ipecacuaña"], "fp": ["ipecacuañas"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "ipomea#substantivo", "lema": "ipomea", "categoria": "substantivo", "xenero": "feminino", "formas": {"fs": ["ipomea"], "fp": ["ipomeas"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "ípsilon#substantivo", "lema": "ípsilon", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["ípsilon"], "mp": ["ípsilons"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
-{"id": "ir#verbo", "lema": "ir", "categoria": "verbo", "tipos": ["intransitiva", "auxiliar"], "estado": "recomendado", "frecuencia": 15420, "fontes": ["drag", "volga"]}
+{"id": "ir#verbo", "lema": "ir", "categoria": "verbo", "tipos": ["intransitiva", "auxiliar"], "estado": "recomendado", "frecuencia": 16405, "fontes": ["drag", "volga"]}
 {"id": "ira#substantivo", "lema": "ira", "categoria": "substantivo", "xenero": "feminino", "formas": {"fs": ["ira"], "fp": ["iras"]}, "estado": "recomendado", "frecuencia": 34, "fontes": ["drag", "volga"]}
 {"id": "iracundia#substantivo", "lema": "iracundia", "categoria": "substantivo", "xenero": "feminino", "formas": {"fs": ["iracundia"], "fp": ["iracundias"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "iracundo#adxectivo", "lema": "iracundo", "categoria": "adxectivo", "formas": {"ms": ["iracundo"], "fs": ["iracunda"], "mp": ["iracundos"], "fp": ["iracundas"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
@@ -46307,7 +46307,7 @@
 {"id": "séquito#substantivo", "lema": "séquito", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["séquito"], "mp": ["séquitos"]}, "estado": "recomendado", "frecuencia": 2, "fontes": ["drag", "volga"]}
 {"id": "sequoia#substantivo", "lema": "sequoia", "categoria": "substantivo", "xenero": "feminino", "formas": {"fs": ["sequoia"], "fp": ["sequoias"]}, "estado": "recomendado", "frecuencia": 2, "fontes": ["drag", "volga"]}
 {"id": "ser#substantivo", "lema": "ser", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["ser"], "mp": ["seres"]}, "estado": "recomendado", "frecuencia": 1158, "fontes": ["drag", "volga"]}
-{"id": "ser#verbo", "lema": "ser", "categoria": "verbo", "tipos": ["intransitiva", "copulativa", "auxiliar"], "estado": "recomendado", "frecuencia": 16206, "fontes": ["drag", "volga"]}
+{"id": "ser#verbo", "lema": "ser", "categoria": "verbo", "tipos": ["intransitiva", "copulativa", "auxiliar"], "estado": "recomendado", "frecuencia": 16083, "fontes": ["drag", "volga"]}
 {"id": "seráfico#adxectivo", "lema": "seráfico", "categoria": "adxectivo", "formas": {"ms": ["seráfico"], "fs": ["seráfica"], "mp": ["seráficos"], "fp": ["seráficas"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "serafín#substantivo", "lema": "serafín", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["serafín"], "mp": ["serafíns"]}, "estado": "recomendado", "frecuencia": 1, "fontes": ["drag", "volga"]}
 {"id": "serán#substantivo", "lema": "serán", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["serán"], "mp": ["seráns"]}, "estado": "recomendado", "frecuencia": 9, "fontes": ["drag", "volga"]}
@@ -51266,8 +51266,8 @@
 {"id": "vampiresa#substantivo", "lema": "vampiresa", "categoria": "substantivo", "xenero": "feminino", "formas": {"fs": ["vampiresa"], "fp": ["vampiresas"]}, "estado": "recomendado", "frecuencia": 3, "fontes": ["drag", "volga"]}
 {"id": "vampirismo#substantivo", "lema": "vampirismo", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["vampirismo"], "mp": ["vampirismos"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "vampiro#substantivo", "lema": "vampiro", "categoria": "substantivo", "formas": {"ms": ["vampiro"], "fs": ["vampira"], "mp": ["vampiros"], "fp": ["vampiras"]}, "estado": "recomendado", "frecuencia": 20, "fontes": ["drag", "volga"]}
-{"id": "van#adxectivo", "lema": "van", "categoria": "adxectivo", "formas": {"ms": ["van"], "fs": ["va"], "mp": ["vans"], "fp": ["vas"]}, "estado": "recomendado", "frecuencia": 145, "fontes": ["drag", "volga"]}
-{"id": "van#substantivo", "lema": "van", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["van"], "mp": ["vans"]}, "estado": "recomendado", "frecuencia": 47, "fontes": ["drag", "volga"]}
+{"id": "van#adxectivo", "lema": "van", "categoria": "adxectivo", "formas": {"ms": ["van"], "fs": ["va"], "mp": ["vans"], "fp": ["vas"]}, "estado": "recomendado", "frecuencia": 136, "fontes": ["drag", "volga"]}
+{"id": "van#substantivo", "lema": "van", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["van"], "mp": ["vans"]}, "estado": "recomendado", "frecuencia": 43, "fontes": ["drag", "volga"]}
 {"id": "vanadio#substantivo", "lema": "vanadio", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["vanadio"], "mp": ["vanadios"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "vanar#verbo", "lema": "vanar", "categoria": "verbo", "tipos": ["transitiva"], "estado": "recomendado", "frecuencia": 8, "fontes": ["drag", "volga"]}
 {"id": "vandálico#adxectivo", "lema": "vandálico", "categoria": "adxectivo", "formas": {"ms": ["vandálico"], "fs": ["vandálica"], "mp": ["vandálicos"], "fp": ["vandálicas"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
