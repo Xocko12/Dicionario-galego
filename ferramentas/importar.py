@@ -12,6 +12,7 @@ Xera:
     datos/lemas.jsonl         un lema por liña (categoría, xénero, flexión, estado, frecuencia)
     datos/conxugacions.jsonl  táboa de conxugación de cada verbo
     datos/frecuencias.tsv     frecuencia de cada forma no corpus
+    datos/nomes.jsonl         nomes propios de persoa (Guía de nomes galegos da RAG)
 """
 
 from __future__ import annotations
@@ -154,6 +155,25 @@ def axustar_gramaticais(rexistros: dict) -> None:
     for ident, r in rexistros.items():
         if r["categoria"] == "contracción":
             r["composicion"] = axustes["composicion"].get(r["lema"])
+
+
+def escribir_nomes() -> int:
+    """datos/nomes.jsonl: nomes de persoa da Guía de nomes galegos da RAG."""
+    fontes = json.loads((RAIZ / "fontes" / "fontes.json").read_text(encoding="utf-8"))
+    nomes = {}
+    for ruta in fontes["rag-nomes"]["modulos"]:
+        for liña in (HUNSPELL / "src" / ruta).open(encoding="utf-8"):
+            liña = liña.split("#", 1)[0].strip()
+            if not liña:
+                continue
+            nome, *morph = liña.split()
+            nome = nome.split("/")[0]
+            tipo = next((m[3:] for m in morph if m.startswith("po:")), None)
+            nomes.setdefault(nome, {"nome": nome, "tipo": tipo, "fontes": ["rag-nomes"]})
+    with (DATOS / "nomes.jsonl").open("w", encoding="utf-8") as fh:
+        for nome in sorted(nomes, key=clave_orde):
+            fh.write(json.dumps(nomes[nome], ensure_ascii=False) + "\n")
+    return len(nomes)
 
 
 def ler_frecuencias(ruta: Path) -> dict[str, int]:
@@ -348,8 +368,10 @@ def main() -> None:
             if frecuencias.get(forma):
                 fh.write(f"{forma}\t{frecuencias[forma]}\n")
 
+    n_nomes = escribir_nomes()
+
     n_verbos = sum(1 for r in escollidos if r["categoria"] == "verbo")
-    print(f"{len(escollidos)} lemas ({n_verbos} verbos), {len(formas_catalogo)} formas.")
+    print(f"{len(escollidos)} lemas ({n_verbos} verbos), {len(formas_catalogo)} formas, {n_nomes} nomes propios.")
     if sen_completar:
         print(f"{len(sen_completar)} verbos con celas baleiras: {', '.join(sen_completar[:40])}")
 

@@ -74,5 +74,24 @@
     "celas": {
       "subxuntivo.presente": [["crea"], ["creas"], ["crea"], ["creamos"], ["creades"], ["crean"]]
     }
+  },
+  "prover": {
+    "nota": "Táboa completa revisada contra o conxugador da RAG (Hunspell-gl tiña o pretérito incompleto e variantes como 'provo', 'proves').",
+    "celas": {
+      "indicativo.presente": [["provexo"], ["provés"], ["prové"], ["provemos"], ["provedes"], ["provén"]],
+      "indicativo.copreterito": [["provía"], ["provías"], ["provía"], ["proviamos"], ["proviades"], ["provían"]],
+      "indicativo.preterito": [["provín"], ["proviches"], ["proveu"], ["provemos"], ["provestes"], ["proveron"]],
+      "indicativo.antepreterito": [["provera"], ["proveras"], ["provera"], ["proveramos"], ["proverades"], ["proveran"]],
+      "indicativo.futuro": [["proverei"], ["proverás"], ["proverá"], ["proveremos"], ["proveredes"], ["proverán"]],
+      "indicativo.pospreterito": [["provería"], ["proverías"], ["provería"], ["proveriamos"], ["proveriades"], ["proverían"]],
+      "subxuntivo.presente": [["provexa"], ["provexas"], ["provexa"], ["provexamos"], ["provexades"], ["provexan"]],
+      "subxuntivo.preterito": [["provese"], ["proveses"], ["provese"], ["provésemos"], ["provésedes"], ["provesen"]],
+      "subxuntivo.futuro": [["prover"], ["proveres"], ["prover"], ["provermos"], ["proverdes"], ["proveren"]],
+      "imperativo.P2": ["prové"],
+      "imperativo.P5": ["provede"],
+      "infinitivo.conxugado": [["prover"], ["proveres"], ["prover"], ["provermos"], ["proverdes"], ["proveren"]],
+      "xerundio": ["provendo"],
+      "participio": ["provido", "providos", "provida", "providas", "provisto", "provistos", "provista", "provistas"]
+    }
   }
 }

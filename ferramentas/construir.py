@@ -37,13 +37,14 @@ def cargar():
     for l in (DATOS / "conxugacions.jsonl").open(encoding="utf-8"):
         v = json.loads(l)
         conx[v["lema"]] = v
+    nomes = [json.loads(l)["nome"] for l in (DATOS / "nomes.jsonl").open(encoding="utf-8")]
     frec = {}
     for l in (DATOS / "frecuencias.tsv").open(encoding="utf-8"):
         if l.startswith("#"):
             continue
         forma, n = l.rstrip("\n").split("\t")
         frec[forma] = int(n)
-    return lemas, conx, frec
+    return lemas, conx, frec, nomes
 
 
 def formas_do_lema(r: dict, conx: dict):
@@ -62,7 +63,7 @@ def formas_do_lema(r: dict, conx: dict):
 
 
 # -- SQLite ------------------------------------------------------------------
-def construir_sqlite(lemas, conx, frec) -> None:
+def construir_sqlite(lemas, conx, frec, nomes) -> None:
     ruta = DIST / "dicionario.sqlite"
     ruta.unlink(missing_ok=True)
     db = sqlite3.connect(ruta)
@@ -72,6 +73,7 @@ def construir_sqlite(lemas, conx, frec) -> None:
                             frecuencia INTEGER, fontes TEXT);
         CREATE TABLE formas (forma TEXT NOT NULL, lema_id TEXT NOT NULL REFERENCES lemas(id),
                              trazo TEXT NOT NULL, frecuencia INTEGER);
+        CREATE TABLE nomes (nome TEXT PRIMARY KEY);
         CREATE INDEX formas_forma ON formas(forma);
         CREATE INDEX lemas_lema ON lemas(lema);
     """)
@@ -83,16 +85,19 @@ def construir_sqlite(lemas, conx, frec) -> None:
             r["frecuencia"], ",".join(r["fontes"])))
         db.executemany("INSERT INTO formas VALUES (?,?,?,?)", [
             (forma, r["id"], trazo, frec.get(forma, 0)) for forma, trazo in formas_do_lema(r, conx)])
+    db.executemany("INSERT INTO nomes VALUES (?)", [(n,) for n in nomes])
     db.commit()
     db.close()
 
 
 # -- Teclado ----------------------------------------------------------------
-def construir_teclado(lemas, conx, frec) -> int:
+def construir_teclado(lemas, conx, frec, nomes) -> int:
     formas: dict[str, int] = {}
     for r in lemas:
         for forma, _ in formas_do_lema(r, conx):
             formas[forma] = frec.get(forma, 0)
+    for nome in nomes:
+        formas.setdefault(nome, frec.get(nome.lower(), 0))
     maximo = max(formas.values()) or 1
     saida = DIST / "teclado"
     saida.mkdir(parents=True, exist_ok=True)
@@ -180,10 +185,10 @@ def construir_glosario(lemas, conx, kobo: bool) -> None:
 
 def main() -> None:
     DIST.mkdir(exist_ok=True)
-    lemas, conx, frec = cargar()
-    construir_sqlite(lemas, conx, frec)
+    lemas, conx, frec, nomes = cargar()
+    construir_sqlite(lemas, conx, frec, nomes)
     print("dist/dicionario.sqlite")
-    n = construir_teclado(lemas, conx, frec)
+    n = construir_teclado(lemas, conx, frec, nomes)
     print(f"dist/teclado/: {n} formas")
     construir_glosario(lemas, conx, "--kobo" in sys.argv)
     print("dist/kobo/galego.tsv" + (" e dicthtml-gl.zip" if "--kobo" in sys.argv else ""))

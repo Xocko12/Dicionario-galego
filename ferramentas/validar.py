@@ -84,6 +84,9 @@ def validar_estrutura() -> tuple[list[str], set[str]]:
             if not forma or forma != forma.strip() or " " in forma:
                 erros.append(f"{onde}: {lema}: forma incorrecta {forma!r}")
             formas.add(forma)
+    for n, r in ler_jsonl(DATOS / "nomes.jsonl"):
+        if not r.get("nome") or not r["nome"][0].isupper() or r.get("tipo") != "antropónimo":
+            erros.append(f"nomes.jsonl:{n}: nome incorrecto {r}")
     for lema in sorted(verbos - con_taboa):
         erros.append(f"lemas.jsonl: o verbo {lema} non ten táboa en conxugacions.jsonl")
     return erros, formas

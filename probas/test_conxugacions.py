@@ -44,6 +44,20 @@ REFERENCIA = {
     "ler": {"subxuntivo.presente": "lea leas lea leamos leades lean"},
     "crer": {"subxuntivo.presente": "crea creas crea creamos creades crean"},
     "erguer": {"subxuntivo.presente": "erga ergas erga ergamos ergades ergan"},
+    # revisado contra o conxugador da RAG
+    "prover": {
+        "indicativo.presente": "provexo provés prové provemos provedes provén",
+        "indicativo.copreterito": "provía provías provía proviamos proviades provían",
+        "indicativo.preterito": "provín proviches proveu provemos provestes proveron",
+        "indicativo.antepreterito": "provera proveras provera proveramos proverades proveran",
+        "indicativo.futuro": "proverei proverás proverá proveremos proveredes proverán",
+        "indicativo.pospreterito": "provería proverías provería proveriamos proveriades proverían",
+        "subxuntivo.presente": "provexa provexas provexa provexamos provexades provexan",
+        "subxuntivo.preterito": "provese proveses provese provésemos provésedes provesen",
+        "subxuntivo.futuro": "prover proveres prover provermos proverdes proveren",
+        "infinitivo.conxugado": "prover proveres prover provermos proverdes proveren",
+    },
+    "desprover": {"indicativo.presente": "desprovexo desprovés desprové desprovemos desprovedes desprovén"},
     "seguir": {"indicativo.presente": "sigo segues segue seguimos seguides seguen"},
     "dicir": {"indicativo.antepreterito": "dixera dixeras dixera dixeramos dixerades dixeran"},
 }

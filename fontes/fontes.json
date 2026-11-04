@@ -13,14 +13,29 @@
     "web": "https://academia.gal/dicionario",
     "licenza": "GPL-3.0-or-later",
     "uso": "Lemas, categoría gramatical e flexión. Proxecto Trasno ten permiso explícito do ILG-RAG para publicar este vocabulario con licenza GPL. Non inclúe definicións.",
-    "modulos": {"rag/gl/correcto.dic": "recomendado", "rag/gl/tolerado.dic": "tolerado"}
+    "modulos": {
+      "rag/gl/correcto.dic": "recomendado",
+      "rag/gl/tolerado.dic": "tolerado"
+    }
   },
   "volga": {
     "nome": "Vocabulario Ortográfico da Lingua Galega, RAG/ILG 2004 (módulo rag/volga de Hunspell-gl)",
     "web": "https://academia.gal/volga",
     "licenza": "GPL-3.0-or-later",
     "uso": "Lemas que non están no módulo do dicionario da RAG. Se un lema está nos dous, mándase o DRAG.",
-    "modulos": {"rag/volga/correcto.dic": "recomendado", "rag/volga/tolerado.dic": "tolerado"}
+    "modulos": {
+      "rag/volga/correcto.dic": "recomendado",
+      "rag/volga/tolerado.dic": "tolerado"
+    }
+  },
+  "rag-nomes": {
+    "nome": "Guía de nomes galegos da Real Academia Galega (módulo rag/nomes de Hunspell-gl)",
+    "web": "https://academia.gal/nomes",
+    "licenza": "GPL-3.0-or-later",
+    "uso": "Nomes propios de persoa (datos/nomes.jsonl).",
+    "modulos": {
+      "rag/nomes.dic": "recomendado"
+    }
   },
   "frecuencias-opensubtitles": {
     "nome": "FrequencyWords (OpenSubtitles 2018), lista galega",

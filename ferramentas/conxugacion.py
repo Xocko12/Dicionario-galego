@@ -209,6 +209,7 @@ COMPOSTOS = {
     "dicir": ("dicir", None),
     "ler": ("ler", {"reler", "trasler"}),
     "crer": ("crer", {"descrer"}),
+    "prover": ("prover", {"desprover"}),
 }
 # bendicir e maldicir teñen tamén formas regulares (bendicín, bendicirei): non se derivan.
 NON_DERIVAR = {"bendicir", "maldicir"}
