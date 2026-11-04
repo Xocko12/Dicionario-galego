@@ -89,7 +89,7 @@ def rotar_locucion(frase: str) -> str:
 
 # -- capas léxicas ------------------------------------------------------------
 
-def importar_lexico(capa: str, rutas: list[Path], h: Hunspell, frecuencias, correccions, xa_vistos: set[str]):
+def importar_lexico(capa: str, rutas: list[Path], h: Hunspell, frecuencias, correccions, referencia, xa_vistos: set[str]):
     fontes_ruta = {str(r): fonte_de(r) for r in rutas}
     omitir = C.omitir_encliticos(h)
     rexistros: dict[str, dict] = {}
@@ -142,6 +142,10 @@ def importar_lexico(capa: str, rutas: list[Path], h: Hunspell, frecuencias, corr
             correccion = correccions.get(r["lema"]) or C.correccion_derivada(r["lema"], correccions)
             if correccion:
                 s["correccions"] = C.aplicar_correccion(taboa, correccion)
+            if r["lema"] in referencia:
+                cambiadas = C.aplicar_referencia(taboa, referencia[r["lema"]])
+                if cambiadas:
+                    s["referencia"] = cambiadas
             if C.unipersoal(taboa) and "unipersoal" not in s.setdefault("tipos", []):
                 s["tipos"].append("unipersoal")
             if C.defectivo(taboa) and "defectivo" not in s.setdefault("tipos", []):
@@ -213,6 +217,8 @@ def main() -> None:
     SAIDA.mkdir(parents=True, exist_ok=True)
     frecuencias = I.ler_frecuencias(I.CACHE / "frecuencias-opensubtitles" / "gl_full.txt")
     correccions = json.loads((I.DATOS / "correccions" / "conxugacions.json").read_text(encoding="utf-8"))
+    referencia = json.loads((I.DATOS / "correccions" / "referencia.json").read_text(encoding="utf-8"))
+    referencia.pop("_descricion", None)
 
     rutas_capa = {capa: [r for m in cfg["modulos"] for r in ficheiros(m)] for capa, cfg in config.items()}
     lexicas = [c for c in config if config[c]["tipo"] == "lexico"]
@@ -223,7 +229,7 @@ def main() -> None:
         cfg = config[capa]
         if cfg["tipo"] != "lexico":
             continue
-        rexistros = importar_lexico(capa, rutas_capa[capa], h, frecuencias, correccions, xa_vistos)
+        rexistros = importar_lexico(capa, rutas_capa[capa], h, frecuencias, correccions, referencia, xa_vistos)
         if capa in pedidas:
             escribir(capa, rexistros)
 

@@ -243,6 +243,32 @@ def correccion_derivada(lema: str, correccions: dict) -> dict | None:
     return None
 
 
+def aplicar_referencia(taboa: dict, referencia: dict) -> list[str]:
+    """Como aplicar_correccion, pero devolve só as celas que cambiaron de
+    verdade (as que Hunspell tiña distintas). Compara como conxuntos."""
+    cambiadas = []
+    for clave, valor in referencia.get("celas", {}).items():
+        base, _, persoa = clave.rpartition(".")
+        if persoa in PERSOAS:
+            actual = taboa[base][PERSOAS.index(persoa)]
+            if set(actual) != set(valor):
+                taboa[base][PERSOAS.index(persoa)] = list(valor)
+                cambiadas.append(clave)
+        elif clave in ("participio", "xerundio", "infinitivo"):
+            if set(taboa[clave]) != set(valor):
+                taboa[clave] = list(valor)
+                cambiadas.append(clave)
+        elif clave in taboa and len(valor) == 6:
+            for p, cela in enumerate(valor):
+                cela = list(cela) if isinstance(cela, list) else [cela]
+                if set(taboa[clave][p]) != set(cela):
+                    taboa[clave][p] = cela
+                    cambiadas.append(f"{clave}.{PERSOAS[p]}")
+        else:
+            raise ValueError(f"Clave de referencia descoñecida: {clave}")
+    return cambiadas
+
+
 def formas(taboa: dict):
     """Todas as formas dunha táboa como (forma, clave, persoa|None)."""
     for clave, _ in TEMPOS:

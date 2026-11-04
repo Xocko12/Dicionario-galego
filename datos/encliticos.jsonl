@@ -12725,7 +12725,7 @@
 {"forma": "pódovos", "lema": "podar", "base": ["indicativo.presente.P1"], "pronomes": ["vos"], "frecuencia": 4}
 {"forma": "pódovos", "lema": "poder", "base": ["indicativo.presente.P1"], "pronomes": ["vos"], "frecuencia": 4}
 {"forma": "polarizáronse", "lema": "polarizar", "base": ["indicativo.preterito.P6"], "pronomes": ["se"], "frecuencia": 1}
-{"forma": "pólo", "lema": "pór", "base": ["infinitivo.conxugado.P3", "infinitivo.conxugado.P6"], "pronomes": ["o"], "frecuencia": 4}
+{"forma": "pólo", "lema": "pór", "base": ["infinitivo.conxugado.P3"], "pronomes": ["o"], "frecuencia": 4}
 {"forma": "pómonos", "lema": "pór", "base": ["indicativo.presente.P4"], "pronomes": ["nos"], "frecuencia": 1}
 {"forma": "pona", "lema": "poñer", "base": ["indicativo.presente.P3"], "pronomes": ["a"], "frecuencia": 13}
 {"forma": "póñalle", "lema": "poñer", "base": ["subxuntivo.presente.P1", "subxuntivo.presente.P3"], "pronomes": ["lle"], "frecuencia": 3}
@@ -12831,10 +12831,10 @@
 {"forma": "poríanos", "lema": "pór", "base": ["indicativo.pospreterito.P1", "indicativo.pospreterito.P3"], "pronomes": ["nos"], "frecuencia": 1}
 {"forma": "poríanos", "lema": "pór", "base": ["indicativo.pospreterito.P6"], "pronomes": ["os"], "frecuencia": 1}
 {"forma": "poríanse", "lema": "pór", "base": ["indicativo.pospreterito.P6"], "pronomes": ["se"], "frecuencia": 2}
-{"forma": "pórlle", "lema": "pór", "base": ["infinitivo.conxugado.P3", "infinitivo.conxugado.P6"], "pronomes": ["lle"], "frecuencia": 9}
-{"forma": "pórme", "lema": "pór", "base": ["infinitivo.conxugado.P3", "infinitivo.conxugado.P6"], "pronomes": ["me"], "frecuencia": 6}
-{"forma": "pórmos", "lema": "pór", "base": ["infinitivo.conxugado.P3", "infinitivo.conxugado.P6"], "pronomes": ["me", "os"], "frecuencia": 2}
-{"forma": "pórse", "lema": "pór", "base": ["infinitivo.conxugado.P3", "infinitivo.conxugado.P6"], "pronomes": ["se"], "frecuencia": 10}
+{"forma": "pórlle", "lema": "pór", "base": ["infinitivo.conxugado.P3"], "pronomes": ["lle"], "frecuencia": 9}
+{"forma": "pórme", "lema": "pór", "base": ["infinitivo.conxugado.P3"], "pronomes": ["me"], "frecuencia": 6}
+{"forma": "pórmos", "lema": "pór", "base": ["infinitivo.conxugado.P3"], "pronomes": ["me", "os"], "frecuencia": 2}
+{"forma": "pórse", "lema": "pór", "base": ["infinitivo.conxugado.P3"], "pronomes": ["se"], "frecuencia": 10}
 {"forma": "portábanse", "lema": "portar", "base": ["indicativo.copreterito.P6"], "pronomes": ["se"], "frecuencia": 1}
 {"forma": "portábase", "lema": "portar", "base": ["indicativo.copreterito.P1", "indicativo.copreterito.P3"], "pronomes": ["se"], "frecuencia": 1}
 {"forma": "pórtache", "lema": "portar", "base": ["indicativo.presente.P3", "imperativo.P2"], "pronomes": ["che"], "frecuencia": 1}
@@ -12845,7 +12845,7 @@
 {"forma": "portarte", "lema": "portar", "base": ["infinitivo.conxugado.P1", "subxuntivo.futuro.P1", "subxuntivo.futuro.P3"], "pronomes": ["te"], "frecuencia": 3}
 {"forma": "pórtase", "lema": "portar", "base": ["indicativo.presente.P3", "imperativo.P2"], "pronomes": ["se"], "frecuencia": 5}
 {"forma": "pórtate", "lema": "portar", "base": ["indicativo.presente.P3", "imperativo.P2"], "pronomes": ["te"], "frecuencia": 11}
-{"forma": "pórte", "lema": "pór", "base": ["infinitivo.conxugado.P3", "infinitivo.conxugado.P6"], "pronomes": ["te"], "frecuencia": 4}
+{"forma": "pórte", "lema": "pór", "base": ["infinitivo.conxugado.P3"], "pronomes": ["te"], "frecuencia": 4}
 {"forma": "porteime", "lema": "portar", "base": ["indicativo.preterito.P1"], "pronomes": ["me"], "frecuencia": 1}
 {"forma": "pórtense", "lema": "portar", "base": ["subxuntivo.presente.P6"], "pronomes": ["se"], "frecuencia": 1}
 {"forma": "portouse", "lema": "portar", "base": ["indicativo.preterito.P3"], "pronomes": ["se"], "frecuencia": 2}

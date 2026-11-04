@@ -78,6 +78,8 @@ CATEGORIAS = {
 # Non se importan: siglas, abreviaturas, símbolos, participios (van co verbo),
 # locucións e nomes propios. Algúns poden engadirse máis adiante.
 
+CAMBIOS_REFERENCIA: list = []
+
 PALABRAS_GRAMATICAIS = {
     "artigo", "pronome_persoal", "pronome", "demostrativo", "posesivo", "indefinido", "relativo",
     "interrogativo", "exclamativo", "preposición", "conxunción", "contracción", "adverbio",
@@ -246,6 +248,8 @@ def main() -> None:
     h = Hunspell(HUNSPELL / "gl.aff", [ruta for _, _, ruta in mods])
     frecuencias = ler_frecuencias(CACHE / "frecuencias-opensubtitles" / "gl_full.txt")
     correccions = json.loads((DATOS / "correccions" / "conxugacions.json").read_text(encoding="utf-8"))
+    referencia = json.loads((DATOS / "correccions" / "referencia.json").read_text(encoding="utf-8"))
+    referencia.pop("_descricion", None)
 
     def utilizable(e) -> bool:
         return (e.source in fonte_de and palabra_valida(e.word)
@@ -376,6 +380,12 @@ def main() -> None:
         if correccion:
             saida["correccions"] = C.aplicar_correccion(taboa, correccion)
             saida["fontes"] = ["hunspell-gl", "revision-manual"]
+        if lema in referencia:
+            cambiadas = C.aplicar_referencia(taboa, referencia[lema])
+            if cambiadas:
+                saida["referencia"] = cambiadas
+                saida["fontes"] = ["hunspell-gl", "revision-manual"]
+                CAMBIOS_REFERENCIA.append((lema, cambiadas))
         if C.unipersoal(taboa) and "unipersoal" not in r["tipos"]:
             r["tipos"].append("unipersoal")
         if C.defectivo(taboa) and "defectivo" not in r["tipos"]:
@@ -418,6 +428,9 @@ def main() -> None:
             if frecuencias.get(forma):
                 fh.write(f"{forma}\t{frecuencias[forma]}\n")
 
+    if CAMBIOS_REFERENCIA:
+        print(f"referencia: {len(CAMBIOS_REFERENCIA)} verbos con celas distintas de Hunspell: "
+              + ", ".join(f"{l} ({len(c)})" for l, c in CAMBIOS_REFERENCIA[:20]))
     n_nomes = escribir_nomes()
     n_loc = escribir_locucions(h, fonte_de)
 

@@ -124,6 +124,21 @@ Quedan fóra os verbos unipersoais e defectivos e calquera forma con dous tiles
 (as raíces alternativas *háer*, *ír*, *érer* producen *háánllelo*, *érádela*).
 `--encliticos N` cambia o número de verbos; `--encliticos 0` desactívao.
 
+**Táboas de referencia.** `datos/correccions/referencia.json` contén as táboas
+dos verbos irregulares e dos modelos de cada familia (*ser, estar, ter, haber,
+ir, facer, dicir, dar, vir, ver, poder, querer, saber, caber, traer, valer,
+pór/poñer, oír, saír, caer, ler, crer, rir, parir, durmir, subir, fuxir,
+servir, seguir, sentir, mentir, pedir, construír, coñecer, continuar, pasear,
+buscar, chegar, comezar, falar, comer, partir…*), escritas desde as Normas e o
+conxugador da RAG. Mandan sobre as regras de Hunspell-gl e están protexidas por
+`probas/test_referencia.py`. Ao aplicalas, só 2 verbos tiñan celas distintas do
+que xeran as regras (*ir, pór*): os outros ~45 xa coincidían. Para ampliar a
+referencia co conxugador da RAG, ver `docs/rag/README.md` e `ferramentas/comparar_rag.py`.
+
+**Cantidade.** `probas/test_cobertura.py` comproba que todos os verbos dos módulos
+da RAG teñen táboa (6 619), e as capas engaden os do Digalego, a comunidade e a
+terminoloxía (171 máis).
+
 **Comprobación independente dos tiles.** `ferramentas/acentuacion.py` implementa
 as regras de acentuación das Normas sen usar Hunspell (sílaba tónica da forma
 verbal, ditongos, hiatos, agudas/graves/esdrúxulas) e predí o til de cada forma
