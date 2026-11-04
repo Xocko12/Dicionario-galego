@@ -1501,7 +1501,7 @@
 {"forma": "apóioo", "lema": "apoiar", "base": ["indicativo.presente.P1"], "pronomes": ["o"], "frecuencia": 1}
 {"forma": "apóiote", "lema": "apoiar", "base": ["indicativo.presente.P1"], "pronomes": ["te"], "frecuencia": 1}
 {"forma": "apoioume", "lema": "apoiar", "base": ["indicativo.preterito.P3"], "pronomes": ["me"], "frecuencia": 1}
-{"forma": "apolo", "lema": "apor", "base": ["infinitivo.conxugado.P3", "infinitivo.conxugado.P6"], "pronomes": ["o"], "frecuencia": 7}
+{"forma": "apolo", "lema": "apor", "base": ["infinitivo.conxugado.P3"], "pronomes": ["o"], "frecuencia": 7}
 {"forma": "apolo", "lema": "apoñer", "base": ["indicativo.presente.P2"], "pronomes": ["o"], "frecuencia": 7}
 {"forma": "apónselles", "lema": "apoñer", "base": ["indicativo.presente.P3"], "pronomes": ["se", "lles"], "frecuencia": 1}
 {"forma": "aponvos", "lema": "apoñer", "base": ["indicativo.presente.P3"], "pronomes": ["vos"], "frecuencia": 1}
@@ -1754,7 +1754,7 @@
 {"forma": "arrepínteste", "lema": "arrepentir", "base": ["indicativo.presente.P2"], "pronomes": ["te"], "frecuencia": 4}
 {"forma": "arrepíntome", "lema": "arrepentir", "base": ["indicativo.presente.P1"], "pronomes": ["me"], "frecuencia": 4}
 {"forma": "arrepiouse", "lema": "arrepiar", "base": ["indicativo.preterito.P3"], "pronomes": ["se"], "frecuencia": 1}
-{"forma": "arreporse", "lema": "arrepor", "base": ["infinitivo.conxugado.P3", "infinitivo.conxugado.P6"], "pronomes": ["se"], "frecuencia": 1}
+{"forma": "arreporse", "lema": "arrepor", "base": ["infinitivo.conxugado.P3"], "pronomes": ["se"], "frecuencia": 1}
 {"forma": "arrepúñase", "lema": "arrepor", "base": ["indicativo.copreterito.P1", "indicativo.copreterito.P3"], "pronomes": ["se"], "frecuencia": 1}
 {"forma": "arrestábanos", "lema": "arrestar", "base": ["indicativo.copreterito.P1", "indicativo.copreterito.P3"], "pronomes": ["nos"], "frecuencia": 1}
 {"forma": "arrestábanos", "lema": "arrestar", "base": ["indicativo.copreterito.P6"], "pronomes": ["os"], "frecuencia": 1}
@@ -8230,7 +8230,7 @@
 {"forma": "explótanos", "lema": "explotar", "base": ["indicativo.presente.P6"], "pronomes": ["os"], "frecuencia": 2}
 {"forma": "explotarme", "lema": "explotar", "base": ["infinitivo.conxugado.P1", "subxuntivo.futuro.P1", "subxuntivo.futuro.P3"], "pronomes": ["me"], "frecuencia": 1}
 {"forma": "explotarnos", "lema": "explotar", "base": ["infinitivo.conxugado.P1", "subxuntivo.futuro.P1", "subxuntivo.futuro.P3"], "pronomes": ["nos"], "frecuencia": 1}
-{"forma": "expolo", "lema": "expor", "base": ["infinitivo.conxugado.P3", "infinitivo.conxugado.P6"], "pronomes": ["o"], "frecuencia": 1}
+{"forma": "expolo", "lema": "expor", "base": ["infinitivo.conxugado.P3"], "pronomes": ["o"], "frecuencia": 1}
 {"forma": "expolo", "lema": "expoñer", "base": ["indicativo.presente.P2"], "pronomes": ["o"], "frecuencia": 1}
 {"forma": "expoñelo", "lema": "expoñer", "base": ["infinitivo.conxugado.P1", "infinitivo.conxugado.P3"], "pronomes": ["o"], "frecuencia": 1}
 {"forma": "expoñémonos", "lema": "expoñer", "base": ["indicativo.presente.P4"], "pronomes": ["nos"], "frecuencia": 1}
@@ -8239,7 +8239,7 @@
 {"forma": "expoñerse", "lema": "expoñer", "base": ["infinitivo.conxugado.P1", "infinitivo.conxugado.P3"], "pronomes": ["se"], "frecuencia": 1}
 {"forma": "expóñoos", "lema": "expoñer", "base": ["indicativo.presente.P1"], "pronomes": ["os"], "frecuencia": 1}
 {"forma": "exponte", "lema": "expoñer", "base": ["indicativo.presente.P3"], "pronomes": ["te"], "frecuencia": 2}
-{"forma": "exporse", "lema": "expor", "base": ["infinitivo.conxugado.P3", "infinitivo.conxugado.P6"], "pronomes": ["se"], "frecuencia": 3}
+{"forma": "exporse", "lema": "expor", "base": ["infinitivo.conxugado.P3"], "pronomes": ["se"], "frecuencia": 3}
 {"forma": "expórtana", "lema": "exportar", "base": ["indicativo.presente.P6"], "pronomes": ["a"], "frecuencia": 2}
 {"forma": "expresala", "lema": "expresar", "base": ["infinitivo.conxugado.P1", "subxuntivo.futuro.P1", "subxuntivo.futuro.P3"], "pronomes": ["a"], "frecuencia": 1}
 {"forma": "expresalas", "lema": "expresar", "base": ["infinitivo.conxugado.P1", "subxuntivo.futuro.P1", "subxuntivo.futuro.P3"], "pronomes": ["as"], "frecuencia": 1}
@@ -9480,9 +9480,9 @@
 {"forma": "impoñerse", "lema": "impoñer", "base": ["infinitivo.conxugado.P1", "infinitivo.conxugado.P3"], "pronomes": ["se"], "frecuencia": 1}
 {"forma": "imponnos", "lema": "impoñer", "base": ["indicativo.presente.P3"], "pronomes": ["nos"], "frecuencia": 1}
 {"forma": "imponse", "lema": "impoñer", "base": ["indicativo.presente.P3"], "pronomes": ["se"], "frecuencia": 1}
-{"forma": "imporlle", "lema": "impor", "base": ["infinitivo.conxugado.P3", "infinitivo.conxugado.P6"], "pronomes": ["lle"], "frecuencia": 1}
-{"forma": "impornos", "lema": "impor", "base": ["infinitivo.conxugado.P3", "infinitivo.conxugado.P6"], "pronomes": ["nos"], "frecuencia": 1}
-{"forma": "imporse", "lema": "impor", "base": ["infinitivo.conxugado.P3", "infinitivo.conxugado.P6"], "pronomes": ["se"], "frecuencia": 2}
+{"forma": "imporlle", "lema": "impor", "base": ["infinitivo.conxugado.P3"], "pronomes": ["lle"], "frecuencia": 1}
+{"forma": "impornos", "lema": "impor", "base": ["infinitivo.conxugado.P3"], "pronomes": ["nos"], "frecuencia": 1}
+{"forma": "imporse", "lema": "impor", "base": ["infinitivo.conxugado.P3"], "pronomes": ["se"], "frecuencia": 2}
 {"forma": "importábache", "lema": "importar", "base": ["indicativo.copreterito.P1", "indicativo.copreterito.P3"], "pronomes": ["che"], "frecuencia": 1}
 {"forma": "importábame", "lema": "importar", "base": ["indicativo.copreterito.P1", "indicativo.copreterito.P3"], "pronomes": ["me"], "frecuencia": 1}
 {"forma": "impórtache", "lema": "importar", "base": ["indicativo.presente.P3", "imperativo.P2"], "pronomes": ["che"], "frecuencia": 34}
@@ -11693,7 +11693,7 @@
 {"forma": "opóñome", "lema": "opoñer", "base": ["indicativo.presente.P1"], "pronomes": ["me"], "frecuencia": 3}
 {"forma": "oponse", "lema": "opoñer", "base": ["indicativo.presente.P3"], "pronomes": ["se"], "frecuencia": 4}
 {"forma": "oporíase", "lema": "opor", "base": ["indicativo.pospreterito.P1", "indicativo.pospreterito.P3"], "pronomes": ["se"], "frecuencia": 1}
-{"forma": "oporse", "lema": "opor", "base": ["infinitivo.conxugado.P3", "infinitivo.conxugado.P6"], "pronomes": ["se"], "frecuencia": 4}
+{"forma": "oporse", "lema": "opor", "base": ["infinitivo.conxugado.P3"], "pronomes": ["se"], "frecuencia": 4}
 {"forma": "oprímennos", "lema": "oprimir", "base": ["indicativo.presente.P6"], "pronomes": ["nos"], "frecuencia": 1}
 {"forma": "oprimirvos", "lema": "oprimir", "base": ["infinitivo.conxugado.P1", "infinitivo.conxugado.P3"], "pronomes": ["vos"], "frecuencia": 1}
 {"forma": "optouse", "lema": "optar", "base": ["indicativo.preterito.P3"], "pronomes": ["se"], "frecuencia": 1}
@@ -13430,7 +13430,7 @@
 {"forma": "proporcionarte", "lema": "proporcionar", "base": ["infinitivo.conxugado.P1", "subxuntivo.futuro.P1", "subxuntivo.futuro.P3"], "pronomes": ["te"], "frecuencia": 1}
 {"forma": "proporcionounos", "lema": "proporcionar", "base": ["indicativo.preterito.P3"], "pronomes": ["os"], "frecuencia": 1}
 {"forma": "proporcionounos", "lema": "proporcionar", "base": ["indicativo.preterito.P3"], "pronomes": ["nos"], "frecuencia": 1}
-{"forma": "proporlle", "lema": "propor", "base": ["infinitivo.conxugado.P3", "infinitivo.conxugado.P6"], "pronomes": ["lle"], "frecuencia": 1}
+{"forma": "proporlle", "lema": "propor", "base": ["infinitivo.conxugado.P3"], "pronomes": ["lle"], "frecuencia": 1}
 {"forma": "propuxémoslle", "lema": "propoñer", "base": ["indicativo.preterito.P4"], "pronomes": ["lle"], "frecuencia": 1}
 {"forma": "propuxéronme", "lema": "propoñer", "base": ["indicativo.preterito.P6"], "pronomes": ["me"], "frecuencia": 1}
 {"forma": "propúxocho", "lema": "propoñer", "base": ["indicativo.preterito.P3"], "pronomes": ["che", "o"], "frecuencia": 1}
@@ -15387,7 +15387,7 @@
 {"forma": "sobreenténdese", "lema": "sobreentender", "base": ["indicativo.presente.P3"], "pronomes": ["se"], "frecuencia": 1}
 {"forma": "sobrepóñense", "lema": "sobrepoñer", "base": ["indicativo.presente.P6"], "pronomes": ["se"], "frecuencia": 1}
 {"forma": "sobrepoñerse", "lema": "sobrepoñer", "base": ["infinitivo.conxugado.P1", "infinitivo.conxugado.P3"], "pronomes": ["se"], "frecuencia": 1}
-{"forma": "sobreporte", "lema": "sobrepor", "base": ["infinitivo.conxugado.P3", "infinitivo.conxugado.P6"], "pronomes": ["te"], "frecuencia": 1}
+{"forma": "sobreporte", "lema": "sobrepor", "base": ["infinitivo.conxugado.P3"], "pronomes": ["te"], "frecuencia": 1}
 {"forma": "sobrevóannos", "lema": "sobrevoar", "base": ["indicativo.presente.P6"], "pronomes": ["nos"], "frecuencia": 2}
 {"forma": "sobrevóase", "lema": "sobrevoar", "base": ["indicativo.presente.P3", "imperativo.P2"], "pronomes": ["se"], "frecuencia": 1}
 {"forma": "sóldaa", "lema": "soldar", "base": ["indicativo.presente.P3", "imperativo.P2"], "pronomes": ["a"], "frecuencia": 1}
@@ -15648,7 +15648,7 @@
 {"forma": "suplícovolo", "lema": "suplicar", "base": ["indicativo.presente.P1"], "pronomes": ["vos", "o"], "frecuencia": 1}
 {"forma": "suplícovos", "lema": "suplicar", "base": ["indicativo.presente.P1"], "pronomes": ["vos"], "frecuencia": 3}
 {"forma": "supliqueilles", "lema": "suplicar", "base": ["indicativo.preterito.P1"], "pronomes": ["lles"], "frecuencia": 1}
-{"forma": "supolo", "lema": "supor", "base": ["infinitivo.conxugado.P3", "infinitivo.conxugado.P6"], "pronomes": ["o"], "frecuencia": 1}
+{"forma": "supolo", "lema": "supor", "base": ["infinitivo.conxugado.P3"], "pronomes": ["o"], "frecuencia": 1}
 {"forma": "supolo", "lema": "supoñer", "base": ["indicativo.presente.P2"], "pronomes": ["o"], "frecuencia": 1}
 {"forma": "suponche", "lema": "supoñer", "base": ["indicativo.presente.P3"], "pronomes": ["che"], "frecuencia": 1}
 {"forma": "supoñíase", "lema": "supoñer", "base": ["indicativo.copreterito.P1", "indicativo.copreterito.P3"], "pronomes": ["se"], "frecuencia": 10}

@@ -22,6 +22,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
+import compostos  # noqa: E402
 import conxugacion as C  # noqa: E402
 import importar as I  # noqa: E402
 from hunspell import Hunspell  # noqa: E402
@@ -219,6 +220,7 @@ def main() -> None:
     correccions = json.loads((I.DATOS / "correccions" / "conxugacions.json").read_text(encoding="utf-8"))
     referencia = json.loads((I.DATOS / "correccions" / "referencia.json").read_text(encoding="utf-8"))
     referencia.pop("_descricion", None)
+    referencia = compostos.con_compostos(referencia)
 
     rutas_capa = {capa: [r for m in cfg["modulos"] for r in ficheiros(m)] for capa, cfg in config.items()}
     lexicas = [c for c in config if config[c]["tipo"] == "lexico"]

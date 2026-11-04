@@ -26,9 +26,13 @@ class ProbasReferencia(unittest.TestCase):
         cls.taboas = taboas()
         cls.referencia = json.loads((RAIZ / "datos" / "correccions" / "referencia.json").read_text(encoding="utf-8"))
         cls.referencia.pop("_descricion", None)
+        import compostos
+        cls.referencia = compostos.con_compostos(cls.referencia)
 
     def test_todos_os_verbos_de_referencia_existen(self):
-        self.assertEqual([l for l in self.referencia if l not in self.taboas], [])
+        # os compostos derivados poden non estar nas fontes (prevaler, antever)
+        escritos = [l for l, r in self.referencia.items() if not r.get("nota", "").startswith("Derivada")]
+        self.assertEqual([l for l in escritos if l not in self.taboas], [])
 
     def test_celas(self):
         for lema, ref in self.referencia.items():

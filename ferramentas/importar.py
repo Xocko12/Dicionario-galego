@@ -14,6 +14,7 @@ Xera:
     datos/frecuencias.tsv     frecuencia de cada forma no corpus
     datos/nomes.jsonl         nomes propios de persoa (Guía de nomes galegos da RAG)
     datos/locucions.jsonl     locucións da RAG (a pesar de, ao redor, a miúdo...)
+    datos/sinonimos.jsonl     sinónimos (thesaurus do VOLGa)
     datos/encliticos.jsonl    formas verbais con pronomes enclíticos de uso real
 """
 
@@ -27,6 +28,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
+import compostos  # noqa: E402
 import conxugacion as C  # noqa: E402
 import encliticos  # noqa: E402
 from hunspell import Hunspell  # noqa: E402
@@ -189,6 +191,43 @@ FUNCIONAIS = {"a", "á", "ao", "ó", "ás", "ós", "aos", "de", "do", "da", "dos
               "un", "unha", "dun", "dunha", "nun", "nunha"}
 
 
+NON_RECOMENDADA = "recoméndase, mellor, outro termo sinonímico"
+
+
+def escribir_sinonimos() -> int:
+    """datos/sinonimos.jsonl desde o thesaurus do VOLGa (formato MyThes:
+    «lema|n» e n liñas «(categoría)|sinónimo|sinónimo (nota)»)."""
+    ruta = CACHE / "thesaurus-volga" / "thesaurus_gl.dat"
+    liñas = ruta.read_text(encoding="latin-1").splitlines()
+    entradas: dict[tuple[str, str], dict] = {}
+    i = 1
+    while i < len(liñas):
+        lema, _, n = liñas[i].partition("|")
+        i += 1
+        for _ in range(int(n or 0)):
+            partes = liñas[i].split("|")
+            i += 1
+            categoria = partes[0].strip("()")
+            sinonimos = []
+            for texto in partes[1:]:
+                forma, _, nota = texto.partition(" (")
+                nota = nota.rstrip(")") if nota else ""
+                x = {"forma": forma.strip()}
+                if nota == NON_RECOMENDADA:     # ese sinónimo é forma tolerada, non a preferida
+                    x["non_recomendada"] = True
+                elif nota:
+                    x["nota"] = nota
+                sinonimos.append(x)
+            r = entradas.setdefault((lema, categoria), {"lema": lema, "categoria": categoria, "sinonimos": [],
+                                                        "fontes": ["thesaurus-volga"]})
+            vistos = {x["forma"] for x in r["sinonimos"]}
+            r["sinonimos"] += [x for x in sinonimos if x["forma"] not in vistos and x["forma"] != lema]
+    with (DATOS / "sinonimos.jsonl").open("w", encoding="utf-8") as fh:
+        for clave in sorted(entradas, key=lambda k: (clave_orde(k[0]), k[1])):
+            fh.write(json.dumps(entradas[clave], ensure_ascii=False) + "\n")
+    return len(entradas)
+
+
 def escribir_locucions(h, fonte_de) -> int:
     """datos/locucions.jsonl: locucións da RAG, reconstruídas das etiquetas
     is:ngrama_ (cada palabra da locución é unha entrada co n-grama completo)."""
@@ -250,6 +289,7 @@ def main() -> None:
     correccions = json.loads((DATOS / "correccions" / "conxugacions.json").read_text(encoding="utf-8"))
     referencia = json.loads((DATOS / "correccions" / "referencia.json").read_text(encoding="utf-8"))
     referencia.pop("_descricion", None)
+    referencia = compostos.con_compostos(referencia)
 
     def utilizable(e) -> bool:
         return (e.source in fonte_de and palabra_valida(e.word)
@@ -431,6 +471,7 @@ def main() -> None:
     if CAMBIOS_REFERENCIA:
         print(f"referencia: {len(CAMBIOS_REFERENCIA)} verbos con celas distintas de Hunspell: "
               + ", ".join(f"{l} ({len(c)})" for l, c in CAMBIOS_REFERENCIA[:20]))
+    n_sin = escribir_sinonimos()
     n_nomes = escribir_nomes()
     n_loc = escribir_locucions(h, fonte_de)
 
@@ -446,7 +487,7 @@ def main() -> None:
 
     n_verbos = sum(1 for r in escollidos if r["categoria"] == "verbo")
     print(f"{len(escollidos)} lemas ({n_verbos} verbos), {len(formas_catalogo)} formas, "
-          f"{len(encl)} formas con enclíticos, {n_nomes} nomes propios, {n_loc} locucións.")
+          f"{len(encl)} formas con enclíticos, {n_nomes} nomes propios, {n_loc} locucións, {n_sin} entradas de sinónimos.")
     if sen_completar:
         print(f"{len(sen_completar)} verbos con celas baleiras: {', '.join(sen_completar[:40])}")
 

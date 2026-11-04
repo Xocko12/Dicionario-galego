@@ -26,7 +26,8 @@ Os ficheiros `.txt` quedan neste cartafol como rexistro do que se comprobou.
 ## Que verbos comprobar primeiro
 
 Os irregulares e os modelos de cada familia xa están en `referencia.json`
-(escritos desde as Normas). Primeiro de todo, **moer, roer, choer** (Hunspell-gl dá *moio/moia*; hai que
+(escritos desde as Normas). Primeiro de todo, **moer, roer, choer**, **reler, descrer** (*rele* ou *relé*?) e os
+compostos de *traer* (*atraer, contraer, distraer*: pretérito regular *contraeu*?) (Hunspell-gl dá *moio/moia*; hai que
 confirmar se a RAG dá *moo/moa*). Despois, os verbos de uso
 frecuente con algunha irregularidade: compostos de *pór/ter/vir/dicir/facer*
 (*supor, manter, convir, predicir, desfacer*), *ouvir, pracer, doer, choer,

@@ -21,6 +21,8 @@ con licenza GPL e permiso explícito do ILG-RAG. **Non inclúe definicións.**
 | Palabras gramaticais | artigos, 26 pronomes persoais, posesivos, demostrativos, indefinidos, relativos, interrogativos, exclamativos, 55 preposicións, 37 conxuncións e 50 contraccións coa súa composición (*do* = *de* + *o*, *cho* = *che* + *o*) |
 
 | Locucións | 431 da RAG (*a pesar de*, *ao redor*, *de súpeto*), en `datos/locucions.jsonl` |
+| Sinónimos | 6 997 entradas do thesaurus do VOLGa (GPL), en `datos/sinonimos.jsonl`, con marca das formas toleradas |
+| Separación silábica | patróns `hyph_gl.dic` de Trasno, en `dist/hyphenation/` |
 
 ### Capas opcionais (`datos/capas/`)
 
@@ -49,6 +51,7 @@ etiquetas de n-grama de Hunspell-gl. Todas as capas veñen de Hunspell-gl (GPL-3
 datos/                  o catálogo (xerado e revisado)
   lemas.jsonl           un lema por liña (núcleo normativo: RAG)
   locucions.jsonl       locucións da RAG
+  sinonimos.jsonl       sinónimos (thesaurus do VOLGa)
   capas/                capas opcionais (Digalego, terminoloxía, siglas, topónimos...)
   conxugacions.jsonl    táboa de conxugación de cada verbo
   encliticos.jsonl      formas verbais con pronomes enclíticos de uso real
@@ -130,9 +133,15 @@ ir, facer, dicir, dar, vir, ver, poder, querer, saber, caber, traer, valer,
 pór/poñer, oír, saír, caer, ler, crer, rir, parir, durmir, subir, fuxir,
 servir, seguir, sentir, mentir, pedir, construír, coñecer, continuar, pasear,
 buscar, chegar, comezar, falar, comer, partir…*), escritas desde as Normas e o
-conxugador da RAG. Mandan sobre as regras de Hunspell-gl e están protexidas por
-`probas/test_referencia.py`. Ao aplicalas, só 2 verbos tiñan celas distintas do
-que xeran as regras (*ir, pór*): os outros ~45 xa coincidían. Para ampliar a
+conxugador da RAG (44 verbos), máis as dos **compostos** derivadas delas
+(`ferramentas/compostos.py`: *manter* como *ter*, *convir* como *vir*, *supor* como
+*pór*, *desfacer*, *predicir*, *prever*, *sobresaír*, *conseguir*…, ~110 verbos, co til
+recalculado: *ten → mantén*, *di → predí*). Mandan sobre as regras de Hunspell-gl e
+están protexidas por `probas/test_referencia.py`. Ao aplicalas, dos 44 verbos escritos
+só 2 tiñan celas distintas do que xeran as regras (*ir, pór*); nos compostos
+corrixiuse o pretérito dos de *vir* (Hunspell admitía *conviu* xunto a *conveu*).
+A comparación tamén serviu ao revés: os compostos de *traer* **non** se derivan,
+porque teñen pretérito regular (*contraeu*), como ben facía Hunspell. Para ampliar a
 referencia co conxugador da RAG, ver `docs/rag/README.md` e `ferramentas/comparar_rag.py`.
 
 **Cantidade.** `probas/test_cobertura.py` comproba que todos os verbos dos módulos
@@ -209,9 +218,10 @@ python3 ferramentas/construir.py --kobo
 | `dicionario.sqlite` | Táboas `lemas` (con `capa`: `rag` = núcleo), `formas` (forma → lema + trazo gramatical), `encliticos` (~800 000, con `orixe`), `locucions`, `siglas`, `onomastica`, `codigos`, `nomes`. ~140 MB. |
 | `teclado/gl_wordlist.combined` | ~1,3 millóns de palabras (núcleo, enclíticos, capas léxicas, siglas, topónimos e nomes galegos) con frecuencia no formato dos teclados AOSP; con `dicttool` convértese no `.dict` de HeliBoard e similares. |
 | `teclado/palabras.tsv` | `forma<TAB>frecuencia`, para outros teclados. |
-| `kobo/dicthtml-gl.zip` | Dicionario para Kobo: ao tocar unha forma (*dixeches*) abre o lema (*dicir*) coa súa categoría e conxugación. Pendente de probar nun dispositivo. |
+| `kobo/dicthtml-gl.zip` | Dicionario para Kobo: ao tocar unha forma (*dixeches*) abre o lema (*dicir*) coa súa categoría, conxugación e sinónimos. Pendente de probar nun dispositivo. |
 | `kobo/galego.tsv` | O mesmo en formato tabulado (fonte dos tres seguintes, vía [pyglossary](https://github.com/ilius/pyglossary)). |
 | `stardict/galego.*` | StarDict: GoldenDict (Linux/Windows/Android) e apps de dicionario de iOS e Android que lean StarDict. |
+| `hyphenation/hyph_gl.dic` | Patróns de separación silábica (orixinal ISO-8859-1 e copia UTF-8), para LibreOffice, a biblioteca Hyphen e lectores electrónicos. |
 | `apple/Galego.apple/` | Fonte para **Dictionary.app de macOS**. Nun Mac, co *Dictionary Development Kit* (en *Additional Tools for Xcode*, gratuíto) instalado en `/Applications/Utilities/`: `cd Galego.apple && make && make install`. Despois actívase en Dictionary.app → Preferencias. Funciona co «Buscar» de tres dedos en todo macOS. |
 
 **iOS** non permite engadir dicionarios ao «Buscar» do sistema; as opcións son unha
@@ -223,6 +233,8 @@ Tampouco macOS nin iOS aceptan listas de palabras para o teclado do sistema.
 | Fonte | Licenza | Uso |
 |---|---|---|
 | Vocabulario do DRAG e VOLGa, vía [Hunspell-gl](https://gitlab.com/trasno/hunspell-gl) (Proxecto Trasno), versión fixada en `fontes/fontes.json` | GPL-3.0 | lemas, categorías, flexión e conxugación |
+| Thesaurus do VOLGa (Miguel Solla, 2010; extensión de LibreOffice de Trasno) | GPL-3.0 | sinónimos |
+| `hyph_gl.dic` (extensión de LibreOffice de Trasno) | GPL-3.0 | separación silábica |
 | [FrequencyWords](https://github.com/hermitdave/FrequencyWords) (OpenSubtitles 2018) | CC BY-SA 4.0 | frecuencias |
 | Revisión manual | GPL-3.0 | correccións segundo as *Normas ortográficas e morfolóxicas do idioma galego* (RAG/ILG) |
 
@@ -240,7 +252,6 @@ Todo o proxecto (datos e código) publícase baixo a **GPL-3.0 ou posterior**
 ## Folla de ruta
 
 - [ ] Definicións abertas (Wiktionary galego, CC BY-SA) como capa separada.
-- [ ] Sinónimos (tesauro de LibreOffice para o galego).
 - [ ] Ampliar as formas con enclíticos atestadas cun corpus maior.
 - [ ] Revisar unha mostra das formas sistemáticas con enclíticos contra a RAG.
 - [ ] Probar `apple/Galego.apple` nun Mac e o StarDict nunha app de iOS.

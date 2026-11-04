@@ -68,6 +68,12 @@ def cargar_capas() -> dict:
     ruta = DATOS / "locucions.jsonl"
     if ruta.exists():
         capas["locucions"] = [json.loads(l) for l in ruta.open(encoding="utf-8")]
+    capas["sinonimos"] = {}
+    ruta = DATOS / "sinonimos.jsonl"
+    if ruta.exists():
+        for l in ruta.open(encoding="utf-8"):
+            r = json.loads(l)
+            capas["sinonimos"].setdefault(r["lema"], []).append(r)
     return capas
 
 
@@ -101,6 +107,9 @@ def construir_sqlite(lemas, conx, frec, nomes, encl, capas) -> None:
         CREATE TABLE siglas (forma TEXT NOT NULL, tipo TEXT NOT NULL, nota TEXT, fontes TEXT);
         CREATE TABLE onomastica (nome TEXT NOT NULL, tipo TEXT NOT NULL, capa TEXT NOT NULL, fontes TEXT, nota TEXT);
         CREATE TABLE codigos (codigo TEXT NOT NULL, tipo TEXT NOT NULL, nota TEXT);
+        CREATE TABLE sinonimos (lema TEXT NOT NULL, categoria TEXT, sinonimo TEXT NOT NULL, nota TEXT,
+                                sinonimo_tolerado INTEGER NOT NULL DEFAULT 0);
+        CREATE INDEX sinonimos_lema ON sinonimos(lema);
         CREATE INDEX siglas_forma ON siglas(forma);
         CREATE INDEX onomastica_nome ON onomastica(nome);
         CREATE TABLE formas (forma TEXT NOT NULL, lema_id TEXT NOT NULL REFERENCES lemas(id),
@@ -129,6 +138,9 @@ def construir_sqlite(lemas, conx, frec, nomes, encl, capas) -> None:
     db.executemany("INSERT INTO onomastica VALUES (?,?,?,?,?)",
                    [(r["nome"], r["tipo"], r["capa"], ",".join(r["fontes"]), r.get("nota")) for r in capas["onomastica"]])
     db.executemany("INSERT INTO codigos VALUES (?,?,?)", [(r["codigo"], r["tipo"], r.get("nota")) for r in capas["codigos"]])
+    db.executemany("INSERT INTO sinonimos VALUES (?,?,?,?,?)", [
+        (r["lema"], r["categoria"], x["forma"], x.get("nota"), int(x.get("non_recomendada", False)))
+        for lista in capas["sinonimos"].values() for r in lista for x in r["sinonimos"]])
     db.executemany("INSERT INTO encliticos VALUES (?,?,?,?,?,?)", [
         (r["forma"], f"{r['lema']}#verbo", ",".join(r["base"]), "+".join(r["pronomes"]), r["frecuencia"], r["orixe"])
         for r in encl])
@@ -217,6 +229,15 @@ def html_lema(r: dict, conx: dict) -> str:
 NOMES_CAPAS = {"digalego": "Digalego", "comunidade": "comunidade", "terminoloxia": "terminoloxía"}
 
 
+def html_sinonimos(lema: str, capas: dict) -> str:
+    partes = []
+    for r in capas["sinonimos"].get(lema, []):
+        formas = ", ".join(x["forma"] + (f" ({x['nota']})" if x.get("nota") else "")
+                           + (" [tolerada]" if x.get("non_recomendada") else "") for x in r["sinonimos"])
+        partes.append(f"<p><i>Sin.</i> ({html.escape(r['categoria'])}): {html.escape(formas)}</p>")
+    return "".join(partes)
+
+
 def construir_glosario(lemas, conx, encl, capas, kobo: bool) -> None:
     saida = DIST / "kobo"
     saida.mkdir(parents=True, exist_ok=True)
@@ -244,7 +265,7 @@ def construir_glosario(lemas, conx, encl, capas, kobo: bool) -> None:
                 if forma not in alternativas:
                     alternativas.append(forma)
             cabeceira = "|".join([lema] + alternativas)
-            corpo = "<hr/>".join(html_lema(r, conx) for r in rexistros)
+            corpo = "<hr/>".join(html_lema(r, conx) for r in rexistros) + html_sinonimos(lema, capas)
             fh.write(f"{cabeceira}\t{corpo}\n")
     if kobo:
         from pyglossary.glossary_v2 import ConvertArgs, Glossary
@@ -289,8 +310,26 @@ def encliticos_sistematicos(lemas, conx, n_verbos: int) -> list[dict]:
         taboas, simples)
 
 
+def construir_hyphenation() -> None:
+    """Patróns de separación silábica, no orixinal (ISO-8859-1) e en UTF-8."""
+    orixe = RAIZ / "fontes" / "cache" / "hyph-gl" / "hyph_gl.dic"
+    if not orixe.exists():
+        return
+    destino = DIST / "hyphenation"
+    destino.mkdir(parents=True, exist_ok=True)
+    (destino / "hyph_gl.dic").write_bytes(orixe.read_bytes())
+    texto = orixe.read_text(encoding="latin-1").splitlines()
+    if texto and texto[0].strip().upper().startswith("ISO8859"):
+        texto[0] = "UTF-8"
+    (destino / "hyph_gl_utf8.dic").write_text("\n".join(texto) + "\n", encoding="utf-8")
+    (destino / "LICENZA.txt").write_text(
+        "hyph_gl.dic: patróns de separación silábica do galego, Proxecto Trasno "
+        "(extensión de LibreOffice), GPL-3.0-or-later.\n", encoding="utf-8")
+
+
 def main() -> None:
     DIST.mkdir(exist_ok=True)
+    construir_hyphenation()
     lemas, conx, frec, nomes, encl = cargar()
     capas = cargar_capas()
     n_verbos = 600

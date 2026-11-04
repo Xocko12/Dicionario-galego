@@ -101,6 +101,9 @@ def validar_estrutura() -> tuple[list[str], set[str]]:
     for n, r in ler_jsonl(DATOS / "locucions.jsonl"):
         if not r.get("locucion") or " " not in r["locucion"] or not r.get("categorias"):
             erros.append(f"locucions.jsonl:{n}: locución incorrecta {r}")
+    for n, r in ler_jsonl(DATOS / "sinonimos.jsonl"):
+        if not r.get("lema") or not r.get("sinonimos") or any(not x.get("forma") for x in r["sinonimos"]):
+            erros.append(f"sinonimos.jsonl:{n}: entrada incorrecta {r}")
     erros += validar_capas(formas)
 
     dous_tiles = re.compile(r"[áéíóú].*[áéíóú]")

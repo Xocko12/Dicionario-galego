@@ -55,3 +55,13 @@ class ProbasCapas(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class ProbasSinonimos(unittest.TestCase):
+    def test_sinonimos(self):
+        sin = {}
+        for r in ler("sinonimos.jsonl"):
+            sin.setdefault(r["lema"], set()).update(x["forma"] for x in r["sinonimos"])
+        self.assertIn("faldra", sin["aba"])
+        self.assertIn("bastar", sin["abastar"])
+        self.assertGreater(len(sin), 6000)

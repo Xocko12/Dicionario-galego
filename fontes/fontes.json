@@ -37,6 +37,25 @@
       "rag/nomes.dic": "recomendado"
     }
   },
+  "thesaurus-volga": {
+    "nome": "Thesaurus da lingua galega (sinónimos do VOLGa), Miguel Solla 2010, distribuído coa extensión de LibreOffice de Proxecto Trasno",
+    "web": "https://extensions.libreoffice.org/en/extensions/show/corrector-ortografico-para-galego",
+    "licenza": "GPL-3.0-or-later",
+    "uso": "Sinónimos e formas recomendadas (datos/sinonimos.jsonl).",
+    "ficheiros": {
+      "thesaurus_gl.dat": "https://raw.githubusercontent.com/LibreOffice/dictionaries/master/gl/thesaurus_gl.dat",
+      "README_th_gl.txt": "https://raw.githubusercontent.com/LibreOffice/dictionaries/master/gl/README_th_gl.txt"
+    }
+  },
+  "hyph-gl": {
+    "nome": "Patróns de separación silábica do galego (extensión de LibreOffice de Proxecto Trasno)",
+    "web": "https://gitlab.com/trasno/hunspell-gl",
+    "licenza": "GPL-3.0-or-later",
+    "uso": "Separación de sílabas a fin de liña (dist/hyphenation/), para LibreOffice, Hyphen, lectores electrónicos.",
+    "ficheiros": {
+      "hyph_gl.dic": "https://raw.githubusercontent.com/LibreOffice/dictionaries/master/gl/hyph_gl.dic"
+    }
+  },
   "frecuencias-opensubtitles": {
     "nome": "FrequencyWords (OpenSubtitles 2018), lista galega",
     "web": "https://github.com/hermitdave/FrequencyWords",
