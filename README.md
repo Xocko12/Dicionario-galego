@@ -208,4 +208,4 @@ Todo o proxecto (datos e código) publícase baixo a **GPL-3.0 ou posterior**
 - [ ] Revisar unha mostra das formas sistemáticas con enclíticos contra a RAG.
 - [ ] Probar `apple/Galego.apple` nun Mac e o StarDict nunha app de iOS.
 - [ ] Xerar o `.dict` do teclado e probar o dicionario Kobo nun dispositivo.
-- [ ] Comunicar a Proxecto Trasno os erros atopados.
+- [ ] Comunicar a Proxecto Trasno os erros atopados (borrador en `docs/informe-trasno.md`).
