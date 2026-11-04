@@ -7,7 +7,9 @@ Saídas:
     dist/teclado/gl_wordlist.combined lista para teclados AOSP/HeliBoard (dicttool)
     dist/teclado/palabras.tsv         forma<TAB>frecuencia (formato xenérico)
     dist/kobo/galego.tsv              glosario (pyglossary -> Kobo, StarDict...)
-    dist/kobo/dicthtml-gl.zip         dicionario Kobo (con --kobo, precisa pyglossary)
+    dist/kobo/dicthtml-gl.zip         dicionario Kobo         (con --kobo, precisa pyglossary)
+    dist/stardict/galego.*            StarDict (GoldenDict, apps de dicionario de iOS e Android)
+    dist/apple/Galego.apple/          fonte para Dictionary.app de macOS (make nun Mac co Dictionary Development Kit)
 
 Opción --encliticos N (por defecto 600): para os N verbos máis frecuentes
 xéranse ademais todas as formas regulares con pronomes enclíticos (díxoma,
@@ -197,13 +199,23 @@ def construir_glosario(lemas, conx, encl, kobo: bool) -> None:
     if kobo:
         from pyglossary.glossary_v2 import ConvertArgs, Glossary
         Glossary.init()
-        destino = saida / "dicthtml-gl.zip"
-        destino.unlink(missing_ok=True)
-        Glossary().convert(ConvertArgs(
-            inputFilename=str(tsv), inputFormat="Tabfile",
-            outputFilename=str(destino), outputFormat="Kobo",
-            infoOverride={"name": "Dicionario galego aberto", "sourceLang": "gl", "targetLang": "gl"},
-        ))
+        info = {"name": "Dicionario galego aberto", "sourceLang": "gl", "targetLang": "gl",
+                "description": "Vocabulario da RAG con flexión e conxugación. GPL-3.0. https://github.com/Xocko12/Dicionario-galego"}
+        saidas = [
+            (saida / "dicthtml-gl.zip", "Kobo"),                       # Kobo
+            (DIST / "stardict" / "galego.ifo", "Stardict"),           # GoldenDict, apps de iOS/Android
+            (DIST / "apple" / "Galego.apple", "AppleDict"),           # macOS Dictionary.app (fonte; make nun Mac)
+        ]
+        for destino, formato in saidas:
+            destino.parent.mkdir(parents=True, exist_ok=True)
+            if destino.is_dir():
+                import shutil
+                shutil.rmtree(destino)
+            destino.unlink(missing_ok=True)
+            Glossary().convert(ConvertArgs(
+                inputFilename=str(tsv), inputFormat="Tabfile",
+                outputFilename=str(destino), outputFormat=formato, infoOverride=info,
+            ))
 
 
 def encliticos_sistematicos(lemas, conx, n_verbos: int) -> list[dict]:
@@ -243,12 +255,18 @@ def main() -> None:
             r["orixe"] = "sistematica"
         encl += novas
         print(f"enclíticos: {len(encl) - len(novas)} do corpus + {len(novas)} sistemáticas ({n_verbos} verbos)")
+        with (DIST / "encliticos_corrixidos.tsv").open("w", encoding="utf-8") as fh:
+            fh.write("# Formas con enclíticos nas que se corrixiu o til de Hunspell-gl (para comunicar a Trasno)\n")
+            fh.write("# hunspell\tcorrixida\tverbo\tforma base\n")
+            for hun, cor, lema, base in sorted(set(encliticos.CORRECCIONS_TIL)):
+                fh.write(f"{hun}\t{cor}\t{lema}\t{base}\n")
+        print(f"tiles corrixidos: {len(set(encliticos.CORRECCIONS_TIL))} (dist/encliticos_corrixidos.tsv)")
     construir_sqlite(lemas, conx, frec, nomes, encl)
     print("dist/dicionario.sqlite")
     n = construir_teclado(lemas, conx, frec, nomes, encl)
     print(f"dist/teclado/: {n} formas")
     construir_glosario(lemas, conx, encl, "--kobo" in sys.argv)
-    print("dist/kobo/galego.tsv" + (" e dicthtml-gl.zip" if "--kobo" in sys.argv else ""))
+    print("dist/kobo/galego.tsv" + (" + Kobo, StarDict e AppleDict" if "--kobo" in sys.argv else ""))
 
 
 if __name__ == "__main__":

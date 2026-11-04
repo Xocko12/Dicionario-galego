@@ -104,6 +104,18 @@ Quedan fóra os verbos unipersoais e defectivos e calquera forma con dous tiles
 (as raíces alternativas *háer*, *ír*, *érer* producen *háánllelo*, *érádela*).
 `--encliticos N` cambia o número de verbos; `--encliticos 0` desactívao.
 
+**Comprobación independente dos tiles.** `ferramentas/acentuacion.py` implementa
+as regras de acentuación das Normas sen usar Hunspell (sílaba tónica da forma
+verbal, ditongos, hiatos, agudas/graves/esdrúxulas) e predí o til de cada forma
+con enclíticos. Coincide con Hunspell-gl no 99,93 % das ~785 000 formas; nas que
+non, revisadas unha a unha por familias, Hunspell é o que erra, agás nos tiles
+diacríticos (*dáme*, *éche*, *pórcha*), que se conservan. Por iso, ao xerar as
+formas, o til corríxese segundo as Normas e cada corrección queda rexistrada en
+`dist/encliticos_corrixidos.tsv` para comunicala a Trasno. Familias corrixidas:
+*vaiache → váiache*, *cainnos → caínnos*, *ria → ría*, *íreiche → ireiche*,
+*estáslle → estaslle*, *estívela → estivela*, *dígamolo → digámolo* (esta última
+tamén parcheada na regra, en `fontes/parches.json`).
+
 **`datos/nomes.jsonl`** — `{"nome": "Ádega", "tipo": "antropónimo", "fontes": ["rag-nomes"]}`
 
 ## Como se garante a calidade
@@ -118,7 +130,9 @@ Quedan fóra os verbos unipersoais e defectivos e calquera forma con dous tiles
     p. ex. que o subxuntivo saia do presente (*busco → busque*, *fago → faga*)
     ou que P6 = P3 + *n*. As excepcións irregulares están revisadas en
     `datos/correccions/anomalias_revisadas.tsv`; calquera anomalía nova fai fallar as probas;
-  - que **Hunspell recoñeza todas as formas** (`validar.py --hunspell`, con spylls).
+  - que **Hunspell recoñeza todas as formas** (`validar.py --hunspell`, con spylls);
+  - **acentuación independente** das formas con enclíticos (`ferramentas/acentuacion.py`,
+    ver arriba).
 - **Erros atopados en Hunspell-gl e corrixidos** (convén comunicalos a Trasno):
   *ler/crer* (*la* → *lea*, *cra* → *crea*), *erguer* (*ergugan* → *ergan*),
   *dicir* (antepretérito etiquetado como pospretérito), *pór* (táboa incompleta),
@@ -152,7 +166,13 @@ python3 ferramentas/construir.py --kobo
 | `teclado/gl_wordlist.combined` | ~1,2 millóns de palabras (con enclíticos e nomes) con frecuencia no formato dos teclados AOSP; con `dicttool` convértese no `.dict` de HeliBoard e similares. |
 | `teclado/palabras.tsv` | `forma<TAB>frecuencia`, para outros teclados. |
 | `kobo/dicthtml-gl.zip` | Dicionario para Kobo: ao tocar unha forma (*dixeches*) abre o lema (*dicir*) coa súa categoría e conxugación. Pendente de probar nun dispositivo. |
-| `kobo/galego.tsv` | O mesmo en formato tabulado, para converter con [pyglossary](https://github.com/ilius/pyglossary) a StarDict, MDict… |
+| `kobo/galego.tsv` | O mesmo en formato tabulado (fonte dos tres seguintes, vía [pyglossary](https://github.com/ilius/pyglossary)). |
+| `stardict/galego.*` | StarDict: GoldenDict (Linux/Windows/Android) e apps de dicionario de iOS e Android que lean StarDict. |
+| `apple/Galego.apple/` | Fonte para **Dictionary.app de macOS**. Nun Mac, co *Dictionary Development Kit* (en *Additional Tools for Xcode*, gratuíto) instalado en `/Applications/Utilities/`: `cd Galego.apple && make && make install`. Despois actívase en Dictionary.app → Preferencias. Funciona co «Buscar» de tres dedos en todo macOS. |
+
+**iOS** non permite engadir dicionarios ao «Buscar» do sistema; as opcións son unha
+app de dicionario que lea StarDict, ou unha app propia co `dicionario.sqlite`.
+Tampouco macOS nin iOS aceptan listas de palabras para o teclado do sistema.
 
 ## Fontes e licenzas
 
@@ -178,5 +198,6 @@ Todo o proxecto (datos e código) publícase baixo a **GPL-3.0 ou posterior**
 - [ ] Locucións, siglas e abreviaturas de uso xeral (precisan outra fonte).
 - [ ] Ampliar as formas con enclíticos atestadas cun corpus maior.
 - [ ] Revisar unha mostra das formas sistemáticas con enclíticos contra a RAG.
+- [ ] Probar `apple/Galego.apple` nun Mac e o StarDict nunha app de iOS.
 - [ ] Xerar o `.dict` do teclado e probar o dicionario Kobo nun dispositivo.
 - [ ] Comunicar a Proxecto Trasno os erros atopados.

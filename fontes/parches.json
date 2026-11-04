@@ -5,6 +5,16 @@
       "nota": "Presente de subxuntivo P6 dos verbos en -guer: xeraba 'ergugan', 'tangugan' en vez de 'ergan', 'tangan'. A regra quitaba só 'er' en vez de 'guer'.",
       "buscar": "^SFX (\\d+) er gan guer ",
       "substituir": "SFX \\1 guer gan guer "
+    },
+    {
+      "nota": "Presente de subxuntivo P4/P5 de dicir e compostos con enclítico: xeraba 'dígamolo', 'dígadesche' en vez de 'digámolo', 'digádesche' (o til ía na sílaba equivocada).",
+      "buscar": "^SFX (\\d+) icir ígamos/",
+      "substituir": "SFX \\1 icir igámos/"
+    },
+    {
+      "nota": "Idem para P5.",
+      "buscar": "^SFX (\\d+) icir ígades/",
+      "substituir": "SFX \\1 icir igádes/"
     }
   ]
 }

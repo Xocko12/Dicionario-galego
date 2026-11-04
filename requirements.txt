@@ -2,3 +2,4 @@
 spylls==0.1.7          # validar.py --hunspell
 pyglossary==5.4.2      # construir.py --kobo
 marisa-trie==1.4.1     # requirido polo formato Kobo de pyglossary
+lxml==6.1.3            # requirido polo formato AppleDict de pyglossary

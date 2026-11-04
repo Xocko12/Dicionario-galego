@@ -17,6 +17,7 @@ from __future__ import annotations
 
 import re
 
+import acentuacion as AC
 import conxugacion as C
 
 # pronome enclítico segundo a descrición de Hunspell-gl (campo pa:)
@@ -87,6 +88,45 @@ def _base_coherente(forma: str, taboa: dict, base: str) -> bool:
     return any(sen_til.startswith(C.sen_acentos(f)[:-1]) for f in cela)
 
 
+# Formas verbais con til diacrítico (Normas, acentuación): consérvano cos
+# enclíticos (dáme, éche, pórcha). As demais acentúanse pola regra xeral.
+DIACRITICOS = {"dá", "dás", "é", "sé", "vén", "vés", "pór", "cómpre", "cómpren"}
+
+# (forma de Hunspell, forma corrixida, lema, base): para revisar e comunicar a Trasno
+CORRECCIONS_TIL: list[tuple[str, str, str, str]] = []
+
+
+def _formas_cela(taboa: dict, base: str) -> list[str]:
+    clave, _, persoa = base.rpartition(".")
+    if persoa in C.PERSOAS:
+        return taboa[clave][C.PERSOAS.index(persoa)]
+    return taboa.get(base, [])
+
+
+def corrixir_til(forma: str, lema: str, bases: list[str], taboa: dict) -> str:
+    """Devolve a forma coa acentuación que marcan as Normas.
+
+    Hunspell-gl acentúa mal algunhas familias (vaiache, cainnos, ria, íreiche,
+    estáslle); a acentuación independente de acentuacion.py está de acordo con
+    Hunspell no 99,9 % das formas e, nas que non, Hunspell é o que erra, agás
+    nos tiles diacríticos. Só se tocan os tiles, nunca as letras."""
+    esperadas: set[str] = set()
+    for base in bases:
+        for forma_base in _formas_cela(taboa, base):
+            if forma_base in DIACRITICOS:
+                return forma
+            cola = AC._cola(AC.sen_til(forma), AC.sen_til(forma_base))
+            if cola is not None:
+                esperadas |= AC.predicir_todas(forma_base, cola)
+    if forma in esperadas or not esperadas:
+        return forma
+    mesmas_letras = [e for e in esperadas if AC.sen_til(e) == AC.sen_til(forma)]
+    if len(mesmas_letras) != 1:
+        return forma
+    CORRECCIONS_TIL.append((forma, mesmas_letras[0], lema, bases[0]))
+    return mesmas_letras[0]
+
+
 def buscar(h, lemas_verbos: set[str], admitir, corpus: dict[str, int], formas_simples: set[str],
            taboas: dict[str, dict]) -> list[dict]:
     """Formas con enclíticos atestadas no corpus. `admitir(entrada, lema)` como en
@@ -134,8 +174,9 @@ def buscar(h, lemas_verbos: set[str], admitir, corpus: dict[str, int], formas_si
                     if _base_coherente(f.form, taboas[lema], b)]
             if not base:
                 continue
-            clave = (f.form, lema, tuple(lista))
-            rexistro = atopadas.setdefault(clave, {"forma": f.form, "lema": lema, "base": [],
+            forma = corrixir_til(f.form, lema, base, taboas[lema])
+            clave = (forma, lema, tuple(lista))
+            rexistro = atopadas.setdefault(clave, {"forma": forma, "lema": lema, "base": [],
                                                    "pronomes": lista, "frecuencia": corpus[f.form]})
             for b in base:
                 if b not in rexistro["base"]:
@@ -196,8 +237,9 @@ def sistematicas(h, lemas_verbos: list[str], admitir, taboas: dict[str, dict],
                     if _base_coherente(f.form, taboas[lema], b)]
             if not base:
                 continue
-            clave = (f.form, lema, tuple(lista))
-            r = saida.setdefault(clave, {"forma": f.form, "lema": lema, "base": [], "pronomes": lista, "frecuencia": 0})
+            forma = corrixir_til(f.form, lema, base, taboas[lema])
+            clave = (forma, lema, tuple(lista))
+            r = saida.setdefault(clave, {"forma": forma, "lema": lema, "base": [], "pronomes": lista, "frecuencia": 0})
             for b in base:
                 if b not in r["base"]:
                     r["base"].append(b)

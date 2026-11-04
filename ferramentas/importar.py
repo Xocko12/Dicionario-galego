@@ -379,6 +379,10 @@ def main() -> None:
         for r in encl:
             fh.write(json.dumps(r, ensure_ascii=False) + "\n")
 
+    if encliticos.CORRECCIONS_TIL:
+        print(f"{len(set(encliticos.CORRECCIONS_TIL))} formas do corpus con til corrixido: "
+              + ", ".join(f"{a}→{b}" for a, b, _, _ in sorted(set(encliticos.CORRECCIONS_TIL))[:12]))
+
     n_verbos = sum(1 for r in escollidos if r["categoria"] == "verbo")
     print(f"{len(escollidos)} lemas ({n_verbos} verbos), {len(formas_catalogo)} formas, "
           f"{len(encl)} formas con enclíticos, {n_nomes} nomes propios.")
