@@ -13,6 +13,7 @@ Xera:
     datos/conxugacions.jsonl  táboa de conxugación de cada verbo
     datos/frecuencias.tsv     frecuencia de cada forma no corpus
     datos/nomes.jsonl         nomes propios de persoa (Guía de nomes galegos da RAG)
+    datos/encliticos.jsonl    formas verbais con pronomes enclíticos de uso real
 """
 
 from __future__ import annotations
@@ -26,6 +27,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import conxugacion as C  # noqa: E402
+import encliticos  # noqa: E402
 from hunspell import Hunspell  # noqa: E402
 
 RAIZ = Path(__file__).resolve().parent.parent
@@ -269,9 +271,10 @@ def main() -> None:
 
     verbos = {r["lema"]: fonte_principal(r["lema"], "verbo")
               for r in rexistros.values() if r["categoria"] == "verbo"}
-    taboas = C.taboas_desde_hunspell(
-        h, set(verbos),
-        admitir=lambda entrada, lema: fonte_de.get(entrada.source, ("",))[0] == verbos[lema])
+    def admitir_verbo(entrada, lema) -> bool:
+        return fonte_de.get(entrada.source, ("",))[0] == verbos[lema]
+
+    taboas = C.taboas_desde_hunspell(h, set(verbos), admitir=admitir_verbo)
     for lema, taboa in taboas.items():
         C.completar(taboa, lema)
 
@@ -370,8 +373,15 @@ def main() -> None:
 
     n_nomes = escribir_nomes()
 
+    encl = encliticos.buscar(h, set(verbos), admitir_verbo, frecuencias, formas_catalogo,
+                             {v["lema"]: v["taboa"] for v in saidas_verbos})
+    with (DATOS / "encliticos.jsonl").open("w", encoding="utf-8") as fh:
+        for r in encl:
+            fh.write(json.dumps(r, ensure_ascii=False) + "\n")
+
     n_verbos = sum(1 for r in escollidos if r["categoria"] == "verbo")
-    print(f"{len(escollidos)} lemas ({n_verbos} verbos), {len(formas_catalogo)} formas, {n_nomes} nomes propios.")
+    print(f"{len(escollidos)} lemas ({n_verbos} verbos), {len(formas_catalogo)} formas, "
+          f"{len(encl)} formas con enclíticos, {n_nomes} nomes propios.")
     if sen_completar:
         print(f"{len(sen_completar)} verbos con celas baleiras: {', '.join(sen_completar[:40])}")
 

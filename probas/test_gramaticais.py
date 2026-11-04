@@ -94,5 +94,30 @@ class ProbasGramaticais(unittest.TestCase):
                     self.assertEqual(set(esperadas.split()) - formas(r), set())
 
 
+class ProbasEncliticos(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.formas = {}
+        with (RAIZ / "datos" / "encliticos.jsonl").open(encoding="utf-8") as fh:
+            for liña in fh:
+                r = json.loads(liña)
+                cls.formas.setdefault(r["forma"], []).append((r["lema"], r["pronomes"]))
+
+    def test_formas_habituais(self):
+        esperadas = {
+            "dime": ("dicir", ["me"]), "dálle": ("dar", ["lle"]), "faino": ("facer", ["o"]),
+            "díxenlle": ("dicir", ["lle"]), "dimo": ("dicir", ["me", "o"]),
+            "díxocho": ("dicir", ["che", "o"]), "facelo": ("facer", ["o"]),
+            "vémonos": ("ver", ["nos"]), "chámase": ("chamar", ["se"]),
+        }
+        for forma, (lema, pronomes) in esperadas.items():
+            with self.subTest(forma=forma):
+                self.assertIn((lema, pronomes), self.formas.get(forma, []))
+
+    def test_sen_combinacions_forzadas(self):
+        for forma in ("falándochello", "dixéramos", "poderíamos"):
+            self.assertNotIn(forma, self.formas)
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -84,6 +84,16 @@ def validar_estrutura() -> tuple[list[str], set[str]]:
             if not forma or forma != forma.strip() or " " in forma:
                 erros.append(f"{onde}: {lema}: forma incorrecta {forma!r}")
             formas.add(forma)
+    pronomes_validos = {"me", "te", "che", "lle", "lles", "nos", "vos", "se", "o", "a", "os", "as"}
+    for n, r in ler_jsonl(DATOS / "encliticos.jsonl"):
+        onde = f"encliticos.jsonl:{n}"
+        if r.get("lema") not in verbos:
+            erros.append(f"{onde}: {r.get('lema')} non é un verbo do catálogo")
+        if not r.get("pronomes") or not set(r["pronomes"]) <= pronomes_validos or len(r["pronomes"]) > 2:
+            erros.append(f"{onde}: pronomes incorrectos {r.get('pronomes')}")
+        if not r.get("base"):
+            erros.append(f"{onde}: falta a forma base")
+        formas.add(r.get("forma", ""))
     for n, r in ler_jsonl(DATOS / "nomes.jsonl"):
         if not r.get("nome") or not r["nome"][0].isupper() or r.get("tipo") != "antropónimo":
             erros.append(f"nomes.jsonl:{n}: nome incorrecto {r}")

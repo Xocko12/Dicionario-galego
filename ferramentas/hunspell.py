@@ -145,11 +145,13 @@ class Hunspell:
                 if affix.kind == kind:
                     yield affix
 
-    def expand(self, entry: Entry, skip=None) -> list[Form]:
+    def expand(self, entry: Entry, skip=None, continue_from=None) -> list[Form]:
         """Todas as formas válidas que xera unha entrada.
 
         `skip(affix) -> bool` permite podar ramas (p. ex. os pronomes
         enclíticos, que multiplican as formas por centos).
+        `continue_from(word) -> bool` decide se paga a pena aplicar un
+        segundo sufixo a unha forma intermedia (para buscar só formas dun corpus).
         """
         out: list[Form] = []
         keep = (lambda a: not skip(a)) if skip else (lambda a: True)
@@ -170,6 +172,8 @@ class Hunspell:
                 continue
             w1 = sfx.apply(entry.word)
             suffixed.append((w1, sfx, None))
+            if continue_from is not None and not continue_from(w1):
+                continue
             # sufixo dobre: o primeiro sufixo trae flags de continuación
             for sfx2 in self._affixes_for(sfx.cont, "SFX"):
                 if keep(sfx2) and sfx2.applies(w1):
