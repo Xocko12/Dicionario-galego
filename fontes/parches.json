@@ -1,0 +1,10 @@
+{
+  "_descricion": "Erros atopados nas regras de Hunspell-gl (src/norma/xeral.aff). Aplícanse ao montar fontes/cache/hunspell-gl/gl.aff. Cada parche é unha expresión regular e a súa substitución. Convén comunicalos a Proxecto Trasno (https://gitlab.com/trasno/hunspell-gl/-/issues).",
+  "aff": [
+    {
+      "nota": "Presente de subxuntivo P6 dos verbos en -guer: xeraba 'ergugan', 'tangugan' en vez de 'ergan', 'tangan'. A regra quitaba só 'er' en vez de 'guer'.",
+      "buscar": "^SFX (\\d+) er gan guer ",
+      "substituir": "SFX \\1 guer gan guer "
+    }
+  ]
+}

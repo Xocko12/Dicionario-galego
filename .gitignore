@@ -1,0 +1,4 @@
+fontes/cache/
+dist/
+__pycache__/
+*.pyc

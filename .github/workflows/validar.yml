@@ -1,0 +1,44 @@
+name: Validar
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  probas:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Estrutura dos datos
+        run: python ferramentas/validar.py
+      - name: Probas
+        run: python -m unittest discover -s probas -v
+      - name: Anomalías novas nas conxugacións
+        run: python ferramentas/anomalias.py
+
+  construir:
+    runs-on: ubuntu-latest
+    needs: probas
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Descargar fontes
+        run: python ferramentas/descargar.py
+      - name: Os datos coinciden coas fontes
+        run: |
+          python ferramentas/importar.py
+          git diff --stat --exit-code datos/
+      - name: Hunspell recoñece todas as formas
+        run: python ferramentas/validar.py --hunspell
+      - name: Construír dist/
+        run: python ferramentas/construir.py --kobo
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dicionario-galego
+          path: dist/

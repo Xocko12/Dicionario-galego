@@ -1,0 +1,14 @@
+SET UTF-8
+FLAG num
+NEEDAFFIX 666
+SFX 10 Y 2
+SFX 10 0 s [aeiou] . is:plural
+SFX 10 0 es [lr] . is:plural
+SFX 20 Y 3
+SFX 20 ar o ar . is:presente P1
+SFX 20 r s ar . is:presente P2
+SFX 20 r do/10 ar . is:participio
+SFX 30 Y 1
+SFX 30 0 lle/666 . is:enclítico
+PFX 40 Y 1
+PFX 40 0 re . is:prefixo

@@ -1,0 +1,40 @@
+{
+  "hunspell-gl": {
+    "nome": "Hunspell-gl, corrector ortográfico de Proxecto Trasno (módulos fonte)",
+    "web": "https://gitlab.com/trasno/hunspell-gl",
+    "licenza": "GPL-3.0-or-later",
+    "versión": "2c533b37193fae548ce40586c7089b93f82a3675",
+    "data": "2026-11-02",
+    "arquivo": "https://gitlab.com/trasno/hunspell-gl/-/archive/2c533b37193fae548ce40586c7089b93f82a3675/hunspell-gl-2c533b37193fae548ce40586c7089b93f82a3675.tar.gz",
+    "uso": "Regras de flexión e conxugación (módulo norma). Os módulos de vocabulario úsanse a través das fontes drag e volga."
+  },
+  "drag": {
+    "nome": "Vocabulario do Dicionario da Real Academia Galega (módulo rag/gl de Hunspell-gl)",
+    "web": "https://academia.gal/dicionario",
+    "licenza": "GPL-3.0-or-later",
+    "uso": "Lemas, categoría gramatical e flexión. Proxecto Trasno ten permiso explícito do ILG-RAG para publicar este vocabulario con licenza GPL. Non inclúe definicións.",
+    "modulos": {"rag/gl/correcto.dic": "recomendado", "rag/gl/tolerado.dic": "tolerado"}
+  },
+  "volga": {
+    "nome": "Vocabulario Ortográfico da Lingua Galega, RAG/ILG 2004 (módulo rag/volga de Hunspell-gl)",
+    "web": "https://academia.gal/volga",
+    "licenza": "GPL-3.0-or-later",
+    "uso": "Lemas que non están no módulo do dicionario da RAG. Se un lema está nos dous, mándase o DRAG.",
+    "modulos": {"rag/volga/correcto.dic": "recomendado", "rag/volga/tolerado.dic": "tolerado"}
+  },
+  "frecuencias-opensubtitles": {
+    "nome": "FrequencyWords (OpenSubtitles 2018), lista galega",
+    "web": "https://github.com/hermitdave/FrequencyWords",
+    "licenza": "CC-BY-SA-4.0",
+    "uso": "Frecuencia de uso aproximada de cada forma (para ordenar suxestións do teclado).",
+    "ficheiros": {
+      "gl_full.txt": "https://raw.githubusercontent.com/hermitdave/FrequencyWords/master/content/2018/gl/gl_full.txt"
+    }
+  },
+  "revision-manual": {
+    "nome": "Revisión manual segundo as Normas ortográficas e morfolóxicas do idioma galego (RAG/ILG)",
+    "web": "https://academia.gal/normas-ortograficas-e-morfoloxicas",
+    "licenza": "GPL-3.0-or-later",
+    "uso": "Correccións feitas a man neste proxecto (datos/correccions/)."
+  }
+}

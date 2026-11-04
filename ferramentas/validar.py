@@ -1,0 +1,112 @@
+"""Comproba que datos/ está ben formado.
+
+    python3 ferramentas/validar.py            # estrutura (sen dependencias)
+    python3 ferramentas/validar.py --hunspell # e ademais, que Hunspell acepta cada forma
+
+A segunda comprobación usa spylls (implementación de Hunspell en Python,
+independente do noso lector) e precisa as fontes descargadas.
+Remata con erro se atopa problemas de estrutura. As formas que Hunspell
+non recoñece só se informan, porque poden ser correccións correctas.
+"""
+
+from __future__ import annotations
+
+import json
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import conxugacion as C  # noqa: E402
+
+RAIZ = Path(__file__).resolve().parent.parent
+DATOS = RAIZ / "datos"
+
+CATEGORIAS = {"substantivo", "adxectivo", "verbo", "adverbio", "artigo", "pronome_persoal", "pronome",
+              "demostrativo", "posesivo", "indefinido", "relativo", "interrogativo", "exclamativo",
+              "numeral", "preposición", "conxunción", "interxección", "contracción"}
+ESTADOS = {"recomendado", "tolerado"}
+CLAVES_FORMAS = {"ms", "mp", "fs", "fp"}
+
+
+def ler_jsonl(ruta: Path):
+    with ruta.open(encoding="utf-8") as fh:
+        for n, liña in enumerate(fh, 1):
+            yield n, json.loads(liña)
+
+
+def validar_estrutura() -> tuple[list[str], set[str]]:
+    erros: list[str] = []
+    formas: set[str] = set()
+    fontes = set(json.loads((RAIZ / "fontes" / "fontes.json").read_text(encoding="utf-8")))
+    ids = set()
+    verbos = set()
+    for n, r in ler_jsonl(DATOS / "lemas.jsonl"):
+        onde = f"lemas.jsonl:{n}"
+        for campo in ("id", "lema", "categoria", "frecuencia", "fontes"):
+            if campo not in r:
+                erros.append(f"{onde}: falta '{campo}'")
+        if r.get("id") in ids:
+            erros.append(f"{onde}: id repetido {r.get('id')}")
+        ids.add(r.get("id"))
+        if r.get("id") != f"{r.get('lema')}#{r.get('categoria')}":
+            erros.append(f"{onde}: o id debe ser lema#categoria")
+        if r.get("categoria") not in CATEGORIAS:
+            erros.append(f"{onde}: categoría descoñecida {r.get('categoria')}")
+        if r.get("estado") not in ESTADOS:
+            erros.append(f"{onde}: estado descoñecido {r.get('estado')}")
+        if r.get("categoria") == "contracción" and not r.get("composicion"):
+            erros.append(f"{onde}: contracción sen composición")
+        for f in r.get("fontes", []):
+            if f not in fontes:
+                erros.append(f"{onde}: fonte sen describir en fontes.json: {f}")
+        if r.get("categoria") == "verbo":
+            verbos.add(r["lema"])
+        else:
+            for clave, lista in r.get("formas", {}).items():
+                if clave not in CLAVES_FORMAS:
+                    erros.append(f"{onde}: clave de forma descoñecida {clave}")
+                formas.update(lista)
+        formas.add(r.get("lema", ""))
+
+    con_taboa = set()
+    for n, v in ler_jsonl(DATOS / "conxugacions.jsonl"):
+        onde = f"conxugacions.jsonl:{n}"
+        lema = v.get("lema")
+        con_taboa.add(lema)
+        if lema not in verbos:
+            erros.append(f"{onde}: {lema} non está en lemas.jsonl como verbo")
+        taboa = v.get("taboa", {})
+        for clave, _ in C.TEMPOS:
+            celas = taboa.get(clave)
+            if not isinstance(celas, list) or len(celas) != 6:
+                erros.append(f"{onde}: {lema}: '{clave}' debe ter 6 celas")
+        for forma, _, _ in C.formas(taboa):
+            if not forma or forma != forma.strip() or " " in forma:
+                erros.append(f"{onde}: {lema}: forma incorrecta {forma!r}")
+            formas.add(forma)
+    for lema in sorted(verbos - con_taboa):
+        erros.append(f"lemas.jsonl: o verbo {lema} non ten táboa en conxugacions.jsonl")
+    return erros, formas
+
+
+def validar_hunspell(formas: set[str]) -> list[str]:
+    from spylls.hunspell import Dictionary
+    cache = RAIZ / "fontes" / "cache" / "hunspell-gl" / "gl"
+    dic = Dictionary.from_files(str(cache))
+    return sorted(f for f in formas if not dic.lookup(f))
+
+
+def main() -> None:
+    erros, formas = validar_estrutura()
+    for e in erros[:200]:
+        print("ERRO", e)
+    print(f"{len(formas)} formas; {len(erros)} erros de estrutura.")
+    if "--hunspell" in sys.argv:
+        descoñecidas = validar_hunspell(formas)
+        print(f"{len(descoñecidas)} formas que Hunspell non recoñece:")
+        print("  " + ", ".join(descoñecidas[:300]))
+    sys.exit(1 if erros else 0)
+
+
+if __name__ == "__main__":
+    main()

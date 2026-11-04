@@ -1,0 +1,78 @@
+{
+  "_descricion": "Correccións manuais ás táboas xeradas desde Hunspell. Cada clave substitúe a cela enteira. Referencia: Normas ortográficas e morfolóxicas do idioma galego (RAG/ILG). Para engadir unha corrección, indica en 'nota' que se corrixe e por que.",
+  "ser": {
+    "nota": "Hunspell lista 'é' e 'son' sen etiquetar e xera 'sa', 'eson' por regras xenéricas. O imperativo é 'sé', non 'é'.",
+    "celas": {
+      "indicativo.presente": [["son"], ["es"], ["é"], ["somos"], ["sodes"], ["son"]],
+      "subxuntivo.presente": [["sexa"], ["sexas"], ["sexa"], ["sexamos"], ["sexades"], ["sexan"]],
+      "imperativo.P2": ["sé"]
+    }
+  },
+  "ir": {
+    "nota": "Faltaba o copretérito; o futuro de subxuntivo é 'for', non 'ir' (que é o infinitivo conxugado).",
+    "celas": {
+      "indicativo.copreterito": [["ía"], ["ías"], ["ía"], ["iamos"], ["iades"], ["ían"]],
+      "subxuntivo.futuro": [["for"], ["fores"], ["for"], ["formos"], ["fordes"], ["foren"]]
+    }
+  },
+  "dicir": {
+    "nota": "Hunspell etiqueta 'dixera' como pospretérito; faltaba o participio 'dito'.",
+    "celas": {
+      "indicativo.antepreterito": [["dixera"], ["dixeras"], ["dixera"], ["dixeramos"], ["dixerades"], ["dixeran"]],
+      "indicativo.pospreterito": [["diría"], ["dirías"], ["diría"], ["diriamos"], ["diriades"], ["dirían"]],
+      "subxuntivo.futuro": [["dixer"], ["dixeres"], ["dixer"], ["dixermos"], ["dixerdes"], ["dixeren"]],
+      "participio": ["dito", "ditos", "dita", "ditas"]
+    }
+  },
+  "pór": {
+    "nota": "Hunspell só etiqueta parte do verbo; o resto está como palabras soltas.",
+    "celas": {
+      "indicativo.presente": [["poño"], ["pos"], ["pon"], ["pomos"], ["pondes"], ["poñen"]],
+      "indicativo.preterito": [["puxen"], ["puxeches"], ["puxo"], ["puxemos"], ["puxestes"], ["puxeron"]],
+      "indicativo.antepreterito": [["puxera"], ["puxeras"], ["puxera"], ["puxeramos"], ["puxerades"], ["puxeran"]],
+      "subxuntivo.presente": [["poña"], ["poñas"], ["poña"], ["poñamos"], ["poñades"], ["poñan"]],
+      "subxuntivo.preterito": [["puxese"], ["puxeses"], ["puxese"], ["puxésemos"], ["puxésedes"], ["puxesen"]],
+      "subxuntivo.futuro": [["puxer"], ["puxeres"], ["puxer"], ["puxermos"], ["puxerdes"], ["puxeren"]],
+      "imperativo.P2": ["pon"],
+      "participio": ["posto", "postos", "posta", "postas"]
+    }
+  },
+  "vir": {
+    "nota": "Pretérito P1 sen til ('vin'); imperativo 'ven' (non 'vien').",
+    "celas": {
+      "indicativo.preterito.P1": ["vin"],
+      "imperativo.P2": ["ven"]
+    }
+  },
+  "ler": {
+    "nota": "Hunspell xera 'la, las...' no presente de subxuntivo (regra xenérica -er → -a).",
+    "celas": {
+      "subxuntivo.presente": [["lea"], ["leas"], ["lea"], ["leamos"], ["leades"], ["lean"]]
+    }
+  },
+  "rir": {
+    "nota": "Faltaba o presente P6.",
+    "celas": {
+      "indicativo.presente.P6": ["rin"]
+    }
+  },
+  "haber": {
+    "nota": "Non ten imperativo.",
+    "celas": {
+      "imperativo.P2": [],
+      "imperativo.P5": []
+    }
+  },
+  "desoír": {
+    "nota": "Hunspell xera 'desorde' desde a raíz alternativa 'desordir'.",
+    "celas": {
+      "indicativo.presente.P3": ["desoe"]
+    }
+  },
+  "crer": {
+    "nota": "Hunspell xera 'cra, cras...' no presente de subxuntivo (regra xenérica -er → -a).",
+    "celas": {
+      "subxuntivo.presente": [["crea"], ["creas"], ["crea"], ["creamos"], ["creades"], ["crean"]]
+    }
+  }
+}
