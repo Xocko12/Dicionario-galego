@@ -8,6 +8,12 @@ Saídas:
     dist/teclado/palabras.tsv         forma<TAB>frecuencia (formato xenérico)
     dist/kobo/galego.tsv              glosario (pyglossary -> Kobo, StarDict...)
     dist/kobo/dicthtml-gl.zip         dicionario Kobo (con --kobo, precisa pyglossary)
+
+Opción --encliticos N (por defecto 600): para os N verbos máis frecuentes
+xéranse ademais todas as formas regulares con pronomes enclíticos (díxoma,
+díxollelo...), non só as atestadas no corpus. Precisa fontes/cache/ (descargar.py).
+Son ~1300 formas por verbo, así que non se gardan en datos/: van ao SQLite,
+ao teclado e ao Kobo.
 """
 
 from __future__ import annotations
@@ -22,6 +28,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import conxugacion as C  # noqa: E402
+import encliticos  # noqa: E402
 
 RAIZ = Path(__file__).resolve().parent.parent
 DATOS = RAIZ / "datos"
@@ -76,7 +83,8 @@ def construir_sqlite(lemas, conx, frec, nomes, encl) -> None:
                              trazo TEXT NOT NULL, frecuencia INTEGER);
         CREATE TABLE nomes (nome TEXT PRIMARY KEY);
         CREATE TABLE encliticos (forma TEXT NOT NULL, lema_id TEXT NOT NULL REFERENCES lemas(id),
-                                 base TEXT NOT NULL, pronomes TEXT NOT NULL, frecuencia INTEGER);
+                                 base TEXT NOT NULL, pronomes TEXT NOT NULL, frecuencia INTEGER,
+                                 orixe TEXT NOT NULL);  -- corpus | sistematica
         CREATE INDEX encliticos_forma ON encliticos(forma);
         CREATE INDEX formas_forma ON formas(forma);
         CREATE INDEX lemas_lema ON lemas(lema);
@@ -90,8 +98,8 @@ def construir_sqlite(lemas, conx, frec, nomes, encl) -> None:
         db.executemany("INSERT INTO formas VALUES (?,?,?,?)", [
             (forma, r["id"], trazo, frec.get(forma, 0)) for forma, trazo in formas_do_lema(r, conx)])
     db.executemany("INSERT INTO nomes VALUES (?)", [(n,) for n in nomes])
-    db.executemany("INSERT INTO encliticos VALUES (?,?,?,?,?)", [
-        (r["forma"], f"{r['lema']}#verbo", ",".join(r["base"]), "+".join(r["pronomes"]), r["frecuencia"])
+    db.executemany("INSERT INTO encliticos VALUES (?,?,?,?,?,?)", [
+        (r["forma"], f"{r['lema']}#verbo", ",".join(r["base"]), "+".join(r["pronomes"]), r["frecuencia"], r["orixe"])
         for r in encl])
     db.commit()
     db.close()
@@ -198,9 +206,43 @@ def construir_glosario(lemas, conx, encl, kobo: bool) -> None:
         ))
 
 
+def encliticos_sistematicos(lemas, conx, n_verbos: int) -> list[dict]:
+    """Formas regulares con enclíticos dos n_verbos verbos máis frecuentes,
+    sen repetir as xa atestadas en datos/encliticos.jsonl."""
+    import importar as I
+    from hunspell import Hunspell
+    mods = I.modulos()
+    fonte_de = {str(r): (f, e) for f, e, r in mods}
+    h = Hunspell(I.HUNSPELL / "gl.aff", [r for _, _, r in mods])
+    verbos = sorted((r for r in lemas if r["categoria"] == "verbo"), key=lambda r: -r["frecuencia"])[:n_verbos]
+    fonte_verbo = {r["lema"]: r["fontes"][0] for r in verbos}
+    simples = set()
+    for r in lemas:
+        for forma, _ in formas_do_lema(r, conx):
+            simples.add(forma)
+    taboas = {lema: v["taboa"] for lema, v in conx.items()}
+    return encliticos.sistematicas(
+        h, [r["lema"] for r in verbos],
+        lambda e, lema: fonte_de.get(e.source, ("",))[0] == fonte_verbo[lema],
+        taboas, simples)
+
+
 def main() -> None:
     DIST.mkdir(exist_ok=True)
     lemas, conx, frec, nomes, encl = cargar()
+    n_verbos = 600
+    if "--encliticos" in sys.argv:
+        n_verbos = int(sys.argv[sys.argv.index("--encliticos") + 1])
+    for r in encl:
+        r["orixe"] = "corpus"
+    if n_verbos:
+        xa = {(r["forma"], r["lema"], tuple(r["pronomes"])) for r in encl}
+        novas = [r for r in encliticos_sistematicos(lemas, conx, n_verbos)
+                 if (r["forma"], r["lema"], tuple(r["pronomes"])) not in xa]
+        for r in novas:
+            r["orixe"] = "sistematica"
+        encl += novas
+        print(f"enclíticos: {len(encl) - len(novas)} do corpus + {len(novas)} sistemáticas ({n_verbos} verbos)")
     construir_sqlite(lemas, conx, frec, nomes, encl)
     print("dist/dicionario.sqlite")
     n = construir_teclado(lemas, conx, frec, nomes, encl)

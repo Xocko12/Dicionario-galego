@@ -16,7 +16,7 @@ con licenza GPL e permiso explícito do ILG-RAG. **Non inclúe definicións.**
 | Lemas | 53 402 (52 850 recomendados e 552 tolerados pola RAG) |
 | Verbos | 6 619 coa conxugación completa (12 tempos e formas nominais) |
 | Formas | 435 661 |
-| Formas con pronomes enclíticos | 17 246 de uso real (*dime*, *dálle*, *díxocho*, *chámase*) |
+| Formas con pronomes enclíticos | 17 246 de uso real en `datos/` (*dime*, *dálle*, *díxocho*); ao construír, ~785 000 máis xeradas sistematicamente para os 600 verbos máis frecuentes (*díxoma*, *díxollelo*) |
 | Nomes propios | 1 260 nomes de persoa da *Guía de nomes galegos* da RAG |
 | Palabras gramaticais | artigos, 26 pronomes persoais, posesivos, demostrativos, indefinidos, relativos, interrogativos, exclamativos, 55 preposicións, 37 conxuncións e 50 contraccións coa súa composición (*do* = *de* + *o*, *cho* = *che* + *o*) |
 
@@ -93,6 +93,17 @@ acusativo (*mo*, *cho*, *llo*, *nolo*, *volo*, *llelo*) ou *se* + dativo (*díxo
 Unha forma ambigua aparece unha vez por cada análise (*sorpréndenos* = *sorprende* +
 *nos* ou *sorprenden* + *os*).
 
+Que unha forma estea depende así de que alguén a dixese nunha película. Para os
+**600 verbos máis frecuentes**, `construir.py` xera ademais **todas** as combinacións
+regulares (forma verbal + un pronome, + *mo/cho/llo/nolo/volo/llelo* en catro
+xéneros e números, + *se* + dativo), coas regras de Hunspell-gl, que colocan os
+tiles e escollen *-lo*/*-no*. Son unhas 1 300 por verbo, así que non se gardan en
+`datos/`: van ao SQLite (columna `orixe` = `corpus` | `sistematica`), ao teclado
+(coa puntuación mínima, para que non desprazen as palabras de uso real) e ao Kobo.
+Quedan fóra os verbos unipersoais e defectivos e calquera forma con dous tiles
+(as raíces alternativas *háer*, *ír*, *érer* producen *háánllelo*, *érádela*).
+`--encliticos N` cambia o número de verbos; `--encliticos 0` desactívao.
+
 **`datos/nomes.jsonl`** — `{"nome": "Ádega", "tipo": "antropónimo", "fontes": ["rag-nomes"]}`
 
 ## Como se garante a calidade
@@ -137,8 +148,8 @@ python3 ferramentas/construir.py --kobo
 
 | Ficheiro | Para que serve |
 |---|---|
-| `dicionario.sqlite` | Táboas `lemas`, `formas` (forma → lema + trazo gramatical), `encliticos` e `nomes`. |
-| `teclado/gl_wordlist.combined` | Lista de palabras (con enclíticos e nomes) con frecuencia no formato dos teclados AOSP; con `dicttool` convértese no `.dict` de HeliBoard e similares. |
+| `dicionario.sqlite` | Táboas `lemas`, `formas` (forma → lema + trazo gramatical), `encliticos` (~800 000, con `orixe`) e `nomes`. ~130 MB. |
+| `teclado/gl_wordlist.combined` | ~1,2 millóns de palabras (con enclíticos e nomes) con frecuencia no formato dos teclados AOSP; con `dicttool` convértese no `.dict` de HeliBoard e similares. |
 | `teclado/palabras.tsv` | `forma<TAB>frecuencia`, para outros teclados. |
 | `kobo/dicthtml-gl.zip` | Dicionario para Kobo: ao tocar unha forma (*dixeches*) abre o lema (*dicir*) coa súa categoría e conxugación. Pendente de probar nun dispositivo. |
 | `kobo/galego.tsv` | O mesmo en formato tabulado, para converter con [pyglossary](https://github.com/ilius/pyglossary) a StarDict, MDict… |
@@ -165,6 +176,7 @@ Todo o proxecto (datos e código) publícase baixo a **GPL-3.0 ou posterior**
 ## Folla de ruta
 
 - [ ] Locucións, siglas e abreviaturas de uso xeral (precisan outra fonte).
-- [ ] Ampliar as formas con enclíticos cun corpus maior.
+- [ ] Ampliar as formas con enclíticos atestadas cun corpus maior.
+- [ ] Revisar unha mostra das formas sistemáticas con enclíticos contra a RAG.
 - [ ] Xerar o `.dict` do teclado e probar o dicionario Kobo nun dispositivo.
 - [ ] Comunicar a Proxecto Trasno os erros atopados.

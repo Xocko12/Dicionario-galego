@@ -123,7 +123,8 @@ def buscar(h, lemas_verbos: set[str], admitir, corpus: dict[str, int], formas_si
         if lema not in lemas_verbos or not admitir(e, lema):
             continue
         for f in h.expand(e, omitir, continue_from=continuar):
-            if f.form not in corpus or f.form in formas_simples or C.sen_acentos(f.form) in grafias_antigas:
+            if (f.form not in corpus or f.form in formas_simples or not ben_formada(f.form)
+                    or C.sen_acentos(f.form) in grafias_antigas):
                 continue
             lista = pronomes(f.morph, f.form)
             if not lista:
@@ -140,3 +141,64 @@ def buscar(h, lemas_verbos: set[str], admitir, corpus: dict[str, int], formas_si
                 if b not in rexistro["base"]:
                     rexistro["base"].append(b)
     return sorted(atopadas.values(), key=lambda r: (C.sen_acentos(r["forma"]), r["forma"], r["lema"]))
+
+
+def combinacion_admitida(morph: tuple[str, ...], remate: str) -> bool:
+    """Se un afixo de pronome produce unha combinación admitida (ver `pronomes`).
+    `remate` é o que engade o afixo, para distinguir cho/cha/chos/chas."""
+    return pronomes(morph, remate) is not None
+
+
+_DOUS_TILES = re.compile(r"[áéíóú].*[áéíóú]")
+
+
+def ben_formada(forma: str) -> bool:
+    """Unha palabra galega leva como moito un til agudo. As raíces alternativas
+    con til (háer, ír, érer) producen formas como «háánllelo» ou «érádela»."""
+    return not _DOUS_TILES.search(forma)
+
+
+def sistematicas(h, lemas_verbos: list[str], admitir, taboas: dict[str, dict],
+                 formas_simples: set[str]) -> list[dict]:
+    """Todas as formas regulares verbo + pronome(s) admitidos dos `lemas_verbos`,
+    xeradas coas regras de Hunspell-gl (que xa colocan os tiles e escollen
+    -lo/-no). Devolve o mesmo formato ca `buscar`, con "frecuencia": 0.
+    Os verbos unipersoais e defectivos quedan fóra (só as formas do corpus)."""
+    lemas = {l for l in lemas_verbos if not (C.unipersoal(taboas[l]) or C.defectivo(taboas[l]))}
+
+    def omitir(afixo) -> bool:
+        if not any(m.startswith("pa:") for m in afixo.morph):
+            return False
+        return not combinacion_admitida(afixo.morph, afixo.add)
+
+    alomorfos: dict[str, str] = {}
+    for e in h.entries:
+        if C.es_verbo(h, e) and e.word in lemas and admitir(e, e.word):
+            for al in e.fields("al"):
+                alomorfos.setdefault(al, e.word)
+
+    saida: dict[tuple, dict] = {}
+    for e in h.entries:
+        if C.es_verbo(h, e):
+            lema = e.word
+        else:
+            lema = (e.fields("st") or [alomorfos.get(e.word) if h.needaffix in e.flags else None])[0]
+        if lema not in lemas or not admitir(e, lema):
+            continue
+        for f in h.expand(e, omitir):
+            if f.form in formas_simples or not ben_formada(f.form):
+                continue
+            lista = pronomes(f.morph, f.form)
+            if not lista:
+                continue
+            base = [b for b in (f"{clave}.{C.PERSOAS[p]}" if p is not None else clave
+                                for clave, p in C.celas(f.morph))
+                    if _base_coherente(f.form, taboas[lema], b)]
+            if not base:
+                continue
+            clave = (f.form, lema, tuple(lista))
+            r = saida.setdefault(clave, {"forma": f.form, "lema": lema, "base": [], "pronomes": lista, "frecuencia": 0})
+            for b in base:
+                if b not in r["base"]:
+                    r["base"].append(b)
+    return sorted(saida.values(), key=lambda r: (C.sen_acentos(r["forma"]), r["forma"], r["lema"]))

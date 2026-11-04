@@ -12,6 +12,7 @@ non recoñece só se informan, porque poden ser correccións correctas.
 from __future__ import annotations
 
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -97,6 +98,10 @@ def validar_estrutura() -> tuple[list[str], set[str]]:
     for n, r in ler_jsonl(DATOS / "nomes.jsonl"):
         if not r.get("nome") or not r["nome"][0].isupper() or r.get("tipo") != "antropónimo":
             erros.append(f"nomes.jsonl:{n}: nome incorrecto {r}")
+    dous_tiles = re.compile(r"[áéíóú].*[áéíóú]")
+    for forma in formas:
+        if dous_tiles.search(forma) and "-" not in forma:
+            erros.append(f"forma con dous tiles: {forma}")
     for lema in sorted(verbos - con_taboa):
         erros.append(f"lemas.jsonl: o verbo {lema} non ten táboa en conxugacions.jsonl")
     return erros, formas
