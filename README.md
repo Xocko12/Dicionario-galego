@@ -116,6 +116,14 @@ formas, o til corríxese segundo as Normas e cada corrección queda rexistrada e
 *estáslle → estaslle*, *estívela → estivela*, *dígamolo → digámolo* (esta última
 tamén parcheada na regra, en `fontes/parches.json`).
 
+Decisións tomadas onde a norma admite dúbida (revisadas, non cambiar sen motivo):
+- o til regular pérdese cando a palabra deixa de ser aguda: *estache*, *estasme*,
+  *iraslle*, *dela* (der + a), *teno*, *detena*;
+- os tiles **diacríticos** consérvanse todos, non só *dáme* e *éche*: *vénme*,
+  *véslle*, *sélle*, *pórlle*;
+- *vai-a*, *cai-a*, *ensai-a* son dúas sílabas: *váiase*, *cáiache*, *ensáiame*;
+- o imperativo só ten P2 e P5, agás *vamos* (ir): *vámonos*.
+
 **`datos/nomes.jsonl`** — `{"nome": "Ádega", "tipo": "antropónimo", "fontes": ["rag-nomes"]}`
 
 ## Como se garante a calidade
