@@ -89,6 +89,22 @@ def validar_estrutura() -> tuple[list[str], set[str]]:
     return erros, formas
 
 
+def formas_corrixidas() -> set[str]:
+    """Formas que veñen de correccións manuais (poden faltar en Hunspell
+    precisamente porque alí están mal)."""
+    saida = set()
+    for _, v in ler_jsonl(DATOS / "conxugacions.jsonl"):
+        for clave in v.get("correccions", []):
+            base, _, persoa = clave.rpartition(".")
+            if persoa in C.PERSOAS:
+                saida.update(v["taboa"][base][C.PERSOAS.index(persoa)])
+            elif isinstance(v["taboa"][clave][0] if v["taboa"][clave] else "", list):
+                saida.update(f for cela in v["taboa"][clave] for f in cela)
+            else:
+                saida.update(v["taboa"][clave])
+    return saida
+
+
 def validar_hunspell(formas: set[str]) -> list[str]:
     from spylls.hunspell import Dictionary
     cache = RAIZ / "fontes" / "cache" / "hunspell-gl" / "gl"
@@ -103,8 +119,15 @@ def main() -> None:
     print(f"{len(formas)} formas; {len(erros)} erros de estrutura.")
     if "--hunspell" in sys.argv:
         descoñecidas = validar_hunspell(formas)
-        print(f"{len(descoñecidas)} formas que Hunspell non recoñece:")
-        print("  " + ", ".join(descoñecidas[:300]))
+        corrixidas = formas_corrixidas()
+        esperadas = [f for f in descoñecidas if f in corrixidas]
+        novas = [f for f in descoñecidas if f not in corrixidas]
+        print(f"{len(esperadas)} formas corrixidas a man que Hunspell non ten (esperado):")
+        print("  " + ", ".join(esperadas[:300]))
+        print(f"{len(novas)} formas que Hunspell non recoñece:")
+        print("  " + ", ".join(novas[:300]))
+        if novas:
+            erros.append("formas sen recoñecer")
     sys.exit(1 if erros else 0)
 
 
