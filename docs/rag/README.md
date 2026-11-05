@@ -1,7 +1,14 @@
 # Comprobación coas táboas do conxugador da RAG
 
 O conxugador da RAG (https://academia.gal/dicionario → ficha do verbo → «Conxugar»)
-é a referencia. Non se pode consultar automaticamente, así que a comparación
+é a referencia. Pódese consultar automaticamente:
+
+    python3 ferramentas/comparar_rag.py --rag moer reler        # verbos concretos
+    python3 ferramentas/comparar_rag.py --rag --todos            # todos (unhas 2 h, 1 petición/s)
+    python3 ferramentas/comparar_rag.py --rag --todos --aceptar  # e gardalos como referencia
+
+As táboas descargadas quedan en `fontes/cache/rag/` e as diferenzas en
+`docs/rag/diferenzas.tsv`. Se non hai acceso a academia.gal, a comparación
 faise con táboas copiadas a man:
 
 1. Abre o verbo no conxugador da RAG, selecciona toda a táboa e cópiaa.
