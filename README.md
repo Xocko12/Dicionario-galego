@@ -269,7 +269,7 @@ python3 ferramentas/construir.py --kobo
 | `kobo/galego.tsv` | O mesmo en formato tabulado (fonte dos tres seguintes, vía [pyglossary](https://github.com/ilius/pyglossary)). |
 | `stardict/galego.*` | StarDict: GoldenDict (Linux/Windows/Android) e apps de dicionario de iOS e Android que lean StarDict. |
 | `hyphenation/hyph_gl.dic` | Patróns de separación silábica (orixinal ISO-8859-1 e copia UTF-8), para LibreOffice, a biblioteca Hyphen e lectores electrónicos. |
-| `apple/Galego.apple/` | Fonte para **Dictionary.app de macOS**. Nun Mac, co *Dictionary Development Kit* (en *Additional Tools for Xcode*, gratuíto) instalado en `/Applications/Utilities/`: `cd Galego.apple && make && make install`. Despois actívase en Dictionary.app → Preferencias. Funciona co «Buscar» de tres dedos en todo macOS. |
+| `apple/Galego.apple/` | Fonte para **Dictionary.app de macOS**. Nun Mac, co *Dictionary Development Kit* (en *Additional Tools for Xcode*, gratuíto) instalado en `/Applications/Utilities/`: `cd Galego.apple && make && make install` (o Makefile xa usa o formato 10.11; sen o kit en `/Applications/Utilities/`, `make DICT_BUILD_TOOL_DIR=/ruta/ao/kit`). Despois actívase en Dictionary.app → Axustes. Funciona co «Buscar» de tres dedos en todo macOS: ao buscar unha forma (*dixeches*, *díxocho*) ábrese o lema. Probado en macOS 27 (~210 MB instalado). |
 
 **iOS** non permite engadir dicionarios ao «Buscar» do sistema; as opcións son unha
 app de dicionario que lea StarDict, ou unha app propia co `dicionario.sqlite`.
@@ -305,6 +305,7 @@ Todo o proxecto (datos e código) publícase baixo a **GPL-3.0 ou posterior**
 - [ ] Repetir a comparación co conxugador da RAG de cando en vez (as táboas descárganse á caché; `--forzar` non existe aínda: bórrese `fontes/cache/rag/`).
 - [ ] Ampliar as formas con enclíticos atestadas cun corpus maior.
 - [ ] Revisar unha mostra das formas sistemáticas con enclíticos contra a RAG.
-- [ ] Probar `apple/Galego.apple` nun Mac e o StarDict nunha app de iOS.
+- [x] Probar `apple/Galego.apple` nun Mac (macOS 27).
+- [ ] Probar o StarDict nunha app de iOS.
 - [ ] Xerar o `.dict` do teclado e probar o dicionario Kobo nun dispositivo.
 - [ ] Comunicar a Proxecto Trasno os erros atopados (borrador en `docs/informe-trasno.md`).

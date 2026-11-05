@@ -324,7 +324,12 @@ def construir_glosario(lemas, conx, encl, capas, kobo: bool) -> None:
         from pyglossary.glossary_v2 import ConvertArgs, Glossary
         Glossary.init()
         info = {"name": "Dicionario galego aberto", "sourceLang": "gl", "targetLang": "gl",
-                "description": "Vocabulario da RAG con flexión e conxugación. GPL-3.0. https://github.com/Xocko12/Dicionario-galego"}
+                "description": "Vocabulario da RAG con flexión e conxugación. GPL-3.0. https://github.com/Xocko12/Dicionario-galego",
+                # AppleDict: identificador e créditos do paquete de Dictionary.app
+                "CFBundleIdentifier": "gal.dicionario-galego.aberto",
+                "copyright": "GPL-3.0 ou posterior. Vocabulario da RAG vía Hunspell-gl (Proxecto Trasno); "
+                             "Wiktionary (CC BY-SA), Galnet (CC BY), Apertium (GPL)",
+                "author": "Dicionario galego aberto"}
         saidas = [
             (saida / "dicthtml-gl.zip", "Kobo"),                       # Kobo
             (DIST / "stardict" / "galego.ifo", "Stardict"),           # GoldenDict, apps de iOS/Android
@@ -340,6 +345,30 @@ def construir_glosario(lemas, conx, encl, capas, kobo: bool) -> None:
                 inputFilename=str(tsv), inputFormat="Tabfile",
                 outputFilename=str(destino), outputFormat=formato, infoOverride=info,
             ))
+            if formato == "AppleDict":
+                axustar_apple(destino)
+
+
+def axustar_apple(directorio: Path) -> None:
+    """Corrixe a fonte AppleDict de pyglossary para o macOS actual (probado en macOS 27)."""
+    import plistlib
+    ficheiro = directorio / "Galego_apple.plist"
+    plist = plistlib.loads(ficheiro.read_bytes())
+    # Con DCSDictionaryXSL ou DCSDictionaryPrefsHTML baleiros, Dictionary Services
+    # intenta ler un documento sen nome e o dicionario non se carga.
+    for clave in ("DCSDictionaryXSL", "DCSDictionaryPrefsHTML"):
+        if not plist.get(clave):
+            plist.pop(clave, None)
+    plist["CFBundleName"] = "Galego"          # título da sección e da lapela en Dictionary.app
+    ficheiro.write_bytes(plistlib.dumps(plist))
+    # Formato de paquete 10.11 (datos en Contents/Resources), o que espera o macOS actual.
+    makefile = directorio / "Makefile"
+    texto = makefile.read_text(encoding="utf-8")
+    makefile.write_text(texto.replace("DICT_BUILD_OPTS\t\t=\n", "DICT_BUILD_OPTS\t\t=\t-v 10.11\n", 1),
+                        encoding="utf-8")
+    # O kit descarta o espazo entre <b>lema</b> e <i>categoría</i>.
+    with (directorio / "Galego_apple.css").open("a", encoding="utf-8") as fh:
+        fh.write("\n/* dicionario-galego */\np > b + i { margin-left: 0.3em; }\n")
 
 
 def encliticos_sistematicos(lemas, conx, n_verbos: int) -> list[dict]:
