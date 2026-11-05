@@ -9,6 +9,7 @@ Dous camiños:
     python3 ferramentas/comparar_rag.py --rag moer reler atraer     # verbos concretos
     python3 ferramentas/comparar_rag.py --rag --todos                # todos os verbos do catálogo
     python3 ferramentas/comparar_rag.py --rag --todos --aceptar      # e garda as táboas como referencia
+    python3 ferramentas/comparar_rag.py --timbre                     # datos/timbre.tsv coas vogais abertas
 
 2. Manual: cópiase a táboa do conxugador tal como se presenta na web nun
    ficheiro docs/rag/<verbo>.txt:
@@ -175,17 +176,34 @@ def analizar_rag_html(texto: str) -> dict:
         if cls == "tabindicativo":
             # 3 bloques de 2 tempos; cada bloque: 6 filas × 2 celas
             claves = [_nome(t) for t in ths]
+            if len(celas) != 6 * len(claves):
+                return {}
             for b in range(0, len(claves), 2):
                 bloque = celas[b * 6: b * 6 + 12]
                 taboa[claves[b]] = [cela(v) for v in bloque[0::2]]
                 taboa[claves[b + 1]] = [cela(v) for v in bloque[1::2]]
         elif cls == "tabsubxuntivo":
             claves = [SUBXUNTIVO.get(_nome(t), _nome(t)) for t in ths]
+            if len(celas) != 6 * len(claves):
+                return {}
             for i, clave in enumerate(claves):
                 taboa[clave] = [cela(v) for v in celas[i * 6: i * 6 + 6]]
         elif cls == "tabimperativo":
-            taboa["imperativo"] = [cela(v) for v in celas[:6]]
+            # Nos verbos defectivos a RAG omite filas en vez de poñer «-»: colócase
+            # cada forma polo que é (P5 remata en -de; P4 en -mos; a outra é P2).
+            imp = [[] for _ in range(6)]
+            for v in celas:
+                for forma in cela(v):
+                    if forma.endswith("mos"):
+                        imp[3].append(forma)
+                    elif forma.endswith("de"):
+                        imp[4].append(forma)
+                    else:
+                        imp[1].append(forma)
+            taboa["imperativo"] = imp
         elif cls == "tabinfinitivo":
+            if len(celas) != 6:
+                return {}
             taboa["infinitivo.conxugado"] = [cela(v) for v in celas[:6]]
         elif cls == "tabxerundio":
             taboa["xerundio"] = [x for v in celas for x in cela(v)]
@@ -193,7 +211,39 @@ def analizar_rag_html(texto: str) -> dict:
             p = [cela(v) for v in celas[:4]]
             if len(p) == 4:   # RAG: m.sg, f.sg, m.pl, f.pl -> nós: m.sg, m.pl, f.sg, f.pl
                 taboa["participio"] = p[0] + p[2] + p[1] + p[3]
+    # Unha táboa de 6 celas con outro número de filas estaría desaliñada: mellor non usala.
+    for clave, valor in taboa.items():
+        if clave not in ("xerundio", "participio") and len(valor) != 6:
+            return {}
     return taboa if "indicativo.presente" in taboa else {}
+
+
+def timbre_rag(texto: str) -> list[tuple[str, str]]:
+    """(forma, vogal) das marcas de timbre do conxugador: «toses [ɔ]» -> ("toses", "ɔ")."""
+    try:
+        h = json.loads(texto)["htmlContent"]
+    except (ValueError, KeyError):
+        h = texto
+    saida = []
+    for td in re.findall(r"<td[^>]*>(.*?)</td>", h, re.S):
+        t = _html.unescape(re.sub(r"<[^>]+>", "", td)).strip()
+        for m in re.finditer(r"([^\s/\[\]]+)\s*\[([ɛɔ])\]", t):
+            saida.append((m.group(1), m.group(2)))
+    return saida
+
+
+def escribir_timbre() -> int:
+    """datos/timbre.tsv: formas verbais coa vogal tónica aberta (ɛ, ɔ) segundo o
+    conxugador da RAG. Útil para pronuncia e síntese de voz."""
+    filas = set()
+    for f in sorted(CACHE_RAG.glob("*.json")):
+        for forma, vogal in timbre_rag(f.read_text(encoding="utf-8")):
+            filas.add((forma, f.stem, vogal))
+    with (RAIZ / "datos" / "timbre.tsv").open("w", encoding="utf-8") as fh:
+        fh.write("# forma\tverbo\tvogal tónica aberta (ɛ/ɔ)  — marcas do conxugador da RAG\n")
+        for forma, lema, vogal in sorted(filas, key=lambda x: (C.sen_acentos(x[0]), x[0], x[1])):
+            fh.write(f"{forma}\t{lema}\t{vogal}\n")
+    return len(filas)
 
 
 def cargar_nosas() -> dict[str, dict]:
@@ -224,6 +274,9 @@ def comparar(lema: str, rag: dict, nosa: dict) -> list[str]:
 
 def main() -> None:
     args = sys.argv[1:]
+    if "--timbre" in args:
+        print(f"datos/timbre.tsv: {escribir_timbre()} formas con vogal aberta")
+        return
     aceptar = "--aceptar" in args
     modo_rag = "--rag" in args
     nosas = cargar_nosas()
