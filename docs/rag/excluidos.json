@@ -1,0 +1,28 @@
+{
+  "_descricion": "Táboas ou celas do conxugador da RAG que non se aceptan como referencia porque semellan erros dos seus datos (convén comunicarllos á RAG). '*' exclúe o verbo enteiro; unha lista exclúe só esas celas (quedan as de Hunspell-gl / referencia manual). Unha entrada con 'patron' (expresión regular sobre o lema) aplícase a todos os verbos que casen.",
+  "alancañar": {
+    "celas": "*",
+    "motivo": "O subxuntivo e o pretérito (alanque, alanquei) son os de «alancar»; o presente e o imperativo son os de alancañar."
+  },
+  "desouvir": {
+    "celas": "*",
+    "motivo": "Imperativo P5 «desouzade» e antepretérito P5 «desouvíredes»; o resto do paradigma segue a ouvir (ouvide, ouvirades)."
+  },
+  "entreouvir": {
+    "celas": "*",
+    "motivo": "Igual ca desouvir."
+  },
+  "patron-por": {
+    "patron": "p[oó]r$",
+    "celas": [
+      "indicativo.presente.P6"
+    ],
+    "motivo": "pór e todos os compostos en -por: o conxugador dá na P6 do presente a mesma forma ca na P3 (pon, supón, compón); poñer e os compostos en -poñer dan poñen, supoñen. Celas tomadas de Hunspell-gl/referencia manual (poñen, supoñen)."
+  },
+  "despir": {
+    "celas": [
+      "imperativo.P5"
+    ],
+    "motivo": "Dá «dispe» tamén na P5 do imperativo; é «despide» (como vestir: vestide)."
+  }
+}

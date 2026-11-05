@@ -43,3 +43,10 @@ sumir, consumir, cubrir, descubrir, advertir, vestir, medir, repetir, espir,
 competir, sufrir, cumprir, ferir, cinguir, tinguir, distinguir, argüír, posuír,
 contribuír, delinquir, mercar, adquirir, ouvear, soer, xacer, pracer, prover,
 reler, descrer, trasler*.
+
+## Estado
+
+Feita a comparación completa (novembro de 2026): 6 522 verbos coa táboa da RAG
+aceptada en `datos/referencia-rag.json`. Os verbos sen táboa na RAG e as celas
+excluídas por erro do conxugador están en `docs/rag/excluidos.json`. O informe
+de diferenzas (`diferenzas.tsv`) só debería conter as celas excluídas.

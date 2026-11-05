@@ -14,7 +14,7 @@ con licenza GPL e permiso explícito do ILG-RAG. **Non inclúe definicións.**
 | | |
 |---|---|
 | Lemas | 53 402 (52 850 recomendados e 552 tolerados pola RAG) |
-| Verbos | 6 619 coa conxugación completa (12 tempos e formas nominais) |
+| Verbos | 6 619 coa conxugación completa (12 tempos e formas nominais); **6 522 coa táboa do conxugador da RAG** como referencia (os demais non teñen conxugador na RAG) |
 | Formas | 435 661 |
 | Formas con pronomes enclíticos | 17 246 de uso real en `datos/` (*dime*, *dálle*, *díxocho*); ao construír, ~785 000 máis xeradas sistematicamente para os 600 verbos máis frecuentes (*díxoma*, *díxollelo*) |
 | Nomes propios | 1 260 nomes de persoa da *Guía de nomes galegos* da RAG |
@@ -154,7 +154,25 @@ Quedan fóra os verbos unipersoais e defectivos e calquera forma con dous tiles
 (as raíces alternativas *háer*, *ír*, *érer* producen *háánllelo*, *érádela*).
 `--encliticos N` cambia o número de verbos; `--encliticos 0` desactívao.
 
-**Táboas de referencia.** `datos/correccions/referencia.json` contén as táboas
+**Conxugador da RAG.** `ferramentas/comparar_rag.py --rag --todos --aceptar` descarga
+a táboa de cada verbo do conxugador de academia.gal (con calma, 1 petición por
+segundo) e gárdaa en `datos/referencia-rag.json`: esas táboas mandan sobre todo
+o demais e `probas/test_referencia.py` comproba que os datos coincidan con elas.
+6 522 dos 6 790 verbos do catálogo teñen táboa na RAG (os outros son do Digalego,
+da comunidade ou verbos sen conxugador, como *soer*). A comparación atopou e
+corrixiu, entre outros, participios irregulares (*aberto*, *aceso/acendido*,
+*apreso/aprendido*), paradigmas incompletos (*argüír*, *pracer*) e o imperativo
+dos verbos con alternancia vocálica (*durme, sube, sigue, fire, viste*). Tamén
+atopou erros nos datos do propio conxugador, que non se aceptan e quedan
+documentados en `docs/rag/excluidos.json` para comunicarllos á RAG (P6 do
+presente de *pór* e compostos dada como *pon/supón*; *alancañar* con subxuntivo de
+*alancar*; *desouvir*; *despir*). As diferenzas restantes están en `docs/rag/diferenzas.tsv`.
+
+**Timbre vocálico.** O conxugador marca as vogais tónicas abertas (*toses [ɔ]*,
+*cuberto [ɛ]*); gárdanse en `datos/timbre.tsv` (8 709 formas), útiles para
+pronuncia e síntese de voz.
+
+**Táboas de referencia manuais.** `datos/correccions/referencia.json` contén as táboas
 dos verbos irregulares e dos modelos de cada familia (*ser, estar, ter, haber,
 ir, facer, dicir, dar, vir, ver, poder, querer, saber, caber, traer, valer,
 pór/poñer, oír, saír, caer, ler, crer, rir, parir, durmir, subir, fuxir,
@@ -283,7 +301,8 @@ Todo o proxecto (datos e código) publícase baixo a **GPL-3.0 ou posterior**
 
 ## Folla de ruta
 
-- [ ] Rematar a comparación de todos os verbos co conxugador da RAG e aceptar as súas táboas como referencia.
+- [ ] Comunicar á RAG os erros do conxugador recollidos en `docs/rag/excluidos.json`.
+- [ ] Repetir a comparación co conxugador da RAG de cando en vez (as táboas descárganse á caché; `--forzar` non existe aínda: bórrese `fontes/cache/rag/`).
 - [ ] Ampliar as formas con enclíticos atestadas cun corpus maior.
 - [ ] Revisar unha mostra das formas sistemáticas con enclíticos contra a RAG.
 - [ ] Probar `apple/Galego.apple` nun Mac e o StarDict nunha app de iOS.

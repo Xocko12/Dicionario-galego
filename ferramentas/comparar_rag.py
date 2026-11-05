@@ -125,6 +125,8 @@ import urllib.parse  # noqa: E402
 import urllib.request  # noqa: E402
 
 CACHE_RAG = RAIZ / "fontes" / "cache" / "rag"
+_excl = RAIZ / "docs" / "rag" / "excluidos.json"
+EXCLUIDOS = {k: v for k, v in json.loads(_excl.read_text(encoding="utf-8")).items() if not k.startswith("_")} if _excl.exists() else {}
 TIMBRE = re.compile(r"\s*\[[^\]]*\]")
 PORTLET = "com_ideit_ragportal_liferay_dictionary_NormalSearchPortlet"
 AXENTE = "dicionario-galego (https://github.com/Xocko12/Dicionario-galego)"
@@ -150,6 +152,19 @@ def _pedir_rag(lema: str, ficheiro: str, pausa: float) -> str | None:
 
 def _baleiro(texto: str | None) -> bool:
     return not texto or '"htmlContent":""' in texto.replace(" ", "")
+
+
+def exclusion(lema: str):
+    """Celas excluídas para un lema: entrada propia ou por patrón ('*' = todo)."""
+    if lema in EXCLUIDOS:
+        return EXCLUIDOS[lema].get("celas")
+    celas = []
+    for clave, cfg in EXCLUIDOS.items():
+        if "patron" in cfg and re.search(cfg["patron"], lema):
+            if cfg.get("celas") == "*":
+                return "*"
+            celas += cfg.get("celas", [])
+    return celas or None
 
 
 def descargar_rag(lema: str, pausa: float = 1.0) -> str | None:
@@ -210,17 +225,15 @@ def analizar_rag_html(texto: str) -> dict:
             for i, clave in enumerate(claves):
                 taboa[clave] = [cela(v) for v in celas[i * 6: i * 6 + 6]]
         elif cls == "tabimperativo":
-            # Nos verbos defectivos a RAG omite filas en vez de poñer «-»: colócase
-            # cada forma polo que é (P5 remata en -de; P4 en -mos; a outra é P2).
-            imp = [[] for _ in range(6)]
-            for v in celas:
-                for forma in cela(v):
-                    if forma.endswith("mos"):
-                        imp[3].append(forma)
-                    elif forma.endswith("de"):
-                        imp[4].append(forma)
-                    else:
-                        imp[1].append(forma)
+            # Normalmente 6 filas (P1..P6). Nos verbos defectivos a RAG omite a
+            # fila da P2 en vez de poñer «-» (abolir: «- - - abolide -»).
+            if len(celas) == 6:
+                imp = [cela(v) for v in celas]
+            else:
+                imp = [[] for _ in range(6)]
+                for v in celas:
+                    for forma in cela(v):
+                        imp[3 if forma.endswith("mos") else 4 if forma.endswith(("ade", "ede", "ide", "íde")) else 1].append(forma)
             taboa["imperativo"] = imp
         elif cls == "tabinfinitivo":
             if len(celas) != 6:
@@ -344,7 +357,20 @@ def main() -> None:
         for d in difs:
             informe.write(f"{lema}\t{d}\n")
         if aceptar:
-            referencia[lema] = {"celas": rag}
+            excl = exclusion(lema)
+            if excl == "*":
+                referencia.pop(lema, None)
+                continue
+            celas_rag = dict(rag)
+            for clave in excl or []:
+                base, _, persoa = clave.rpartition(".")
+                if persoa in C.PERSOAS and base in celas_rag:
+                    # None = a RAG non opina nesta cela; queda a de Hunspell-gl/referencia manual
+                    celas_rag[base] = [None if i == C.PERSOAS.index(persoa) else c
+                                       for i, c in enumerate(celas_rag[base])]
+                else:
+                    celas_rag.pop(clave, None)
+            referencia[lema] = {"celas": celas_rag}
             aceptados += 1
         if modo_rag and n % 100 == 0:
             print(f"... {n}/{len(fontes)} verbos, {total} diferenzas ata agora", flush=True)

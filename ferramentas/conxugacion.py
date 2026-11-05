@@ -211,7 +211,6 @@ COMPOSTOS = {
     "dicir": ("dicir", None),
     "ler": ("ler", {"reler", "trasler"}),
     "crer": ("crer", {"descrer"}),
-    "prover": ("prover", {"desprover"}),
 }
 # bendicir e maldicir teñen tamén formas regulares (bendicín, bendicirei): non se derivan.
 NON_DERIVAR = {"bendicir", "maldicir"}
@@ -261,6 +260,8 @@ def aplicar_referencia(taboa: dict, referencia: dict) -> list[str]:
                 cambiadas.append(clave)
         elif clave in taboa and len(valor) == 6:
             for p, cela in enumerate(valor):
+                if cela is None:          # a referencia non opina nesta cela
+                    continue
                 cela = list(cela) if isinstance(cela, list) else [cela]
                 if set(taboa[clave][p]) != set(cela):
                     taboa[clave][p] = cela

@@ -39,6 +39,7 @@ COMPOSTOS = {
     "sentir": ["asentir", "consentir", "presentir", "resentir"],
     "pedir": ["despedir", "expedir", "impedir"],
     "construír": ["reconstruír"],
+    # prover/desprover: o conxugador da RAG dá provexo pero desproveo; non se derivan
 }
 
 

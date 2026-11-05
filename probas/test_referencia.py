@@ -51,7 +51,7 @@ class ProbasReferencia(unittest.TestCase):
                 elif clave in ("participio", "xerundio", "infinitivo"):
                     pares = [(clave, valor, taboa[clave])]
                 else:
-                    pares = [(f"{clave}.{C.PERSOAS[p]}", c, taboa[clave][p]) for p, c in enumerate(valor)]
+                    pares = [(f"{clave}.{C.PERSOAS[p]}", c, taboa[clave][p]) for p, c in enumerate(valor) if c is not None]
                 for nome, esperado, obtido in pares:
                     with self.subTest(lema=lema, cela=nome):
                         self.assertEqual(set(obtido), set(esperado))

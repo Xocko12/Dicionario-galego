@@ -57,7 +57,7 @@ REFERENCIA = {
         "subxuntivo.futuro": "prover proveres prover provermos proverdes proveren",
         "infinitivo.conxugado": "prover proveres prover provermos proverdes proveren",
     },
-    "desprover": {"indicativo.presente": "desprovexo desprovés desprové desprovemos desprovedes desprovén"},
+    "desprover": {"indicativo.presente": "desproveo desprovés desprové desprovemos desprovedes desprovén"},
     "seguir": {"indicativo.presente": "sigo segues segue seguimos seguides seguen"},
     "dicir": {"indicativo.antepreterito": "dixera dixeras dixera dixeramos dixerades dixeran"},
 }
@@ -65,7 +65,7 @@ REFERENCIA = {
 # imperativos confirmados co conxugador da RAG (os verbos con alternancia manteñen
 # a vogal pechada da P1: durme, sube, sigue, fire)
 IMPERATIVOS = {"falar": "fala", "ser": "sé", "vir": "ven", "durmir": "durme",
-               "seguir": "sigue", "subir": "sube", "ferir": "fire", "vestir": "veste",
+               "seguir": "sigue", "subir": "sube", "ferir": "fire", "vestir": "viste",
                "facer": "fai", "ter": "ten"}
 
 PARTICIPIOS = {"dicir": "dito", "pór": "posto", "facer": "feito", "ver": "visto"}

@@ -5091,13 +5091,5 @@
     "partidas"
    ]
   }
- },
- "vestir": {
-  "nota": "Imperativo confirmado co conxugador da RAG.",
-  "celas": {
-   "imperativo.P2": [
-    "veste"
-   ]
-  }
  }
 }

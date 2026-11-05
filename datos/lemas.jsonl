@@ -4335,7 +4335,7 @@
 {"id": "argüente#substantivo", "lema": "argüente", "categoria": "substantivo", "formas": {"ms": ["argüente"], "mp": ["argüentes"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "arguina#adxectivo", "lema": "arguina", "categoria": "adxectivo", "xenero": "masculino", "formas": {"ms": ["arguina"], "mp": ["arguinas"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag"]}
 {"id": "arguina#substantivo", "lema": "arguina", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["arguina"], "mp": ["arguinas"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag"]}
-{"id": "argüír#verbo", "lema": "argüír", "categoria": "verbo", "tipos": ["transitiva", "intransitiva", "defectivo"], "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
+{"id": "argüír#verbo", "lema": "argüír", "categoria": "verbo", "tipos": ["transitiva", "intransitiva"], "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "argulario#substantivo", "lema": "argulario", "categoria": "substantivo", "formas": {"ms": ["argulario"], "fs": ["argularia"], "mp": ["argularios"], "fp": ["argularias"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "argumentación#substantivo", "lema": "argumentación", "categoria": "substantivo", "xenero": "feminino", "formas": {"fs": ["argumentación"], "fp": ["argumentacións"]}, "estado": "recomendado", "frecuencia": 3, "fontes": ["drag", "volga"]}
 {"id": "argumentador#substantivo", "lema": "argumentador", "categoria": "substantivo", "formas": {"ms": ["argumentador"], "fs": ["argumentadora"], "mp": ["argumentadores"], "fp": ["argumentadoras"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
@@ -6537,7 +6537,7 @@
 {"id": "barragán#substantivo", "lema": "barragán", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["barragán"], "mp": ["barragáns"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "barraganete#substantivo", "lema": "barraganete", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["barraganete"], "mp": ["barraganetes"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "barral#substantivo", "lema": "barral", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["barral"], "mp": ["barrais"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
-{"id": "barrallar#verbo", "lema": "barrallar", "categoria": "verbo", "tipos": ["impersoal", "intransitiva", "unipersoal"], "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
+{"id": "barrallar#verbo", "lema": "barrallar", "categoria": "verbo", "tipos": ["impersoal", "intransitiva"], "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "barrallo#substantivo", "lema": "barrallo", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["barrallo"], "mp": ["barrallos"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "barralloso#adxectivo", "lema": "barralloso", "categoria": "adxectivo", "formas": {"ms": ["barralloso"], "fs": ["barrallosa"], "mp": ["barrallosos"], "fp": ["barrallosas"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "barrañada#substantivo", "lema": "barrañada", "categoria": "substantivo", "xenero": "feminino", "formas": {"fs": ["barrañada"], "fp": ["barrañadas"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
@@ -6547,7 +6547,7 @@
 {"id": "barranqueño#adxectivo", "lema": "barranqueño", "categoria": "adxectivo", "formas": {"ms": ["barranqueño"], "fs": ["barranqueña"], "mp": ["barranqueños"], "fp": ["barranqueñas"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag"]}
 {"id": "barranqueño#substantivo", "lema": "barranqueño", "categoria": "substantivo", "formas": {"ms": ["barranqueño"], "fs": ["barranqueña"], "mp": ["barranqueños"], "fp": ["barranqueñas"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag"]}
 {"id": "barrar#verbo", "lema": "barrar", "categoria": "verbo", "tipos": ["transitiva"], "estado": "recomendado", "frecuencia": 5, "fontes": ["drag", "volga"]}
-{"id": "barrazar#verbo", "lema": "barrazar", "categoria": "verbo", "tipos": ["impersoal", "intransitiva", "unipersoal"], "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
+{"id": "barrazar#verbo", "lema": "barrazar", "categoria": "verbo", "tipos": ["impersoal", "intransitiva"], "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "barregán#substantivo", "lema": "barregán", "categoria": "substantivo", "formas": {"ms": ["barregán"], "fs": ["barregá"], "mp": ["barregáns"], "fp": ["barregás"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "barreira#substantivo", "lema": "barreira", "categoria": "substantivo", "xenero": "feminino", "formas": {"fs": ["barreira"], "fp": ["barreiras"]}, "estado": "recomendado", "frecuencia": 20, "fontes": ["volga"]}
 {"id": "barreiro#substantivo", "lema": "barreiro", "categoria": "substantivo", "formas": {"ms": ["barreiro"], "fs": ["barreira"], "mp": ["barreiros"], "fp": ["barreiras"]}, "estado": "recomendado", "frecuencia": 14, "fontes": ["drag", "volga"]}
@@ -6591,7 +6591,7 @@
 {"id": "barrufa#substantivo", "lema": "barrufa", "categoria": "substantivo", "xenero": "feminino", "formas": {"fs": ["barrufa"], "fp": ["barrufas"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "barrufar#verbo", "lema": "barrufar", "categoria": "verbo", "tipos": ["impersoal", "intransitiva", "unipersoal"], "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "barrufeiro#substantivo", "lema": "barrufeiro", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["barrufeiro"], "mp": ["barrufeiros"]}, "estado": "recomendado", "frecuencia": 1, "fontes": ["drag", "volga"]}
-{"id": "barruñar#verbo", "lema": "barruñar", "categoria": "verbo", "tipos": ["impersoal", "intransitiva", "unipersoal"], "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
+{"id": "barruñar#verbo", "lema": "barruñar", "categoria": "verbo", "tipos": ["impersoal", "intransitiva"], "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "barruñeira#substantivo", "lema": "barruñeira", "categoria": "substantivo", "xenero": "feminino", "formas": {"fs": ["barruñeira"], "fp": ["barruñeiras"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "barruntar#verbo", "lema": "barruntar", "categoria": "verbo", "tipos": ["transitiva"], "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "barruzar#verbo", "lema": "barruzar", "categoria": "verbo", "tipos": ["impersoal", "intransitiva", "unipersoal"], "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
@@ -12571,7 +12571,7 @@
 {"id": "competencial#adxectivo", "lema": "competencial", "categoria": "adxectivo", "formas": {"ms": ["competencial"], "mp": ["competenciais"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag"]}
 {"id": "competente#adxectivo", "lema": "competente", "categoria": "adxectivo", "formas": {"ms": ["competente"], "mp": ["competentes"]}, "estado": "recomendado", "frecuencia": 13, "fontes": ["drag", "volga"]}
 {"id": "competentemente#adverbio", "lema": "competentemente", "categoria": "adverbio", "formas": {"ms": ["competentemente"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
-{"id": "competer#verbo", "lema": "competer", "categoria": "verbo", "tipos": ["defectivo", "intransitiva", "unipersoal"], "estado": "recomendado", "frecuencia": 2, "fontes": ["volga"]}
+{"id": "competer#verbo", "lema": "competer", "categoria": "verbo", "tipos": ["defectivo", "intransitiva"], "estado": "recomendado", "frecuencia": 2, "fontes": ["volga"]}
 {"id": "competición#substantivo", "lema": "competición", "categoria": "substantivo", "xenero": "feminino", "formas": {"fs": ["competición"], "fp": ["competicións"]}, "estado": "recomendado", "frecuencia": 16, "fontes": ["drag", "volga"]}
 {"id": "competidor#adxectivo", "lema": "competidor", "categoria": "adxectivo", "formas": {"ms": ["competidor"], "fs": ["competidora"], "mp": ["competidores"], "fp": ["competidoras"]}, "estado": "recomendado", "frecuencia": 2, "fontes": ["drag", "volga"]}
 {"id": "competidor#substantivo", "lema": "competidor", "categoria": "substantivo", "formas": {"ms": ["competidor"], "fs": ["competidora"], "mp": ["competidores"], "fp": ["competidoras"]}, "estado": "recomendado", "frecuencia": 2, "fontes": ["drag", "volga"]}
@@ -19749,7 +19749,7 @@
 {"id": "engradado#substantivo", "lema": "engradado", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["engradado"], "mp": ["engradados"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "engradar#verbo", "lema": "engradar", "categoria": "verbo", "tipos": ["intransitiva"], "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "engraecer#verbo", "lema": "engraecer", "categoria": "verbo", "tipos": ["defectiva", "intransitiva", "unipersoal"], "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
-{"id": "engraiar#verbo", "lema": "engraiar", "categoria": "verbo", "tipos": ["defectiva", "intransitiva", "unipersoal"], "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
+{"id": "engraiar#verbo", "lema": "engraiar", "categoria": "verbo", "tipos": ["defectiva", "intransitiva"], "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "engrandecedor#adxectivo", "lema": "engrandecedor", "categoria": "adxectivo", "formas": {"ms": ["engrandecedor"], "fs": ["engrandecedora"], "mp": ["engrandecedores"], "fp": ["engrandecedoras"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "engrandecemento#substantivo", "lema": "engrandecemento", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["engrandecemento"], "mp": ["engrandecementos"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "engrandecer#verbo", "lema": "engrandecer", "categoria": "verbo", "tipos": ["transitiva", "intransitiva", "pronominal"], "estado": "recomendado", "frecuencia": 1, "fontes": ["drag", "volga"]}
@@ -20634,7 +20634,7 @@
 {"id": "escama#substantivo", "lema": "escama", "categoria": "substantivo", "xenero": "feminino", "formas": {"fs": ["escama"], "fp": ["escamas"]}, "estado": "recomendado", "frecuencia": 2, "fontes": ["drag", "volga"]}
 {"id": "escamadura#substantivo", "lema": "escamadura", "categoria": "substantivo", "xenero": "feminino", "formas": {"fs": ["escamadura"], "fp": ["escamaduras"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "escamar#verbo", "lema": "escamar", "categoria": "verbo", "tipos": ["transitiva"], "estado": "recomendado", "frecuencia": 2, "fontes": ["drag", "volga"]}
-{"id": "escambrar#verbo", "lema": "escambrar", "categoria": "verbo", "tipos": ["impersoal", "intransitiva", "unipersoal"], "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
+{"id": "escambrar#verbo", "lema": "escambrar", "categoria": "verbo", "tipos": ["impersoal", "intransitiva"], "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "escambrón#substantivo", "lema": "escambrón", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["escambrón"], "mp": ["escambróns"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "escambruzar#verbo", "lema": "escambruzar", "categoria": "verbo", "tipos": ["impersoal", "intransitiva", "unipersoal"], "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "escamento#adxectivo", "lema": "escamento", "categoria": "adxectivo", "formas": {"ms": ["escamento"], "fs": ["escamenta"], "mp": ["escamentos"], "fp": ["escamentas"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
@@ -25962,7 +25962,7 @@
 {"id": "guardés#substantivo", "lema": "guardés", "categoria": "substantivo", "formas": {"ms": ["guardés"], "fs": ["guardesa"], "mp": ["guardeses"], "fp": ["guardesas"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "guarecer#verbo", "lema": "guarecer", "categoria": "verbo", "tipos": ["transitiva", "pronominal"], "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "guarida#substantivo", "lema": "guarida", "categoria": "substantivo", "xenero": "feminino", "formas": {"fs": ["guarida"], "fp": ["guaridas"]}, "estado": "recomendado", "frecuencia": 1, "fontes": ["drag", "volga"]}
-{"id": "guarir#verbo", "lema": "guarir", "categoria": "verbo", "tipos": ["defectiva", "transitiva", "pronominal", "defectivo"], "estado": "recomendado", "frecuencia": 1, "fontes": ["drag", "volga"]}
+{"id": "guarir#verbo", "lema": "guarir", "categoria": "verbo", "tipos": ["defectiva", "transitiva", "pronominal"], "estado": "recomendado", "frecuencia": 1, "fontes": ["drag", "volga"]}
 {"id": "guarnecer#verbo", "lema": "guarnecer", "categoria": "verbo", "tipos": ["transitiva"], "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "guarnición#substantivo", "lema": "guarnición", "categoria": "substantivo", "xenero": "feminino", "formas": {"fs": ["guarnición"], "fp": ["guarnicións"]}, "estado": "recomendado", "frecuencia": 3, "fontes": ["drag", "volga"]}
 {"id": "guata#substantivo", "lema": "guata", "categoria": "substantivo", "xenero": "feminino", "formas": {"fs": ["guata"], "fp": ["guatas"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
@@ -31883,7 +31883,7 @@
 {"id": "lusquefusque#substantivo", "lema": "lusquefusque", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["lusquefusque"], "mp": ["lusquefusques"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "lustración#substantivo", "lema": "lustración", "categoria": "substantivo", "xenero": "feminino", "formas": {"fs": ["lustración"], "fp": ["lustracións"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "lustral#adxectivo", "lema": "lustral", "categoria": "adxectivo", "formas": {"ms": ["lustral"], "mp": ["lustrais"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
-{"id": "lustrar#verbo", "lema": "lustrar", "categoria": "verbo", "tipos": ["impersoal", "transitiva", "intransitiva", "unipersoal"], "estado": "recomendado", "frecuencia": 6, "fontes": ["drag", "volga"]}
+{"id": "lustrar#verbo", "lema": "lustrar", "categoria": "verbo", "tipos": ["impersoal", "transitiva", "intransitiva"], "estado": "recomendado", "frecuencia": 6, "fontes": ["drag", "volga"]}
 {"id": "lustre#substantivo", "lema": "lustre", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["lustre"], "mp": ["lustres"]}, "estado": "recomendado", "frecuencia": 1, "fontes": ["drag", "volga"]}
 {"id": "lustro#substantivo", "lema": "lustro", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["lustro"], "mp": ["lustros"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "lustroso#adxectivo", "lema": "lustroso", "categoria": "adxectivo", "formas": {"ms": ["lustroso"], "fs": ["lustrosa"], "mp": ["lustrosos"], "fp": ["lustrosas"]}, "estado": "recomendado", "frecuencia": 2, "fontes": ["drag", "volga"]}
@@ -40626,7 +40626,7 @@
 {"id": "prá#contracción", "lema": "prá", "categoria": "contracción", "formas": {"ms": ["prá"], "mp": ["prás"]}, "composicion": ["para", "a"], "estado": "tolerado", "frecuencia": 1, "fontes": ["volga"]}
 {"id": "pracenteiro#adxectivo", "lema": "pracenteiro", "categoria": "adxectivo", "formas": {"ms": ["pracenteiro"], "fs": ["pracenteira"], "mp": ["pracenteiros"], "fp": ["pracenteiras"]}, "estado": "recomendado", "frecuencia": 10, "fontes": ["drag", "volga"]}
 {"id": "pracer#substantivo", "lema": "pracer", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["pracer"], "mp": ["praceres"]}, "estado": "recomendado", "frecuencia": 106, "fontes": ["drag", "volga"]}
-{"id": "pracer#verbo", "lema": "pracer", "categoria": "verbo", "tipos": ["defectiva", "intransitiva", "unipersoal"], "estado": "recomendado", "frecuencia": 155, "fontes": ["drag", "volga"]}
+{"id": "pracer#verbo", "lema": "pracer", "categoria": "verbo", "tipos": ["defectiva", "intransitiva"], "estado": "recomendado", "frecuencia": 155, "fontes": ["drag", "volga"]}
 {"id": "prácrito#substantivo", "lema": "prácrito", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["prácrito"], "mp": ["prácritos"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "práctica#substantivo", "lema": "práctica", "categoria": "substantivo", "xenero": "feminino", "formas": {"fs": ["práctica"], "fp": ["prácticas"]}, "estado": "recomendado", "frecuencia": 54, "fontes": ["volga"]}
 {"id": "practicábel#adxectivo", "lema": "practicábel", "categoria": "adxectivo", "formas": {"ms": ["practicábel"], "mp": ["practicábeis"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
@@ -43290,7 +43290,7 @@
 {"id": "redada#substantivo", "lema": "redada", "categoria": "substantivo", "xenero": "feminino", "formas": {"fs": ["redada"], "fp": ["redadas"]}, "estado": "recomendado", "frecuencia": 14, "fontes": ["drag", "volga"]}
 {"id": "redar#verbo", "lema": "redar", "categoria": "verbo", "tipos": ["transitiva"], "estado": "recomendado", "frecuencia": 3, "fontes": ["drag", "volga"]}
 {"id": "redargución#substantivo", "lema": "redargución", "categoria": "substantivo", "xenero": "feminino", "formas": {"fs": ["redargución"], "fp": ["redargucións"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
-{"id": "redargüír#verbo", "lema": "redargüír", "categoria": "verbo", "tipos": ["transitiva", "defectivo"], "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
+{"id": "redargüír#verbo", "lema": "redargüír", "categoria": "verbo", "tipos": ["transitiva"], "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "rede#substantivo", "lema": "rede", "categoria": "substantivo", "xenero": "feminino", "formas": {"fs": ["rede"], "fp": ["redes"]}, "estado": "recomendado", "frecuencia": 86, "fontes": ["drag", "volga"]}
 {"id": "redefinir#verbo", "lema": "redefinir", "categoria": "verbo", "tipos": ["transitiva"], "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "redefol#substantivo", "lema": "redefol", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["redefol"], "mp": ["redefoles"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
@@ -47034,7 +47034,7 @@
 {"id": "sobretensión#substantivo", "lema": "sobretensión", "categoria": "substantivo", "xenero": "feminino", "formas": {"fs": ["sobretensión"], "fp": ["sobretensións"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "sobrevaloración#substantivo", "lema": "sobrevaloración", "categoria": "substantivo", "xenero": "feminino", "formas": {"fs": ["sobrevaloración"], "fp": ["sobrevaloracións"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "sobrevalorar#verbo", "lema": "sobrevalorar", "categoria": "verbo", "tipos": ["transitiva"], "estado": "recomendado", "frecuencia": 2, "fontes": ["drag", "volga"]}
-{"id": "sobrevir#verbo", "lema": "sobrevir", "categoria": "verbo", "tipos": ["intransitiva"], "estado": "recomendado", "frecuencia": 3, "fontes": ["drag", "volga"]}
+{"id": "sobrevir#verbo", "lema": "sobrevir", "categoria": "verbo", "tipos": ["intransitiva", "unipersoal"], "estado": "recomendado", "frecuencia": 3, "fontes": ["drag", "volga"]}
 {"id": "sobrevivente#adxectivo", "lema": "sobrevivente", "categoria": "adxectivo", "formas": {"ms": ["sobrevivente"], "mp": ["sobreviventes"]}, "estado": "recomendado", "frecuencia": 4, "fontes": ["drag", "volga"]}
 {"id": "sobrevivente#substantivo", "lema": "sobrevivente", "categoria": "substantivo", "formas": {"ms": ["sobrevivente"], "mp": ["sobreviventes"]}, "estado": "recomendado", "frecuencia": 4, "fontes": ["drag", "volga"]}
 {"id": "sobrevivir#verbo", "lema": "sobrevivir", "categoria": "verbo", "tipos": ["intransitiva"], "estado": "recomendado", "frecuencia": 172, "fontes": ["drag", "volga"]}
