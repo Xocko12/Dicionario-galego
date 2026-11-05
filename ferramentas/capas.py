@@ -221,6 +221,11 @@ def main() -> None:
     referencia = json.loads((I.DATOS / "correccions" / "referencia.json").read_text(encoding="utf-8"))
     referencia.pop("_descricion", None)
     referencia = compostos.con_compostos(referencia)
+    ruta_rag = I.DATOS / "referencia-rag.json"
+    if ruta_rag.exists():      # o conxugador da RAG manda sobre todo o anterior
+        rag = json.loads(ruta_rag.read_text(encoding="utf-8"))
+        rag.pop("_descricion", None)
+        referencia.update(rag)
 
     config = {capa: cfg for capa, cfg in config.items() if "modulos" in cfg}   # as de «script» van á parte
     pedidas = [c for c in pedidas if c in config]

@@ -15,7 +15,7 @@ Dous camiños:
 
     python3 ferramentas/comparar_rag.py docs/rag/            # informa das diferenzas
     python3 ferramentas/comparar_rag.py --aceptar docs/rag/  # e garda as táboas da RAG
-                                                             # en datos/correccions/referencia.json
+                                                             # en datos/referencia-rag.json
 
 Despois de --aceptar hai que executar importar.py (e capas.py) para que a
 referencia se aplique aos datos. O informe de diferenzas escríbese tamén en
@@ -238,8 +238,11 @@ def main() -> None:
     if not fontes:
         print(__doc__)
         sys.exit(2)
-    ref_ruta = RAIZ / "datos" / "correccions" / "referencia.json"
-    referencia = json.loads(ref_ruta.read_text(encoding="utf-8"))
+    ref_ruta = RAIZ / "datos" / "referencia-rag.json"
+    referencia = json.loads(ref_ruta.read_text(encoding="utf-8")) if ref_ruta.exists() else {
+        "_descricion": "Táboas do conxugador da RAG (academia.gal), descargadas con ferramentas/comparar_rag.py "
+                       "--rag --aceptar. Mandan sobre as regras de Hunspell-gl e sobre datos/correccions/referencia.json. "
+                       "As Normas e o conxugador son normativa gramatical, non o contido do dicionario."}
     total = 0
     aceptados = 0
     sen_rag = []
@@ -267,7 +270,7 @@ def main() -> None:
         for d in difs:
             informe.write(f"{lema}\t{d}\n")
         if aceptar:
-            referencia[lema] = {"nota": "Táboa do conxugador da RAG (comparar_rag.py --aceptar).", "celas": rag}
+            referencia[lema] = {"celas": rag}
             aceptados += 1
         if modo_rag and n % 100 == 0:
             print(f"... {n}/{len(fontes)} verbos, {total} diferenzas ata agora", flush=True)
@@ -275,8 +278,8 @@ def main() -> None:
     if sen_rag:
         print(f"{len(sen_rag)} verbos sen táboa no conxugador da RAG: {', '.join(sen_rag[:30])}")
     if aceptar:
-        ref_ruta.write_text(json.dumps(referencia, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-        print(f"referencia.json actualizado con {aceptados} verbos; executa importar.py e capas.py")
+        ref_ruta.write_text(json.dumps(referencia, ensure_ascii=False, separators=(",", ":")) + "\n", encoding="utf-8")
+        print(f"datos/referencia-rag.json actualizado con {aceptados} verbos; executa importar.py e capas.py")
     print(f"total: {len(fontes)} verbos, {total} diferenzas")
     sys.exit(1 if total and not aceptar else 0)
 

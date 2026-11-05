@@ -28,6 +28,11 @@ class ProbasReferencia(unittest.TestCase):
         cls.referencia.pop("_descricion", None)
         import compostos
         cls.referencia = compostos.con_compostos(cls.referencia)
+        ruta_rag = RAIZ / "datos" / "referencia-rag.json"
+        if ruta_rag.exists():
+            rag = json.loads(ruta_rag.read_text(encoding="utf-8"))
+            rag.pop("_descricion", None)
+            cls.referencia.update(rag)
 
     def test_todos_os_verbos_de_referencia_existen(self):
         # os compostos derivados poden non estar nas fontes (prevaler, antever)

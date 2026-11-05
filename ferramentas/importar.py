@@ -290,6 +290,11 @@ def main() -> None:
     referencia = json.loads((DATOS / "correccions" / "referencia.json").read_text(encoding="utf-8"))
     referencia.pop("_descricion", None)
     referencia = compostos.con_compostos(referencia)
+    ruta_rag = DATOS / "referencia-rag.json"
+    if ruta_rag.exists():      # o conxugador da RAG manda sobre todo o anterior
+        rag = json.loads(ruta_rag.read_text(encoding="utf-8"))
+        rag.pop("_descricion", None)
+        referencia.update(rag)
 
     def utilizable(e) -> bool:
         return (e.source in fonte_de and palabra_valida(e.word)
