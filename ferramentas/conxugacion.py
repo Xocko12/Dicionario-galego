@@ -137,7 +137,7 @@ def completar(taboa: dict, lema: str) -> None:
     - infinitivo conxugado P1/P3 = infinitivo;
     - copretérito e antepretérito: P1 = P3 = P2 sen -s (e viceversa);
     - futuro de subxuntivo: P1 = P3 = P2 sen -es; P6 = P2 con -en;
-    - imperativo P2 = presente P3 (agás ser, que vai nas correccións);
+    - imperativo P2: o de Hunspell ou, se falta, a P3 do presente;
       o imperativo só ten P2 e P5 (e a P4 «vamos» de ir);
     - futuro de subxuntivo baleiro = infinitivo conxugado (pretérito regular);
     - os verbos unipersoais (chover) non se completan.
@@ -169,11 +169,12 @@ def completar(taboa: dict, lema: str) -> None:
     _derivar(fut[1], fut[5], "es", "en")
     _derivar(fut[5], fut[0], "en", "")
     _derivar(fut[5], fut[2], "en", "")
-    # Imperativo P2 = presente P3 (dorme, sobe, segue). Hunspell usa ás veces
-    # a raíz da P1 (durme, sube, sigue), que non é correcta. O monosílabo
+    # Imperativo P2: o que dan as regras de Hunspell (durme, sube, sigue, fire:
+    # o conxugador da RAG confírmaos); se falta, a P3 do presente. O monosílabo
     # "vén" perde o til diacrítico: "ven".
     imp = taboa["imperativo"]
-    imp[1] = [_IMPERATIVO_SEN_TIL.get(f, f) for f in taboa["indicativo.presente"][2]]
+    if not imp[1]:
+        imp[1] = [_IMPERATIVO_SEN_TIL.get(f, f) for f in taboa["indicativo.presente"][2]]
     # O imperativo só ten P2 e P5; a P4 consérvase se Hunspell a dá (só «vamos», de ir).
     for p in (0, 2, 5):
         imp[p] = []

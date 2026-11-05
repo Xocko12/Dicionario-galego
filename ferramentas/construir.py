@@ -318,6 +318,7 @@ def construir_glosario(lemas, conx, encl, capas, kobo: bool) -> None:
             cabeceira = "|".join([lema] + alternativas)
             corpo = ("<hr/>".join(html_lema(r, conx) for r in rexistros) + html_sinonimos(lema, capas)
                      + html_semantica(lema, capas))
+            corpo = corpo.replace("\t", " ").replace("\r", " ").replace("\n", " ")   # unha liña por entrada
             fh.write(f"{cabeceira}\t{corpo}\n")
     if kobo:
         from pyglossary.glossary_v2 import ConvertArgs, Glossary

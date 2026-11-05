@@ -86,3 +86,30 @@ class ProbasSemantica(unittest.TestCase):
         self.assertIn("janela", xanela["pt"])
         self.assertIn("window", xanela["en"])
         self.assertIn("silla", t["cadeira"][0]["es"])
+
+
+class ProbasDefinicions(unittest.TestCase):
+    def test_definicions_galegas(self):
+        ruta = RAIZ / "datos" / "capas" / "definicions-gl.jsonl"
+        if not ruta.exists():
+            self.skipTest("capa opcional non xerada")
+        d = {}
+        for r in ler("capas/definicions-gl.jsonl"):
+            d.setdefault(r["lema"], []).append(r)
+        casa = next(r for r in d["casa"] if r["categoria"] == "substantivo")
+        self.assertEqual(casa["xenero"], "feminino")
+        self.assertTrue(any("habita" in a["definicion"] for a in casa["acepcions"]))
+        ledo = d["ledo"][0]
+        self.assertIn("alegre", ledo["acepcions"][0].get("sinonimos", []))
+        self.assertGreater(len(d), 30000)
+        for rs in d.values():
+            for r in rs:
+                self.assertTrue(all("{{" not in a["definicion"] and "[[" not in a["definicion"] for a in r["acepcions"]), r["lema"])
+
+    def test_definicions_inglesas(self):
+        ruta = RAIZ / "datos" / "capas" / "definicions-en.jsonl"
+        if not ruta.exists():
+            self.skipTest("capa opcional non xerada")
+        d = {r["lema"]: r for r in ler("capas/definicions-en.jsonl") if r["categoria"] == "substantivo"}
+        self.assertTrue(any("house" in a["definicion"] for a in d["casa"]["acepcions"]))
+        self.assertNotIn("falas", d)

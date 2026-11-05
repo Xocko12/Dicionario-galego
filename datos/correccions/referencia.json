@@ -3752,7 +3752,7 @@
   }
  },
  "durmir": {
-  "nota": "modelo de alternancia u/o",
+  "nota": "modelo de alternancia u/o Imperativo confirmado co conxugador da RAG.",
   "celas": {
    "indicativo.presente": [
     [
@@ -3817,7 +3817,7 @@
    "imperativo": [
     [],
     [
-     "dorme"
+     "durme"
     ],
     [],
     [],
@@ -3873,7 +3873,7 @@
    "imperativo": [
     [],
     [
-     "sobe"
+     "sube"
     ],
     [],
     [],
@@ -3882,7 +3882,8 @@
     ],
     []
    ]
-  }
+  },
+  "nota": "Imperativo confirmado co conxugador da RAG."
  },
  "fuxir": {
   "celas": {
@@ -3929,7 +3930,7 @@
    "imperativo": [
     [],
     [
-     "foxe"
+     "fuxe"
     ],
     [],
     [],
@@ -3938,10 +3939,11 @@
     ],
     []
    ]
-  }
+  },
+  "nota": "Imperativo confirmado co conxugador da RAG."
  },
  "servir": {
-  "nota": "modelo de alternancia i/e",
+  "nota": "modelo de alternancia i/e Imperativo confirmado co conxugador da RAG.",
   "celas": {
    "indicativo.presente": [
     [
@@ -3986,7 +3988,7 @@
    "imperativo": [
     [],
     [
-     "serve"
+     "sirve"
     ],
     [],
     [],
@@ -4042,7 +4044,7 @@
    "imperativo": [
     [],
     [
-     "segue"
+     "sigue"
     ],
     [],
     [],
@@ -4051,7 +4053,8 @@
     ],
     []
    ]
-  }
+  },
+  "nota": "Imperativo confirmado co conxugador da RAG."
  },
  "sentir": {
   "celas": {
@@ -4098,7 +4101,7 @@
    "imperativo": [
     [],
     [
-     "sente"
+     "sinte"
     ],
     [],
     [],
@@ -4107,7 +4110,8 @@
     ],
     []
    ]
-  }
+  },
+  "nota": "Imperativo confirmado co conxugador da RAG."
  },
  "mentir": {
   "celas": {
@@ -4154,7 +4158,7 @@
    "imperativo": [
     [],
     [
-     "mente"
+     "minte"
     ],
     [],
     [],
@@ -4163,7 +4167,8 @@
     ],
     []
    ]
-  }
+  },
+  "nota": "Imperativo confirmado co conxugador da RAG."
  },
  "pedir": {
   "celas": {
@@ -5084,6 +5089,14 @@
     "partidos",
     "partida",
     "partidas"
+   ]
+  }
+ },
+ "vestir": {
+  "nota": "Imperativo confirmado co conxugador da RAG.",
+  "celas": {
+   "imperativo.P2": [
+    "veste"
    ]
   }
  }

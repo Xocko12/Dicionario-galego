@@ -41,22 +41,12 @@ A regra xenérica de *-er* aplícase a *ler, crer, reler, descrer, trasler* e d�
 (e as regras irmás de P2, P4, P5 e P6). Faría falta excluír *ler/crer* da condición
 e darlles regras propias con *-ea*.
 
-## 3. Imperativo P2 dos verbos con alternancia vocálica
+## 3. Imperativo de *vir* e compostos
 
-O imperativo P2 coincide coa P3 do presente (*dorme, sobe, segue*), pero a regra
-de imperativo aplícase á raíz con *u/i*:
-
-```
-6802: SFX 614 ir e [^cu]ir . is:imperativo P2     → durme, sube, cuspe, fuxe, sacude...
-7927: SFX 714 ir e [^cu]ir
-```
-
-e a raíz alternativa `siguir/666,623,723` dá **sigue** (correcto: **segue**).
-Verbos afectados (módulo `rag/gl`): *acudir, bulir, conseguir, consentir, cubrir,
-cuspir, descubrir, durmir, ferir, fuxir, lucir, mentir, mulir, perseguir, presentir,
-proseguir, sacudir, seguir, sentir, servir, subir, sufrir, ulir, urdir, xurdir*.
-Tamén *vir* e compostos: regra 640 dá **vien, convien, intervien, provien**
-(correcto: **ven, convén, intervén, provén**).
+A regra 640 dá **vien, convien, intervien, provien** (correcto: **ven, convén,
+intervén, provén**). *(Nunha versión anterior deste informe figuraba aquí tamén o
+imperativo dos verbos con alternancia vocálica, durme/sube/sigue; o conxugador da
+RAG confirma esas formas: hunspell-gl está ben e o erro era noso.)*
 
 ## 4. Verbos irregulares con paradigma incompleto ou con formas falsas
 

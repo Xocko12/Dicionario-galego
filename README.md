@@ -217,8 +217,9 @@ Decisións tomadas onde a norma admite dúbida (revisadas, non cambiar sen motiv
 - **Erros atopados en Hunspell-gl e corrixidos** (convén comunicalos a Trasno):
   *ler/crer* (*la* → *lea*, *cra* → *crea*), *erguer* (*ergugan* → *ergan*),
   *dicir* (antepretérito etiquetado como pospretérito), *pór* (táboa incompleta),
-  imperativo dos verbos con alternancia vocálica (*sube* → *sobe*, *durme* → *dorme*,
-  *sigue* → *segue*), *prover* (revisado co conxugador da RAG), entre outros. Ver `fontes/parches.json` e
+  *prover* (revisado co conxugador da RAG), entre outros. (Unha «corrección» nosa
+  anterior, *durme/sube/sigue* → *dorme/sobe/segue*, era errada: o conxugador da RAG
+  confirma *durme, sube, sigue, fire*; retirouse.) Ver `fontes/parches.json` e
   `datos/correccions/conxugacions.json`.
 
 ## Uso

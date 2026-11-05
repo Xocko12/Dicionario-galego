@@ -62,8 +62,11 @@ REFERENCIA = {
     "dicir": {"indicativo.antepreterito": "dixera dixeras dixera dixeramos dixerades dixeran"},
 }
 
-IMPERATIVOS = {"falar": "fala", "ser": "sé", "vir": "ven", "durmir": "dorme",
-               "seguir": "segue", "subir": "sobe", "facer": "fai", "ter": "ten"}
+# imperativos confirmados co conxugador da RAG (os verbos con alternancia manteñen
+# a vogal pechada da P1: durme, sube, sigue, fire)
+IMPERATIVOS = {"falar": "fala", "ser": "sé", "vir": "ven", "durmir": "durme",
+               "seguir": "sigue", "subir": "sube", "ferir": "fire", "vestir": "veste",
+               "facer": "fai", "ter": "ten"}
 
 PARTICIPIOS = {"dicir": "dito", "pór": "posto", "facer": "feito", "ver": "visto"}
 

@@ -1936,7 +1936,6 @@
 {"forma": "asinouna", "lema": "asinar", "base": ["indicativo.preterito.P3"], "pronomes": ["a"], "frecuencia": 1}
 {"forma": "asinouno", "lema": "asinar", "base": ["indicativo.preterito.P3"], "pronomes": ["o"], "frecuencia": 2}
 {"forma": "asinouse", "lema": "asinar", "base": ["indicativo.preterito.P3"], "pronomes": ["se"], "frecuencia": 1}
-{"forma": "asinte", "lema": "asir", "base": ["indicativo.preterito.P1"], "pronomes": ["te"], "frecuencia": 1}
 {"forma": "asistila", "lema": "asistir", "base": ["infinitivo.conxugado.P1", "infinitivo.conxugado.P3"], "pronomes": ["a"], "frecuencia": 1}
 {"forma": "asistiralo", "lema": "asistir", "base": ["indicativo.futuro.P2"], "pronomes": ["o"], "frecuencia": 1}
 {"forma": "asistíronnos", "lema": "asistir", "base": ["indicativo.preterito.P6"], "pronomes": ["nos"], "frecuencia": 1}
@@ -3353,6 +3352,7 @@
 {"forma": "chupala", "lema": "chupar", "base": ["infinitivo.conxugado.P1", "subxuntivo.futuro.P1", "subxuntivo.futuro.P3"], "pronomes": ["a"], "frecuencia": 1}
 {"forma": "chúpate", "lema": "chupar", "base": ["indicativo.presente.P3", "imperativo.P2"], "pronomes": ["te"], "frecuencia": 2}
 {"forma": "chúpese", "lema": "chupar", "base": ["subxuntivo.presente.P1", "subxuntivo.presente.P3"], "pronomes": ["se"], "frecuencia": 1}
+{"forma": "chúspelle", "lema": "chuspir", "base": ["imperativo.P2"], "pronomes": ["lle"], "frecuencia": 1}
 {"forma": "chútalle", "lema": "chutar", "base": ["indicativo.presente.P3", "imperativo.P2"], "pronomes": ["lle"], "frecuencia": 1}
 {"forma": "cíngase", "lema": "cinguir", "base": ["subxuntivo.presente.P1", "subxuntivo.presente.P3"], "pronomes": ["se"], "frecuencia": 1}
 {"forma": "cínguete", "lema": "cinguir", "base": ["indicativo.presente.P3", "imperativo.P2"], "pronomes": ["te"], "frecuencia": 4}
@@ -4098,6 +4098,9 @@
 {"forma": "consígame", "lema": "conseguir", "base": ["subxuntivo.presente.P1", "subxuntivo.presente.P3"], "pronomes": ["me"], "frecuencia": 1}
 {"forma": "consígoche", "lema": "conseguir", "base": ["indicativo.presente.P1"], "pronomes": ["che"], "frecuencia": 1}
 {"forma": "consígocho", "lema": "conseguir", "base": ["indicativo.presente.P1"], "pronomes": ["che", "o"], "frecuencia": 1}
+{"forma": "consíguelle", "lema": "conseguir", "base": ["imperativo.P2"], "pronomes": ["lle"], "frecuencia": 2}
+{"forma": "consígueme", "lema": "conseguir", "base": ["imperativo.P2"], "pronomes": ["me"], "frecuencia": 1}
+{"forma": "consígueos", "lema": "conseguir", "base": ["imperativo.P2"], "pronomes": ["os"], "frecuencia": 1}
 {"forma": "consólaa", "lema": "consolar", "base": ["indicativo.presente.P3", "imperativo.P2"], "pronomes": ["a"], "frecuencia": 1}
 {"forma": "consolalos", "lema": "consolar", "base": ["infinitivo.conxugado.P1", "subxuntivo.futuro.P1", "subxuntivo.futuro.P3"], "pronomes": ["os"], "frecuencia": 2}
 {"forma": "consólame", "lema": "consolar", "base": ["indicativo.presente.P3", "imperativo.P2"], "pronomes": ["me"], "frecuencia": 1}
@@ -4144,6 +4147,7 @@
 {"forma": "consumarase", "lema": "consumar", "base": ["indicativo.futuro.P3"], "pronomes": ["se"], "frecuencia": 1}
 {"forma": "consúmense", "lema": "consumar", "base": ["subxuntivo.presente.P6"], "pronomes": ["se"], "frecuencia": 2}
 {"forma": "consúmese", "lema": "consumar", "base": ["subxuntivo.presente.P1", "subxuntivo.presente.P3"], "pronomes": ["se"], "frecuencia": 3}
+{"forma": "consúmese", "lema": "consumir", "base": ["imperativo.P2"], "pronomes": ["se"], "frecuencia": 3}
 {"forma": "consumíanse", "lema": "consumir", "base": ["indicativo.copreterito.P6"], "pronomes": ["se"], "frecuencia": 1}
 {"forma": "consumíndome", "lema": "consumir", "base": ["xerundio"], "pronomes": ["me"], "frecuencia": 1}
 {"forma": "consumiraas", "lema": "consumir", "base": ["indicativo.futuro.P3"], "pronomes": ["as"], "frecuencia": 1}
@@ -4668,6 +4672,11 @@
 {"forma": "crúzase", "lema": "cruzar", "base": ["indicativo.presente.P3", "imperativo.P2"], "pronomes": ["se"], "frecuencia": 2}
 {"forma": "cruzouse", "lema": "cruzar", "base": ["indicativo.preterito.P3"], "pronomes": ["se"], "frecuencia": 1}
 {"forma": "cúbranse", "lema": "cubrir", "base": ["subxuntivo.presente.P6"], "pronomes": ["se"], "frecuencia": 2}
+{"forma": "cúbrea", "lema": "cubrir", "base": ["imperativo.P2"], "pronomes": ["a"], "frecuencia": 1}
+{"forma": "cúbreme", "lema": "cubrir", "base": ["imperativo.P2"], "pronomes": ["me"], "frecuencia": 1}
+{"forma": "cúbrenos", "lema": "cubrir", "base": ["imperativo.P2"], "pronomes": ["nos"], "frecuencia": 1}
+{"forma": "cúbrese", "lema": "cubrir", "base": ["imperativo.P2"], "pronomes": ["se"], "frecuencia": 1}
+{"forma": "cúbrete", "lema": "cubrir", "base": ["imperativo.P2"], "pronomes": ["te"], "frecuencia": 6}
 {"forma": "cubríchesme", "lema": "cubrir", "base": ["indicativo.preterito.P2"], "pronomes": ["me"], "frecuencia": 1}
 {"forma": "cubrídea", "lema": "cubrir", "base": ["imperativo.P5"], "pronomes": ["a"], "frecuencia": 1}
 {"forma": "cubrídeme", "lema": "cubrir", "base": ["imperativo.P5"], "pronomes": ["me"], "frecuencia": 1}
@@ -4750,6 +4759,8 @@
 {"forma": "curóuseche", "lema": "curar", "base": ["indicativo.preterito.P3"], "pronomes": ["se", "che"], "frecuencia": 1}
 {"forma": "cursarse", "lema": "cursar", "base": ["infinitivo.conxugado.P1", "subxuntivo.futuro.P1", "subxuntivo.futuro.P3"], "pronomes": ["se"], "frecuencia": 1}
 {"forma": "cúrtanse", "lema": "curtir", "base": ["subxuntivo.presente.P6"], "pronomes": ["se"], "frecuencia": 1}
+{"forma": "cúspenos", "lema": "cuspir", "base": ["imperativo.P2"], "pronomes": ["nos"], "frecuencia": 1}
+{"forma": "cúspeo", "lema": "cuspir", "base": ["imperativo.P2"], "pronomes": ["o"], "frecuencia": 1}
 {"forma": "cuspícheslle", "lema": "cuspir", "base": ["indicativo.preterito.P2"], "pronomes": ["lle"], "frecuencia": 1}
 {"forma": "cuspila", "lema": "cuspir", "base": ["infinitivo.conxugado.P1", "infinitivo.conxugado.P3"], "pronomes": ["a"], "frecuencia": 1}
 {"forma": "cuspíndolle", "lema": "cuspir", "base": ["xerundio"], "pronomes": ["lle"], "frecuencia": 1}
@@ -8670,6 +8681,7 @@
 {"forma": "financiarte", "lema": "financiar", "base": ["infinitivo.conxugado.P1", "subxuntivo.futuro.P1", "subxuntivo.futuro.P3"], "pronomes": ["te"], "frecuencia": 1}
 {"forma": "fincáronlle", "lema": "fincar", "base": ["indicativo.preterito.P6"], "pronomes": ["lle"], "frecuencia": 1}
 {"forma": "fíome", "lema": "fiar", "base": ["indicativo.presente.P1"], "pronomes": ["me"], "frecuencia": 3}
+{"forma": "fíreme", "lema": "ferir", "base": ["imperativo.P2"], "pronomes": ["me"], "frecuencia": 1}
 {"forma": "firmalo", "lema": "firmar", "base": ["infinitivo.conxugado.P1", "subxuntivo.futuro.P1", "subxuntivo.futuro.P3"], "pronomes": ["o"], "frecuencia": 1}
 {"forma": "firmeinos", "lema": "firmar", "base": ["indicativo.preterito.P1"], "pronomes": ["os"], "frecuencia": 1}
 {"forma": "firmeinos", "lema": "firmar", "base": ["indicativo.preterito.P1"], "pronomes": ["nos"], "frecuencia": 1}
@@ -10431,6 +10443,7 @@
 {"forma": "louvalo", "lema": "louvar", "base": ["infinitivo.conxugado.P1", "subxuntivo.futuro.P1", "subxuntivo.futuro.P3"], "pronomes": ["o"], "frecuencia": 1}
 {"forma": "louvalos", "lema": "louvar", "base": ["infinitivo.conxugado.P1", "subxuntivo.futuro.P1", "subxuntivo.futuro.P3"], "pronomes": ["os"], "frecuencia": 1}
 {"forma": "louvarte", "lema": "louvar", "base": ["infinitivo.conxugado.P1", "subxuntivo.futuro.P1", "subxuntivo.futuro.P3"], "pronomes": ["te"], "frecuencia": 2}
+{"forma": "lúceo", "lema": "lucir", "base": ["imperativo.P2"], "pronomes": ["o"], "frecuencia": 1}
 {"forma": "lucírmonos", "lema": "lucir", "base": ["infinitivo.conxugado.P4", "subxuntivo.futuro.P4"], "pronomes": ["nos"], "frecuencia": 1}
 {"forma": "lucirse", "lema": "lucir", "base": ["infinitivo.conxugado.P1", "infinitivo.conxugado.P3"], "pronomes": ["se"], "frecuencia": 2}
 {"forma": "machácovos", "lema": "machacar", "base": ["indicativo.presente.P1"], "pronomes": ["vos"], "frecuencia": 1}
@@ -12409,6 +12422,8 @@
 {"forma": "perseguiunos", "lema": "perseguir", "base": ["indicativo.preterito.P3"], "pronomes": ["os"], "frecuencia": 1}
 {"forma": "perseguiunos", "lema": "perseguir", "base": ["indicativo.preterito.P3"], "pronomes": ["nos"], "frecuencia": 1}
 {"forma": "perseguiute", "lema": "perseguir", "base": ["indicativo.preterito.P3"], "pronomes": ["te"], "frecuencia": 1}
+{"forma": "persígueme", "lema": "perseguir", "base": ["imperativo.P2"], "pronomes": ["me"], "frecuencia": 2}
+{"forma": "persígueo", "lema": "perseguir", "base": ["imperativo.P2"], "pronomes": ["o"], "frecuencia": 1}
 {"forma": "persuadilas", "lema": "persuadir", "base": ["infinitivo.conxugado.P1", "infinitivo.conxugado.P3"], "pronomes": ["as"], "frecuencia": 1}
 {"forma": "persuadilos", "lema": "persuadir", "base": ["infinitivo.conxugado.P1", "infinitivo.conxugado.P3"], "pronomes": ["os"], "frecuencia": 1}
 {"forma": "persuadireite", "lema": "persuadir", "base": ["indicativo.futuro.P1"], "pronomes": ["te"], "frecuencia": 1}
@@ -14900,6 +14915,9 @@
 {"forma": "sacrifícome", "lema": "sacrificar", "base": ["indicativo.presente.P1"], "pronomes": ["me"], "frecuencia": 1}
 {"forma": "sacrificouno", "lema": "sacrificar", "base": ["indicativo.preterito.P3"], "pronomes": ["o"], "frecuencia": 1}
 {"forma": "sacrificouse", "lema": "sacrificar", "base": ["indicativo.preterito.P3"], "pronomes": ["se"], "frecuencia": 2}
+{"forma": "sacúdelle", "lema": "sacudir", "base": ["imperativo.P2"], "pronomes": ["lle"], "frecuencia": 1}
+{"forma": "sacúdeo", "lema": "sacudir", "base": ["imperativo.P2"], "pronomes": ["o"], "frecuencia": 1}
+{"forma": "sacúdete", "lema": "sacudir", "base": ["imperativo.P2"], "pronomes": ["te"], "frecuencia": 1}
 {"forma": "sacudila", "lema": "sacudir", "base": ["infinitivo.conxugado.P1", "infinitivo.conxugado.P3"], "pronomes": ["a"], "frecuencia": 1}
 {"forma": "sacudilas", "lema": "sacudir", "base": ["infinitivo.conxugado.P1", "infinitivo.conxugado.P3"], "pronomes": ["as"], "frecuencia": 1}
 {"forma": "sacudilo", "lema": "sacudir", "base": ["infinitivo.conxugado.P1", "infinitivo.conxugado.P3"], "pronomes": ["o"], "frecuencia": 1}
@@ -15326,6 +15344,9 @@
 {"forma": "signifícao", "lema": "significar", "base": ["indicativo.presente.P3", "imperativo.P2"], "pronomes": ["o"], "frecuencia": 1}
 {"forma": "sígolle", "lema": "seguir", "base": ["indicativo.presente.P1"], "pronomes": ["lle"], "frecuencia": 1}
 {"forma": "sígoo", "lema": "seguir", "base": ["indicativo.presente.P1"], "pronomes": ["o"], "frecuencia": 3}
+{"forma": "síguea", "lema": "seguir", "base": ["imperativo.P2"], "pronomes": ["a"], "frecuencia": 1}
+{"forma": "sígueme", "lema": "seguir", "base": ["imperativo.P2"], "pronomes": ["me"], "frecuencia": 10}
+{"forma": "sígueo", "lema": "seguir", "base": ["imperativo.P2"], "pronomes": ["o"], "frecuencia": 3}
 {"forma": "silenciala", "lema": "silenciar", "base": ["infinitivo.conxugado.P1", "subxuntivo.futuro.P1", "subxuntivo.futuro.P3"], "pronomes": ["a"], "frecuencia": 1}
 {"forma": "sinalábanos", "lema": "sinalar", "base": ["indicativo.copreterito.P1", "indicativo.copreterito.P3"], "pronomes": ["nos"], "frecuencia": 1}
 {"forma": "sinalábanos", "lema": "sinalar", "base": ["indicativo.copreterito.P6"], "pronomes": ["os"], "frecuencia": 1}
@@ -15343,6 +15364,8 @@
 {"forma": "sindicalos", "lema": "sindicar", "base": ["infinitivo.conxugado.P1", "subxuntivo.futuro.P1", "subxuntivo.futuro.P3"], "pronomes": ["os"], "frecuencia": 1}
 {"forma": "sindicarse", "lema": "sindicar", "base": ["infinitivo.conxugado.P1", "subxuntivo.futuro.P1", "subxuntivo.futuro.P3"], "pronomes": ["se"], "frecuencia": 2}
 {"forma": "síntase", "lema": "sentir", "base": ["subxuntivo.presente.P1", "subxuntivo.presente.P3"], "pronomes": ["se"], "frecuencia": 1}
+{"forma": "síntea", "lema": "sentir", "base": ["imperativo.P2"], "pronomes": ["a"], "frecuencia": 1}
+{"forma": "síntete", "lema": "sentir", "base": ["imperativo.P2"], "pronomes": ["te"], "frecuencia": 2}
 {"forma": "síntoa", "lema": "sentir", "base": ["indicativo.presente.P1"], "pronomes": ["a"], "frecuencia": 2}
 {"forma": "síntoche", "lema": "sentir", "base": ["indicativo.presente.P1"], "pronomes": ["che"], "frecuencia": 1}
 {"forma": "síntocho", "lema": "sentir", "base": ["indicativo.presente.P1"], "pronomes": ["che", "o"], "frecuencia": 8}
@@ -15356,6 +15379,9 @@
 {"forma": "sírvanos", "lema": "servir", "base": ["subxuntivo.presente.P6"], "pronomes": ["os"], "frecuencia": 2}
 {"forma": "sírvanse", "lema": "servir", "base": ["subxuntivo.presente.P6"], "pronomes": ["se"], "frecuencia": 1}
 {"forma": "sírvase", "lema": "servir", "base": ["subxuntivo.presente.P1", "subxuntivo.presente.P3"], "pronomes": ["se"], "frecuencia": 4}
+{"forma": "sírvelle", "lema": "servir", "base": ["imperativo.P2"], "pronomes": ["lle"], "frecuencia": 1}
+{"forma": "sírvenos", "lema": "servir", "base": ["imperativo.P2"], "pronomes": ["nos"], "frecuencia": 1}
+{"forma": "sírvete", "lema": "servir", "base": ["imperativo.P2"], "pronomes": ["te"], "frecuencia": 4}
 {"forma": "sírvolle", "lema": "servir", "base": ["indicativo.presente.P1"], "pronomes": ["lle"], "frecuencia": 3}
 {"forma": "sírvollo", "lema": "servir", "base": ["indicativo.presente.P1"], "pronomes": ["lle", "o"], "frecuencia": 1}
 {"forma": "situábase", "lema": "situar", "base": ["indicativo.copreterito.P1", "indicativo.copreterito.P3"], "pronomes": ["se"], "frecuencia": 1}
@@ -15541,6 +15567,11 @@
 {"forma": "súbanos", "lema": "subir", "base": ["subxuntivo.presente.P1", "subxuntivo.presente.P3"], "pronomes": ["nos"], "frecuencia": 1}
 {"forma": "súbanos", "lema": "subir", "base": ["subxuntivo.presente.P6"], "pronomes": ["os"], "frecuencia": 1}
 {"forma": "súbase", "lema": "subir", "base": ["subxuntivo.presente.P1", "subxuntivo.presente.P3"], "pronomes": ["se"], "frecuencia": 2}
+{"forma": "súbea", "lema": "subir", "base": ["imperativo.P2"], "pronomes": ["a"], "frecuencia": 2}
+{"forma": "súbeme", "lema": "subir", "base": ["imperativo.P2"], "pronomes": ["me"], "frecuencia": 1}
+{"forma": "súbeo", "lema": "subir", "base": ["imperativo.P2"], "pronomes": ["o"], "frecuencia": 1}
+{"forma": "súbeos", "lema": "subir", "base": ["imperativo.P2"], "pronomes": ["os"], "frecuencia": 1}
+{"forma": "súbese", "lema": "subir", "base": ["imperativo.P2"], "pronomes": ["se"], "frecuencia": 1}
 {"forma": "subestímame", "lema": "subestimar", "base": ["indicativo.presente.P3", "imperativo.P2"], "pronomes": ["me"], "frecuencia": 1}
 {"forma": "subíame", "lema": "subir", "base": ["indicativo.copreterito.P1", "indicativo.copreterito.P3"], "pronomes": ["me"], "frecuencia": 1}
 {"forma": "subídea", "lema": "subir", "base": ["imperativo.P5"], "pronomes": ["a"], "frecuencia": 2}
@@ -16416,6 +16447,8 @@
 {"forma": "tumbeino", "lema": "tumbar", "base": ["indicativo.preterito.P1"], "pronomes": ["o"], "frecuencia": 1}
 {"forma": "tumbouse", "lema": "tumbar", "base": ["indicativo.preterito.P3"], "pronomes": ["se"], "frecuencia": 1}
 {"forma": "turrámoslle", "lema": "turrar", "base": ["indicativo.presente.P4", "indicativo.preterito.P4"], "pronomes": ["lle"], "frecuencia": 1}
+{"forma": "úleo", "lema": "ulir", "base": ["imperativo.P2"], "pronomes": ["o"], "frecuencia": 1}
+{"forma": "úlete", "lema": "ulir", "base": ["imperativo.P2"], "pronomes": ["te"], "frecuencia": 1}
 {"forma": "ulila", "lema": "ulir", "base": ["infinitivo.conxugado.P1", "infinitivo.conxugado.P3"], "pronomes": ["a"], "frecuencia": 2}
 {"forma": "ulilo", "lema": "ulir", "base": ["infinitivo.conxugado.P1", "infinitivo.conxugado.P3"], "pronomes": ["o"], "frecuencia": 3}
 {"forma": "ulirme", "lema": "ulir", "base": ["infinitivo.conxugado.P1", "infinitivo.conxugado.P3"], "pronomes": ["me"], "frecuencia": 1}
@@ -16782,7 +16815,6 @@
 {"forma": "véseme", "lema": "vesar", "base": ["subxuntivo.presente.P1", "subxuntivo.presente.P3"], "pronomes": ["me"], "frecuencia": 3}
 {"forma": "vesme", "lema": "ver", "base": ["indicativo.presente.P2"], "pronomes": ["me"], "frecuencia": 9}
 {"forma": "vésme", "lema": "vir", "base": ["indicativo.presente.P2"], "pronomes": ["me"], "frecuencia": 2}
-{"forma": "veste", "lema": "ver", "base": ["indicativo.presente.P2"], "pronomes": ["te"], "frecuencia": 11}
 {"forma": "vestíase", "lema": "vestir", "base": ["indicativo.copreterito.P1", "indicativo.copreterito.P3"], "pronomes": ["se"], "frecuencia": 1}
 {"forma": "vestídeo", "lema": "vestir", "base": ["imperativo.P5"], "pronomes": ["o"], "frecuencia": 1}
 {"forma": "vestila", "lema": "vestir", "base": ["infinitivo.conxugado.P1", "infinitivo.conxugado.P3"], "pronomes": ["a"], "frecuencia": 1}
@@ -16974,7 +17006,7 @@
 {"forma": "visitounos", "lema": "visitar", "base": ["indicativo.preterito.P3"], "pronomes": ["nos"], "frecuencia": 2}
 {"forma": "vístanse", "lema": "vestir", "base": ["subxuntivo.presente.P6"], "pronomes": ["se"], "frecuencia": 2}
 {"forma": "vístase", "lema": "vestir", "base": ["subxuntivo.presente.P1", "subxuntivo.presente.P3"], "pronomes": ["se"], "frecuencia": 1}
-{"forma": "vístea", "lema": "vestir", "base": ["indicativo.presente.P3", "imperativo.P2"], "pronomes": ["a"], "frecuencia": 1}
+{"forma": "vístea", "lema": "vestir", "base": ["indicativo.presente.P3"], "pronomes": ["a"], "frecuencia": 1}
 {"forma": "vístelo", "lema": "ver", "base": ["indicativo.preterito.P5"], "pronomes": ["o"], "frecuencia": 2}
 {"forma": "vístelo", "lema": "vestir", "base": ["indicativo.presente.P2"], "pronomes": ["o"], "frecuencia": 2}
 {"forma": "vístelos", "lema": "ver", "base": ["indicativo.preterito.P5"], "pronomes": ["os"], "frecuencia": 1}
@@ -16984,7 +17016,7 @@
 {"forma": "vístese", "lema": "vestir", "base": ["indicativo.presente.P3"], "pronomes": ["se"], "frecuencia": 2}
 {"forma": "vístesme", "lema": "ver", "base": ["indicativo.preterito.P5"], "pronomes": ["me"], "frecuencia": 1}
 {"forma": "vístesme", "lema": "vestir", "base": ["indicativo.presente.P2"], "pronomes": ["me"], "frecuencia": 1}
-{"forma": "vístete", "lema": "vestir", "base": ["indicativo.presente.P3", "imperativo.P2"], "pronomes": ["te"], "frecuencia": 10}
+{"forma": "vístete", "lema": "vestir", "base": ["indicativo.presente.P3"], "pronomes": ["te"], "frecuencia": 10}
 {"forma": "viume", "lema": "ver", "base": ["indicativo.preterito.P3"], "pronomes": ["me"], "frecuencia": 7}
 {"forma": "viuna", "lema": "ver", "base": ["indicativo.preterito.P3"], "pronomes": ["a"], "frecuencia": 6}
 {"forma": "viuno", "lema": "ver", "base": ["indicativo.preterito.P3"], "pronomes": ["o"], "frecuencia": 17}
