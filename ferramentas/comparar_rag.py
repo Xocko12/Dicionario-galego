@@ -130,16 +130,11 @@ PORTLET = "com_ideit_ragportal_liferay_dictionary_NormalSearchPortlet"
 AXENTE = "dicionario-galego (https://github.com/Xocko12/Dicionario-galego)"
 
 
-def descargar_rag(lema: str, pausa: float = 1.0) -> str | None:
-    """HTML do conxugador da RAG para un verbo (da caché se xa está)."""
-    CACHE_RAG.mkdir(parents=True, exist_ok=True)
-    destino = CACHE_RAG / f"{lema}.json"
-    if destino.exists():
-        return destino.read_text(encoding="utf-8")
+def _pedir_rag(lema: str, ficheiro: str, pausa: float) -> str | None:
     url = ("https://academia.gal/dicionario?p_p_id=" + PORTLET + "&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view"
            "&p_p_cacheability=cacheLevelPage&_" + PORTLET + "_cmd=cmdConjugateVerb&_" + PORTLET + "_renderMode=load"
            "&_" + PORTLET + "_nounTitle=" + urllib.parse.quote(lema))
-    datos = urllib.parse.urlencode({"_" + PORTLET + "_verb": f"/pc/verbos/{lema}.html"}).encode()
+    datos = urllib.parse.urlencode({"_" + PORTLET + "_verb": f"/pc/verbos/{ficheiro}.html"}).encode()
     peticion = urllib.request.Request(url, data=datos, headers={
         "User-Agent": AXENTE, "X-Requested-With": "XMLHttpRequest",
         "Referer": f"https://academia.gal/dicionario/-/termo/{urllib.parse.quote(lema)}"})
@@ -150,7 +145,33 @@ def descargar_rag(lema: str, pausa: float = 1.0) -> str | None:
         print(f"{lema}: erro ao descargar ({e})")
         return None
     time.sleep(pausa)
-    destino.write_text(texto, encoding="utf-8")
+    return texto
+
+
+def _baleiro(texto: str | None) -> bool:
+    return not texto or '"htmlContent":""' in texto.replace(" ", "")
+
+
+def descargar_rag(lema: str, pausa: float = 1.0) -> str | None:
+    """HTML do conxugador da RAG para un verbo (da caché se xa está).
+
+    Os verbos con homónimos teñen ficheiro numerado («cumprir1»): se a resposta
+    para «cumprir» vén baleira, próbase con «cumprir1»."""
+    CACHE_RAG.mkdir(parents=True, exist_ok=True)
+    destino = CACHE_RAG / f"{lema}.json"
+    texto = destino.read_text(encoding="utf-8") if destino.exists() else None
+    if texto is not None and not _baleiro(texto):
+        return texto
+    if texto is None:
+        texto = _pedir_rag(lema, lema, pausa)
+    if _baleiro(texto) and not (CACHE_RAG / f"{lema}.sen").exists():
+        texto1 = _pedir_rag(lema, lema + "1", pausa)
+        if not _baleiro(texto1):
+            texto = texto1
+        else:
+            (CACHE_RAG / f"{lema}.sen").write_text("")   # non volver probar
+    if texto is not None:
+        destino.write_text(texto, encoding="utf-8")
     return texto
 
 
