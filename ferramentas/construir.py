@@ -455,14 +455,22 @@ def construir_hunspell(lemas, conx, nomes, encl, capas) -> int:
     lista = saida / "_formas.txt"
     lista.write_text("\n".join(sorted(palabras)) + "\n", encoding="utf-8")
     base = str(base_aff)[:-4]
-    if shutil.which("hunspell"):
-        res = subprocess.run(["hunspell", "-d", base, "-l"], input=lista.read_bytes(), capture_output=True,
-                             env={"LANG": "C.UTF-8", "LC_ALL": "C.UTF-8", "PATH": "/usr/bin:/bin"})
-        adicions = set(res.stdout.decode("utf-8").split())
+    hunspell_bin = shutil.which("hunspell")
+    # `hunspell -l` parte as palabras polos puntos (D.ª, S.A.R): esas compróbanse sempre con spylls
+    con_punto = {p for p in palabras if "." in p} if hunspell_bin else palabras
+    if hunspell_bin:
+        lista.write_text("\n".join(sorted(palabras - con_punto)) + "\n", encoding="utf-8")
+        # ruta completa: co PATH mínimo de abaixo non se atopa o de Homebrew (/opt/homebrew/bin)
+        res = subprocess.run([hunspell_bin, "-i", "utf-8", "-d", base, "-l"], input=lista.read_bytes(),
+                             capture_output=True, env={"LANG": "C.UTF-8", "LC_ALL": "C.UTF-8", "PATH": "/usr/bin:/bin"})
+        # só formas enteiras da lista, nunca anacos que hunspell separase
+        adicions = set(res.stdout.decode("utf-8").split()) & palabras
     else:
+        adicions = set()
+    if con_punto:
         from spylls.hunspell import Dictionary
         d = Dictionary.from_files(base)
-        adicions = {p for p in palabras if not d.lookup(p)}
+        adicions |= {p for p in con_punto if not d.lookup(p)}
     lista.unlink()
 
     import prohibidas as P
