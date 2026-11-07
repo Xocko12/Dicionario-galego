@@ -410,46 +410,90 @@ def construir_hyphenation() -> None:
         "(extensión de LibreOffice), GPL-3.0-or-later.\n", encoding="utf-8")
 
 
+def _palabra_limpa(p: str) -> bool:
+    """Só letras (con tiles, ñ, ü), punto medio, apóstrofo, punto e guión interiores."""
+    return bool(p) and p[0].isalpha() and all(c.isalpha() or c in "·'’.-" for c in p) and " " not in p
+
+
 def construir_hunspell(lemas, conx, nomes, encl, capas) -> int:
     """dist/hunspell/gl_ES.dic + gl_ES.aff: corrector para macOS (Pages, Mail...),
-    LibreOffice, Firefox... A lista de palabras é a nosa (verbos revisados coa
-    RAG, enclíticos ben acentuados, capas); as regras de suxestión (TRY, KEY,
-    MAP, REP) tómanse do ficheiro de regras de Hunspell-gl."""
+    LibreOffice, Firefox...
+
+    Estrutura: a mesma ca Hunspell-gl (regras e dicionario de Proxecto Trasno
+    cos módulos da RAG, coas nosas correccións ás regras), e por riba:
+      - as nosas formas que esa base non recoñece (nomes, topónimos, siglas,
+        capas léxicas, formas revisadas coa RAG), como entradas sen afixos;
+      - as formas que a base acepta pero que están mal segundo o conxugador da
+        RAG ou as Normas, marcadas como prohibidas (FORBIDDENWORD).
+    Unha lista plana de 1,3 millóns de formas non cargaba no Hunspell antigo de
+    macOS; esta estrutura é a que xa funciona alí."""
+    import shutil
+    import subprocess
+
+    base_aff = RAIZ / "fontes" / "cache" / "hunspell-gl" / "gl.aff"
+    base_dic = RAIZ / "fontes" / "cache" / "hunspell-gl" / "gl.dic"
+    if not base_aff.exists():
+        print("sen fontes/cache/hunspell-gl: non se constrúe o corrector")
+        return 0
     palabras: set[str] = set()
     for r in lemas + [r for r in capas["lexico"] if r["capa"] in CAPAS_TECLADO]:
         for forma, _ in formas_do_lema(r, conx):
             palabras.add(forma)
     palabras.update(nomes)
     palabras.update(r["forma"] for r in encl)
-    for r in capas["siglas"]:
-        palabras.add(r["forma"])
+    palabras.update(r["forma"] for r in capas["siglas"])
     for r in capas["onomastica"]:
         if r["capa"] in CAPAS_TECLADO:
             palabras.update(p for p in r["nome"].split() if p[:1].isupper())
     for r in capas["locucions"]:
         palabras.update(r["locucion"].split())
-    palabras = {p for p in palabras if p and " " not in p}
+    palabras = {p for p in palabras if _palabra_limpa(p)}
+
+    # que formas non recoñece xa a base? (hunspell da liña de ordes se o hai; se non, spylls)
     saida = DIST / "hunspell"
     saida.mkdir(parents=True, exist_ok=True)
-    ordenadas = sorted(palabras)
+    lista = saida / "_formas.txt"
+    lista.write_text("\n".join(sorted(palabras)) + "\n", encoding="utf-8")
+    base = str(base_aff)[:-4]
+    if shutil.which("hunspell"):
+        res = subprocess.run(["hunspell", "-d", base, "-l"], input=lista.read_bytes(), capture_output=True,
+                             env={"LANG": "C.UTF-8", "LC_ALL": "C.UTF-8", "PATH": "/usr/bin:/bin"})
+        adicions = set(res.stdout.decode("utf-8").split())
+    else:
+        from spylls.hunspell import Dictionary
+        d = Dictionary.from_files(base)
+        adicions = {p for p in palabras if not d.lookup(p)}
+    lista.unlink()
+
+    import prohibidas as P
+    prohibidas = P.calcular(lemas, conx, encl)
+    prohibidas.update({hun: lema for hun, cor, lema, _ in encliticos.CORRECCIONS_TIL if hun not in palabras})
+    prohibidas = {f: l for f, l in prohibidas.items() if f not in palabras and _palabra_limpa(f)}
+
+    FLAG = "997"
+    aff = base_aff.read_text(encoding="utf-8").rstrip("\n") + f"\nFORBIDDENWORD {FLAG}\n"
+    (saida / "gl_ES.aff").write_text(aff, encoding="utf-8")
+    entradas = [l for l in base_dic.read_text(encoding="utf-8").splitlines()[1:] if l.strip()]
+    entradas += sorted(adicions)
+    entradas += [f"{f}/{FLAG}" for f in sorted(prohibidas)]
     with (saida / "gl_ES.dic").open("w", encoding="utf-8") as fh:
-        fh.write(f"{len(ordenadas)}\n")
-        fh.write("\n".join(ordenadas) + "\n")
-    regras = ["SET UTF-8"]
-    aff = RAIZ / "fontes" / "cache" / "hunspell-gl" / "gl.aff"
-    if aff.exists():
-        for liña in aff.read_text(encoding="utf-8").splitlines():
-            if liña.split(" ")[0] in ("TRY", "KEY", "WORDCHARS", "BREAK", "NOSPLITSUGS", "MAP", "REP", "ICONV", "OCONV"):
-                regras.append(liña)
-    (saida / "gl_ES.aff").write_text("\n".join(regras) + "\n", encoding="utf-8")
+        fh.write(f"{len(entradas)}\n" + "\n".join(entradas) + "\n")
+    with (saida / "prohibidas.tsv").open("w", encoding="utf-8") as fh:
+        fh.write("# forma que Hunspell-gl acepta\tverbo\n")
+        for f, l in sorted(prohibidas.items()):
+            fh.write(f"{f}\t{l}\n")
     (saida / "LEME.txt").write_text(
-        "Corrector ortográfico galego (Dicionario galego aberto, GPL-3.0).\n"
+        "Corrector ortográfico galego (Dicionario galego aberto, GPL-3.0).\n\n"
         "macOS (Pages, Mail, Safari...): copiar gl_ES.dic e gl_ES.aff a ~/Library/Spelling/ (crear o cartafol se non existe),\n"
-        "reiniciar as aplicacións e escoller «Galego» en Axustes do Sistema > Teclado > Ortografía (ou en Editar > Ortografía).\n"
-        "LibreOffice: copiar a ~/.config/libreoffice/4/user/wordbook/ ou instalar como extensión.\n"
-        "Lista de palabras: formas do núcleo da RAG, verbos revisados co conxugador da RAG, formas con pronomes enclíticos,\n"
-        "nomes, topónimos, siglas e capas léxicas. Regras de suxestión: Hunspell-gl (Proxecto Trasno).\n", encoding="utf-8")
-    return len(ordenadas)
+        "pechar e abrir as aplicacións e escoller «Galego» en Axustes do Sistema > Teclado > Ortografía (ou Editar > Ortografía).\n"
+        "Se xa había outro gl_ES.dic/.aff nese cartafol, substituílo (só pode haber un par por lingua).\n"
+        "LibreOffice: Ferramentas > Opcións > Configuración de idioma; ou copiar a ~/.config/libreoffice/4/user/wordbook/.\n\n"
+        "Estrutura: regras e dicionario de Hunspell-gl (Proxecto Trasno, módulos da RAG, coas correccións ás regras\n"
+        f"de fontes/parches.json) + {len(adicions)} formas engadidas (nomes, topónimos, siglas, capas léxicas, formas\n"
+        f"revisadas co conxugador da RAG) + {len(prohibidas)} formas prohibidas (as que Hunspell-gl acepta pero están mal\n"
+        "segundo o conxugador da RAG ou as Normas: ver prohibidas.tsv).\n", encoding="utf-8")
+    print(f"dist/hunspell/: {len(entradas)} entradas ({len(adicions)} engadidas, {len(prohibidas)} prohibidas)")
+    return len(entradas)
 
 
 def main() -> None:
@@ -479,7 +523,7 @@ def main() -> None:
     construir_sqlite(lemas, conx, frec, nomes, encl, capas)
     print("dist/dicionario.sqlite")
     n = construir_teclado(lemas, conx, frec, nomes, encl, capas)
-    print(f"dist/hunspell/: {construir_hunspell(lemas, conx, nomes, encl, capas)} palabras")
+    construir_hunspell(lemas, conx, nomes, encl, capas)
     print(f"dist/teclado/: {n} formas")
     construir_glosario(lemas, conx, encl, capas, "--kobo" in sys.argv)
     print("dist/kobo/galego.tsv" + (" + Kobo, StarDict e AppleDict" if "--kobo" in sys.argv else ""))
