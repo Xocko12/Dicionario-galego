@@ -3732,8 +3732,11 @@
 {"forma": "compreinos", "lema": "comprar", "base": ["indicativo.preterito.P1"], "pronomes": ["os"], "frecuencia": 1}
 {"forma": "compreinos", "lema": "comprar", "base": ["indicativo.preterito.P1"], "pronomes": ["nos"], "frecuencia": 1}
 {"forma": "cómprelle", "lema": "comprar", "base": ["subxuntivo.presente.P1", "subxuntivo.presente.P3"], "pronomes": ["lle"], "frecuencia": 1}
+{"forma": "cómprelle", "lema": "cumprir", "base": ["indicativo.presente.P3"], "pronomes": ["lle"], "frecuencia": 1}
 {"forma": "cómprelles", "lema": "comprar", "base": ["subxuntivo.presente.P1", "subxuntivo.presente.P3"], "pronomes": ["lles"], "frecuencia": 1}
+{"forma": "cómprelles", "lema": "cumprir", "base": ["indicativo.presente.P3"], "pronomes": ["lles"], "frecuencia": 1}
 {"forma": "cómpreme", "lema": "comprar", "base": ["subxuntivo.presente.P1", "subxuntivo.presente.P3"], "pronomes": ["me"], "frecuencia": 2}
+{"forma": "cómpreme", "lema": "cumprir", "base": ["indicativo.presente.P3"], "pronomes": ["me"], "frecuencia": 2}
 {"forma": "compréndea", "lema": "comprender", "base": ["indicativo.presente.P3"], "pronomes": ["a"], "frecuencia": 1}
 {"forma": "comprendédeo", "lema": "comprender", "base": ["imperativo.P5"], "pronomes": ["o"], "frecuencia": 1}
 {"forma": "comprendela", "lema": "comprender", "base": ["infinitivo.conxugado.P1", "infinitivo.conxugado.P3"], "pronomes": ["a"], "frecuencia": 1}
@@ -3753,8 +3756,10 @@
 {"forma": "compréndoos", "lema": "comprender", "base": ["indicativo.presente.P1"], "pronomes": ["os"], "frecuencia": 1}
 {"forma": "compréndote", "lema": "comprender", "base": ["indicativo.presente.P1"], "pronomes": ["te"], "frecuencia": 1}
 {"forma": "cómprennos", "lema": "comprar", "base": ["subxuntivo.presente.P6"], "pronomes": ["nos"], "frecuencia": 1}
+{"forma": "cómprennos", "lema": "cumprir", "base": ["indicativo.presente.P6"], "pronomes": ["nos"], "frecuencia": 1}
 {"forma": "cómprenos", "lema": "comprar", "base": ["subxuntivo.presente.P1", "subxuntivo.presente.P3"], "pronomes": ["nos"], "frecuencia": 11}
 {"forma": "cómprenos", "lema": "comprar", "base": ["subxuntivo.presente.P6"], "pronomes": ["os"], "frecuencia": 11}
+{"forma": "cómprenos", "lema": "cumprir", "base": ["indicativo.presente.P3"], "pronomes": ["nos"], "frecuencia": 11}
 {"forma": "comprímela", "lema": "comprimir", "base": ["indicativo.presente.P2"], "pronomes": ["a"], "frecuencia": 2}
 {"forma": "comprobádeo", "lema": "comprobar", "base": ["imperativo.P5"], "pronomes": ["o"], "frecuencia": 2}
 {"forma": "comprobala", "lema": "comprobar", "base": ["infinitivo.conxugado.P1", "subxuntivo.futuro.P1", "subxuntivo.futuro.P3"], "pronomes": ["a"], "frecuencia": 1}
@@ -9304,6 +9309,14 @@
 {"forma": "habitueime", "lema": "habituar", "base": ["indicativo.preterito.P1"], "pronomes": ["me"], "frecuencia": 1}
 {"forma": "hacha", "lema": "haber", "base": ["indicativo.presente.P3"], "pronomes": ["che", "a"], "frecuencia": 2}
 {"forma": "hacho", "lema": "haber", "base": ["indicativo.presente.P3"], "pronomes": ["che", "o"], "frecuencia": 1}
+{"forma": "haiche", "lema": "haber", "base": ["indicativo.presente.P3"], "pronomes": ["che"], "frecuencia": 4}
+{"forma": "haille", "lema": "haber", "base": ["indicativo.presente.P3"], "pronomes": ["lle"], "frecuencia": 3}
+{"forma": "hailles", "lema": "haber", "base": ["indicativo.presente.P3"], "pronomes": ["lles"], "frecuencia": 1}
+{"forma": "haina", "lema": "haber", "base": ["indicativo.presente.P3"], "pronomes": ["a"], "frecuencia": 3}
+{"forma": "hainas", "lema": "haber", "base": ["indicativo.presente.P3"], "pronomes": ["as"], "frecuencia": 4}
+{"forma": "haino", "lema": "haber", "base": ["indicativo.presente.P3"], "pronomes": ["o"], "frecuencia": 6}
+{"forma": "hainos", "lema": "haber", "base": ["indicativo.presente.P3"], "pronomes": ["os"], "frecuencia": 13}
+{"forma": "hainos", "lema": "haber", "base": ["indicativo.presente.P3"], "pronomes": ["nos"], "frecuencia": 13}
 {"forma": "halle", "lema": "haber", "base": ["indicativo.presente.P3"], "pronomes": ["lle"], "frecuencia": 6}
 {"forma": "halles", "lema": "haber", "base": ["indicativo.presente.P3"], "pronomes": ["lles"], "frecuencia": 5}
 {"forma": "hamas", "lema": "haber", "base": ["indicativo.presente.P3"], "pronomes": ["me", "as"], "frecuencia": 5}

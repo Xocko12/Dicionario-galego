@@ -168,7 +168,12 @@ def importar_lexico(capa: str, rutas: list[Path], h: Hunspell, frecuencias, corr
 
 # -- siglas, onomástica, códigos ----------------------------------------------
 
+TIPOS_SIGLAS = {"sigla", "abreviatura", "símbolo"}
+
+
 def importar_siglas(capa: str, rutas: list[Path]):
+    """Siglas, abreviaturas e símbolos. Nos módulos mixtos (rag/gl/correcto.dic)
+    só entran as entradas con esa categoría."""
     vistos = {}
     for ruta in rutas:
         fonte = fonte_de(ruta)
@@ -176,6 +181,8 @@ def importar_siglas(capa: str, rutas: list[Path]):
             if frase_ngrama(etiquetas):
                 continue
             tipo = next((e[3:] for e in etiquetas if e.startswith("po:")), "sigla")
+            if tipo not in TIPOS_SIGLAS:
+                continue
             clave = (palabra, tipo)
             r = vistos.setdefault(clave, {"forma": palabra, "tipo": tipo, "capa": capa, "fontes": []})
             if fonte not in r["fontes"]:

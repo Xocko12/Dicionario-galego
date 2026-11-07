@@ -66,8 +66,13 @@ def celas(morph: tuple[str, ...]) -> list[tuple[str, int | None]]:
     texto = _texto_is(morph)
     # "[ + acusativo P3 ... ]" e "+ enclítico" describen combinacións con
     # pronomes, non a forma en si.
-    texto = re.sub(r"\[[^\]]*\]", "", texto)
+    anterior = None
+    while anterior != texto:                 # corchetes aniñados: [ + [reflexivo [ + dativo]]]
+        anterior = texto
+        texto = re.sub(r"\[[^\[\]]*\]", "", texto)
     texto = re.sub(r"\+[^/]*", "", texto).strip()
+    texto = texto.replace("partiticipio", "participio")        # erro tipográfico de Hunspell-gl
+    texto = texto.replace("presente impersoal", "presente P3")  # hai (haber)
     # "infinitivo P1 e P3", "copretérito P1 e P3" (formas con enclíticos: darlle,
     # dábame) son dúas celas co mesmo tempo.
     texto = re.sub(r"\bP([1-6]) e P([1-6])\b", r"P\1 / P\2", texto)
@@ -272,6 +277,19 @@ def aplicar_referencia(taboa: dict, referencia: dict) -> list[str]:
         else:
             raise ValueError(f"Clave de referencia descoñecida: {clave}")
     return cambiadas
+
+
+def engadir_formas(taboa: dict, engadido: dict) -> list[str]:
+    """Engade formas a celas sen quitar as que hai: {"celas": {"indicativo.presente.P3": ["cómpre"]}}."""
+    feitas = []
+    for clave, valor in engadido.get("celas", {}).items():
+        base, _, persoa = clave.rpartition(".")
+        cela = taboa[base][PERSOAS.index(persoa)] if persoa in PERSOAS else taboa[clave]
+        for forma in valor:
+            if forma not in cela:
+                cela.append(forma)
+                feitas.append(clave)
+    return feitas
 
 
 def formas(taboa: dict):

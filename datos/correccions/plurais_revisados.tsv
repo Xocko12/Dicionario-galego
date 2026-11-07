@@ -1,0 +1,38 @@
+# Plurais revisados que non seguen a regra xeral (quedan como os dá Hunspell-gl / a RAG).
+# lema	motivo
+báner	préstamo: báners e báneres
+máster	préstamo: másters e másteres
+póster	préstamo: pósters e pósteres
+júnior	préstamo: júniors e júniores
+sénior	préstamo: séniors e séniores
+hippy	préstamo: hippys e hippies
+proxy	préstamo: proxys e proxies
+rally	préstamo: rallys e rallies
+whisky	préstamo: whiskys e whiskies
+lied	préstamo: lieds e lieder
+flash	préstamo en -sh: flashes
+smash	préstamo en -sh: smashes
+squash	préstamo en -sh: squashes
+yiddish	préstamo en -sh: yiddishes
+troll	préstamo: trolls
+hertz	invariable/hertzs segundo Hunspell-gl
+megahertz	como hertz
+quilohertz	como hertz
+cóctel	grave en -el con plural en -eis segundo a RAG (cócteis)
+níquel	grave en -el: níqueis (RAG)
+cuproníquel	como níquel
+mispíquel	como níquel
+diésel	grave: diéseis (RAG)
+rímmel	grave: rímmeis
+brístol	grave: brístois
+fútbol	grave: fútbois (RAG)
+béisbol	grave: béisbois (RAG)
+náhuatl	náhuatis
+máxwell	máxwelles e máxwelis
+procónsul	procónsules e procónsuis
+vicecónsul	vicecónsules e vicecónsuis
+carácter	caracteres (cambia a sílaba tónica)
+gnomon	gnómones
+leu	lei (plural propio)
+lev	leva (plural propio)
+lúes	lúeses

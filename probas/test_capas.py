@@ -113,3 +113,17 @@ class ProbasDefinicions(unittest.TestCase):
         d = {r["lema"]: r for r in ler("capas/definicions-en.jsonl") if r["categoria"] == "substantivo"}
         self.assertTrue(any("house" in a["definicion"] for a in d["casa"]["acepcions"]))
         self.assertNotIn("falas", d)
+
+
+class ProbasPlurais(unittest.TestCase):
+    def test_sen_plurais_novos_fora_da_regra(self):
+        import sys
+        sys.path.insert(0, str(RAIZ / "ferramentas"))
+        import anomalias_nominais
+        self.assertEqual([p[0] for p in anomalias_nominais.buscar()], [])
+
+    def test_correccions_de_flexion(self):
+        lemas = {r["id"]: r for r in ler("lemas.jsonl")}
+        self.assertEqual(lemas["cartafol#substantivo"]["formas"]["mp"], ["cartafois"])
+        self.assertEqual(lemas["decibel#substantivo"]["formas"]["mp"], ["decibeis"])
+        self.assertEqual(lemas["amábel#adxectivo"]["formas"]["mp"], ["amábeis"])

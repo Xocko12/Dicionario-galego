@@ -1,0 +1,14 @@
+{
+ "_descricion": "Formas que se engaden ás táboas despois de aplicar Hunspell-gl, as correccións e o conxugador da RAG, sen quitar ningunha. Para formas que as Normas recollen e o conxugador omite.",
+ "cumprir": {
+  "nota": "«cómpre», «cómpren» (= é necesario): formas con til diacrítico recollidas nas Normas; o conxugador da RAG só dá cumpre, cumpren.",
+  "celas": {
+   "indicativo.presente.P3": [
+    "cómpre"
+   ],
+   "indicativo.presente.P6": [
+    "cómpren"
+   ]
+  }
+ }
+}

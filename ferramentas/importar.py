@@ -316,11 +316,13 @@ def main() -> None:
     # O VOLGa só achega lemas que non están no DRAG (p. ex. «curuxa»). Se o
     # DRAG ten o lema, as súas categorías mandan: o VOLGa usa etiquetas máis
     # xerais («pronome») e lista formas como lemas («ela», «túa»).
+    # Se o DRAG ten o lema, do VOLGa quítanse só as etiquetas vagas de pronome
+    # («ela», «túa» como lemas); as demais categorías (cravudo adx., galán adx.)
+    # e a flexión únense, porque ás veces a entrada do DRAG é a menos completa
+    # (bacteriófago sen feminino, decibel sen o plural en -eis).
     lemas_drag = {lema for (lema, _), estados in presenza.items() if "drag" in estados}
     for (lema, categoria) in list(presenza):
-        if lema in lemas_drag and "drag" not in presenza[(lema, categoria)]:
-            del presenza[(lema, categoria)]
-        elif lema not in lemas_drag and categoria == "pronome":
+        if categoria == "pronome" and "drag" not in presenza[(lema, categoria)]:
             del presenza[(lema, categoria)]
 
     def fonte_principal(lema: str, categoria: str) -> str | None:
@@ -340,7 +342,7 @@ def main() -> None:
             if po not in CATEGORIAS:
                 continue
             categoria, xenero, numero = CATEGORIAS[po]
-            if fonte != fonte_principal(e.word, categoria):
+            if fonte_principal(e.word, categoria) is None:
                 continue
             ident = f"{e.word}#{categoria}"
             r = rexistros.setdefault(ident, {
@@ -355,8 +357,13 @@ def main() -> None:
                         if tipo not in r["tipos"]:
                             r["tipos"].append(tipo)
                 continue
-            for f in h.expand(e, omitir):
-                clave = xenero_numero(f.morph, xenero, numero)
+            expandidas = h.expand(e, omitir)
+            # «acollido/10,15 po:substantivo_feminino»: se a entrada xera formas
+            # femininas explícitas, as non marcadas son masculinas, diga o que
+            # diga o xénero da etiqueta (que se refire ao substantivo feminino).
+            con_feminino = any("feminino" in " ".join(f.morph) for f in expandidas)
+            for f in expandidas:
+                clave = xenero_numero(f.morph, None if con_feminino else xenero, numero)
                 if f.form not in r["formas"][clave]:
                     r["formas"][clave].append(f.form)
 
@@ -367,6 +374,8 @@ def main() -> None:
 
     verbos = {r["lema"]: fonte_principal(r["lema"], "verbo")
               for r in rexistros.values() if r["categoria"] == "verbo"}
+    engadidos = json.loads((DATOS / "correccions" / "engadidos.json").read_text(encoding="utf-8"))
+    engadidos.pop("_descricion", None)
     def admitir_verbo(entrada, lema) -> bool:
         return fonte_de.get(entrada.source, ("",))[0] == verbos[lema]
 
@@ -407,6 +416,12 @@ def main() -> None:
             rexistros[ident]["frecuencia"] += n * evidencia[ident] / total
 
     axustar_gramaticais(rexistros)
+    flexion = json.loads((DATOS / "correccions" / "flexion.json").read_text(encoding="utf-8"))
+    for ident, cambio in flexion.items():
+        if ident in rexistros:
+            for clave in ("ms", "fs", "mp", "fp"):
+                if clave in cambio:
+                    rexistros[ident]["formas"][clave] = list(cambio[clave])
     escollidos = sorted(rexistros.values(), key=lambda r: -r["frecuencia"])
     if opcions.lemas:
         escollidos = escollidos[: opcions.lemas]
@@ -431,6 +446,8 @@ def main() -> None:
                 saida["referencia"] = cambiadas
                 saida["fontes"] = ["hunspell-gl", "revision-manual"]
                 CAMBIOS_REFERENCIA.append((lema, cambiadas))
+        if lema in engadidos:        # formas que se engaden despois de todo (cómpre)
+            saida["engadidos"] = C.engadir_formas(taboa, engadidos[lema])
         if C.unipersoal(taboa) and "unipersoal" not in r["tipos"]:
             r["tipos"].append("unipersoal")
         if C.defectivo(taboa) and "defectivo" not in r["tipos"]:

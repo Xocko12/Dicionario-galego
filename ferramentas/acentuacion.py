@@ -97,7 +97,8 @@ def vogal_tonica(palabra: str) -> int | None:
         fin = palabra[-1]
         base = palabra[:-1] if fin in "ns" else palabra
         if fin in VOGAIS or fin in "ns":
-            k = len(sil) - 1 if any(base.endswith(d) for d in DITONGOS_DECRECENTES) else len(sil) - 2
+            ditongo = any(base.endswith(d) for d in DITONGOS_DECRECENTES) and not _u_muda(palabra, len(base) - 2)
+            k = len(sil) - 1 if ditongo else len(sil) - 2
         else:
             k = len(sil) - 1
     grupo = sil[k]
@@ -121,7 +122,8 @@ def acentuar(palabra_sen_til: str, vogal: int) -> str:
                   or (vogal + 1 < len(p) and p[vogal + 1] in VOGAIS and vogal + 1 not in grupo)))
     fin = p[-1]
     base = p[:-1] if fin in "ns" else p
-    remata_ditongo = any(base.endswith(d) for d in DITONGOS_DECRECENTES)
+    # ditongo decrecente final (falou, cantei); o u de que/qui/gue/gui non conta (caciquís)
+    remata_ditongo = any(base.endswith(d) for d in DITONGOS_DECRECENTES) and not _u_muda(p, len(base) - 2)
     if hiato or desde_fin >= 2:
         leva = True
     elif desde_fin == 1:

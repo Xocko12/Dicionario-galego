@@ -10,6 +10,9 @@ sys.path.insert(0, str(RAIZ / "ferramentas"))
 import conxugacion as C  # noqa: E402
 
 
+ENGADIDOS = {}
+
+
 def taboas():
     saida = {}
     for ruta in [RAIZ / "datos" / "conxugacions.jsonl"] + sorted((RAIZ / "datos" / "capas").glob("*.jsonl")):
@@ -17,6 +20,7 @@ def taboas():
             r = json.loads(liña)
             if "taboa" in r:
                 saida.setdefault(r["lema"], r["taboa"])
+                ENGADIDOS[r["lema"]] = set(r.get("engadidos", []))
     return saida
 
 
@@ -54,7 +58,10 @@ class ProbasReferencia(unittest.TestCase):
                     pares = [(f"{clave}.{C.PERSOAS[p]}", c, taboa[clave][p]) for p, c in enumerate(valor) if c is not None]
                 for nome, esperado, obtido in pares:
                     with self.subTest(lema=lema, cela=nome):
-                        self.assertEqual(set(obtido), set(esperado))
+                        if nome in ENGADIDOS.get(lema, ()):   # cela con formas engadidas (cómpre)
+                            self.assertTrue(set(esperado) <= set(obtido))
+                        else:
+                            self.assertEqual(set(obtido), set(esperado))
 
 
 if __name__ == "__main__":

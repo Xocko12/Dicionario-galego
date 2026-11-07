@@ -40,14 +40,17 @@
     },
     "siglas": {
       "tipo": "siglas",
-      "nome": "Siglas, abreviaturas e símbolos: Concello de Santiago, UDC, UVigo, CEG, Wikipedia en galego, abreviaturas do DRAG, Microsoft",
+      "nome": "Siglas, abreviaturas e símbolos: DRAG e VOLGa, Concello de Santiago, UDC, UVigo, CEG, Wikipedia en galego, Microsoft",
       "modulos": [
+        "rag/gl/correcto.dic",
+        "rag/gl/tolerado.dic",
+        "rag/volga/correcto.dic",
+        "rag/gl/abreviaturas.dic",
         "santiago",
         "udc",
         "uvigo",
         "ceg",
         "wikipedia/gl/siglas",
-        "rag/gl/abreviaturas.dic",
         "microsoft"
       ]
     },
