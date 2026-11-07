@@ -4786,13 +4786,23 @@
 {"forma": "custounos", "lema": "custar", "base": ["indicativo.preterito.P3"], "pronomes": ["os"], "frecuencia": 2}
 {"forma": "custounos", "lema": "custar", "base": ["indicativo.preterito.P3"], "pronomes": ["nos"], "frecuencia": 2}
 {"forma": "dáas", "lema": "dar", "base": ["indicativo.presente.P3", "imperativo.P2"], "pronomes": ["as"], "frecuencia": 1}
+{"forma": "dábache", "lema": "dar", "base": ["indicativo.copreterito.P1", "indicativo.copreterito.P3"], "pronomes": ["che"], "frecuencia": 1}
+{"forma": "dáballa", "lema": "dar", "base": ["indicativo.copreterito.P1", "indicativo.copreterito.P3"], "pronomes": ["lle", "a"], "frecuencia": 1}
+{"forma": "dáballe", "lema": "dar", "base": ["indicativo.copreterito.P1", "indicativo.copreterito.P3"], "pronomes": ["lle"], "frecuencia": 6}
+{"forma": "dáballes", "lema": "dar", "base": ["indicativo.copreterito.P1", "indicativo.copreterito.P3"], "pronomes": ["lles"], "frecuencia": 7}
+{"forma": "dáballos", "lema": "dar", "base": ["indicativo.copreterito.P1", "indicativo.copreterito.P3"], "pronomes": ["lle", "os"], "frecuencia": 1}
+{"forma": "dábame", "lema": "dar", "base": ["indicativo.copreterito.P1", "indicativo.copreterito.P3"], "pronomes": ["me"], "frecuencia": 14}
 {"forma": "dabámonos", "lema": "dar", "base": ["indicativo.copreterito.P4"], "pronomes": ["nos"], "frecuencia": 1}
 {"forma": "dabámoslles", "lema": "dar", "base": ["indicativo.copreterito.P4"], "pronomes": ["lles"], "frecuencia": 1}
 {"forma": "dábanlle", "lema": "dar", "base": ["indicativo.copreterito.P6"], "pronomes": ["lle"], "frecuencia": 2}
 {"forma": "dábanlles", "lema": "dar", "base": ["indicativo.copreterito.P6"], "pronomes": ["lles"], "frecuencia": 2}
 {"forma": "dábanme", "lema": "dar", "base": ["indicativo.copreterito.P6"], "pronomes": ["me"], "frecuencia": 3}
 {"forma": "dábannos", "lema": "dar", "base": ["indicativo.copreterito.P6"], "pronomes": ["nos"], "frecuencia": 5}
+{"forma": "dábanos", "lema": "dar", "base": ["indicativo.copreterito.P1", "indicativo.copreterito.P3"], "pronomes": ["nos"], "frecuencia": 1}
 {"forma": "dábanos", "lema": "dar", "base": ["indicativo.copreterito.P6"], "pronomes": ["os"], "frecuencia": 1}
+{"forma": "dábao", "lema": "dar", "base": ["indicativo.copreterito.P1", "indicativo.copreterito.P3"], "pronomes": ["o"], "frecuencia": 1}
+{"forma": "dábase", "lema": "dar", "base": ["indicativo.copreterito.P1", "indicativo.copreterito.P3"], "pronomes": ["se"], "frecuencia": 1}
+{"forma": "dábaselle", "lema": "dar", "base": ["indicativo.copreterito.P1", "indicativo.copreterito.P3"], "pronomes": ["se", "lle"], "frecuencia": 1}
 {"forma": "dábasme", "lema": "dar", "base": ["indicativo.copreterito.P2"], "pronomes": ["me"], "frecuencia": 1}
 {"forma": "dáche", "lema": "dar", "base": ["indicativo.presente.P3", "imperativo.P2"], "pronomes": ["che"], "frecuencia": 22}
 {"forma": "dádelle", "lema": "dar", "base": ["imperativo.P5"], "pronomes": ["lle"], "frecuencia": 9}
@@ -4803,12 +4813,16 @@
 {"forma": "dádeslle", "lema": "dar", "base": ["indicativo.presente.P5"], "pronomes": ["lle"], "frecuencia": 1}
 {"forma": "dádesvos", "lema": "dar", "base": ["indicativo.presente.P5"], "pronomes": ["vos"], "frecuencia": 1}
 {"forma": "dádevos", "lema": "dar", "base": ["imperativo.P5"], "pronomes": ["vos"], "frecuencia": 13}
+{"forma": "dala", "lema": "dar", "base": ["infinitivo.conxugado.P1", "infinitivo.conxugado.P3"], "pronomes": ["a"], "frecuencia": 2}
+{"forma": "dalas", "lema": "dar", "base": ["infinitivo.conxugado.P1", "infinitivo.conxugado.P3"], "pronomes": ["as"], "frecuencia": 1}
 {"forma": "dálla", "lema": "dar", "base": ["indicativo.presente.P3", "imperativo.P2"], "pronomes": ["lle", "a"], "frecuencia": 1}
 {"forma": "dálle", "lema": "dar", "base": ["indicativo.presente.P3", "imperativo.P2"], "pronomes": ["lle"], "frecuencia": 182}
 {"forma": "dállelo", "lema": "dar", "base": ["indicativo.presente.P3", "imperativo.P2"], "pronomes": ["lles", "o"], "frecuencia": 1}
 {"forma": "dálles", "lema": "dar", "base": ["indicativo.presente.P3", "imperativo.P2"], "pronomes": ["lles"], "frecuencia": 14}
 {"forma": "dállo", "lema": "dar", "base": ["indicativo.presente.P3", "imperativo.P2"], "pronomes": ["lle", "o"], "frecuencia": 8}
 {"forma": "dállos", "lema": "dar", "base": ["indicativo.presente.P3", "imperativo.P2"], "pronomes": ["lle", "os"], "frecuencia": 1}
+{"forma": "dalo", "lema": "dar", "base": ["infinitivo.conxugado.P1", "infinitivo.conxugado.P3"], "pronomes": ["o"], "frecuencia": 4}
+{"forma": "dalos", "lema": "dar", "base": ["infinitivo.conxugado.P1", "infinitivo.conxugado.P3"], "pronomes": ["os"], "frecuencia": 1}
 {"forma": "dáma", "lema": "dar", "base": ["indicativo.presente.P3", "imperativo.P2"], "pronomes": ["me", "a"], "frecuencia": 16}
 {"forma": "dámas", "lema": "dar", "base": ["indicativo.presente.P3", "imperativo.P2"], "pronomes": ["me", "as"], "frecuencia": 2}
 {"forma": "dáme", "lema": "dar", "base": ["indicativo.presente.P3", "imperativo.P2"], "pronomes": ["me"], "frecuencia": 326}
@@ -4860,6 +4874,9 @@
 {"forma": "darásevos", "lema": "dar", "base": ["indicativo.futuro.P3"], "pronomes": ["se", "vos"], "frecuencia": 1}
 {"forma": "daraslle", "lema": "dar", "base": ["indicativo.futuro.P2"], "pronomes": ["lle"], "frecuencia": 3}
 {"forma": "darasme", "lema": "dar", "base": ["indicativo.futuro.P2"], "pronomes": ["me"], "frecuencia": 2}
+{"forma": "darche", "lema": "dar", "base": ["infinitivo.conxugado.P1", "infinitivo.conxugado.P3"], "pronomes": ["che"], "frecuencia": 61}
+{"forma": "darcho", "lema": "dar", "base": ["infinitivo.conxugado.P1", "infinitivo.conxugado.P3"], "pronomes": ["che", "o"], "frecuencia": 1}
+{"forma": "darchos", "lema": "dar", "base": ["infinitivo.conxugado.P1", "infinitivo.conxugado.P3"], "pronomes": ["che", "os"], "frecuencia": 1}
 {"forma": "darédesnos", "lema": "dar", "base": ["indicativo.futuro.P5"], "pronomes": ["nos"], "frecuencia": 1}
 {"forma": "darédesvos", "lema": "dar", "base": ["indicativo.futuro.P5"], "pronomes": ["vos"], "frecuencia": 1}
 {"forma": "dareicha", "lema": "dar", "base": ["indicativo.futuro.P1"], "pronomes": ["che", "a"], "frecuencia": 1}
@@ -4889,7 +4906,20 @@
 {"forma": "daríaslles", "lema": "dar", "base": ["indicativo.pospreterito.P2"], "pronomes": ["lles"], "frecuencia": 1}
 {"forma": "daríasme", "lema": "dar", "base": ["indicativo.pospreterito.P2"], "pronomes": ["me"], "frecuencia": 2}
 {"forma": "daríate", "lema": "dar", "base": ["indicativo.pospreterito.P1", "indicativo.pospreterito.P3"], "pronomes": ["te"], "frecuencia": 1}
+{"forma": "darlla", "lema": "dar", "base": ["infinitivo.conxugado.P1", "infinitivo.conxugado.P3"], "pronomes": ["lle", "a"], "frecuencia": 6}
+{"forma": "darllas", "lema": "dar", "base": ["infinitivo.conxugado.P1", "infinitivo.conxugado.P3"], "pronomes": ["lle", "as"], "frecuencia": 1}
+{"forma": "darlle", "lema": "dar", "base": ["infinitivo.conxugado.P1", "infinitivo.conxugado.P3"], "pronomes": ["lle"], "frecuencia": 160}
+{"forma": "darlles", "lema": "dar", "base": ["infinitivo.conxugado.P1", "infinitivo.conxugado.P3"], "pronomes": ["lles"], "frecuencia": 45}
+{"forma": "darllo", "lema": "dar", "base": ["infinitivo.conxugado.P1", "infinitivo.conxugado.P3"], "pronomes": ["lle", "o"], "frecuencia": 4}
+{"forma": "darllos", "lema": "dar", "base": ["infinitivo.conxugado.P1", "infinitivo.conxugado.P3"], "pronomes": ["lle", "os"], "frecuencia": 1}
+{"forma": "darma", "lema": "dar", "base": ["infinitivo.conxugado.P1", "infinitivo.conxugado.P3"], "pronomes": ["me", "a"], "frecuencia": 2}
+{"forma": "darme", "lema": "dar", "base": ["infinitivo.conxugado.P1", "infinitivo.conxugado.P3"], "pronomes": ["me"], "frecuencia": 84}
+{"forma": "darmo", "lema": "dar", "base": ["infinitivo.conxugado.P1", "infinitivo.conxugado.P3"], "pronomes": ["me", "o"], "frecuencia": 3}
 {"forma": "dármoslles", "lema": "dar", "base": ["infinitivo.conxugado.P4"], "pronomes": ["lles"], "frecuencia": 1}
+{"forma": "darnos", "lema": "dar", "base": ["infinitivo.conxugado.P1", "infinitivo.conxugado.P3"], "pronomes": ["nos"], "frecuencia": 32}
+{"forma": "darse", "lema": "dar", "base": ["infinitivo.conxugado.P1", "infinitivo.conxugado.P3"], "pronomes": ["se"], "frecuencia": 18}
+{"forma": "darte", "lema": "dar", "base": ["infinitivo.conxugado.P1", "infinitivo.conxugado.P3"], "pronomes": ["te"], "frecuencia": 15}
+{"forma": "darvos", "lema": "dar", "base": ["infinitivo.conxugado.P1", "infinitivo.conxugado.P3"], "pronomes": ["vos"], "frecuencia": 14}
 {"forma": "dáse", "lema": "dar", "base": ["indicativo.presente.P3", "imperativo.P2"], "pronomes": ["se"], "frecuencia": 9}
 {"forma": "dáseche", "lema": "dar", "base": ["indicativo.presente.P3", "imperativo.P2"], "pronomes": ["se", "che"], "frecuencia": 3}
 {"forma": "dáselle", "lema": "dar", "base": ["indicativo.presente.P3", "imperativo.P2"], "pronomes": ["se", "lle"], "frecuencia": 2}
@@ -7885,16 +7915,25 @@
 {"forma": "esquivalo", "lema": "esquivar", "base": ["infinitivo.conxugado.P1", "subxuntivo.futuro.P1", "subxuntivo.futuro.P3"], "pronomes": ["o"], "frecuencia": 1}
 {"forma": "esquivalos", "lema": "esquivar", "base": ["infinitivo.conxugado.P1", "subxuntivo.futuro.P1", "subxuntivo.futuro.P3"], "pronomes": ["os"], "frecuencia": 2}
 {"forma": "esquívaos", "lema": "esquivar", "base": ["indicativo.presente.P3", "imperativo.P2"], "pronomes": ["os"], "frecuencia": 1}
+{"forma": "estábaa", "lema": "estar", "base": ["indicativo.copreterito.P1", "indicativo.copreterito.P3"], "pronomes": ["a"], "frecuencia": 6}
+{"forma": "estábache", "lema": "estar", "base": ["indicativo.copreterito.P1", "indicativo.copreterito.P3"], "pronomes": ["che"], "frecuencia": 2}
+{"forma": "estáballe", "lema": "estar", "base": ["indicativo.copreterito.P1", "indicativo.copreterito.P3"], "pronomes": ["lle"], "frecuencia": 3}
+{"forma": "estáballes", "lema": "estar", "base": ["indicativo.copreterito.P1", "indicativo.copreterito.P3"], "pronomes": ["lles"], "frecuencia": 1}
 {"forma": "estábalo", "lema": "estar", "base": ["indicativo.copreterito.P2"], "pronomes": ["o"], "frecuencia": 1}
+{"forma": "estábame", "lema": "estar", "base": ["indicativo.copreterito.P1", "indicativo.copreterito.P3"], "pronomes": ["me"], "frecuencia": 8}
 {"forma": "estabámolo", "lema": "estar", "base": ["indicativo.copreterito.P4"], "pronomes": ["o"], "frecuencia": 1}
 {"forma": "estabámolos", "lema": "estar", "base": ["indicativo.copreterito.P4"], "pronomes": ["os"], "frecuencia": 1}
 {"forma": "estábannos", "lema": "estar", "base": ["indicativo.copreterito.P6"], "pronomes": ["nos"], "frecuencia": 2}
 {"forma": "estábano", "lema": "estar", "base": ["indicativo.copreterito.P6"], "pronomes": ["o"], "frecuencia": 1}
+{"forma": "estábanos", "lema": "estar", "base": ["indicativo.copreterito.P1", "indicativo.copreterito.P3"], "pronomes": ["nos"], "frecuencia": 1}
 {"forma": "estábanos", "lema": "estar", "base": ["indicativo.copreterito.P6"], "pronomes": ["os"], "frecuencia": 1}
 {"forma": "estábanse", "lema": "estar", "base": ["indicativo.copreterito.P6"], "pronomes": ["se"], "frecuencia": 2}
 {"forma": "estábante", "lema": "estar", "base": ["indicativo.copreterito.P6"], "pronomes": ["te"], "frecuencia": 1}
+{"forma": "estábao", "lema": "estar", "base": ["indicativo.copreterito.P1", "indicativo.copreterito.P3"], "pronomes": ["o"], "frecuencia": 6}
+{"forma": "estábase", "lema": "estar", "base": ["indicativo.copreterito.P1", "indicativo.copreterito.P3"], "pronomes": ["se"], "frecuencia": 2}
 {"forma": "estábasllas", "lema": "estar", "base": ["indicativo.copreterito.P2"], "pronomes": ["lle", "as"], "frecuencia": 1}
 {"forma": "estábasme", "lema": "estar", "base": ["indicativo.copreterito.P2"], "pronomes": ["me"], "frecuencia": 3}
+{"forma": "estábate", "lema": "estar", "base": ["indicativo.copreterito.P1", "indicativo.copreterito.P3"], "pronomes": ["te"], "frecuencia": 4}
 {"forma": "estabelecelo", "lema": "estabelecer", "base": ["infinitivo.conxugado.P1", "infinitivo.conxugado.P3"], "pronomes": ["o"], "frecuencia": 1}
 {"forma": "estabelecernos", "lema": "estabelecer", "base": ["infinitivo.conxugado.P1", "infinitivo.conxugado.P3"], "pronomes": ["nos"], "frecuencia": 1}
 {"forma": "estabelecéronse", "lema": "estabelecer", "base": ["indicativo.preterito.P6"], "pronomes": ["se"], "frecuencia": 1}
@@ -7952,6 +7991,8 @@
 {"forma": "estariámolo", "lema": "estar", "base": ["indicativo.pospreterito.P4"], "pronomes": ["o"], "frecuencia": 1}
 {"forma": "estaríaslles", "lema": "estar", "base": ["indicativo.pospreterito.P2"], "pronomes": ["lles"], "frecuencia": 1}
 {"forma": "estaríavos", "lema": "estar", "base": ["indicativo.pospreterito.P1", "indicativo.pospreterito.P3"], "pronomes": ["vos"], "frecuencia": 1}
+{"forma": "estarlle", "lema": "estar", "base": ["infinitivo.conxugado.P1", "infinitivo.conxugado.P3"], "pronomes": ["lle"], "frecuencia": 3}
+{"forma": "estarlles", "lema": "estar", "base": ["infinitivo.conxugado.P1", "infinitivo.conxugado.P3"], "pronomes": ["lles"], "frecuencia": 1}
 {"forma": "estarrecerse", "lema": "estarrecer", "base": ["infinitivo.conxugado.P1", "infinitivo.conxugado.P3"], "pronomes": ["se"], "frecuencia": 1}
 {"forma": "estáselle", "lema": "estar", "base": ["indicativo.presente.P3", "imperativo.P2"], "pronomes": ["se", "lle"], "frecuencia": 1}
 {"forma": "estáseme", "lema": "estar", "base": ["indicativo.presente.P3", "imperativo.P2"], "pronomes": ["se", "me"], "frecuencia": 3}

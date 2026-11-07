@@ -68,6 +68,9 @@ def celas(morph: tuple[str, ...]) -> list[tuple[str, int | None]]:
     # pronomes, non a forma en si.
     texto = re.sub(r"\[[^\]]*\]", "", texto)
     texto = re.sub(r"\+[^/]*", "", texto).strip()
+    # "infinitivo P1 e P3", "copretérito P1 e P3" (formas con enclíticos: darlle,
+    # dábame) son dúas celas co mesmo tempo.
+    texto = re.sub(r"\bP([1-6]) e P([1-6])\b", r"P\1 / P\2", texto)
     if not texto:
         return []
     partes = [p.strip() for p in texto.split("/")]
