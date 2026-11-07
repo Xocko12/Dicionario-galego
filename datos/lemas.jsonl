@@ -6878,8 +6878,8 @@
 {"id": "belleco#substantivo", "lema": "belleco", "categoria": "substantivo", "formas": {"ms": ["belleco"], "fs": ["belleca"], "mp": ["bellecos"], "fp": ["bellecas"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag"]}
 {"id": "belo#adxectivo", "lema": "belo", "categoria": "adxectivo", "formas": {"ms": ["belo"], "fs": ["bela"], "mp": ["belos"], "fp": ["belas"]}, "estado": "recomendado", "frecuencia": 73, "fontes": ["drag", "volga"]}
 {"id": "belota#substantivo", "lema": "belota", "categoria": "substantivo", "xenero": "feminino", "formas": {"fs": ["belota"], "fp": ["belotas"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
-{"id": "bemol#adxectivo", "lema": "bemol", "categoria": "adxectivo", "formas": {"ms": ["bemol"], "mp": ["bemois"]}, "estado": "recomendado", "frecuencia": 1, "fontes": ["drag"]}
-{"id": "bemol#substantivo", "lema": "bemol", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["bemol"], "mp": ["bemois"]}, "estado": "recomendado", "frecuencia": 1, "fontes": ["drag", "volga"]}
+{"id": "bemol#adxectivo", "lema": "bemol", "categoria": "adxectivo", "formas": {"ms": ["bemol"], "mp": ["bemoles"]}, "estado": "recomendado", "frecuencia": 1, "fontes": ["drag"]}
+{"id": "bemol#substantivo", "lema": "bemol", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["bemol"], "mp": ["bemoles", "bemois"]}, "estado": "recomendado", "frecuencia": 1, "fontes": ["drag", "volga"]}
 {"id": "bemolizado#adxectivo", "lema": "bemolizado", "categoria": "adxectivo", "formas": {"ms": ["bemolizado"], "fs": ["bemolizada"], "mp": ["bemolizados"], "fp": ["bemolizadas"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "ben#adverbio", "lema": "ben", "categoria": "adverbio", "formas": {"ms": ["ben"], "mp": ["bens"]}, "estado": "recomendado", "frecuencia": 3725, "fontes": ["drag", "volga"]}
 {"id": "ben#conxunción", "lema": "ben", "categoria": "conxunción", "formas": {"ms": ["ben"]}, "estado": "recomendado", "frecuencia": 3698, "fontes": ["drag"]}
@@ -9807,7 +9807,7 @@
 {"id": "carta#substantivo", "lema": "carta", "categoria": "substantivo", "xenero": "feminino", "formas": {"fs": ["carta"], "fp": ["cartas"]}, "estado": "recomendado", "frecuencia": 149, "fontes": ["volga"]}
 {"id": "cartabón#substantivo", "lema": "cartabón", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["cartabón"], "mp": ["cartabóns"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "cartáceo#adxectivo", "lema": "cartáceo", "categoria": "adxectivo", "formas": {"ms": ["cartáceo"], "fs": ["cartácea"], "mp": ["cartáceos"], "fp": ["cartáceas"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
-{"id": "cartafol#substantivo", "lema": "cartafol", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["cartafol"], "mp": ["cartafois"]}, "estado": "recomendado", "frecuencia": 1, "fontes": ["drag", "volga"]}
+{"id": "cartafol#substantivo", "lema": "cartafol", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["cartafol"], "mp": ["cartafoles"]}, "estado": "recomendado", "frecuencia": 1, "fontes": ["drag", "volga"]}
 {"id": "cartapacio#substantivo", "lema": "cartapacio", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["cartapacio"], "mp": ["cartapacios"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "cartaxinés#adxectivo", "lema": "cartaxinés", "categoria": "adxectivo", "formas": {"ms": ["cartaxinés"], "fs": ["cartaxinesa"], "mp": ["cartaxineses"], "fp": ["cartaxinesas"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "cartaxinés#substantivo", "lema": "cartaxinés", "categoria": "substantivo", "formas": {"ms": ["cartaxinés"], "fs": ["cartaxinesa"], "mp": ["cartaxineses"], "fp": ["cartaxinesas"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
@@ -11214,7 +11214,7 @@
 {"id": "chucha#substantivo", "lema": "chucha", "categoria": "substantivo", "xenero": "feminino", "formas": {"fs": ["chucha"], "fp": ["chuchas"]}, "estado": "recomendado", "frecuencia": 1, "fontes": ["volga"]}
 {"id": "chuchada#substantivo", "lema": "chuchada", "categoria": "substantivo", "xenero": "feminino", "formas": {"fs": ["chuchada"], "fp": ["chuchadas"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag"]}
 {"id": "chuchado#adxectivo", "lema": "chuchado", "categoria": "adxectivo", "formas": {"ms": ["chuchado"], "fs": ["chuchada"], "mp": ["chuchados"], "fp": ["chuchadas"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
-{"id": "chuchamel#substantivo", "lema": "chuchamel", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["chuchamel"], "mp": ["chuchameis"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
+{"id": "chuchamel#substantivo", "lema": "chuchamel", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["chuchamel"], "mp": ["chuchameles"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "chuchar#verbo", "lema": "chuchar", "categoria": "verbo", "tipos": ["transitiva", "pronominal"], "estado": "recomendado", "frecuencia": 3, "fontes": ["drag", "volga"]}
 {"id": "chucho#substantivo", "lema": "chucho", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["chucho"], "fs": ["chucha"], "mp": ["chuchos"], "fp": ["chuchas"]}, "estado": "recomendado", "frecuencia": 4, "fontes": ["drag", "volga"]}
 {"id": "chuchón#adxectivo", "lema": "chuchón", "categoria": "adxectivo", "formas": {"ms": ["chuchón"], "fs": ["chuchona"], "mp": ["chuchóns"], "fp": ["chuchonas"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
@@ -11246,7 +11246,7 @@
 {"id": "chupado#adxectivo", "lema": "chupado", "categoria": "adxectivo", "formas": {"ms": ["chupado"], "fs": ["chupada"], "mp": ["chupados"], "fp": ["chupadas"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "chupador#adxectivo", "lema": "chupador", "categoria": "adxectivo", "formas": {"ms": ["chupador"], "fs": ["chupadora"], "mp": ["chupadores"], "fp": ["chupadoras"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "chupador#substantivo", "lema": "chupador", "categoria": "substantivo", "formas": {"ms": ["chupador"], "fs": ["chupadora"], "mp": ["chupadores"], "fp": ["chupadoras"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
-{"id": "chupamel#substantivo", "lema": "chupamel", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["chupamel"], "mp": ["chupameis"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
+{"id": "chupamel#substantivo", "lema": "chupamel", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["chupamel"], "mp": ["chupameles"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "chupar#verbo", "lema": "chupar", "categoria": "verbo", "tipos": ["transitiva", "intransitiva", "pronominal"], "estado": "recomendado", "frecuencia": 7, "fontes": ["drag", "volga"]}
 {"id": "chupatinta#substantivo", "lema": "chupatinta", "categoria": "substantivo", "formas": {"ms": ["chupatinta"], "mp": ["chupatintas"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "chupeta#substantivo", "lema": "chupeta", "categoria": "substantivo", "xenero": "feminino", "formas": {"fs": ["chupeta"], "fp": ["chupetas"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["volga"]}
@@ -15325,7 +15325,7 @@
 {"id": "decepcionar#verbo", "lema": "decepcionar", "categoria": "verbo", "tipos": ["transitiva", "pronominal"], "estado": "recomendado", "frecuencia": 36, "fontes": ["drag", "volga"]}
 {"id": "decer#verbo", "lema": "decer", "categoria": "verbo", "tipos": ["defectivo", "transitiva", "intransitiva"], "estado": "tolerado", "frecuencia": 0, "fontes": ["volga"]}
 {"id": "deceso#substantivo", "lema": "deceso", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["deceso"], "mp": ["decesos"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
-{"id": "decibel#substantivo", "lema": "decibel", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["decibel"], "mp": ["decibeis"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
+{"id": "decibel#substantivo", "lema": "decibel", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["decibel"], "mp": ["decibeles", "decibeis"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "decibelio#substantivo", "lema": "decibelio", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["decibelio"], "mp": ["decibelios"]}, "estado": "tolerado", "frecuencia": 0, "fontes": ["volga"]}
 {"id": "decididamente#adverbio", "lema": "decididamente", "categoria": "adverbio", "formas": {"ms": ["decididamente"]}, "estado": "recomendado", "frecuencia": 1, "fontes": ["drag", "volga"]}
 {"id": "decidido#adxectivo", "lema": "decidido", "categoria": "adxectivo", "formas": {"ms": ["decidido"], "fs": ["decidida"], "mp": ["decididos"], "fp": ["decididas"]}, "estado": "recomendado", "frecuencia": 4, "fontes": ["drag", "volga"]}
@@ -26692,7 +26692,7 @@
 {"id": "hidromasaxe#substantivo", "lema": "hidromasaxe", "categoria": "substantivo", "xenero": "feminino", "formas": {"fs": ["hidromasaxe"], "fp": ["hidromasaxes"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag"]}
 {"id": "hidromedusa#substantivo", "lema": "hidromedusa", "categoria": "substantivo", "xenero": "feminino", "formas": {"fs": ["hidromedusa"], "fp": ["hidromedusas"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag"]}
 {"id": "hidromedusas#substantivo", "lema": "hidromedusas", "categoria": "substantivo", "xenero": "feminino", "formas": {"fp": ["hidromedusas"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["volga"]}
-{"id": "hidromel#substantivo", "lema": "hidromel", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["hidromel"], "mp": ["hidromeis"]}, "estado": "recomendado", "frecuencia": 3, "fontes": ["drag", "volga"]}
+{"id": "hidromel#substantivo", "lema": "hidromel", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["hidromel"], "mp": ["hidromeles"]}, "estado": "recomendado", "frecuencia": 3, "fontes": ["drag", "volga"]}
 {"id": "hidrometeoro#substantivo", "lema": "hidrometeoro", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["hidrometeoro"], "mp": ["hidrometeoros"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "hidrometría#substantivo", "lema": "hidrometría", "categoria": "substantivo", "xenero": "feminino", "formas": {"fs": ["hidrometría"], "fp": ["hidrometrías"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "hidrométrico#adxectivo", "lema": "hidrométrico", "categoria": "adxectivo", "formas": {"ms": ["hidrométrico"], "fs": ["hidrométrica"], "mp": ["hidrométricos"], "fp": ["hidrométricas"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
@@ -36859,7 +36859,7 @@
 {"id": "olleiras#substantivo", "lema": "olleiras", "categoria": "substantivo", "xenero": "feminino", "formas": {"fp": ["olleiras"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "olleiro#substantivo", "lema": "olleiro", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["olleiro"], "mp": ["olleiros"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "ollo#substantivo", "lema": "ollo", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["ollo"], "mp": ["ollos"]}, "estado": "recomendado", "frecuencia": 942, "fontes": ["drag", "volga"]}
-{"id": "ollomol#substantivo", "lema": "ollomol", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["ollomol"], "mp": ["ollomois"]}, "estado": "recomendado", "frecuencia": 1, "fontes": ["drag", "volga"]}
+{"id": "ollomol#substantivo", "lema": "ollomol", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["ollomol"], "mp": ["ollomoles"]}, "estado": "recomendado", "frecuencia": 1, "fontes": ["drag", "volga"]}
 {"id": "olludo#adxectivo", "lema": "olludo", "categoria": "adxectivo", "formas": {"ms": ["olludo"], "fs": ["olluda"], "mp": ["olludos"], "fp": ["olludas"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "olmo#adxectivo", "lema": "olmo", "categoria": "adxectivo", "formas": {"ms": ["olmo"], "fs": ["olma"], "mp": ["olmos"], "fp": ["olmas"]}, "estado": "recomendado", "frecuencia": 2, "fontes": ["drag", "volga"]}
 {"id": "olmo#substantivo", "lema": "olmo", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["olmo"], "mp": ["olmos"]}, "estado": "recomendado", "frecuencia": 2, "fontes": ["drag", "volga"]}
@@ -39275,7 +39275,7 @@
 {"id": "periférico#adxectivo", "lema": "periférico", "categoria": "adxectivo", "formas": {"ms": ["periférico"], "fs": ["periférica"], "mp": ["periféricos"], "fp": ["periféricas"]}, "estado": "recomendado", "frecuencia": 4, "fontes": ["drag", "volga"]}
 {"id": "periférico#substantivo", "lema": "periférico", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["periférico"], "mp": ["periféricos"]}, "estado": "recomendado", "frecuencia": 1, "fontes": ["drag"]}
 {"id": "periflebite#substantivo", "lema": "periflebite", "categoria": "substantivo", "xenero": "feminino", "formas": {"fs": ["periflebite"], "fp": ["periflebites"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
-{"id": "perifol#substantivo", "lema": "perifol", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["perifol"], "mp": ["perifois"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
+{"id": "perifol#substantivo", "lema": "perifol", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["perifol"], "mp": ["perifoles"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "perífrase#substantivo", "lema": "perífrase", "categoria": "substantivo", "xenero": "feminino", "formas": {"fs": ["perífrase"], "fp": ["perífrases"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "perifrástico#adxectivo", "lema": "perifrástico", "categoria": "adxectivo", "formas": {"ms": ["perifrástico"], "fs": ["perifrástica"], "mp": ["perifrásticos"], "fp": ["perifrásticas"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "perigar#verbo", "lema": "perigar", "categoria": "verbo", "tipos": ["intransitiva"], "estado": "recomendado", "frecuencia": 6, "fontes": ["drag", "volga"]}
@@ -43545,7 +43545,7 @@
 {"id": "redargüír#verbo", "lema": "redargüír", "categoria": "verbo", "tipos": ["transitiva"], "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "rede#substantivo", "lema": "rede", "categoria": "substantivo", "xenero": "feminino", "formas": {"fs": ["rede"], "fp": ["redes"]}, "estado": "recomendado", "frecuencia": 86, "fontes": ["drag", "volga"]}
 {"id": "redefinir#verbo", "lema": "redefinir", "categoria": "verbo", "tipos": ["transitiva"], "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
-{"id": "redefol#substantivo", "lema": "redefol", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["redefol"], "mp": ["redefois"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
+{"id": "redefol#substantivo", "lema": "redefol", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["redefol"], "mp": ["redefoles"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "redeiro#substantivo", "lema": "redeiro", "categoria": "substantivo", "formas": {"ms": ["redeiro"], "fs": ["redeira"], "mp": ["redeiros"], "fp": ["redeiras"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}
 {"id": "redención#substantivo", "lema": "redención", "categoria": "substantivo", "xenero": "feminino", "formas": {"fs": ["redención"], "fp": ["redencións"]}, "estado": "recomendado", "frecuencia": 1, "fontes": ["drag", "volga"]}
 {"id": "redeño#substantivo", "lema": "redeño", "categoria": "substantivo", "xenero": "masculino", "formas": {"ms": ["redeño"], "mp": ["redeños"]}, "estado": "recomendado", "frecuencia": 0, "fontes": ["drag", "volga"]}

@@ -1,59 +1,5 @@
 {
  "_descricion": "Correccións á flexión nominal (plurais, femininos) que Hunspell-gl ten mal segundo as Normas (regras do plural). Cada entrada substitúe a cela indicada (ms, fs, mp, fp).",
- "cartafol#substantivo": {
-  "nota": "oxítono en -ol: -ois (farol/farois)",
-  "mp": [
-   "cartafois"
-  ]
- },
- "ollomol#substantivo": {
-  "nota": "oxítono en -ol: -ois",
-  "mp": [
-   "ollomois"
-  ]
- },
- "perifol#substantivo": {
-  "nota": "oxítono en -ol: -ois",
-  "mp": [
-   "perifois"
-  ]
- },
- "redefol#substantivo": {
-  "nota": "oxítono en -ol: -ois",
-  "mp": [
-   "redefois"
-  ]
- },
- "chuchamel#substantivo": {
-  "nota": "oxítono en -el polisílabo: -eis (papel/papeis)",
-  "mp": [
-   "chuchameis"
-  ]
- },
- "chupamel#substantivo": {
-  "nota": "oxítono en -el polisílabo: -eis",
-  "mp": [
-   "chupameis"
-  ]
- },
- "hidromel#substantivo": {
-  "nota": "oxítono en -el polisílabo: -eis",
-  "mp": [
-   "hidromeis"
-  ]
- },
- "bemol#substantivo": {
-  "nota": "o módulo do DRAG dáo con -les; o VOLGa e a regra, -ois",
-  "mp": [
-   "bemois"
-  ]
- },
- "decibel#substantivo": {
-  "nota": "o módulo do DRAG dáo con -les; o VOLGa e a regra, -eis",
-  "mp": [
-   "decibeis"
-  ]
- },
  "fuel#substantivo": {
   "nota": "oxítono en -el: -eis",
   "mp": [
@@ -64,12 +10,6 @@
   "nota": "oxítono en -il: -ís (fusil/fusís)",
   "mp": [
    "oís"
-  ]
- },
- "bemol#adxectivo": {
-  "nota": "como o substantivo",
-  "mp": [
-   "bemois"
   ]
  }
 }

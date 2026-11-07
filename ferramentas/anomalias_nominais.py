@@ -6,7 +6,9 @@ Regras (Normas ortográficas e morfolóxicas, formación do plural):
   - rematados en -s ou -x: os agudos engaden -es (deus/deuses, país/países);
     os graves e esdrúxulos son invariables (lapis, tórax);
   - rematados en -l: monosílabos -les (sol/soles); polisílabos agudos -is
-    (papel/papeis, decibel/decibeis, civil/civís, fusil/fusís); polisílabos graves
+    (papel/papeis, farol/farois, civil/civís, fusil/fusís), agás os compostos dun
+    monosílabo, que levan o plural deste (cartafol/cartafoles, chupamel/chupameles:
+    revisados en plurais_revisados.tsv); polisílabos graves
     -les (túnel/túneles, fácil/fáciles, réptil/réptiles);
   - rematados noutra consoante (préstamos): -s (club/clubs, chip/chips).
 

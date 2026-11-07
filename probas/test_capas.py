@@ -124,6 +124,8 @@ class ProbasPlurais(unittest.TestCase):
 
     def test_correccions_de_flexion(self):
         lemas = {r["id"]: r for r in ler("lemas.jsonl")}
-        self.assertEqual(lemas["cartafol#substantivo"]["formas"]["mp"], ["cartafois"])
-        self.assertEqual(lemas["decibel#substantivo"]["formas"]["mp"], ["decibeis"])
+        # compostos dun monosílabo en -l: plural deste (fol/foles, mel/meles), como no DRAG
+        self.assertEqual(lemas["cartafol#substantivo"]["formas"]["mp"], ["cartafoles"])
+        self.assertEqual(lemas["chupamel#substantivo"]["formas"]["mp"], ["chupameles"])
+        self.assertIn("decibeles", lemas["decibel#substantivo"]["formas"]["mp"])     # DRAG (o VOLGa: decibeis)
         self.assertEqual(lemas["amábel#adxectivo"]["formas"]["mp"], ["amábeis"])
