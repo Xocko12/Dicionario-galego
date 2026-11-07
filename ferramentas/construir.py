@@ -7,6 +7,7 @@ Saídas:
     dist/teclado/gl_wordlist.combined lista para teclados AOSP/HeliBoard (dicttool)
     dist/teclado/palabras.tsv         forma<TAB>frecuencia (formato xenérico)
     dist/kobo/galego.tsv              glosario (pyglossary -> Kobo, StarDict...)
+    dist/hunspell/gl_ES.dic/.aff      corrector Hunspell (macOS/Pages, LibreOffice, Firefox)
     dist/kobo/dicthtml-gl.zip         dicionario Kobo         (con --kobo, precisa pyglossary)
     dist/stardict/galego.*            StarDict (GoldenDict, apps de dicionario de iOS e Android)
     dist/apple/Galego.apple/          fonte para Dictionary.app de macOS (make nun Mac co Dictionary Development Kit)
@@ -409,6 +410,48 @@ def construir_hyphenation() -> None:
         "(extensión de LibreOffice), GPL-3.0-or-later.\n", encoding="utf-8")
 
 
+def construir_hunspell(lemas, conx, nomes, encl, capas) -> int:
+    """dist/hunspell/gl_ES.dic + gl_ES.aff: corrector para macOS (Pages, Mail...),
+    LibreOffice, Firefox... A lista de palabras é a nosa (verbos revisados coa
+    RAG, enclíticos ben acentuados, capas); as regras de suxestión (TRY, KEY,
+    MAP, REP) tómanse do ficheiro de regras de Hunspell-gl."""
+    palabras: set[str] = set()
+    for r in lemas + [r for r in capas["lexico"] if r["capa"] in CAPAS_TECLADO]:
+        for forma, _ in formas_do_lema(r, conx):
+            palabras.add(forma)
+    palabras.update(nomes)
+    palabras.update(r["forma"] for r in encl)
+    for r in capas["siglas"]:
+        palabras.add(r["forma"])
+    for r in capas["onomastica"]:
+        if r["capa"] in CAPAS_TECLADO:
+            palabras.update(p for p in r["nome"].split() if p[:1].isupper())
+    for r in capas["locucions"]:
+        palabras.update(r["locucion"].split())
+    palabras = {p for p in palabras if p and " " not in p}
+    saida = DIST / "hunspell"
+    saida.mkdir(parents=True, exist_ok=True)
+    ordenadas = sorted(palabras)
+    with (saida / "gl_ES.dic").open("w", encoding="utf-8") as fh:
+        fh.write(f"{len(ordenadas)}\n")
+        fh.write("\n".join(ordenadas) + "\n")
+    regras = ["SET UTF-8"]
+    aff = RAIZ / "fontes" / "cache" / "hunspell-gl" / "gl.aff"
+    if aff.exists():
+        for liña in aff.read_text(encoding="utf-8").splitlines():
+            if liña.split(" ")[0] in ("TRY", "KEY", "WORDCHARS", "BREAK", "NOSPLITSUGS", "MAP", "REP", "ICONV", "OCONV"):
+                regras.append(liña)
+    (saida / "gl_ES.aff").write_text("\n".join(regras) + "\n", encoding="utf-8")
+    (saida / "LEME.txt").write_text(
+        "Corrector ortográfico galego (Dicionario galego aberto, GPL-3.0).\n"
+        "macOS (Pages, Mail, Safari...): copiar gl_ES.dic e gl_ES.aff a ~/Library/Spelling/ (crear o cartafol se non existe),\n"
+        "reiniciar as aplicacións e escoller «Galego» en Axustes do Sistema > Teclado > Ortografía (ou en Editar > Ortografía).\n"
+        "LibreOffice: copiar a ~/.config/libreoffice/4/user/wordbook/ ou instalar como extensión.\n"
+        "Lista de palabras: formas do núcleo da RAG, verbos revisados co conxugador da RAG, formas con pronomes enclíticos,\n"
+        "nomes, topónimos, siglas e capas léxicas. Regras de suxestión: Hunspell-gl (Proxecto Trasno).\n", encoding="utf-8")
+    return len(ordenadas)
+
+
 def main() -> None:
     DIST.mkdir(exist_ok=True)
     construir_hyphenation()
@@ -436,6 +479,7 @@ def main() -> None:
     construir_sqlite(lemas, conx, frec, nomes, encl, capas)
     print("dist/dicionario.sqlite")
     n = construir_teclado(lemas, conx, frec, nomes, encl, capas)
+    print(f"dist/hunspell/: {construir_hunspell(lemas, conx, nomes, encl, capas)} palabras")
     print(f"dist/teclado/: {n} formas")
     construir_glosario(lemas, conx, encl, capas, "--kobo" in sys.argv)
     print("dist/kobo/galego.tsv" + (" + Kobo, StarDict e AppleDict" if "--kobo" in sys.argv else ""))
