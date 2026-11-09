@@ -171,9 +171,7 @@ def construir_sqlite(lemas, conx, frec, nomes, encl, capas) -> None:
 
 
 # -- Teclado ----------------------------------------------------------------
-# Capas que van ao corrector Hunspell (as demais son enormes ou traen moito lixo doutras linguas).
-CAPAS_CORRECTOR = {"digalego", "comunidade", "terminoloxia", "siglas", "toponimos", "antroponimos"}
-# Capas que van ao teclado:
+# Capas léxicas que van ao teclado e ao corrector; os nomes propios dos dous saen de nomes_propios().
 TECLADO_LEXICO = {"digalego", "comunidade", "terminoloxia"}
 # nomes propios, tamén as palabras con maiúscula dos nomes compostos (Nova York -> York)
 TECLADO_NOMES = {"toponimos", "antroponimos", "cidades", "nomes-outras-linguas"}
@@ -204,6 +202,33 @@ def _grafia(p: str) -> int:
     if any(c.isupper() for c in p[1:]):
         return 3
     return 2 if p[0].isupper() else 1
+
+
+def nomes_propios(nomes, capas) -> tuple[list[str], set[str]]:
+    """Os nomes propios e siglas que van ao teclado e ao corrector, segundo a capa (unha entrada
+    por cada aparición), e o subconxunto que está nalgunha capa galega ou nos engadidos a man."""
+    candidatos: list[str] = [r["forma"] for r in capas["siglas"] if r["capa"] == "siglas"]
+    candidatos += nomes
+    galegos: set[str] = set(candidatos)
+    for r in capas["onomastica"]:
+        capa = r["capa"]
+        if " " not in r["nome"]:
+            fontes = TECLADO_NOMES_FONTES.get(capa)
+            if capa in TECLADO_NOMES or capa in TECLADO_NOMES_SIMPLES or (fontes and fontes & set(r["fontes"])):
+                partes = [r["nome"]]
+            else:
+                continue
+        elif capa in TECLADO_NOMES:
+            partes = [p for p in r["nome"].split() if p[:1].isupper()]
+        else:   # dos compostos das demais capas («Partido Independiente de Osuna») nada
+            continue
+        # sen siglas con puntos (A.C.CO.) nin códigos (2M1207b): nos nomes son lixo
+        partes = [p for p in partes if "." not in p and p[0].isalpha()]
+        candidatos += partes
+        # os engadidos a man contan como galegos (clubs e persoas que se nomean aquí), agás os nomes doutras linguas
+        if capa not in TECLADO_FORANEAS or ("engadidos" in r["fontes"] and capa != "nomes-outras-linguas"):
+            galegos.update(partes)
+    return candidatos, galegos
 
 
 def formas_teclado(lemas, conx, frec, nomes, encl, capas) -> dict[str, int]:
@@ -237,27 +262,7 @@ def formas_teclado(lemas, conx, frec, nomes, encl, capas) -> dict[str, int]:
     mandan = set(json.loads(ruta.read_text(encoding="utf-8"))["nomes"]) if ruta.exists() else set()
 
     siglas = {r["forma"] for r in capas["siglas"] if r["capa"] == "siglas"}
-    candidatos: list[str] = list(siglas)
-    candidatos += nomes
-    galegos: set[str] = set(candidatos)   # nomes que están nalgunha capa galega ou nos engadidos a man
-    for r in capas["onomastica"]:
-        capa = r["capa"]
-        if " " not in r["nome"]:
-            fontes = TECLADO_NOMES_FONTES.get(capa)
-            if capa in TECLADO_NOMES or capa in TECLADO_NOMES_SIMPLES or (fontes and fontes & set(r["fontes"])):
-                partes = [r["nome"]]
-            else:
-                continue
-        elif capa in TECLADO_NOMES:
-            partes = [p for p in r["nome"].split() if p[:1].isupper()]
-        else:   # dos compostos das demais capas («Partido Independiente de Osuna») nada
-            continue
-        # sen siglas con puntos (A.C.CO.) nin códigos (2M1207b): nos nomes son lixo
-        partes = [p for p in partes if "." not in p and p[0].isalpha()]
-        candidatos += partes
-        # os engadidos a man contan como galegos (clubs e persoas que se nomean aquí), agás os nomes doutras linguas
-        if capa not in TECLADO_FORANEAS or ("engadidos" in r["fontes"] and capa != "nomes-outras-linguas"):
-            galegos.update(partes)
+    candidatos, galegos = nomes_propios(nomes, capas)
     # entre variantes dun mesmo nome (Pol/POL, NIF/Nif, YouTube/Youtube) escóllese a que máis veces
     # aparece nas capas; en empate, a sigla e logo a grafía máis deliberada (_grafia)
     veces: dict[str, int] = {}
@@ -523,8 +528,9 @@ def construir_hunspell(lemas, conx, nomes, encl, capas) -> int:
 
     Estrutura: a mesma ca Hunspell-gl (regras e dicionario de Proxecto Trasno
     cos módulos da RAG, coas nosas correccións ás regras), e por riba:
-      - as nosas formas que esa base non recoñece (nomes, topónimos, siglas,
-        capas léxicas, formas revisadas coa RAG), como entradas sen afixos;
+      - as nosas formas que esa base non recoñece (nomes, topónimos, cidades, clubs,
+        nomes doutras linguas, siglas, marcas, capas léxicas, formas revisadas coa
+        RAG), como entradas sen afixos: os mesmos nomes propios ca o teclado;
       - as formas que a base acepta pero que están mal segundo o conxugador da
         RAG ou as Normas, marcadas como prohibidas (FORBIDDENWORD).
     Unha lista plana de 1,3 millóns de formas non cargaba no Hunspell antigo de
@@ -538,15 +544,15 @@ def construir_hunspell(lemas, conx, nomes, encl, capas) -> int:
         print("sen fontes/cache/hunspell-gl: non se constrúe o corrector")
         return 0
     palabras: set[str] = set()
-    for r in lemas + [r for r in capas["lexico"] if r["capa"] in CAPAS_CORRECTOR]:
+    for r in lemas + [r for r in capas["lexico"] if r["capa"] in TECLADO_LEXICO]:
         for forma, _ in formas_do_lema(r, conx):
             palabras.add(forma)
-    palabras.update(nomes)
     palabras.update(r["forma"] for r in encl)
     palabras.update(r["forma"] for r in capas["siglas"])
-    for r in capas["onomastica"]:
-        if r["capa"] in CAPAS_CORRECTOR:
-            palabras.update(p for p in r["nome"].split() if p[:1].isupper())
+    # os mesmos nomes propios ca o teclado: topónimos, cidades, antropónimos, nomes doutras linguas
+    # (coas palabras dos compostos), organizacións, marcas e clubs (só os nomes dunha palabra)
+    candidatos, _ = nomes_propios(nomes, capas)
+    palabras.update(candidatos)
     for r in capas["locucions"]:
         palabras.update(r["locucion"].split())
     palabras = {p for p in palabras if _palabra_limpa(p)}
