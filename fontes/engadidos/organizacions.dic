@@ -1,0 +1,279 @@
+# Engadidos a man neste proxecto (GPL-3.0-or-later), no formato dos módulos de Hunspell-gl:
+#   palabra[/999] po:tipo [is:ngrama_Nome_completo]  # nota
+# Cada palabra dun nome composto vai na súa liña coa etiqueta is:ngrama_ (como en Hunspell-gl);
+# /999 é KEEPCASE: a palabra só vale coa grafía dada (iOS, macOS, eBay).
+# Só o que non está nos módulos de Hunspell-gl da versión fixada en fontes/fontes.json.
+# Capa: organizacions (empresas, produtos, servizos, entidades).
+
+# Tecnoloxía
+Google po:nome_propio  # empresa e buscador
+Alphabet po:nome_propio  # matriz de Google
+Apple po:nome_propio  # empresa de informática
+Microsoft po:nome_propio  # empresa de software
+Samsung po:nome_propio  # empresa de electrónica
+Xiaomi po:nome_propio  # empresa de electrónica
+OnePlus/999 po:nome_propio  # marca de teléfonos
+Oppo po:nome_propio  # marca de teléfonos
+Realme po:nome_propio  # marca de teléfonos
+Motorola po:nome_propio  # marca de teléfonos
+Sony po:nome_propio  # empresa de electrónica
+Intel po:nome_propio  # fabricante de procesadores
+Nvidia po:nome_propio  # fabricante de procesadores gráficos
+Qualcomm po:nome_propio  # fabricante de procesadores
+Lenovo po:nome_propio  # fabricante de ordenadores
+Asus po:nome_propio  # fabricante de ordenadores
+Acer po:nome_propio  # fabricante de ordenadores
+Dell po:nome_propio  # fabricante de ordenadores
+Logitech po:nome_propio  # fabricante de periféricos
+Canon po:nome_propio  # fabricante de cámaras
+Nikon po:nome_propio  # fabricante de cámaras
+GoPro/999 po:nome_propio  # cámaras de acción
+Siemens po:nome_propio  # empresa de enxeñaría
+Bosch po:nome_propio  # empresa de enxeñaría
+Panasonic po:nome_propio  # empresa de electrónica
+Garmin po:nome_propio  # dispositivos GPS e reloxos deportivos
+Fitbit po:nome_propio  # pulseiras de actividade
+Tesla po:nome_propio  # fabricante de coches eléctricos
+SpaceX/999 po:nome_propio  # empresa aeroespacial
+Starlink po:nome_propio  # internet por satélite
+Arduino po:nome_propio  # plataforma de electrónica libre
+Raspberry po:nome_propio is:ngrama_Raspberry_Pi  # ordenador de placa única
+Pi po:nome_propio is:ngrama_Raspberry_Pi
+Instagram po:nome_propio  # rede social
+TikTok/999 po:nome_propio  # rede social de vídeos curtos
+Pinterest po:nome_propio  # rede social
+Reddit po:nome_propio  # rede social de foros
+LinkedIn/999 po:nome_propio  # rede social profesional
+Twitch po:nome_propio  # plataforma de emisión en directo
+Discord po:nome_propio  # aplicación de mensaxería
+Signal po:nome_propio  # aplicación de mensaxería
+Bluesky po:nome_propio  # rede social
+Mastodon po:nome_propio  # rede social federada
+Threads po:nome_propio  # rede social
+Netflix po:nome_propio  # plataforma de vídeo
+Disney+ po:nome_propio  # plataforma de vídeo
+Filmin po:nome_propio  # plataforma de vídeo
+DAZN po:nome_propio  # plataforma de deporte en liña
+Deezer po:nome_propio  # plataforma de música
+Tidal po:nome_propio  # plataforma de música
+Shazam po:nome_propio  # aplicación de recoñecemento de música
+Audible po:nome_propio  # audiolibros
+Kindle po:nome_propio  # lector de libros electrónicos de Amazon
+Kobo po:nome_propio  # lector de libros electrónicos
+Amazon po:nome_propio  # empresa de comercio electrónico
+AliExpress/999 po:nome_propio  # comercio electrónico
+Temu po:nome_propio  # comercio electrónico
+Shein po:nome_propio  # comercio electrónico
+eBay/999 po:nome_propio  # comercio electrónico
+Zalando po:nome_propio  # comercio electrónico de roupa
+Asos po:nome_propio  # comercio electrónico de roupa
+Vinted po:nome_propio  # compravenda de roupa de segunda man
+Wallapop po:nome_propio  # compravenda de segunda man
+Milanuncios po:nome_propio  # anuncios clasificados
+Idealista po:nome_propio  # portal inmobiliario
+Fotocasa po:nome_propio  # portal inmobiliario
+Glovo po:nome_propio  # reparto a domicilio
+Uber po:nome_propio  # transporte de pasaxeiros
+Cabify po:nome_propio  # transporte de pasaxeiros
+Bolt po:nome_propio  # transporte de pasaxeiros
+BlaBlaCar/999 po:nome_propio  # coche compartido
+Airbnb po:nome_propio  # aloxamento turístico
+Booking po:nome_propio  # reservas de aloxamento
+Trivago po:nome_propio  # comparador de hoteis
+Skyscanner po:nome_propio  # comparador de voos
+Bizum po:nome_propio  # pagamentos móbiles
+Visa po:nome_propio  # tarxetas de pagamento
+Mastercard po:nome_propio  # tarxetas de pagamento
+Revolut po:nome_propio  # banco en liña
+Duolingo po:nome_propio  # aprendizaxe de idiomas
+Strava po:nome_propio  # rexistro de actividade deportiva
+Tinder po:nome_propio  # aplicación de citas
+Waze po:nome_propio  # navegación GPS
+Windows po:nome_propio  # sistema operativo de Microsoft
+iPadOS/999 po:nome_propio  # sistema operativo de Apple para iPad
+watchOS/999 po:nome_propio  # sistema operativo de Apple para Apple Watch
+tvOS/999 po:nome_propio  # sistema operativo de Apple para Apple TV
+Ubuntu po:nome_propio  # distribución de Linux
+Debian po:nome_propio  # distribución de Linux
+Fedora po:nome_propio  # distribución de Linux
+Chrome po:nome_propio  # navegador de Google
+Chromium po:nome_propio  # navegador libre
+Firefox po:nome_propio  # navegador de Mozilla
+Mozilla po:nome_propio  # fundación de software libre
+Brave po:nome_propio  # navegador
+Vivaldi po:nome_propio  # navegador
+DuckDuckGo/999 po:nome_propio  # buscador
+Bing po:nome_propio  # buscador de Microsoft
+Yahoo po:nome_propio  # portal e buscador
+Ecosia po:nome_propio  # buscador
+Outlook po:nome_propio  # correo de Microsoft
+Teams po:nome_propio  # comunicación de Microsoft
+Excel po:nome_propio  # folla de cálculo de Microsoft
+PowerPoint/999 po:nome_propio  # presentacións de Microsoft
+OneDrive/999 po:nome_propio  # almacenamento na nube de Microsoft
+Azure po:nome_propio  # nube de Microsoft
+Copilot po:nome_propio  # asistente de IA de Microsoft
+OpenAI/999 po:nome_propio  # empresa de intelixencia artificial
+ChatGPT/999 po:nome_propio  # asistente de IA de OpenAI
+Anthropic po:nome_propio  # empresa de intelixencia artificial
+Claude po:nome_propio  # asistente de IA de Anthropic
+Gemini po:nome_propio  # asistente de IA de Google
+Siri po:nome_propio  # asistente de voz de Apple
+Alexa po:nome_propio  # asistente de voz de Amazon
+Wikimedia po:nome_propio  # fundación da Wikipedia
+Wiktionary po:nome_propio  # dicionario libre
+Wikidata po:nome_propio  # base de datos libre
+Trasno po:nome_propio  # Proxecto Trasno, localización de software libre ao galego
+Nextcloud po:nome_propio  # nube libre
+Proton po:nome_propio  # correo e nube cifrados
+GitLab/999 po:nome_propio  # aloxamento de código
+Kubernetes po:nome_propio  # orquestración de contedores
+Oracle po:nome_propio  # empresa de software
+Adobe po:nome_propio  # empresa de software
+Photoshop po:nome_propio  # edición de imaxe
+Illustrator po:nome_propio  # debuxo vectorial
+Canva po:nome_propio  # deseño gráfico en liña
+Figma po:nome_propio  # deseño de interfaces
+Notion po:nome_propio  # notas e organización
+Trello po:nome_propio  # organización de tarefas
+Zoom po:nome_propio  # videoconferencias
+Shopify po:nome_propio  # comercio electrónico
+TypeScript/999 po:nome_propio  # linguaxe de programación
+Kotlin po:nome_propio  # linguaxe de programación
+Swift po:nome_propio  # linguaxe de programación de Apple
+Rust po:nome_propio  # linguaxe de programación
+React po:nome_propio  # biblioteca de interfaces
+Flutter po:nome_propio  # marco de aplicacións móbiles
+Blender po:nome_propio  # modelado 3D libre
+GIMP po:nome_propio  # edición de imaxe libre
+Inkscape po:nome_propio  # debuxo vectorial libre
+Gboard po:nome_propio  # teclado de Google
+HeliBoard/999 po:nome_propio  # teclado libre para Android
+iMac/999 po:nome_propio  # ordenador de Apple
+MacBook/999 po:nome_propio  # portátil de Apple
+Mac po:nome_propio  # ordenador de Apple
+iPod/999 po:nome_propio  # reprodutor de Apple
+AirPods/999 po:nome_propio  # auriculares de Apple
+AirDrop/999 po:nome_propio  # envío de ficheiros entre dispositivos Apple
+AirPlay/999 po:nome_propio  # emisión sen fíos de Apple
+iCloud/999 po:nome_propio  # nube de Apple
+iTunes/999 po:nome_propio  # música de Apple
+iMessage/999 po:nome_propio  # mensaxería de Apple
+FaceTime/999 po:nome_propio  # videochamadas de Apple
+Pixel po:nome_propio  # teléfonos de Google
+Galaxy po:nome_propio  # teléfonos de Samsung
+Chromecast po:nome_propio  # reprodutor multimedia de Google
+Thunderbolt po:nome_propio  # conector de datos
+Ethernet po:nome_propio  # rede local con cable
+Bluetooth po:nome_propio  # comunicación sen fíos de curto alcance
+PlayStation/999 po:nome_propio  # consola de Sony
+Xbox po:nome_propio  # consola de Microsoft
+Wii po:nome_propio  # consola de Nintendo
+Steam po:nome_propio  # tenda de videoxogos
+Fortnite po:nome_propio  # videoxogo
+Roblox po:nome_propio  # videoxogo
+Valorant po:nome_propio  # videoxogo
+Zelda po:nome_propio  # saga de videoxogos
+Lego po:nome_propio  # xoguetes
+Playmobil po:nome_propio  # xoguetes
+Barbie po:nome_propio  # boneca
+Marvel po:nome_propio  # editorial e estudio de cómics e cine
+Pixar po:nome_propio  # estudio de animación
+Warner po:nome_propio  # estudio de cine
+Paramount po:nome_propio  # estudio de cine
+
+# Entidades
+Xunta po:nome_propio  # Xunta de Galicia
+Parlamento po:nome_propio  # Parlamento de Galicia
+Consellería po:nome_propio  # departamento da Xunta de Galicia
+Valedor po:nome_propio  # Valedor do Pobo
+Afundación po:nome_propio  # obra social de Abanca
+Abanca po:nome_propio  # banco galego
+Inditex po:nome_propio  # grupo téxtil galego
+Zara po:nome_propio  # cadea de roupa de Inditex
+Bershka po:nome_propio  # cadea de roupa de Inditex
+Stradivarius po:nome_propio  # cadea de roupa de Inditex
+Oysho po:nome_propio  # cadea de roupa de Inditex
+Lefties po:nome_propio  # cadea de roupa de Inditex
+Massimo po:nome_propio is:ngrama_Massimo_Dutti  # cadea de roupa de Inditex
+Dutti po:nome_propio is:ngrama_Massimo_Dutti
+Gadis po:nome_propio  # supermercados galegos
+Vegalsa po:nome_propio  # supermercados galegos
+Eroski po:nome_propio  # supermercados
+Mercadona po:nome_propio  # supermercados
+Carrefour po:nome_propio  # supermercados
+Lidl po:nome_propio  # supermercados
+Aldi po:nome_propio  # supermercados
+Ikea po:nome_propio  # mobles
+Decathlon po:nome_propio  # deportes
+Leroy po:nome_propio is:ngrama_Leroy_Merlin  # bricolaxe
+Merlin po:nome_propio is:ngrama_Leroy_Merlin
+Bricomart po:nome_propio  # bricolaxe
+Conforama po:nome_propio  # mobles
+Primark po:nome_propio  # roupa
+Mango po:nome_propio  # roupa
+Desigual po:nome_propio  # roupa
+Camper po:nome_propio  # calzado
+Nike po:nome_propio  # roupa deportiva
+Adidas po:nome_propio  # roupa deportiva
+Puma po:nome_propio  # roupa deportiva
+Reebok po:nome_propio  # roupa deportiva
+Coca-Cola po:nome_propio  # bebidas
+Pepsi po:nome_propio  # bebidas
+Nestlé po:nome_propio  # alimentación
+Danone po:nome_propio  # alimentación
+Kellogg po:nome_propio  # alimentación
+McDonald's/999 po:nome_propio  # restaurantes
+Burger po:nome_propio is:ngrama_Burger_King  # restaurantes
+King po:nome_propio is:ngrama_Burger_King
+KFC po:nome_propio  # restaurantes
+Starbucks po:nome_propio  # cafetarías
+Telepizza po:nome_propio  # restaurantes
+Domino's po:nome_propio  # restaurantes
+Repsol po:nome_propio  # enerxía
+Iberdrola po:nome_propio  # enerxía
+Naturgy po:nome_propio  # enerxía
+Mapfre po:nome_propio  # seguros
+CaixaBank/999 po:nome_propio  # banco
+Bankinter po:nome_propio  # banco
+Correos po:nome_propio  # servizo postal
+Seur po:nome_propio  # mensaxería
+DHL po:nome_propio  # mensaxería
+MRW po:nome_propio  # mensaxería
+GLS po:nome_propio  # mensaxería
+Alsa po:nome_propio  # autobuses
+Monbus po:nome_propio  # autobuses galegos
+Gradiant po:nome_propio  # centro tecnolóxico galego
+MeteoGalicia/999 po:nome_propio  # servizo meteorolóxico galego
+Celta po:nome_propio  # Real Club Celta de Vigo
+Deportivo po:nome_propio  # Real Club Deportivo da Coruña
+Dépor po:nome_propio  # Real Club Deportivo da Coruña
+Obradoiro po:nome_propio  # Obradoiro Clube de Amigos do Baloncesto
+Barça po:nome_propio  # Futbol Club Barcelona
+Athletic po:nome_propio  # Athletic Club de Bilbao
+Betis po:nome_propio  # Real Betis Balompié
+Villarreal po:nome_propio  # Villarreal Club de Fútbol
+Osasuna po:nome_propio  # Club Atlético Osasuna
+Espanyol po:nome_propio  # Reial Club Deportiu Espanyol
+Arsenal po:nome_propio  # Arsenal Football Club
+Tottenham po:nome_propio  # Tottenham Hotspur
+Bayern po:nome_propio  # Bayern de Múnic
+Borussia po:nome_propio  # Borussia Dortmund
+Juventus po:nome_propio  # Juventus de Turín
+Milan po:nome_propio  # Associazione Calcio Milan
+Inter po:nome_propio  # Internazionale de Milán
+Sporting po:nome_propio  # Sporting Clube de Portugal
+LaLiga/999 po:nome_propio  # liga española de fútbol
+Champions po:nome_propio  # Liga de Campións da UEFA
+Eurocopa po:nome_propio  # Campionato de Europa de fútbol
+Sumar po:nome_propio  # partido político
+Vox po:nome_propio  # partido político
+Europol po:nome_propio  # policía europea
+Berlinale po:nome_propio  # festival de cine de Berlín
+Grammy po:nome_propio  # premios de música
+Pulitzer po:nome_propio  # premios de xornalismo
+Sónar po:nome_propio  # festival de música
+PortAmérica/999 po:nome_propio  # festival de música
+Tanxugueiras po:nome_propio  # grupo de música galego
+Baiuca po:nome_propio  # proxecto de música electrónica galego
+Milladoiro po:nome_propio  # grupo de música galego

@@ -17,6 +17,7 @@
 {"nome": "Abdullah ibn Khalifah Al Thani", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Abdus Salam", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Abel", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine", "wikipedia-gl", "wiktionary-gl"], "nota": "ABEL"}
+{"nome": "Abel Caballero", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Abel Pacheco", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Abel Ramón Caballero Álvarez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Abelardo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
@@ -52,6 +53,7 @@
 {"nome": "Acacio", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Acisclo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Ada", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
+{"nome": "Ada Lovelace", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Ada Yonath", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Adalberht", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Adalberto", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
@@ -77,6 +79,7 @@
 {"nome": "Adelardo Novo Brocas", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Adelardus Bathoniensis", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Adelberto", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
+{"nome": "Adele", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Adelia", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Adelina", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Ademar", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -91,10 +94,12 @@
 {"nome": "Adolfina", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Adolfo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine", "wikipedia-gl", "wiktionary-gl"], "nota": "ADOLFO"}
 {"nome": "Adolfo Caamaño Vázquez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Adolfo Domínguez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Adolfo Hohenstein", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Adolfo Lahorra Tello", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Adolfo Mosquera Castro", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Adolfo Rey Ruibal", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Adolfo Suárez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Adolfo Suárez González", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Adolfo Vázquez Gómez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Adolfo de Abel Vilela", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -185,6 +190,7 @@
 {"nome": "Airas Nunes", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Airas Paez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Aires", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
+{"nome": "Aitana Bonmatí", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Aitor", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine", "wikipedia-gl"], "nota": "AITOR"}
 {"nome": "Akira Suzuki", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Al-Razí", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -229,6 +235,7 @@
 {"nome": "Alberto Lema", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Alberto Mouriño Castro", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Alberto Naveira Garabato", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Alberto Núñez Feijóo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Alberto Ramos", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Alberto Suárez Figueiras", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Alberto Vilanova Rodríguez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -304,6 +311,7 @@
 {"nome": "Alexandrina", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Alexandro", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Alexia", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Alexia Putellas", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Alexis", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Alexis Carrel", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Alexo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
@@ -317,12 +325,14 @@
 {"nome": "Alfonso Armada Rodríguez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Alfonso Blanco Torrado", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Alfonso Daniel Manuel Rodríguez Castelao", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Alfonso Daniel Rodríguez Castelao", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Alfonso Gayoso Frías", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Alfonso Guerra González", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Alfonso Láuzara Martínez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Alfonso Magariños Sueiro", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Alfonso Pexegueiro", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Alfonso Rodríguez Rodríguez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Alfonso Rueda", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Alfonso Sobrado Palomares", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Alfonso Sucasas Guerra", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Alfonso Trabazo Lorenzo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -386,6 +396,7 @@
 {"nome": "Alvan Graham Clark", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Álvarez", "tipo": "apelido", "capa": "antroponimos", "fontes": ["ine"], "nota": "ALVAREZ"}
 {"nome": "Álvaro", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine", "wikipedia-gl", "wiktionary-gl"], "nota": "ALVARO"}
+{"nome": "Álvaro Cunqueiro", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Álvaro Cunqueiro Mora", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Álvaro Daniel Paradela Criado", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Álvaro Fernández Suárez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -424,6 +435,7 @@
 {"nome": "Amáncio", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Amancio Caamaño Cimadevila", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Amancio Landín Carrasco", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Amancio Ortega", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Amando", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Amando Suárez Couto", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Amantius", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -459,8 +471,11 @@
 {"nome": "Ana María Gómez González", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Ana María Pérez Cerviño", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Ana María Romero Masiá", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Ana Miranda", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Ana Obregón", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Ana Pastor García", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Ana Peleteiro", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
+{"nome": "Ana Pontón", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Ana Romaní", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Ana Rosa Quintana Hortal", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Ana Victoria García Obregón", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -504,6 +519,7 @@
 {"nome": "Andrés Colombo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Andrés García Vilariño", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Andrés García de la Riva", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Andrés Iniesta", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Andrés Lapique do Barro", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Andrés María Solla García", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Andrés Martínez García", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -593,6 +609,7 @@
 {"nome": "Antolín Esperón Novas", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Antom", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Antón", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
+{"nome": "Antón Avilés de Taramancos", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Antón Baamonde García", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Antón Beiras García", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Antón Cortizas Amado", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -637,6 +654,7 @@
 {"nome": "Antonio Amador Villar Novais", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Antonio Aurelio del Sacramento Fernández Román García de Quevedo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Antonio Baltar Domínguez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Antonio Banderas", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Antonio Barragán Fernández", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Antonio Blanco Freijeiro", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Antonio Camino Sigüer", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -662,6 +680,7 @@
 {"nome": "Antonio González González", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Antonio Goy Díaz", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Antonio Guillán Hermo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "António Guterres", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Antonio Heredero", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Antonio Jacobo Casares Rodríguez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Antonio Leira Carpente", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -767,6 +786,7 @@
 {"nome": "Area", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Ares", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Ariadna", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Ariana Grande", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Arias", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Arias", "tipo": "apelido", "capa": "antroponimos", "fontes": ["ine"], "nota": "ARIAS"}
 {"nome": "Ariel", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -777,6 +797,7 @@
 {"nome": "Aristides", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Aristilo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Aristóbulo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Aristóteles", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Arlindo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Armando", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Armando Cotarelo Valledor", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -896,6 +917,7 @@
 {"nome": "Azalea", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Azenda", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Azucena", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Bad Bunny", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Baia", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Balbina", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Balbino", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -912,6 +934,7 @@
 {"nome": "Baltasar Merino y Román", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Baltasara", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Baptista", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
+{"nome": "Barack Obama", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Bárbara", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Barbara McClintock", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Barca", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
@@ -1045,12 +1068,16 @@
 {"nome": "Bertrand Arthur William Russell", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Bertrand Jean Redon", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Beta", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
+{"nome": "Beyoncé", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Bhaskara", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Bhaskara Achārya", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Bhaskara II", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Bibiano Fernández Osorio Tafall", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Bieito Iglesias Araúxo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Bieito Ledo Cabido", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Bieito XVI", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
+{"nome": "Bill Gates", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
+{"nome": "Billie Eilish", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Birgi Rafini", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Blaio", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Blaise Pascal", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -1059,6 +1086,7 @@
 {"nome": "Blanco", "tipo": "apelido", "capa": "antroponimos", "fontes": ["ine"], "nota": "BLANCO"}
 {"nome": "Blas Cabrera", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Boaventura", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
+{"nome": "Bob Dylan", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Bonifacia", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Bonifacio", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Bonifacio Bembo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -1067,6 +1095,7 @@
 {"nome": "Borja", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine"], "nota": "BORJA"}
 {"nome": "Boungnang Vorachith", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Boyko Metodiev Borisov", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Brad Pitt", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Brahmagupta", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Brais", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Brais González Pérez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -1104,6 +1133,7 @@
 {"nome": "Brites de Portugal", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Britón", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Bríxida", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
+{"nome": "Bruce Springsteen", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Bruno", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine"], "nota": "BRUNO"}
 {"nome": "Bruño", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Bryan Sykes", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -1175,12 +1205,15 @@
 {"nome": "Carl von Linné", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Carla", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine", "wikipedia-gl"], "nota": "CARLA"}
 {"nome": "Carles", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine"], "nota": "CARLES"}
+{"nome": "Carlo Ancelotti", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Carlo Azeglio Ciampi", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Carlo Rubbia", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Carlos", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine", "wikipedia-gl", "wiktionary-gl"], "nota": "CARLOS"}
+{"nome": "Carlos Alcaraz", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Carlos Álvarez Fernández Cid", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Carlos Arias Iglesias", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Carlos Arias Navarro", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Carlos Blanco", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Carlos Botelho ou Bottelho", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Carlos Caetano Biscainho Fernandes", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Carlos Casares Mouriño", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -1198,6 +1231,7 @@
 {"nome": "Carlos González Meixide", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Carlos González Reigosa", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Carlos Hervés Beloso", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Carlos III", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Carlos Ignacio Labraña Barrero", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Carlos Javier Sobera Pardo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Carlos Lema", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -1215,6 +1249,7 @@
 {"nome": "Carlos Quiroga Díaz", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Carlos Reino Caamaño", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Carlos Rivero Troncoso", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Carlos Sainz", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Carlos Santiago", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Carlos Santiago Villaverde Balsa", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Carlos Sobera", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -1313,6 +1348,7 @@
 {"nome": "Celsiño", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Celso", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Celso Álvarez Cáccamo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Celso Emilio Ferreiro", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Celso Emilio Ferreiro Míguez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Celso Fernández Sanmartín", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Celso García de la Riega", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -1341,6 +1377,7 @@
 {"nome": "Chang Myon", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Charles André Joseph Marie de Gaulle", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Charles Augustin de Coulomb", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Charles Darwin", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Charles Dixon", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Charles Edouard Guillaume", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Charles Émile Callande de Champmartin", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -1468,6 +1505,7 @@
 {"nome": "Conceizón", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Concepção", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Concepción", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine", "wikipedia-gl", "wiktionary-gl"], "nota": "CONCEPCION"}
+{"nome": "Concepción Arenal", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Concepción Arenal Ponte", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Concepción Castroviejo Blanco Cicerón", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Concepción García Campoy", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -1526,6 +1564,7 @@
 {"nome": "Cristal", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Cristian", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine", "wikipedia-gl"], "nota": "CRISTIAN"}
 {"nome": "Cristián", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine"], "nota": "CRISTIAN"}
+{"nome": "Cristiano Ronaldo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Cristina", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine", "wikipedia-gl", "wiktionary-gl"], "nota": "CRISTINA"}
 {"nome": "Cristiña", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Cristina Amenedo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -1597,6 +1636,7 @@
 {"nome": "David Amor", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "David Ben Gurion", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "David Brewster", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "David Cal", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "David Creus Andrade", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "David Fernández Cantero", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "David Fernández Diéguez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -1656,12 +1696,14 @@
 {"nome": "Die Brücke", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Diego", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine", "wikipedia-gl", "wiktionary-gl"], "nota": "DIEGO"}
 {"nome": "Diego Antonio Cernadas de Castro", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Diego Armando Maradona", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Diego Cousillas Novo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Diego María de la Concepción Juan Nepomuceno Estanislao de la Rivera", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Diego Moldes", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Diego Pardo Amado", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Diego Rivera", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Diego Rodríguez de Silva y Velázquez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Diego Simeone", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Diego Velázquez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Dieric Bouts", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Díez", "tipo": "apelido", "capa": "antroponimos", "fontes": ["ine"], "nota": "DIEZ"}
@@ -1717,6 +1759,7 @@
 {"nome": "Dona Urraca", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Donald Arthur Glaser", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Donald James Cram", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Donald Trump", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Donald Tusk", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Donato", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Dŏng Yuán", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -1736,6 +1779,7 @@
 {"nome": "Dositeu", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Douglas Dean Osheroff", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Dris Xitú", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Dua Lipa", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Duardo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Duardos", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Duarte", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
@@ -1753,6 +1797,7 @@
 {"nome": "Eborico", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Ecequiel", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Echeria", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Ed Sheeran", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Edel", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Edelmira", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Edelmiro", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
@@ -1784,6 +1829,7 @@
 {"nome": "Eduardo Moreiras Collazo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Eduardo Mosquera Montes", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Eduardo Núñez Sarmiento", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Eduardo Pondal", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Eduardo Rolland Etchevers", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Eduardo Santiago Soto", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Eduardo Seijas Vázquez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -1867,6 +1913,7 @@
 {"nome": "Eloi", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Eloi Caldeiro Díaz", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Eloísa", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Elon Musk", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Eloy", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine"], "nota": "ELOY"}
 {"nome": "Elpidio", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Elsa", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -1875,6 +1922,7 @@
 {"nome": "Elvira Menéndez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Elvira Menendiz", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Elvira Riveiro Tobío", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Elvis Presley", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Emérita", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Emeterio", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Emil Boc", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -1886,6 +1934,7 @@
 {"nome": "Emilia", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine", "wikipedia-gl", "wiktionary-gl"], "nota": "EMILIA"}
 {"nome": "Emilia Calé Torres", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Emilia Estévez Villaverde", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Emilia Pardo Bazán", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Emilia Pardo Bazán y de la Rúa Figueroa", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Emiliana", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Emiliano", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
@@ -1904,15 +1953,18 @@
 {"nome": "Emilio González López", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Emilio Guillín", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Emilio Merino Losada", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Emilio Pérez Touriño", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Emilio Piñeiroa Lozano", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Emilio Pita", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Emilio Ramón de Gregorio Fernández", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Emilio Rolán Mosquera", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Emílio Xosé Ínsua López", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Eminem", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Emma", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine"], "nota": "EMMA"}
 {"nome": "Emma Couceiro", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Emma Pedreira Lombardía", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Emmanuel", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
+{"nome": "Emmanuel Macron", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Emmy Noether", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Encarna Otero Cepeda", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Encarnación", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine", "wikipedia-gl"], "nota": "ENCARNACION"}
@@ -1957,6 +2009,7 @@
 {"nome": "Erich Hugo Günther Przybyllok", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Érik", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine"], "nota": "ERIK"}
 {"nome": "Erik Pontoppidan", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Erling Haaland", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Ermesinda", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Ermitas", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Ermoixio", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
@@ -2099,8 +2152,10 @@
 {"nome": "Federico Alcoverro López", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Federico Alejos Pita", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Federico Blume Othon", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Federico García Lorca", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Federico Guillermo Maciñeira Pardo de Lama", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Federico Jiménez Losantos", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Federico Pérez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Federico Roncali Ceruti", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Federico Zamora Mosquera", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Federico Zuccari", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -2125,8 +2180,10 @@
 {"nome": "Felipe Bello Piñeiro", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Felipe Camino Galicia de la Rosa", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Felipe Criado Boado", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Felipe González", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Felipe González Márquez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Felipe Rodríguez Piñeiro", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Felipe VI", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Felisa", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Felisindo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Félix", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine"], "nota": "FELIX"}
@@ -2178,6 +2235,7 @@
 {"nome": "Fernando Pardo Gómez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Fernando Pérez Barreiro", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Fernando Pérez Barreiro Nolla", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Fernando Pessoa", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Fernando Ramón Lavandeira Suárez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Fernando Tambroni Armaroli", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Fernando Zóbel de Ayala y Montojo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -2205,6 +2263,7 @@
 {"nome": "Fina Casalderrey", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Fineas", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Fins", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
+{"nome": "Fiódor Dostoievski", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Firmín", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Firmina", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Firmino", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
@@ -2344,6 +2403,7 @@
 {"nome": "Francisco Xosé Neves Álvarez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Francisco Zagala Pérez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Francisco de Asís Sesto Novás", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Francisco de Goya", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Francisco de Zurbarán", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Francisco-Branco", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Franco", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -2364,6 +2424,7 @@
 {"nome": "Franta", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Frantán", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Franz Joseph Hermann Michael Maria von Papen zu Köningen", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Franz Kafka", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Franz Karl Achard", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Franz Marc", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Franz von Paula Schrank", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -2371,6 +2432,8 @@
 {"nome": "Fred Hoyle", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Freda Josephine McDonald", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Freddie Dalton Thompson", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Freddie Mercury", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
+{"nome": "Frédéric Chopin", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Frédéric Cuvier", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Frederica", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Frederick Reines", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -2385,9 +2448,11 @@
 {"nome": "Frei Rosendo Salvado Rotea O S B", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Freimut Börngen", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Frida", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Frida Kahlo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Friedrich August Kekulé von Stradonitz", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Friedrich Bergius", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Friedrich Herlin", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Friedrich Merz", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Friedrich Sellow", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Friedrich Weber", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Friedrich Wilhelm August Argelander", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -2434,6 +2499,7 @@
 {"nome": "Gabriel Aragón Bermúdez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Gabriel Fahrenheit", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Gabriel Feijoo de Araújo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Gabriel García Márquez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Gabriel Gómez Estévez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Gabriel Jonas Lippmann", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Gabriel Torrente Piñeiro", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -2563,6 +2629,7 @@
 {"nome": "Gilda", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Gildas", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Giménez", "tipo": "apelido", "capa": "antroponimos", "fontes": ["ine"], "nota": "GIMENEZ"}
+{"nome": "Giorgia Meloni", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Giorgio De Chirico", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Giorgio Vasari", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Giovanni Antonio Bazzi", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -2584,6 +2651,7 @@
 {"nome": "Giuseppe Olivi", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Giuseppe Peano", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Giuseppe Piazzi", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Giuseppe Verdi", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Gixavara", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Glauca", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Glauco", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -2613,6 +2681,7 @@
 {"nome": "Gordon", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Gorecho", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Goretti", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Goretti Sanmartín", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Goretti Sanmartín Rei", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Gorka", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine"], "nota": "GORKA"}
 {"nome": "Goros", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
@@ -2634,6 +2703,7 @@
 {"nome": "Griselda", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Gro Harlem Brundtland", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Guadalupe", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Guadi Galego", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Gualteria", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Gualterio", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Gudula", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -2713,6 +2783,7 @@
 {"nome": "Harold Walter Kroto", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Haroldo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Harry B Lachman", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Harry Styles", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Hartmut Michel", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Hashim Thaçi", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Héctor", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine", "wikipedia-gl"], "nota": "HECTOR"}
@@ -2870,6 +2941,7 @@
 {"nome": "Hyeronimus Cardanus", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Ia'akov", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Iago", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
+{"nome": "Iago Aspas", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Iago Mouriño Román", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Ian Richard Kyle Paisley", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Ians", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
@@ -2899,6 +2971,7 @@
 {"nome": "Igor Ievguènievitx Tamm", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Ígor Lugrís Álvarez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Iker", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine"], "nota": "IKER"}
+{"nome": "Iker Casillas", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Il Sodoma", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Ilda", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Ildefonso", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
@@ -2926,6 +2999,7 @@
 {"nome": "Indira Priyadarshini Gandhi", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Inés", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine", "wikipedia-gl", "wiktionary-gl"], "nota": "INES"}
 {"nome": "Inés Ballester", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Inés Rey", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Ingrid", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Íñigo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine", "wikipedia-gl"], "nota": "IÑIGO"}
 {"nome": "Inmaculada", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine", "wikipedia-gl"], "nota": "INMACULADA"}
@@ -2941,6 +3015,7 @@
 {"nome": "Iolanda Rodrigues Aldrei", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Iolanda Vázquez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Ion Victor Antonescu", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Iósif Stalin", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Ir", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Irene", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine", "wikipedia-gl", "wiktionary-gl"], "nota": "IRENE"}
 {"nome": "Irène Joliot Curie", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -2968,7 +3043,9 @@
 {"nome": "Isabel", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine", "wikipedia-gl"], "nota": "ISABEL"}
 {"nome": "Isabel Fresco Otero", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Isabel Gemio Cardoso", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Isabel II", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Isabel Mociño González", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Isabel Risco", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Isabel de Castro e Andrade", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Isacio", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Isadora", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -3068,6 +3145,7 @@
 {"nome": "Jan Vermeer", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Jan van Eyck", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Jan van Goyen", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Jane Austen", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Jane Colden", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Janet Taylor", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "János Bolyai", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -3080,10 +3158,14 @@
 {"nome": "Jaume Serra", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Jaureguizar", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Javier", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine"], "nota": "JAVIER"}
+{"nome": "Javier Bardem", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Javier Bugallal Pérez de Castro", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Javier David Leoncio Prado Rodríguez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Javier Domínguez Álvarez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Javier Gómez Noya", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
+{"nome": "Javier Gutiérrez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Javier López Facal", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Javier Milei", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Javier Pérez de Cuéllar Guerra", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Javier Valcarce Ocampo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Jawaharlal Nehru", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -3128,13 +3210,16 @@
 {"nome": "Jean Rei", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Jean René Constant Quoy", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Jeanne Dumee", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Jeff Bezos", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Jenaro", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Jenaro Mariñas González", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Jenaro Marinhas del Valle", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Jenaro Pérez Villaamil Duguet", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Jenni Hermoso", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Jens Christian Skou", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Jens Peter Knudsen Hjerting", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Jens Stoltenberg", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Jensen Huang", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Jeremías", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Jeroen Bosch", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Jeroen van Aken", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -3194,6 +3279,7 @@
 {"nome": "Joaquín Vaquero Palacios", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Joaquina", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Job", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
+{"nome": "Joe Biden", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Joel", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine", "wiktionary-gl"], "nota": "JOEL"}
 {"nome": "Johán Carballeira", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Johan Christian Fabricius", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -3220,6 +3306,7 @@
 {"nome": "Johann Ludwig Aberli", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Johann Peter Gustav Lejeune Dirichlet", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Johann Rudolf Glauber", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Johann Sebastian Bach", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Johann Zoffany", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Jóhanna Sigurðardóttir", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Johannes Baptist Van Helmont", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -3264,6 +3351,7 @@
 {"nome": "John James Audubon", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "John James Rickard Macleod", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "John L Hall", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "John Lennon", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "John Lindley", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "John Milne", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "John Napier", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -3304,6 +3392,7 @@
 {"nome": "Jorge Inglés", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Jorge Javier Vázquez Morales", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Jorge Llorca Freire", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Jorge Luis Borges", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Jorge Manuel", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Jorge Manuel Theotocópuli", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Jorge Mira Pérez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -3384,6 +3473,7 @@
 {"nome": "José Manuel Pita Andrade", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "José Manuel de Bernardo Ares", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "José María Alonso de Trelles y Jarén", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "José María Aznar", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "José María Aznar López", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "José María Bermúdez de Castro y Risueño", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "José María Blanco Gerpe", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -3412,6 +3502,7 @@
 {"nome": "José Martinho Montero Santalha", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "José Meixengo Pereira", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "José Millán Astray", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "José Mourinho", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "José Mouriño Estévez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "José Novo García", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "José Núñez Núñez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -3421,6 +3512,7 @@
 {"nome": "José Puente Castro", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "José Ramom Rodrigues Fernandes", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "José Ramón Bouzas Camaño", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "José Ramón Gómez Besteiro", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "José Ramón Lence", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "José Ramón Rodil Galloso y Campillo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "José Raposeiras Correa", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -3432,6 +3524,7 @@
 {"nome": "José Rubinos Ramos", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "José Sánchez Guerra Martínez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "José Santiago Crespo Pozo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "José Saramago", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "José Seijo Rubio", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "José Sobral de Almada Negreiros", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "José Sócrates Carvalho Pinto de Sousa", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -3559,6 +3652,7 @@
 {"nome": "Justo Eliseo Areal Barros", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Justus von Liebig", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "K Barry Sharpless", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Kamala Harris", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Kamoya Kimeu", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Karel van Mander", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Kari Elizabeth Byron", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -3568,6 +3662,7 @@
 {"nome": "Karl Ferdinand Braun", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Karl Ludwig von Bertalanffy", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Karl Manne Georg Siegbahn", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Karl Marx", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Karl Renner", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Karl Theodor Wilhelm Weierstraß", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Karl Ziegler", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -3577,6 +3672,7 @@
 {"nome": "Kate Charlton Robb", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Kay Rala Xanana Gusmão", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Kazys Grinius", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Keir Starmer", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Keith Claudius Mitchell", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Keith Haring", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Keltia", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
@@ -3603,13 +3699,16 @@
 {"nome": "Kurt Gödel", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Kurt Wüthrich", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Kurt von Schleicher", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Kylian Mbappé", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Ladaíña", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Ladislau", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
+{"nome": "Lady Gaga", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Laertes", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Laia", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine"], "nota": "LAIA"}
 {"nome": "Laisenia Qarase", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Lalo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Lamberto", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Lamine Yamal", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Lana", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Landelina", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Landelino", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -3633,6 +3732,7 @@
 {"nome": "Laxeiro", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Lázaro", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Lazzaro Spallanzani", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "LeBron James", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Lea", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Leandro", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Leandro Carré Alvarellos", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -3642,6 +3742,7 @@
 {"nome": "Ledaiña", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Ledicia", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Ledícia", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
+{"nome": "Ledicia Costas", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Ledicia Costas Álvarez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Ledo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Lee Hai chan", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -3658,6 +3759,7 @@
 {"nome": "Leo Esaki", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Leo Hendrik Baekeland", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Leo James Rainwater", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Leo Messi", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Leo S Berg", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Leo von Klenze", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Leocadia", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
@@ -3671,9 +3773,12 @@
 {"nome": "Léon Joseph Florentin Bonnat", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Leon Max Lederman", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Leon Neil Cooper", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "León Tolstoi", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Léon Victor Auguste Bourgeois", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "León XIV", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Leonarda", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Leonardo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine", "wikipedia-gl"], "nota": "LEONARDO"}
+{"nome": "Leonardo DiCaprio", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Leonardo Pisano", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Leonardo da Vinci", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Leonardo de Pisa", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -3686,6 +3791,7 @@
 {"nome": "Leonhart Fuchs", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Leonides", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Leonor", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Leonor de Borbón", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Leonora Carrington", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Leopold Ruzicka", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Leopoldina", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -3700,6 +3806,7 @@
 {"nome": "Lesmes", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Lester Bowles Mike Pearson", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Leticia", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
+{"nome": "Letizia Ortiz", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Leucipo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Leuco", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Leuter", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
@@ -3709,6 +3816,7 @@
 {"nome": "Levi", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Levi Eshkol", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Lewis Carroll", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Lewis Hamilton", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Lia", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Lía", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Lías", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
@@ -3735,7 +3843,9 @@
 {"nome": "Lino García Salgado", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Lino Novás Calvo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Linus Pauling", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Linus Torvalds", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Lionel Jospin", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Lionel Messi", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Lipe", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Lipke Bijdeley Holthuis", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Liria", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -3833,6 +3943,7 @@
 {"nome": "Ludwig Eduard Boltzmann", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Ludwig Erhard", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Ludwig Heinrich Bojanus", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Ludwig van Beethoven", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Lug", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Lugh", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Lugo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
@@ -3854,6 +3965,7 @@
 {"nome": "Luís Díaz Gallego", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Luís E Rey", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Luís Egidio Meléndez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Luis Enrique", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Luís Fábrega Coello", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Luís Fábrega Santamaría", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Luis Federico Leloir", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -3887,20 +3999,24 @@
 {"nome": "Luis Rodríguez Miguez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Luis Rodríguez Rodríguez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Luis Ruiz de Gopegui", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Luís Seoane", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Luís Seoane López", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Luís Sobrino Rivas", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Luís Taboada Coca", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Luís Torras Martínez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Luís Tosar", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Luis Tristán de Escamilla", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Luís Valle Regueiro", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Luis Walter Álvarez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Luís Xulio Carballo Arceo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Luis Zahera", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Luis del Olmo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Luisa", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine"], "nota": "LUISA"}
 {"nome": "Luísa", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine", "wikipedia-gl", "wiktionary-gl"], "nota": "LUISA"}
 {"nome": "Luisa Castro Legazpi", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Luisa Dias Diogo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Luísa Villalta Gómez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Lula da Silva", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Lupa", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Lupe Gómez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Lurdes", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -3912,6 +4028,7 @@
 {"nome": "Lynn Margulis", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Ma Yuan", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Maatia Toafa", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Mabel Rivera", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Macame", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Macarena", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Macaria", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -3920,6 +4037,7 @@
 {"nome": "Macky Sall", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Madalena", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Madanela", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
+{"nome": "Madonna", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Maeloc", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Mafalda", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Magali", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -3927,6 +4045,7 @@
 {"nome": "Magdalena", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Magim", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Magnolia", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Mahatma Gandhi", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Mahiloc", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Mahinda Rajapakse", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Mailoc", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
@@ -4054,6 +4173,7 @@
 {"nome": "Manuel Mato Vizoso", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Manuel Miragaia Doldán", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Manuel Molezún", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Manuel Murguía", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Manuel Nolaso Lois Vázquez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Manuel Novoa Costoya", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Manuel Núñez González", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -4071,6 +4191,7 @@
 {"nome": "Manuel Regal Ledo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Manuel Rei Romeu", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Manuel Riobó Guimeráns", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Manuel Rivas", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Manuel Rivas Barrós", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Manuel Rubén García Álvarez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Manuel Ruiz Zorrilla", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -4099,6 +4220,7 @@
 {"nome": "Marc", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine"], "nota": "MARC"}
 {"nome": "Marc Chagall", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Marc Forné i Molné", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Marc Márquez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Marcel Duchamp", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Marcela", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Marcelina", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -4150,6 +4272,7 @@
 {"nome": "María Carmen Corredoira Ruiz de Baro", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "María Casado Paredes", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "María Casal", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "María Castro", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "María Castro Jato", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "María Concepción Álvarez Lebredo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "María Concepción Blanco Blanco", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -4250,6 +4373,7 @@
 {"nome": "Marie Curie", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Marie Hortense Fiquet", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Marie Lavoisier", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Marilar Aleixandre", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Mariló Montero", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Marín", "tipo": "apelido", "capa": "antroponimos", "fontes": ["ine"], "nota": "MARIN"}
 {"nome": "Marina", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine"], "nota": "MARINA"}
@@ -4276,6 +4400,7 @@
 {"nome": "Marisol Gándara", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Mark Rutte", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Mark Wheelis", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Mark Zuckerberg", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Marlon", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Maro", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Marqués de Sabuz", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -4286,6 +4411,7 @@
 {"nome": "Marta Dacosta Alonso", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Marta Doviro", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Marta Neira Rodríguez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Marta Ortega", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Marta Pérez Torre", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Martí", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine"], "nota": "MARTI"}
 {"nome": "Martial Célestin", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -4299,7 +4425,9 @@
 {"nome": "Martin Hinrich Carl Lichtenstein", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Martin Karplus", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Martin Lewis Perl", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Martin Luther King", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Martin Ryle", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Martin Scorsese", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Martín Veiga Alonso", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Martina", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine", "wiktionary-gl"], "nota": "MARTINA"}
 {"nome": "Martiña", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
@@ -4349,6 +4477,7 @@
 {"nome": "Max Ferdinand Perutz", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Max Jacob", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Max Planck", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Max Verstappen", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Max von Laue", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Máxima", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Maximiliana", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -4398,6 +4527,7 @@
 {"nome": "Mercé", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Mercedes", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine", "wikipedia-gl", "wiktionary-gl"], "nota": "MERCEDES"}
 {"nome": "Mercedes Castro Díaz", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Mercedes Peón", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Mercedes Queixas Zas", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Mercedes Roldós Caballero", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Merces", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -4407,6 +4537,7 @@
 {"nome": "Meritxell", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Merlín", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Mero", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Meryl Streep", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Mesio", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Metodio", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Micael", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
@@ -4415,6 +4546,9 @@
 {"nome": "Michael E Brown", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Michael Faraday", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Michael J Behe", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Michael Jackson", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
+{"nome": "Michael Jordan", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
+{"nome": "Michael Phelps", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Michael Smith", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Michael Thomas Somare", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Michel Adanson", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -4425,6 +4559,7 @@
 {"nome": "Michelangelo di Lodovico Buonarroti Simoni", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Michèle Pierre Louis", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Mick Aston", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Mick Jagger", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Mickey Rooney", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Miguel", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine", "wikipedia-gl", "wiktionary-gl"], "nota": "MIGUEL"}
 {"nome": "Miguel Abia Biteo Boricó", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -4453,6 +4588,7 @@
 {"nome": "Miguel Vázquez Freire", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Miguel Vidal López", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Miguel Zelada Jurado", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Miguel de Cervantes", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Mikel", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine"], "nota": "MIKEL"}
 {"nome": "Mikhail Mikhailovich Bakhtin", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Mikhail Yefimovich Fradkov", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -4484,6 +4620,7 @@
 {"nome": "Miquel", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine"], "nota": "MIQUEL"}
 {"nome": "Miragres", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Mireia", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Mireia Belmonte", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Miriam", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine", "wiktionary-gl"], "nota": "MIRIAM"}
 {"nome": "Míriam", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Mirko Cvetković", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -4561,6 +4698,7 @@
 {"nome": "Nano", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Naoto Kan", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Napoleón", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Napoleón Bonaparte", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Narcís Serra i Serra", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Narcisa", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Narciso", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -4584,6 +4722,7 @@
 {"nome": "Nel", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Nela", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Nelida", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Nelson Mandela", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Nemesia", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Nemesio", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Nemésio", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
@@ -4616,6 +4755,7 @@
 {"nome": "Nicolao Copérnico", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Nicolás", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine", "wiktionary-gl"], "nota": "NICOLAS"}
 {"nome": "Nicolás Appert", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Nicolás Copérnico", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Nicolás García Pereira", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Nicolas Jean de Dieu Soult", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Nicolas Léonard Sadi Carnot", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -4663,6 +4803,7 @@
 {"nome": "Norma Duval", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Norman", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Norman Foster Ramsey", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Novak Djokovic", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Nuncia", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Núñez", "tipo": "apelido", "capa": "antroponimos", "fontes": ["ine"], "nota": "NUÑEZ"}
 {"nome": "Nuno", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
@@ -4699,6 +4840,7 @@
 {"nome": "Ofemia", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Okil Ghaybulloyevich Okilov", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Olaf", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Olaf Scholz", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Olaia Naveiras Torres Quiroga", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Olalha", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Olalla", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
@@ -4731,6 +4873,7 @@
 {"nome": "Onda", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Onésimo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Onofre", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Oprah Winfrey", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Ordonho", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Ordoño", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Ordoño I", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -4753,6 +4896,7 @@
 {"nome": "Óscar Arias", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Oscar Claude Monet", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Óscar Martínez Castro", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Óscar Pereiro", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Oscar Robert Themptander", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Óscar de Souto", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Osián", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -4800,9 +4944,11 @@
 {"nome": "P.P.K.O.", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Pablo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine", "wiktionary-gl"], "nota": "PABLO"}
 {"nome": "Pablo Bouza Suárez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Pablo Iglesias", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Pablo Motos", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Pablo Núñez González", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Pablo Pérez Costanti", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Pablo Picasso", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Pablo Ruiz Picasso", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Pablo Vaamonde García", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Paciano", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -4864,6 +5010,7 @@
 {"nome": "Patrick Maynard Stuart Blackett", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Patroclo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Pau", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine"], "nota": "PAU"}
+{"nome": "Pau Gasol", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Paul Berg", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Paul Cézanne", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Paul D Boyer", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -4879,6 +5026,7 @@
 {"nome": "Paul Kane", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Paul Karrer", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Paul Klee", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Paul McCartney", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Paul Raymond Bérenger", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Paul Sabatier", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Paul Sérusier", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -4886,6 +5034,7 @@
 {"nome": "Paula", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine", "wikipedia-gl", "wiktionary-gl"], "nota": "PAULA"}
 {"nome": "Paula Carballeira Cabana", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Paula Figueiroa Rego", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Paula Vázquez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Paula Vázquez Picallo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Paulina", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Paulino", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
@@ -4908,6 +5057,7 @@
 {"nome": "Pedr'Amigo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Pedro", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine", "wikipedia-gl", "wiktionary-gl"], "nota": "PEDRO"}
 {"nome": "Pedro Alcántara de Toledo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Pedro Almodóvar", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Pedro Américo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Pedro Amigo de Sevilha", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Pedro Antonio Sánchez Vaamonde", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -4924,6 +5074,7 @@
 {"nome": "Pedro Pablo Kuczynski", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Pedro Pruna Ocerans", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Pedro Rielo Lamela", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Pedro Sánchez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Pedro Vázquez Rábade", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Pedro Xosé García Balboa", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Pedro-Mezonzo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
@@ -4932,8 +5083,11 @@
 {"nome": "Pehr Forsskål", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Pelaxia", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Pelaxio", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
+{"nome": "Pelé", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Peña", "tipo": "apelido", "capa": "antroponimos", "fontes": ["ine"], "nota": "PEÑA"}
 {"nome": "Penélope", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Penélope Cruz", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
+{"nome": "Pep Guardiola", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Pepa Bueno", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Pepe", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Pepe Agrelo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -5130,6 +5284,7 @@
 {"nome": "Queitán", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Quela", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Queliña", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
+{"nome": "Quentin Tarantino", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Quequé", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Quica", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Quico", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
@@ -5150,6 +5305,7 @@
 {"nome": "Rafael Lamas Doménech", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Rafael Laso Lorenzo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Rafael Lema Mouzo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Rafael Nadal", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Rafael Pintos Méndez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Rafael Sanzio", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Rafael Saura", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -5213,6 +5369,7 @@
 {"nome": "Ramón María Narváez y Campos", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Ramón María Tenreiro Rodríguez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Ramón María del Valle Inclán y de la Peña", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Ramón María del Valle-Inclán", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Ramón Mariño Paz", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Ramón Martínez López", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Ramón Menéndez Pidal", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -5224,6 +5381,7 @@
 {"nome": "Ramón Parada Justel", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Ramón Pernas López", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Ramón Pimentel Méndez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Ramón Piñeiro", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Ramón Reboiras", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Ramón Reimunde Noreña", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Ramón Rey Baltar", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -5322,6 +5480,9 @@
 {"nome": "Richard Phillips Feynman", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Richard R Ernst", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Richard R Schrock", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Richard Wagner", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
+{"nome": "Ricky Rubio", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
+{"nome": "Rihanna", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Rita", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Roald Hoffmann", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Róber Bodegas", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -5361,6 +5522,7 @@
 {"nome": "Roberto Nóvoa Santos", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Roberto Ouro Vázquez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Roberto Pascual Rodríguez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Roberto Verino", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Roberto Vidal Bolaño", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Roboam", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Robustiana", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -5375,6 +5537,7 @@
 {"nome": "Rodolfo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Rodolfo Irago Fernández", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Rodolfo Prada Chamocín", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Rodri Hernández", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Rodrigo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine", "wikipedia-gl", "wiktionary-gl"], "nota": "RODRIGO"}
 {"nome": "Rodríguez", "tipo": "apelido", "capa": "antroponimos", "fontes": ["ine"], "nota": "RODRIGUEZ"}
 {"nome": "Rogélio", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
@@ -5382,6 +5545,7 @@
 {"nome": "Roger", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine"], "nota": "ROGER"}
 {"nome": "Roger D Kornberg", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Roger Eliot Fry", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Roger Federer", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Roger Y Tsien", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Rogier de la Pasture", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Rogier van der Weyden", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -5415,6 +5579,8 @@
 {"nome": "Rosalía Collazo Dans", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Rosalía Dans", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Rosalía Fernández Rial", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Rosalía Mera", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
+{"nome": "Rosalía Vila", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Rosalía de Castro", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Rosalind Franklin", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Rosalinda", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -5501,6 +5667,7 @@
 {"nome": "Salustiano Portela Pazos", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Salvador", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine", "wikipedia-gl", "wiktionary-gl"], "nota": "SALVADOR"}
 {"nome": "Salvador Cidrás Robles", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Salvador Dalí", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Salvador Felipe Jacinto Dalí i Domènech", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Salvador García Bodaño Zunzunegui", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Salvador Golpe Varela", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -5509,6 +5676,7 @@
 {"nome": "Salvadora", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Salvia", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Salvio", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Sam Altman", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Samanta", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Samdech Hun Sen", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Samuel", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine", "wikipedia-gl"], "nota": "SAMUEL"}
@@ -5541,6 +5709,7 @@
 {"nome": "Santana", "tipo": "apelido", "capa": "antroponimos", "fontes": ["ine"], "nota": "SANTANA"}
 {"nome": "Santiago", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine", "wikipedia-gl", "wiktionary-gl"], "nota": "SANTIAGO"}
 {"nome": "Santiago", "tipo": "apelido", "capa": "antroponimos", "fontes": ["ine"], "nota": "SANTIAGO"}
+{"nome": "Santiago Abascal", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Santiago Abella", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Santiago Casares Quiroga", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Santiago Castroviejo Bolíbar", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -5573,6 +5742,7 @@
 {"nome": "Saturnina", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Saturnino Montojo Díaz", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Saturno", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Satya Nadella", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Satyendra Nath Bose", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Satyendranāth Basu", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Saudade", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
@@ -5580,6 +5750,7 @@
 {"nome": "Saúl", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine", "wikipedia-gl"], "nota": "SAUL"}
 {"nome": "Saul Perlmutter", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Sax", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Scarlett Johansson", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Scota", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Sé", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Sebastiam", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
@@ -5611,6 +5782,7 @@
 {"nome": "Serapia", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Serapio", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Serena", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Serena Williams", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Serge Haroche", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Sergei Sidorsky", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Sergi", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine"], "nota": "SERGI"}
@@ -5623,6 +5795,7 @@
 {"nome": "Serxio", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Sérxio", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Serxio Iglesias Rodríguez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Sés", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Sesé", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Sesiño", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Seve", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
@@ -5638,6 +5811,7 @@
 {"nome": "Sexismundo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Seydou Elimane Diarra", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Sghair Ould M Bareck", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Shakira", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Shaukat Aziz", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Shavkat Mirziyayev", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Sheikh Mujibur Rahman", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -5656,6 +5830,7 @@
 {"nome": "Sidney Altman", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Sidre", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Sigfrido", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Sigmund Freud", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Sila", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Silvana", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Silvano", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -5680,6 +5855,8 @@
 {"nome": "Simón Pacheco", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Simon van der Meer", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Simona", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Simone Biles", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
+{"nome": "Simone de Beauvoir", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Simplicio", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Sinda", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Sindo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
@@ -5725,22 +5902,27 @@
 {"nome": "Stanley L Miller", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Stefan Banach", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Stephan Rauschert", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Stephen Hawking", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Stephen Jay Gould", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Stephen Tyrone Colbert", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Stephen William Hawking", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Steve Jobs", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Steven Chu", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Steven Spielberg", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Steven Weinberg", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Suárez", "tipo": "apelido", "capa": "antroponimos", "fontes": ["ine"], "nota": "SUAREZ"}
 {"nome": "Suebia", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Suevia", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Sulpicio", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Summa", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
+{"nome": "Sundar Pichai", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Sunta", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Susa", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Susana", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine", "wikipedia-gl"], "nota": "SUSANA"}
 {"nome": "Susana Dans López", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Susana Fortes López", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Susana Sánchez Arins", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Susana Seivane", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Suso", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Suso Lista", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Suso Pensado", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -5755,6 +5937,7 @@
 {"nome": "Tais", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Tales de Mileto", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Talia", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Tamar Novas", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Tamara", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Tamara de Lempicka", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Tameobrigo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
@@ -5770,6 +5953,7 @@
 {"nome": "Tarsila do Amaral", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Tatiana", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Tatyana Alexeyevna Afanasyeva", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Taylor Swift", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Tecla", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Teeteto", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Tegra", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
@@ -5805,6 +5989,7 @@
 {"nome": "Teresa", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine", "wikipedia-gl", "wiktionary-gl"], "nota": "TERESA"}
 {"nome": "Teresa Añón", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Teresa González Costa", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Teresa Portela", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Teresiano", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Tereza", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Tertius Zongo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -5842,6 +6027,8 @@
 {"nome": "Tiberio", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Tiberio Ávila Rodríguez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Tiburcio", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
+{"nome": "Tim Berners-Lee", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
+{"nome": "Tim Cook", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Timocares de Alexandría", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Timocaris", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Timócaris", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -5863,6 +6050,7 @@
 {"nome": "Toby Edward Heslewood Jones", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Toda", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Tolomeo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Tom Cruise", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Tomás", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine", "wiktionary-gl"], "nota": "TOMAS"}
 {"nome": "Tomás Abeigón Pazos", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Tomás Barros Pardo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -5930,15 +6118,19 @@
 {"nome": "Urbana", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Urbano", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Urbano Ferreiroa Millán", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Urbano Lugrís", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Urbano Lugrís González", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Urbano Lugrís Vadillo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Urbano Rodríguez Moledo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Urraca", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Úrsula", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Úrsula Heinze de Lorenzo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Ursula von der Leyen", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
+{"nome": "Usain Bolt", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Utagawa Hiroshige", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Uxía", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Uxía Casal", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Uxía Senlle", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Uxío", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Uxío Carré Aldao", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Uxío Carré Alvarellos", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -6023,6 +6215,7 @@
 {"nome": "Vicente Otero Cao", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Vicente Piñeiro González", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Vicente Reboleiro González", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Vicente Risco", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Vicente Sancho", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Vicente Turnes del Río Maldonado", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Vicente Varela Radío", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -6065,9 +6258,11 @@
 {"nome": "Vímara", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Vincent Willem van Gogh", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Vincent du Vigneaud", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Vincent van Gogh", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Vincenzo Cerulli", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Vincenzo Viviani", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Vinicius", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Vinícius Júnior", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Vintila", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Vintim", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Vintín", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
@@ -6080,6 +6275,7 @@
 {"nome": "Virginia", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine"], "nota": "VIRGINIA"}
 {"nome": "Virgínia", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Virginia Felicia Auber Noya", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Virginia Woolf", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Viridiana", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Virtudes", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Virxe María", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -6112,6 +6308,7 @@
 {"nome": "Vladimírovich Putin", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Vlado Bučkovski", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Vo Van Kiet", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Volodímir Zelenski", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Waldo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Waldo Álvarez Insua", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Walker Evans", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -6167,6 +6364,7 @@
 {"nome": "William Maddock Bayliss", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "William Parry Murphy", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "William Rowan Hamilton", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "William Shakespeare", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "William Standish Knowles", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "William Thomson", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Williamina Paton Stevens Fleming", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -6179,6 +6377,7 @@
 {"nome": "Wladimir Dragossán", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Wladimir Peter Köppen", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Wojciech Witold Jaruzelski", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Wolfgang Amadeus Mozart", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Wolfgang Bolyai", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Wolfgang Ketterle", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Wolfgang Paul", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -6190,6 +6389,7 @@
 {"nome": "Xabier Barreiro Liz", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Xabier Cid", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Xabier Cordal Fustes", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Xabier Díaz", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Xabier González", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Xabier López López", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Xabier Maceiras Rodríguez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -6237,6 +6437,7 @@
 {"nome": "Xasmina", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Xasón", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Xavi", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
+{"nome": "Xavi Hernández", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Xavier", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine", "wikipedia-gl", "wiktionary-gl"], "nota": "XAVIER"}
 {"nome": "Xavier Alcalá", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Xavier Bóveda Pérez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -6257,6 +6458,7 @@
 {"nome": "Xe Freyre", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Xedeón", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Xela", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
+{"nome": "Xela Arias", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Xela Arias Castaño", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Xelasio", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Xelís de Toro", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -6334,6 +6536,7 @@
 {"nome": "Xesús Vázquez Pérez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Xesús de Nazaret", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Xesusa", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
+{"nome": "Xi Jinping", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Xia Gui", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Xiaão", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Xiam", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
@@ -6364,6 +6567,7 @@
 {"nome": "Xoán Bernárdez Vilar", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Xoán Carlos Domínguez Alberte", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Xoán Carlos Fontes Moledo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Xoán Carlos I", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Xoán Carlos Rodríguez López", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Xoán Cuveiro Piñol", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Xoán González Millán", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -6374,6 +6578,7 @@
 {"nome": "Xoán Neira Cancela", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Xoán Neira López", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Xoán Pastor Rodríguez Santamaría", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Xoán Paulo II", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Xoán Ramiro Cuba Rodríguez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Xoán Rodríguez de Padrón", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Xoán Rof Carballo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -6420,6 +6625,7 @@
 {"nome": "Xosé Antonio Neira Cruz", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Xosé Antonio Perozo Ruiz", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Xosé Antonio Silva do Porto", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Xosé Antonio Touriñán", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Xosé Antonio Ventoso Mariño", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Xosé Avelino González Fernández", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Xosé Ballesteros Rei", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -6485,6 +6691,7 @@
 {"nome": "Xosé Luís Vázquez Somoza", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Xosé Luís de Dios Martínez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Xosé Luna Sanmartín", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Xosé Manuel Beiras", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Xosé Manuel Blanco Pardo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Xosé Manuel Cabada Vázquez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Xosé Manuel Cairo Antelo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -6541,6 +6748,7 @@
 {"nome": "Xosé Ramón Fernández Oxea", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Xosé Ramón Freire Sánchez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Xosé Ramón Freixeiro Mato", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Xosé Ramón Gayoso", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Xosé Ramón Gayoso Bonigno", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Xosé Ramón Loureiro Calvo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Xosé Ramón Mariño Ferro", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -6553,6 +6761,7 @@
 {"nome": "Xosé Rodríguez González", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Xosé Rogelio Otero Espasandín", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Xosé Rubia Barcia", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Xosé Sánchez Bugallo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Xosé Sesto López", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Xosé Sixto García", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Xosé Telmo Lodeiro Fernández", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -6622,7 +6831,9 @@
 {"nome": "Ynés", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Yoichiro Nambu", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Yolanda", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["ine"], "nota": "YOLANDA"}
+{"nome": "Yolanda Castaño", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Yolanda Castaño Pereira", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Yolanda Díaz", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Yolanda López López", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Yolanda Vázquez", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Yoshihiko Noda", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
@@ -6649,6 +6860,7 @@
 {"nome": "Zhang Heng", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Zhores Ivanovich Alferov", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Zine El Abidine Ben Ali", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Zinedine Zidane", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["engadidos"]}
 {"nome": "Zoe", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Zoffani", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Zoilo", "tipo": "antropónimo", "capa": "antroponimos", "fontes": ["wikipedia-gl"]}

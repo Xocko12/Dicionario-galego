@@ -10,6 +10,10 @@ capa anterior, non se repite.
 Siglas:      {"forma": "NIF", "tipo": "sigla", "nota": "Número de identificación fiscal", ...}
 Onomástica:  {"nome": "Santiago de Compostela", "tipo": "topónimo", ...}
 Códigos:     {"codigo": "glg", "tipo": "iso639", "nota": "Galician (639-2/3)"}
+
+Ademais dos módulos de Hunspell-gl, unha capa pode levar "engadidos": ficheiros
+propios deste proxecto (fontes/engadidos/<capa>.dic), no mesmo formato, para o
+que falta nas fontes (iOS, Google, HDMI, Canberra, Obama...). Levan a fonte "engadidos".
 """
 
 from __future__ import annotations
@@ -30,6 +34,7 @@ from hunspell import Hunspell  # noqa: E402
 RAIZ = Path(__file__).resolve().parent.parent
 SRC = I.HUNSPELL / "src"
 SAIDA = I.DATOS / "capas"
+ENGADIDOS = RAIZ / "fontes" / "engadidos"
 
 # cartafol de Hunspell-gl -> nome de fonte
 FONTES = {"xunta": "digalego", "rag/gl": "drag", "rag/volga": "volga", "rag": "drag",
@@ -51,7 +56,14 @@ def ficheiros(patron: str) -> list[Path]:
     return [ruta] if ruta.exists() else []
 
 
+def engadidos(cfg: dict) -> list[Path]:
+    """Ficheiros propios da capa (fontes/engadidos/*.dic), se os hai."""
+    return [RAIZ / e for e in cfg.get("engadidos", []) if (RAIZ / e).exists()]
+
+
 def fonte_de(ruta: Path) -> str:
+    if ruta.is_relative_to(ENGADIDOS):
+        return "engadidos"
     rel = ruta.relative_to(SRC).parts
     for n in (2, 1):
         clave = "/".join(rel[:n])
@@ -236,7 +248,8 @@ def main() -> None:
 
     config = {capa: cfg for capa, cfg in config.items() if "modulos" in cfg}   # as de «script» van á parte
     pedidas = [c for c in pedidas if c in config]
-    rutas_capa = {capa: [r for m in cfg["modulos"] for r in ficheiros(m)] for capa, cfg in config.items()}
+    rutas_capa = {capa: [r for m in cfg["modulos"] for r in ficheiros(m)] + engadidos(cfg)
+                  for capa, cfg in config.items()}
     lexicas = [c for c in config if config[c]["tipo"] == "lexico"]
     h = Hunspell(I.HUNSPELL / "gl.aff", [r for c in lexicas for r in rutas_capa[c]])
 

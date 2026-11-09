@@ -1,0 +1,53 @@
+# Engadidos a man neste proxecto (GPL-3.0-or-later), no formato dos módulos de Hunspell-gl:
+#   palabra[/999] po:tipo [is:ngrama_Nome_completo]  # nota
+# Cada palabra dun nome composto vai na súa liña coa etiqueta is:ngrama_ (como en Hunspell-gl);
+# /999 é KEEPCASE: a palabra só vale coa grafía dada (iOS, macOS, eBay).
+# Só o que non está nos módulos de Hunspell-gl da versión fixada en fontes/fontes.json.
+# Capa: toponimos (capitais e cidades que faltan nos módulos da Wikipedia galega).
+
+# Capitais e cidades
+Canberra po:topónimo  # capital de Australia
+Belmopan po:topónimo  # capital de Belize
+Asmara po:topónimo  # capital de Eritrea
+Tallinn po:topónimo  # capital de Estonia
+Tbilisi po:topónimo  # capital de Xeorxia
+Conakry po:topónimo  # capital de Guinea
+Malabo po:topónimo  # capital de Guinea Ecuatorial
+Kingston po:topónimo  # capital de Xamaica
+Bishkek po:topónimo  # capital de Kirguizistán
+Lilongwe po:topónimo  # capital de Malawi
+Malé po:topónimo  # capital das Maldivas
+Podgorica po:topónimo  # capital de Montenegro
+Naypyidaw po:topónimo  # capital de Myanmar
+Apia po:topónimo  # capital de Samoa
+Paramaribo po:topónimo  # capital de Surinam
+Bangkok po:topónimo  # capital de Tailandia
+Dushanbe po:topónimo  # capital de Taxiquistán
+N'Djamena po:topónimo  # capital do Chad
+Ulán po:topónimo is:ngrama_Ulán_Bátor  # capital de Mongolia
+Bátor po:topónimo is:ngrama_Ulán_Bátor
+Saraxevo po:topónimo  # capital de Bosnia e Hercegovina
+Uagadugu po:topónimo  # capital de Burkina Faso
+Buxumbura po:topónimo  # antiga capital de Burundi
+Iaundé po:topónimo  # capital de Camerún
+Nuakchot po:topónimo  # capital de Mauritania
+Abuxa po:topónimo  # capital de Nixeria
+Mogadixo po:topónimo  # capital de Somalia
+Khartum po:topónimo  # capital do Sudán
+Xuba po:topónimo  # capital do Sudán do Sur
+Sanaa po:topónimo  # capital do Iemen
+Asgabat po:topónimo  # capital de Turkmenistán
+Taskent po:topónimo  # capital de Uzbequistán
+San po:topónimo is:ngrama_San_Marino  # país de Europa e a súa capital
+Marino po:topónimo is:ngrama_San_Marino
+Los po:topónimo is:ngrama_Los_Ángeles  # cidade dos Estados Unidos
+Ángeles po:topónimo is:ngrama_Los_Ángeles
+Colonia po:topónimo  # cidade de Alemaña
+Nuremberg po:topónimo  # cidade de Alemaña
+Rotterdam po:topónimo  # cidade dos Países Baixos
+Osaka po:topónimo  # cidade do Xapón
+Auckland po:topónimo  # cidade de Nova Zelandia
+Halifax po:topónimo  # cidade do Canadá
+Bragança po:topónimo  # cidade de Portugal
+Madeira po:topónimo  # arquipélago de Portugal
+Ibiza po:topónimo  # illa das Baleares

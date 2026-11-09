@@ -99,5 +99,11 @@
       "pt-gl.dix": "https://raw.githubusercontent.com/apertium/apertium-pt-gl/master/apertium-pt-gl.pt-gl.dix",
       "en-gl.dix": "https://raw.githubusercontent.com/apertium/apertium-en-gl/master/apertium-en-gl.en-gl.dix"
     }
+  },
+  "engadidos": {
+    "nome": "Palabras engadidas a man neste proxecto (fontes/engadidos/*.dic, no formato dos módulos de Hunspell-gl)",
+    "web": "https://github.com/xocko12/dicionario-galego",
+    "licenza": "GPL-3.0-or-later",
+    "uso": "Nomes propios e siglas que faltan nos módulos de Hunspell-gl (empresas e produtos tecnolóxicos, entidades, capitais, persoas coñecidas, siglas de uso corrente); cada ficheiro vai á capa que indica fontes/capas.json ('engadidos')."
   }
 }

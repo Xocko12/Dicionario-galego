@@ -24,6 +24,7 @@ from __future__ import annotations
 import html
 import json
 import math
+import re
 import sqlite3
 import sys
 import time
@@ -41,16 +42,18 @@ NOMES_FORMAS = {"ms": "masculino singular", "fs": "feminino singular",
                 "mp": "masculino plural", "fp": "feminino plural"}
 
 
+def ler_jsonl(ruta: Path) -> list[dict]:
+    with ruta.open(encoding="utf-8") as fh:
+        return [json.loads(l) for l in fh]
+
+
 def cargar():
-    lemas = [json.loads(l) for l in (DATOS / "lemas.jsonl").open(encoding="utf-8")]
-    conx = {}
-    for l in (DATOS / "conxugacions.jsonl").open(encoding="utf-8"):
-        v = json.loads(l)
-        conx[v["lema"]] = v
-    nomes = [json.loads(l)["nome"] for l in (DATOS / "nomes.jsonl").open(encoding="utf-8")]
-    encl = [json.loads(l) for l in (DATOS / "encliticos.jsonl").open(encoding="utf-8")]
+    lemas = ler_jsonl(DATOS / "lemas.jsonl")
+    conx = {v["lema"]: v for v in ler_jsonl(DATOS / "conxugacions.jsonl")}
+    nomes = [r["nome"] for r in ler_jsonl(DATOS / "nomes.jsonl")]
+    encl = ler_jsonl(DATOS / "encliticos.jsonl")
     frec = {}
-    for l in (DATOS / "frecuencias.tsv").open(encoding="utf-8"):
+    for l in (DATOS / "frecuencias.tsv").read_text(encoding="utf-8").splitlines():
         if l.startswith("#"):
             continue
         forma, n = l.rstrip("\n").split("\t")
@@ -66,15 +69,14 @@ def cargar_capas() -> dict:
     for capa, cfg in config.items():
         ruta = DATOS / "capas" / f"{capa}.jsonl"
         if ruta.exists():
-            capas[cfg["tipo"]] += [json.loads(l) for l in ruta.open(encoding="utf-8")]
+            capas[cfg["tipo"]] += ler_jsonl(ruta)
     ruta = DATOS / "locucions.jsonl"
     if ruta.exists():
-        capas["locucions"] = [json.loads(l) for l in ruta.open(encoding="utf-8")]
+        capas["locucions"] = ler_jsonl(ruta)
     capas["sinonimos"] = {}
     ruta = DATOS / "sinonimos.jsonl"
     if ruta.exists():
-        for l in ruta.open(encoding="utf-8"):
-            r = json.loads(l)
+        for r in ler_jsonl(ruta):
             capas["sinonimos"].setdefault(r["lema"], []).append(r)
     return capas
 
@@ -169,25 +171,92 @@ def construir_sqlite(lemas, conx, frec, nomes, encl, capas) -> None:
 
 
 # -- Teclado ----------------------------------------------------------------
-# Capas que van ao teclado (as demais son enormes ou nomes doutras linguas).
+# Capas que van ao teclado e ao corrector (as demais son enormes ou nomes doutras linguas).
 CAPAS_TECLADO = {"digalego", "comunidade", "terminoloxia", "siglas", "toponimos", "antroponimos"}
+# Só ao teclado: organizacións, empresas e produtos (iOS, iPhone, WhatsApp, Dépor). Non van ao
+# corrector porque a capa trae moitas siglas e nomes de partidos doutras linguas.
+CAPAS_SO_TECLADO = {"organizacions"}
+
+_PALABRA_TECLADO = re.compile(r"^[0-9A-Za-z\u00C0-\u024F\u1E00-\u1EFF][0-9A-Za-z\u00C0-\u024F\u1E00-\u1EFF·'’.&+-]*$")
 
 
-def construir_teclado(lemas, conx, frec, nomes, encl, capas) -> int:
+def _palabra_teclado(p: str) -> bool:
+    """Letras latinas e díxitos (polo menos unha letra e dous caracteres) e, dentro, punto medio,
+    apóstrofo, punto, guión, & e +. Fóra quedan os símbolos ($, %), as siglas con barras e os
+    nomes noutros alfabetos."""
+    return len(p) > 1 and any(c.isalpha() for c in p) and bool(_PALABRA_TECLADO.match(p))
+
+
+def _grafia(p: str) -> int:
+    """Entre variantes dun mesmo nome escóllese a grafía máis deliberada: iOS sobre Ios (a illa),
+    YouTube sobre Youtube, Maiús sobre MAIÚS."""
+    if p.isupper():
+        return 0
+    return 2 if any(c.isupper() for c in p[1:]) or p[0].islower() else 1
+
+
+def formas_teclado(lemas, conx, frec, nomes, encl, capas) -> dict[str, int]:
+    """forma -> frecuencia de todas as palabras do teclado.
+
+    Primeiro as palabras comúns (núcleo, capas léxicas, enclíticos) coa súa frecuencia no
+    corpus. Despois os nomes propios e as siglas, pero non os que sexan unha palabra común
+    escrita con maiúsculas: «ISO» e «Iso» (a cidade), «SE», «Como», «Paz» ou «A» terían a
+    mesma frecuencia ca «iso», «se», «como», «paz» e «a» (o corpus de frecuencias está en
+    minúsculas) e os teclados, que buscan sen distinguir maiúsculas, escribían a sigla ou o
+    nome no canto da palabra ao deslizar. A maiúscula ponna quen escribe: os teclados AOSP
+    aplican á suxestión as maiúsculas que teclea o usuario. As excepcións revisadas a man
+    (datos/correccions/teclado.json: «Londres» sobre a forma verbal «londres», «Luís» sobre
+    a moeda) entran coa frecuencia do corpus e a palabra común queda con 0.
+    Dos nomes compostos (Nova York, Albert Einstein, Santiago de Compostela) entran as
+    palabras con maiúscula inicial.
+    """
     formas: dict[str, int] = {}
     for r in lemas + [r for r in capas["lexico"] if r["capa"] in CAPAS_TECLADO]:
         for forma, _ in formas_do_lema(r, conx):
             formas[forma] = frec.get(forma, 0)
-    for r in capas["siglas"]:
-        if r["capa"] in CAPAS_TECLADO:
-            formas.setdefault(r["forma"], frec.get(r["forma"].lower(), 0))
-    for r in capas["onomastica"]:
-        if r["capa"] in CAPAS_TECLADO and " " not in r["nome"]:
-            formas.setdefault(r["nome"], frec.get(r["nome"].lower(), 0))
-    for nome in nomes:
-        formas.setdefault(nome, frec.get(nome.lower(), 0))
     for r in encl:
         formas.setdefault(r["forma"], r["frecuencia"])
+    comuns: dict[str, list[str]] = {}   # minúsculas -> formas comúns con esa grafía
+    for f in formas:
+        comuns.setdefault(f.lower(), []).append(f)
+    ruta = DATOS / "correccions" / "teclado.json"
+    mandan = set(json.loads(ruta.read_text(encoding="utf-8"))["nomes"]) if ruta.exists() else set()
+
+    candidatos: list[str] = [r["forma"] for r in capas["siglas"] if r["capa"] in CAPAS_TECLADO]
+    candidatos += nomes
+    for r in capas["onomastica"]:
+        if r["capa"] not in CAPAS_TECLADO | CAPAS_SO_TECLADO:
+            continue
+        if " " not in r["nome"]:
+            partes = [r["nome"]]
+        elif r["capa"] in CAPAS_TECLADO:
+            partes = [p for p in r["nome"].split() if p[:1].isupper()]
+        else:   # das organizacións compostas («Partido Independiente de Osuna») nada
+            continue
+        # sen siglas con puntos (A.C.CO.) nin códigos (2M1207b): nos nomes son lixo
+        candidatos += [p for p in partes if "." not in p and p[0].isalpha()]
+    propios: dict[str, str] = {}   # minúsculas -> variante escollida
+    for p in candidatos:
+        if not _palabra_teclado(p):
+            continue
+        clave = p.lower()
+        if clave in comuns and p not in mandan:
+            continue
+        actual = propios.get(clave)
+        if actual is None or _grafia(p) > _grafia(actual):
+            propios[clave] = p
+    for clave, p in propios.items():
+        n = frec.get(clave, 0)
+        if clave in comuns:   # excepción revisada: o nome manda e a palabra común queda sen frecuencia
+            for f in comuns[clave]:
+                formas[f] = 0
+            n = max(n, 1)
+        formas[p] = n
+    return formas
+
+
+def construir_teclado(lemas, conx, frec, nomes, encl, capas) -> int:
+    formas = formas_teclado(lemas, conx, frec, nomes, encl, capas)
     maximo = max(formas.values()) or 1
     saida = DIST / "teclado"
     saida.mkdir(parents=True, exist_ok=True)

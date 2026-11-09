@@ -1,0 +1,70 @@
+# Engadidos a man neste proxecto (GPL-3.0-or-later), no formato dos módulos de Hunspell-gl:
+#   palabra[/999] po:tipo [is:ngrama_Nome_completo]  # nota
+# Cada palabra dun nome composto vai na súa liña coa etiqueta is:ngrama_ (como en Hunspell-gl);
+# /999 é KEEPCASE: a palabra só vale coa grafía dada (iOS, macOS, eBay).
+# Só o que non está nos módulos de Hunspell-gl da versión fixada en fontes/fontes.json.
+# Capa: siglas.
+
+# Siglas de tecnoloxía e de uso corrente
+HDMI po:sigla  # interface multimedia de alta definición (High-Definition Multimedia Interface)
+SSD po:sigla  # unidade de estado sólido (solid-state drive)
+HDD po:sigla  # disco duro (hard disk drive)
+QR po:sigla  # código de resposta rápida (quick response)
+NFC po:sigla  # comunicación de campo próximo (near-field communication)
+eSIM/999 po:sigla  # SIM electrónica, integrada no dispositivo
+OLED po:sigla  # díodo orgánico emisor de luz (organic light-emitting diode)
+HD po:sigla  # alta definición (high definition)
+UHD po:sigla  # ultra alta definición (ultra high definition)
+HDR po:sigla  # alto rango dinámico (high dynamic range)
+4K po:sigla  # resolución de vídeo de ~4000 píxeles de ancho
+8K po:sigla  # resolución de vídeo de ~8000 píxeles de ancho
+3G po:sigla  # terceira xeración de telefonía móbil
+4G po:sigla  # cuarta xeración de telefonía móbil
+5G po:sigla  # quinta xeración de telefonía móbil
+LTE po:sigla  # evolución a longo prazo, redes móbiles 4G (Long Term Evolution)
+FTTH po:sigla  # fibra ata o fogar (fiber to the home)
+IPTV po:sigla  # televisión por protocolo de internet
+TDT po:sigla  # televisión dixital terrestre
+IA po:sigla  # intelixencia artificial
+IoT/999 po:sigla  # internet das cousas (Internet of Things)
+SQL po:sigla  # linguaxe de consulta estruturada (Structured Query Language)
+MP4 po:sigla  # formato de ficheiro de vídeo (MPEG-4 parte 14)
+ZIP po:sigla  # formato de ficheiro comprimido
+RAR po:sigla  # formato de ficheiro comprimido (Roshal Archive)
+HTTPS po:sigla  # protocolo de transferencia de hipertexto seguro
+SSH po:sigla  # intérprete de ordes seguro (Secure Shell)
+USB-C po:sigla  # conector USB de tipo C
+RGB po:sigla  # vermello, verde e azul (red, green, blue)
+VGA po:sigla  # conector de vídeo analóxico (Video Graphics Array)
+DVI po:sigla  # interface de vídeo dixital (Digital Visual Interface)
+UEFI po:sigla  # interface de firmware extensible unificada
+UI po:sigla  # interface de usuario (user interface)
+UX po:sigla  # experiencia de usuario (user experience)
+SaaS/999 po:sigla  # software como servizo (software as a service)
+AWS po:sigla  # Amazon Web Services
+AR po:sigla  # realidade aumentada (augmented reality)
+VR po:sigla  # realidade virtual (virtual reality)
+DJ po:sigla  # pinchadiscos (disc jockey)
+LGTBI po:sigla  # lesbianas, gais, transexuais, bisexuais e intersexuais
+LGTBIQ po:sigla  # lesbianas, gais, transexuais, bisexuais, intersexuais e queer
+COVID po:sigla  # enfermidade por coronavirus (coronavirus disease)
+COVID-19 po:sigla  # enfermidade por coronavirus de 2019
+TDAH po:sigla  # trastorno por déficit de atención e hiperactividade
+DANA po:sigla  # depresión illada en niveis altos (fenómeno meteorolóxico)
+AEMET po:sigla  # Axencia Estatal de Meteoroloxía
+IVA po:sigla  # imposto sobre o valor engadido
+NIE po:sigla  # número de identidade de estranxeiro
+SEPE po:sigla  # Servizo Público de Emprego Estatal
+ERE po:sigla  # expediente de regulación de emprego
+ERTE po:sigla  # expediente de regulación temporal de emprego
+ABAU po:sigla  # avaliación do bacharelato para o acceso á universidade
+PAU po:sigla  # proba de acceso á universidade
+CELGA po:sigla  # certificado de lingua galega
+UVigo/999 po:sigla  # Universidade de Vigo
+CHUAC po:sigla  # Complexo Hospitalario Universitario da Coruña
+CHUO po:sigla  # Complexo Hospitalario Universitario de Ourense
+CHUVI po:sigla  # Complexo Hospitalario Universitario de Vigo
+CHUF po:sigla  # Complexo Hospitalario Universitario de Ferrol
+HULA po:sigla  # Hospital Universitario Lucus Augusti (Lugo)
+PPdeG/999 po:sigla  # Partido Popular de Galicia
+AMTEGA po:sigla  # Axencia para a Modernización Tecnolóxica de Galicia

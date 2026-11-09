@@ -598,6 +598,7 @@
 {"nome": "Aaj Tak", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Abadía de Port du Salut", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Abadía de San Andrés da Veiga de Espiñareda", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Abanca", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "banco galego"}
 {"nome": "Abertal", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Abertzaleen Batasuna", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Abiword", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -645,6 +646,7 @@
 {"nome": "Acción y Desarrollo", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Aceh TV", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Acentejo Sureño", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Acer", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "fabricante de ordenadores"}
 {"nome": "Acha", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Acord Municipal Català", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Acord Nova Entesa Municipal", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -659,7 +661,9 @@
 {"nome": "Ada", "tipo": "antropónimo", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Adena", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Adeslas", "tipo": "sigla", "capa": "organizacions", "fontes": ["comunidade"]}
+{"nome": "Adidas", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "roupa deportiva"}
 {"nome": "Admiral Group plc", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-es"]}
+{"nome": "Adobe", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "empresa de software"}
 {"nome": "Adobe PageMaker", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Adobe Photoshop", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Adria Airways d d", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -677,6 +681,7 @@
 {"nome": "Aetna", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-es"]}
 {"nome": "Afnix", "tipo": "antropónimo", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "AfterStep", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Afundación", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "obra social de Abanca"}
 {"nome": "Age of Empires", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Age of Empires II The Age of Kings", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Age of Mythology", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -941,6 +946,10 @@
 {"nome": "Air New Zealand Limited", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Air Rarotonga", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Air Serbia", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "AirDrop", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "envío de ficheiros entre dispositivos Apple"}
+{"nome": "AirPlay", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "emisión sen fíos de Apple"}
+{"nome": "AirPods", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "auriculares de Apple"}
+{"nome": "Airbnb", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "aloxamento turístico"}
 {"nome": "Aixabia", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Akira", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Al Jazeera", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -955,11 +964,13 @@
 {"nome": "Aldeas Infantís SOS", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Aldebarán", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Alderdi Feminista Partido Feminista", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Aldi", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "supermercados"}
 {"nome": "Aldus PageMaker", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Alemaña 2006", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Alex Kidd", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Alex Kidd in Miracle World", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Alex von Falkenhausen Motorenbau", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Alexa", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "asistente de voz de Amazon"}
 {"nome": "Alfa Romeo Racing Fórmula 1", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Alfecca Meridiana", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Alfonso XII", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -968,6 +979,7 @@
 {"nome": "Algo", "tipo": "antropónimo", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Algol", "tipo": "antropónimo", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Alhaurinos Independientes", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "AliExpress", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "comercio electrónico"}
 {"nome": "Aliança Balear", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Aliança per Muro", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Alianza Bolivariana para as Américas", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -998,7 +1010,9 @@
 {"nome": "Allsvenskan", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Alonsotegiko Ezkerra", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Alpha Tauri", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Alphabet", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "matriz de Google"}
 {"nome": "Alpicat Grup Independent", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Alsa", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "autobuses"}
 {"nome": "Alta Car and Engineering Company", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Alta Velocidade Española", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Altaria", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -1150,6 +1164,7 @@
 {"nome": "Amanecer Democrático Nacional", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Amar", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Amarok", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Amazon", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "empresa de comercio electrónico"}
 {"nome": "Amazon.com", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "American Airlines", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "American Basketball Asociation", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -1188,6 +1203,7 @@
 {"nome": "Antena 3", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Antena.Neox", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Antena.Nova", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Anthropic", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "empresa de intelixencia artificial"}
 {"nome": "Anti Revolutionaire Partij", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Antigo Exipto", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "AoM", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -1201,6 +1217,7 @@
 {"nome": "Apolíticos Parroquias Galegas", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Apollon", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "AporTa", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Apple", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "empresa de informática"}
 {"nome": "Aprome Nacionalista", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Aqueos", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Ar Redadeg", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -1211,6 +1228,7 @@
 {"nome": "Arco", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Arco Iris", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Arco Iris Izquierda Verde", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Arduino", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "plataforma de electrónica libre"}
 {"nome": "Arenys de Munt 2 000", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Argentum Online II", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Ariana Afghan Airlines", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -1221,6 +1239,7 @@
 {"nome": "Army Moves", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Arronos", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Arrows Grand Prix Internacional", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Arsenal", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "Arsenal Football Club"}
 {"nome": "Arte", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Arteixo Telecom", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Artenativa", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -1344,6 +1363,7 @@
 {"nome": "Asociación para el Reagrupamiento de los Comunistas Canarios", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Asociación para la Integración de Cantabria en Castilla y León", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Asociación para o Comercio Xusto e Solidario Panxea", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Asos", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "comercio electrónico de roupa"}
 {"nome": "Aspe Partido Independiente", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Assassin s Creed", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "AssaultCube", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -1365,6 +1385,7 @@
 {"nome": "Aston Martin Lagonda Limited", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Ástures", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Asturianistes", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Asus", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "fabricante de ordenadores"}
 {"nome": "Asuwa", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Ataques do 11 S", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Ataques do 11S", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -1376,6 +1397,7 @@
 {"nome": "Atentados do 11 M", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Atentados do 11M", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Atentados do 7 de xullo de 2005 en Londres", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Athletic", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "Athletic Club de Bilbao"}
 {"nome": "Atnag", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Atom Ant", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Atomic Betty", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -1386,6 +1408,7 @@
 {"nome": "Atresmedia Corporación de Medios de Comunicación", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Aturuxo", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Audacity", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Audible", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "audiolibros"}
 {"nome": "Aula Castelao de Filosofía", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Australian Broadcasting Corporation", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Austrian Airlines", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -1415,6 +1438,7 @@
 {"nome": "Axencia Mundial Antidopaxe", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Axpo Super League", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Aztlán", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Azure", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "nube de Microsoft"}
 {"nome": "Azərbaycan Birinci Divizionu", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "B.A.", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "B.C.P.", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -1489,6 +1513,7 @@
 {"nome": "Badalona", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Badlands", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Baeza Independiente", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Baiuca", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "proxecto de música electrónica galego"}
 {"nome": "Baldaquino de San Breixo de Arcos de Furco", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Baldaquino de San Pedro de Bordóns", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Baldaquino de San Salvador de Meis", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -1554,8 +1579,11 @@
 {"nome": "Banesco Panamá", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Banesco República Dominicana", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Banesco Seguros", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-es"]}
+{"nome": "Bankinter", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "banco"}
 {"nome": "Barbate Unido", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Barberencs pel Canvi", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Barbie", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "boneca"}
+{"nome": "Barça", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "Futbol Club Barcelona"}
 {"nome": "Barcelona TV", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Basílica da Aciñeira", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Basílica de Nosa Señora da Candelaria", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -1572,6 +1600,7 @@
 {"nome": "Batzac Espai Alternatiu", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Batzarre", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Batzarre Asamblea de Izquierdas", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Bayern", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "Bayern de Múnic"}
 {"nome": "Behra-Porsche", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Belalcazareñ S Unidos Partido Independiente", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Belavia", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -1585,12 +1614,16 @@
 {"nome": "Berdeak Los Verdes o Los Verdes Berdeak", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Berkeley Software Distribution", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Berkshire Hathaway", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-es"]}
+{"nome": "Berlinale", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "festival de cine de Berlín"}
+{"nome": "Bershka", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "cadea de roupa de Inditex"}
 {"nome": "Betelguse", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Bethesda Softworks", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Betis", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "Real Betis Balompié"}
 {"nome": "Betty Boop", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Beyond Two Souls", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Bigscreen", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Bilbao Bizkaia Kutxa", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Bing", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "buscador de Microsoft"}
 {"nome": "Bingbox", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Binter Canarias", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Biohazard", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -1598,11 +1631,14 @@
 {"nome": "Bitextor", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Bizancio", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Bizkaiko Independienteak", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Bizum", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "pagamentos móbiles"}
+{"nome": "BlaBlaCar", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "coche compartido"}
 {"nome": "Black Joke", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "BlackBerry", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Blackbox", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Blanca Quiroga", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Bleach", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Blender", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "modelado 3D libre"}
 {"nome": "Blizzard Entertainment", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Bloc Català", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Bloc Català de Treballadors", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -1650,14 +1686,20 @@
 {"nome": "Blue Lightning", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Blue Version", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Blue1 Ltd", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Bluesky", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "rede social"}
+{"nome": "Bluetooth", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "comunicación sen fíos de curto alcance"}
 {"nome": "Boadilla Vive", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "BobEsponxa PantalónsCadrados", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Boing", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Bolt", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "transporte de pasaxeiros"}
 {"nome": "Bomb Jack", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Bontekoerace", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Boo", "tipo": "antropónimo", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Booking", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "reservas de aloxamento"}
 {"nome": "Boro", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Borrowed Heaven tour", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Borussia", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "Borussia Dortmund"}
+{"nome": "Bosch", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "empresa de enxeñaría"}
 {"nome": "Botola", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Bounty", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Box Ofifice Mojo", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -1665,8 +1707,10 @@
 {"nome": "Brabham", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Brasero", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Brasileirão", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Brave", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "navegador"}
 {"nome": "Brawn GP Formula One Team", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Brawn GP Limited", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Bricomart", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "bricolaxe"}
 {"nome": "British Airways", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "British American Racing", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "British Athletics League", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -1689,6 +1733,7 @@
 {"nome": "Bund der Perfektibilisten", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Bundesliga", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Buque de Proxección Estratéxica", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Burger King", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "restaurantes"}
 {"nome": "Buril", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Burning Man", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Buster Bros", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -2029,6 +2074,7 @@
 {"nome": "CYC", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "CYD", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Ca n Picafort Unit", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Cabify", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "transporte de pasaxeiros"}
 {"nome": "Cable News Network", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Cabozo", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Cadea de Noticias por Cable", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -2044,6 +2090,7 @@
 {"nome": "Caixa de Aforros Provincial de Ourense", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Caixa de Aforros Provincial de Pontevedra", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Caixa de Aforros e Pensións de Barcelona", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "CaixaBank", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "banco"}
 {"nome": "Caja Madrid", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Caja Rural de Lérez", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Caja Rural de Orense", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -2068,6 +2115,7 @@
 {"nome": "Cambio Radical", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Camino", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Camp Redo Poble", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Camper", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "calzado"}
 {"nome": "Campionato Africano de Clubs", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Campionato Brasileiro de Serie A", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Campionato Brasileiro de hóckey a patíns", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -2164,11 +2212,13 @@
 {"nome": "Candidatures Independents pel Progrés Municipal", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Candy Candy", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Canelas Ecologista Galego", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Canon", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "fabricante de cámaras"}
 {"nome": "Canovelles Unida", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Cantabria 95 Independiente", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Cántabros", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Cantiaci", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Cantii", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Canva", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "deseño gráfico en liña"}
 {"nome": "Capcom", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Capela Sistina", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Capela da Misericordia de Viveiro", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -2187,6 +2237,7 @@
 {"nome": "Carlos V", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Carmel Partido Azul", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Carpeños Independientes Demócratas de Castilla la Mancha", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Carrefour", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "supermercados"}
 {"nome": "Cars Martini", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Cartago", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Casa del Pueblo de Mahon", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -2245,6 +2296,7 @@
 {"nome": "CdeP", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "CeDeMe", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Cefeo", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Celta", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "Real Club Celta de Vigo"}
 {"nome": "Celtic Kings Rage of War", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Celtic Kings The Punic Wars", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Cenb", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -2317,9 +2369,11 @@
 {"nome": "Challenge League", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Chamada Demócrata Cristiá", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Chamavi", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Champions", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "Liga de Campións da UEFA"}
 {"nome": "Champions League", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Channel V Thailand", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Chantada Nova", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "ChatGPT", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "asistente de IA de OpenAI"}
 {"nome": "Chautauqua Airlines", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Cheka", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Chilevisión", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -2329,6 +2383,9 @@
 {"nome": "Chip e Chop", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Chivalry Medieval Warfare", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Chris Amon Racing", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Chrome", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "navegador de Google"}
+{"nome": "Chromecast", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "reprodutor multimedia de Google"}
+{"nome": "Chromium", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "navegador libre"}
 {"nome": "Chunchura", "tipo": "topónimo", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Chunta Aragonesista", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Chuza", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -2441,6 +2498,7 @@
 {"nome": "Clásica dos Portos de Guadarrama", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Clau de Mallorca", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Clau de Menorca", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Claude", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "asistente de IA de Anthropic"}
 {"nome": "Clickair", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Climax", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Clipper", "tipo": "antropónimo", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -2481,6 +2539,7 @@
 {"nome": "Coalición por Melilla", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Coalición por Santa Brígida", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Cobeña Iniciativa de Progreso", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Coca-Cola", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "bebidas"}
 {"nome": "Code Geass Lelouch of the Rebellion", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Code Lyoko", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Código Lyoko", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -2595,6 +2654,7 @@
 {"nome": "Confederación de Radicales", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Confederation of North", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Conficker", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Conforama", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "mobles"}
 {"nome": "Congreso Nacional Africano", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Congreso Nacional Africano de Rodesia do Norte", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Congreso Nacional Africano de Rodesia do Sur", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -2605,6 +2665,7 @@
 {"nome": "Connaught Engineering", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Connew", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Connew Racing Team", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Consellería", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "departamento da Xunta de Galicia"}
 {"nome": "Consello Asiático e do Pacífico", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Consello Internacional de Museos", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Consello Mundial de Automobilismo", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -2791,6 +2852,7 @@
 {"nome": "Copa dos Pireneos", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Copa inglesa", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Copersucar", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Copilot", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "asistente de IA de Microsoft"}
 {"nome": "Coppa Italia", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Coppa Italia Lega Pro", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Coral Polifónica El Eco", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -2808,6 +2870,7 @@
 {"nome": "Correllengua", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Correndo por Vigo", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Correo TV", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Correos", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "servizo postal"}
 {"nome": "Corriente Socialista Canaria PASOC", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Corsica Nazione", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Coruñeses con Buenos Argumentos 2007", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -2883,6 +2946,7 @@
 {"nome": "D.S.C.C.", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "D3", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "DAL", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "DAZN", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "plataforma de deporte en liña"}
 {"nome": "DBE", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "DC", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "DCA", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -2896,6 +2960,7 @@
 {"nome": "DEVIP", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "DEZTV", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "DFB", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "DHL", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "mensaxería"}
 {"nome": "DHP", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "DIAT", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "DICH", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -2929,14 +2994,19 @@
 {"nome": "Daniel o fedello", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Danmarks Radio", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Danon Artean", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Danone", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "alimentación"}
 {"nome": "Dansk Folkeparti", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Dauphiné Libéré", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "De Ronde van Vlaanderen", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "De Tomaso Automobili SpA", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Dead Rising", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Dead Space", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Debian", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "distribución de Linux"}
+{"nome": "Decathlon", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "deportes"}
+{"nome": "Deezer", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "plataforma de música"}
 {"nome": "Defensa de los Intereses del Pueblo Andaluz", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Defensores de Vilanova de Arousa y Parroquias", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Dell", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "fabricante de ordenadores"}
 {"nome": "Delphi", "tipo": "antropónimo", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Delta Air Lines", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Delta Force Black Hawk Down", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -2983,6 +3053,8 @@
 {"nome": "Demòcrates per Andorra", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Democraticaweb", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Denébola", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Dépor", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "Real Club Deportivo da Coruña"}
+{"nome": "Deportivo", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "Real Club Deportivo da Coruña"}
 {"nome": "Derecha Española", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Derecha Independiente Alborayense", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Derecha Liberal Republicana", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -2990,6 +3062,7 @@
 {"nome": "Dereita de Cataluña", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Derrington Francis Racing Team", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Desarrollo y Progreso de Majadahonda", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Desigual", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "roupa"}
 {"nome": "Despierta Andalucía", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Despr", "tipo": "tecla", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Destruction Derby", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -3015,6 +3088,7 @@
 {"nome": "Dirección General de Seguros y Fondos de Pensiones", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-es"]}
 {"nome": "Direct Seguros", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-es"]}
 {"nome": "Disashop", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Discord", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "aplicación de mensaxería"}
 {"nome": "Discos da máquina", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Discoverer Enterprise", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Discovery Channel Networks", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -3023,6 +3097,7 @@
 {"nome": "Discovery MAX", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Discovery Real Time", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Disney Channel", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Disney+", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "plataforma de vídeo"}
 {"nome": "Division Nationale", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "División de Honor de Wáter polo", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "División de Honra", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -3037,6 +3112,7 @@
 {"nome": "Docker", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Dodgers", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Dominet Bank Ekstraliga", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Domino's", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "restaurantes"}
 {"nome": "Don Drácula", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Don Gato", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Donald Duck", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -3056,7 +3132,9 @@
 {"nome": "Dropbox", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Druga HNL", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Druga Hrvatska Nogometna Liga", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "DuckDuckGo", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "buscador"}
 {"nome": "Dungeon Siege", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Duolingo", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "aprendizaxe de idiomas"}
 {"nome": "Dutch Basketball League", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Dylan", "tipo": "antropónimo", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Dynamite Dan", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -3173,6 +3251,7 @@
 {"nome": "Ebrencs Independents", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Eccellenza", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Ecologistas los Verdes Independientes de Las Baleares", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Ecosia", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "buscador"}
 {"nome": "Ecurie Nationale Belge", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "EdM", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Eesti Rahvusringhääling", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -3270,6 +3349,7 @@
 {"nome": "Eris", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Ermida das Virtudes de Pontedeume", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Ermida de El Rocío", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Eroski", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "supermercados"}
 {"nome": "Es Grup", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Escalada a Montjuic", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Escaños Vacíos", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -3277,6 +3357,7 @@
 {"nome": "Espacio Alternativo", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "España Mestiza", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Españoles Libres e Iguales", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Espanyol", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "Reial Club Deportiu Espanyol"}
 {"nome": "Espazo Alternativo", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Esport3", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Esquerda Anticapitalista", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -3328,6 +3409,7 @@
 {"nome": "Eswatini", "tipo": "topónimo", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Établissement de la radiodiffusion télévision tunisienne", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Ethereal", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Ethernet", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "rede local con cable"}
 {"nome": "Ettore Bugatti Automobiles", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "EuE", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Euphoria", "tipo": "antropónimo", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -3337,6 +3419,7 @@
 {"nome": "EuroGames", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Eurobasket 2007", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Euroberdeak", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Eurocopa", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "Campionato de Europa de fútbol"}
 {"nome": "Eurocopa Sub 21", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Eurocopa da UEFA de 2016", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Eurocopa de fútbol", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -3351,6 +3434,7 @@
 {"nome": "European Nations Cup", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "European Shield", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "European Trophy", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Europol", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "policía europea"}
 {"nome": "Euskadiko Ezkerra", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Euskadiko Ezkerra Izquierda para el Socialismo", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Euskadiko Mugimendu Komunista", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -3375,6 +3459,7 @@
 {"nome": "Evolución Democrática", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Ex", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "ExC", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Excel", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "folla de cálculo de Microsoft"}
 {"nome": "Exodus International", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Expresión Social de Electores Sorianos", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Extended ML", "tipo": "antropónimo", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -3505,6 +3590,7 @@
 {"nome": "FU.E.", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "FUE", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "FUPS", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "FaceTime", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "videochamadas de Apple"}
 {"nome": "Facebook", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Facebox", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Fachada das Praterías", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -3603,6 +3689,7 @@
 {"nome": "Fédération Internationale de l Automobile", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Fédération Internationale du Sport Automobile", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Fediverso", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["comunidade"]}
+{"nome": "Fedora", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "distribución de Linux"}
 {"nome": "Felipop", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Felirati Párt", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Felix o gato", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -3637,8 +3724,10 @@
 {"nome": "Fichero Informativo de Vehículos Asegurados", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-es"]}
 {"nome": "FictionBook", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Figaro Progrés", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Figma", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "deseño de interfaces"}
 {"nome": "FileZilla", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Filisteos", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Filmin", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "plataforma de vídeo"}
 {"nome": "Finais da Copa do Mundo de Fútbol", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Final Fantasy", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Final Fantasy IX", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -3648,12 +3737,14 @@
 {"nome": "Final Fantasy XIII", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Fine Gael", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Finnair", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Firefox", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "navegador de Mozilla"}
 {"nome": "Firelord", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "First Fleet", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "First Person Shooter", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "First Racing", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Firstar Corporation", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Fisterra Unida", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Fitbit", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "pulseiras de actividade"}
 {"nome": "Fittipaldi Automotive", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Flappy Bird", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Flat Earth Society", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -3662,6 +3753,7 @@
 {"nome": "Floating production storage and offloading", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Flocos.tv", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Flow-Matic", "tipo": "antropónimo", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Flutter", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "marco de aplicacións móbiles"}
 {"nome": "Fobos", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Fondiaria Sai S p A", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-es"]}
 {"nome": "Fondo Monetario Internacional", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -3695,9 +3787,11 @@
 {"nome": "ForoCoches", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Forth", "tipo": "antropónimo", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Fortis", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-es"]}
+{"nome": "Fortnite", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "videoxogo"}
 {"nome": "Forum Civic", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Forum Salou", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Forza Galega Fuerza Gallega", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Fotocasa", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "portal inmobiliario"}
 {"nome": "Fox Broadcasting Company", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "France 2", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Frank Williams Racing Cars", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -3897,6 +3991,7 @@
 {"nome": "GIM", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "GIM-SP", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "GIMAN", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "GIMP", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "edición de imaxe libre"}
 {"nome": "GIMS", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "GINP", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "GIPE", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -3914,6 +4009,7 @@
 {"nome": "GIVT", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "GLBTH\\", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "GLL", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "GLS", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "mensaxería"}
 {"nome": "GLUG", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "GM-LV", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "GMZ", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -3953,8 +4049,10 @@
 {"nome": "GUNNM", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "GUS", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "GVS", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Gadis", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "supermercados galegos"}
 {"nome": "Galaico", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Galapagar Verde y Sostenible", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Galaxy", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "teléfonos de Samsung"}
 {"nome": "Galdakao Berria", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Galego-list", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "GalegoLab", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -3977,12 +4075,15 @@
 {"nome": "Garda de Ferro", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Garfield and Friends", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Garfield e mailos seus amigos", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Garmin", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "dispositivos GPS e reloxos deportivos"}
 {"nome": "Gauntlet", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Gazte Komunistak", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Gboard", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "teclado de Google"}
 {"nome": "Gd'Alginet", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "GdC", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "GdLL", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "GdO", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Gemini", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "asistente de IA de Google"}
 {"nome": "Gen Re", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-es"]}
 {"nome": "Generación Ecología", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Generación Insular Canaria", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -4038,17 +4139,21 @@
 {"nome": "Gira Madrid Los Verdes", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Giro de Italia", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "GitHub", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["comunidade"]}
+{"nome": "GitLab", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "aloxamento de código"}
 {"nome": "Gizeh", "tipo": "topónimo", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Glace", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["comunidade"], "nota": "América/Glace Bay"}
 {"nome": "Gliese 176 b", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Gliese 581 g", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Glovo", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "reparto a domicilio"}
 {"nome": "Gmail", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["comunidade"]}
+{"nome": "GoPro", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "cámaras de acción"}
 {"nome": "Goat Simulator", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "God of War III", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Gol Televisión", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Golden Basket", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Golden Cup", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Goofy", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Google", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "empresa e buscador"}
 {"nome": "Google Earth", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Google Plus", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Google Translate", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -4057,7 +4162,9 @@
 {"nome": "Gordini", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Gorila Maguila", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Goyang", "tipo": "topónimo", "capa": "organizacions", "fontes": ["comunidade"]}
+{"nome": "Gradiant", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "centro tecnolóxico galego"}
 {"nome": "Graftgold Creative Software", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Grammy", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "premios de música"}
 {"nome": "Gran Teatro da Habana", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Granadinos por Granada", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Grand Prix Circuit", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -4261,6 +4368,7 @@
 {"nome": "Hebrón", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Heidi", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Heineken Cup", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "HeliBoard", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "teclado libre para Android"}
 {"nome": "Hello Kitty", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Hentai", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Hermandad Canaria", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -4595,6 +4703,7 @@
 {"nome": "IZAN", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "IZMA", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Iapeto", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Iberdrola", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "enerxía"}
 {"nome": "Iberia", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Iberia Líneas Aéreas de España", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Ice Breaker", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -4605,6 +4714,7 @@
 {"nome": "IdS", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "IdeL", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "IdeP", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Idealista", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "portal inmobiliario"}
 {"nome": "Identidad Reino de Valencia", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Identidade Galega", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Iepen Fryske Kampioenskippen Skûtsjesilen", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -4703,9 +4813,11 @@
 {"nome": "Igrexa parroquial de Cogeces de Íscar", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Igrexa vella de Santa Comba de Louro", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Iii", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Ikea", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "mobles"}
 {"nome": "Ikusi", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Il Popolo della Libertà", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Illuminati", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Illustrator", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "debuxo vectorial"}
 {"nome": "Im.De.", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Imaxe Poesia", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Imperium II La Conquista de Hispania", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -4903,6 +5015,7 @@
 {"nome": "Independientes por el Progreso de Albanchez", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Independientes por el Progreso de Benicasim", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Independientes por los Gallardos", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Inditex", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "grupo téxtil galego"}
 {"nome": "Indostán", "tipo": "topónimo", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Indra Sistemas", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Inex Adria Airways", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -4996,9 +5109,11 @@
 {"nome": "Iniciativa por la Torre de Portacoeli", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Iniciatives per Sabadell", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Iniziatiba Aragonesa", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Inkscape", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "debuxo vectorial libre"}
 {"nome": "Inmigrantes con Derechos de Igualdad y Obligaciones", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Innovación Democrática", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Innovación Progreso Para Laredo", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Instagram", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "rede social"}
 {"nome": "Institucións de promoción do galego", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Instituto Cubano de Radio y Televisión", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Instituto Galego de Análise e Documentación Internacional", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -5009,6 +5124,8 @@
 {"nome": "Instituto de Estudos Chairegos", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Instituto de Estudos Galegos Padre Sarmiento", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Integra Chiclana", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Intel", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "fabricante de procesadores"}
+{"nome": "Inter", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "Internazionale de Milán"}
 {"nome": "InterCityExpress", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Interamnia World Cup", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Interface definition language", "tipo": "antropónimo", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -5192,6 +5309,7 @@
 {"nome": "Juventud Vitoriana", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Juventudes Nacional Revolucionarias", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Juventudes de Izquierda Comunista", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Juventus", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "Juventus de Turín"}
 {"nome": "K Desktop Environment", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "K-Meleon", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "KANU", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -5201,6 +5319,7 @@
 {"nome": "KD Avia", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "KDE", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "KDE e V", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "KFC", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "restaurantes"}
 {"nome": "KGB", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "KLM", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "KNI", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -5216,6 +5335,7 @@
 {"nome": "Kangiqliniq", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Kauhsen", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Kebunamen", "tipo": "topónimo", "capa": "organizacions", "fontes": ["comunidade"]}
+{"nome": "Kellogg", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "alimentación"}
 {"nome": "Kenya African National Union", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Keroro Gunso", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Kick Off", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -5225,6 +5345,7 @@
 {"nome": "Kifkif", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Kim Possible", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Kinabalu", "tipo": "topónimo", "capa": "organizacions", "fontes": ["comunidade"]}
+{"nome": "Kindle", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "lector de libros electrónicos de Amazon"}
 {"nome": "King Kong", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Kingdom Hearts", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Kirsten Smits", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -5233,6 +5354,7 @@
 {"nome": "Klenk-Meteor", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Knight Lore", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Knuckles The Echidna", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Kobo", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "lector de libros electrónicos"}
 {"nome": "Kōdo Giasu Hangyaku no Rurūshu", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Kojima Engineering", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Kommit", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["comunidade"]}
@@ -5244,7 +5366,9 @@
 {"nome": "Korean Air", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Korrika", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Korsisliiga", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Kotlin", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "linguaxe de programación"}
 {"nome": "Krynea Imperial Wars", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Kubernetes", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "orquestración de contedores"}
 {"nome": "Kupó", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Kurenai no Buta", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Kurtis Kraft", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -5419,6 +5543,7 @@
 {"nome": "La Voz del Pueblo", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "La Vuelta", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "La defensa del agricultor", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "LaLiga", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "liga española de fútbol"}
 {"nome": "LaSiete", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Ladinia", "tipo": "topónimo", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Laia Elkarlanean", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -5435,14 +5560,18 @@
 {"nome": "League of Ireland", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "League of Ireland Premier Division", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Leales Conileños", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Lefties", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "cadea de roupa de Inditex"}
 {"nome": "Lega Basket Serie A", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Lega Italiana Calcio Professionistico", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Lega Pro Prima Divisione", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Legacy of Kain", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Legacy of Kain Soul Reaver", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Lego", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "xoguetes"}
 {"nome": "Lei e Xustiza", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Lemmings", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Lenovo", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "fabricante de ordenadores"}
 {"nome": "Lepanto", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Leroy Merlin", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "bricolaxe"}
 {"nome": "Les Enfoirés", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Les Restos du Cœur", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Leverkusen", "tipo": "topónimo", "capa": "organizacions", "fontes": ["comunidade"]}
@@ -5458,6 +5587,7 @@
 {"nome": "Libyan Jamahiriya Broadcasting Corporation", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Liceo Mutante", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Lidia", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Lidl", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "supermercados"}
 {"nome": "Liège-Bastogne-Liège", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Liet-Lávlut", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Life", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-es"]}
@@ -5555,6 +5685,7 @@
 {"nome": "Linguaxe de Etiquetaxe de HiperTexto", "tipo": "antropónimo", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Linguaxe de programación Oz", "tipo": "antropónimo", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Link", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "LinkedIn", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "rede social profesional"}
 {"nome": "Linux", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Lisp", "tipo": "antropónimo", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Lista Verde", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -5582,6 +5713,7 @@
 {"nome": "Localia Santiago", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Localia Vigo", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "LocoRoco", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Logitech", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "fabricante de periféricos"}
 {"nome": "Logo", "tipo": "antropónimo", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Lokalize", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Lokarri", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -5725,6 +5857,7 @@
 {"nome": "MPCL", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "MPL", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "MPNA", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "MRW", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "mensaxería"}
 {"nome": "MSF", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "MSIE", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "MSN Messenger", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -5734,7 +5867,9 @@
 {"nome": "MTV Ucraína", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "MUD", "tipo": "sigla", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "MUPC", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Mac", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "ordenador de Apple"}
 {"nome": "Mac OS", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "MacBook", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "portátil de Apple"}
 {"nome": "Macromedia FreeHand", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Macross Frontier", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Made in Spain", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -5749,8 +5884,10 @@
 {"nome": "Makurosu Furontia", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Malév", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Mancomún", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["comunidade"]}
+{"nome": "Mango", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "roupa"}
 {"nome": "Manilva Solución Independiente", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Maón", "tipo": "topónimo", "capa": "organizacions", "fontes": ["comunidade"]}
+{"nome": "Mapfre", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "seguros"}
 {"nome": "Mar de Arousa", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Marauder", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Marca TV", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -5765,6 +5902,7 @@
 {"nome": "Martu", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Marussia F1 Team", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Marussia Virgin Racing", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Marvel", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "editorial e estudio de cómics e cine"}
 {"nome": "Maryfran", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Mas Camarena", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Mas por Telde", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -5772,6 +5910,9 @@
 {"nome": "Masacre da Praza Tian anmen", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Masía", "tipo": "nome", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Masías", "tipo": "topónimo", "capa": "organizacions", "fontes": ["comunidade"]}
+{"nome": "Massimo Dutti", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "cadea de roupa de Inditex"}
+{"nome": "Mastercard", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "tarxetas de pagamento"}
+{"nome": "Mastodon", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "rede social federada"}
 {"nome": "Masuria", "tipo": "topónimo", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Matanza de Atocha de 1977", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Matar por Matar NON", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -5785,6 +5926,7 @@
 {"nome": "Mazarrón Unión del Bienestar", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Mazovia", "tipo": "topónimo", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "McDonald s Championship", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "McDonald's", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "restaurantes"}
 {"nome": "McGuire", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "McLaren", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Mebyon Kernow", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -5799,6 +5941,7 @@
 {"nome": "Meñakako Alderdi Independientea", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Mensa", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Mercado Común do Sur", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Mercadona", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "supermercados"}
 {"nome": "Mercantil Seguros C A", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-es"]}
 {"nome": "Mercedes Benz Mercedes AMG Petronas Formula One Team", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Mercedes Benz Mercedes Grand Prix", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -5815,12 +5958,14 @@
 {"nome": "MetLife", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-es"]}
 {"nome": "Metal Gear", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Metal Gear Solid", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "MeteoGalicia", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "servizo meteorolóxico galego"}
 {"nome": "Mexicas", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Miami per Independents", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Micaecus", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Micerinos", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Mickey Mouse", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Microsiervos", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Microsoft", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "empresa de software"}
 {"nome": "Microsoft Access", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Microsoft Corporation", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Microsoft Excel", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -5835,7 +5980,10 @@
 {"nome": "Midway", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Midway Games", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Mighty Max", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Milan", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "Associazione Calcio Milan"}
 {"nome": "Milán-Sanremo", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Milanuncios", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "anuncios clasificados"}
+{"nome": "Milladoiro", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "grupo de música galego"}
 {"nome": "Millennium Trophy", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Minardi F1 Team", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Minecraft", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -5873,6 +6021,7 @@
 {"nome": "Mojácar 2 000", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Mojácar Nueva", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Monagas", "tipo": "topónimo", "capa": "organizacions", "fontes": ["comunidade"]}
+{"nome": "Monbus", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "autobuses galegos"}
 {"nome": "Monkey Island", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Monkey Island 2 LeChuck s Revenge", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Mononoke Hime", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -5939,6 +6088,7 @@
 {"nome": "Móstoles Verde", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Motivados", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Motor Racing Developments Ltd", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Motorola", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "marca de teléfonos"}
 {"nome": "Mouvement pour l Autonomie de la Kabylie", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Mouvement pour la justice et la paix", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Mov.U.P.", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -6022,6 +6172,7 @@
 {"nome": "Movimiento por la Unidad del Pueblo Canario", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Movimiento por la Unidad del Pueblo Republicanos", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Mowgli", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Mozilla", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "fundación de software libre"}
 {"nome": "Mozilla Firebird", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Mozilla Firefox", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "MpB", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -6151,19 +6302,25 @@
 {"nome": "National Security Agency", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Nationale 1", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Natsionalna Telekompaniya Ukrayïny", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Naturgy", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "enerxía"}
 {"nome": "Néa Ellinikí Radiofonía", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Need for Speed", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Neon Genesis Evangelion", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Neox", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Neox8", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Neptuno", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Nestlé", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "alimentación"}
 {"nome": "NetBSD", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Netflix", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "plataforma de vídeo"}
 {"nome": "Netlog", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Netscape Navigator", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Neverwinter Nights", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Nextcloud", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "nube libre"}
 {"nome": "Nezahualcóyotl", "tipo": "topónimo", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Night Shift", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Nike", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "roupa deportiva"}
 {"nome": "Nikkei 225", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Nikon", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "fabricante de cámaras"}
 {"nome": "Nintendo", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Nintendo Entertainment System", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Nippon Animation", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -6187,6 +6344,7 @@
 {"nome": "Nós mesmos", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Nosa Señora da Lanzada", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Nosaltres Som", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Notion", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "notas e organización"}
 {"nome": "Nou Horitzo", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Nou Valencianisme", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Nous Independents Locals", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -6242,6 +6400,7 @@
 {"nome": "Num", "tipo": "tecla", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Nunca Máis", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Nuristán", "tipo": "topónimo", "capa": "organizacions", "fontes": ["comunidade"]}
+{"nome": "Nvidia", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "fabricante de procesadores gráficos"}
 {"nome": "O Correcamiños", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "O Gran Suxi", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "O Partido Comunista de Estonia", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -6312,6 +6471,7 @@
 {"nome": "Object Management Group", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Objective CAML", "tipo": "antropónimo", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Objective-C", "tipo": "antropónimo", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Obradoiro", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "Obradoiro Clube de Amigos do Baloncesto"}
 {"nome": "Ocaml", "tipo": "antropónimo", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Occitania", "tipo": "topónimo", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Ocean Software", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -6336,6 +6496,8 @@
 {"nome": "Ondarroaren Alde", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Ondas", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "One Piece", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "OneDrive", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "almacenamento na nube de Microsoft"}
+{"nome": "OnePlus", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "marca de teléfonos"}
 {"nome": "Onimusha", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Opció Nacionalista Valenciana", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Opció Verda", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -6344,6 +6506,7 @@
 {"nome": "Opción Sampedreña", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Open McDonald s", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Open Source Geospatial Foundation", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "OpenAI", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "empresa de intelixencia artificial"}
 {"nome": "OpenBSD", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "OpenBTS", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "OpenOffice.org", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -6353,6 +6516,8 @@
 {"nome": "Opera Soft", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Operació Independencia", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Operating System 2", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Oppo", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "marca de teléfonos"}
+{"nome": "Oracle", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "empresa de software"}
 {"nome": "Oranxe", "tipo": "topónimo", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Orde dos Iluminati", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Orden y Buenas Costumbres", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -6404,6 +6569,7 @@
 {"nome": "Os Supersónicos", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Os cazapantasmas", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Os tolos do volante", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Osasuna", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "Club Atlético Osasuna"}
 {"nome": "Osca", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Oshawa", "tipo": "topónimo", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Oso Yogi", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -6413,8 +6579,10 @@
 {"nome": "Our Airline", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Outlast", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Outline Processor Markup Language", "tipo": "antropónimo", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Outlook", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "correo de Microsoft"}
 {"nome": "Oxapampa", "tipo": "topónimo", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Oxegen", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Oysho", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "cadea de roupa de Inditex"}
 {"nome": "P", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "P A D Y R", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "P A E C", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -7161,16 +7329,19 @@
 {"nome": "Palhwisa", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Pan Am", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Pan American World Airways", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Panasonic", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "empresa de electrónica"}
 {"nome": "Panfilia", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Pang", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Pangandarang", "tipo": "topónimo", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Panoramio", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Pant", "tipo": "tecla", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Paphlagonia", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Paramount", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "estudio de cine"}
 {"nome": "París-Niza", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "París-Roubaix", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Parisii", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Parker Pen Shield", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Parlamento", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "Parlamento de Galicia"}
 {"nome": "Parque Alternativa Unida Alfafar", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Parrote", "tipo": "topónimo", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Parti Ouvrier Français", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -8030,6 +8201,7 @@
 {"nome": "Pelayo Mutua de Seguros", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-es"]}
 {"nome": "Penske Racing", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "People for the Ethical Treatment of Animals", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Pepsi", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "bebidas"}
 {"nome": "Perl", "tipo": "antropónimo", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Persia", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Perviy Kanal", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -8040,6 +8212,7 @@
 {"nome": "Philasoft", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Philips", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Phoenix", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Photoshop", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "edición de imaxe"}
 {"nome": "PiS", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Picasa", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Pictos", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -8050,6 +8223,7 @@
 {"nome": "Pink Music Festival 2014", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Pinta", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Pinteños Independientes", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Pinterest", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "rede social"}
 {"nome": "Pipe Dream", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Pipe Mania", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Piratas de Galicia", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -8058,6 +8232,8 @@
 {"nome": "Pitassa", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Pitchfork", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Pitchfork Media", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Pixar", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "estudio de animación"}
+{"nome": "Pixel", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "teléfonos de Google"}
 {"nome": "Pixie", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Plaid Cymru", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Plan 9", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -8133,8 +8309,10 @@
 {"nome": "Plataforma por Arbo", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Plataformas de Acción Ciudadanas", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "PlayFirst", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "PlayStation", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "consola de Sony"}
 {"nome": "PlayStation Move", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Playfish Ltd", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Playmobil", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "xoguetes"}
 {"nome": "Plazandreok", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Pluto", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Plutón", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -8172,6 +8350,7 @@
 {"nome": "Por Barbate", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Por Un Mundo Más Justo", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Por un Mundo más Justo", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "PortAmérica", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "festival de música"}
 {"nome": "Portamérica", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Pórtico da Gloria", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Portugália", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -8179,6 +8358,7 @@
 {"nome": "Positiva Compañía de Seguros", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-es"]}
 {"nome": "PostScript", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Postdam", "tipo": "topónimo", "capa": "organizacions", "fontes": ["comunidade"]}
+{"nome": "PowerPoint", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "presentacións de Microsoft"}
 {"nome": "Praestamarcos", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Praestamarici", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Prasar Bharati", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -8188,6 +8368,7 @@
 {"nome": "Premyer Liqasi", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Preveza", "tipo": "topónimo", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Primal Carnage", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Primark", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "roupa"}
 {"nome": "Primavera de Praga", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Primeira Categoría Serie A", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Primeira Divisão", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -8247,6 +8428,7 @@
 {"nome": "Proposta Electoral Renovadora", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Proposta d Esquerres per Catalunya", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Protestas da Praza Tian anmen de 1989", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Proton", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "correo e nube cifrados"}
 {"nome": "Provo", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Proxecto Home", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Proyecto Liberal Español", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -8264,6 +8446,8 @@
 {"nome": "Pueblo Unido Marbella San Pedro", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Pueblo en Asamblea Democrática", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Pueblos Vivos", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Pulitzer", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "premios de xornalismo"}
+{"nome": "Puma", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "roupa deportiva"}
 {"nome": "Puyalon", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Puzznic", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "PxC", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -8272,6 +8456,7 @@
 {"nome": "QP", "tipo": "sigla", "capa": "organizacions", "fontes": ["comunidade"], "nota": "Quoted-Printable (sistema de codificación de binario a texto)"}
 {"nome": "QSA", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Qantas Airways Limited", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Qualcomm", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "fabricante de procesadores"}
 {"nome": "Qualitas Auto", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-es"]}
 {"nome": "Quaoar", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "QuarkXPress", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -8365,15 +8550,18 @@
 {"nome": "Rally París Dakar", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Rántaro", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "RapeLay", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Raspberry Pi", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "ordenador de placa única"}
 {"nome": "Rassemblement Wallonie France", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Ratatouille", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "RePáx", "tipo": "tecla", "capa": "organizacions", "fontes": ["comunidade"]}
+{"nome": "React", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "biblioteca de interfaces"}
 {"nome": "Reagrupament Nacional Català", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Reagrupamento Democrático Africano", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Real Academia Galega", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Real Federación Belga de Fútbol", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Real Santuario del Santísimo Cristo de La Laguna", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Realidad Burgalesa", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Realme", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "marca de teléfonos"}
 {"nome": "Realpha", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Rebelión da Fame", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Rebelión de Irlanda Nova de 1848", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -8389,6 +8577,7 @@
 {"nome": "Red Televisión", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Red Televisiva Megavisión S A", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Red Verde", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Reddit", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "rede social de foros"}
 {"nome": "Rede Bandeirantes", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Rede Globo", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Rede Record", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -8398,6 +8587,7 @@
 {"nome": "Redondelans Adiante", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Redondeláns Adiante", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Redondelans Independentes", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Reebok", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "roupa deportiva"}
 {"nome": "Reforma Social Española", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Reforma de la Administración Publica", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Refundación Comunista", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -8426,6 +8616,7 @@
 {"nome": "Repons Peyizan", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Representación Cannábica Navarra", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Representación Cannábica de Navarra Nafarroako Ordezkaritza Kannabikoa", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Repsol", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "enerxía"}
 {"nome": "Republica Aragonesa", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "República Valenciana Partit Valencianista Europeu", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Republican Sinn Féin", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -8453,6 +8644,7 @@
 {"nome": "Retegal", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Revolta", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Revoltosa Rock", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Revolut", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "banco en liña"}
 {"nome": "Revolutionary United Front", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Rexión e Pobos Solidarios", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Rí", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -8461,6 +8653,7 @@
 {"nome": "Rith", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Riveside", "tipo": "topónimo", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Robin Hood Defender of the Crown", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Roblox", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "videoxogo"}
 {"nome": "Rock in Cambre", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Rocket Chat", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Rockstar Games", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -8485,6 +8678,7 @@
 {"nome": "Rundradion", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Rus de Kiev", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Rush n Attack", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Rust", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "linguaxe de programación"}
 {"nome": "Rus’", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Rutenia", "tipo": "topónimo", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Ryanair", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -8595,6 +8789,7 @@
 {"nome": "Samarcanda", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Samoxicia", "tipo": "topónimo", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Sampo Group", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-es"]}
+{"nome": "Samsung", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "empresa de electrónica"}
 {"nome": "Samurai Champloo", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "San Borondon", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "San Lesmes", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -8672,6 +8867,7 @@
 {"nome": "Servizo Especial de Radiodifusión", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Servizo Público de Radiodifusión", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Seu Vella de Lleida", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Seur", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "mensaxería"}
 {"nome": "Shadow Dancer", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Shadow Racing Cars", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Shadow of the Beast", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -8679,16 +8875,21 @@
 {"nome": "Shannon Racing Cars", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Shapes and Columns", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Sharp Corporation", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Shazam", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "aplicación de recoñecemento de música"}
+{"nome": "Shein", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "comercio electrónico"}
 {"nome": "Shenmue", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Shenmue II", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Shigeru Miyamoto", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Shin-chan", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Shingeki no Kyojin", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Shopify", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "comercio electrónico"}
 {"nome": "Shute Shield", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "SiF", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Siemens", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "empresa de enxeñaría"}
 {"nome": "Siemens AG", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Siempre Casina", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Siete Estrellas Verdes", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Signal", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "aplicación de mensaxería"}
 {"nome": "Silesia", "tipo": "topónimo", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Silgar", "tipo": "topónimo", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Silicon", "tipo": "topónimo", "capa": "organizacions", "fontes": ["comunidade"]}
@@ -8712,6 +8913,7 @@
 {"nome": "Sintrale Kommisje Skûtsjesilen", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Sipadan", "tipo": "topónimo", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Sir Raleigh", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Siri", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "asistente de voz de Apple"}
 {"nome": "Sistema Brasileiro de Televisão", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Sitges Grup Independent", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Sjálvstýrisflokkurin", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -8719,6 +8921,7 @@
 {"nome": "Sky Bet Championship", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "SkyTeam Alliance", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Skype", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Skyscanner", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "comparador de voos"}
 {"nome": "Slack", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Slackware Linux", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Slag in de Rondte", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -8797,11 +9000,13 @@
 {"nome": "Solucións i Futur", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Som del Poble", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Sombriza", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Sónar", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "festival de música"}
 {"nome": "Sonic", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Sonic 2", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Sonic the Hedgehog", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Sonic the Hedgehog 2", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Sonrisas de Bombay", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Sony", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "empresa de electrónica"}
 {"nome": "Sony Corporation", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Sorcery", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Sorrisos de Mumbai", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -8813,12 +9018,14 @@
 {"nome": "Sozialista Abertzaleak", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "SpR", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Space Invaders", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "SpaceX", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "empresa aeroespacial"}
 {"nome": "Spanair S A", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Special Broadcasting Service", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Spectacle", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Spherical", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Spirou e Fantasio", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "SpongeBob SquarePants", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Sporting", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "Sporting Clube de Portugal"}
 {"nome": "Spotify", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Spyker", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Spyker F1", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -8832,9 +9039,14 @@
 {"nome": "Star Wars Jedi Knight Jedi Academy", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "StarCraft", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "StarCraft Brood War", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Starbucks", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "cafetarías"}
+{"nome": "Starlink", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "internet por satélite"}
 {"nome": "State Farm Insurance", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-es"]}
+{"nome": "Steam", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "tenda de videoxogos"}
 {"nome": "Stebro", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Stewie Griffin The Untold Story", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Stradivarius", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "cadea de roupa de Inditex"}
+{"nome": "Strava", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "rexistro de actividade deportiva"}
 {"nome": "Street Cat", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Street Hawk", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Strontrace", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -8842,6 +9054,7 @@
 {"nome": "Stunts", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Subcarpacia", "tipo": "topónimo", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Subida al Naranco", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Sumar", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "partido político"}
 {"nome": "Sun Air", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Sunflower Airlines", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Sunrise Communications AG", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -8881,6 +9094,7 @@
 {"nome": "Sveriges Television", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Swansea", "tipo": "topónimo", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Sweevo s World", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Swift", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "linguaxe de programación de Apple"}
 {"nome": "Swiftair", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Swiss International Air Lines AG", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Swissquote Group Holding S A", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -8961,6 +9175,7 @@
 {"nome": "Talgo", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Talk on Corners World Tour", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Tangerang", "tipo": "topónimo", "capa": "organizacions", "fontes": ["comunidade"]}
+{"nome": "Tanxugueiras", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "grupo de música galego"}
 {"nome": "Tapacari", "tipo": "topónimo", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Tarhuntasa", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Tarhuntassa", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -8975,6 +9190,7 @@
 {"nome": "Team Lotus", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Team Penske", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Team Rebaque", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Teams", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "comunicación de Microsoft"}
 {"nome": "Tec-Mec", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Tecno", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Tecnoloxía", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -8996,6 +9212,7 @@
 {"nome": "Telemiño", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Telenor Denmark", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Telenor Magyarország", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Telepizza", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "restaurantes"}
 {"nome": "Televés", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Televigo", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Televinte", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -9016,6 +9233,7 @@
 {"nome": "Templo Votivo do Mar", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Templo de Santalla de Bóveda", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Templo expiatorio da Sagrada Familia", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Temu", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "comercio electrónico"}
 {"nome": "Tercera Vía Solidarista", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Tercio Católico de Acción Política", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Terra", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -9023,6 +9241,7 @@
 {"nome": "Terra Verda", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Terramex", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Terras de Xallas", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Tesla", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "fabricante de coches eléctricos"}
 {"nome": "Tetractis", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Tetris", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Thai Airways International Public Company Limited", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -9055,14 +9274,19 @@
 {"nome": "The Travelers Companies", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-es"]}
 {"nome": "The Walking Dead", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "The World Conservation Union", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Threads", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "rede social"}
 {"nome": "Thunder", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Thunderbird", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["comunidade"]}
+{"nome": "Thunderbolt", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "conector de datos"}
 {"nome": "Tíbet", "tipo": "topónimo", "capa": "organizacions", "fontes": ["comunidade"]}
+{"nome": "Tidal", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "plataforma de música"}
 {"nome": "Tierra Aragonesa", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Tierra Comunera", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Tierra Comunera Partido Nacionalista Castellano", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Tierra Uno de España", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "TikTok", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "rede social de vídeos curtos"}
 {"nome": "Tikzirin Tikanariyin", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Tinder", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "aplicación de citas"}
 {"nome": "Tippeligaen", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Tirreno-Adriático", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Tjóðveldisflokkurin", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -9097,6 +9321,7 @@
 {"nome": "Tot per Begues", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Totana Unión y Progreso", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Tots per Sant Feliu", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Tottenham", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "Tottenham Hotspur"}
 {"nome": "Tour de Flandres", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Tour de Francia", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Tour de Romandía", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -9122,10 +9347,12 @@
 {"nome": "Transparencia Internacional", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Transparencia per Castellbisbal", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Transxordania", "tipo": "topónimo", "capa": "organizacions", "fontes": ["comunidade"]}
+{"nome": "Trasno", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "Proxecto Trasno, localización de software libre ao galego"}
 {"nome": "Tratado de Niza", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Tratado de libre comercio de América do Norte", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Travian", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Treballem Units per Una Canonja Millor", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Trello", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "organización de tarefas"}
 {"nome": "Tren de Gran Velocidade", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Tres Cantos Unido", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Treyarch", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -9134,6 +9361,7 @@
 {"nome": "Triodos Bank", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Triple Coroa", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Tripolitania", "tipo": "topónimo", "capa": "organizacions", "fontes": ["comunidade"]}
+{"nome": "Trivago", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "comparador de hoteis"}
 {"nome": "Trofeo Antonio Puerta", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Trofeo Catalunya Internacional", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Trofeo Cidade de Vigo", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -9169,7 +9397,9 @@
 {"nome": "Turquestán", "tipo": "topónimo", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Turre 2 000", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Turrican", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Twitch", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "plataforma de emisión en directo"}
 {"nome": "Twitter", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "TypeScript", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "linguaxe de programación"}
 {"nome": "Tyrrell Racing Organisation", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "U D", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "U P LA LINEA", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -9511,7 +9741,9 @@
 {"nome": "UVIV", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "UVY", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "UX", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Uber", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "transporte de pasaxeiros"}
 {"nome": "Ubisoft Entertainment", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Ubuntu", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "distribución de Linux"}
 {"nome": "Ud.Ca", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Uhrencup", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Uiquipedia", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -10001,9 +10233,11 @@
 {"nome": "Vagos Open Air", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Vaipolorío", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Valaquia", "tipo": "topónimo", "capa": "organizacions", "fontes": ["comunidade"]}
+{"nome": "Valedor", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "Valedor do Pobo"}
 {"nome": "Valencia Lliure", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Valentín Paz Andrade", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Valladolid Rugby Asociación Club", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Valorant", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "videoxogo"}
 {"nome": "Valve Software", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Vanguardia de Izquierda Republicana", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Vanwall", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -10027,6 +10261,7 @@
 {"nome": "Vecinos por Sestao Sestaoren Aldeko Auzokoak", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Vecinos por Torrelodones", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Vecinos por el Cambio", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Vegalsa", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "supermercados galegos"}
 {"nome": "Veikkausliiga", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Veïns Amb Veu", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Veins Independents d Abrera", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -10072,16 +10307,20 @@
 {"nome": "Vilatans Units per Torredembarra", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Viliquín", "tipo": "topónimo", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Villamil", "tipo": "topónimo", "capa": "organizacions", "fontes": ["comunidade"]}
+{"nome": "Villarreal", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "Villarreal Club de Fútbol"}
+{"nome": "Vinted", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "compravenda de roupa de segunda man"}
 {"nome": "Viquipèdia", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Virgin Atlantic", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Virgin Atlantic Airways Limited", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Virgin Racing Limited", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Virtual Reality Modeling Language", "tipo": "antropónimo", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Virxe da Rocha", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Visa", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "tarxetas de pagamento"}
 {"nome": "Visceral Games", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Visigodos", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Visual DialogScript", "tipo": "antropónimo", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Visual Memory Unit", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Vivaldi", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "navegador"}
 {"nome": "Vkontakte", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Vlaams Belang", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Vodafone", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -10097,6 +10336,7 @@
 {"nome": "Volta ás once cidades", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Volta ó Alentexo", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Volvo Ocean Race", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Vox", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "partido político"}
 {"nome": "Voz Independiente de Alcalá de los Gazules", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Voz Independiente de Vegas del Genil", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Voz del Pueblo Andaluz", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -10117,6 +10357,7 @@
 {"nome": "WWF", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "WYSIWYG", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Wacom", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["comunidade"]}
+{"nome": "Wallapop", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "compravenda de segunda man"}
 {"nome": "Wallis et Futuna 1ère", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Walter Wolf Racing", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Waqio Land 3", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -10124,6 +10365,8 @@
 {"nome": "Warcraft II Tides of Darkness", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Warcraft Orcs Humans", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Wario Land Super Mario Land 3", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Warner", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "estudio de cine"}
+{"nome": "Waze", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "navegación GPS"}
 {"nome": "WeChat", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Webkit", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Weblate", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["comunidade"]}
@@ -10134,6 +10377,9 @@
 {"nome": "WhatsApp Messenger", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "White Star Line", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "White Star Line of Boston Packets", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Wii", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "consola de Nintendo"}
+{"nome": "Wikidata", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "base de datos libre"}
+{"nome": "Wikimedia", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "fundación da Wikipedia"}
 {"nome": "Wikipedia en Islandés", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Wikipedia en alemán", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Wikipedia en catalán", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -10146,9 +10392,11 @@
 {"nome": "Wikipedia en portugués", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Wikipedia en siciliano", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Wikipedia en vasco", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Wiktionary", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "dicionario libre"}
 {"nome": "WilliamsF1 Team", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Wilusa", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Wimax", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["comunidade"]}
+{"nome": "Windows", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "sistema operativo de Microsoft"}
 {"nome": "Windows Live Messenger", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Winky Dink", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Winky Dink and You", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -10187,6 +10435,7 @@
 {"nome": "Xacarandaina", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Xapeto", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Xardín Botánico Fundación Sales", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Xbox", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "consola de Microsoft"}
 {"nome": "Xémini", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Xenocidio armenio", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Xenocidio de Srebrenica", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -10194,6 +10443,7 @@
 {"nome": "Xépidos", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Xermania", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Xermiade", "tipo": "topónimo", "capa": "organizacions", "fontes": ["comunidade"]}
+{"nome": "Xiaomi", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "empresa de electrónica"}
 {"nome": "Xogos Asiáticos", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Xogos Francófonos", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Xogos Mediterráneos", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -10209,12 +10459,14 @@
 {"nome": "Xornal.com", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Xóvenes Xalleiros", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Xplora", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Xunta", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "Xunta de Galicia"}
 {"nome": "Xunta Nacionalista Asturiana", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Xuntos Cara o Progreso de Toques", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Xúpiter", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Xurelo", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Xuventú Asturianista", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "YOPRAN", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Yahoo", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "portal e buscador"}
 {"nome": "Yangon", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Yleisradio", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Ynternasjonaal Liet", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -10232,16 +10484,20 @@
 {"nome": "ZU", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Zafra Independiente", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Zakspeed", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Zalando", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "comercio electrónico de roupa"}
 {"nome": "Zambia National Broadcasting Corporation", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Zamora Unida", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Zara", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "cadea de roupa de Inditex"}
 {"nome": "Zatch Bell", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Zee TV", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Zelda", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "saga de videoxogos"}
 {"nome": "Zelda II The Adventure of Link", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Zelda no Densetsu Kamigami no Triforce", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Zenity", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "Zennikkū", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Zigurat Software", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Zimbabwe Broadcasting Corporation", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "Zoom", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "videoconferencias"}
 {"nome": "Zurich Insurance Group Ltd", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-es"]}
 {"nome": "Zutik", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Zweites Deutsches Fernsehen", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -10266,6 +10522,7 @@
 {"nome": "deGata", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "disco compacto", "tipo": "antropónimo", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "e-VNG", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "eBay", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "comercio electrónico"}
 {"nome": "eDD", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "efecto Tetris", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "el S A I", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -10283,10 +10540,16 @@
 {"nome": "hunspell gl", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "i.Ronda", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "iCR", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "iCloud", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "nube de Apple"}
+{"nome": "iMac", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "ordenador de Apple"}
+{"nome": "iMessage", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "mensaxería de Apple"}
 {"nome": "iOS", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "iPad", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["comunidade"]}
+{"nome": "iPadOS", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "sistema operativo de Apple para iPad"}
 {"nome": "iPhone", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["comunidade"]}
+{"nome": "iPod", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "reprodutor de Apple"}
 {"nome": "iSiB", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "iTunes", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "música de Apple"}
 {"nome": "iVf", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "iiT", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "iiV", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
@@ -10330,7 +10593,9 @@
 {"nome": "trasno gal", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["comunidade"]}
 {"nome": "trofeo Ramón de Carranza", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "trofeo Teide", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "tvOS", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "sistema operativo de Apple para Apple TV"}
 {"nome": "unión por un Movemento Popular", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
+{"nome": "watchOS", "tipo": "nome_propio", "capa": "organizacions", "fontes": ["engadidos"], "nota": "sistema operativo de Apple para Apple Watch"}
 {"nome": "xogos de rol multixogador masivo online", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "ΣΥΡΙΖΑ", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}
 {"nome": "Συνασπισμός Ριζοσπαστικής Αριστεράς", "tipo": "nome", "capa": "organizacions", "fontes": ["wikipedia-gl"]}

@@ -1494,6 +1494,7 @@
 {"nome": "Abuíme", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Abuín", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Abuja", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wiktionary-gl"]}
+{"nome": "Abuxa", "tipo": "topónimo", "capa": "toponimos", "fontes": ["engadidos"], "nota": "capital de Nixeria"}
 {"nome": "Acaill", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Acalabanda", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Acapulco", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
@@ -2302,6 +2303,7 @@
 {"nome": "Apeadeiro", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Apeldoorn", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Apeninos", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Apia", "tipo": "topónimo", "capa": "toponimos", "fontes": ["engadidos"], "nota": "capital de Samoa"}
 {"nome": "Apiaia", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Apremont", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Aprilia", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
@@ -2962,6 +2964,7 @@
 {"nome": "Ascontra", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Ascuncion", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Asenso", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Asgabat", "tipo": "topónimo", "capa": "toponimos", "fontes": ["engadidos"], "nota": "capital de Turkmenistán"}
 {"nome": "Ashbourne", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Ashdod", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Asheville", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
@@ -2971,6 +2974,7 @@
 {"nome": "Asia", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Asiago", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Asís", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Asmara", "tipo": "topónimo", "capa": "toponimos", "fontes": ["engadidos"], "nota": "capital de Eritrea"}
 {"nome": "Asneiros", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Asnelle de Abaixo", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Asnelle de Arriba", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
@@ -3054,6 +3058,7 @@
 {"nome": "Aubusson", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Aucella", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Auch", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Auckland", "tipo": "topónimo", "capa": "toponimos", "fontes": ["engadidos"], "nota": "cidade de Nova Zelandia"}
 {"nome": "Aude", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Audincourt", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Auga Quente", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
@@ -3340,6 +3345,7 @@
 {"nome": "Banga", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Bangalore", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Bangka", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Bangkok", "tipo": "topónimo", "capa": "toponimos", "fontes": ["engadidos"], "nota": "capital de Tailandia"}
 {"nome": "Bangladesh", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Bangueses", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Bangueses de Abaixo", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
@@ -3620,6 +3626,7 @@
 {"nome": "Belmont-Luthézieu", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Belmonte de Campos", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Belmonte de Miranda", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Belmopan", "tipo": "topónimo", "capa": "toponimos", "fontes": ["engadidos"], "nota": "capital de Belize"}
 {"nome": "Belmopán", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Belo Horizonte", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Belocoi", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
@@ -3848,6 +3855,7 @@
 {"nome": "Bisbarra de Seabra", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Biscaia", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Bisenti", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Bishkek", "tipo": "topónimo", "capa": "toponimos", "fontes": ["engadidos"], "nota": "capital de Kirguizistán"}
 {"nome": "Bisimbre", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Bismarck", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Bispo Araúxo", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
@@ -4070,6 +4078,7 @@
 {"nome": "Braelle", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Braga", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Bragade", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Bragança", "tipo": "topónimo", "capa": "toponimos", "fontes": ["engadidos"], "nota": "cidade de Portugal"}
 {"nome": "Braganey", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Braganza", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Bragunde", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
@@ -4319,6 +4328,7 @@
 {"nome": "Buxantes", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Buxel", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Buxibán", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Buxumbura", "tipo": "topónimo", "capa": "toponimos", "fontes": ["engadidos"], "nota": "antiga capital de Burundi"}
 {"nome": "Büyük Menderes", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Buzacos", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Buzarelos", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
@@ -4668,6 +4678,7 @@
 {"nome": "Canavelas", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Cañaveras", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Canavoso", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Canberra", "tipo": "topónimo", "capa": "toponimos", "fontes": ["engadidos"], "nota": "capital de Australia"}
 {"nome": "Cancale", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Cancela", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Cancela Abrea", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
@@ -5780,6 +5791,7 @@
 {"nome": "Colmenar Viejo", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Colombia", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Colomieu", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Colonia", "tipo": "topónimo", "capa": "toponimos", "fontes": ["engadidos"], "nota": "cidade de Alemaña"}
 {"nome": "Colonnella", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Colorado", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Colorado Springs", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
@@ -5881,6 +5893,7 @@
 {"nome": "Comunidade de Calatayud", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Comunidade de Madrid", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Comunidade de Teruel", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Conakry", "tipo": "topónimo", "capa": "toponimos", "fontes": ["engadidos"], "nota": "capital de Guinea"}
 {"nome": "Conand", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Conca de Barberà", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Concarneau", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
@@ -6655,6 +6668,7 @@
 {"nome": "Dureixa", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Durham", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Duruelo de la Sierra", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Dushanbe", "tipo": "topónimo", "capa": "toponimos", "fontes": ["engadidos"], "nota": "capital de Taxiquistán"}
 {"nome": "Düsseldorf", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Duxame", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "EUA", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
@@ -8284,6 +8298,7 @@
 {"nome": "Hakodate", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Hakui", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Halicarnaso", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Halifax", "tipo": "topónimo", "capa": "toponimos", "fontes": ["engadidos"], "nota": "cidade do Canadá"}
 {"nome": "Halis", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Halki", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Halle", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
@@ -8498,6 +8513,7 @@
 {"nome": "Ialta", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Ianes", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Iaşi", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Iaundé", "tipo": "topónimo", "capa": "toponimos", "fontes": ["engadidos"], "nota": "capital de Camerún"}
 {"nome": "Ibaiondo", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Ibaizabal", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Ibara", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
@@ -8509,6 +8525,7 @@
 {"nome": "Ibi", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Ibia", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Ibias", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Ibiza", "tipo": "topónimo", "capa": "toponimos", "fontes": ["engadidos"], "nota": "illa das Baleares"}
 {"nome": "Ibrillos", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Ibusuki", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Icaria", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
@@ -9273,6 +9290,7 @@
 {"nome": "Khairpur", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Khanato de Crimea", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Kharkiv", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Khartum", "tipo": "topónimo", "capa": "toponimos", "fontes": ["engadidos"], "nota": "capital do Sudán"}
 {"nome": "Khartún", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Khimki", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Khotin", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
@@ -9289,6 +9307,7 @@
 {"nome": "Kimitsu", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Kímolos", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Kingman Reef", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Kingston", "tipo": "topónimo", "capa": "toponimos", "fontes": ["engadidos"], "nota": "capital de Xamaica"}
 {"nome": "Kinnegad", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Kinokawa", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Kinshasa", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wiktionary-gl"]}
@@ -9949,6 +9968,7 @@
 {"nome": "Likiep", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Lille", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Lilleager", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Lilongwe", "tipo": "topónimo", "capa": "toponimos", "fontes": ["engadidos"], "nota": "capital de Malawi"}
 {"nome": "Lima", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Limanowa", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Limburgo", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
@@ -10117,6 +10137,7 @@
 {"nome": "Loroño", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Loroxo", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Los Altos", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Los Ángeles", "tipo": "topónimo", "capa": "toponimos", "fontes": ["engadidos"], "nota": "cidade dos Estados Unidos"}
 {"nome": "Los Arcos", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Los Ausines", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Los Balbases", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
@@ -10287,6 +10308,7 @@
 {"nome": "Madanela", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Madarnás", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Madaura", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Madeira", "tipo": "topónimo", "capa": "toponimos", "fontes": ["engadidos"], "nota": "arquipélago de Portugal"}
 {"nome": "Madelos", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Maderne", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Madison", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
@@ -10352,6 +10374,7 @@
 {"nome": "Makri", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Makronisos", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Makurazaki", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Malabo", "tipo": "topónimo", "capa": "toponimos", "fontes": ["engadidos"], "nota": "capital de Guinea Ecuatorial"}
 {"nome": "Malafretaz", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Málaga", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Malaisia", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
@@ -10365,6 +10388,7 @@
 {"nome": "Maldecrimente", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Maldefilgueiras", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Maldivas", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wiktionary-gl"]}
+{"nome": "Malé", "tipo": "topónimo", "capa": "toponimos", "fontes": ["engadidos"], "nota": "capital das Maldivas"}
 {"nome": "Maletto", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Malgrat de Mar", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Malí", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
@@ -11053,6 +11077,7 @@
 {"nome": "Modúbar de la Emparedada", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Moeche", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Moeiro", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Mogadixo", "tipo": "topónimo", "capa": "toponimos", "fontes": ["engadidos"], "nota": "capital de Somalia"}
 {"nome": "Mogán", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Mogi das Cruzes", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Mogina", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
@@ -11552,6 +11577,7 @@
 {"nome": "Myanmar", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Myōkō", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Mysore", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "N'Djamena", "tipo": "topónimo", "capa": "toponimos", "fontes": ["engadidos"], "nota": "capital do Chad"}
 {"nome": "N'Dxamena", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Naas", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Nabal", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
@@ -11661,6 +11687,7 @@
 {"nome": "Naxos", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Nayarit", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Nayoro", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Naypyidaw", "tipo": "topónimo", "capa": "toponimos", "fontes": ["engadidos"], "nota": "capital de Myanmar"}
 {"nome": "Názara", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Nazaré", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Nazaret", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
@@ -11940,6 +11967,7 @@
 {"nome": "Novo Mundo", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Nowy Targ", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Noyon", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Nuakchot", "tipo": "topónimo", "capa": "toponimos", "fontes": ["engadidos"], "nota": "capital de Mauritania"}
 {"nome": "Nueno", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Nueva Carteya", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Nuevo León", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
@@ -11959,6 +11987,7 @@
 {"nome": "Nuñomoral", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Nuoro", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Nürburg", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Nuremberg", "tipo": "topónimo", "capa": "toponimos", "fontes": ["engadidos"], "nota": "cidade de Alemaña"}
 {"nome": "Núremberg", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Nurieux-Volognat", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Nürnberg", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
@@ -13642,6 +13671,7 @@
 {"nome": "Os Xugueiros", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Osa de la Vega", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Osaca", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Osaka", "tipo": "topónimo", "capa": "toponimos", "fontes": ["engadidos"], "nota": "cidade do Xapón"}
 {"nome": "Ōsakasayama", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Ōsaki", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Osasco", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
@@ -13920,6 +13950,7 @@
 {"nome": "Paraguai", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Paraíba", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Paraíba do Sul", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Paramaribo", "tipo": "topónimo", "capa": "toponimos", "fontes": ["engadidos"], "nota": "capital de Surinam"}
 {"nome": "Parameiras", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Páramo", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Páramo de Boedo", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
@@ -14477,6 +14508,7 @@
 {"nome": "Poços de Caldas", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Podentes", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Podentiños", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Podgorica", "tipo": "topónimo", "capa": "toponimos", "fontes": ["engadidos"], "nota": "capital de Montenegro"}
 {"nome": "Podolsk", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Podrizo", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Podskalie", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
@@ -16145,6 +16177,7 @@
 {"nome": "Rota", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Roteas", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wiktionary-gl"]}
 {"nome": "Róterdan", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Rotterdam", "tipo": "topónimo", "capa": "toponimos", "fontes": ["engadidos"], "nota": "cidade dos Países Baixos"}
 {"nome": "Rotuma", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Roua", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Roucos", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
@@ -17012,6 +17045,7 @@
 {"nome": "San María dos Ánxeles", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "San Mariña de Lemaio", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "San Mariña de Pedrouzos", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "San Marino", "tipo": "topónimo", "capa": "toponimos", "fontes": ["engadidos"], "nota": "país de Europa e a súa capital"}
 {"nome": "San Mariño", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "San Mariño de Fruíme", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "San Mariño de Galegos", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
@@ -18599,6 +18633,7 @@
 {"nome": "San Xusto de Vilaver", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "San Xusto e Pastor de Avión", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "San'yōonoda", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Sanaa", "tipo": "topónimo", "capa": "toponimos", "fontes": ["engadidos"], "nota": "capital do Iemen"}
 {"nome": "Sanamede", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Sanamede do Monte", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Sanamil", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
@@ -20477,6 +20512,7 @@
 {"nome": "Sarandín", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Sarandós", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Saratov", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Saraxevo", "tipo": "topónimo", "capa": "toponimos", "fontes": ["engadidos"], "nota": "capital de Bosnia e Hercegovina"}
 {"nome": "Sarceada", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Sarceda", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Sarces", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
@@ -21346,6 +21382,7 @@
 {"nome": "Tallahassee", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Tállara", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Tallard", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Tallinn", "tipo": "topónimo", "capa": "toponimos", "fontes": ["engadidos"], "nota": "capital de Estonia"}
 {"nome": "Tallo", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Tallobre", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Tallón", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
@@ -21421,6 +21458,7 @@
 {"nome": "Tarumizu", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Tasaraño", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Tasende", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Taskent", "tipo": "topónimo", "capa": "toponimos", "fontes": ["engadidos"], "nota": "capital de Uzbequistán"}
 {"nome": "Tasmania", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Tatabánya", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Tatakoto", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
@@ -21442,6 +21480,7 @@
 {"nome": "Taxes", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Taxiquistán", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Tazacorte", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Tbilisi", "tipo": "topónimo", "capa": "toponimos", "fontes": ["engadidos"], "nota": "capital de Xeorxia"}
 {"nome": "Té", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Teafatule", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Teafuaniua", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
@@ -22055,6 +22094,7 @@
 {"nome": "Tyne e Wear", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Ua Huka", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Ua Pou", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Uagadugu", "tipo": "topónimo", "capa": "toponimos", "fontes": ["engadidos"], "nota": "capital de Burkina Faso"}
 {"nome": "Uagadugú", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Ubangi", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Ubatuba", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
@@ -22088,6 +22128,7 @@
 {"nome": "Uji", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Uki", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Ukiha", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Ulán Bátor", "tipo": "topónimo", "capa": "toponimos", "fontes": ["engadidos"], "nota": "capital de Mongolia"}
 {"nome": "Uleåborg", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Ulfe de Chao", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Ulfe de Malados", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
@@ -23351,6 +23392,7 @@
 {"nome": "Xuadento", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Xuances", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Xuanzo", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
+{"nome": "Xuba", "tipo": "topónimo", "capa": "toponimos", "fontes": ["engadidos"], "nota": "capital do Sudán do Sur"}
 {"nome": "Xubande", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}
 {"nome": "Xubial", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl", "wiktionary-gl"]}
 {"nome": "Xubín", "tipo": "topónimo", "capa": "toponimos", "fontes": ["wikipedia-gl"]}

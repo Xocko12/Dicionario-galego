@@ -58,11 +58,11 @@ Sobre o núcleo normativo hai capas separadas, cada unha coa súa procedencia
 | `digalego` | léxico do Digalego (Xunta) que non está na RAG, con flexión e conxugación | 3 043 (51 verbos) |
 | `comunidade` | léxico de uso real achegado á comunidade de Hunspell-gl (informática, neoloxismos), sen revisión normativa | 816 (101 verbos) |
 | `terminoloxia` | bUSCatermos (USC), TERGAL, Estraviz adaptado, Trasno, Wikipedia galega por áreas, unidades | 378 (19 verbos) |
-| `siglas` | siglas, abreviaturas e símbolos coa súa expansión (Concello de Santiago, UDC, UVigo, CEG, Wikipedia, DRAG) | 2 157 |
-| `toponimos` | lugares de Galicia, localidades, rexións e accidentes xeográficos (Wikipedia e Wiktionary galegos) | 24 071 |
-| `antroponimos` | nomes e apelidos de persoa en contexto galego (INE revisado, Wikipedia e Wiktionary galegos) | 6 708 |
+| `siglas` | siglas, abreviaturas e símbolos coa súa expansión (Concello de Santiago, UDC, UVigo, CEG, Wikipedia, DRAG); máis 62 engadidas a man (*HDMI, 5G, IA, QR, IVA, ERTE, CELGA*…) | 9 090 |
+| `toponimos` | lugares de Galicia, localidades, rexións e accidentes xeográficos (Wikipedia e Wiktionary galegos); máis 42 capitais e cidades engadidas a man | 24 113 |
+| `antroponimos` | nomes e apelidos de persoa en contexto galego (INE revisado, Wikipedia e Wiktionary galegos); máis 212 persoas coñecidas engadidas a man (política, deporte, música, cine, tecnoloxía, letras galegas) | 6 920 |
 | `antroponimos-outras-linguas` | nomes de persoa en inglés, castelán, portugués e húngaro | 85 354 |
-| `organizacions` | organizacións, obras, empresas, produtos (Wikipedia) | 10 354 |
+| `organizacions` | organizacións, obras, empresas, produtos (Wikipedia); máis 265 engadidos a man: empresas, produtos e servizos tecnolóxicos (*Google, Apple, iOS, Windows, Netflix, Bizum*…) e entidades (*Xunta, Inditex, Dépor*…) | 10 619 |
 | `codigos` | códigos ISO 639 (linguas) e ISO 4217 (moedas) | 8 258 |
 | `wordnet` | sentidos de Galnet (ver «Definicións») | 23 409 |
 | `traducions` | equivalentes es/pt/en de Apertium | 30 427 |
@@ -71,6 +71,11 @@ Os verbos das capas léxicas pasan as mesmas comprobacións ca os do núcleo. Os
 nomes compostos (*Santiago de Compostela*, *Galileo Galilei*) reconstrúense das
 etiquetas de n-grama de Hunspell-gl. As capas de Hunspell-gl son GPL-3.0; a de
 WordNet, CC BY 3.0; a de Apertium, GPL-2.0.
+
+O que falta nas fontes engádese a man en `fontes/engadidos/<capa>.dic`, no mesmo
+formato dos módulos de Hunspell-gl (`Nome po:nome_propio  # nota`; nos nomes compostos,
+cada palabra na súa liña con `is:ngrama_Nome_Completo`); `fontes/capas.json` indica en
+`engadidos` a que capa vai cada ficheiro e os rexistros levan a fonte `engadidos`.
 
 ## Estrutura
 
@@ -84,10 +89,12 @@ datos/                  o catálogo (xerado e revisado)
   encliticos.jsonl      formas verbais con pronomes enclíticos de uso real
   nomes.jsonl           nomes propios de persoa
   frecuencias.tsv       frecuencia de cada forma nun corpus
-  correccions/          correccións manuais (revisadas)
+  correccions/          correccións manuais (revisadas); teclado.json: nomes que mandan sobre a palabra común homógrafa
 fontes/
   fontes.json           fontes externas, versión, licenza e uso
+  capas.json            capas opcionais: módulos de Hunspell-gl e engadidos propios
   parches.json          erros corrixidos nas regras de Hunspell-gl
+  engadidos/            palabras engadidas a man (formato dos módulos de Hunspell-gl)
 ferramentas/            scripts en Python (só biblioteca estándar)
 probas/                 probas automáticas
 ```
@@ -263,7 +270,7 @@ python3 ferramentas/construir.py --kobo
 | Ficheiro | Para que serve |
 |---|---|
 | `dicionario.sqlite` | Táboas `lemas` (con `capa`: `rag` = núcleo), `formas` (forma → lema + trazo gramatical), `encliticos` (~800 000, con `orixe`), `locucions`, `sinonimos`, `sentidos` (WordNet), `traducions`, `definicions`, `siglas`, `onomastica`, `codigos`, `nomes`. ~150 MB. |
-| `teclado/gl_wordlist.combined` | ~1,3 millóns de palabras (núcleo, enclíticos, capas léxicas, siglas, topónimos e nomes galegos) con frecuencia no formato dos teclados AOSP; con `dicttool` convértese no `.dict` de HeliBoard e similares. |
+| `teclado/gl_wordlist.combined` | ~1,3 millóns de palabras (núcleo, enclíticos, capas léxicas, siglas, topónimos, antropónimos, organizacións e nomes galegos) con frecuencia no formato dos teclados AOSP; con `dicttool` convértese no `.dict` de HeliBoard e similares. Dos nomes compostos entran as palabras con maiúscula (*York*, *Compostela*, *Einstein*). **Non entra ningún nome propio nin sigla que sexa unha palabra común escrita con maiúsculas** (*ISO*, *Iso*, *Como*, *Paz*, *SE*, *A*): o corpus de frecuencias está en minúsculas, así que tiñan a mesma frecuencia ca *iso*, *como*, *paz*, *se* e *a*, e ao deslizar o teclado escribía a maiúscula. A maiúscula ponna quen escribe e o teclado aplícaa á suxestión. Excepcións revisadas a man en `datos/correccions/teclado.json` (*Londres* sobre a forma verbal *londres*, *Luís* sobre a moeda, *Brasil*, *Xunta*…): entra o nome e a palabra común queda con frecuencia 0. |
 | `teclado/palabras.tsv` | `forma<TAB>frecuencia`, para outros teclados. |
 | `kobo/dicthtml-gl.zip` | Dicionario para Kobo: ao tocar unha forma (*dixeches*) abre o lema (*dicir*) coa súa categoría, conxugación, sinónimos, traducións, sentidos do WordNet e, cando existan, as definicións do Wiktionary. Pendente de probar nun dispositivo. |
 | `kobo/galego.tsv` | O mesmo en formato tabulado (fonte dos tres seguintes, vía [pyglossary](https://github.com/ilius/pyglossary)). |
@@ -288,6 +295,7 @@ Tampouco macOS nin iOS aceptan listas de palabras para o teclado do sistema.
 | `hyph_gl.dic` (extensión de LibreOffice de Trasno) | GPL-3.0 | separación silábica |
 | [FrequencyWords](https://github.com/hermitdave/FrequencyWords) (OpenSubtitles 2018) | CC BY-SA 4.0 | frecuencias |
 | Revisión manual | GPL-3.0 | correccións segundo as *Normas ortográficas e morfolóxicas do idioma galego* (RAG/ILG) |
+| Engadidos a man (`fontes/engadidos/*.dic`) | GPL-3.0 | nomes propios e siglas que faltan nas fontes: tecnoloxía, entidades, capitais, persoas coñecidas |
 
 Todo o proxecto (datos e código) publícase baixo a **GPL-3.0 ou posterior**
 (`LICENSE`).
@@ -299,6 +307,11 @@ Todo o proxecto (datos e código) publícase baixo a **GPL-3.0 ou posterior**
   referencia de `probas/test_conxugacions.py`.
 - **Revisar contra a RAG**: compara a táboa dun verbo co conxugador da RAG; se
   coincide, engádea ás probas de referencia para que quede protexida.
+- **Engadir un nome propio ou unha sigla** que falta (unha empresa, unha cidade, unha
+  persoa): unha liña en `fontes/engadidos/<capa>.dic` (`Nome po:nome_propio  # nota`;
+  nos nomes compostos, cada palabra na súa liña con `is:ngrama_Nome_Completo`; `/999`
+  se só vale coa súa grafía, como *iOS*), executa `ferramentas/capas.py <capa>` e revisa
+  o cambio en `datos/capas/`. As palabras comúns non van aí: o núcleo é só da RAG.
 
 ## Folla de ruta
 

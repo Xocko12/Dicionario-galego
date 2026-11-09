@@ -47,6 +47,21 @@ class ProbasCapas(unittest.TestCase):
                     if r["categoria"] == "verbo":
                         self.assertEqual(len(r["taboa"]["indicativo.presente"]), 6)
 
+    def test_engadidos(self):
+        # fontes/engadidos/*.dic: o que falta nos módulos de Hunspell-gl, coa fonte «engadidos»
+        org = {r["nome"]: r for r in ler("capas/organizacions.jsonl")}
+        for n in ("iOS", "iPhone", "Google", "Apple", "Microsoft", "Netflix", "Bizum", "Massimo Dutti"):
+            self.assertIn(n, org)
+        self.assertEqual(org["Google"]["fontes"], ["engadidos"])
+        self.assertEqual(org["iOS"]["fontes"], ["comunidade"])
+        siglas = {r["forma"]: r for r in ler("capas/siglas.jsonl")}
+        self.assertIn("alta definición", siglas["HDMI"]["nota"])
+        self.assertIn("5G", siglas)
+        toponimos = {r["nome"] for r in ler("capas/toponimos.jsonl")}
+        self.assertTrue({"Canberra", "Ulán Bátor", "Los Ángeles", "Londres"} <= toponimos)
+        antroponimos = {r["nome"] for r in ler("capas/antroponimos.jsonl")}
+        self.assertTrue({"Barack Obama", "Rosalía de Castro", "Ludwig van Beethoven", "Luís Tosar"} <= antroponimos)
+
     def test_codigos(self):
         cod = {(r["codigo"], r["tipo"]) for r in ler("capas/codigos.jsonl")}
         self.assertIn(("glg", "iso639"), cod)
