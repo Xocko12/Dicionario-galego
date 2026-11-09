@@ -252,6 +252,7 @@ python3 ferramentas/anomalias.py     # patróns de conxugación
 python3 -m unittest discover -s probas
 
 pip install -r requirements.txt      # para o seguinte
+sh ferramentas/compilar_dicttool.sh  # opcional: para teclado/main_gl.dict
 python3 ferramentas/validar.py --hunspell
 python3 ferramentas/construir.py --kobo
 ```
@@ -264,13 +265,14 @@ python3 ferramentas/construir.py --kobo
 |---|---|
 | `dicionario.sqlite` | Táboas `lemas` (con `capa`: `rag` = núcleo), `formas` (forma → lema + trazo gramatical), `encliticos` (~800 000, con `orixe`), `locucions`, `sinonimos`, `sentidos` (WordNet), `traducions`, `definicions`, `siglas`, `onomastica`, `codigos`, `nomes`. ~150 MB. |
 | `teclado/gl_wordlist.combined` | ~1,3 millóns de palabras (núcleo, enclíticos, capas léxicas, siglas, topónimos e nomes galegos) con frecuencia no formato dos teclados AOSP; con `dicttool` convértese no `.dict` de HeliBoard e similares. |
+| `teclado/main_gl.dict` | **Dicionario do teclado** (formato binario AOSP v2) para HeliBoard e outros teclados baseados no de AOSP: en HeliBoard, Axustes > Idiomas > Galego > Engadir dicionario. Xérase só se existe `fontes/cache/dicttool_aosp.jar` (`sh ferramentas/compilar_dicttool.sh` compílao desde o código de Android; precisa un JDK). A última versión está tamén no repositorio, en `teclado/main_gl.dict`, e nas *releases*. |
 | `teclado/palabras.tsv` | `forma<TAB>frecuencia`, para outros teclados. |
 | `kobo/dicthtml-gl.zip` | Dicionario para Kobo: ao tocar unha forma (*dixeches*) abre o lema (*dicir*) coa súa categoría, conxugación, sinónimos, traducións, sentidos do WordNet e, cando existan, as definicións do Wiktionary. Pendente de probar nun dispositivo. |
 | `kobo/galego.tsv` | O mesmo en formato tabulado (fonte dos tres seguintes, vía [pyglossary](https://github.com/ilius/pyglossary)). |
 | `stardict/galego.*` | StarDict: GoldenDict (Linux/Windows/Android) e apps de dicionario de iOS e Android que lean StarDict. |
 | `hunspell/gl_ES.dic` + `gl_ES.aff` | **Corrector ortográfico** para macOS (Pages, Mail, Safari…: copiar a `~/Library/Spelling/` substituíndo calquera `gl_ES` anterior, e escoller «Galego» en Axustes > Teclado > Ortografía), LibreOffice, Firefox, Thunderbird. Coa estrutura de Hunspell-gl (regras e dicionario de Trasno cos módulos da RAG e as nosas correccións ás regras), máis as nosas formas que esa base non recoñece (nomes, topónimos, siglas, capas, formas revisadas coa RAG) e, marcadas como **prohibidas**, as que Hunspell-gl acepta pero están mal segundo o conxugador da RAG (*cubrido*, *conviron*, *éras*, *vaiache*…; lista en `hunspell/prohibidas.tsv`). Non vale para iOS/iPadOS. |
 | `hyphenation/hyph_gl.dic` | Patróns de separación silábica (orixinal ISO-8859-1 e copia UTF-8), para LibreOffice, a biblioteca Hyphen e lectores electrónicos. |
-| `apple/Galego.apple/` | Fonte para **Dictionary.app de macOS**. Nun Mac, co *Dictionary Development Kit* (en *Additional Tools for Xcode*, gratuíto) instalado en `/Applications/Utilities/`: `cd Galego.apple && make && make install` (o Makefile xa usa o formato 10.11; sen o kit en `/Applications/Utilities/`, `make DICT_BUILD_TOOL_DIR=/ruta/ao/kit`). Despois actívase en Dictionary.app → Axustes. Funciona co «Buscar» de tres dedos en todo macOS: ao buscar unha forma (*dixeches*, *díxocho*) ábrese o lema. Probado en macOS 27 (~210 MB instalado). |
+| `apple/Galego.apple/` | Fonte para **Dictionary.app de macOS**. Nun Mac, co *Dictionary Development Kit* (en *Additional Tools for Xcode*, gratuíto) instalado en `/Applications/Utilities/`: `cd Galego.apple && make && make install` (o Makefile xa usa o formato 10.11; sen o kit en `/Applications/Utilities/`, `make DICT_BUILD_TOOL_DIR=/ruta/ao/kit`). Despois actívase en Dictionary.app → Axustes. Funciona co «Buscar» de tres dedos en todo macOS: ao buscar unha forma (*dixeches*, *díxocho*) ábrese o lema. Probado en macOS 27 (~210 MB instalado) e en Mac OS X 10.7 Lion, compilado con `make DICT_BUILD_OPTS="-v 10.6"` e copiado a `~/Library/Dictionaries/`. |
 
 **iOS** non permite engadir dicionarios ao «Buscar» do sistema; as opcións son unha
 app de dicionario que lea StarDict, ou unha app propia co `dicionario.sqlite`.
@@ -308,5 +310,7 @@ Todo o proxecto (datos e código) publícase baixo a **GPL-3.0 ou posterior**
 - [ ] Revisar unha mostra das formas sistemáticas con enclíticos contra a RAG.
 - [x] Probar `apple/Galego.apple` nun Mac (macOS 27).
 - [ ] Probar o StarDict nunha app de iOS.
-- [ ] Xerar o `.dict` do teclado e probar o dicionario Kobo nun dispositivo.
+- [x] Xerar o `.dict` do teclado.
+- [ ] Probar `teclado/main_gl.dict` en HeliBoard nun dispositivo.
+- [ ] Probar o dicionario Kobo nun dispositivo.
 - [ ] Comunicar a Proxecto Trasno os erros atopados (borrador en `docs/informe-trasno.md`).
