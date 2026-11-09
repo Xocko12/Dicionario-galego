@@ -181,6 +181,10 @@ TECLADO_NOMES = {"toponimos", "antroponimos", "cidades", "nomes-outras-linguas"}
 TECLADO_NOMES_SIMPLES = {"organizacions", "clubs"}
 # só os nomes dunha palabra que veñan destas fontes (persoas con artigo na Wikipedia; non o Wiktionary enteiro)
 TECLADO_NOMES_FONTES = {"antroponimos-outras-linguas": {"wikipedia-en", "wikipedia-es", "wikipedia-pt"}}
+# Capas de nomes foráneos: un nome que só estea nelas (e non nas galegas nin nos engadidos a man) vai ao
+# teclado coa frecuencia mínima, por debaixo de calquera palabra ou nome galego (FORANEO).
+TECLADO_FORANEAS = {"cidades", "nomes-outras-linguas", "antroponimos-outras-linguas", "clubs"}
+FORANEO = -1
 
 _PALABRA_TECLADO = re.compile(r"^[0-9A-Za-z\u00C0-\u024F\u1E00-\u1EFF][0-9A-Za-z\u00C0-\u024F\u1E00-\u1EFF·'’.&+-]*$")
 
@@ -216,6 +220,9 @@ def formas_teclado(lemas, conx, frec, nomes, encl, capas) -> dict[str, int]:
     a moeda) entran coa frecuencia do corpus e a palabra común queda con 0.
     Dos nomes compostos (Nova York, Albert Einstein, Santiago de Compostela) entran as
     palabras con maiúscula inicial.
+    Os nomes que só veñen das capas foráneas (cidades do mundo, clubs de fóra, nomes doutras
+    linguas) e non aparecen no corpus levan FORANEO (-1): a frecuencia mínima do teclado, por
+    debaixo das formas galegas sen frecuencia.
     """
     formas: dict[str, int] = {}
     for r in lemas + [r for r in capas["lexico"] if r["capa"] in TECLADO_LEXICO]:
@@ -232,6 +239,7 @@ def formas_teclado(lemas, conx, frec, nomes, encl, capas) -> dict[str, int]:
     siglas = {r["forma"] for r in capas["siglas"] if r["capa"] == "siglas"}
     candidatos: list[str] = list(siglas)
     candidatos += nomes
+    galegos: set[str] = set(candidatos)   # nomes que están nalgunha capa galega ou nos engadidos a man
     for r in capas["onomastica"]:
         capa = r["capa"]
         if " " not in r["nome"]:
@@ -245,7 +253,11 @@ def formas_teclado(lemas, conx, frec, nomes, encl, capas) -> dict[str, int]:
         else:   # dos compostos das demais capas («Partido Independiente de Osuna») nada
             continue
         # sen siglas con puntos (A.C.CO.) nin códigos (2M1207b): nos nomes son lixo
-        candidatos += [p for p in partes if "." not in p and p[0].isalpha()]
+        partes = [p for p in partes if "." not in p and p[0].isalpha()]
+        candidatos += partes
+        # os engadidos a man contan como galegos (clubs e persoas que se nomean aquí), agás os nomes doutras linguas
+        if capa not in TECLADO_FORANEAS or ("engadidos" in r["fontes"] and capa != "nomes-outras-linguas"):
+            galegos.update(partes)
     # entre variantes dun mesmo nome (Pol/POL, NIF/Nif, YouTube/Youtube) escóllese a que máis veces
     # aparece nas capas; en empate, a sigla e logo a grafía máis deliberada (_grafia)
     veces: dict[str, int] = {}
@@ -267,6 +279,8 @@ def formas_teclado(lemas, conx, frec, nomes, encl, capas) -> dict[str, int]:
             for f in comuns[clave]:
                 formas[f] = 0
             n = max(n, 1)
+        elif n == 0 and p not in galegos:
+            n = FORANEO
         formas[p] = n
     return formas
 
@@ -279,7 +293,10 @@ def construir_teclado(lemas, conx, frec, nomes, encl, capas) -> int:
 
     def escala(n: int) -> int:
         # Escala logarítmica 0-255 do formato AOSP; as formas que non aparecen
-        # no corpus (moitas formas verbais) quedan baixas pero presentes.
+        # no corpus (moitas formas verbais) quedan baixas pero presentes (10), e os
+        # nomes foráneos sen uso no corpus, no mínimo (1).
+        if n == FORANEO:
+            return 1
         if n <= 0:
             return 10
         return max(15, min(255, round(255 * math.log(n + 1) / math.log(maximo + 1))))
@@ -292,7 +309,7 @@ def construir_teclado(lemas, conx, frec, nomes, encl, capas) -> int:
             fh.write(f" word={forma},f={escala(n)}\n")
     with (saida / "palabras.tsv").open("w", encoding="utf-8") as fh:
         for forma, n in orde:
-            fh.write(f"{forma}\t{n}\n")
+            fh.write(f"{forma}\t{max(n, 0)}\n")
     return len(formas)
 
 

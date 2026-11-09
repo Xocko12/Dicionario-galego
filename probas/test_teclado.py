@@ -48,7 +48,7 @@ class ProbasTeclado(unittest.TestCase):
                   "Compostela", "Galicia", "Vigo", "Ourense", "Einstein", "Castelao", "Rosalía", "Obama",
                   "Dépor", "ONU", "NIF", "Xoán", "Uxía",
                   # cidades, municipios e freguesías; clubs; nomes doutras linguas
-                  "Mumbai", "Alcobendas", "Gaia", "Hospitalet", "Bayern", "Dortmund", "Arenteiro", "Lakers",
+                  "Bombai", "Alcobendas", "Gaia", "Hospitalet", "Bayern", "Dortmund", "Arenteiro", "Lakers",
                   "John", "Lennon", "McCartney", "Jon", "Ander", "Pol", "Juan", "Müller", "Jürgen", "Etxeberria",
                   "Qashqai", "Levi's", "Nutella", "Lacoste"):
             with self.subTest(nome=n):
@@ -69,6 +69,20 @@ class ProbasTeclado(unittest.TestCase):
                 self.assertTrue(lixo not in self.formas, lixo)
         for f in self.formas:
             self.assertNotIn(" ", f)
+
+    def test_nomes_foraneos_coa_frecuencia_minima(self):
+        # só nas capas foráneas (cidades do mundo, clubs de fóra, nomes doutras linguas) e sen uso no corpus
+        for n in ("Gröbenzell", "Korschenbroich", "Vialonga", "Dupont", "Etxeberria"):
+            with self.subTest(nome=n):
+                self.assertEqual(self.formas[n], construir.FORANEO)
+        # nomes galegos ou engadidos a man (clubs, persoas), aínda que non estean no corpus, por riba deles
+        for n in ("Arenteiro", "Castelao", "Canberra", "Lakers", "Bayern", "iPhone"):
+            with self.subTest(nome=n):
+                self.assertEqual(self.formas[n], 0)
+        # un nome que tamén está nunha capa galega non é foráneo (Madrid, Dortmund en toponimos e cidades)
+        self.assertGreaterEqual(self.formas["Madrid"], 0)
+        self.assertEqual(self.formas["Dortmund"], 0)
+        self.assertGreater(self.formas["Londres"], 0)
 
     def test_frecuencias(self):
         # os nomes propios toman a frecuencia da súa forma en minúsculas (o corpus está en minúsculas)

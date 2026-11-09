@@ -272,15 +272,77 @@ def _csv(ruta: Path, **kw):
 ARTIGOS_INE = re.compile(r"^(.+), (A|O|As|Os|El|La|Los|Las|Els|Les|Es|Sa|Ses|L'|S')$")
 
 
+def _sen_acentos(texto: str) -> str:
+    return "".join(c for c in unicodedata.normalize("NFD", texto) if unicodedata.category(c) != "Mn").lower()
+
+
+# Exónimos ingleses que o dicionario inglés non recolle como tales e GeoNames usa como nome principal.
+EXONIMOS_INGLESES = {"Prague", "Warsaw", "Krakow", "Cracow", "Bucharest", "Belgrade", "Kiev", "Athens", "Rome", "Milan",
+                     "Naples", "Florence", "Venice", "Turin", "Genoa", "Geneva", "Zurich", "Basel", "Lucerne", "Munich",
+                     "Cologne", "Nuremberg", "Hanover", "Brussels", "Antwerp", "Bruges", "Ghent", "The Hague", "Copenhagen",
+                     "Gothenburg", "Lisbon", "Seville", "Saragossa", "Corunna", "Moscow", "Saint Petersburg", "Cairo",
+                     "Alexandria", "Damascus", "Beirut", "Jerusalem", "Mecca", "Medina", "Baghdad", "Tehran", "Beijing",
+                     "Nanjing", "Canton", "Tokyo", "Kyoto", "Seoul", "Bangkok", "Rangoon", "Bombay", "Calcutta", "Madras",
+                     "Havana", "Mexico City", "Bogota", "Panama City", "Casablanca", "Marrakesh", "Tangier", "Algiers",
+                     "Tunis", "Tripoli", "Khartoum", "Addis Ababa", "Mogadishu", "Cape Town", "Luanda", "Kinshasa",
+                     "Brazzaville", "Riyadh", "Jeddah", "Muscat", "Sanaa", "Yerevan", "Tashkent", "Ashgabat", "Ulaanbaatar",
+                     "Kathmandu", "Dhaka", "Jakarta", "Phnom Penh", "Vientiane", "Kuala Lumpur", "Singapore", "Taipei",
+                     "Pyongyang", "Lhasa", "Macau", "Quebec", "Montreal", "Asuncion", "Brasilia", "Belem", "Oporto",
+                     "Luxembourg", "Monaco", "Nice", "Toulouse", "Bordeaux", "Strasbourg", "Lille", "Rheims", "Dunkirk",
+                     "Lausanne", "Berne", "Hamburg", "Dresden", "Leipzig", "Frankfurt", "Stuttgart", "Dusseldorf",
+                     "Aachen", "Mainz", "Trier", "Freiburg", "Heidelberg", "Salzburg", "Innsbruck", "Graz", "Ljubljana",
+                     "Zagreb", "Sarajevo", "Skopje", "Tirana", "Sofia", "Chisinau", "Minsk", "Vilnius", "Riga", "Tallinn",
+                     "Helsinki", "Stockholm", "Oslo", "Reykjavik", "Rotterdam", "Amsterdam", "Utrecht", "Gdansk", "Wroclaw",
+                     "Poznan", "Lodz", "Szczecin", "Lublin", "Brno", "Bratislava", "Kosice", "Budapest", "Cluj", "Timisoara",
+                     "Iasi", "Constanta", "Plovdiv", "Thessaloniki", "Patras", "Heraklion", "Nicosia", "Istanbul", "Ankara",
+                     "Izmir", "Smyrna", "Antalya", "Bursa", "Trebizond", "Odessa", "Kharkiv", "Lviv", "Sevastopol",
+                     "Kaliningrad", "Volgograd", "Kazan", "Samara", "Nizhny Novgorod", "Yekaterinburg", "Novosibirsk",
+                     "Vladivostok", "Irkutsk", "Mumbai", "Kolkata", "Chennai", "Delhi", "New Delhi", "Lahore", "Karachi",
+                     "Kabul", "Tbilisi", "Baku", "Bishkek", "Dushanbe", "Almaty", "Astana", "Colombo", "Hanoi", "Saigon",
+                     "Manila", "Shanghai", "Tianjin", "Chongqing", "Wuhan", "Shenzhen", "Guangzhou", "Hong Kong", "Osaka",
+                     "Nagoya", "Yokohama", "Sapporo", "Busan", "Incheon", "Ottawa", "Toronto", "Vancouver", "Lima", "Quito",
+                     "Caracas", "Montevideo", "Santiago", "Salvador", "Recife", "Fortaleza", "Manaus", "Curitiba",
+                     "Sao Paulo", "Rio de Janeiro", "Buenos Aires", "Cordoba", "Rosario", "Mendoza", "Valparaiso", "Medellin",
+                     "Cali", "Cartagena", "Guayaquil", "La Paz", "Sucre", "Santa Cruz", "Tegucigalpa", "Managua",
+                     "San Salvador", "Guatemala City", "Kingston", "Port-au-Prince", "Santo Domingo", "San Juan",
+                     "Nassau", "Nairobi", "Kampala", "Kigali", "Dar es Salaam", "Dodoma", "Lusaka", "Harare", "Maputo",
+                     "Antananarivo", "Windhoek", "Gaborone", "Pretoria", "Johannesburg", "Durban", "Lagos", "Abuja",
+                     "Accra", "Dakar", "Bamako", "Niamey", "Ouagadougou", "Abidjan", "Yamoussoukro", "Conakry", "Freetown",
+                     "Monrovia", "Lome", "Cotonou", "Porto-Novo", "Yaounde", "Douala", "Libreville", "Malabo", "Bangui",
+                     "N'Djamena", "Asmara", "Djibouti", "Juba", "Benghazi", "Rabat", "Fez", "Fes", "Oran", "Constantine",
+                     "Sfax", "Sousse", "Nouakchott", "Bissau", "Praia", "Mogadiscio", "Bombay"}
+
+
 def importar_cidades(capa: str, cfg: dict) -> list[dict]:
     """GeoNames (cidades de máis de 15 000 habitantes), municipios de España (INE) e
-    concellos e freguesías de Portugal (CAOP)."""
+    concellos e freguesías de Portugal (CAOP).
+
+    GeoNames dá en inglés os nomes das cidades famosas (Vienna, Munich, Lisbon), que xa
+    teñen nome galego na capa toponimos (Viena, Múnic, Lisboa): quedan fóra os nomes que
+    son palabras do dicionario inglés e non están en toponimos, e os que só se distinguen
+    dun topónimo galego polos acentos (Berlin/Berlín, Paris/París). Nos países de fala
+    inglesa non se aplica o filtro do dicionario: alí eses son os nomes (Leeds, Yonkers)."""
+    # nos países de fala inglesa os nomes do dicionario inglés son os nomes das cidades (Leeds, Yonkers)
+    paises_ingles = {"United Kingdom", "Ireland", "United States", "Canada", "Australia", "New Zealand", "South Africa",
+                     "Jamaica", "Trinidad and Tobago", "Barbados", "Bahamas", "Belize", "Guyana", "Malta", "Nigeria",
+                     "Ghana", "Kenya", "Uganda", "Zambia", "Zimbabwe", "Liberia", "Sierra Leone", "Gibraltar", "Bermuda"}
+    toponimos = {json.loads(l)["nome"] for l in (SAIDA / "toponimos.jsonl").open(encoding="utf-8")}
+    toponimos_sen_acentos = {_sen_acentos(t) for t in toponimos}
+    ingles = set()
+    for liña in (I.CACHE / "libreoffice-en" / "en_GB.dic").read_text(encoding="utf-8", errors="replace").splitlines():
+        palabra = liña.split("/", 1)[0].strip()
+        if palabra[:1].isupper():
+            ingles.add(palabra)
     saida = []
     for nome, pais, rexion, _ in list(_csv(I.CACHE / "geonames-cidades" / "world-cities.csv"))[1:]:
+        nome = nome.strip()
         # fóra os distritos numerados (Lyon 02, Marseille 13) e os nomes con barras ou parénteses
         if re.search(r"\d$", nome) or any(c in nome for c in "/()"):
             continue
-        saida.append(_rexistro(capa, nome.strip(), "topónimo", "geonames-cidades", f"{pais}" + (f" ({rexion})" if rexion else "")))
+        exonimo = (nome in ingles or nome in EXONIMOS_INGLESES) and pais not in paises_ingles
+        if nome not in toponimos and (exonimo or _sen_acentos(nome) in toponimos_sen_acentos):
+            continue
+        saida.append(_rexistro(capa, nome, "topónimo", "geonames-cidades", f"{pais}" + (f" ({rexion})" if rexion else "")))
     for _, _, _, _, nome in list(_csv(I.CACHE / "ine-municipios" / "municipios.csv"))[1:]:
         for variante in nome.split("/"):      # Donostia/San Sebastián
             variante = variante.strip()

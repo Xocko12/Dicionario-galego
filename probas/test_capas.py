@@ -64,9 +64,22 @@ class ProbasCapas(unittest.TestCase):
 
     def test_cidades_clubs_e_nomes_doutras_linguas(self):
         cidades = {r["nome"] for r in ler("capas/cidades.jsonl")}
-        self.assertTrue({"Mumbai", "A Coruña", "L'Hospitalet de Llobregat", "Donostia", "San Sebastián",
-                         "Vila Nova de Gaia", "Lisboa", "Aguada de Cima", "Munich"} <= cidades)
+        self.assertTrue({"Yonkers", "A Coruña", "L'Hospitalet de Llobregat", "Donostia", "San Sebastián",
+                         "Vila Nova de Gaia", "Lisboa", "Aguada de Cima", "Korschenbroich", "Leeds"} <= cidades)
+        self.assertNotIn("Mumbai", cidades)   # en galego é Bombai (toponimos)
         self.assertFalse(any(n.endswith(" 02") for n in cidades))   # Lyon 02
+        # os nomes ingleses das cidades con nome galego quedan fóra
+        toponimos = {r["nome"] for r in ler("capas/toponimos.jsonl")}
+        paises = {}
+        for r in ler("capas/cidades.jsonl"):
+            paises.setdefault(r["nome"], set()).add(r.get("nota", "").split(" (")[0])
+        for n, pais in (("Vienna", "Austria"), ("Munich", "Germany"), ("Lisbon", "Portugal"), ("Berlin", "Germany"),
+                        ("Paris", "France"), ("London", "United Kingdom"), ("Warsaw", "Poland"), ("Rome", "Italy"),
+                        ("Moscow", "Russian Federation"), ("Beijing", "China"), ("Havana", "Cuba")):
+            with self.subTest(nome=n):
+                self.assertNotIn(pais, paises.get(n, set()))
+        self.assertIn("Canada", paises["London"])   # London (Ontario) si: alí chámase así
+        self.assertTrue({"Viena", "Múnic", "Lisboa", "Berlín", "París", "Londres"} <= toponimos)
         clubs = {r["nome"]: r for r in ler("capas/clubs.jsonl")}
         for n in ("Bayern", "Dortmund", "Celta", "Arenteiro", "Obradoiro", "Lakers", "Real Madrid", "Bayern München"):
             self.assertIn(n, clubs)

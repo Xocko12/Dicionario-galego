@@ -135,8 +135,10 @@
       "fontes": [
         "geonames-cidades",
         "ine-municipios",
-        "caop-freguesias"
-      ]
+        "caop-freguesias",
+        "libreoffice-en"
+      ],
+      "nota": "GeoNames dá en inglés os nomes das cidades famosas (Vienna, Munich): deixan de entrar se son palabras do dicionario inglés e non están na capa toponimos (que ten o nome galego), ou se só se distinguen dun topónimo galego polos acentos (Berlin/Berlín)."
     },
     "nomes-outras-linguas": {
       "tipo": "onomastica",

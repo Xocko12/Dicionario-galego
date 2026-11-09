@@ -245,5 +245,14 @@
     "ficheiros": {
       "baby-names.csv": "https://raw.githubusercontent.com/hadley/data-baby-names/b6525579cf7d2816e77fa885299445d15a09c906/baby-names.csv"
     }
+  },
+  "libreoffice-en": {
+    "nome": "Dicionario inglés de LibreOffice (en_GB), só como filtro",
+    "web": "https://github.com/LibreOffice/dictionaries",
+    "licenza": "LGPL-2.1 / BSD (Marco A. G. Pinto, David Bartlett)",
+    "uso": "Capa cidades: para deixar fóra os nomes ingleses das cidades (Vienna, Munich, Lisbon) que GeoNames dá en inglés e que xa teñen nome galego na capa toponimos. Non se copia nada del.",
+    "ficheiros": {
+      "en_GB.dic": "https://raw.githubusercontent.com/LibreOffice/dictionaries/c0865a85eb67dc377f2cf8e8fe2c4fa9e53f0dcb/en/en_GB.dic"
+    }
   }
 }
