@@ -5,6 +5,7 @@
 Saídas:
     dist/dicionario.sqlite            base de datos para calquera ferramenta
     dist/teclado/gl_wordlist.combined lista para teclados AOSP/HeliBoard (dicttool)
+    dist/teclado/main_gl.dict         dicionario binario do teclado (se hai fontes/cache/dicttool_aosp.jar)
     dist/teclado/palabras.tsv         forma<TAB>frecuencia (formato xenérico)
     dist/kobo/galego.tsv              glosario (pyglossary -> Kobo, StarDict...)
     dist/hunspell/gl_ES.dic/.aff      corrector Hunspell (macOS/Pages, LibreOffice, Firefox)
@@ -315,7 +316,23 @@ def construir_teclado(lemas, conx, frec, nomes, encl, capas) -> int:
     with (saida / "palabras.tsv").open("w", encoding="utf-8") as fh:
         for forma, n in orde:
             fh.write(f"{forma}\t{max(n, 0)}\n")
+    construir_dict_teclado(saida)
     return len(formas)
+
+
+def construir_dict_teclado(saida: Path) -> None:
+    """main_gl.dict (formato binario AOSP v2) se hai dicttool (ferramentas/compilar_dicttool.sh)."""
+    import os
+    import shutil
+    import subprocess
+    jar = Path(os.environ.get("DICTTOOL_JAR", RAIZ / "fontes" / "cache" / "dicttool_aosp.jar"))
+    java = shutil.which("java")
+    if not jar.exists() or not java:
+        print("dist/teclado/main_gl.dict: omitido (sen dicttool; ver ferramentas/compilar_dicttool.sh)")
+        return
+    subprocess.run([java, "-Xmx4g", "-jar", str(jar), "makedict", "-s", str(saida / "gl_wordlist.combined"),
+                    "-d", str(saida / "main_gl.dict")], check=True, stdout=subprocess.DEVNULL)
+    print(f"dist/teclado/main_gl.dict: {(saida / 'main_gl.dict').stat().st_size // 1024} KiB")
 
 
 # -- Glosario / Kobo ----------------------------------------------------------
