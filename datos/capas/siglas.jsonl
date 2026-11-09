@@ -1,9 +1,11 @@
 {"forma": "$", "tipo": "símbolo", "capa": "siglas", "fontes": ["santiago"], "nota": "dólar"}
 {"forma": "%", "tipo": "símbolo", "capa": "siglas", "fontes": ["santiago", "ceg"], "nota": "tanto por cento"}
+{"forma": "2FA", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "autenticación de dous factores"}
 {"forma": "3G", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "terceira xeración de telefonía móbil"}
 {"forma": "4G", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "cuarta xeración de telefonía móbil"}
 {"forma": "4K", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "resolución de vídeo de ~4000 píxeles de ancho"}
 {"forma": "5G", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "quinta xeración de telefonía móbil"}
+{"forma": "6G", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "sexta xeración de telefonía móbil"}
 {"forma": "8K", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "resolución de vídeo de ~8000 píxeles de ancho"}
 {"forma": "A", "tipo": "abreviatura", "capa": "siglas", "fontes": ["santiago", "udc"], "nota": "alteza"}
 {"forma": "A", "tipo": "símbolo", "capa": "siglas", "fontes": ["drag", "volga"]}
@@ -63,6 +65,7 @@
 {"forma": "AEB", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "uvigo", "wikipedia-gl"], "nota": "Asociación Española de Banca Privada"}
 {"forma": "AEC", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Atomic Energy Commission (Comisión de Enerxía Atómica) (EUA)"}
 {"forma": "AECA", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Asociación Española de Contabilidade e Administración de Empresa || Asociación Española de Compañías Aéreas"}
+{"forma": "AECC", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Asociación Española Contra o Cancro"}
 {"forma": "AECI", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Axencia Española de Cooperación Internacional"}
 {"forma": "AEDE", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Asociación de Editores de Diarios Españoles (Asociación de Editores de Xornais Españois)"}
 {"forma": "AEDENAT", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Asociación Ecoloxista de Defensa"}
@@ -80,6 +83,7 @@
 {"forma": "AEMA", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Asociación Española de Medios Audiovisuales (Asociación Española de Medios Audiovisuais)"}
 {"forma": "AEME", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Asociación de Emigrantes Marroquíes en España (Asociación de Emigrantes Marroquís en España)"}
 {"forma": "AEMET", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Axencia Estatal de Meteoroloxía"}
+{"forma": "AEMPS", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Axencia Española de Medicamentos e Produtos Sanitarios"}
 {"forma": "AENA", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Aeropuertos Españoles y Navegación Aérea (Aeroportos Españois e Navegación Aérea)"}
 {"forma": "AENOR", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "udc"], "nota": "Asociación Española de Normalización y Certificación (Asociación Española de Normalización e Certificación)"}
 {"forma": "AEORMA", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Asociación Española para la Ordenación del Medio Ambiente (Asociación Española para a Ordenación do Medio Ambiente)"}
@@ -91,6 +95,7 @@
 {"forma": "AETINAPE", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Asociación Española de Titulados Náutico-Pesqueros (Asociación Española de Titulados Náutico-Pesqueiros)"}
 {"forma": "AETIVA", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Asociación Española de Titulados Náutico-Pesqueiros"}
 {"forma": "AEUE", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Asociación de Editoriales Universitarias Españolas (Asociación de Editoriais Universitarias Españolas)"}
+{"forma": "AFA", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "asociación de familiares de enfermos de alzhéimer"}
 {"forma": "AFANIAS", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Asociación de Familias con Niños y Adultos Subnormales (Asociación de Familias con Nenos e Adultos Subnormais). Hoxe a asociación mantén as siglas AFANIAS pero mudou o nome ao de Asociación pro personas con discapacidad Intelectual (Asociación pro persoas con discapacidade intelectual)"}
 {"forma": "AFC", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Véxase CAF"}
 {"forma": "AFCENT", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Allied Forces Central Europe (Forzas Aliadas de Europa Central) (OTAN)"}
@@ -114,14 +119,17 @@
 {"forma": "AGADIC", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Axencia Galega das Industrias Culturais"}
 {"forma": "AGAL", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "udc", "wikipedia-gl"], "nota": "Associaçom Galega da Língua (Asociación Galega da Lingua)"}
 {"forma": "AGAPI", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Asociación Galega de Produtoras Independentes"}
+{"forma": "AGASP", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Academia Galega de Seguridade Pública"}
 {"forma": "AGAV", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Asociación Galega de Artistas Audiovisuais"}
 {"forma": "AGCE", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Asociación Galega para a Cultura e a Ecoloxía"}
 {"forma": "AGCR", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Asociación Galega de Ciencia Rexional"}
+{"forma": "AGE", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Asociación Galega de Editoras"}
 {"forma": "AGFA", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Aktiengesellschaft für Anilinfabrikation [Fábrica de Produtos Fotográficos convertidas polo uso nunha palabra común)"}
 {"forma": "AGH", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Asociación Galega de Historiadores"}
 {"forma": "AGIP", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Azienda Generale Italiana Petroli (Empresa Xeral Italiana de Petróleos)"}
 {"forma": "AGP", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "AGPETAL", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Asociación Galega de Profesorado Especialista en Técnicas de Audición e Linguaxe"}
+{"forma": "AGPI", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Asociación Galega de Profesionais da Ilustración"}
 {"forma": "AGX", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Asociación Galega de Xermanista (USC)"}
 {"forma": "AHU", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "udc", "uvigo", "wikipedia-gl"], "nota": "Arquivo Histórico Universitario"}
 {"forma": "AI", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "udc", "uvigo", "wikipedia-gl"], "nota": "Amnistía Internacional"}
@@ -137,12 +145,14 @@
 {"forma": "AIESEC", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Asociación Internacional de Estudantes de Ciencias Económicas e Empresariais"}
 {"forma": "AIF", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Asociación Internacional de Fomento"}
 {"forma": "AILIC", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Associació Internacional de Llengua i Literatura Catalanes (Asociación Internacional de Lingua e Literatura Catalás)"}
+{"forma": "AIMEN", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Asociación de Investigación Metalúrxica do Noroeste"}
 {"forma": "AINE", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "AINS", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Administración Institucional de Sanidad Nacional (Administración Institucional de Sanidade Nacional) (España)"}
 {"forma": "AIRCENT", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Allied Air Forces in Central Europe (Forzas Aéreas Aliadas en Europa Central) (OTAN)"}
 {"forma": "AISA", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Axuda Integral Santiaguesa do Alcohólico"}
 {"forma": "AISS", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Administración Institucional de Servicios Socioprofesionales (Administración Institucional de Servizos Socioprofesionais) (España) || Asociación Internacional de Seguridade Social"}
 {"forma": "AIU", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "uvigo", "wikipedia-gl"], "nota": "Asociación Internacional de Universidades"}
+{"forma": "AKA", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "coñecido como (also known as)"}
 {"forma": "ALADI", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Asociación Latinoamericana de Integración"}
 {"forma": "ALALC", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Asociación Latinoamericana de Libre Comercio [en inglés. LAFTA: Latin American Free Trade Association]"}
 {"forma": "ALCA", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Área de Libre Comercio das Americas"}
@@ -158,9 +168,11 @@
 {"forma": "AMI", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Acordo Multirexional de Investimentos || Acordo Marco Interconfederal || Assembleia da Mocidade Independentista (Asemblea da Mocidade Independentista)"}
 {"forma": "AMIP", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Acoro Monetario Intereuropeo de Pagamentos [en inglés, IEPA: Intra-European Payments Agreement]"}
 {"forma": "AMM", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Antimissile Missile (Mísil Antimísil)"}
+{"forma": "AMPA", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "asociación de nais e pais de alumnos"}
 {"forma": "AMPAS", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Academy of Motion Pictures Arts and Sciences (Academia de Ciencias e Artes Cinematográficas) (EUA)"}
 {"forma": "AMS", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Asociación de Mulleres para a Saúde"}
 {"forma": "AMTEGA", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Axencia para a Modernización Tecnolóxica de Galicia"}
+{"forma": "AN", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Audiencia Nacional"}
 {"forma": "ANA", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Asssembleia Nacional Antimilitarista (Asemblea Nacional Antimilitarista) (Galicia)"}
 {"forma": "ANAFE", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Asociación Nacional de Árbitros de Fútbol Españoles (Asociación Nacional de Árbitros de Fútbol Españois)"}
 {"forma": "ANASE", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Asociación nacional de Agentes de Seguros (Asociación Nacional de Axentes de Seguros) (España)"}
@@ -170,6 +182,7 @@
 {"forma": "ANDA", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Asociación Nacional para la Defensa de los Animales (Asociación Nacional para a Defensa dos Animais)"}
 {"forma": "ANECA", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "udc", "wikipedia-gl"], "nota": "Agencia Nacional de Evaluación de la Calidad y Acreditación (Axencia Nacional de Avaliación da Calidade e Acreditación) (España)"}
 {"forma": "ANFAC", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Asociación Nacional de Fabricantes de Automóviles y Camiones (Asociación Nacional de Fabricantes de Automóbiles e Camións) (España)"}
+{"forma": "ANFACO", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Asociación Nacional de Fabricantes de Conservas"}
 {"forma": "ANIGP", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Asociación Nacional de Informadores Gráficos de Prensa (España)"}
 {"forma": "ANIS", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Asociación Nacional de Informadores de la Salud (Asociación Nacional de Informadores da Saúde) (España)"}
 {"forma": "ANOC", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Asemblea Nacional de Obxección de Consciencia"}
@@ -185,6 +198,7 @@
 {"forma": "APCEA", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Association Parlamentaire pour la Coopération Euro-Arabe (Asociación Parlamentaria pola Cooperación Euro-Árabe"}
 {"forma": "APD", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "ceg"], "nota": "Asociación para el Progreso de la Dirección (Asociación para o Progreso da Dirección) (España)"}
 {"forma": "APDH", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Asamblea Permanente por los Derechos Humanos (Asemblea Permanente polos Dereitos Humanos) (España)"}
+{"forma": "APDR", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Asociación Pola Defensa da Ría"}
 {"forma": "APE", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Asemblea Parlamentaria Europea"}
 {"forma": "APEC", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Asia-Pacific Economic Cooperation (Cooperación Económica Asia-Pacífico)"}
 {"forma": "APETI", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Asociación Profesional Española de Tradutores e Intérpretes"}
@@ -213,6 +227,7 @@
 {"forma": "ARS", "tipo": "símbolo", "capa": "siglas", "fontes": ["santiago"], "nota": "peso arxentino"}
 {"forma": "AS-PG", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "udc", "uvigo", "wikipedia-gl"], "nota": "Asociación Sócio-Pedagóxica Galega"}
 {"forma": "ASA", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Association of South-East Asia (Asociación dos Países do Sudeste Asiático)"}
+{"forma": "ASAP", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "o antes posible"}
 {"forma": "ASCII", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "wikipedia-gl"], "nota": "American Standard Code for Information Interchange (Código Estándar Norteamericano para o Intercambio da Información)"}
 {"forma": "ASEAN", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Association of South East Asian Nations (Asociación de Nacións do Sueste Asiático)"}
 {"forma": "ASEF", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Asia-Europe Foundation (Fundación Asia- Europa)"}
@@ -226,6 +241,7 @@
 {"forma": "ASL", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Asociación de Gobernos Locais"}
 {"forma": "ASM", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "air-to-surface missile (mísil aire-terra)"}
 {"forma": "ASP", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
+{"forma": "ASPACE", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "asociación de parálise cerebral"}
 {"forma": "ASPANAES", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Asociación de Nais e Pais de Nenos Autistas e Psicóticos"}
 {"forma": "ASPLA", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Asociación Sindical de Pilotos de líneas Aéreas (Asociación Sindical de Pilotos de Liñas Aéreas) (España)"}
 {"forma": "ASR", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Véxase RAF"}
@@ -242,6 +258,7 @@
 {"forma": "ATM", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Asynchronous Transfer Modo (Modo de Transferencia Asíncrona)"}
 {"forma": "ATP", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "wikipedia-gl"], "nota": "Asociación de Tenistas Profesionales (Asociación de Tenistas Profesionais)"}
 {"forma": "ATR", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Agrupación de Telespectadores y Radioyentes (Agrupación de Telespectadores e Radiooíntes) (España)"}
+{"forma": "ATRIGA", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Axencia Tributaria de Galicia"}
 {"forma": "ATS", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "udc", "uvigo", "ceg", "wikipedia-gl"], "nota": "Axudante Técnico Sanitario"}
 {"forma": "AUCALSA", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "wikipedia-gl"], "nota": "Autopistas Concesionaria Astur-Leonesa, Sociedade Anónima (Autoestradas Concesionarias Astur-Leonesa, Sociedade Anónima) (España)"}
 {"forma": "AUDASA", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "wikipedia-gl"], "nota": "Autopistas del Atlántico, Sociedad Anónima (Autoestradas do Atlántico, Sociedade Anónima) (España)"}
@@ -249,6 +266,7 @@
 {"forma": "AUGE", "tipo": "sigla", "capa": "siglas", "fontes": ["uvigo", "wikipedia-gl"], "nota": "Asociación Universitaria Galega de Estudantes"}
 {"forma": "AUM", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "air-to-underwater missile (mísil aire-submarino)"}
 {"forma": "AVE", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "wikipedia-gl"], "nota": "Alta Velocidad Española (Alta Velocidade Española)"}
+{"forma": "AVI", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Audio Video Interleave"}
 {"forma": "AVIACO", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Aviación y Comercio, Sociedad Anónima (Aviación e Comercio, Sociedade Anónima) (España)"}
 {"forma": "AVIANCO", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Aerovías Nacionales de Colombia, Sociedad Anónima (Aerovías Nacionais de Colombia, Sociedade Anónima) (Colombia)"}
 {"forma": "AVIATECA", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Aviación Guatemalteca (Guatemala)"}
@@ -259,6 +277,8 @@
 {"forma": "AWK", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "AWS", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Amazon Web Services"}
 {"forma": "AXE", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "udc"], "nota": "Administración Xeral do Estado"}
+{"forma": "AXEGA", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Axencia Galega de Emerxencias"}
+{"forma": "AXI", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Axencia Galega de Infraestruturas"}
 {"forma": "AXU", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "A\\", "tipo": "abreviatura", "capa": "siglas", "fontes": ["santiago"], "nota": "á atención, ao coidado de"}
 {"forma": "Ac", "tipo": "símbolo", "capa": "siglas", "fontes": ["drag", "volga", "santiago"], "nota": "actinio"}
@@ -266,6 +286,7 @@
 {"forma": "Aena", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Aeroportos Españois e Navegación Aérea"}
 {"forma": "Aenor", "tipo": "sigla", "capa": "siglas", "fontes": ["uvigo", "ceg", "wikipedia-gl"], "nota": "Asociación Española de Normalización e Certificación"}
 {"forma": "Aeron", "tipo": "abreviatura", "capa": "siglas", "fontes": ["drag"]}
+{"forma": "AfD", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Alternative für Deutschland"}
 {"forma": "Ag", "tipo": "símbolo", "capa": "siglas", "fontes": ["drag", "volga", "santiago"], "nota": "prata"}
 {"forma": "Agr", "tipo": "abreviatura", "capa": "siglas", "fontes": ["drag"]}
 {"forma": "Al", "tipo": "símbolo", "capa": "siglas", "fontes": ["drag", "volga", "santiago"], "nota": "aluminio"}
@@ -290,6 +311,8 @@
 {"forma": "Axu", "tipo": "sigla", "capa": "siglas", "fontes": ["uvigo"], "nota": "Axudante de Universidade"}
 {"forma": "B", "tipo": "abreviatura", "capa": "siglas", "fontes": ["santiago", "udc"], "nota": "Beato/a"}
 {"forma": "B", "tipo": "símbolo", "capa": "siglas", "fontes": ["drag", "volga", "santiago"], "nota": "bel"}
+{"forma": "B1", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "nivel intermedio do Marco Común Europeo"}
+{"forma": "B2", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "nivel intermedio alto do Marco Común Europeo"}
 {"forma": "BAE", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Véxase Aresbank"}
 {"forma": "BALTAP", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Baltic Allied Power (Mando Aliado para o Báltico) (OTAN)"}
 {"forma": "BAM", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Baikalo-Amúrskaya Maguiptral (liña ferroviaria Baikal-Amur) (Rusia)"}
@@ -351,7 +374,9 @@
 {"forma": "BSCH", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Banco Santander Central Hispano (España)"}
 {"forma": "BSD", "tipo": "símbolo", "capa": "siglas", "fontes": ["santiago"], "nota": "dólar das Bahamas"}
 {"forma": "BSE", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
+{"forma": "BSO", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "banda sonora orixinal"}
 {"forma": "BT", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "British Telecom (Telecomunicacións británicas)"}
+{"forma": "BTW", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "por certo (by the way)"}
 {"forma": "BUBA", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Bundesbank (Banco Central de Alemaña)"}
 {"forma": "BUGALICIA", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Consorcio de Bibliotecas Universitarias de Galicia"}
 {"forma": "BUIT", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Bureau de l’Union Internationale De Télecommunications (Oficina da Unión Internacional de Comunicacións)"}
@@ -379,11 +404,14 @@
 {"forma": "C", "tipo": "abreviatura", "capa": "siglas", "fontes": ["ceg"], "nota": "Código"}
 {"forma": "C", "tipo": "símbolo", "capa": "siglas", "fontes": ["drag", "volga", "santiago", "ceg"], "nota": "culombio, coulomb"}
 {"forma": "C.G.S.", "tipo": "abreviatura", "capa": "siglas", "fontes": ["volga"]}
+{"forma": "C1", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "nivel avanzado do Marco Común Europeo"}
+{"forma": "C2", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "nivel de dominio do Marco Común Europeo"}
 {"forma": "CA", "tipo": "sigla", "capa": "siglas", "fontes": ["ceg"]}
 {"forma": "CAD", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "wikipedia-gl"], "nota": "Computer Aided Design (Deseño Asistido por Ordenador)"}
 {"forma": "CAE", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "wikipedia-gl"], "nota": "Comités Abertos de Escolas"}
 {"forma": "CAF", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "udc", "uvigo", "wikipedia-gl"], "nota": "Comités Abertos de Facultade"}
 {"forma": "CAMPSA", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Compañía Arrendataria del Monopolio de Petróleos, Sociedad Anónima (Compañía Arrendataria do Monopolio de Petróleos, Sociedade Anónima) (España)"}
+{"forma": "CAPTCHA", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "proba de Turing pública automática"}
 {"forma": "CASA", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Construcciones Aeronáuticas, Sociedad Anónima (Construcións Aeronáuticas, Sociedade Anónima) (España)"}
 {"forma": "CATV", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Cable Televisión (Televisión por Cable)"}
 {"forma": "CAU", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Centro de Atención ao Usuario"}
@@ -409,7 +437,9 @@
 {"forma": "CDN", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Centro Dramático Nacional (España)"}
 {"forma": "CDR", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "wikipedia-gl"], "nota": "Comité das Rexións (UE)"}
 {"forma": "CDS", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Centro Democrático Social (España)"}
+{"forma": "CDS-PP", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Centro Democrático e Social – Partido Popular"}
 {"forma": "CDSG", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Centro de Documentación Sociolingüística de Galicia"}
+{"forma": "CDU", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Christlich Demokratische Union"}
 {"forma": "CE", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "udc", "uvigo", "ceg", "wikipedia-gl"], "nota": "Comunidade Europea (agora UE) | Comisión Europea (UE) || Consello de Europa (UE) || Constitución Española || Casa de Europa (USC)"}
 {"forma": "CEA", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Centro de Estudos Avanzados (USC) || Confederación Europea de Agricultura || Comisionado Europeo do Automóbil"}
 {"forma": "CEAPA", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Confederación Española de Asociaciones de Padres de Alumnos (Confederación Española de Asociacións de Pais de Alumnos) (España)"}
@@ -442,10 +472,12 @@
 {"forma": "CESGA", "tipo": "sigla", "capa": "siglas", "fontes": ["udc", "wikipedia-gl"], "nota": "Centro de Supercomputación de Galicia"}
 {"forma": "CESID", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Centro Superior de Información de la Defensa (Centro Español de Información da Defensa) (España)"}
 {"forma": "CET", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
+{"forma": "CETIM", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Centro Tecnolóxico de Investigación Multisectorial"}
 {"forma": "CETMAR", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Centro Tecnolóxico do Mar (Vigo)"}
 {"forma": "CEU", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Centro de Estudios Universitarios (Centro de Estudos Universitarios)"}
 {"forma": "CF", "tipo": "abreviatura", "capa": "siglas", "fontes": ["drag"]}
 {"forma": "CFC", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "wikipedia-gl"], "nota": "Clorofluorcarbonatos"}
+{"forma": "CFO", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "director financeiro"}
 {"forma": "CGAC", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "udc"], "nota": "Centro Galego de Arte Contemporánea"}
 {"forma": "CGAI", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "udc"], "nota": "Centro Galego de Artes da Imaxe"}
 {"forma": "CGENDL", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Coordinadora Galega de Equipos de Normalización e Dinamización Lingüística"}
@@ -454,11 +486,13 @@
 {"forma": "CGRL", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Consello Galego de Relacións Laborais"}
 {"forma": "CGT", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Confederación General del Trabajo (Confederadión Xeral do Traballo)"}
 {"forma": "CHF", "tipo": "símbolo", "capa": "siglas", "fontes": ["santiago"], "nota": "franco de Suíza"}
+{"forma": "CHOP", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Complexo Hospitalario de Pontevedra"}
 {"forma": "CHUAC", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Complexo Hospitalario Universitario da Coruña"}
 {"forma": "CHUF", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Complexo Hospitalario Universitario de Ferrol"}
 {"forma": "CHUO", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Complexo Hospitalario Universitario de Ourense"}
 {"forma": "CHUS", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Complexo Hospitalario Universitario de Santiago de Compostela"}
 {"forma": "CHUVI", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Complexo Hospitalario Universitario de Vigo"}
+{"forma": "CI", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "integración e entrega continuas"}
 {"forma": "CIA", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "wikipedia-gl"], "nota": "Central Intelligence Aggency"}
 {"forma": "CICA", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Centro de Investigacións Científicas Avanzadas"}
 {"forma": "CICET", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Comisión Interministerial de Ciencia e Tecnoloxía"}
@@ -468,10 +502,12 @@
 {"forma": "CIES", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Centro de Investigación Económica y Social (Centro de Investigación Económica e Social) (España) ||"}
 {"forma": "CIF", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "ceg"], "nota": "Código de Identificación Fiscal"}
 {"forma": "CIFCA", "tipo": "sigla", "capa": "siglas", "fontes": ["uvigo", "wikipedia-gl"], "nota": "Centro Internacional de Formación de Ciencias Ambientais"}
+{"forma": "CIFP", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "centro integrado de formación profesional"}
 {"forma": "CIFS", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "CIG", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "uvigo", "ceg", "wikipedia-gl"], "nota": "Confederación Intersindical Galega"}
 {"forma": "CIMA", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Comisión Interministerial de Medio Ambiente (Comisión Interministerial de Ambiente (España)"}
 {"forma": "CIME", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Comité Intergobernamental para as Migracións Europeas [ en inglés, ICEM: Intergovernmental Comittee for European Migration]"}
+{"forma": "CIMUS", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Centro Singular de Investigación en Medicina Molecular e Enfermidades Crónicas"}
 {"forma": "CINA", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Comisión Internacional de Navegación Aérea"}
 {"forma": "CIP", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Centro de Investigación para a Paz || Club Internacional de Prensa (Madrid)"}
 {"forma": "CIPM", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Comité Intenational des Poids et Mesures (Comité Internacional de Pesos e Medidas)"}
@@ -481,6 +517,7 @@
 {"forma": "CIT", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Centro de Investigacións Tecnolóxicas"}
 {"forma": "CITEEC", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Centro de Innovación Tecnolóxica en Edificación e Enxeñaría Civil"}
 {"forma": "CITIC", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Centro de Investigación de Tecnoloxías da Información e da Comunicación"}
+{"forma": "CITIUS", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Centro Singular de Investigación en Tecnoloxías Intelixentes"}
 {"forma": "CITT", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Centro de Innovación e Transferencia Tecnolóxica (USC)"}
 {"forma": "CIU", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Convergència i Unió (Converxencia e Unión)"}
 {"forma": "CIXTEC", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Centro Informático para a Xestión Tributaria, Económico-Financeira e Contable"}
@@ -491,25 +528,32 @@
 {"forma": "CMA", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Consello Mundial da Alimentación"}
 {"forma": "CMI", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Comité Marítimo Internacional"}
 {"forma": "CMNL", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Consello Municipal de Normalización Lingüística"}
+{"forma": "CMS", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "sistema de xestión de contidos"}
 {"forma": "CMT", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Comisión do Mercado das Telecomunicacións || Confédération Mondiale du Travail (Confederación Mundial do Traballo)"}
+{"forma": "CMYK", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "cian, maxenta, amarelo e negro"}
 {"forma": "CNAE", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Clasificación Nacional de Actividades Económicas (España)"}
 {"forma": "CNI", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Centro Nacional de Inteligencia (Centro Nacional de Intelixencia) (España)"}
+{"forma": "CNIO", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Centro Nacional de Investigacións Oncolóxicas"}
 {"forma": "CNL", "tipo": "sigla", "capa": "siglas", "fontes": ["uvigo", "wikipedia-gl"], "nota": "Comisión de Normalización Lingüística"}
 {"forma": "CNMV", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "wikipedia-gl"], "nota": "Comisión Nacional del Mercado de Valores (Comisión Nacional do Mercado de Valores) (España)"}
 {"forma": "CNN", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Cable News Network (Cadea de television por cable de noticias) (EUA)"}
 {"forma": "CNOC", "tipo": "sigla", "capa": "siglas", "fontes": ["uvigo", "wikipedia-gl"], "nota": "Consello Nacional de Obxectores de Conciencia"}
 {"forma": "CNP", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Consello Nacional Palestino"}
 {"forma": "CNT", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "uvigo", "ceg", "wikipedia-gl"], "nota": "Confederación Nacional de Trabajadores (Confederación Nacional de Traballadores) (España) || Confederación Nacional do Traballo"}
+{"forma": "CO2", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "dióxido de carbono"}
 {"forma": "COAG", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "udc", "uvigo", "ceg", "wikipedia-gl"], "nota": "Colexio de Arquitectos de Galicia || Coordinadora de Organizaciones de Agricultores y Ganaderos (Coordinadora de organizacións de Labregos e Gandeiros) (España)"}
 {"forma": "COAP", "tipo": "sigla", "capa": "siglas", "fontes": ["uvigo", "wikipedia-gl"], "nota": "Comisión de Ordenación Académica e Profesorado"}
 {"forma": "COBOL", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
+{"forma": "COCEMFE", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Confederación Española de Persoas con Discapacidade Física e Orgánica"}
 {"forma": "COE", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Comité Olímpico Español"}
 {"forma": "COETICOR", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Colexio Oficial de Enxeñeiros Técnicos Industriais da Coruña"}
 {"forma": "COFE", "tipo": "sigla", "capa": "siglas", "fontes": ["ceg"]}
 {"forma": "COGAMI", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "udc"], "nota": "Confederación Galega de Minusválidos"}
 {"forma": "COI", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "wikipedia-gl"], "nota": "Comité Olímpico Internacional"}
 {"forma": "COIE", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "uvigo", "wikipedia-gl"], "nota": "Centro de Orientación e Información Estudiantil"}
+{"forma": "CONCACAF", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Confederation of North, Central America and Caribbean Association Football"}
 {"forma": "CONCAPA", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Confederación Católica de Padres de Alumnos (Confederación Católica de Pais de Alumnos) (España)"}
+{"forma": "CONMEBOL", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Confederación Sudamericana de Fútbol"}
 {"forma": "COP", "tipo": "símbolo", "capa": "siglas", "fontes": ["santiago"], "nota": "peso de Colombio"}
 {"forma": "COPE", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Cadena de Ondas Populares Españolas (Cadea de Ondas Populares Españolas)"}
 {"forma": "CORDIS", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Servizo de Información Comunitario sobre Investigación e Desenvolvemento (Community Research and Development Information Service)"}
@@ -522,8 +566,11 @@
 {"forma": "COVID-19", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "enfermidade por coronavirus de 2019"}
 {"forma": "COX", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "CP", "tipo": "sigla", "capa": "siglas", "fontes": ["ceg"]}
+{"forma": "CPI", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "centro público integrado"}
 {"forma": "CPU", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "uvigo", "ceg", "wikipedia-gl"], "nota": "Unidade Central de Proceso"}
+{"forma": "CRA", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "colexio rural agrupado"}
 {"forma": "CRC", "tipo": "símbolo", "capa": "siglas", "fontes": ["santiago"], "nota": "colón de Costa Rica"}
+{"forma": "CRDO", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "consello regulador da denominación de orixe"}
 {"forma": "CRM", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "CRPIH", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Centro Ramón Piñeiro para a Investigación en Humanidades"}
 {"forma": "CRPM", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Conferencia de Regiones Periféricas y Marítimas (Conferencia de Rexións Periféricas e Marítimas)"}
@@ -537,10 +584,14 @@
 {"forma": "CSIF", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "uvigo", "ceg", "wikipedia-gl"], "nota": "Confederación Sindical Independiente de Funcionarios (Confederación Sindical Independente de Funcionarios) (España)"}
 {"forma": "CSN", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Consejo de Seguridad Nuclear (Consello de Seguridade Nuclear) (España)"}
 {"forma": "CSP", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Cuerpo Superior de Policía (Corpo Superior de Policía) (España)"}
+{"forma": "CSS", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "follas de estilo en fervenza"}
+{"forma": "CSU", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Christlich-Soziale Union"}
+{"forma": "CSV", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "valores separados por comas"}
 {"forma": "CTAG", "tipo": "sigla", "capa": "siglas", "fontes": ["ceg"]}
 {"forma": "CTG", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Confederación de Traballadores de Galicia"}
 {"forma": "CTNE", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Compañía de Teléfonos Nacional de España"}
 {"forma": "CTNL", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "udc", "ceg"], "nota": "Coordinadora de traballadores e traballadoras pola normalización lingüística"}
+{"forma": "CTO", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "director de tecnoloxía"}
 {"forma": "CTT", "tipo": "sigla", "capa": "siglas", "fontes": ["uvigo", "ceg", "wikipedia-gl"], "nota": "Centro de Transferencia de Tecnoloxía"}
 {"forma": "CTU", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Contribución Territorial Urbana"}
 {"forma": "CUFIE", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Centro Universitario de Formación e Innovación Educativa"}
@@ -551,6 +602,7 @@
 {"forma": "CV", "tipo": "símbolo", "capa": "siglas", "fontes": ["santiago", "ceg"], "nota": "cabalo de vapor"}
 {"forma": "CVI", "tipo": "sigla", "capa": "siglas", "fontes": ["uvigo", "wikipedia-gl"], "nota": "Cruz Vermella Internacional"}
 {"forma": "CVUDC", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Campus Virtual da Universidade da Coruña"}
+{"forma": "CVV", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "código de verificación da tarxeta"}
 {"forma": "CXG", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "uvigo", "ceg"], "nota": "Consello da Xuventude de Galicia"}
 {"forma": "CXPX", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "udc"], "nota": "Consello Xeral do Poder Xudicial [en castelán, CGPJ: Consejo General del Poder Judicial] (España)"}
 {"forma": "CXTG", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "wikipedia-gl"], "nota": "Confederación Xeral de Traballadores Galegos da Natureza"}
@@ -564,6 +616,7 @@
 {"forma": "Cesid", "tipo": "sigla", "capa": "siglas", "fontes": ["ceg"]}
 {"forma": "Cf", "tipo": "símbolo", "capa": "siglas", "fontes": ["drag", "volga", "santiago"], "nota": "californio"}
 {"forma": "Ci", "tipo": "símbolo", "capa": "siglas", "fontes": ["drag", "volga", "santiago"], "nota": "curio (unidade de radioactividade)"}
+{"forma": "CiQUS", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Centro Singular de Investigación en Química Biolóxica e Materiais Moleculares"}
 {"forma": "CiU", "tipo": "sigla", "capa": "siglas", "fontes": ["uvigo", "wikipedia-gl"], "nota": "Convergència i Unió"}
 {"forma": "CiUG", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Comisión Interuniversitaria de Galicia"}
 {"forma": "Cima", "tipo": "sigla", "capa": "siglas", "fontes": ["ceg"]}
@@ -592,6 +645,7 @@
 {"forma": "DCI", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Denominación Común Internacional (nome xenérico dos fármacos)"}
 {"forma": "DDD", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "DEA", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Diploma de estudos avanzados"}
+{"forma": "DELE", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "diploma de español como lingua estranxeira"}
 {"forma": "DGC", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Dirección General de Catastro (Dirección Xeral de Catastro) (España)"}
 {"forma": "DGS", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Dirección General de Seguridad (Dirección Xeral de Seguridade) [hoxe DSE: Dirección de la Seguridad del Estado (Dirección da Saguridade do Estado)] (España)"}
 {"forma": "DGT", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Dirección General de Tráfico (Dirección Xeral de Tráfico) (España)"}
@@ -601,6 +655,7 @@
 {"forma": "DIT", "tipo": "sigla", "capa": "siglas", "fontes": ["ceg"]}
 {"forma": "DITE", "tipo": "sigla", "capa": "siglas", "fontes": ["ceg"]}
 {"forma": "DIU", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Dispositivo Intrauterino"}
+{"forma": "DIY", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "faino ti mesmo"}
 {"forma": "DJ", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "pinchadiscos (disc jockey)"}
 {"forma": "DKK", "tipo": "símbolo", "capa": "siglas", "fontes": ["santiago"], "nota": "coroa de Dinamarca"}
 {"forma": "DLG", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Departamento de Lingua Galega"}
@@ -616,6 +671,8 @@
 {"forma": "DOP", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "DOP", "tipo": "símbolo", "capa": "siglas", "fontes": ["santiago"], "nota": "peso da República Dominicana"}
 {"forma": "DOS", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
+{"forma": "DOUE", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Diario Oficial da Unión Europea"}
+{"forma": "DOWN", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Down Galicia"}
 {"forma": "DPI", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "DRAE", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Diccionario de la Real Academia Española (Dicionario da Real Academia Española)"}
 {"forma": "DRAG", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Dicionario da Real Academia Galega"}
@@ -644,6 +701,7 @@
 {"forma": "EAG", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Estatuto de Autonomía de Galicia"}
 {"forma": "EAJ", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Euzko Alderdi Jeltzailea [tamén PNV: Partido Nacionalista Vasco]"}
 {"forma": "EAU", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Emiratos Árabes Unidos"}
+{"forma": "EBAU", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "avaliación do bacharelato para o acceso á universidade"}
 {"forma": "ECG", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Electrocardiograma"}
 {"forma": "ECOFIN", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Consello de Ministros de Economía e Finanzas"}
 {"forma": "ECTS", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Sistema europeo de transferencia de créditos (European Credit Transfer System)"}
@@ -651,10 +709,17 @@
 {"forma": "EDAR", "tipo": "sigla", "capa": "siglas", "fontes": ["ceg", "wikipedia-gl"]}
 {"forma": "EEB", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "EEES", "tipo": "sigla", "capa": "siglas", "fontes": ["udc", "wikipedia-gl"], "nota": "Espazo europeo de educación superior"}
+{"forma": "EFE", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Axencia EFE"}
 {"forma": "EFQM", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Fundación Europea para a Administración da Calidade (European Foundation for Quality Management)"}
 {"forma": "EFSA", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "EGAP", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "udc", "uvigo", "ceg", "wikipedia-gl"], "nota": "Escola Galega de Administración Pública"}
 {"forma": "EGPGC", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "wikipedia-gl"], "nota": "Exército Guerrilleiro do Pobo Galego Ceibe"}
+{"forma": "EHF", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Federación Europea de Balonmán"}
+{"forma": "EHU", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Euskal Herriko Unibertsitatea"}
+{"forma": "EIR", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "enfermeiro interno residente"}
+{"forma": "ELA", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "esclerose lateral amiotrófica"}
+{"forma": "EM", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "esclerose múltiple"}
+{"forma": "EMA", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Axencia Europea de Medicamentos"}
 {"forma": "EMUVISSA", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Empresa Municipal de Vivenda e Solo, Sociedade Anónima (Santiago de Compostela)"}
 {"forma": "EN", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "wikipedia-gl"], "nota": "Esquerda Nacionalista"}
 {"forma": "ENA", "tipo": "sigla", "capa": "siglas", "fontes": ["ceg"]}
@@ -667,16 +732,20 @@
 {"forma": "EP", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "EPA", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "ceg", "wikipedia-gl"], "nota": "Enquisa de Poboación Activa"}
 {"forma": "EPI", "tipo": "sigla", "capa": "siglas", "fontes": ["ceg"]}
+{"forma": "EPOC", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "enfermidade pulmonar obstrutiva crónica"}
 {"forma": "EPS", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Escola Politécnica Superior"}
 {"forma": "ERC", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "wikipedia-gl"], "nota": "Esquerra Republicana de Catalunya (Esquerda Republicana de Cataluña)"}
 {"forma": "ERE", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "expediente de regulación de emprego"}
+{"forma": "ERP", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "planificación de recursos empresariais"}
 {"forma": "ERTE", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "expediente de regulación temporal de emprego"}
 {"forma": "ESA", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "ESE", "tipo": "sigla", "capa": "siglas", "fontes": ["ceg"]}
 {"forma": "ESE", "tipo": "símbolo", "capa": "siglas", "fontes": ["drag"]}
 {"forma": "ESO", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "udc", "uvigo", "ceg", "wikipedia-gl"], "nota": "Educacion Secundaria Obligatoria (Educación Secundaria Obrigatoria) (España)"}
+{"forma": "ESP", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "control electrónico de estabilidade"}
 {"forma": "ET", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Exército de Terra"}
 {"forma": "ETA", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "wikipedia-gl"], "nota": "Euskadi ta Askatasuna"}
+{"forma": "ETAP", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "estación de tratamento de auga potable"}
 {"forma": "ETB", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "wikipedia-gl"], "nota": "Euskal Telebista"}
 {"forma": "ETD", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "estimated time of departure (hora estimada de partida) ETR: estimated time of return (hora estimada de regreso)"}
 {"forma": "ETS", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Escola Técnica Superor"}
@@ -726,9 +795,11 @@
 {"forma": "Excmo", "tipo": "abreviatura", "capa": "siglas", "fontes": ["santiago", "udc", "uvigo", "ceg"], "nota": "excelentísimo/a"}
 {"forma": "Excª", "tipo": "abreviatura", "capa": "siglas", "fontes": ["santiago"], "nota": "excelencia"}
 {"forma": "F", "tipo": "símbolo", "capa": "siglas", "fontes": ["drag", "volga", "santiago"], "nota": "faradio // flúor // franco"}
+{"forma": "F1", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Fórmula 1"}
 {"forma": "FADEMGA", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Federación de Asociacións en favor das Persoas con Atraso Mental de Galicia"}
 {"forma": "FAI", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "wikipedia-gl"], "nota": "Federación Anarquista Ibérica"}
 {"forma": "FAO", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "udc", "uvigo", "ceg", "wikipedia-gl"], "nota": "Food and Agriculture Organization (Organización da Agricultura e da Alimentación) (ONU)"}
+{"forma": "FAPAS", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Fondo para a Protección dos Animais Salvaxes"}
 {"forma": "FAQ", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "ceg", "wikipedia-gl"], "nota": "Frequently Asked Question (Preguntas Máis Comúns [ en Internet])"}
 {"forma": "FAQL", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Frequently Asked Question List (Listaxe de Preguntas Máis Comúns [en Internet])"}
 {"forma": "FAS", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
@@ -744,8 +815,11 @@
 {"forma": "FCT", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Facultade de Ciencias do Traballo"}
 {"forma": "FD", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Facultade de Dereito"}
 {"forma": "FDA", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
+{"forma": "FDP", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Freie Demokratische Partei"}
 {"forma": "FE", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Falange Española (Falanxe Española)"}
 {"forma": "FEA", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Falange Española Auténtica (Falanxe Española Auténtica)"}
+{"forma": "FEAFES", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Confederación Española de Agrupacións de Familiares e Persoas con Enfermidade Mental"}
+{"forma": "FEB", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Federación Española de Baloncesto"}
 {"forma": "FED", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "FEDER", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "udc", "wikipedia-gl"], "nota": "Fondo Europeo de Desenvolvemento Rexional (UE)"}
 {"forma": "FEE", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Facultade de Economía e Empresa"}
@@ -764,6 +838,7 @@
 {"forma": "FF", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Facultade de Filoloxía"}
 {"forma": "FGAMP", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Federación Galega de Municipios e Provincias"}
 {"forma": "FH", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Facultade de Humanidades"}
+{"forma": "FIA", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Fédération Internationale de l'Automobile"}
 {"forma": "FIAA", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Fédération Internationale d’Athletisme Amateur (Federación Internacional de Atletismo Ameteur)"}
 {"forma": "FIAT", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Fabbrica Italiana Automobili Torino (Fábrica Italiana de Automóbiles de Turín)"}
 {"forma": "FIBA", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Fédération Internationale de Basketball (Federación Internacional de Baloncesto) || Fédération Internationale de Boxe Amateur (Federación Internacional de Boxeo Amateur)"}
@@ -776,9 +851,11 @@
 {"forma": "FIP", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "ceg"], "nota": "Plan de Formación e de Inserción Profesional"}
 {"forma": "FITEUC", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Festival Internacional de Teatro Universitario da Coruña"}
 {"forma": "FITUR", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Feira Internacional de Turismo"}
+{"forma": "FLAC", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Free Lossless Audio Codec"}
 {"forma": "FM", "tipo": "sigla", "capa": "siglas", "fontes": ["drag", "santiago"], "nota": "Frecuency Modulation (Frecuencia Modulada)"}
 {"forma": "FM", "tipo": "símbolo", "capa": "siglas", "fontes": ["santiago", "ceg"], "nota": "Frecuencia Modulada"}
 {"forma": "FMI", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "udc", "uvigo", "ceg", "wikipedia-gl"], "nota": "Fondo Monetario Internacional"}
+{"forma": "FN", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Front National"}
 {"forma": "FNMT", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Fábrica Nacional de Moneda y Timbre (Fábrica Nacional de Moeda e Timbre) (España)"}
 {"forma": "FNU", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Forces des Nations Unies (Forzas das Nacións Unidas)"}
 {"forma": "FOGASA", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Fondo de Garantía Salarial"}
@@ -795,6 +872,7 @@
 {"forma": "FPG", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Fronte Popular Galega"}
 {"forma": "FPI", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "uvigo", "wikipedia-gl"], "nota": "Formación de Persoal Investigador"}
 {"forma": "FPLP", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Frente Popular de Liberación de Palestina"}
+{"forma": "FPS", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "fotogramas por segundo"}
 {"forma": "FPU", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "udc"], "nota": "Formación de Profesorado Universitario"}
 {"forma": "FQDN", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "FROM", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
@@ -810,6 +888,7 @@
 {"forma": "FUNDES", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Fundación de Estudos de Socioloxía"}
 {"forma": "FUNDESCO", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Fundación para o Desenvolvemento da Función Social das Comunicacións"}
 {"forma": "FV", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Facultade Virtual"}
+{"forma": "FYI", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "para a túa información"}
 {"forma": "Farm", "tipo": "abreviatura", "capa": "siglas", "fontes": ["drag"]}
 {"forma": "Fe", "tipo": "símbolo", "capa": "siglas", "fontes": ["drag", "volga"]}
 {"forma": "Feder", "tipo": "sigla", "capa": "siglas", "fontes": ["uvigo", "ceg"], "nota": "Fondo Europeo de Desenvolvemento Rexional"}
@@ -832,11 +911,13 @@
 {"forma": "G", "tipo": "abreviatura", "capa": "siglas", "fontes": ["drag"]}
 {"forma": "G", "tipo": "símbolo", "capa": "siglas", "fontes": ["santiago", "ceg"], "nota": "xiga-g : gramo"}
 {"forma": "GAEIG", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Grande Área de Expansión Industrial de Galicia"}
+{"forma": "GAIN", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Axencia Galega de Innovación"}
 {"forma": "GAL", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Grupos Antiterroristas de Liberación"}
 {"forma": "GALIX", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Asociación Galega do Libro Infantil e Xuvenil"}
 {"forma": "GATT", "tipo": "sigla", "capa": "siglas", "fontes": ["uvigo", "wikipedia-gl"], "nota": "Acordo xeral sobre Tarifas Alfandegarias e Comercio"}
 {"forma": "GB", "tipo": "símbolo", "capa": "siglas", "fontes": ["drag"]}
 {"forma": "GBP", "tipo": "símbolo", "capa": "siglas", "fontes": ["santiago"], "nota": "libra esterlina"}
+{"forma": "GCP", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Google Cloud Platform"}
 {"forma": "GE", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "General Electric Company (compañía eléctrica)"}
 {"forma": "GEIE", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Grupo Europeo de Interese Económico"}
 {"forma": "GEO", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Grupo Especial de Operacións"}
@@ -844,9 +925,11 @@
 {"forma": "GFIM", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Grupo de Forzas Intermultinacionais"}
 {"forma": "GIF", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "GIS", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "wikipedia-gl"], "nota": "Geographical Information System (Sistema de Información Xeográfica)"}
+{"forma": "GLP", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "gas licuado do petróleo"}
 {"forma": "GMO", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "GMS", "tipo": "sigla", "capa": "siglas", "fontes": ["ceg"]}
 {"forma": "GMT", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
+{"forma": "GNC", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "gas natural comprimido"}
 {"forma": "GNU", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "GOE", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Grupo de Operacións Especiais"}
 {"forma": "GOT", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
@@ -855,9 +938,12 @@
 {"forma": "GPL", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "GPRS", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "GPS", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "wikipedia-gl"], "nota": "Galicia Socialista"}
+{"forma": "GPT", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "transformador xerativo preadestrado (generative pre-trained transformer)"}
+{"forma": "GPU", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "unidade de procesamento gráfico"}
 {"forma": "GRAPO", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Grupo de Resistencia Antifascista Primeiro de Outubro"}
 {"forma": "GSM", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Global System for Mobile Communication (Sistema Global para as Comunicacións Móbiles)"}
 {"forma": "GTQ", "tipo": "símbolo", "capa": "siglas", "fontes": ["santiago"], "nota": "quetzal (moeda de Guatemala)"}
+{"forma": "GW", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "gigawatt"}
 {"forma": "GYD", "tipo": "símbolo", "capa": "siglas", "fontes": ["santiago"], "nota": "dólar da Guaiana"}
 {"forma": "Ga", "tipo": "símbolo", "capa": "siglas", "fontes": ["drag", "volga", "santiago"], "nota": "galio"}
 {"forma": "Gal", "tipo": "abreviatura", "capa": "siglas", "fontes": ["udc"], "nota": "galego/a"}
@@ -871,6 +957,7 @@
 {"forma": "Gs", "tipo": "símbolo", "capa": "siglas", "fontes": ["santiago"], "nota": "gauss"}
 {"forma": "Gy", "tipo": "símbolo", "capa": "siglas", "fontes": ["drag", "santiago"], "nota": "gray"}
 {"forma": "H", "tipo": "símbolo", "capa": "siglas", "fontes": ["drag", "volga", "santiago", "ceg"], "nota": "henry // hidróxeno // hotel"}
+{"forma": "HAC", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Hospital Álvaro Cunqueiro"}
 {"forma": "HACCP", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "HB", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "HD", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "alta definición (high definition)"}
@@ -910,6 +997,7 @@
 {"forma": "IATA", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "International Air Transport Association (Asociación Internacional do Transporte Aéreo)"}
 {"forma": "IAXD", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Impostos sobre Actos Xurídicos Documentados"}
 {"forma": "IBADER", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Instituto da Biodiversidade Agraria e o Desenvolvemento Rural"}
+{"forma": "IBAN", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "número de conta bancaria internacional"}
 {"forma": "IBEC", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "International Basic Economic Cooperation (Cooperación Económica Básica Internacional) || International Bank for Economic Cooperation (Banco Internacional para a Cooperación Económica)"}
 {"forma": "IBI", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "wikipedia-gl"], "nota": "Imposto sobre Bens Inmóbeis"}
 {"forma": "IBM", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "wikipedia-gl"], "nota": "Instituto de Bioloxía Molecular || International Business Machines Corporation (Sociedade Internacional de Material Electrónico)"}
@@ -936,10 +1024,12 @@
 {"forma": "IEA", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "International Energy Agency (Axencia Internacional da Enerxía)"}
 {"forma": "IEAL", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Instituto de Estudos da Administración Local"}
 {"forma": "IEBT", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Iniciativas empresariais de base tecnolóxica"}
+{"forma": "IEC", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Institut d'Estudis Catalans"}
 {"forma": "IECO", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Instituto de Estimulación da Comunicación Oral"}
 {"forma": "IEE", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Instituto de Estudos Económicos"}
 {"forma": "IEEE", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "IEF", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Istituto de Estudos Fiscais"}
+{"forma": "IELTS", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "International English Language Testing System"}
 {"forma": "IEM", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Instituto de Ensino Medio"}
 {"forma": "IEME", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Instituto Español de Moeda Estranxeira"}
 {"forma": "IEO", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "uvigo", "ceg", "wikipedia-gl"], "nota": "Instituto Español de Oceanografía"}
@@ -951,9 +1041,14 @@
 {"forma": "IGC", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Instituto Galego de Consumo"}
 {"forma": "IGE", "tipo": "sigla", "capa": "siglas", "fontes": ["udc", "ceg"], "nota": "Instituto Galego de Estatística"}
 {"forma": "IGVS", "tipo": "sigla", "capa": "siglas", "fontes": ["udc", "uvigo", "ceg", "wikipedia-gl"], "nota": "Instituto Galego da Vivenda e Solo"}
+{"forma": "IHF", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Federación Internacional de Balonmán"}
+{"forma": "IIM", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Instituto de Investigacións Mariñas"}
+{"forma": "IL", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Iniciativa Liberal"}
 {"forma": "ILG", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "udc", "uvigo", "wikipedia-gl"], "nota": "Instituto da Lingua Galega"}
 {"forma": "IMC", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "IMD", "tipo": "símbolo", "capa": "siglas", "fontes": ["santiago"], "nota": "dólar xamaicano"}
+{"forma": "IMEI", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "identidade internacional de equipo móbil"}
+{"forma": "IMHO", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "na miña humilde opinión"}
 {"forma": "IMSERSO", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "INAP", "tipo": "sigla", "capa": "siglas", "fontes": ["udc", "wikipedia-gl"], "nota": "Instituto Nacional da Administración Pública"}
 {"forma": "INDO", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Instituto Nacional de Denominación de Orixe"}
@@ -966,31 +1061,41 @@
 {"forma": "INSALUD", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Instituto Nacional de Saúde"}
 {"forma": "INSERSO", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Instituto Nacional de Servicios Sociais"}
 {"forma": "INSS", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "uvigo", "ceg", "wikipedia-gl"], "nota": "Instituto Nacional da Seguridade Social"}
+{"forma": "INTECMAR", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Instituto Tecnolóxico para o Control do Medio Mariño"}
 {"forma": "INTERNET", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "wikipedia-gl"], "nota": "Rede internacional de comunicacións por ordenador"}
 {"forma": "INTERPOL", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Organización Internacional de Policía Criminal"}
 {"forma": "IP", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "IPC", "tipo": "sigla", "capa": "siglas", "fontes": ["udc", "uvigo", "ceg", "wikipedia-gl"], "nota": "Índice de prezos ao consumo"}
+{"forma": "IPCC", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Grupo Intergobernamental de Expertos sobre o Cambio Climático"}
+{"forma": "IPREM", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "indicador público de renda de efectos múltiples"}
 {"forma": "IPTV", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "televisión por protocolo de internet"}
 {"forma": "IQF", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "IRA", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "uvigo", "wikipedia-gl"], "nota": "Exército Republicano Irlandés"}
 {"forma": "IRPF", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "udc", "uvigo", "ceg", "wikipedia-gl"], "nota": "Imposto sobre a renda das persoas físicas"}
 {"forma": "IRYDA", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "IRYDA.", "tipo": "sigla", "capa": "siglas", "fontes": ["uvigo"], "nota": "Instituto de Reforma e Desenvolvemento Agrario"}
+{"forma": "IS", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "imposto de sociedades"}
 {"forma": "ISA", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "ISBN", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "udc", "uvigo", "ceg", "wikipedia-gl"], "nota": "International Standard Book Number"}
 {"forma": "ISEP", "tipo": "sigla", "capa": "siglas", "fontes": ["uvigo", "wikipedia-gl"], "nota": "International Student Exghange Program"}
 {"forma": "ISK", "tipo": "símbolo", "capa": "siglas", "fontes": ["santiago"], "nota": "coroa de Islandia"}
 {"forma": "ISO", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "udc", "uvigo", "ceg", "wikipedia-gl"], "nota": "Organización Internacional de Estandarización"}
+{"forma": "ISS", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Estación Espacial Internacional"}
+{"forma": "ISSGA", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Instituto de Seguridade e Saúde Laboral de Galicia"}
 {"forma": "ISSN", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "udc", "uvigo", "ceg"], "nota": "International Standard Serial Number"}
 {"forma": "ISWIM", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
+{"forma": "ITF", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Federación Internacional de Tenis"}
+{"forma": "ITG", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Instituto Tecnolóxico de Galicia"}
 {"forma": "ITIL", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "ITOPF", "tipo": "sigla", "capa": "siglas", "fontes": ["ceg"]}
+{"forma": "ITP", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "imposto de transmisións patrimoniais"}
 {"forma": "ITV", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "IU", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "wikipedia-gl"], "nota": "Izquierda Unida"}
 {"forma": "IVA", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "imposto sobre o valor engadido"}
 {"forma": "IVE", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "udc", "uvigo", "ceg", "wikipedia-gl"], "nota": "Imposto sobre o valor engadido"}
 {"forma": "IX", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "IXP", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
+{"forma": "IaaS", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "infraestrutura como servizo"}
 {"forma": "Icona", "tipo": "sigla", "capa": "siglas", "fontes": ["uvigo", "ceg", "wikipedia-gl"], "nota": "Instituto de Conservación da Natureza"}
 {"forma": "Idega", "tipo": "sigla", "capa": "siglas", "fontes": ["ceg", "wikipedia-gl"]}
 {"forma": "Idega.", "tipo": "sigla", "capa": "siglas", "fontes": ["uvigo"], "nota": "Instituto de Estudos e Desenvolvemento de Galicia"}
@@ -1016,6 +1121,7 @@
 {"forma": "Insalud", "tipo": "sigla", "capa": "siglas", "fontes": ["uvigo", "ceg", "wikipedia-gl"], "nota": "Instituto Nacional de Saúde"}
 {"forma": "Inserso", "tipo": "sigla", "capa": "siglas", "fontes": ["uvigo", "ceg"], "nota": "Instituto Nacional de Servicios Sociais"}
 {"forma": "Intecmar", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
+{"forma": "Intermón", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Oxfam Intermón"}
 {"forma": "Internet", "tipo": "sigla", "capa": "siglas", "fontes": ["uvigo"], "nota": "Rede internacional de comunicacións por ordenador"}
 {"forma": "Interpol", "tipo": "sigla", "capa": "siglas", "fontes": ["uvigo", "wikipedia-gl"], "nota": "Organización Internacional de Policía Criminal"}
 {"forma": "IoT", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "internet das cousas (Internet of Things)"}
@@ -1044,21 +1150,33 @@
 {"forma": "LED", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "LEF", "tipo": "sigla", "capa": "siglas", "fontes": ["uvigo", "ceg", "wikipedia-gl"], "nota": "Lei de expropiación forzosa"}
 {"forma": "LERD", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Lugar de Entrega e Recollida de Documentación"}
+{"forma": "LFI", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "La France Insoumise"}
 {"forma": "LGTBI", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "lesbianas, gais, transexuais, bisexuais e intersexuais"}
 {"forma": "LGTBIQ", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "lesbianas, gais, transexuais, bisexuais, intersexuais e queer"}
+{"forma": "LGTBIQ+", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "lesbianas, gais, trans, bisexuais, intersexuais, queer e máis"}
 {"forma": "LH", "tipo": "sigla", "capa": "siglas", "fontes": ["ceg"]}
+{"forma": "LIC", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "lugar de importancia comunitaria"}
 {"forma": "LIDAR", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
+{"forma": "LLM", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "modelo de linguaxe grande (large language model)"}
+{"forma": "LNFS", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Liga Nacional de Fútbol Sala"}
 {"forma": "LNL", "tipo": "sigla", "capa": "siglas", "fontes": ["ceg"]}
 {"forma": "LNL", "tipo": "símbolo", "capa": "siglas", "fontes": ["drag"]}
+{"forma": "LOE", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Lei orgánica de educación"}
 {"forma": "LOFCA", "tipo": "sigla", "capa": "siglas", "fontes": ["ceg"]}
+{"forma": "LOGSE", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Lei orgánica xeral do sistema educativo"}
 {"forma": "LOHAPA", "tipo": "sigla", "capa": "siglas", "fontes": ["ceg"]}
+{"forma": "LOL", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "rindo a gargalladas"}
+{"forma": "LOMCE", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Lei orgánica para a mellora da calidade educativa"}
 {"forma": "LOMG", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
+{"forma": "LOMLOE", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Lei orgánica de modificación da LOE (lei educativa)"}
 {"forma": "LOPD", "tipo": "sigla", "capa": "siglas", "fontes": ["ceg"]}
 {"forma": "LOPX", "tipo": "sigla", "capa": "siglas", "fontes": ["ceg"]}
 {"forma": "LOREX", "tipo": "sigla", "capa": "siglas", "fontes": ["ceg"]}
 {"forma": "LOU", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "wikipedia-gl"], "nota": "Lei de ordenación universitaria"}
 {"forma": "LOXSE", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "wikipedia-gl"], "nota": "Lei orgánica xeral do sistema educativo"}
+{"forma": "LP", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "disco de longa duración"}
 {"forma": "LPA", "tipo": "sigla", "capa": "siglas", "fontes": ["ceg"]}
+{"forma": "LPGA", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Ladies Professional Golf Association"}
 {"forma": "LRU", "tipo": "sigla", "capa": "siglas", "fontes": ["uvigo", "wikipedia-gl"], "nota": "Lei de reforma universitaria"}
 {"forma": "LRXAP-PAC", "tipo": "sigla", "capa": "siglas", "fontes": ["uvigo", "ceg", "wikipedia-gl"], "nota": "Lei de réxime xurídico das administracións públicas e do procedemento administrativo común"}
 {"forma": "LS", "tipo": "sigla", "capa": "siglas", "fontes": ["ceg"]}
@@ -1089,9 +1207,13 @@
 {"forma": "MAPA", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "MB", "tipo": "símbolo", "capa": "siglas", "fontes": ["drag", "santiago", "ceg"], "nota": "megabyte"}
 {"forma": "MBA", "tipo": "sigla", "capa": "siglas", "fontes": ["uvigo", "wikipedia-gl"], "nota": "Mestrado de Economía e Dirección de Empresas"}
+{"forma": "MBG", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Misión Biolóxica de Galicia"}
+{"forma": "MC", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "mestre de cerimonias"}
+{"forma": "MCER", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Marco Común Europeo de Referencia para as Linguas"}
 {"forma": "MDL", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Movimento en Defessa da Língua"}
 {"forma": "MDL", "tipo": "símbolo", "capa": "siglas", "fontes": ["santiago"], "nota": "leu de Moldavia"}
 {"forma": "MEC", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "uvigo", "ceg", "wikipedia-gl"], "nota": "Ministerio de Educación e Cultura"}
+{"forma": "MEDE", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Mecanismo Europeo de Estabilidade"}
 {"forma": "MER", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "MEU", "tipo": "sigla", "capa": "siglas", "fontes": ["uvigo", "wikipedia-gl"], "nota": "Movemento Estudiantil Universitario"}
 {"forma": "MHz", "tipo": "símbolo", "capa": "siglas", "fontes": ["drag", "santiago", "ceg"], "nota": "megahercio"}
@@ -1100,7 +1222,12 @@
 {"forma": "MIR", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "udc", "uvigo", "ceg", "wikipedia-gl"], "nota": "Médico/a Interno/a Residente"}
 {"forma": "MISACO", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "MIT", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
+{"forma": "MKV", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "contedor Matroska"}
+{"forma": "MLB", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Major League Baseball"}
 {"forma": "MLIM", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Movemento para a Liberación e a Igualdade da Muller"}
+{"forma": "MLS", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Major League Soccer"}
+{"forma": "MMA", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "artes marciais mixtas"}
+{"forma": "MMS", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "servizo de mensaxes multimedia"}
 {"forma": "MNCT", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Museo Nacional de Ciencia e Tecnoloxía"}
 {"forma": "MNG", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "wikipedia-gl"], "nota": "Mulleres Nacionalistas Galegas"}
 {"forma": "MNL", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "udc", "uvigo", "ceg", "wikipedia-gl"], "nota": "A Mesa pola Normalización Lingüística"}
@@ -1163,16 +1290,21 @@
 {"forma": "NASA", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "National Aeronautics and Space Administration (Administración Nacional de Aeronáutica e do Espacio)"}
 {"forma": "NASDAQ", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "NATO", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "wikipedia-gl"], "nota": "Véxase OTAN"}
+{"forma": "NB", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "nota bene"}
+{"forma": "NBA", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "National Basketball Association"}
 {"forma": "NBE-CPI", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Norma Básica de Edificación-Condicións de Protección Contra Incendios [nos edificios] NEG: Nova Escola Galega"}
 {"forma": "NCP", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "NE", "tipo": "símbolo", "capa": "siglas", "fontes": ["drag", "santiago"], "nota": "Nordeste"}
 {"forma": "NEG", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Nova Escola Galega"}
 {"forma": "NEN", "tipo": "símbolo", "capa": "siglas", "fontes": ["drag"]}
 {"forma": "NFC", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "comunicación de campo próximo (near-field communication)"}
+{"forma": "NFL", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "National Football League"}
 {"forma": "NFS", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
+{"forma": "NHL", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "National Hockey League"}
 {"forma": "NIE", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "número de identidade de estranxeiro"}
 {"forma": "NIF", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "udc", "uvigo", "ceg", "wikipedia-gl"], "nota": "Número de identificación fiscal"}
 {"forma": "NIO", "tipo": "símbolo", "capa": "siglas", "fontes": ["santiago"], "nota": "córdoba (moeda de Nicaragua)"}
+{"forma": "NIV", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "número de identificación do vehículo"}
 {"forma": "NL", "tipo": "símbolo", "capa": "siglas", "fontes": ["drag"]}
 {"forma": "NNE", "tipo": "símbolo", "capa": "siglas", "fontes": ["drag"]}
 {"forma": "NNL", "tipo": "símbolo", "capa": "siglas", "fontes": ["drag"]}
@@ -1187,6 +1319,7 @@
 {"forma": "NTFS", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "NU", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Véxase ONU"}
 {"forma": "NUMA", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
+{"forma": "NUSS", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "número da Seguridade Social"}
 {"forma": "NW", "tipo": "símbolo", "capa": "siglas", "fontes": ["drag", "santiago"], "nota": "Noroeste"}
 {"forma": "N\\", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "Na", "tipo": "símbolo", "capa": "siglas", "fontes": ["drag", "volga"]}
@@ -1208,12 +1341,15 @@
 {"forma": "OCV", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Oficina de Cooperación e Voluntariado"}
 {"forma": "OD", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Opus Dei"}
 {"forma": "ODIT", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Oficina Delegada da Inspección do Traballo OEMA: Organización Europea de Medio Ambiente"}
+{"forma": "ODS", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "obxectivos de desenvolvemento sostible"}
 {"forma": "OEA", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "OES", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Organización de Estudantes de Santiago"}
 {"forma": "OGCM", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Organización Galega de Comunidades de Montes"}
 {"forma": "OIC", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Organización Internacional do Comercio"}
+{"forma": "OIEA", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Organismo Internacional de Enerxía Atómica"}
 {"forma": "OIT", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "uvigo", "ceg", "wikipedia-gl"], "nota": "Organización Internacional do Traballo"}
 {"forma": "OIX", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Oficina para a Igualdade de Xénero"}
+{"forma": "OK", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "de acordo"}
 {"forma": "OLED", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "díodo orgánico emisor de luz (organic light-emitting diode)"}
 {"forma": "OLP", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Organización para a Liberación de Palestina"}
 {"forma": "OM", "tipo": "símbolo", "capa": "siglas", "fontes": ["santiago"], "nota": "Medium Wave, Onda Media"}
@@ -1239,13 +1375,17 @@
 {"forma": "OPE", "tipo": "sigla", "capa": "siglas", "fontes": ["ceg"]}
 {"forma": "OPEP", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "wikipedia-gl"], "nota": "Organización de Países Exportadores de Petroleo"}
 {"forma": "OPI", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Orgnismo Público de Investigación"}
+{"forma": "OPP", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "organización de produtores pesqueiros"}
 {"forma": "OPV", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Oferta Pública de Venda"}
 {"forma": "ORA", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "peración de Regulación de Aparcadoiros"}
 {"forma": "ORI", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Oficina de Relacións Internacionais"}
+{"forma": "OS", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "sistema operativo (operating system)"}
 {"forma": "OSCE", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Organización para a Seguridade e a Cooperación en Europa"}
 {"forma": "OSIX", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Oficinas de Servizos Integrados para a Xuventude"}
 {"forma": "OSO", "tipo": "símbolo", "capa": "siglas", "fontes": ["drag"]}
+{"forma": "OST", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "original soundtrack"}
 {"forma": "OTAN", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "udc", "uvigo", "ceg", "wikipedia-gl"], "nota": "Organización para o Tratado do Atlántico Norte"}
+{"forma": "OTP", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "contrasinal dun só uso"}
 {"forma": "OTRI", "tipo": "sigla", "capa": "siglas", "fontes": ["udc", "uvigo", "ceg", "wikipedia-gl"], "nota": "Oficina de Transferencia de Resultados de Investigación"}
 {"forma": "OVI", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Obxecto voador identificado"}
 {"forma": "OVNI", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Obxecto voador non identificado"}
@@ -1261,6 +1401,7 @@
 {"forma": "PAAU", "tipo": "sigla", "capa": "siglas", "fontes": ["udc", "uvigo", "wikipedia-gl"], "nota": "Probas de aptitude para o acceso á universidade"}
 {"forma": "PAB", "tipo": "símbolo", "capa": "siglas", "fontes": ["santiago"], "nota": "balboa (moeda de Panamá)"}
 {"forma": "PAC", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "ceg"], "nota": "Política Agraria Común"}
+{"forma": "PACMA", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Partido Animalista"}
 {"forma": "PADRE", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Programa de Axuda á Declaración da Renda"}
 {"forma": "PAI", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Plan de Acción Inmediata"}
 {"forma": "PAIT", "tipo": "sigla", "capa": "siglas", "fontes": ["ceg"]}
@@ -1277,12 +1418,15 @@
 {"forma": "PCG", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Partido Comunista Galego"}
 {"forma": "PCI", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "PCOE", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Partido Comunista Obreiro Español"}
+{"forma": "PCP", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Partido Comunista Português"}
 {"forma": "PCPE", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Partido Comunista dos Pobos de España"}
+{"forma": "PCR", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "reacción en cadea da polimerase"}
 {"forma": "PCU", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Partido Comunista de Unificación"}
 {"forma": "PCUS", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Partido Comunista da Unión Soviética"}
 {"forma": "PD", "tipo": "abreviatura", "capa": "siglas", "fontes": ["uvigo"], "nota": "Posdata"}
 {"forma": "PD", "tipo": "sigla", "capa": "siglas", "fontes": ["ceg"]}
 {"forma": "PDA", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Personal Digital Assistant (Asistente Dixital Persoal)"}
+{"forma": "PDF", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "formato de documento portátil"}
 {"forma": "PDI", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Persoal docente e investigador"}
 {"forma": "PDL", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Partido Demócrata Liberal"}
 {"forma": "PDP", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Partido Demócrata Popular"}
@@ -1298,6 +1442,8 @@
 {"forma": "PESD", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Política Europea Común de Seguridade e Defensa"}
 {"forma": "PFC", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Proxecto de fin de carreira"}
 {"forma": "PG", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "wikipedia-gl"], "nota": "Partido Galeguista"}
+{"forma": "PGA", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Professional Golfers' Association"}
+{"forma": "PGOM", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "plan xeral de ordenación municipal"}
 {"forma": "PGP", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "PHP", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "PHP", "tipo": "símbolo", "capa": "siglas", "fontes": ["santiago"], "nota": "peso filipino (moeda de Filipinas)"}
@@ -1308,6 +1454,7 @@
 {"forma": "PIE", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Participación en Ingresos do Estado"}
 {"forma": "PIEE", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Plataforma Independente de Ciencias Económicas e Empresariais"}
 {"forma": "PIN", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "wikipedia-gl"], "nota": "Produto Interior Neto"}
+{"forma": "PIR", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "psicólogo interno residente"}
 {"forma": "PISA", "tipo": "sigla", "capa": "siglas", "fontes": ["ceg"]}
 {"forma": "PLN", "tipo": "símbolo", "capa": "siglas", "fontes": ["santiago"], "nota": "esloti (moeda de Polonia)"}
 {"forma": "PLT", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
@@ -1328,9 +1475,11 @@
 {"forma": "POG", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Partido Obreiro Galego"}
 {"forma": "POI", "tipo": "sigla", "capa": "siglas", "fontes": ["ceg"]}
 {"forma": "POL", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Programa Operativo Local"}
+{"forma": "PORN", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "plan de ordenación dos recursos naturais"}
 {"forma": "POUM", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Partido Obreiro de Unificación Marxista"}
 {"forma": "PP", "tipo": "abreviatura", "capa": "siglas", "fontes": ["ceg"], "nota": "Padre"}
 {"forma": "PP", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "uvigo", "ceg", "wikipedia-gl"], "nota": "Partido Popular"}
+{"forma": "PPP", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "puntos por polgada; produto por persoa"}
 {"forma": "PPdeG", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Partido Popular de Galicia"}
 {"forma": "PRCC", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Profesor/a responsable de calidade e converxencia"}
 {"forma": "PRL", "tipo": "sigla", "capa": "siglas", "fontes": ["ceg"]}
@@ -1357,9 +1506,12 @@
 {"forma": "PXOM", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Plan xeral de ordenación municipal"}
 {"forma": "PXOU", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "uvigo", "ceg", "wikipedia-gl"], "nota": "Plan Xeral de Ordenación Urbana"}
 {"forma": "PYG", "tipo": "símbolo", "capa": "siglas", "fontes": ["santiago"], "nota": "guaraní (moeda de Paraguay)"}
+{"forma": "PYME", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "pequena e mediana empresa"}
 {"forma": "Pa", "tipo": "símbolo", "capa": "siglas", "fontes": ["drag", "volga", "ceg"], "nota": "Pascal"}
+{"forma": "PaaS", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "plataforma como servizo"}
 {"forma": "Pb", "tipo": "símbolo", "capa": "siglas", "fontes": ["drag", "volga", "santiago"], "nota": "chumbo"}
 {"forma": "Pd", "tipo": "símbolo", "capa": "siglas", "fontes": ["drag", "volga", "santiago"], "nota": "paladio"}
+{"forma": "PdeCAT", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Partit Demòcrata Europeu Català"}
 {"forma": "Pedega", "tipo": "sigla", "capa": "siglas", "fontes": ["ceg"]}
 {"forma": "Peme", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Pequena e mediana empresa"}
 {"forma": "Pint", "tipo": "abreviatura", "capa": "siglas", "fontes": ["drag"]}
@@ -1387,6 +1539,7 @@
 {"forma": "RBEL", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Regulamento de Bens de Entidades Locais"}
 {"forma": "RCCL", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Regulamento de Contratacións das Corporacións Locais"}
 {"forma": "RCE", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Regulamento Xeral de Contratos do Estado"}
+{"forma": "RCP", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "reanimación cardiopulmonar"}
 {"forma": "RDA", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "República Democrática Alemá"}
 {"forma": "RDU", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Regulamento de Disciplina Urbanística"}
 {"forma": "REASS", "tipo": "sigla", "capa": "siglas", "fontes": ["ceg"]}
@@ -1394,11 +1547,18 @@
 {"forma": "REF", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Regulamento de Expropiación Forzosa"}
 {"forma": "RENFE", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Rede Nacional de Ferrocarrís Españois"}
 {"forma": "RETA", "tipo": "sigla", "capa": "siglas", "fontes": ["ceg"]}
+{"forma": "RFEBM", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Real Federación Española de Balonmán"}
+{"forma": "RFEF", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Real Federación Española de Fútbol"}
+{"forma": "RFGF", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Real Federación Galega de Fútbol"}
+{"forma": "RFID", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "identificación por radiofrecuencia"}
 {"forma": "RG", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "wikipedia-gl"], "nota": "Radio Galega"}
 {"forma": "RGB", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "vermello, verde e azul (red, green, blue)"}
+{"forma": "RGPD", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Regulamento xeral de protección de datos"}
 {"forma": "RIP", "tipo": "sigla", "capa": "siglas", "fontes": ["ceg"]}
 {"forma": "RISGA", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Renda de Integración Social de Galicia"}
 {"forma": "RLE", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
+{"forma": "RM", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "resonancia magnética"}
+{"forma": "RN", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Rassemblement National"}
 {"forma": "RNE", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Radio Nacional de España"}
 {"forma": "ROAC", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Rexistro Oficial de Auditores de Contas"}
 {"forma": "ROL", "tipo": "símbolo", "capa": "siglas", "fontes": ["santiago"], "nota": "leu (moeda de Romanía)"}
@@ -1407,6 +1567,10 @@
 {"forma": "RPC", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Renda Per Cápita"}
 {"forma": "RPE", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Regulamento do Patrimonio do Estado"}
 {"forma": "RPT", "tipo": "sigla", "capa": "siglas", "fontes": ["udc", "uvigo", "wikipedia-gl"], "nota": "Relación de postos de traballo"}
+{"forma": "RRHH", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "recursos humanos"}
+{"forma": "RRPP", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "relacións públicas"}
+{"forma": "RRSS", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "redes sociais"}
+{"forma": "RSC", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "responsabilidade social corporativa"}
 {"forma": "RSI", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "RSU", "tipo": "sigla", "capa": "siglas", "fontes": ["ceg"]}
 {"forma": "RTP", "tipo": "sigla", "capa": "siglas", "fontes": ["ceg"]}
@@ -1448,6 +1612,7 @@
 {"forma": "S.M.I", "tipo": "abreviatura", "capa": "siglas", "fontes": ["udc"], "nota": "súa maxestade imperial"}
 {"forma": "S.R.M", "tipo": "abreviatura", "capa": "siglas", "fontes": ["udc"], "nota": "súa real maxestade"}
 {"forma": "S.S", "tipo": "abreviatura", "capa": "siglas", "fontes": ["udc"], "nota": "súa santidade"}
+{"forma": "SA", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "sociedade anónima"}
 {"forma": "SAD", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Sociedade Anónima Deportiva"}
 {"forma": "SAEG", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "SAI", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Servizos de Apoio á Investigación"}
@@ -1455,10 +1620,13 @@
 {"forma": "SAMEDI", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Sociedade Anónima de Mediación e Diñeiro"}
 {"forma": "SAPE", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Servizo de Asesoramento e Promoción do Estudante"}
 {"forma": "SASEMAR", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Sociedade Estatal para o Salvamento e a Seguridade Marítima"}
+{"forma": "SAU", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "sociedade anónima unipersoal"}
 {"forma": "SBT", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Sectores Básicos Transformadores"}
 {"forma": "SCADA", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "SCLV", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Servizo de Compensación e Liquidación de Valores"}
 {"forma": "SCSI", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
+{"forma": "SCoop", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "sociedade cooperativa"}
+{"forma": "SDK", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "kit de desenvolvemento de software"}
 {"forma": "SE", "tipo": "símbolo", "capa": "siglas", "fontes": ["drag", "santiago"], "nota": "sueste"}
 {"forma": "SEC", "tipo": "sigla", "capa": "siglas", "fontes": ["ceg"]}
 {"forma": "SECUS", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Servizo de Comunicacións"}
@@ -1469,7 +1637,9 @@
 {"forma": "SEM", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Servizo Español do Maxisterio"}
 {"forma": "SEMAF", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Sindicato Español de Maquinistas de Ferrocarrís"}
 {"forma": "SENPA", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "wikipedia-gl"], "nota": "Servizo Nacional de Produtos Agrarios"}
+{"forma": "SEO", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "optimización para buscadores"}
 {"forma": "SEOPAN", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Asociación de Empresas de Obras Públicas de Ámbito Nacional"}
+{"forma": "SEPA", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "zona única de pagamentos en euros"}
 {"forma": "SEPE", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Servizo Público de Emprego Estatal"}
 {"forma": "SEPES", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Sociedade Estatal de Promoción e Equipamento do Solo"}
 {"forma": "SEPI", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "uvigo", "ceg", "wikipedia-gl"], "nota": "Sociedade Estatal de Participacións Industriais"}
@@ -1509,6 +1679,7 @@
 {"forma": "SL", "tipo": "símbolo", "capa": "siglas", "fontes": ["drag"]}
 {"forma": "SLG", "tipo": "sigla", "capa": "siglas", "fontes": ["ceg", "wikipedia-gl"]}
 {"forma": "SLNE", "tipo": "sigla", "capa": "siglas", "fontes": ["ceg"]}
+{"forma": "SLU", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "sociedade limitada unipersoal"}
 {"forma": "SMB", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "SME", "tipo": "sigla", "capa": "siglas", "fontes": ["uvigo", "ceg", "wikipedia-gl"], "nota": "Sistema monetario europeo"}
 {"forma": "SMI", "tipo": "sigla", "capa": "siglas", "fontes": ["uvigo", "ceg", "wikipedia-gl"], "nota": "Sistema monetario internacional"}
@@ -1518,6 +1689,8 @@
 {"forma": "SOEP", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Servizo de Orientación Educativa e Psicolóxica"}
 {"forma": "SOS", "tipo": "sigla", "capa": "siglas", "fontes": ["ceg", "wikipedia-gl"]}
 {"forma": "SP", "tipo": "sigla", "capa": "siglas", "fontes": ["ceg"]}
+{"forma": "SPD", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Sozialdemokratische Partei Deutschlands"}
+{"forma": "SPDCIF", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Servizo de Prevención e Defensa contra Incendios Forestais"}
 {"forma": "SPI", "tipo": "sigla", "capa": "siglas", "fontes": ["ceg"]}
 {"forma": "SQF", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "SQL", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "linguaxe de consulta estruturada (Structured Query Language)"}
@@ -1528,9 +1701,12 @@
 {"forma": "SS.EE", "tipo": "abreviatura", "capa": "siglas", "fontes": ["udc"], "nota": "súas excelencias"}
 {"forma": "SSD", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "unidade de estado sólido (solid-state drive)"}
 {"forma": "SSH", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "intérprete de ordes seguro (Secure Shell)"}
+{"forma": "SSL", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "capa de conexión segura"}
 {"forma": "SUG", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Sistema universitario galego"}
 {"forma": "SVC", "tipo": "símbolo", "capa": "siglas", "fontes": ["santiago"], "nota": "colón salvadoreño (moeda do Salvador)"}
+{"forma": "SVG", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "gráficos vectoriais escalables"}
 {"forma": "SW", "tipo": "símbolo", "capa": "siglas", "fontes": ["drag", "santiago"], "nota": "Short Wave, Onda Curta"}
+{"forma": "SWIFT", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Society for Worldwide Interbank Financial Telecommunication"}
 {"forma": "SXAE", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Sociedade Xeral de Autores e Editores"}
 {"forma": "SXE", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Sociedade Xeolóxica de España"}
 {"forma": "SXPFTC", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "Secretaría Xeral de Política Fiscal Territorial e Comunitaria TC: Tribunal Constitucional"}
@@ -1572,6 +1748,8 @@
 {"forma": "TCP", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "TDAH", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "trastorno por déficit de atención e hiperactividade"}
 {"forma": "TDT", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "televisión dixital terrestre"}
+{"forma": "TEA", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "trastorno do espectro autista"}
+{"forma": "TEDH", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Tribunal Europeo de Dereitos Humanos"}
 {"forma": "TERMIGAL", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Centro de Terminoloxía de Galicia"}
 {"forma": "TFG", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Traballo de fin de grao"}
 {"forma": "TFM", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Traballo de fin de mestrado"}
@@ -1580,8 +1758,15 @@
 {"forma": "TIA", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "TIC", "tipo": "sigla", "capa": "siglas", "fontes": ["udc", "ceg"], "nota": "Tecnoloxías da información e a comunicación"}
 {"forma": "TIFF", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
+{"forma": "TIN", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "tipo de xuro nominal"}
 {"forma": "TIO", "tipo": "sigla", "capa": "siglas", "fontes": ["ceg"]}
 {"forma": "TIT", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Traballo de investigación tutelado"}
+{"forma": "TL;DR", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "demasiado longo, non o lin"}
+{"forma": "TLS", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "seguridade da capa de transporte"}
+{"forma": "TOC", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "trastorno obsesivo-compulsivo"}
+{"forma": "TOEFL", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Test of English as a Foreign Language"}
+{"forma": "TPI", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Tribunal Penal Internacional"}
+{"forma": "TPV", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "terminal de punto de venda"}
 {"forma": "TRAC", "tipo": "sigla", "capa": "siglas", "fontes": ["ceg"]}
 {"forma": "TRL", "tipo": "símbolo", "capa": "siglas", "fontes": ["santiago"], "nota": "lira / nova lira de Turquía"}
 {"forma": "TRY", "tipo": "símbolo", "capa": "siglas", "fontes": ["santiago"], "nota": "lira / nova lira de Turquía"}
@@ -1592,6 +1777,8 @@
 {"forma": "TVG", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "uvigo", "wikipedia-gl"], "nota": "Televisión de Galicia"}
 {"forma": "TWAIN", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "TXA", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
+{"forma": "TXSG", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Tribunal Superior de Xustiza de Galicia"}
+{"forma": "TXUE", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Tribunal de Xustiza da Unión Europea"}
 {"forma": "Ta", "tipo": "símbolo", "capa": "siglas", "fontes": ["drag", "volga"]}
 {"forma": "Taurom", "tipo": "abreviatura", "capa": "siglas", "fontes": ["drag"]}
 {"forma": "Tb", "tipo": "símbolo", "capa": "siglas", "fontes": ["drag", "volga", "santiago"], "nota": "terbio"}
@@ -1613,15 +1800,23 @@
 {"forma": "Tyr", "tipo": "abreviatura", "capa": "siglas", "fontes": ["drag"]}
 {"forma": "U", "tipo": "símbolo", "capa": "siglas", "fontes": ["drag", "volga", "santiago"], "nota": "uranio"}
 {"forma": "UA", "tipo": "símbolo", "capa": "siglas", "fontes": ["santiago"], "nota": "unidade astronómica"}
+{"forma": "UAB", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Universitat Autònoma de Barcelona"}
 {"forma": "UAC", "tipo": "sigla", "capa": "siglas", "fontes": ["uvigo", "ceg"], "nota": "Universidade da Coruña"}
 {"forma": "UAH", "tipo": "símbolo", "capa": "siglas", "fontes": ["santiago"], "nota": "grivna (moeda de Ucrania)"}
+{"forma": "UAM", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Universidad Autónoma de Madrid"}
+{"forma": "UCD", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Unión de Centro Democrático"}
 {"forma": "UCI", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "uvigo", "ceg", "wikipedia-gl"], "nota": "Unidade de Coidados Intensivos"}
+{"forma": "UCLA", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "University of California, Los Angeles"}
+{"forma": "UCM", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Universidad Complutense de Madrid"}
 {"forma": "UCV", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Universidade da Coruña Virtual"}
 {"forma": "UDC", "tipo": "sigla", "capa": "siglas", "fontes": ["udc", "wikipedia-gl"], "nota": "Universidade da Coruña"}
 {"forma": "UDP", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "UE", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "udc", "uvigo", "ceg", "wikipedia-gl"], "nota": "Unión Europea"}
+{"forma": "UEFA", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Union of European Football Associations"}
 {"forma": "UEFI", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "interface de firmware extensible unificada"}
 {"forma": "UFA", "tipo": "sigla", "capa": "siglas", "fontes": ["udc"], "nota": "Unidade de Formación e Asesoramento"}
+{"forma": "UFC", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Ultimate Fighting Championship"}
+{"forma": "UGT", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Unión Xeral de Traballadores"}
 {"forma": "UHD", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "ultra alta definición (ultra high definition)"}
 {"forma": "UHF", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "UHT", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
@@ -1631,7 +1826,11 @@
 {"forma": "UNED", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "uvigo", "ceg", "wikipedia-gl"], "nota": "Universidade Nacional de Educación a Distancia"}
 {"forma": "UNESCO", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "uvigo", "ceg", "wikipedia-gl"], "nota": "Organización das Nacións Unidas para a Educación, a Ciencia e a Cultura"}
 {"forma": "UNICEF", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago"], "nota": "United Nations Children’s Fund (Fondo das Nacións Unidas para a Infancia)"}
+{"forma": "UOC", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Universitat Oberta de Catalunya"}
+{"forma": "UPC", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Universitat Politècnica de Catalunya"}
 {"forma": "UPG", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "wikipedia-gl"], "nota": "Unión do Povo Galego"}
+{"forma": "UPM", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Universidad Politécnica de Madrid"}
+{"forma": "UPV", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Universidad del País Vasco / Universitat Politècnica de València"}
 {"forma": "URL", "tipo": "sigla", "capa": "siglas", "fontes": ["drag"]}
 {"forma": "USB", "tipo": "sigla", "capa": "siglas", "fontes": ["drag"]}
 {"forma": "USB-C", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "conector USB de tipo C"}
@@ -1640,6 +1839,7 @@
 {"forma": "USO", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "uvigo", "wikipedia-gl"], "nota": "Unión Sindical Obreira"}
 {"forma": "USPS", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "UTC", "tipo": "sigla", "capa": "siglas", "fontes": ["udc", "wikipedia-gl"], "nota": "Unidade Técnica de Calidade"}
+{"forma": "UUAA", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Unións Agrarias"}
 {"forma": "UV", "tipo": "sigla", "capa": "siglas", "fontes": ["santiago", "uvigo", "ceg", "wikipedia-gl"], "nota": "Universidade de Vigo"}
 {"forma": "UVI", "tipo": "sigla", "capa": "siglas", "fontes": ["ceg"]}
 {"forma": "UVigo", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Universidade de Vigo"}
@@ -1663,34 +1863,52 @@
 {"forma": "V.M", "tipo": "abreviatura", "capa": "siglas", "fontes": ["udc"], "nota": "vosa maxestade"}
 {"forma": "V.S", "tipo": "abreviatura", "capa": "siglas", "fontes": ["udc"], "nota": "vosa señoría"}
 {"forma": "VA", "tipo": "símbolo", "capa": "siglas", "fontes": ["drag"]}
+{"forma": "VAR", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "videoarbitraxe (video assistant referee)"}
 {"forma": "VEB", "tipo": "símbolo", "capa": "siglas", "fontes": ["santiago"], "nota": "bolívar (moeda de Venezuela)"}
 {"forma": "VESA", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "VGA", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "conector de vídeo analóxico (Video Graphics Array)"}
 {"forma": "VHF", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "VHS", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
+{"forma": "VIH", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "virus da inmunodeficiencia humana"}
 {"forma": "VIP", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
+{"forma": "VJ", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "videojockey"}
+{"forma": "VOD", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "vídeo baixo demanda"}
+{"forma": "VPN", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "rede privada virtual"}
 {"forma": "VR", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "realidade virtual (virtual reality)"}
 {"forma": "VUE", "tipo": "sigla", "capa": "siglas", "fontes": ["ceg"]}
 {"forma": "Vde", "tipo": "abreviatura", "capa": "siglas", "fontes": ["drag", "volga", "santiago", "udc", "uvigo", "ceg"], "nota": "vostede"}
 {"forma": "Vdes", "tipo": "abreviatura", "capa": "siglas", "fontes": ["santiago", "udc", "ceg"], "nota": "vostede"}
 {"forma": "Vet", "tipo": "abreviatura", "capa": "siglas", "fontes": ["drag"]}
+{"forma": "VoIP", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "voz sobre IP"}
 {"forma": "W", "tipo": "símbolo", "capa": "siglas", "fontes": ["drag", "volga", "santiago", "ceg"], "nota": "volframio // watt"}
 {"forma": "WAI", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
+{"forma": "WAN", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "rede de área ampla"}
 {"forma": "WAP", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "WASP", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
+{"forma": "WAV", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "formato de son Waveform"}
 {"forma": "WHO", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "WINE", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
+{"forma": "WNBA", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Women's National Basketball Association"}
 {"forma": "WNW", "tipo": "símbolo", "capa": "siglas", "fontes": ["drag"]}
+{"forma": "WRC", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "World Rally Championship"}
 {"forma": "WSW", "tipo": "símbolo", "capa": "siglas", "fontes": ["drag"]}
+{"forma": "WTA", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Women's Tennis Association"}
+{"forma": "WTF", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "que carallo"}
+{"forma": "WWE", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "World Wrestling Entertainment"}
+{"forma": "WWF", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "World Wide Fund for Nature"}
 {"forma": "WYSIWYG", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "W\\", "tipo": "símbolo", "capa": "siglas", "fontes": ["santiago"], "nota": "wéber"}
 {"forma": "Wb", "tipo": "símbolo", "capa": "siglas", "fontes": ["drag", "volga"]}
 {"forma": "Wh", "tipo": "símbolo", "capa": "siglas", "fontes": ["ceg"], "nota": "Vatio-hora"}
+{"forma": "Wi-Fi", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "rede sen fíos"}
+{"forma": "WiFi", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "rede sen fíos (Wi-Fi)"}
 {"forma": "Wifi", "tipo": "sigla", "capa": "siglas", "fontes": ["ceg"]}
 {"forma": "Wine", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
 {"forma": "XAF", "tipo": "símbolo", "capa": "siglas", "fontes": ["santiago"], "nota": "franco CFA (moeda de Guinea Ecuatorial e outros países africanos)"}
 {"forma": "XCD", "tipo": "símbolo", "capa": "siglas", "fontes": ["santiago"], "nota": "dólar do Caribe Oriental (moeda de Antigua e Barbuda, Dominica, Granada, San Cristóbal e Nieves, Santa Lucía, San Vicente e as Granadinas)"}
+{"forma": "XEMA", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "Xestión Ambiental? (Xunta)"}
 {"forma": "XML", "tipo": "sigla", "capa": "siglas", "fontes": ["wikipedia-gl"]}
+{"forma": "XR", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "realidade estendida"}
 {"forma": "Xe", "tipo": "símbolo", "capa": "siglas", "fontes": ["drag", "volga", "santiago"], "nota": "xenon"}
 {"forma": "Xeogr", "tipo": "abreviatura", "capa": "siglas", "fontes": ["drag"]}
 {"forma": "Xeol", "tipo": "abreviatura", "capa": "siglas", "fontes": ["drag"]}
@@ -1698,6 +1916,9 @@
 {"forma": "Y", "tipo": "abreviatura", "capa": "siglas", "fontes": ["drag"]}
 {"forma": "Y", "tipo": "símbolo", "capa": "siglas", "fontes": ["volga", "santiago"], "nota": "itrio"}
 {"forma": "Yb", "tipo": "símbolo", "capa": "siglas", "fontes": ["drag", "volga", "santiago"], "nota": "iterbio"}
+{"forma": "ZBE", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "zona de baixas emisións"}
+{"forma": "ZEC", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "zona especial de conservación"}
+{"forma": "ZEPA", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "zona de especial protección para as aves"}
 {"forma": "ZIP", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "formato de ficheiro comprimido"}
 {"forma": "Zn", "tipo": "símbolo", "capa": "siglas", "fontes": ["drag", "volga", "santiago"], "nota": "cinc ou zinc"}
 {"forma": "Zool", "tipo": "abreviatura", "capa": "siglas", "fontes": ["drag"]}
@@ -6639,6 +6860,7 @@
 {"forma": "kV", "tipo": "símbolo", "capa": "siglas", "fontes": ["drag", "volga", "santiago", "ceg"], "nota": "quilovolt"}
 {"forma": "kW", "tipo": "símbolo", "capa": "siglas", "fontes": ["drag", "volga", "santiago", "ceg"], "nota": "quilovatio"}
 {"forma": "kW\\", "tipo": "símbolo", "capa": "siglas", "fontes": ["santiago"], "nota": "quilovatio por hora"}
+{"forma": "kWh", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "quilowatt hora"}
 {"forma": "kb", "tipo": "símbolo", "capa": "siglas", "fontes": ["drag"]}
 {"forma": "kcal", "tipo": "símbolo", "capa": "siglas", "fontes": ["drag"]}
 {"forma": "kg", "tipo": "abreviatura", "capa": "siglas", "fontes": ["volga"]}
@@ -6648,6 +6870,7 @@
 {"forma": "kl", "tipo": "abreviatura", "capa": "siglas", "fontes": ["volga"]}
 {"forma": "kl", "tipo": "símbolo", "capa": "siglas", "fontes": ["drag"]}
 {"forma": "km", "tipo": "abreviatura", "capa": "siglas", "fontes": ["volga"]}
+{"forma": "km", "tipo": "sigla", "capa": "siglas", "fontes": ["engadidos"], "nota": "quilómetros por hora"}
 {"forma": "km", "tipo": "símbolo", "capa": "siglas", "fontes": ["drag", "santiago", "ceg"], "nota": "quilómetro"}
 {"forma": "km\\", "tipo": "símbolo", "capa": "siglas", "fontes": ["santiago", "ceg"], "nota": "quilómetro hora"}
 {"forma": "km²", "tipo": "símbolo", "capa": "siglas", "fontes": ["santiago"], "nota": "quilómetro cadrado"}

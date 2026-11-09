@@ -62,6 +62,26 @@ class ProbasCapas(unittest.TestCase):
         antroponimos = {r["nome"] for r in ler("capas/antroponimos.jsonl")}
         self.assertTrue({"Barack Obama", "Rosalía de Castro", "Ludwig van Beethoven", "Luís Tosar"} <= antroponimos)
 
+    def test_cidades_clubs_e_nomes_doutras_linguas(self):
+        cidades = {r["nome"] for r in ler("capas/cidades.jsonl")}
+        self.assertTrue({"Mumbai", "A Coruña", "L'Hospitalet de Llobregat", "Donostia", "San Sebastián",
+                         "Vila Nova de Gaia", "Lisboa", "Aguada de Cima", "Munich"} <= cidades)
+        self.assertFalse(any(n.endswith(" 02") for n in cidades))   # Lyon 02
+        clubs = {r["nome"]: r for r in ler("capas/clubs.jsonl")}
+        for n in ("Bayern", "Dortmund", "Celta", "Arenteiro", "Obradoiro", "Lakers", "Real Madrid", "Bayern München"):
+            self.assertIn(n, clubs)
+        self.assertIn("fútbol", clubs["Real Madrid"]["nota"])
+        self.assertNotIn("Atl", clubs)          # abreviaturas das variantes
+        nomes = {(r["nome"], r["tipo"]): r for r in ler("capas/nomes-outras-linguas.jsonl")}
+        for n, t in (("John", "antropónimo"), ("Lennon", "apelido"), ("McCartney", "apelido"), ("Müller", "apelido"),
+                     ("Jürgen", "antropónimo"), ("Jon", "antropónimo"), ("Ander", "antropónimo"), ("Pol", "antropónimo"),
+                     ("Juan", "antropónimo"), ("João", "antropónimo"), ("Gonçalves", "apelido"), ("Etxeberria", "apelido"),
+                     ("Jordi", "antropónimo"), ("François", "antropónimo"), ("Dupont", "apelido")):
+            with self.subTest(nome=n):
+                self.assertIn((n, t), nomes)
+        self.assertIn("alemán", nomes[("Müller", "apelido")]["nota"])
+        self.assertNotIn(("Mccartney", "apelido"), nomes)
+
     def test_codigos(self):
         cod = {(r["codigo"], r["tipo"]) for r in ler("capas/codigos.jsonl")}
         self.assertIn(("glg", "iso639"), cod)

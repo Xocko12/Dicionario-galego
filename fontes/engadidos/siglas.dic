@@ -68,3 +68,229 @@ CHUF po:sigla  # Complexo Hospitalario Universitario de Ferrol
 HULA po:sigla  # Hospital Universitario Lucus Augusti (Lugo)
 PPdeG/999 po:sigla  # Partido Popular de Galicia
 AMTEGA po:sigla  # Axencia para a Modernización Tecnolóxica de Galicia
+
+# Siglas (segunda remesa: organismos, administración, sanidade, tecnoloxía, deporte, uso corrente)
+OIEA po:sigla  # Organismo Internacional de Enerxía Atómica
+TPI po:sigla  # Tribunal Penal Internacional
+TEDH po:sigla  # Tribunal Europeo de Dereitos Humanos
+TXUE po:sigla  # Tribunal de Xustiza da Unión Europea
+MEDE po:sigla  # Mecanismo Europeo de Estabilidade
+IS po:sigla  # imposto de sociedades
+ITP po:sigla  # imposto de transmisións patrimoniais
+IPREM po:sigla  # indicador público de renda de efectos múltiples
+ATRIGA po:sigla  # Axencia Tributaria de Galicia
+TXSG po:sigla  # Tribunal Superior de Xustiza de Galicia
+AN po:sigla  # Audiencia Nacional
+RGPD po:sigla  # Regulamento xeral de protección de datos
+LOMLOE po:sigla  # Lei orgánica de modificación da LOE (lei educativa)
+LOE po:sigla  # Lei orgánica de educación
+LOGSE po:sigla  # Lei orgánica xeral do sistema educativo
+LOMCE po:sigla  # Lei orgánica para a mellora da calidade educativa
+EBAU po:sigla  # avaliación do bacharelato para o acceso á universidade
+CPI po:sigla  # centro público integrado
+CIFP po:sigla  # centro integrado de formación profesional
+CRA po:sigla  # colexio rural agrupado
+AMPA po:sigla  # asociación de nais e pais de alumnos
+UOC po:sigla  # Universitat Oberta de Catalunya
+UAB po:sigla  # Universitat Autònoma de Barcelona
+UPC po:sigla  # Universitat Politècnica de Catalunya
+UPM po:sigla  # Universidad Politécnica de Madrid
+UCM po:sigla  # Universidad Complutense de Madrid
+UAM po:sigla  # Universidad Autónoma de Madrid
+UPV po:sigla  # Universidad del País Vasco / Universitat Politècnica de València
+EHU po:sigla  # Euskal Herriko Unibertsitatea
+UCLA po:sigla  # University of California, Los Angeles
+CNIO po:sigla  # Centro Nacional de Investigacións Oncolóxicas
+CIMUS po:sigla  # Centro Singular de Investigación en Medicina Molecular e Enfermidades Crónicas
+CITIUS po:sigla  # Centro Singular de Investigación en Tecnoloxías Intelixentes
+CiQUS/999 po:sigla  # Centro Singular de Investigación en Química Biolóxica e Materiais Moleculares
+IIM po:sigla  # Instituto de Investigacións Mariñas
+MBG po:sigla  # Misión Biolóxica de Galicia
+INTECMAR po:sigla  # Instituto Tecnolóxico para o Control do Medio Mariño
+ANFACO po:sigla  # Asociación Nacional de Fabricantes de Conservas
+CETIM po:sigla  # Centro Tecnolóxico de Investigación Multisectorial
+AIMEN po:sigla  # Asociación de Investigación Metalúrxica do Noroeste
+ITG po:sigla  # Instituto Tecnolóxico de Galicia
+ISS po:sigla  # Estación Espacial Internacional
+VIH po:sigla  # virus da inmunodeficiencia humana
+ELA po:sigla  # esclerose lateral amiotrófica
+EM po:sigla  # esclerose múltiple
+TEA po:sigla  # trastorno do espectro autista
+TOC po:sigla  # trastorno obsesivo-compulsivo
+EPOC po:sigla  # enfermidade pulmonar obstrutiva crónica
+RCP po:sigla  # reanimación cardiopulmonar
+RM po:sigla  # resonancia magnética
+PCR po:sigla  # reacción en cadea da polimerase
+HAC po:sigla  # Hospital Álvaro Cunqueiro
+CHOP po:sigla  # Complexo Hospitalario de Pontevedra
+AEMPS po:sigla  # Axencia Española de Medicamentos e Produtos Sanitarios
+EMA po:sigla  # Axencia Europea de Medicamentos
+EIR po:sigla  # enfermeiro interno residente
+PIR po:sigla  # psicólogo interno residente
+NUSS po:sigla  # número da Seguridade Social
+IBAN po:sigla  # número de conta bancaria internacional
+SWIFT po:sigla  # Society for Worldwide Interbank Financial Telecommunication
+TIN po:sigla  # tipo de xuro nominal
+CVV po:sigla  # código de verificación da tarxeta
+TPV po:sigla  # terminal de punto de venda
+SEPA po:sigla  # zona única de pagamentos en euros
+PYME po:sigla  # pequena e mediana empresa
+SA po:sigla  # sociedade anónima
+SLU po:sigla  # sociedade limitada unipersoal
+SAU po:sigla  # sociedade anónima unipersoal
+SCoop/999 po:sigla  # sociedade cooperativa
+RSC po:sigla  # responsabilidade social corporativa
+ODS po:sigla  # obxectivos de desenvolvemento sostible
+CFO po:sigla  # director financeiro
+CTO po:sigla  # director de tecnoloxía
+RRHH po:sigla  # recursos humanos
+RRPP po:sigla  # relacións públicas
+RRSS po:sigla  # redes sociais
+PdeCAT/999 po:sigla  # Partit Demòcrata Europeu Català
+UCD po:sigla  # Unión de Centro Democrático
+FN po:sigla  # Front National
+RN po:sigla  # Rassemblement National
+LFI po:sigla  # La France Insoumise
+CDU po:sigla  # Christlich Demokratische Union
+CSU po:sigla  # Christlich-Soziale Union
+SPD po:sigla  # Sozialdemokratische Partei Deutschlands
+FDP po:sigla  # Freie Demokratische Partei
+AfD/999 po:sigla  # Alternative für Deutschland
+CDS-PP po:sigla  # Centro Democrático e Social – Partido Popular
+PCP po:sigla  # Partido Comunista Português
+IL po:sigla  # Iniciativa Liberal
+UGT po:sigla  # Unión Xeral de Traballadores
+UUAA po:sigla  # Unións Agrarias
+DOUE po:sigla  # Diario Oficial da Unión Europea
+XEMA po:sigla  # Xestión Ambiental? (Xunta)
+GAIN po:sigla  # Axencia Galega de Innovación
+AGASP po:sigla  # Academia Galega de Seguridade Pública
+AXEGA po:sigla  # Axencia Galega de Emerxencias
+AXI po:sigla  # Axencia Galega de Infraestruturas
+ISSGA po:sigla  # Instituto de Seguridade e Saúde Laboral de Galicia
+SPDCIF po:sigla  # Servizo de Prevención e Defensa contra Incendios Forestais
+EFE po:sigla  # Axencia EFE
+IEC po:sigla  # Institut d'Estudis Catalans
+AGPI po:sigla  # Asociación Galega de Profesionais da Ilustración
+AGE po:sigla  # Asociación Galega de Editoras
+DELE po:sigla  # diploma de español como lingua estranxeira
+TOEFL po:sigla  # Test of English as a Foreign Language
+IELTS po:sigla  # International English Language Testing System
+B1 po:sigla  # nivel intermedio do Marco Común Europeo
+B2 po:sigla  # nivel intermedio alto do Marco Común Europeo
+C1 po:sigla  # nivel avanzado do Marco Común Europeo
+C2 po:sigla  # nivel de dominio do Marco Común Europeo
+MCER po:sigla  # Marco Común Europeo de Referencia para as Linguas
+UEFA po:sigla  # Union of European Football Associations
+RFEF po:sigla  # Real Federación Española de Fútbol
+RFGF po:sigla  # Real Federación Galega de Fútbol
+CONMEBOL po:sigla  # Confederación Sudamericana de Fútbol
+CONCACAF po:sigla  # Confederation of North, Central America and Caribbean Association Football
+FEB po:sigla  # Federación Española de Baloncesto
+NBA po:sigla  # National Basketball Association
+WNBA po:sigla  # Women's National Basketball Association
+NFL po:sigla  # National Football League
+MLB po:sigla  # Major League Baseball
+NHL po:sigla  # National Hockey League
+MLS po:sigla  # Major League Soccer
+WTA po:sigla  # Women's Tennis Association
+ITF po:sigla  # Federación Internacional de Tenis
+FIA po:sigla  # Fédération Internationale de l'Automobile
+F1 po:sigla  # Fórmula 1
+WRC po:sigla  # World Rally Championship
+IHF po:sigla  # Federación Internacional de Balonmán
+EHF po:sigla  # Federación Europea de Balonmán
+RFEBM po:sigla  # Real Federación Española de Balonmán
+LNFS po:sigla  # Liga Nacional de Fútbol Sala
+VAR po:sigla  # videoarbitraxe (video assistant referee)
+UFC po:sigla  # Ultimate Fighting Championship
+MMA po:sigla  # artes marciais mixtas
+WWE po:sigla  # World Wrestling Entertainment
+PGA po:sigla  # Professional Golfers' Association
+LPGA po:sigla  # Ladies Professional Golf Association
+LLM po:sigla  # modelo de linguaxe grande (large language model)
+GPT po:sigla  # transformador xerativo preadestrado (generative pre-trained transformer)
+SDK po:sigla  # kit de desenvolvemento de software
+GPU po:sigla  # unidade de procesamento gráfico
+WAN po:sigla  # rede de área ampla
+VPN po:sigla  # rede privada virtual
+SSL po:sigla  # capa de conexión segura
+TLS po:sigla  # seguridade da capa de transporte
+CSS po:sigla  # follas de estilo en fervenza
+CSV po:sigla  # valores separados por comas
+PDF po:sigla  # formato de documento portátil
+SVG po:sigla  # gráficos vectoriais escalables
+AVI po:sigla  # Audio Video Interleave
+MKV po:sigla  # contedor Matroska
+WAV po:sigla  # formato de son Waveform
+FLAC po:sigla  # Free Lossless Audio Codec
+OS po:sigla  # sistema operativo (operating system)
+RFID po:sigla  # identificación por radiofrecuencia
+IMEI po:sigla  # identidade internacional de equipo móbil
+6G po:sigla  # sexta xeración de telefonía móbil
+WiFi/999 po:sigla  # rede sen fíos (Wi-Fi)
+Wi-Fi po:sigla  # rede sen fíos
+VoIP/999 po:sigla  # voz sobre IP
+MMS po:sigla  # servizo de mensaxes multimedia
+OTP po:sigla  # contrasinal dun só uso
+2FA po:sigla  # autenticación de dous factores
+CAPTCHA po:sigla  # proba de Turing pública automática
+SEO po:sigla  # optimización para buscadores
+ERP po:sigla  # planificación de recursos empresariais
+CMS po:sigla  # sistema de xestión de contidos
+PaaS/999 po:sigla  # plataforma como servizo
+IaaS/999 po:sigla  # infraestrutura como servizo
+GCP po:sigla  # Google Cloud Platform
+CI/CD po:sigla  # integración e entrega continuas
+XR po:sigla  # realidade estendida
+FPS po:sigla  # fotogramas por segundo
+VJ po:sigla  # videojockey
+MC po:sigla  # mestre de cerimonias
+BSO po:sigla  # banda sonora orixinal
+OST po:sigla  # original soundtrack
+LP po:sigla  # disco de longa duración
+VOD po:sigla  # vídeo baixo demanda
+CMYK po:sigla  # cian, maxenta, amarelo e negro
+PPP po:sigla  # puntos por polgada; produto por persoa
+NIV po:sigla  # número de identificación do vehículo
+ESP po:sigla  # control electrónico de estabilidade
+GLP po:sigla  # gas licuado do petróleo
+GNC po:sigla  # gas natural comprimido
+kWh/999 po:sigla  # quilowatt hora
+GW po:sigla  # gigawatt
+km/h po:sigla  # quilómetros por hora
+CO2 po:sigla  # dióxido de carbono
+IPCC po:sigla  # Grupo Intergobernamental de Expertos sobre o Cambio Climático
+ZBE po:sigla  # zona de baixas emisións
+ETAP po:sigla  # estación de tratamento de auga potable
+PGOM po:sigla  # plan xeral de ordenación municipal
+PORN po:sigla  # plan de ordenación dos recursos naturais
+ZEC po:sigla  # zona especial de conservación
+ZEPA po:sigla  # zona de especial protección para as aves
+LIC po:sigla  # lugar de importancia comunitaria
+CRDO po:sigla  # consello regulador da denominación de orixe
+OPP po:sigla  # organización de produtores pesqueiros
+LGTBIQ+ po:sigla  # lesbianas, gais, trans, bisexuais, intersexuais, queer e máis
+OK po:sigla  # de acordo
+NB po:sigla  # nota bene
+AKA po:sigla  # coñecido como (also known as)
+ASAP po:sigla  # o antes posible
+DIY po:sigla  # faino ti mesmo
+BTW po:sigla  # por certo (by the way)
+LOL po:sigla  # rindo a gargalladas
+WTF po:sigla  # que carallo
+IMHO po:sigla  # na miña humilde opinión
+TL;DR po:sigla  # demasiado longo, non o lin
+FYI po:sigla  # para a túa información
+COCEMFE po:sigla  # Confederación Española de Persoas con Discapacidade Física e Orgánica
+FEAFES po:sigla  # Confederación Española de Agrupacións de Familiares e Persoas con Enfermidade Mental
+AECC po:sigla  # Asociación Española Contra o Cancro
+AFA po:sigla  # asociación de familiares de enfermos de alzhéimer
+ASPACE po:sigla  # asociación de parálise cerebral
+DOWN po:sigla  # Down Galicia
+Intermón po:sigla  # Oxfam Intermón
+SEO/BirdLife/999 po:sigla  # Sociedade Española de Ornitoloxía
+APDR po:sigla  # Asociación Pola Defensa da Ría
+WWF po:sigla  # World Wide Fund for Nature
+FAPAS po:sigla  # Fondo para a Protección dos Animais Salvaxes
+PACMA po:sigla  # Partido Animalista

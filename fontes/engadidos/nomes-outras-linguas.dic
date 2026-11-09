@@ -1,0 +1,700 @@
+# Engadidos a man neste proxecto (GPL-3.0-or-later), no formato dos módulos de Hunspell-gl:
+#   palabra[/999] po:tipo [is:ngrama_Nome_completo]  # nota
+# Cada palabra dun nome composto vai na súa liña coa etiqueta is:ngrama_ (como en Hunspell-gl);
+# /999 é KEEPCASE: a palabra só vale coa grafía dada (iOS, macOS, eBay).
+# Capa: nomes-outras-linguas (nomes de pía e apelidos correntes que faltan nas fontes).
+# Éuscaro e catalán: sen fonte libre con frecuencias, van a man. Castelán e francés: as fontes veñen sen acentos.
+
+# Éuscaro: nomes de pía
+Iñaki po:antropónimo  # nome de pía: éuscaro
+Iñigo po:antropónimo  # nome de pía: éuscaro
+Xabier po:antropónimo  # nome de pía: éuscaro
+Koldo po:antropónimo  # nome de pía: éuscaro
+Kepa po:antropónimo  # nome de pía: éuscaro
+Josu po:antropónimo  # nome de pía: éuscaro
+Oier po:antropónimo  # nome de pía: éuscaro
+Beñat po:antropónimo  # nome de pía: éuscaro
+Ekain po:antropónimo  # nome de pía: éuscaro
+Peru po:antropónimo  # nome de pía: éuscaro
+Urko po:antropónimo  # nome de pía: éuscaro
+Gaizka po:antropónimo  # nome de pía: éuscaro
+Joseba po:antropónimo  # nome de pía: éuscaro
+Patxi po:antropónimo  # nome de pía: éuscaro
+Txomin po:antropónimo  # nome de pía: éuscaro
+Jokin po:antropónimo  # nome de pía: éuscaro
+Mitxel po:antropónimo  # nome de pía: éuscaro
+Endika po:antropónimo  # nome de pía: éuscaro
+Haritz po:antropónimo  # nome de pía: éuscaro
+Harkaitz po:antropónimo  # nome de pía: éuscaro
+Zigor po:antropónimo  # nome de pía: éuscaro
+Iban po:antropónimo  # nome de pía: éuscaro
+Ugaitz po:antropónimo  # nome de pía: éuscaro
+Luken po:antropónimo  # nome de pía: éuscaro
+Danel po:antropónimo  # nome de pía: éuscaro
+Aiur po:antropónimo  # nome de pía: éuscaro
+Izei po:antropónimo  # nome de pía: éuscaro
+Ekhi po:antropónimo  # nome de pía: éuscaro
+Enaitz po:antropónimo  # nome de pía: éuscaro
+Garikoitz po:antropónimo  # nome de pía: éuscaro
+Gotzon po:antropónimo  # nome de pía: éuscaro
+Ibon po:antropónimo  # nome de pía: éuscaro
+Idoia po:antropónimo  # nome de pía: éuscaro
+Ikerne po:antropónimo  # nome de pía: éuscaro
+Jagoba po:antropónimo  # nome de pía: éuscaro
+Jurgi po:antropónimo  # nome de pía: éuscaro
+Kerman po:antropónimo  # nome de pía: éuscaro
+Lander po:antropónimo  # nome de pía: éuscaro
+Manex po:antropónimo  # nome de pía: éuscaro
+Martxel po:antropónimo  # nome de pía: éuscaro
+Mattin po:antropónimo  # nome de pía: éuscaro
+Oinatz po:antropónimo  # nome de pía: éuscaro
+Oskitz po:antropónimo  # nome de pía: éuscaro
+Sendoa po:antropónimo  # nome de pía: éuscaro
+Txema po:antropónimo  # nome de pía: éuscaro
+Txetxu po:antropónimo  # nome de pía: éuscaro
+Ximun po:antropónimo  # nome de pía: éuscaro
+Xanti po:antropónimo  # nome de pía: éuscaro
+Zuhaitz po:antropónimo  # nome de pía: éuscaro
+Maite po:antropónimo  # nome de pía: éuscaro
+Uxue po:antropónimo  # nome de pía: éuscaro
+Naroa po:antropónimo  # nome de pía: éuscaro
+Maialen po:antropónimo  # nome de pía: éuscaro
+Olatz po:antropónimo  # nome de pía: éuscaro
+Miren po:antropónimo  # nome de pía: éuscaro
+Garazi po:antropónimo  # nome de pía: éuscaro
+Izaro po:antropónimo  # nome de pía: éuscaro
+Haizea po:antropónimo  # nome de pía: éuscaro
+Alazne po:antropónimo  # nome de pía: éuscaro
+Elixabete po:antropónimo  # nome de pía: éuscaro
+Agurtzane po:antropónimo  # nome de pía: éuscaro
+Arantzazu po:antropónimo  # nome de pía: éuscaro
+Begoña po:antropónimo  # nome de pía: éuscaro
+Estibaliz po:antropónimo  # nome de pía: éuscaro
+Jaione po:antropónimo  # nome de pía: éuscaro
+Saioa po:antropónimo  # nome de pía: éuscaro
+Aiora po:antropónimo  # nome de pía: éuscaro
+Ilargi po:antropónimo  # nome de pía: éuscaro
+Izar po:antropónimo  # nome de pía: éuscaro
+Lorea po:antropónimo  # nome de pía: éuscaro
+Maider po:antropónimo  # nome de pía: éuscaro
+Udane po:antropónimo  # nome de pía: éuscaro
+Zuriñe po:antropónimo  # nome de pía: éuscaro
+Maddi po:antropónimo  # nome de pía: éuscaro
+Izadi po:antropónimo  # nome de pía: éuscaro
+Itxaso po:antropónimo  # nome de pía: éuscaro
+Amaiur po:antropónimo  # nome de pía: éuscaro
+Argiñe po:antropónimo  # nome de pía: éuscaro
+Arrate po:antropónimo  # nome de pía: éuscaro
+Bakarne po:antropónimo  # nome de pía: éuscaro
+Deñe po:antropónimo  # nome de pía: éuscaro
+Gurutze po:antropónimo  # nome de pía: éuscaro
+Haize po:antropónimo  # nome de pía: éuscaro
+Ihintza po:antropónimo  # nome de pía: éuscaro
+Intza po:antropónimo  # nome de pía: éuscaro
+Irantzu po:antropónimo  # nome de pía: éuscaro
+Izaskun po:antropónimo  # nome de pía: éuscaro
+Lide po:antropónimo  # nome de pía: éuscaro
+Maitane po:antropónimo  # nome de pía: éuscaro
+Oihana po:antropónimo  # nome de pía: éuscaro
+Onintza po:antropónimo  # nome de pía: éuscaro
+Usoa po:antropónimo  # nome de pía: éuscaro
+Uxua po:antropónimo  # nome de pía: éuscaro
+Yone po:antropónimo  # nome de pía: éuscaro
+Zaloa po:antropónimo  # nome de pía: éuscaro
+Ziortza po:antropónimo  # nome de pía: éuscaro
+
+# Éuscaro: apelidos
+Etxeberria po:apelido  # apelido: éuscaro
+Echeverría po:apelido  # apelido: éuscaro
+Agirre po:apelido  # apelido: éuscaro
+Zubizarreta po:apelido  # apelido: éuscaro
+Goikoetxea po:apelido  # apelido: éuscaro
+Goicoechea po:apelido  # apelido: éuscaro
+Mendizabal po:apelido  # apelido: éuscaro
+Elorza po:apelido  # apelido: éuscaro
+Iturralde po:apelido  # apelido: éuscaro
+Zabala po:apelido  # apelido: éuscaro
+Larrañaga po:apelido  # apelido: éuscaro
+Otegi po:apelido  # apelido: éuscaro
+Urkullu po:apelido  # apelido: éuscaro
+Arzalluz po:apelido  # apelido: éuscaro
+Ibarretxe po:apelido  # apelido: éuscaro
+Garaikoetxea po:apelido  # apelido: éuscaro
+Iraola po:apelido  # apelido: éuscaro
+Zarraga po:apelido  # apelido: éuscaro
+Lasa po:apelido  # apelido: éuscaro
+Olano po:apelido  # apelido: éuscaro
+Aranburu po:apelido  # apelido: éuscaro
+Aramburu po:apelido  # apelido: éuscaro
+Muguruza po:apelido  # apelido: éuscaro
+Iturriaga po:apelido  # apelido: éuscaro
+Errazkin po:apelido  # apelido: éuscaro
+Txillardegi po:apelido  # apelido: éuscaro
+Aranzadi po:apelido  # apelido: éuscaro
+Arregi po:apelido  # apelido: éuscaro
+Arregui po:apelido  # apelido: éuscaro
+Azkuna po:apelido  # apelido: éuscaro
+Azkune po:apelido  # apelido: éuscaro
+Barrenetxea po:apelido  # apelido: éuscaro
+Bengoetxea po:apelido  # apelido: éuscaro
+Bilbao po:apelido  # apelido: éuscaro
+Etxebarria po:apelido  # apelido: éuscaro
+Gaztañaga po:apelido  # apelido: éuscaro
+Goirizelaia po:apelido  # apelido: éuscaro
+Irigoien po:apelido  # apelido: éuscaro
+Iturbe po:apelido  # apelido: éuscaro
+Izagirre po:apelido  # apelido: éuscaro
+Izaguirre po:apelido  # apelido: éuscaro
+Jauregi po:apelido  # apelido: éuscaro
+Jáuregui po:apelido  # apelido: éuscaro
+Lekuona po:apelido  # apelido: éuscaro
+Lizarraga po:apelido  # apelido: éuscaro
+Mendiluze po:apelido  # apelido: éuscaro
+Mendieta po:apelido  # apelido: éuscaro
+Mujika po:apelido  # apelido: éuscaro
+Múgica po:apelido  # apelido: éuscaro
+Olaizola po:apelido  # apelido: éuscaro
+Ormaetxea po:apelido  # apelido: éuscaro
+Ormazabal po:apelido  # apelido: éuscaro
+Otamendi po:apelido  # apelido: éuscaro
+Salaberria po:apelido  # apelido: éuscaro
+Sarasola po:apelido  # apelido: éuscaro
+Uriarte po:apelido  # apelido: éuscaro
+Urzelai po:apelido  # apelido: éuscaro
+Zubiaurre po:apelido  # apelido: éuscaro
+Zubiri po:apelido  # apelido: éuscaro
+Zumalakarregi po:apelido  # apelido: éuscaro
+Arteta po:apelido  # apelido: éuscaro
+Aizpurua po:apelido  # apelido: éuscaro
+Altuna po:apelido  # apelido: éuscaro
+Amezaga po:apelido  # apelido: éuscaro
+Ansotegi po:apelido  # apelido: éuscaro
+Arrieta po:apelido  # apelido: éuscaro
+Arrizabalaga po:apelido  # apelido: éuscaro
+Artola po:apelido  # apelido: éuscaro
+Atxa po:apelido  # apelido: éuscaro
+Azpiazu po:apelido  # apelido: éuscaro
+Barandiaran po:apelido  # apelido: éuscaro
+Beloki po:apelido  # apelido: éuscaro
+Bereziartua po:apelido  # apelido: éuscaro
+Bikandi po:apelido  # apelido: éuscaro
+Egaña po:apelido  # apelido: éuscaro
+Eizagirre po:apelido  # apelido: éuscaro
+Elgezabal po:apelido  # apelido: éuscaro
+Erauskin po:apelido  # apelido: éuscaro
+Errekondo po:apelido  # apelido: éuscaro
+Gabilondo po:apelido  # apelido: éuscaro
+Galarraga po:apelido  # apelido: éuscaro
+Gastañaga po:apelido  # apelido: éuscaro
+Gorrotxategi po:apelido  # apelido: éuscaro
+Insausti po:apelido  # apelido: éuscaro
+Irazusta po:apelido  # apelido: éuscaro
+Lete po:apelido  # apelido: éuscaro
+Loiola po:apelido  # apelido: éuscaro
+Loyola po:apelido  # apelido: éuscaro
+Maiztegi po:apelido  # apelido: éuscaro
+Mendia po:apelido  # apelido: éuscaro
+Odriozola po:apelido  # apelido: éuscaro
+Olabarria po:apelido  # apelido: éuscaro
+Orbegozo po:apelido  # apelido: éuscaro
+Oyarzábal po:apelido  # apelido: éuscaro
+Oiartzabal po:apelido  # apelido: éuscaro
+Rekalde po:apelido  # apelido: éuscaro
+Retegi po:apelido  # apelido: éuscaro
+Sagastume po:apelido  # apelido: éuscaro
+Telleria po:apelido  # apelido: éuscaro
+Txurruka po:apelido  # apelido: éuscaro
+Uranga po:apelido  # apelido: éuscaro
+Urdangarin po:apelido  # apelido: éuscaro
+Urretabizkaia po:apelido  # apelido: éuscaro
+Zelaia po:apelido  # apelido: éuscaro
+Zubeldia po:apelido  # apelido: éuscaro
+Zugasti po:apelido  # apelido: éuscaro
+Zulaika po:apelido  # apelido: éuscaro
+Zuloaga po:apelido  # apelido: éuscaro
+
+# Catalán: nomes de pía
+Narcís po:antropónimo  # nome de pía: catalán
+Marçal po:antropónimo  # nome de pía: catalán
+Ponç po:antropónimo  # nome de pía: catalán
+Quico po:antropónimo  # nome de pía: catalán
+Rafel po:antropónimo  # nome de pía: catalán
+Vicenç po:antropónimo  # nome de pía: catalán
+Llorenç po:antropónimo  # nome de pía: catalán
+Isidre po:antropónimo  # nome de pía: catalán
+Ventura po:antropónimo  # nome de pía: catalán
+Meritxell po:antropónimo  # nome de pía: catalán
+Mercè po:antropónimo  # nome de pía: catalán
+Roser po:antropónimo  # nome de pía: catalán
+Àngels po:antropónimo  # nome de pía: catalán
+Dolors po:antropónimo  # nome de pía: catalán
+Carme po:antropónimo  # nome de pía: catalán
+Montse po:antropónimo  # nome de pía: catalán
+Assumpta po:antropónimo  # nome de pía: catalán
+Eulàlia po:antropónimo  # nome de pía: catalán
+Immaculada po:antropónimo  # nome de pía: catalán
+Remei po:antropónimo  # nome de pía: catalán
+
+# Catalán: apelidos
+Rovira po:apelido  # apelido: catalán
+Casals po:apelido  # apelido: catalán
+Puigdemont po:apelido  # apelido: catalán
+Junqueras po:apelido  # apelido: catalán
+Aragonès po:apelido  # apelido: catalán
+Colau po:apelido  # apelido: catalán
+Maragall po:apelido  # apelido: catalán
+Tarradellas po:apelido  # apelido: catalán
+Companys po:apelido  # apelido: catalán
+Macià po:apelido  # apelido: catalán
+Gaudí po:apelido  # apelido: catalán
+Dalí po:apelido  # apelido: catalán
+Miró po:apelido  # apelido: catalán
+Tàpies po:apelido  # apelido: catalán
+Rusiñol po:apelido  # apelido: catalán
+Verdaguer po:apelido  # apelido: catalán
+Espriu po:apelido  # apelido: catalán
+Rodoreda po:apelido  # apelido: catalán
+Llull po:apelido  # apelido: catalán
+Cabré po:apelido  # apelido: catalán
+Illa po:apelido  # apelido: catalán
+Trias po:apelido  # apelido: catalán
+Mascarell po:apelido  # apelido: catalán
+Torra po:apelido  # apelido: catalán
+Forcadell po:apelido  # apelido: catalán
+Rull po:apelido  # apelido: catalán
+Turull po:apelido  # apelido: catalán
+Romeva po:apelido  # apelido: catalán
+Bassa po:apelido  # apelido: catalán
+Sànchez po:apelido  # apelido: catalán
+Cuixart po:apelido  # apelido: catalán
+Puigneró po:apelido  # apelido: catalán
+Capella po:apelido  # apelido: catalán
+Castells po:apelido  # apelido: catalán
+Solà po:apelido  # apelido: catalán
+Plana po:apelido  # apelido: catalán
+Comas po:apelido  # apelido: catalán
+Codina po:apelido  # apelido: catalán
+Fàbregas po:apelido  # apelido: catalán
+Fabregat po:apelido  # apelido: catalán
+Alsina po:apelido  # apelido: catalán
+Armengol po:apelido  # apelido: catalán
+Busquets po:apelido  # apelido: catalán
+Carreras po:apelido  # apelido: catalán
+Cortés po:apelido  # apelido: catalán
+Domènech po:apelido  # apelido: catalán
+Figueras po:apelido  # apelido: catalán
+Fontanals po:apelido  # apelido: catalán
+Gispert po:apelido  # apelido: catalán
+Juncosa po:apelido  # apelido: catalán
+Lladó po:apelido  # apelido: catalán
+Martorell po:apelido  # apelido: catalán
+Masó po:apelido  # apelido: catalán
+Mateu po:apelido  # apelido: catalán
+Miralles po:apelido  # apelido: catalán
+Monràs po:apelido  # apelido: catalán
+Morera po:apelido  # apelido: catalán
+Nogués po:apelido  # apelido: catalán
+Olivé po:apelido  # apelido: catalán
+Parés po:apelido  # apelido: catalán
+Pujadas po:apelido  # apelido: catalán
+Pujols po:apelido  # apelido: catalán
+Puyol po:apelido  # apelido: catalán
+Rafel po:apelido  # apelido: catalán
+Rius po:apelido  # apelido: catalán
+Ros po:apelido  # apelido: catalán
+Rosell po:apelido  # apelido: catalán
+Roura po:apelido  # apelido: catalán
+Sabaté po:apelido  # apelido: catalán
+Sagarra po:apelido  # apelido: catalán
+Sanchis po:apelido  # apelido: catalán
+Santacana po:apelido  # apelido: catalán
+Segarra po:apelido  # apelido: catalán
+Sellarès po:apelido  # apelido: catalán
+Subirats po:apelido  # apelido: catalán
+Terrassa po:apelido  # apelido: catalán
+Torras po:apelido  # apelido: catalán
+Verdú po:apelido  # apelido: catalán
+Vilalta po:apelido  # apelido: catalán
+Vilanova po:apelido  # apelido: catalán
+Vilaró po:apelido  # apelido: catalán
+Xirgu po:apelido  # apelido: catalán
+
+# Castelán: nomes de pía
+Belén po:antropónimo  # nome de pía: castelán
+Concepción po:antropónimo  # nome de pía: castelán
+Encarnación po:antropónimo  # nome de pía: castelán
+Asunción po:antropónimo  # nome de pía: castelán
+Purificación po:antropónimo  # nome de pía: castelán
+Marías po:antropónimo  # nome de pía: castelán
+Inmaculada po:antropónimo  # nome de pía: castelán
+Begoña po:antropónimo  # nome de pía: castelán
+Remedios po:antropónimo  # nome de pía: castelán
+Nieves po:antropónimo  # nome de pía: castelán
+Estefanía po:antropónimo  # nome de pía: castelán
+Cristóbal po:antropónimo  # nome de pía: castelán
+Bartolomé po:antropónimo  # nome de pía: castelán
+Beñat po:antropónimo  # nome de pía: castelán
+Oier po:antropónimo  # nome de pía: castelán
+Gaizka po:antropónimo  # nome de pía: castelán
+Íñigo po:antropónimo  # nome de pía: castelán
+Ayoze po:antropónimo  # nome de pía: castelán
+Paco po:antropónimo  # nome de pía: castelán
+Curro po:antropónimo  # nome de pía: castelán
+Manolo po:antropónimo  # nome de pía: castelán
+Manolito po:antropónimo  # nome de pía: castelán
+Lolo po:antropónimo  # nome de pía: castelán
+Chema po:antropónimo  # nome de pía: castelán
+Quique po:antropónimo  # nome de pía: castelán
+Kike po:antropónimo  # nome de pía: castelán
+Sebas po:antropónimo  # nome de pía: castelán
+Edu po:antropónimo  # nome de pía: castelán
+Álvarez po:antropónimo  # nome de pía: castelán
+
+# Castelán: apelidos
+Martín po:apelido  # apelido: castelán
+Jiménez po:apelido  # apelido: castelán
+Díaz po:apelido  # apelido: castelán
+Vázquez po:apelido  # apelido: castelán
+Ramírez po:apelido  # apelido: castelán
+Suárez po:apelido  # apelido: castelán
+Marín po:apelido  # apelido: castelán
+Cortés po:apelido  # apelido: castelán
+León po:apelido  # apelido: castelán
+Márquez po:apelido  # apelido: castelán
+Peña po:apelido  # apelido: castelán
+Díez po:apelido  # apelido: castelán
+Herrero po:apelido  # apelido: castelán
+Ibáñez po:apelido  # apelido: castelán
+Durán po:apelido  # apelido: castelán
+Benítez po:apelido  # apelido: castelán
+Román po:apelido  # apelido: castelán
+Sáez po:apelido  # apelido: castelán
+Izquierdo po:apelido  # apelido: castelán
+Luque po:apelido  # apelido: castelán
+Ríos po:apelido  # apelido: castelán
+Benito po:apelido  # apelido: castelán
+Sáenz po:apelido  # apelido: castelán
+Roldán po:apelido  # apelido: castelán
+Lópes po:apelido  # apelido: castelán
+Escudero po:apelido  # apelido: castelán
+Cuesta po:apelido  # apelido: castelán
+Expósito po:apelido  # apelido: castelán
+Anguita po:apelido  # apelido: castelán
+Estévez po:apelido  # apelido: castelán
+Bermúdez po:apelido  # apelido: castelán
+Blázquez po:apelido  # apelido: castelán
+Cabello po:apelido  # apelido: castelán
+Carrión po:apelido  # apelido: castelán
+Guillén po:apelido  # apelido: castelán
+Lorente po:apelido  # apelido: castelán
+Macías po:apelido  # apelido: castelán
+Mateos po:apelido  # apelido: castelán
+Nicolás po:apelido  # apelido: castelán
+Reina po:apelido  # apelido: castelán
+Velázquez po:apelido  # apelido: castelán
+Ordóñez po:apelido  # apelido: castelán
+Cela po:apelido  # apelido: castelán
+Delibes po:apelido  # apelido: castelán
+Unamuno po:apelido  # apelido: castelán
+Lorca po:apelido  # apelido: castelán
+Aleixandre po:apelido  # apelido: castelán
+Galdós po:apelido  # apelido: castelán
+Clarín po:apelido  # apelido: castelán
+Larra po:apelido  # apelido: castelán
+Bécquer po:apelido  # apelido: castelán
+Góngora po:apelido  # apelido: castelán
+Calderón po:apelido  # apelido: castelán
+Zorrilla po:apelido  # apelido: castelán
+Echegaray po:apelido  # apelido: castelán
+Benavente po:apelido  # apelido: castelán
+Bazán po:apelido  # apelido: castelán
+Azorín po:apelido  # apelido: castelán
+Baroja po:apelido  # apelido: castelán
+Gasset po:apelido  # apelido: castelán
+Marías po:apelido  # apelido: castelán
+Buero po:apelido  # apelido: castelán
+Marsé po:apelido  # apelido: castelán
+Llosa po:apelido  # apelido: castelán
+Cortázar po:apelido  # apelido: castelán
+Neruda po:apelido  # apelido: castelán
+Rulfo po:apelido  # apelido: castelán
+Lezama po:apelido  # apelido: castelán
+Allende po:apelido  # apelido: castelán
+Bolaño po:apelido  # apelido: castelán
+Sabato po:apelido  # apelido: castelán
+Bioy po:apelido  # apelido: castelán
+Onetti po:apelido  # apelido: castelán
+Galeano po:apelido  # apelido: castelán
+Arguedas po:apelido  # apelido: castelán
+Asturias po:apelido  # apelido: castelán
+Darío po:apelido  # apelido: castelán
+Lugones po:apelido  # apelido: castelán
+Storni po:apelido  # apelido: castelán
+
+# Francés: nomes de pía
+François po:antropónimo  # nome de pía: francés
+Christophe po:antropónimo  # nome de pía: francés
+Guillaume po:antropónimo  # nome de pía: francés
+Sébastien po:antropónimo  # nome de pía: francés
+Gérard po:antropónimo  # nome de pía: francés
+Étienne po:antropónimo  # nome de pía: francés
+Léo po:antropónimo  # nome de pía: francés
+Baptiste po:antropónimo  # nome de pía: francés
+Émile po:antropónimo  # nome de pía: francés
+Rémi po:antropónimo  # nome de pía: francés
+Rémy po:antropónimo  # nome de pía: francés
+Fabien po:antropónimo  # nome de pía: francés
+Loïc po:antropónimo  # nome de pía: francés
+Benoît po:antropónimo  # nome de pía: francés
+Clément po:antropónimo  # nome de pía: francés
+Jérôme po:antropónimo  # nome de pía: francés
+Jérémy po:antropónimo  # nome de pía: francés
+Romain po:antropónimo  # nome de pía: francés
+Aurélien po:antropónimo  # nome de pía: francés
+Sacha po:antropónimo  # nome de pía: francés
+Édouard po:antropónimo  # nome de pía: francés
+François-Xavier po:antropónimo  # nome de pía: francés
+Jean-Paul po:antropónimo  # nome de pía: francés
+Jean-Claude po:antropónimo  # nome de pía: francés
+Jean-Luc po:antropónimo  # nome de pía: francés
+Jean-Marc po:antropónimo  # nome de pía: francés
+Jean-Michel po:antropónimo  # nome de pía: francés
+Jean-François po:antropónimo  # nome de pía: francés
+Jean-Louis po:antropónimo  # nome de pía: francés
+Jean-Baptiste po:antropónimo  # nome de pía: francés
+Pierre-Louis po:antropónimo  # nome de pía: francés
+Françoise po:antropónimo  # nome de pía: francés
+Sylvie po:antropónimo  # nome de pía: francés
+Valérie po:antropónimo  # nome de pía: francés
+Sandrine po:antropónimo  # nome de pía: francés
+Aurélie po:antropónimo  # nome de pía: francés
+Manon po:antropónimo  # nome de pía: francés
+Inès po:antropónimo  # nome de pía: francés
+Margaux po:antropónimo  # nome de pía: francés
+Élodie po:antropónimo  # nome de pía: francés
+Émilie po:antropónimo  # nome de pía: francés
+Océane po:antropónimo  # nome de pía: francés
+Clémence po:antropónimo  # nome de pía: francés
+Geneviève po:antropónimo  # nome de pía: francés
+Hélène po:antropónimo  # nome de pía: francés
+Véronique po:antropónimo  # nome de pía: francés
+Édith po:antropónimo  # nome de pía: francés
+Ambre po:antropónimo  # nome de pía: francés
+Agathe po:antropónimo  # nome de pía: francés
+Éléonore po:antropónimo  # nome de pía: francés
+Adèle po:antropónimo  # nome de pía: francés
+Apolline po:antropónimo  # nome de pía: francés
+Capucine po:antropónimo  # nome de pía: francés
+Héloïse po:antropónimo  # nome de pía: francés
+Joséphine po:antropónimo  # nome de pía: francés
+Léonie po:antropónimo  # nome de pía: francés
+Ninon po:antropónimo  # nome de pía: francés
+Olympe po:antropónimo  # nome de pía: francés
+Victoire po:antropónimo  # nome de pía: francés
+Marie-Claire po:antropónimo  # nome de pía: francés
+Marie-Christine po:antropónimo  # nome de pía: francés
+Marie-France po:antropónimo  # nome de pía: francés
+Marie-Hélène po:antropónimo  # nome de pía: francés
+Marie-Laure po:antropónimo  # nome de pía: francés
+Marie-Pierre po:antropónimo  # nome de pía: francés
+Anne-Marie po:antropónimo  # nome de pía: francés
+Anne-Sophie po:antropónimo  # nome de pía: francés
+Jean-Jacques po:antropónimo  # nome de pía: francés
+Jean-Yves po:antropónimo  # nome de pía: francés
+Angélique po:antropónimo  # nome de pía: francés
+Bénédicte po:antropónimo  # nome de pía: francés
+Élisabeth po:antropónimo  # nome de pía: francés
+Frédérique po:antropónimo  # nome de pía: francés
+Ghislaine po:antropónimo  # nome de pía: francés
+Mireille po:antropónimo  # nome de pía: francés
+Séverine po:antropónimo  # nome de pía: francés
+Virginie po:antropónimo  # nome de pía: francés
+
+# Alemán: nomes de pía (con tremas e compostos, que faltan na fonte)
+Jörn po:antropónimo  # nome de pía: alemán
+Rüdiger po:antropónimo  # nome de pía: alemán
+Lütfi po:antropónimo  # nome de pía: alemán
+Jürg po:antropónimo  # nome de pía: alemán
+Götz po:antropónimo  # nome de pía: alemán
+Hänsel po:antropónimo  # nome de pía: alemán
+Gretel po:antropónimo  # nome de pía: alemán
+Jörgen po:antropónimo  # nome de pía: alemán
+Öztürk po:antropónimo  # nome de pía: alemán
+Müller po:antropónimo  # nome de pía: alemán
+Jürgens po:antropónimo  # nome de pía: alemán
+Günay po:antropónimo  # nome de pía: alemán
+Künne po:antropónimo  # nome de pía: alemán
+Lüder po:antropónimo  # nome de pía: alemán
+Lüdge po:antropónimo  # nome de pía: alemán
+Hans-Jürgen po:antropónimo  # nome de pía: alemán
+Hans-Peter po:antropónimo  # nome de pía: alemán
+Hans-Dieter po:antropónimo  # nome de pía: alemán
+Karl-Heinz po:antropónimo  # nome de pía: alemán
+Hans-Joachim po:antropónimo  # nome de pía: alemán
+Klaus-Dieter po:antropónimo  # nome de pía: alemán
+Hans-Werner po:antropónimo  # nome de pía: alemán
+Hans-Günter po:antropónimo  # nome de pía: alemán
+Franz-Josef po:antropónimo  # nome de pía: alemán
+Karl-Josef po:antropónimo  # nome de pía: alemán
+Ernst-August po:antropónimo  # nome de pía: alemán
+Hanns po:antropónimo  # nome de pía: alemán
+Hinnerk po:antropónimo  # nome de pía: alemán
+Sönke po:antropónimo  # nome de pía: alemán
+Söhnke po:antropónimo  # nome de pía: alemán
+Ulf po:antropónimo  # nome de pía: alemán
+Detlef po:antropónimo  # nome de pía: alemán
+Heiko po:antropónimo  # nome de pía: alemán
+Ingo po:antropónimo  # nome de pía: alemán
+Knut po:antropónimo  # nome de pía: alemán
+Mirko po:antropónimo  # nome de pía: alemán
+Thorsten po:antropónimo  # nome de pía: alemán
+Tilo po:antropónimo  # nome de pía: alemán
+Wilfried po:antropónimo  # nome de pía: alemán
+Hartmut po:antropónimo  # nome de pía: alemán
+Reinhard po:antropónimo  # nome de pía: alemán
+Burkhard po:antropónimo  # nome de pía: alemán
+Eberhard po:antropónimo  # nome de pía: alemán
+Gottfried po:antropónimo  # nome de pía: alemán
+Friedhelm po:antropónimo  # nome de pía: alemán
+Sepp po:antropónimo  # nome de pía: alemán
+Wolfram po:antropónimo  # nome de pía: alemán
+Hannelore po:antropónimo  # nome de pía: alemán
+Heike po:antropónimo  # nome de pía: alemán
+Birgit po:antropónimo  # nome de pía: alemán
+Kathrin po:antropónimo  # nome de pía: alemán
+Irmgard po:antropónimo  # nome de pía: alemán
+Uschi po:antropónimo  # nome de pía: alemán
+Annegret po:antropónimo  # nome de pía: alemán
+Bärbel po:antropónimo  # nome de pía: alemán
+Dörte po:antropónimo  # nome de pía: alemán
+Gudrun po:antropónimo  # nome de pía: alemán
+Ilse po:antropónimo  # nome de pía: alemán
+Liesel po:antropónimo  # nome de pía: alemán
+Margit po:antropónimo  # nome de pía: alemán
+Marlies po:antropónimo  # nome de pía: alemán
+Mechthild po:antropónimo  # nome de pía: alemán
+Sieglinde po:antropónimo  # nome de pía: alemán
+Ute po:antropónimo  # nome de pía: alemán
+Waltraud po:antropónimo  # nome de pía: alemán
+Wiebke po:antropónimo  # nome de pía: alemán
+Almut po:antropónimo  # nome de pía: alemán
+Anke po:antropónimo  # nome de pía: alemán
+Antje po:antropónimo  # nome de pía: alemán
+Edeltraud po:antropónimo  # nome de pía: alemán
+Grete po:antropónimo  # nome de pía: alemán
+Heidrun po:antropónimo  # nome de pía: alemán
+Herta po:antropónimo  # nome de pía: alemán
+Hilde po:antropónimo  # nome de pía: alemán
+Jutta po:antropónimo  # nome de pía: alemán
+Karola po:antropónimo  # nome de pía: alemán
+Kriemhild po:antropónimo  # nome de pía: alemán
+Marga po:antropónimo  # nome de pía: alemán
+Rike po:antropónimo  # nome de pía: alemán
+Roswitha po:antropónimo  # nome de pía: alemán
+Swantje po:antropónimo  # nome de pía: alemán
+Traudl po:antropónimo  # nome de pía: alemán
+Trude po:antropónimo  # nome de pía: alemán
+
+# Inglés e outros: apelidos de persoas coñecidas
+Mercury po:apelido  # apelido: inglés e outros
+Dylan po:apelido  # apelido: inglés e outros
+Sinatra po:apelido  # apelido: inglés e outros
+Springsteen po:apelido  # apelido: inglés e outros
+Cobain po:apelido  # apelido: inglés e outros
+Winehouse po:apelido  # apelido: inglés e outros
+Beyoncé po:apelido  # apelido: inglés e outros
+Rihanna po:apelido  # apelido: inglés e outros
+Eminem po:apelido  # apelido: inglés e outros
+Madonna po:apelido  # apelido: inglés e outros
+Sting po:apelido  # apelido: inglés e outros
+Timberlake po:apelido  # apelido: inglés e outros
+Eilish po:apelido  # apelido: inglés e outros
+Sheeran po:apelido  # apelido: inglés e outros
+Adele po:apelido  # apelido: inglés e outros
+Lipa po:apelido  # apelido: inglés e outros
+Gaga po:apelido  # apelido: inglés e outros
+Cyrus po:apelido  # apelido: inglés e outros
+Weeknd po:apelido  # apelido: inglés e outros
+Kanye po:apelido  # apelido: inglés e outros
+Jay-Z po:apelido  # apelido: inglés e outros
+Shakira po:apelido  # apelido: inglés e outros
+Rosalía po:apelido  # apelido: inglés e outros
+Spielberg po:apelido  # apelido: inglés e outros
+Scorsese po:apelido  # apelido: inglés e outros
+Tarantino po:apelido  # apelido: inglés e outros
+Kubrick po:apelido  # apelido: inglés e outros
+Streep po:apelido  # apelido: inglés e outros
+DiCaprio/999 po:apelido  # apelido: inglés e outros
+Jolie po:apelido  # apelido: inglés e outros
+Clooney po:apelido  # apelido: inglés e outros
+Depp po:apelido  # apelido: inglés e outros
+Johansson po:apelido  # apelido: inglés e outros
+Winslet po:apelido  # apelido: inglés e outros
+Kidman po:apelido  # apelido: inglés e outros
+Pacino po:apelido  # apelido: inglés e outros
+Niro po:apelido  # apelido: inglés e outros
+Brando po:apelido  # apelido: inglés e outros
+Hemsworth po:apelido  # apelido: inglés e outros
+Zendaya po:apelido  # apelido: inglés e outros
+Robbie po:apelido  # apelido: inglés e outros
+Aniston po:apelido  # apelido: inglés e outros
+Kardashian po:apelido  # apelido: inglés e outros
+Obama po:apelido  # apelido: inglés e outros
+Biden po:apelido  # apelido: inglés e outros
+Roosevelt po:apelido  # apelido: inglés e outros
+Sunak po:apelido  # apelido: inglés e outros
+Starmer po:apelido  # apelido: inglés e outros
+Elizabeth po:apelido  # apelido: inglés e outros
+Kate po:apelido  # apelido: inglés e outros
+Musk po:apelido  # apelido: inglés e outros
+Bezos po:apelido  # apelido: inglés e outros
+Zuckerberg po:apelido  # apelido: inglés e outros
+Jobs po:apelido  # apelido: inglés e outros
+Buffett po:apelido  # apelido: inglés e outros
+Pichai po:apelido  # apelido: inglés e outros
+Nadella po:apelido  # apelido: inglés e outros
+Rowling po:apelido  # apelido: inglés e outros
+Orwell po:apelido  # apelido: inglés e outros
+Twain po:apelido  # apelido: inglés e outros
+Chaucer po:apelido  # apelido: inglés e outros
+Lampard po:apelido  # apelido: inglés e outros
+Lineker po:apelido  # apelido: inglés e outros
+Ancelotti po:apelido  # apelido: inglés e outros
+LeBron/999 po:apelido  # apelido: inglés e outros
+Mayweather po:apelido  # apelido: inglés e outros
+Hadid po:apelido  # apelido: inglés e outros
+Bündchen po:apelido  # apelido: inglés e outros
+Ronaldo po:apelido  # apelido: inglés e outros
+Messi po:apelido  # apelido: inglés e outros
+Neymar po:apelido  # apelido: inglés e outros
+Mbappé po:apelido  # apelido: inglés e outros
+Haaland po:apelido  # apelido: inglés e outros
+Salah po:apelido  # apelido: inglés e outros
+Modric po:apelido  # apelido: inglés e outros
+Kroos po:apelido  # apelido: inglés e outros
+Benzema po:apelido  # apelido: inglés e outros
+Vinícius po:apelido  # apelido: inglés e outros
+Rodrygo po:apelido  # apelido: inglés e outros
+Nacho po:apelido  # apelido: inglés e outros
+Camavinga po:apelido  # apelido: inglés e outros
+Tchouaméni po:apelido  # apelido: inglés e outros
+Güler po:apelido  # apelido: inglés e outros
+Endrick po:apelido  # apelido: inglés e outros
+Mastantuono po:apelido  # apelido: inglés e outros
+Lamine po:apelido  # apelido: inglés e outros
+Yamal po:apelido  # apelido: inglés e outros
+Pedri po:apelido  # apelido: inglés e outros
+Gavi po:apelido  # apelido: inglés e outros
+Raphinha po:apelido  # apelido: inglés e outros
+Cubarsí po:apelido  # apelido: inglés e outros
+Koundé po:apelido  # apelido: inglés e outros
+Olmo po:apelido  # apelido: inglés e outros
+Fermín po:apelido  # apelido: inglés e outros
+Casadó po:apelido  # apelido: inglés e outros
+Xabi po:apelido  # apelido: inglés e outros
+Simeone po:apelido  # apelido: inglés e outros
+Griezmann po:apelido  # apelido: inglés e outros
+Oblak po:apelido  # apelido: inglés e outros
+Koke po:apelido  # apelido: inglés e outros
+Llorente po:apelido  # apelido: inglés e outros
+Sørloth po:apelido  # apelido: inglés e outros

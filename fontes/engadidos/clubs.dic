@@ -1,0 +1,953 @@
+# Engadidos a man neste proxecto (GPL-3.0-or-later), no formato dos módulos de Hunspell-gl:
+#   palabra[/999] po:tipo [is:ngrama_Nome_completo]  # nota
+# Cada palabra dun nome composto vai na súa liña coa etiqueta is:ngrama_ (como en Hunspell-gl);
+# /999 é KEEPCASE: a palabra só vale coa grafía dada (iOS, macOS, eBay).
+# Capa: clubs (clubs galegos, clubs doutros deportes, competicións).
+
+# Clubs e competicións
+CD po:club is:ngrama_CD_Arenteiro  # fútbol, O Carballiño
+Arenteiro po:club is:ngrama_CD_Arenteiro
+Arenteiro po:club  # CD Arenteiro
+Ourense po:club is:ngrama_Ourense_CF  # fútbol
+CF po:club is:ngrama_Ourense_CF
+UD po:club is:ngrama_UD_Ourense  # fútbol
+Ourense po:club is:ngrama_UD_Ourense
+Granate po:club  # Pontevedra CF
+Racing po:club is:ngrama_Racing_Club_Villalbés  # fútbol, Vilalba
+Club po:club is:ngrama_Racing_Club_Villalbés
+Villalbés po:club is:ngrama_Racing_Club_Villalbés
+Vilalbés po:club  # Racing Club Villalbés
+Villalbés po:club  # Racing Club Villalbés
+UD po:club is:ngrama_UD_Somozas  # fútbol, As Somozas
+Somozas po:club is:ngrama_UD_Somozas
+Somozas po:club  # UD Somozas
+Coruxo po:club is:ngrama_Coruxo_FC  # fútbol, Vigo
+FC po:club is:ngrama_Coruxo_FC
+Coruxo po:club  # Coruxo FC
+CD po:club is:ngrama_CD_Estradense  # fútbol, A Estrada
+Estradense po:club is:ngrama_CD_Estradense
+Estradense po:club  # CD Estradense
+Fisterra po:club is:ngrama_Fisterra_CF  # fútbol
+CF po:club is:ngrama_Fisterra_CF
+Polvorín po:club is:ngrama_Polvorín_FC  # fútbol, Lugo
+FC po:club is:ngrama_Polvorín_FC
+Polvorín po:club  # Polvorín FC
+Silva po:club is:ngrama_Silva_SD  # fútbol, A Coruña
+SD po:club is:ngrama_Silva_SD
+CD po:club is:ngrama_CD_Barbadás  # fútbol
+Barbadás po:club is:ngrama_CD_Barbadás
+Barbadás po:club  # CD Barbadás
+Arzúa po:club is:ngrama_Arzúa_CF  # fútbol
+CF po:club is:ngrama_Arzúa_CF
+Paiosaco po:club  # SD Paiosaco
+SD po:club is:ngrama_SD_Paiosaco  # fútbol, A Laracha
+Paiosaco po:club is:ngrama_SD_Paiosaco
+Noia po:club is:ngrama_Noia_CF  # fútbol
+CF po:club is:ngrama_Noia_CF
+CD po:club is:ngrama_CD_Boiro  # fútbol
+Boiro po:club is:ngrama_CD_Boiro
+Céltiga po:club is:ngrama_Céltiga_FC  # fútbol, A Illa de Arousa
+FC po:club is:ngrama_Céltiga_FC
+Céltiga po:club  # Céltiga FC
+Portonovo po:club is:ngrama_Portonovo_SD  # fútbol
+SD po:club is:ngrama_Portonovo_SD
+Gran po:club is:ngrama_Gran_Peña_FC  # fútbol, Vigo
+Peña po:club is:ngrama_Gran_Peña_FC
+FC po:club is:ngrama_Gran_Peña_FC
+Alondras po:club is:ngrama_Alondras_CF  # fútbol, Cangas
+CF po:club is:ngrama_Alondras_CF
+Alondras po:club  # Alondras CF
+Rápido po:club is:ngrama_Rápido_de_Bouzas  # fútbol, Vigo
+de po:club is:ngrama_Rápido_de_Bouzas
+Bouzas po:club is:ngrama_Rápido_de_Bouzas
+Choco po:club  # CD Choco, Redondela
+CD po:club is:ngrama_CD_Choco  # fútbol, Redondela
+Choco po:club is:ngrama_CD_Choco
+Viveiro po:club is:ngrama_Viveiro_CF  # fútbol
+CF po:club is:ngrama_Viveiro_CF
+Ribadeo po:club is:ngrama_Ribadeo_FC  # fútbol
+FC po:club is:ngrama_Ribadeo_FC
+CD po:club is:ngrama_CD_Sarriana  # fútbol, Sarria
+Sarriana po:club is:ngrama_CD_Sarriana
+Sarriana po:club  # CD Sarriana
+CD po:club is:ngrama_CD_Lemos  # fútbol, Monforte de Lemos
+Lemos po:club is:ngrama_CD_Lemos
+Lemos po:club  # CD Lemos
+Chantada po:club is:ngrama_Chantada_CF  # fútbol
+CF po:club is:ngrama_Chantada_CF
+CD po:club is:ngrama_CD_Verín  # fútbol
+Verín po:club is:ngrama_CD_Verín
+CD po:club is:ngrama_CD_Barco  # fútbol, O Barco de Valdeorras
+Barco po:club is:ngrama_CD_Barco
+Atios po:club is:ngrama_Atios_CF  # fútbol, O Porriño
+CF po:club is:ngrama_Atios_CF
+Betanzos po:club is:ngrama_Betanzos_CF  # fútbol
+CF po:club is:ngrama_Betanzos_CF
+CD po:club is:ngrama_CD_Laracha  # fútbol
+Laracha po:club is:ngrama_CD_Laracha
+UD po:club is:ngrama_UD_Ordes  # fútbol
+Ordes po:club is:ngrama_UD_Ordes
+Bertamiráns po:club is:ngrama_Bertamiráns_FC  # fútbol, Ames
+FC po:club is:ngrama_Bertamiráns_FC
+Bertamiráns po:club  # Bertamiráns FC
+SD po:club is:ngrama_SD_Ciudad_de_Santiago  # fútbol
+Ciudad po:club is:ngrama_SD_Ciudad_de_Santiago
+de po:club is:ngrama_SD_Ciudad_de_Santiago
+Santiago po:club is:ngrama_SD_Ciudad_de_Santiago
+Negreira po:club  # SD Negreira
+SD po:club is:ngrama_SD_Negreira  # fútbol
+Negreira po:club is:ngrama_SD_Negreira
+Juvenil po:club is:ngrama_Juvenil_de_Ponteareas  # fútbol
+de po:club is:ngrama_Juvenil_de_Ponteareas
+Ponteareas po:club is:ngrama_Juvenil_de_Ponteareas
+Arosa po:club is:ngrama_Arosa_SC  # fútbol, Vilagarcía de Arousa
+SC po:club is:ngrama_Arosa_SC
+Arosa po:club  # Arosa SC
+Cultural po:club is:ngrama_Cultural_Areas  # fútbol, Ponteareas
+Areas po:club is:ngrama_Cultural_Areas
+Areas po:club  # Cultural Areas
+Ribadumia po:club is:ngrama_Ribadumia_CF  # fútbol
+CF po:club is:ngrama_Ribadumia_CF
+Ribadumia po:club  # Ribadumia CF
+Villalonga po:club is:ngrama_Villalonga_FC  # fútbol, Sanxenxo
+FC po:club is:ngrama_Villalonga_FC
+Villalonga po:club  # Villalonga FC
+Vilalonga po:club  # Villalonga FC
+CD po:club is:ngrama_CD_As_Pontes  # fútbol
+As po:club is:ngrama_CD_As_Pontes
+Pontes po:club is:ngrama_CD_As_Pontes
+Valladares po:club  # CD Valladares, Vigo
+Moaña po:club  # SD Moaña
+Cambados po:club  # Juventud Cambados
+Juventud po:club is:ngrama_Juventud_Cambados  # fútbol
+Cambados po:club is:ngrama_Juventud_Cambados
+Ourense po:club is:ngrama_Ourense_Atlético  # fútbol
+Atlético po:club is:ngrama_Ourense_Atlético
+Atlético po:club is:ngrama_Atlético_Arteixo  # fútbol
+Arteixo po:club is:ngrama_Atlético_Arteixo
+Montañeros po:club is:ngrama_Montañeros_CF  # fútbol, A Coruña
+CF po:club is:ngrama_Montañeros_CF
+Montañeros po:club  # Montañeros CF
+Órdenes po:club  # UD Ordes
+Dubra po:club  # SD Dubra, Val do Dubra
+Galicia po:club is:ngrama_Galicia_Mugardos  # fútbol
+Mugardos po:club is:ngrama_Galicia_Mugardos
+Mugardos po:club  # Galicia Mugardos
+Órzan po:club  # Orzán SD
+Orzán po:club is:ngrama_Orzán_SD  # fútbol, A Coruña
+SD po:club is:ngrama_Orzán_SD
+Orzán po:club  # Orzán SD
+Sporting po:club is:ngrama_Sporting_Guardés  # fútbol, A Guarda
+Guardés po:club is:ngrama_Sporting_Guardés
+Guardés po:club  # Sporting Guardés
+Ural po:club is:ngrama_Ural_CF  # fútbol, A Coruña
+CF po:club is:ngrama_Ural_CF
+Deportivo po:club is:ngrama_Deportivo_Abanca  # fútbol feminino
+Abanca po:club is:ngrama_Deportivo_Abanca
+Dépor po:club is:ngrama_Dépor_Abanca  # fútbol feminino
+Abanca po:club is:ngrama_Dépor_Abanca
+Viajes po:club is:ngrama_Viajes_Interrías_FF  # fútbol feminino, Sanxenxo
+Interrías po:club is:ngrama_Viajes_Interrías_FF
+FF po:club is:ngrama_Viajes_Interrías_FF
+Interrías po:club  # Viajes Interrías FF
+Victoria po:club is:ngrama_Victoria_CF  # fútbol feminino, A Coruña
+CF po:club is:ngrama_Victoria_CF
+Sárdoma po:club is:ngrama_Sárdoma_CF  # fútbol feminino, Vigo
+CF po:club is:ngrama_Sárdoma_CF
+Sárdoma po:club  # Sárdoma CF
+Friol po:club  # CD Friol
+Celta po:club is:ngrama_Celta_B  # fútbol
+B po:club is:ngrama_Celta_B
+Celta po:club is:ngrama_Celta_Fortuna  # fútbol
+Fortuna po:club is:ngrama_Celta_Fortuna
+Deportivo po:club is:ngrama_Deportivo_Fabril  # fútbol
+Fabril po:club is:ngrama_Deportivo_Fabril
+Racing po:club is:ngrama_Racing_de_Ferrol  # fútbol
+de po:club is:ngrama_Racing_de_Ferrol
+Ferrol po:club is:ngrama_Racing_de_Ferrol
+Unionistas po:club is:ngrama_Unionistas_de_Salamanca  # fútbol
+de po:club is:ngrama_Unionistas_de_Salamanca
+Salamanca po:club is:ngrama_Unionistas_de_Salamanca
+Unionistas po:club  # Unionistas de Salamanca
+Barakaldo po:club is:ngrama_Barakaldo_CF  # fútbol
+CF po:club is:ngrama_Barakaldo_CF
+Barakaldo po:club  # Barakaldo CF
+Sestao po:club is:ngrama_Sestao_River  # fútbol
+River po:club is:ngrama_Sestao_River
+Sestao po:club  # Sestao River
+Gernika po:club is:ngrama_Gernika_Club  # fútbol
+Club po:club is:ngrama_Gernika_Club
+Gernika po:club  # Gernika Club
+Intercity po:club  # CF Intercity
+CF po:club is:ngrama_CF_Intercity  # fútbol, Alacant
+Intercity po:club is:ngrama_CF_Intercity
+Nàstic po:club  # Gimnàstic de Tarragona
+Ceuta po:club  # AD Ceuta FC
+Antequera po:club  # Antequera CF
+Marbella po:club  # Marbella FC
+Atlético po:club is:ngrama_Atlético_Sanluqueño  # fútbol
+Sanluqueño po:club is:ngrama_Atlético_Sanluqueño
+Sanluqueño po:club  # Atlético Sanluqueño
+Yeclano po:club  # Yeclano Deportivo
+Nástic po:club  # Gimnàstic de Tarragona
+Tarazona po:club  # SD Tarazona
+Teruel po:club  # CD Teruel
+Osasuna po:club is:ngrama_Osasuna_Promesas  # fútbol
+Promesas po:club is:ngrama_Osasuna_Promesas
+Bilbao po:club is:ngrama_Bilbao_Athletic  # fútbol
+Athletic po:club is:ngrama_Bilbao_Athletic
+Sanse po:club  # UD San Sebastián de los Reyes
+Rayo po:club is:ngrama_Rayo_Majadahonda  # fútbol
+Majadahonda po:club is:ngrama_Rayo_Majadahonda
+Talavera po:club  # CF Talavera de la Reina
+Cacereño po:club  # CP Cacereño
+Guijuelo po:club  # CD Guijuelo
+Ávila po:club  # Real Ávila
+Palencia po:club  # CF Palencia
+Arandina po:club  # Arandina CF
+Linares po:club is:ngrama_Linares_Deportivo  # fútbol
+Deportivo po:club is:ngrama_Linares_Deportivo
+Linares po:club  # Linares Deportivo
+Recreativo po:club is:ngrama_Recreativo_de_Huelva  # fútbol
+de po:club is:ngrama_Recreativo_de_Huelva
+Huelva po:club is:ngrama_Recreativo_de_Huelva
+Recre po:club  # Recreativo de Huelva
+Real po:club is:ngrama_Real_Murcia  # fútbol
+Murcia po:club is:ngrama_Real_Murcia
+Atlético po:club is:ngrama_Atlético_Baleares  # fútbol
+Baleares po:club is:ngrama_Atlético_Baleares
+Poblense po:club  # UD Poblense
+Formentera po:club  # SD Formentera
+Las po:club is:ngrama_Las_Palmas  # UD Las Palmas
+Palmas po:club is:ngrama_Las_Palmas
+Las po:club is:ngrama_Las_Palmas_Atlético  # fútbol
+Palmas po:club is:ngrama_Las_Palmas_Atlético
+Atlético po:club is:ngrama_Las_Palmas_Atlético
+Lanzarote po:club  # UD Lanzarote
+Fuerteventura po:club  # fútbol
+Barça po:club is:ngrama_Barça_Femení  # fútbol feminino
+Femení po:club is:ngrama_Barça_Femení
+Real po:club is:ngrama_Real_Madrid_Femenino  # fútbol feminino
+Madrid po:club is:ngrama_Real_Madrid_Femenino
+Femenino po:club is:ngrama_Real_Madrid_Femenino
+Atlético po:club is:ngrama_Atlético_de_Madrid_Femenino  # fútbol feminino
+de po:club is:ngrama_Atlético_de_Madrid_Femenino
+Madrid po:club is:ngrama_Atlético_de_Madrid_Femenino
+Femenino po:club is:ngrama_Atlético_de_Madrid_Femenino
+Athletic po:club is:ngrama_Athletic_Club_Femenino  # fútbol feminino
+Club po:club is:ngrama_Athletic_Club_Femenino
+Femenino po:club is:ngrama_Athletic_Club_Femenino
+Levante po:club is:ngrama_Levante_Las_Planas  # fútbol feminino
+Las po:club is:ngrama_Levante_Las_Planas
+Planas po:club is:ngrama_Levante_Las_Planas
+Madrid po:club is:ngrama_Madrid_CFF  # fútbol feminino
+CFF po:club is:ngrama_Madrid_CFF
+Granadilla po:club  # UD Granadilla Tenerife, fútbol feminino
+Costa po:club is:ngrama_Costa_Adeje_Tenerife  # fútbol feminino
+Adeje po:club is:ngrama_Costa_Adeje_Tenerife
+Tenerife po:club is:ngrama_Costa_Adeje_Tenerife
+Real po:club is:ngrama_Real_Sociedad_Femenino  # fútbol feminino
+Sociedad po:club is:ngrama_Real_Sociedad_Femenino
+Femenino po:club is:ngrama_Real_Sociedad_Femenino
+Eibar po:club is:ngrama_Eibar_Femenino  # fútbol feminino
+Femenino po:club is:ngrama_Eibar_Femenino
+Sevilla po:club is:ngrama_Sevilla_Femenino  # fútbol feminino
+Femenino po:club is:ngrama_Sevilla_Femenino
+Valencia po:club is:ngrama_Valencia_Femenino  # fútbol feminino
+Femenino po:club is:ngrama_Valencia_Femenino
+Alhama po:club is:ngrama_Alhama_CF  # fútbol feminino
+CF po:club is:ngrama_Alhama_CF
+Sporting po:club is:ngrama_Sporting_de_Huelva  # fútbol feminino
+de po:club is:ngrama_Sporting_de_Huelva
+Huelva po:club is:ngrama_Sporting_de_Huelva
+Inter po:club is:ngrama_Inter_Miami  # fútbol, Estados Unidos
+Miami po:club is:ngrama_Inter_Miami
+Inter po:club is:ngrama_Inter_de_Miami  # fútbol, Estados Unidos
+de po:club is:ngrama_Inter_de_Miami
+Miami po:club is:ngrama_Inter_de_Miami
+Seattle po:club is:ngrama_Seattle_Sounders  # fútbol, Estados Unidos
+Sounders po:club is:ngrama_Seattle_Sounders
+Al-Nassr po:club  # fútbol, Arabia Saudita
+Al po:club is:ngrama_Al_Nassr  # fútbol, Arabia Saudita
+Nassr po:club is:ngrama_Al_Nassr
+Al-Hilal po:club  # fútbol, Arabia Saudita
+Al po:club is:ngrama_Al_Hilal  # fútbol, Arabia Saudita
+Hilal po:club is:ngrama_Al_Hilal
+Al-Ittihad po:club  # fútbol, Arabia Saudita
+Al-Ahli po:club  # fútbol, Arabia Saudita
+Ulsan po:club is:ngrama_Ulsan_HD  # fútbol, Corea do Sur
+HD po:club is:ngrama_Ulsan_HD
+Jeonbuk po:club is:ngrama_Jeonbuk_Hyundai_Motors  # fútbol, Corea do Sur
+Hyundai po:club is:ngrama_Jeonbuk_Hyundai_Motors
+Motors po:club is:ngrama_Jeonbuk_Hyundai_Motors
+Shanghai po:club is:ngrama_Shanghai_Port  # fútbol, China
+Port po:club is:ngrama_Shanghai_Port
+Guangzhou po:club is:ngrama_Guangzhou_Evergrande  # fútbol, China
+Evergrande po:club is:ngrama_Guangzhou_Evergrande
+Auckland po:club is:ngrama_Auckland_City  # fútbol, Nova Zelandia
+City po:club is:ngrama_Auckland_City
+Estudiantes po:club is:ngrama_Estudiantes_de_La_Plata  # fútbol
+de po:club is:ngrama_Estudiantes_de_La_Plata
+La po:club is:ngrama_Estudiantes_de_La_Plata
+Plata po:club is:ngrama_Estudiantes_de_La_Plata
+Gimnasia po:club is:ngrama_Gimnasia_de_La_Plata  # fútbol
+de po:club is:ngrama_Gimnasia_de_La_Plata
+La po:club is:ngrama_Gimnasia_de_La_Plata
+Plata po:club is:ngrama_Gimnasia_de_La_Plata
+Vasco po:club is:ngrama_Vasco_da_Gama  # fútbol, Río de Xaneiro
+da po:club is:ngrama_Vasco_da_Gama
+Gama po:club is:ngrama_Vasco_da_Gama
+Santos po:club is:ngrama_Santos_FC  # fútbol, Brasil
+FC po:club is:ngrama_Santos_FC
+Atlético po:club is:ngrama_Atlético_Mineiro  # fútbol, Belo Horizonte
+Mineiro po:club is:ngrama_Atlético_Mineiro
+Galo po:club  # Atlético Mineiro
+Athletico po:club is:ngrama_Athletico_Paranaense  # fútbol, Curitiba
+Paranaense po:club is:ngrama_Athletico_Paranaense
+Colo po:club is:ngrama_Colo_Colo  # fútbol, Santiago de Chile
+Colo po:club is:ngrama_Colo_Colo
+Liga po:club is:ngrama_Liga_de_Quito  # fútbol
+de po:club is:ngrama_Liga_de_Quito
+Quito po:club is:ngrama_Liga_de_Quito
+Obradoiro po:club  # Monbus Obradoiro, baloncesto, Santiago de Compostela
+Monbus po:club is:ngrama_Monbus_Obradoiro  # baloncesto
+Obradoiro po:club is:ngrama_Monbus_Obradoiro
+Obradoiro po:club is:ngrama_Obradoiro_CAB  # baloncesto
+CAB po:club is:ngrama_Obradoiro_CAB
+Río po:club is:ngrama_Río_Breogán  # baloncesto, Lugo
+Breogán po:club is:ngrama_Río_Breogán
+Breogán po:club  # Río Breogán
+Leyma po:club is:ngrama_Leyma_Coruña  # baloncesto
+Coruña po:club is:ngrama_Leyma_Coruña
+Básquet po:club is:ngrama_Básquet_Coruña  # baloncesto
+Coruña po:club is:ngrama_Básquet_Coruña
+Leyma po:club  # Leyma Coruña
+Celta po:club is:ngrama_Celta_Zorka  # baloncesto feminino, Vigo
+Zorka po:club is:ngrama_Celta_Zorka
+Zorka po:club  # Celta Zorka
+Ensino po:club is:ngrama_Ensino_Lugo  # baloncesto feminino
+Lugo po:club is:ngrama_Ensino_Lugo
+Durán po:club is:ngrama_Durán_Maquinaria_Ensino  # baloncesto feminino, Lugo
+Maquinaria po:club is:ngrama_Durán_Maquinaria_Ensino
+Ensino po:club is:ngrama_Durán_Maquinaria_Ensino
+Ensino po:club  # Ensino Lugo
+Baxi po:club is:ngrama_Baxi_Ferrol  # baloncesto feminino
+Ferrol po:club is:ngrama_Baxi_Ferrol
+Uni po:club is:ngrama_Uni_Ferrol  # baloncesto feminino
+Ferrol po:club is:ngrama_Uni_Ferrol
+Ourense po:club is:ngrama_Ourense_Baloncesto  # baloncesto
+Baloncesto po:club is:ngrama_Ourense_Baloncesto
+COB po:club  # Club Ourense Baloncesto
+Real po:club is:ngrama_Real_Madrid_Baloncesto  # baloncesto
+Madrid po:club is:ngrama_Real_Madrid_Baloncesto
+Baloncesto po:club is:ngrama_Real_Madrid_Baloncesto
+Barça po:club is:ngrama_Barça_Basket  # baloncesto
+Basket po:club is:ngrama_Barça_Basket
+Baskonia po:club  # baloncesto, Vitoria-Gasteiz
+Saski po:club is:ngrama_Saski_Baskonia  # baloncesto
+Baskonia po:club is:ngrama_Saski_Baskonia
+Valencia po:club is:ngrama_Valencia_Basket  # baloncesto
+Basket po:club is:ngrama_Valencia_Basket
+Unicaja po:club  # baloncesto, Málaga
+Joventut po:club  # Club Joventut Badalona
+Joventut po:club is:ngrama_Joventut_Badalona  # baloncesto
+Badalona po:club is:ngrama_Joventut_Badalona
+Gran po:club is:ngrama_Gran_Canaria  # Club Baloncesto Gran Canaria
+Canaria po:club is:ngrama_Gran_Canaria
+Dreamland po:club is:ngrama_Dreamland_Gran_Canaria  # baloncesto
+Gran po:club is:ngrama_Dreamland_Gran_Canaria
+Canaria po:club is:ngrama_Dreamland_Gran_Canaria
+Baxi po:club is:ngrama_Baxi_Manresa  # baloncesto
+Manresa po:club is:ngrama_Baxi_Manresa
+Bàsquet po:club is:ngrama_Bàsquet_Manresa  # baloncesto
+Manresa po:club is:ngrama_Bàsquet_Manresa
+Manresa po:club  # Bàsquet Manresa
+Bàsquet po:club is:ngrama_Bàsquet_Girona  # baloncesto
+Girona po:club is:ngrama_Bàsquet_Girona
+UCAM po:club is:ngrama_UCAM_Murcia_CB  # baloncesto
+Murcia po:club is:ngrama_UCAM_Murcia_CB
+CB po:club is:ngrama_UCAM_Murcia_CB
+La po:club is:ngrama_La_Laguna_Tenerife  # baloncesto
+Laguna po:club is:ngrama_La_Laguna_Tenerife
+Tenerife po:club is:ngrama_La_Laguna_Tenerife
+Lenovo po:club is:ngrama_Lenovo_Tenerife  # baloncesto
+Tenerife po:club is:ngrama_Lenovo_Tenerife
+Casademont po:club is:ngrama_Casademont_Zaragoza  # baloncesto
+Zaragoza po:club is:ngrama_Casademont_Zaragoza
+Bilbao po:club is:ngrama_Bilbao_Basket  # baloncesto
+Basket po:club is:ngrama_Bilbao_Basket
+Surne po:club is:ngrama_Surne_Bilbao_Basket  # baloncesto
+Bilbao po:club is:ngrama_Surne_Bilbao_Basket
+Basket po:club is:ngrama_Surne_Bilbao_Basket
+MoraBanc/999 po:club is:ngrama_MoraBanc_Andorra  # baloncesto
+Andorra po:club is:ngrama_MoraBanc_Andorra
+BC po:club is:ngrama_BC_Andorra  # baloncesto
+Andorra po:club is:ngrama_BC_Andorra
+Covirán po:club is:ngrama_Covirán_Granada  # baloncesto
+Granada po:club is:ngrama_Covirán_Granada
+Hiopos po:club is:ngrama_Hiopos_Lleida  # baloncesto
+Lleida po:club is:ngrama_Hiopos_Lleida
+Força po:club is:ngrama_Força_Lleida  # baloncesto
+Lleida po:club is:ngrama_Força_Lleida
+San po:club is:ngrama_San_Pablo_Burgos  # baloncesto
+Pablo po:club is:ngrama_San_Pablo_Burgos
+Burgos po:club is:ngrama_San_Pablo_Burgos
+Zunder po:club is:ngrama_Zunder_Palencia  # baloncesto
+Palencia po:club is:ngrama_Zunder_Palencia
+Movistar po:club is:ngrama_Movistar_Estudiantes  # baloncesto
+Estudiantes po:club is:ngrama_Movistar_Estudiantes
+Fenerbahce po:club  # Fenerbahçe
+Anadolu po:club is:ngrama_Anadolu_Efes  # baloncesto, Istambul
+Efes po:club is:ngrama_Anadolu_Efes
+Efes po:club  # Anadolu Efes
+Maccabi po:club is:ngrama_Maccabi_Tel_Aviv  # baloncesto e fútbol
+Tel po:club is:ngrama_Maccabi_Tel_Aviv
+Aviv po:club is:ngrama_Maccabi_Tel_Aviv
+Maccabi po:club  # Maccabi Tel Aviv
+Estrela po:club is:ngrama_Estrela_Vermella  # Crvena Zvezda, Belgrado
+Vermella po:club is:ngrama_Estrela_Vermella
+Crvena po:club is:ngrama_Crvena_Zvezda  # baloncesto e fútbol, Belgrado
+Zvezda po:club is:ngrama_Crvena_Zvezda
+Zalgiris po:club  # Žalgiris
+Virtus po:club is:ngrama_Virtus_Bologna  # baloncesto
+Bologna po:club is:ngrama_Virtus_Bologna
+Olimpia po:club is:ngrama_Olimpia_Milano  # baloncesto
+Milano po:club is:ngrama_Olimpia_Milano
+Armani po:club is:ngrama_Armani_Milano  # baloncesto
+Milano po:club is:ngrama_Armani_Milano
+Alba po:club is:ngrama_Alba_Berlín  # baloncesto
+Berlín po:club is:ngrama_Alba_Berlín
+Alba po:club is:ngrama_Alba_Berlin  # baloncesto
+Berlin po:club is:ngrama_Alba_Berlin
+Mónaco po:club  # AS Monaco
+ASVEL po:club  # baloncesto, Lyon
+Paris po:club is:ngrama_Paris_Basketball  # baloncesto
+Basketball po:club is:ngrama_Paris_Basketball
+Dubai po:club is:ngrama_Dubai_Basketball  # baloncesto
+Basketball po:club is:ngrama_Dubai_Basketball
+Hapoel po:club is:ngrama_Hapoel_Tel_Aviv  # baloncesto e fútbol
+Tel po:club is:ngrama_Hapoel_Tel_Aviv
+Aviv po:club is:ngrama_Hapoel_Tel_Aviv
+Lakers po:club  # Los Angeles Lakers, NBA
+Los po:club is:ngrama_Los_Angeles_Lakers  # NBA
+Angeles po:club is:ngrama_Los_Angeles_Lakers
+Lakers po:club is:ngrama_Los_Angeles_Lakers
+Celtics po:club  # Boston Celtics, NBA
+Boston po:club is:ngrama_Boston_Celtics  # NBA
+Celtics po:club is:ngrama_Boston_Celtics
+Warriors po:club  # Golden State Warriors, NBA
+Golden po:club is:ngrama_Golden_State_Warriors  # NBA
+State po:club is:ngrama_Golden_State_Warriors
+Warriors po:club is:ngrama_Golden_State_Warriors
+Chicago po:club is:ngrama_Chicago_Bulls  # NBA
+Bulls po:club is:ngrama_Chicago_Bulls
+Knicks po:club  # New York Knicks, NBA
+New po:club is:ngrama_New_York_Knicks  # NBA
+York po:club is:ngrama_New_York_Knicks
+Knicks po:club is:ngrama_New_York_Knicks
+Nets po:club  # Brooklyn Nets, NBA
+Brooklyn po:club is:ngrama_Brooklyn_Nets  # NBA
+Nets po:club is:ngrama_Brooklyn_Nets
+Miami po:club is:ngrama_Miami_Heat  # NBA
+Heat po:club is:ngrama_Miami_Heat
+San po:club is:ngrama_San_Antonio_Spurs  # NBA
+Antonio po:club is:ngrama_San_Antonio_Spurs
+Spurs po:club is:ngrama_San_Antonio_Spurs
+Mavericks po:club  # Dallas Mavericks, NBA
+Dallas po:club is:ngrama_Dallas_Mavericks  # NBA
+Mavericks po:club is:ngrama_Dallas_Mavericks
+Rockets po:club  # Houston Rockets, NBA
+Houston po:club is:ngrama_Houston_Rockets  # NBA
+Rockets po:club is:ngrama_Houston_Rockets
+Suns po:club  # Phoenix Suns, NBA
+Phoenix po:club is:ngrama_Phoenix_Suns  # NBA
+Suns po:club is:ngrama_Phoenix_Suns
+Nuggets po:club  # Denver Nuggets, NBA
+Denver po:club is:ngrama_Denver_Nuggets  # NBA
+Nuggets po:club is:ngrama_Denver_Nuggets
+Bucks po:club  # Milwaukee Bucks, NBA
+Milwaukee po:club is:ngrama_Milwaukee_Bucks  # NBA
+Bucks po:club is:ngrama_Milwaukee_Bucks
+Cavaliers po:club  # Cleveland Cavaliers, NBA
+Cleveland po:club is:ngrama_Cleveland_Cavaliers  # NBA
+Cavaliers po:club is:ngrama_Cleveland_Cavaliers
+Cavs po:club  # Cleveland Cavaliers
+Raptors po:club  # Toronto Raptors, NBA
+Toronto po:club is:ngrama_Toronto_Raptors  # NBA
+Raptors po:club is:ngrama_Toronto_Raptors
+Sixers po:club  # Philadelphia 76ers, NBA
+76ers po:club  # Philadelphia 76ers, NBA
+Philadelphia po:club is:ngrama_Philadelphia_76ers  # NBA
+76ers po:club is:ngrama_Philadelphia_76ers
+Clippers po:club  # Los Angeles Clippers, NBA
+Los po:club is:ngrama_Los_Angeles_Clippers  # NBA
+Angeles po:club is:ngrama_Los_Angeles_Clippers
+Clippers po:club is:ngrama_Los_Angeles_Clippers
+Thunder po:club  # Oklahoma City Thunder, NBA
+Oklahoma po:club is:ngrama_Oklahoma_City_Thunder  # NBA
+City po:club is:ngrama_Oklahoma_City_Thunder
+Thunder po:club is:ngrama_Oklahoma_City_Thunder
+Utah po:club is:ngrama_Utah_Jazz  # NBA
+Jazz po:club is:ngrama_Utah_Jazz
+Sacramento po:club is:ngrama_Sacramento_Kings  # NBA
+Kings po:club is:ngrama_Sacramento_Kings
+Trail po:club is:ngrama_Trail_Blazers  # Portland Trail Blazers, NBA
+Blazers po:club is:ngrama_Trail_Blazers
+Blazers po:club  # Portland Trail Blazers
+Portland po:club is:ngrama_Portland_Trail_Blazers  # NBA
+Trail po:club is:ngrama_Portland_Trail_Blazers
+Blazers po:club is:ngrama_Portland_Trail_Blazers
+Timberwolves po:club  # Minnesota Timberwolves, NBA
+Minnesota po:club is:ngrama_Minnesota_Timberwolves  # NBA
+Timberwolves po:club is:ngrama_Minnesota_Timberwolves
+Pelicans po:club  # New Orleans Pelicans, NBA
+New po:club is:ngrama_New_Orleans_Pelicans  # NBA
+Orleans po:club is:ngrama_New_Orleans_Pelicans
+Pelicans po:club is:ngrama_New_Orleans_Pelicans
+Grizzlies po:club  # Memphis Grizzlies, NBA
+Memphis po:club is:ngrama_Memphis_Grizzlies  # NBA
+Grizzlies po:club is:ngrama_Memphis_Grizzlies
+Hawks po:club  # Atlanta Hawks, NBA
+Atlanta po:club is:ngrama_Atlanta_Hawks  # NBA
+Hawks po:club is:ngrama_Atlanta_Hawks
+Hornets po:club  # Charlotte Hornets, NBA
+Charlotte po:club is:ngrama_Charlotte_Hornets  # NBA
+Hornets po:club is:ngrama_Charlotte_Hornets
+Magic po:club  # Orlando Magic, NBA
+Orlando po:club is:ngrama_Orlando_Magic  # NBA
+Magic po:club is:ngrama_Orlando_Magic
+Pistons po:club  # Detroit Pistons, NBA
+Detroit po:club is:ngrama_Detroit_Pistons  # NBA
+Pistons po:club is:ngrama_Detroit_Pistons
+Pacers po:club  # Indiana Pacers, NBA
+Indiana po:club is:ngrama_Indiana_Pacers  # NBA
+Pacers po:club is:ngrama_Indiana_Pacers
+Washington po:club is:ngrama_Washington_Wizards  # NBA
+Wizards po:club is:ngrama_Washington_Wizards
+Frigoríficos po:club is:ngrama_Frigoríficos_do_Morrazo  # balonmán, Cangas
+do po:club is:ngrama_Frigoríficos_do_Morrazo
+Morrazo po:club is:ngrama_Frigoríficos_do_Morrazo
+Cangas po:club  # Frigoríficos do Morrazo
+Ademar po:club is:ngrama_Ademar_León  # balonmán
+León po:club is:ngrama_Ademar_León
+Ademar po:club  # Ademar León
+Bidasoa po:club is:ngrama_Bidasoa_Irún  # balonmán
+Irún po:club is:ngrama_Bidasoa_Irún
+Bidasoa po:club  # Bidasoa Irún
+Logroño po:club is:ngrama_Logroño_La_Rioja  # balonmán
+La po:club is:ngrama_Logroño_La_Rioja
+Rioja po:club is:ngrama_Logroño_La_Rioja
+Fraikin po:club is:ngrama_Fraikin_Granollers  # balonmán
+Granollers po:club is:ngrama_Fraikin_Granollers
+Granollers po:club  # BM Granollers
+Anaitasuna po:club  # balonmán, Pamplona
+Bada po:club is:ngrama_Bada_Huesca  # balonmán
+Huesca po:club is:ngrama_Bada_Huesca
+Cisne po:club  # balonmán, Pontevedra
+Teucro po:club  # balonmán, Pontevedra
+Atlético po:club is:ngrama_Atlético_Guardés  # balonmán feminino, A Guarda
+Guardés po:club is:ngrama_Atlético_Guardés
+Mecalia po:club is:ngrama_Mecalia_Guardés  # balonmán feminino
+Guardés po:club is:ngrama_Mecalia_Guardés
+Porriño po:club  # Conservas Orbe Porriño, balonmán feminino
+Carballal po:club  # Rasoeiro Carballal, balonmán
+Xiria po:club  # Balonmán Xiria, Carballo
+Lavadores po:club  # Balonmán Lavadores, Vigo
+Seis po:club is:ngrama_Seis_do_Nadal  # balonmán, Vigo
+do po:club is:ngrama_Seis_do_Nadal
+Nadal po:club is:ngrama_Seis_do_Nadal
+THW po:club is:ngrama_THW_Kiel  # balonmán
+Kiel po:club is:ngrama_THW_Kiel
+Veszprém po:club  # balonmán, Hungría
+Montpellier po:club is:ngrama_Montpellier_HB  # balonmán
+HB po:club is:ngrama_Montpellier_HB
+Paris po:club is:ngrama_Paris_Saint-Germain_Handball  # balonmán
+Saint-Germain po:club is:ngrama_Paris_Saint-Germain_Handball
+Handball po:club is:ngrama_Paris_Saint-Germain_Handball
+SG po:club is:ngrama_SG_Flensburg-Handewitt  # balonmán
+Flensburg-Handewitt po:club is:ngrama_SG_Flensburg-Handewitt
+SC po:club is:ngrama_SC_Magdeburg  # balonmán
+Magdeburg po:club is:ngrama_SC_Magdeburg
+Magdeburgo po:club  # SC Magdeburg
+Rhein-Neckar po:club is:ngrama_Rhein-Neckar_Löwen  # balonmán
+Löwen po:club is:ngrama_Rhein-Neckar_Löwen
+Füchse po:club is:ngrama_Füchse_Berlin  # balonmán
+Berlin po:club is:ngrama_Füchse_Berlin
+Füchse po:club  # Füchse Berlin
+Aalborg po:club is:ngrama_Aalborg_Håndbold  # balonmán
+Håndbold po:club is:ngrama_Aalborg_Håndbold
+Pick po:club is:ngrama_Pick_Szeged  # balonmán
+Szeged po:club is:ngrama_Pick_Szeged
+Szeged po:club  # Pick Szeged
+Dinamo po:club is:ngrama_Dinamo_Bucureşti  # balonmán e fútbol
+Bucureşti po:club is:ngrama_Dinamo_Bucureşti
+Győri po:club is:ngrama_Győri_Audi_ETO  # balonmán feminino
+Audi po:club is:ngrama_Győri_Audi_ETO
+ETO po:club is:ngrama_Győri_Audi_ETO
+Metz po:club is:ngrama_Metz_Handball  # balonmán feminino
+Handball po:club is:ngrama_Metz_Handball
+Pescados po:club is:ngrama_Pescados_Rubén_Burela  # fútbol sala
+Rubén po:club is:ngrama_Pescados_Rubén_Burela
+Burela po:club is:ngrama_Pescados_Rubén_Burela
+Burela po:club is:ngrama_Burela_FS  # fútbol sala
+FS po:club is:ngrama_Burela_FS
+Burela po:club  # Burela FS
+Santiago po:club is:ngrama_Santiago_Futsal  # fútbol sala
+Futsal po:club is:ngrama_Santiago_Futsal
+Noia po:club is:ngrama_Noia_Portus_Apostoli  # fútbol sala
+Portus po:club is:ngrama_Noia_Portus_Apostoli
+Apostoli po:club is:ngrama_Noia_Portus_Apostoli
+Ourense po:club is:ngrama_Ourense_Envialia  # fútbol sala feminino
+Envialia po:club is:ngrama_Ourense_Envialia
+Envialia po:club  # Ourense Envialia
+Lugo po:club is:ngrama_Lugo_Sala  # fútbol sala
+Sala po:club is:ngrama_Lugo_Sala
+O po:club is:ngrama_O_Parrulo_Ferrol  # fútbol sala
+Parrulo po:club is:ngrama_O_Parrulo_Ferrol
+Ferrol po:club is:ngrama_O_Parrulo_Ferrol
+Parrulo po:club  # O Parrulo Ferrol
+Poio po:club is:ngrama_Poio_Pescamar  # fútbol sala feminino
+Pescamar po:club is:ngrama_Poio_Pescamar
+Pescamar po:club  # Poio Pescamar
+Marín po:club is:ngrama_Marín_Futsal  # fútbol sala feminino
+Futsal po:club is:ngrama_Marín_Futsal
+ElPozo/999 po:club is:ngrama_ElPozo_Murcia  # fútbol sala
+Murcia po:club is:ngrama_ElPozo_Murcia
+ElPozo/999 po:club  # ElPozo Murcia
+Jimbee po:club is:ngrama_Jimbee_Cartagena  # fútbol sala
+Cartagena po:club is:ngrama_Jimbee_Cartagena
+Inter po:club is:ngrama_Inter_Movistar  # fútbol sala
+Movistar po:club is:ngrama_Inter_Movistar
+Movistar po:club is:ngrama_Movistar_Inter  # fútbol sala
+Inter po:club is:ngrama_Movistar_Inter
+Palma po:club is:ngrama_Palma_Futsal  # fútbol sala
+Futsal po:club is:ngrama_Palma_Futsal
+Illes po:club is:ngrama_Illes_Balears_Palma_Futsal  # fútbol sala
+Balears po:club is:ngrama_Illes_Balears_Palma_Futsal
+Palma po:club is:ngrama_Illes_Balears_Palma_Futsal
+Futsal po:club is:ngrama_Illes_Balears_Palma_Futsal
+Barça po:club is:ngrama_Barça_Futsal  # fútbol sala
+Futsal po:club is:ngrama_Barça_Futsal
+Viña po:club is:ngrama_Viña_Albali_Valdepeñas  # fútbol sala
+Albali po:club is:ngrama_Viña_Albali_Valdepeñas
+Valdepeñas po:club is:ngrama_Viña_Albali_Valdepeñas
+Valdepeñas po:club  # Viña Albali Valdepeñas
+Jaén po:club is:ngrama_Jaén_Paraíso_Interior  # fútbol sala
+Paraíso po:club is:ngrama_Jaén_Paraíso_Interior
+Interior po:club is:ngrama_Jaén_Paraíso_Interior
+Peñíscola po:club  # Servigroup Peñíscola, fútbol sala
+Córdoba po:club is:ngrama_Córdoba_Patrimonio  # fútbol sala
+Patrimonio po:club is:ngrama_Córdoba_Patrimonio
+Manzanares po:club  # Quesos El Hidalgo Manzanares, fútbol sala
+Sporting po:club is:ngrama_Sporting_Portugal_Futsal  # fútbol sala
+Portugal po:club is:ngrama_Sporting_Portugal_Futsal
+Futsal po:club is:ngrama_Sporting_Portugal_Futsal
+Benfica po:club is:ngrama_Benfica_Futsal  # fútbol sala
+Futsal po:club is:ngrama_Benfica_Futsal
+Movistar po:club is:ngrama_Movistar_Team  # ciclismo
+Team po:club is:ngrama_Movistar_Team
+UAE po:club is:ngrama_UAE_Team_Emirates  # ciclismo
+Team po:club is:ngrama_UAE_Team_Emirates
+Emirates po:club is:ngrama_UAE_Team_Emirates
+UAE po:club is:ngrama_UAE_Emirates  # ciclismo
+Emirates po:club is:ngrama_UAE_Emirates
+Team po:club is:ngrama_Team_Visma  # ciclismo
+Visma po:club is:ngrama_Team_Visma
+Visma po:club  # Team Visma Lease a Bike
+Jumbo-Visma po:club  # ciclismo
+Ineos po:club is:ngrama_Ineos_Grenadiers  # ciclismo
+Grenadiers po:club is:ngrama_Ineos_Grenadiers
+Ineos po:club  # Ineos Grenadiers
+Soudal po:club is:ngrama_Soudal_Quick-Step  # ciclismo
+Quick-Step po:club is:ngrama_Soudal_Quick-Step
+Quick-Step po:club  # Soudal Quick-Step
+Red po:club is:ngrama_Red_Bull-Bora-hansgrohe  # ciclismo
+Bull-Bora-hansgrohe po:club is:ngrama_Red_Bull-Bora-hansgrohe
+Bora po:club  # Red Bull-Bora-hansgrohe
+Lidl-Trek po:club  # ciclismo
+Trek po:club  # Lidl-Trek
+Groupama-FDJ/999 po:club  # ciclismo
+Groupama po:club  # Groupama-FDJ
+Cofidis po:club  # ciclismo
+Bahrain po:club is:ngrama_Bahrain_Victorious  # ciclismo
+Victorious po:club is:ngrama_Bahrain_Victorious
+Alpecin-Deceuninck po:club  # ciclismo
+Alpecin po:club  # Alpecin-Deceuninck
+EF po:club is:ngrama_EF_Education-EasyPost  # ciclismo
+Education-EasyPost/999 po:club is:ngrama_EF_Education-EasyPost
+Decathlon po:club is:ngrama_Decathlon_AG2R_La_Mondiale  # ciclismo
+AG2R po:club is:ngrama_Decathlon_AG2R_La_Mondiale
+La po:club is:ngrama_Decathlon_AG2R_La_Mondiale
+Mondiale po:club is:ngrama_Decathlon_AG2R_La_Mondiale
+Arkéa-B&B/999 po:club is:ngrama_Arkéa-B&B_Hotels  # ciclismo
+Hotels po:club is:ngrama_Arkéa-B&B_Hotels
+Arkéa po:club  # Arkéa-B&B Hotels
+Intermarché-Wanty po:club  # ciclismo
+Intermarché po:club  # Intermarché-Wanty
+Jayco po:club is:ngrama_Jayco_AlUla  # ciclismo
+AlUla/999 po:club is:ngrama_Jayco_AlUla
+Israel-Premier po:club is:ngrama_Israel-Premier_Tech  # ciclismo
+Tech po:club is:ngrama_Israel-Premier_Tech
+Uno-X po:club is:ngrama_Uno-X_Mobility  # ciclismo
+Mobility po:club is:ngrama_Uno-X_Mobility
+Tudor po:club is:ngrama_Tudor_Pro_Cycling  # ciclismo
+Pro po:club is:ngrama_Tudor_Pro_Cycling
+Cycling po:club is:ngrama_Tudor_Pro_Cycling
+Caja po:club is:ngrama_Caja_Rural-Seguros_RGA  # ciclismo
+Rural-Seguros po:club is:ngrama_Caja_Rural-Seguros_RGA
+RGA po:club is:ngrama_Caja_Rural-Seguros_RGA
+Caja po:club is:ngrama_Caja_Rural  # Caja Rural-Seguros RGA
+Rural po:club is:ngrama_Caja_Rural
+Euskaltel-Euskadi po:club  # ciclismo
+Euskaltel po:club  # Euskaltel-Euskadi
+Kern po:club is:ngrama_Kern_Pharma  # ciclismo
+Pharma po:club is:ngrama_Kern_Pharma
+Burgos po:club is:ngrama_Burgos_BH  # ciclismo
+BH po:club is:ngrama_Burgos_BH
+Burgos-BH/999 po:club  # ciclismo
+Equipo po:club is:ngrama_Equipo_Kern_Pharma  # ciclismo
+Kern po:club is:ngrama_Equipo_Kern_Pharma
+Pharma po:club is:ngrama_Equipo_Kern_Pharma
+Scuderia po:club is:ngrama_Scuderia_Ferrari  # Fórmula 1
+Ferrari po:club is:ngrama_Scuderia_Ferrari
+Ferrari po:club  # Scuderia Ferrari
+Mercedes-AMG/999 po:club is:ngrama_Mercedes-AMG_Petronas  # Fórmula 1
+Petronas po:club is:ngrama_Mercedes-AMG_Petronas
+Red po:club is:ngrama_Red_Bull_Racing  # Fórmula 1
+Bull po:club is:ngrama_Red_Bull_Racing
+Racing po:club is:ngrama_Red_Bull_Racing
+McLaren/999 po:club  # Fórmula 1
+Aston po:club is:ngrama_Aston_Martin_F1  # Fórmula 1
+Martin po:club is:ngrama_Aston_Martin_F1
+F1 po:club is:ngrama_Aston_Martin_F1
+Alpine po:club is:ngrama_Alpine_F1  # Fórmula 1
+F1 po:club is:ngrama_Alpine_F1
+Alpine po:club  # Alpine F1
+Williams po:club is:ngrama_Williams_Racing  # Fórmula 1
+Racing po:club is:ngrama_Williams_Racing
+Williams po:club  # Williams Racing
+Haas po:club is:ngrama_Haas_F1  # Fórmula 1
+F1 po:club is:ngrama_Haas_F1
+Haas po:club  # Haas F1
+Sauber po:club  # Fórmula 1
+Racing po:club is:ngrama_Racing_Bulls  # Fórmula 1
+Bulls po:club is:ngrama_Racing_Bulls
+Cadillac po:club is:ngrama_Cadillac_F1  # Fórmula 1
+F1 po:club is:ngrama_Cadillac_F1
+Ducati po:club is:ngrama_Ducati_Corse  # MotoGP
+Corse po:club is:ngrama_Ducati_Corse
+Ducati po:club  # Ducati Corse
+Yamaha po:club is:ngrama_Yamaha_Factory_Racing  # MotoGP
+Factory po:club is:ngrama_Yamaha_Factory_Racing
+Racing po:club is:ngrama_Yamaha_Factory_Racing
+Repsol po:club is:ngrama_Repsol_Honda  # MotoGP
+Honda po:club is:ngrama_Repsol_Honda
+Honda po:club is:ngrama_Honda_HRC  # MotoGP
+HRC po:club is:ngrama_Honda_HRC
+KTM po:club is:ngrama_KTM_Factory_Racing  # MotoGP
+Factory po:club is:ngrama_KTM_Factory_Racing
+Racing po:club is:ngrama_KTM_Factory_Racing
+Aprilia po:club is:ngrama_Aprilia_Racing  # MotoGP
+Racing po:club is:ngrama_Aprilia_Racing
+Aprilia po:club  # Aprilia Racing
+Pramac po:club is:ngrama_Pramac_Racing  # MotoGP
+Racing po:club is:ngrama_Pramac_Racing
+Pramac po:club  # Pramac Racing
+Gresini po:club is:ngrama_Gresini_Racing  # MotoGP
+Racing po:club is:ngrama_Gresini_Racing
+Gresini po:club  # Gresini Racing
+VR46 po:club is:ngrama_VR46_Racing_Team  # MotoGP
+Racing po:club is:ngrama_VR46_Racing_Team
+Team po:club is:ngrama_VR46_Racing_Team
+Trackhouse po:club is:ngrama_Trackhouse_Racing  # MotoGP
+Racing po:club is:ngrama_Trackhouse_Racing
+LCR po:club is:ngrama_LCR_Honda  # MotoGP
+Honda po:club is:ngrama_LCR_Honda
+Tech3 po:club  # MotoGP
+All po:club is:ngrama_All_Blacks  # rugby, Nova Zelandia
+Blacks po:club is:ngrama_All_Blacks
+Springboks po:club  # rugby, Sudáfrica
+Wallabies po:club  # rugby, Australia
+Leinster po:club  # rugby, Dublín
+Munster po:club  # rugby, Limerick
+Ulster po:club  # rugby, Belfast
+Stade po:club is:ngrama_Stade_Toulousain  # rugby
+Toulousain po:club is:ngrama_Stade_Toulousain
+Stade po:club is:ngrama_Stade_Rochelais  # rugby, La Rochelle
+Rochelais po:club is:ngrama_Stade_Rochelais
+La po:club is:ngrama_La_Rochelle  # Stade Rochelais
+Rochelle po:club is:ngrama_La_Rochelle
+Saracens po:club  # rugby, Londres
+Leicester po:club is:ngrama_Leicester_Tigers  # rugby
+Tigers po:club is:ngrama_Leicester_Tigers
+Harlequins po:club  # rugby, Londres
+Bordeaux po:club is:ngrama_Bordeaux_Bègles  # rugby
+Bègles po:club is:ngrama_Bordeaux_Bègles
+Racing po:club is:ngrama_Racing_92  # rugby, París
+92 po:club is:ngrama_Racing_92
+Stade po:club is:ngrama_Stade_Français  # rugby, París
+Français po:club is:ngrama_Stade_Français
+Glasgow po:club is:ngrama_Glasgow_Warriors  # rugby
+Warriors po:club is:ngrama_Glasgow_Warriors
+Edinburgh po:club is:ngrama_Edinburgh_Rugby  # rugby
+Rugby po:club is:ngrama_Edinburgh_Rugby
+Cardiff po:club is:ngrama_Cardiff_Rugby  # rugby
+Rugby po:club is:ngrama_Cardiff_Rugby
+Scarlets po:club  # rugby, Llanelli
+Ospreys po:club  # rugby, Swansea
+Benetton po:club is:ngrama_Benetton_Treviso  # rugby
+Treviso po:club is:ngrama_Benetton_Treviso
+Zebre po:club  # rugby, Parma
+Stormers po:club  # rugby, Cidade do Cabo
+Sharks po:club  # rugby, Durban
+Blues po:club  # rugby, Auckland
+Hurricanes po:club  # rugby, Wellington
+Highlanders po:club  # rugby, Dunedin
+Brumbies po:club  # rugby, Canberra
+Waratahs po:club  # rugby, Sydney
+Selección po:club is:ngrama_Selección_galega  # selección de Galicia
+galega po:club is:ngrama_Selección_galega
+Irmandiños po:club  # selección galega de fútbol
+Vigo po:club is:ngrama_Vigo_Rugby  # rugby
+Rugby po:club is:ngrama_Vigo_Rugby
+CRAT po:club  # Club Rugby Arquitectura Técnica, A Coruña
+Muralla po:club is:ngrama_Muralla_Rugby  # rugby, Lugo
+Rugby po:club is:ngrama_Muralla_Rugby
+Universidade po:club is:ngrama_Universidade_de_Vigo_Rugby  # rugby
+de po:club is:ngrama_Universidade_de_Vigo_Rugby
+Vigo po:club is:ngrama_Universidade_de_Vigo_Rugby
+Rugby po:club is:ngrama_Universidade_de_Vigo_Rugby
+Campus po:club is:ngrama_Campus_Ourense_Rugby  # rugby
+Ourense po:club is:ngrama_Campus_Ourense_Rugby
+Rugby po:club is:ngrama_Campus_Ourense_Rugby
+Kaleido po:club is:ngrama_Kaleido_Universidade_de_Vigo  # rugby
+Universidade po:club is:ngrama_Kaleido_Universidade_de_Vigo
+de po:club is:ngrama_Kaleido_Universidade_de_Vigo
+Vigo po:club is:ngrama_Kaleido_Universidade_de_Vigo
+Club po:club is:ngrama_Club_de_Campo  # hóckey a herba, Madrid
+de po:club is:ngrama_Club_de_Campo
+Campo po:club is:ngrama_Club_de_Campo
+Atlètic po:club is:ngrama_Atlètic_Terrassa  # hóckey a herba
+Terrassa po:club is:ngrama_Atlètic_Terrassa
+Egara po:club  # Club Egara, hóckey a herba
+Liceo po:club  # HC Liceo, hóckey a patíns, A Coruña
+HC po:club is:ngrama_HC_Liceo  # hóckey a patíns
+Liceo po:club is:ngrama_HC_Liceo
+Deportivo po:club is:ngrama_Deportivo_Liceo  # hóckey a patíns
+Liceo po:club is:ngrama_Deportivo_Liceo
+Reus po:club is:ngrama_Reus_Deportiu  # hóckey a patíns
+Deportiu po:club is:ngrama_Reus_Deportiu
+Noia po:club is:ngrama_Noia_Freixenet  # hóckey a patíns
+Freixenet po:club is:ngrama_Noia_Freixenet
+Voltregà po:club  # hóckey a patíns
+Igualada po:club  # Igualada HC, hóckey a patíns
+Calafell po:club  # hóckey a patíns
+Compañía po:club is:ngrama_Compañía_de_María  # hóckey a patíns, A Coruña
+de po:club is:ngrama_Compañía_de_María
+María po:club is:ngrama_Compañía_de_María
+Dominicos po:club  # hóckey a patíns, A Coruña
+Oviedo po:club is:ngrama_Oviedo_Roller  # hóckey a patíns
+Roller po:club is:ngrama_Oviedo_Roller
+Alcobendas po:club  # Club Patín Alcobendas
+Barcelos po:club  # Óquei Clube de Barcelos
+Sporting po:club is:ngrama_Sporting_de_Portugal  # hóckey a patíns e fútbol
+de po:club is:ngrama_Sporting_de_Portugal
+Portugal po:club is:ngrama_Sporting_de_Portugal
+Valongo po:club  # AD Valongo, hóckey a patíns
+Trissino po:club  # hóckey a patíns
+Follonica po:club  # hóckey a patíns
+Forte po:club is:ngrama_Forte_dei_Marmi  # hóckey a patíns
+dei po:club is:ngrama_Forte_dei_Marmi
+Marmi po:club is:ngrama_Forte_dei_Marmi
+Lodi po:club  # Amatori Lodi, hóckey a patíns
+Saint-Omer po:club  # hóckey a patíns
+Quévert po:club  # hóckey a patíns
+Iberdrola po:club  # Liga Iberdrola
+Liga po:club is:ngrama_Liga_F  # fútbol feminino
+F po:club is:ngrama_Liga_F
+LaLiga/999 po:club is:ngrama_LaLiga_EA_Sports  # fútbol
+EA po:club is:ngrama_LaLiga_EA_Sports
+Sports po:club is:ngrama_LaLiga_EA_Sports
+LaLiga/999 po:club is:ngrama_LaLiga_Hypermotion  # fútbol
+Hypermotion po:club is:ngrama_LaLiga_Hypermotion
+Primeira po:club is:ngrama_Primeira_Liga  # fútbol, Portugal
+Liga po:club is:ngrama_Primeira_Liga
+Premier po:club is:ngrama_Premier_League  # fútbol, Inglaterra
+League po:club is:ngrama_Premier_League
+Serie po:club is:ngrama_Serie_A  # fútbol, Italia
+A po:club is:ngrama_Serie_A
+Bundesliga po:club  # fútbol, Alemaña
+Ligue po:club is:ngrama_Ligue_1  # fútbol, Francia
+1 po:club is:ngrama_Ligue_1
+Eredivisie po:club  # fútbol, Países Baixos
+Champions po:club is:ngrama_Champions_League  # Liga de Campións
+League po:club is:ngrama_Champions_League
+Europa po:club is:ngrama_Europa_League  # Liga Europa
+League po:club is:ngrama_Europa_League
+Conference po:club is:ngrama_Conference_League  # Liga Conferencia
+League po:club is:ngrama_Conference_League
+Copa po:club is:ngrama_Copa_do_Rei  # fútbol
+do po:club is:ngrama_Copa_do_Rei
+Rei po:club is:ngrama_Copa_do_Rei
+Copa po:club is:ngrama_Copa_del_Rey  # fútbol
+del po:club is:ngrama_Copa_del_Rey
+Rey po:club is:ngrama_Copa_del_Rey
+Supercopa po:club  # fútbol
+Euroliga po:club  # baloncesto
+Eurocup po:club  # baloncesto
+Liga po:club is:ngrama_Liga_Endesa  # baloncesto
+Endesa po:club is:ngrama_Liga_Endesa
+Liga po:club is:ngrama_Liga_ACB  # baloncesto
+ACB po:club is:ngrama_Liga_ACB
+Primeira po:club is:ngrama_Primeira_FEB  # baloncesto
+FEB po:club is:ngrama_Primeira_FEB
+Liga po:club is:ngrama_Liga_Femenina_Endesa  # baloncesto feminino
+Femenina po:club is:ngrama_Liga_Femenina_Endesa
+Endesa po:club is:ngrama_Liga_Femenina_Endesa
+Asobal po:club  # Liga Asobal, balonmán
+Liga po:club is:ngrama_Liga_Asobal  # balonmán
+Asobal po:club is:ngrama_Liga_Asobal
+Liga po:club is:ngrama_Liga_Guerreras_Iberdrola  # balonmán feminino
+Guerreras po:club is:ngrama_Liga_Guerreras_Iberdrola
+Iberdrola po:club is:ngrama_Liga_Guerreras_Iberdrola
+Primeira po:club is:ngrama_Primeira_División_de_fútbol_sala  # fútbol sala
+División po:club is:ngrama_Primeira_División_de_fútbol_sala
+de po:club is:ngrama_Primeira_División_de_fútbol_sala
+fútbol po:club is:ngrama_Primeira_División_de_fútbol_sala
+sala po:club is:ngrama_Primeira_División_de_fútbol_sala
+Vuelta po:club  # Vuelta a España, ciclismo
+Volta po:club is:ngrama_Volta_a_Galicia  # ciclismo
+a po:club is:ngrama_Volta_a_Galicia
+Galicia po:club is:ngrama_Volta_a_Galicia
+Giro po:club  # Giro d'Italia, ciclismo
+Tour po:club is:ngrama_Tour_de_Francia  # ciclismo
+de po:club is:ngrama_Tour_de_Francia
+Francia po:club is:ngrama_Tour_de_Francia
+Tour po:club  # Tour de Francia
+Roland po:club is:ngrama_Roland_Garros  # tenis
+Garros po:club is:ngrama_Roland_Garros
+US po:club is:ngrama_US_Open  # tenis e golf
+Open po:club is:ngrama_US_Open
+Open po:club is:ngrama_Open_de_Australia  # tenis
+de po:club is:ngrama_Open_de_Australia
+Australia po:club is:ngrama_Open_de_Australia
+Masters po:club  # golf e tenis
+Ryder po:club is:ngrama_Ryder_Cup  # golf
+Cup po:club is:ngrama_Ryder_Cup
+Superbowl po:club  # Super Bowl, fútbol americano
+Super po:club is:ngrama_Super_Bowl  # fútbol americano
+Bowl po:club is:ngrama_Super_Bowl
+NFL po:club  # National Football League
+NBA po:club  # National Basketball Association
+WNBA po:club  # baloncesto feminino, Estados Unidos
+MLB po:club  # béisbol, Estados Unidos
+NHL po:club  # hóckey sobre xeo, Estados Unidos e Canadá
+MLS po:club  # Major League Soccer
+MotoGP/999 po:club  # motociclismo
+Fórmula po:club is:ngrama_Fórmula_1  # automobilismo
+1 po:club is:ngrama_Fórmula_1
+Dakar po:club  # rali Dakar
+WRC po:club  # Campionato Mundial de Ralis
+Xogos po:club is:ngrama_Xogos_Olímpicos  # olimpíadas
+Olímpicos po:club is:ngrama_Xogos_Olímpicos
+Paralímpicos po:club  # Xogos Paralímpicos

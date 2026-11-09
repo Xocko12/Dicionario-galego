@@ -58,11 +58,14 @@ Sobre o núcleo normativo hai capas separadas, cada unha coa súa procedencia
 | `digalego` | léxico do Digalego (Xunta) que non está na RAG, con flexión e conxugación | 3 043 (51 verbos) |
 | `comunidade` | léxico de uso real achegado á comunidade de Hunspell-gl (informática, neoloxismos), sen revisión normativa | 816 (101 verbos) |
 | `terminoloxia` | bUSCatermos (USC), TERGAL, Estraviz adaptado, Trasno, Wikipedia galega por áreas, unidades | 378 (19 verbos) |
-| `siglas` | siglas, abreviaturas e símbolos coa súa expansión (Concello de Santiago, UDC, UVigo, CEG, Wikipedia, DRAG); máis 62 engadidas a man (*HDMI, 5G, IA, QR, IVA, ERTE, CELGA*…) | 9 090 |
+| `siglas` | siglas, abreviaturas e símbolos coa súa expansión (Concello de Santiago, UDC, UVigo, CEG, Wikipedia, DRAG); máis 285 engadidas a man (*HDMI, 5G, IA, QR, IVA, ERTE, CELGA, OCDE, TDAH*…) | 9 313 |
 | `toponimos` | lugares de Galicia, localidades, rexións e accidentes xeográficos (Wikipedia e Wiktionary galegos); máis 42 capitais e cidades engadidas a man | 24 113 |
-| `antroponimos` | nomes e apelidos de persoa en contexto galego (INE revisado, Wikipedia e Wiktionary galegos); máis 212 persoas coñecidas engadidas a man (política, deporte, música, cine, tecnoloxía, letras galegas) | 6 920 |
+| `antroponimos` | nomes e apelidos de persoa en contexto galego (INE revisado, Wikipedia e Wiktionary galegos); máis 2 635 persoas coñecidas engadidas a man (política, deporte, música, cine, ciencia, arte, letras galegas e universais) | 9 343 |
 | `antroponimos-outras-linguas` | nomes de persoa en inglés, castelán, portugués e húngaro | 85 354 |
-| `organizacions` | organizacións, obras, empresas, produtos (Wikipedia); máis 265 engadidos a man: empresas, produtos e servizos tecnolóxicos (*Google, Apple, iOS, Windows, Netflix, Bizum*…) e entidades (*Xunta, Inditex, Dépor*…) | 10 619 |
+| `organizacions` | organizacións, obras, empresas, produtos (Wikipedia); máis 2 476 engadidos a man: empresas, produtos e servizos tecnolóxicos (*Google, Apple, iOS, Windows, Netflix, Bizum*…), institucións, medios, entidades (*Xunta, Inditex, Sergas*…) e marcas (coches e modelos, roupa, alimentación, bebidas, cosmética, fogar: *Toyota, Golf, Levi's, Nutella*…) | 12 830 |
+| `clubs` | clubs de fútbol do mundo (football.db de openfootball, CC0; só os nomes e as súas variantes) cos seus nomes curtos (*Bayern, Dortmund, Celta*); máis clubs galegos e doutros deportes e competicións engadidos a man (*Arenteiro, Obradoiro, Lakers, Euroliga*) | 8 888 |
+| `cidades` | cidades do mundo con máis de 15 000 habitantes (GeoNames, CC BY), os municipios de España (INE) e os concellos e freguesías de Portugal (CAOP) | 42 729 |
+| `nomes-outras-linguas` | nomes de pía e apelidos correntes noutras linguas, dunha palabra: inglés (SSA, ONS, Census), alemán (Destatis), francés (INSEE), portugués (INE), catalán (Idescat), vía damegender (GPL); máis éuscaro, catalán, castelán, francés e alemán engadidos a man | 41 694 |
 | `codigos` | códigos ISO 639 (linguas) e ISO 4217 (moedas) | 8 258 |
 | `wordnet` | sentidos de Galnet (ver «Definicións») | 23 409 |
 | `traducions` | equivalentes es/pt/en de Apertium | 30 427 |
@@ -71,6 +74,10 @@ Os verbos das capas léxicas pasan as mesmas comprobacións ca os do núcleo. Os
 nomes compostos (*Santiago de Compostela*, *Galileo Galilei*) reconstrúense das
 etiquetas de n-grama de Hunspell-gl. As capas de Hunspell-gl son GPL-3.0; a de
 WordNet, CC BY 3.0; a de Apertium, GPL-2.0.
+
+As capas `cidades`, `clubs` e `nomes-outras-linguas` non veñen de Hunspell-gl senón
+doutras fontes abertas (`fontes/fontes.json`, fixadas por *commit*; clave `importador` en
+`fontes/capas.json`, funcións de `ferramentas/capas.py`).
 
 O que falta nas fontes engádese a man en `fontes/engadidos/<capa>.dic`, no mesmo
 formato dos módulos de Hunspell-gl (`Nome po:nome_propio  # nota`; nos nomes compostos,
@@ -270,7 +277,7 @@ python3 ferramentas/construir.py --kobo
 | Ficheiro | Para que serve |
 |---|---|
 | `dicionario.sqlite` | Táboas `lemas` (con `capa`: `rag` = núcleo), `formas` (forma → lema + trazo gramatical), `encliticos` (~800 000, con `orixe`), `locucions`, `sinonimos`, `sentidos` (WordNet), `traducions`, `definicions`, `siglas`, `onomastica`, `codigos`, `nomes`. ~150 MB. |
-| `teclado/gl_wordlist.combined` | ~1,3 millóns de palabras (núcleo, enclíticos, capas léxicas, siglas, topónimos, antropónimos, organizacións e nomes galegos) con frecuencia no formato dos teclados AOSP; con `dicttool` convértese no `.dict` de HeliBoard e similares. Dos nomes compostos entran as palabras con maiúscula (*York*, *Compostela*, *Einstein*). **Non entra ningún nome propio nin sigla que sexa unha palabra común escrita con maiúsculas** (*ISO*, *Iso*, *Como*, *Paz*, *SE*, *A*): o corpus de frecuencias está en minúsculas, así que tiñan a mesma frecuencia ca *iso*, *como*, *paz*, *se* e *a*, e ao deslizar o teclado escribía a maiúscula. A maiúscula ponna quen escribe e o teclado aplícaa á suxestión. Excepcións revisadas a man en `datos/correccions/teclado.json` (*Londres* sobre a forma verbal *londres*, *Luís* sobre a moeda, *Brasil*, *Xunta*…): entra o nome e a palabra común queda con frecuencia 0. |
+| `teclado/gl_wordlist.combined` | ~1,4 millóns de palabras (núcleo, enclíticos, capas léxicas, siglas, topónimos, cidades, antropónimos, nomes doutras linguas, organizacións, marcas, clubs e nomes galegos) con frecuencia no formato dos teclados AOSP; con `dicttool` convértese no `.dict` de HeliBoard e similares. Dos nomes compostos entran as palabras con maiúscula (*York*, *Compostela*, *Einstein*). **Non entra ningún nome propio nin sigla que sexa unha palabra común escrita con maiúsculas** (*ISO*, *Iso*, *Como*, *Paz*, *SE*, *A*): o corpus de frecuencias está en minúsculas, así que tiñan a mesma frecuencia ca *iso*, *como*, *paz*, *se* e *a*, e ao deslizar o teclado escribía a maiúscula. A maiúscula ponna quen escribe e o teclado aplícaa á suxestión. Excepcións revisadas a man en `datos/correccions/teclado.json` (*Londres* sobre a forma verbal *londres*, *Luís* sobre a moeda, *Brasil*, *Xunta*…): entra o nome e a palabra común queda con frecuencia 0. |
 | `teclado/palabras.tsv` | `forma<TAB>frecuencia`, para outros teclados. |
 | `kobo/dicthtml-gl.zip` | Dicionario para Kobo: ao tocar unha forma (*dixeches*) abre o lema (*dicir*) coa súa categoría, conxugación, sinónimos, traducións, sentidos do WordNet e, cando existan, as definicións do Wiktionary. Pendente de probar nun dispositivo. |
 | `kobo/galego.tsv` | O mesmo en formato tabulado (fonte dos tres seguintes, vía [pyglossary](https://github.com/ilius/pyglossary)). |
@@ -295,7 +302,12 @@ Tampouco macOS nin iOS aceptan listas de palabras para o teclado do sistema.
 | `hyph_gl.dic` (extensión de LibreOffice de Trasno) | GPL-3.0 | separación silábica |
 | [FrequencyWords](https://github.com/hermitdave/FrequencyWords) (OpenSubtitles 2018) | CC BY-SA 4.0 | frecuencias |
 | Revisión manual | GPL-3.0 | correccións segundo as *Normas ortográficas e morfolóxicas do idioma galego* (RAG/ILG) |
-| Engadidos a man (`fontes/engadidos/*.dic`) | GPL-3.0 | nomes propios e siglas que faltan nas fontes: tecnoloxía, entidades, capitais, persoas coñecidas |
+| [datasets/world-cities](https://github.com/datasets/world-cities) (GeoNames cities15000) | CC BY 4.0 | capa `cidades`: cidades do mundo |
+| [Municipios de España](https://github.com/codeforspain/ds-organizacion-administrativa) (INE) | datos públicos do INE | capa `cidades` |
+| [Freguesías de Portugal](https://github.com/pearlsofportugal/mvp-backend) (CAOP, DICOFRE) | datos oficiais (dados.gov.pt) | capa `cidades` |
+| [openfootball/clubs](https://github.com/openfootball/clubs) | CC0 | capa `clubs`: nomes dos clubs de fútbol |
+| [damegender](https://github.com/davidam/damegender) (ONS, Census, Destatis, INSEE, INE-PT, Idescat) e [SSA baby names](https://github.com/hadley/data-baby-names) | GPL-3.0; dominio público | capa `nomes-outras-linguas` |
+| Engadidos a man (`fontes/engadidos/*.dic`) | GPL-3.0 | nomes propios e siglas que faltan nas fontes: tecnoloxía, marcas, entidades, clubs, capitais, persoas coñecidas, nomes doutras linguas |
 
 Todo o proxecto (datos e código) publícase baixo a **GPL-3.0 ou posterior**
 (`LICENSE`).

@@ -171,11 +171,16 @@ def construir_sqlite(lemas, conx, frec, nomes, encl, capas) -> None:
 
 
 # -- Teclado ----------------------------------------------------------------
-# Capas que van ao teclado e ao corrector (as demais son enormes ou nomes doutras linguas).
-CAPAS_TECLADO = {"digalego", "comunidade", "terminoloxia", "siglas", "toponimos", "antroponimos"}
-# Só ao teclado: organizacións, empresas e produtos (iOS, iPhone, WhatsApp, Dépor). Non van ao
-# corrector porque a capa trae moitas siglas e nomes de partidos doutras linguas.
-CAPAS_SO_TECLADO = {"organizacions"}
+# Capas que van ao corrector Hunspell (as demais son enormes ou traen moito lixo doutras linguas).
+CAPAS_CORRECTOR = {"digalego", "comunidade", "terminoloxia", "siglas", "toponimos", "antroponimos"}
+# Capas que van ao teclado:
+TECLADO_LEXICO = {"digalego", "comunidade", "terminoloxia"}
+# nomes propios, tamén as palabras con maiúscula dos nomes compostos (Nova York -> York)
+TECLADO_NOMES = {"toponimos", "antroponimos", "cidades", "nomes-outras-linguas"}
+# só os nomes dunha soa palabra (iOS, Bayern): os compostos traen palabras xenéricas doutras linguas
+TECLADO_NOMES_SIMPLES = {"organizacions", "clubs"}
+# só os nomes dunha palabra que veñan destas fontes (persoas con artigo na Wikipedia; non o Wiktionary enteiro)
+TECLADO_NOMES_FONTES = {"antroponimos-outras-linguas": {"wikipedia-en", "wikipedia-es", "wikipedia-pt"}}
 
 _PALABRA_TECLADO = re.compile(r"^[0-9A-Za-z\u00C0-\u024F\u1E00-\u1EFF][0-9A-Za-z\u00C0-\u024F\u1E00-\u1EFF·'’.&+-]*$")
 
@@ -189,10 +194,12 @@ def _palabra_teclado(p: str) -> bool:
 
 def _grafia(p: str) -> int:
     """Entre variantes dun mesmo nome escóllese a grafía máis deliberada: iOS sobre Ios (a illa),
-    YouTube sobre Youtube, Maiús sobre MAIÚS."""
+    YouTube sobre Youtube, Maiús sobre MAIÚS, Pol sobre a abreviatura pol."""
     if p.isupper():
         return 0
-    return 2 if any(c.isupper() for c in p[1:]) or p[0].islower() else 1
+    if any(c.isupper() for c in p[1:]):
+        return 3
+    return 2 if p[0].isupper() else 1
 
 
 def formas_teclado(lemas, conx, frec, nomes, encl, capas) -> dict[str, int]:
@@ -211,7 +218,7 @@ def formas_teclado(lemas, conx, frec, nomes, encl, capas) -> dict[str, int]:
     palabras con maiúscula inicial.
     """
     formas: dict[str, int] = {}
-    for r in lemas + [r for r in capas["lexico"] if r["capa"] in CAPAS_TECLADO]:
+    for r in lemas + [r for r in capas["lexico"] if r["capa"] in TECLADO_LEXICO]:
         for forma, _ in formas_do_lema(r, conx):
             formas[forma] = frec.get(forma, 0)
     for r in encl:
@@ -222,28 +229,37 @@ def formas_teclado(lemas, conx, frec, nomes, encl, capas) -> dict[str, int]:
     ruta = DATOS / "correccions" / "teclado.json"
     mandan = set(json.loads(ruta.read_text(encoding="utf-8"))["nomes"]) if ruta.exists() else set()
 
-    candidatos: list[str] = [r["forma"] for r in capas["siglas"] if r["capa"] in CAPAS_TECLADO]
+    siglas = {r["forma"] for r in capas["siglas"] if r["capa"] == "siglas"}
+    candidatos: list[str] = list(siglas)
     candidatos += nomes
     for r in capas["onomastica"]:
-        if r["capa"] not in CAPAS_TECLADO | CAPAS_SO_TECLADO:
-            continue
+        capa = r["capa"]
         if " " not in r["nome"]:
-            partes = [r["nome"]]
-        elif r["capa"] in CAPAS_TECLADO:
+            fontes = TECLADO_NOMES_FONTES.get(capa)
+            if capa in TECLADO_NOMES or capa in TECLADO_NOMES_SIMPLES or (fontes and fontes & set(r["fontes"])):
+                partes = [r["nome"]]
+            else:
+                continue
+        elif capa in TECLADO_NOMES:
             partes = [p for p in r["nome"].split() if p[:1].isupper()]
-        else:   # das organizacións compostas («Partido Independiente de Osuna») nada
+        else:   # dos compostos das demais capas («Partido Independiente de Osuna») nada
             continue
         # sen siglas con puntos (A.C.CO.) nin códigos (2M1207b): nos nomes son lixo
         candidatos += [p for p in partes if "." not in p and p[0].isalpha()]
-    propios: dict[str, str] = {}   # minúsculas -> variante escollida
+    # entre variantes dun mesmo nome (Pol/POL, NIF/Nif, YouTube/Youtube) escóllese a que máis veces
+    # aparece nas capas; en empate, a sigla e logo a grafía máis deliberada (_grafia)
+    veces: dict[str, int] = {}
     for p in candidatos:
+        veces[p] = veces.get(p, 0) + 1
+    propios: dict[str, str] = {}   # minúsculas -> variante escollida
+    for p in veces:
         if not _palabra_teclado(p):
             continue
         clave = p.lower()
         if clave in comuns and p not in mandan:
             continue
         actual = propios.get(clave)
-        if actual is None or _grafia(p) > _grafia(actual):
+        if actual is None or (veces[p], p in siglas, _grafia(p)) > (veces[actual], actual in siglas, _grafia(actual)):
             propios[clave] = p
     for clave, p in propios.items():
         n = frec.get(clave, 0)
@@ -505,14 +521,14 @@ def construir_hunspell(lemas, conx, nomes, encl, capas) -> int:
         print("sen fontes/cache/hunspell-gl: non se constrúe o corrector")
         return 0
     palabras: set[str] = set()
-    for r in lemas + [r for r in capas["lexico"] if r["capa"] in CAPAS_TECLADO]:
+    for r in lemas + [r for r in capas["lexico"] if r["capa"] in CAPAS_CORRECTOR]:
         for forma, _ in formas_do_lema(r, conx):
             palabras.add(forma)
     palabras.update(nomes)
     palabras.update(r["forma"] for r in encl)
     palabras.update(r["forma"] for r in capas["siglas"])
     for r in capas["onomastica"]:
-        if r["capa"] in CAPAS_TECLADO:
+        if r["capa"] in CAPAS_CORRECTOR:
             palabras.update(p for p in r["nome"].split() if p[:1].isupper())
     for r in capas["locucions"]:
         palabras.update(r["locucion"].split())

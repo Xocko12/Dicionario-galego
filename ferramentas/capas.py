@@ -14,13 +14,21 @@ Códigos:     {"codigo": "glg", "tipo": "iso639", "nota": "Galician (639-2/3)"}
 Ademais dos módulos de Hunspell-gl, unha capa pode levar "engadidos": ficheiros
 propios deste proxecto (fontes/engadidos/<capa>.dic), no mesmo formato, para o
 que falta nas fontes (iOS, Google, HDMI, Canberra, Obama...). Levan a fonte "engadidos".
+
+As capas con "importador" non veñen de Hunspell-gl senón doutras fontes de
+fontes.json, xa descargadas en fontes/cache/ (descargar.py):
+  cidades               GeoNames (cidades do mundo), INE (municipios de España), CAOP (Portugal)
+  clubs                 openfootball (clubs de fútbol): só os nomes e as súas variantes
+  nomes_outras_linguas  nomes de pía e apelidos correntes (SSA, ONS, Census, Destatis, INSEE, INE-PT, Idescat)
 """
 
 from __future__ import annotations
 
+import csv
 import json
 import re
 import sys
+import unicodedata
 from collections import defaultdict
 from pathlib import Path
 
@@ -231,6 +239,217 @@ def importar_codigos(capa: str, rutas: list[Path]):
     return saida
 
 
+# -- capas doutras fontes (fontes/cache/<fonte>/) ------------------------------
+
+def _rexistro(capa: str, nome: str, tipo: str, fonte: str, nota: str = "") -> dict:
+    r = {"nome": nome, "tipo": tipo, "capa": capa, "fontes": [fonte]}
+    if nota:
+        r["nota"] = nota
+    return r
+
+
+def _xuntar(rexistros: list[dict]) -> list[dict]:
+    """Un rexistro por (nome, tipo); as fontes súmanse e queda a primeira nota."""
+    vistos: dict[tuple, dict] = {}
+    for r in rexistros:
+        clave = (r["nome"], r["tipo"])
+        if clave in vistos:
+            for f in r["fontes"]:
+                if f not in vistos[clave]["fontes"]:
+                    vistos[clave]["fontes"].append(f)
+            if "nota" not in vistos[clave] and r.get("nota"):
+                vistos[clave]["nota"] = r["nota"]
+        else:
+            vistos[clave] = r
+    return sorted(vistos.values(), key=lambda r: (I.clave_orde(r["nome"]), r["tipo"]))
+
+
+def _csv(ruta: Path, **kw):
+    with ruta.open(encoding="utf-8-sig", newline="") as fh:
+        yield from csv.reader(fh, **kw)
+
+
+ARTIGOS_INE = re.compile(r"^(.+), (A|O|As|Os|El|La|Los|Las|Els|Les|Es|Sa|Ses|L'|S')$")
+
+
+def importar_cidades(capa: str, cfg: dict) -> list[dict]:
+    """GeoNames (cidades de máis de 15 000 habitantes), municipios de España (INE) e
+    concellos e freguesías de Portugal (CAOP)."""
+    saida = []
+    for nome, pais, rexion, _ in list(_csv(I.CACHE / "geonames-cidades" / "world-cities.csv"))[1:]:
+        # fóra os distritos numerados (Lyon 02, Marseille 13) e os nomes con barras ou parénteses
+        if re.search(r"\d$", nome) or any(c in nome for c in "/()"):
+            continue
+        saida.append(_rexistro(capa, nome.strip(), "topónimo", "geonames-cidades", f"{pais}" + (f" ({rexion})" if rexion else "")))
+    for _, _, _, _, nome in list(_csv(I.CACHE / "ine-municipios" / "municipios.csv"))[1:]:
+        for variante in nome.split("/"):      # Donostia/San Sebastián
+            variante = variante.strip()
+            m = ARTIGOS_INE.match(variante)   # «Coruña, A» -> «A Coruña»; «Hospitalet de Llobregat, L'»
+            if m:
+                variante = m.group(2) + ("" if m.group(2).endswith("'") else " ") + m.group(1)
+            saida.append(_rexistro(capa, variante, "topónimo", "ine-municipios", "municipio de España"))
+    for _, freguesia, concelho, distrito in list(_csv(I.CACHE / "caop-freguesias" / "freguesias.csv"))[1:]:
+        saida.append(_rexistro(capa, concelho.strip(), "topónimo", "caop-freguesias", f"concello de Portugal ({distrito})"))
+        saida.append(_rexistro(capa, freguesia.strip(), "topónimo", "caop-freguesias", f"freguesía de {concelho}, Portugal"))
+    return _xuntar(saida)
+
+
+# Palabras dos nomes dos clubs que non identifican o club (siglas de «club de fútbol», xenéricos, partículas).
+XENERICOS_CLUBS = {"FC", "CF", "SC", "SD", "UD", "CD", "AD", "RC", "RCD", "CA", "CP", "CE", "UE", "AC", "AS", "SS", "US",
+                   "SV", "VfB", "VfL", "VfR", "TSV", "TSG", "FSV", "SpVgg", "SG", "BSC", "FK", "NK", "HNK", "GNK", "KF",
+                   "KS", "SK", "ŠK", "MŠK", "PFC", "PFK", "AFC", "BK", "IF", "IFK", "FF", "IK", "GIF", "SF", "SSV", "SSC",
+                   "ASD", "SE", "SA", "SAD", "OSC", "RSC", "KV", "KVC", "KAA", "KRC", "KSV", "KSC", "KAS", "KFC", "KVK",
+                   "SKN", "SCR", "ASK", "USV", "SVG", "ATSV", "WSG", "LASK", "GAK", "DSV", "ASKÖ", "ESV", "SVK", "VSG",
+                   "FCM", "SCU", "USC", "SKU", "TuS", "DJK", "SpVg", "VfV", "SuS", "SVW", "SCB", "Club", "Clube", "Klub",
+                   "Real", "Sporting", "Sport", "Sportivo", "Deportivo", "Deportiva", "Desportivo", "Atlético", "Atletico",
+                   "Athletic", "Racing", "Union", "Unión", "União", "United", "City", "Town", "County", "Rovers",
+                   "Wanderers", "Albion", "Olympique", "Olympic", "Olimpia", "Stade", "Académica", "Académico", "Boavista",
+                   "Juventud", "Juventude", "Cultural", "Gimnástica", "Gimnàstic", "Recreativo", "Nacional", "Internacional",
+                   "Football", "Fútbol", "Futbol", "Futebol", "Calcio", "Fußball", "Voetbal", "Fotbal", "Fotboll", "Fodbold",
+                   "Spor", "Kulübü", "Spartak", "Dynamo", "Dinamo", "Lokomotiv", "Torpedo", "Zenit", "Metalurg", "Shakhtar",
+                   "Vorwärts", "Wacker", "Austria", "Young", "Boys", "Old", "First", "New", "North", "South", "East", "West",
+                   "Saint", "St.", "St", "San", "Santa", "Santo", "São", "Sant", "Villa", "Ciudad", "Cidade", "Vila", "Mar",
+                   "Juniors", "Amateure", "Reserves", "II", "III", "IV", "B", "C", "U21", "U23", "de", "da", "do", "del",
+                   "della", "dello", "di", "la", "le", "les", "los", "las", "el", "of", "and", "e", "y", "&", "The", "Los",
+                   "Las", "El", "La", "Le", "Les", "A", "O", "Os", "As", "FCB", "RCDE", "RCCV", "Agrupación", "Asociación",
+                   "Associação", "Associazione", "Association", "Balompié", "Centre", "Centro", "Ballspielverein",
+                   "Ballsportverein", "Betriebssportgemeinschaft", "Breitensport", "Deutsche", "Deutscher", "Armeesportklub",
+                   "Sportklub", "Sportverein", "Sportvereinigung", "Sportgemeinschaft", "Sportfreunde", "Spielvereinigung",
+                   "Turnverein", "Turn", "Fußballclub", "Fussballclub", "Fußball-Club", "Verein", "Vereniging", "Voetbalvereniging",
+                   "Société", "Sociedad", "Sociedade", "Societat", "Società", "Polisportiva", "Unione", "Gruppo", "Grupo",
+                   "Esportiu", "Esportiva", "Esportivo", "Esporte", "Esportes", "Clube", "Klubi", "Klubas", "Kluby", "Team",
+                   "Maatschappelijke", "Combinatie", "Amateurs", "Católica", "Universidad", "Universidade", "Universitario",
+                   "Universitatea", "Universitario", "Independiente", "Estudiantes", "Central", "Nacional", "Municipal",
+                   "Provincial", "Regional", "Académie", "Academy", "Juvenil", "Juventus", "Jeunesse", "Étoile", "Espérance",
+                   "Avenir", "Progrès", "Renaissance", "Stella", "Virtus", "Pro", "Alemannia", "Germania", "Borussia", "Fortuna",
+                   "Victoria", "Viktoria", "Concordia", "Preußen", "Hertha"}
+
+
+def importar_clubs(capa: str, cfg: dict) -> list[dict]:
+    """Clubs de fútbol dos ficheiros de openfootball. De cada club gárdase o nome, cada
+    variante e cada palabra distintiva como rexistros dunha soa palabra (Bayern, Dortmund,
+    Celta), que son os que usa o teclado; os datos de estadios, cidades e anos non se len."""
+    saida = []
+    for ruta in sorted((I.CACHE / "openfootball-clubs").glob("*.txt")):
+        pais = ruta.stem.split("_")[1].replace("-", " ").title().replace(" N ", " e ")
+        club = None
+        for raw in ruta.read_text(encoding="utf-8", errors="replace").splitlines():
+            texto = raw.split("#", 1)[0].rstrip()
+            if not texto.strip() or texto.lstrip().startswith("="):
+                continue
+            if texto.lstrip().startswith("|"):
+                if club is None:
+                    continue
+                # fóra as variantes noutras linguas («Bayern Munich [en]», «Teneriffa [de]»)
+                variantes = [v.strip() for v in texto.split("|") if v.strip() and not re.search(r"\[[a-z]{2}\]", v)]
+            elif re.match(r"^\s*(i+|[a-z])\)\s", texto):   # «ii) Real Madrid B»: filiais
+                club = None
+                continue
+            elif not texto[0].isspace():
+                nome = re.sub(r"\s*\([^)]*\)\s*$", "", texto.split(",", 1)[0]).strip()   # «Wimbledon FC (1889-2004)»
+                if not nome or nome[0].isdigit() and " " not in nome:
+                    club = None
+                    continue
+                club = nome
+                saida.append(_rexistro(capa, nome, "club", "openfootball-clubs", f"fútbol, {pais}"))
+                variantes = [nome]
+            else:
+                continue
+            palabras = set()
+            for v in variantes:
+                v = re.sub(r"\s*\([^)]*\)\s*$", "", v).strip()
+                if not v:
+                    continue
+                if " " not in v and "." not in v and (len(v) >= 4 or v.isupper()):
+                    palabras.add(v)
+                for p in v.replace("/", " ").split():
+                    if p.endswith("."):      # abreviaturas: «Atl. Madrid», «Dep. La Coruña»
+                        continue
+                    p = p.strip(",")
+                    if p in XENERICOS_CLUBS or (len(p) < 4 and not p.isupper()) or not p[0].isupper() \
+                            or not p.replace("-", "").replace("'", "").replace("’", "").isalpha():
+                        continue
+                    palabras.add(p)
+            for p in sorted(palabras):
+                if p != club:
+                    saida.append(_rexistro(capa, p, "club", "openfootball-clubs", f"{club} (fútbol, {pais})"))
+    return _xuntar(saida)
+
+
+def _capitalizar(nome: str) -> str:
+    """De maiúsculas a inicial maiúscula: JEAN-PIERRE -> Jean-Pierre, O'BRIEN -> O'Brien, MCCARTHY -> McCarthy."""
+    partes = []
+    for parte in re.split(r"([-' ])", nome):
+        if len(parte) <= 1 or parte in "-' ":
+            partes.append(parte)
+            continue
+        p = parte[0].upper() + parte[1:].lower()
+        if p.startswith("Mc") and len(p) > 3:
+            p = "Mc" + p[2].upper() + p[3:]
+        partes.append(p)
+    return "".join(partes)
+
+
+def _nome_simple(nome: str) -> bool:
+    return bool(nome) and " " not in nome and nome.replace("-", "").replace("'", "").isalpha() and len(nome) > 1
+
+
+def importar_nomes_outras_linguas(capa: str, cfg: dict) -> list[dict]:
+    """Nomes de pía e apelidos correntes noutras linguas, dunha soa palabra, coa frecuencia
+    mínima que fai que sexan de uso corrente e non rarezas. Un rexistro por (nome, tipo),
+    coas linguas en que é corrente na nota: «apelido: inglés, alemán»."""
+    acumulado: dict[tuple[str, str], dict] = {}
+    dg = I.CACHE / "damegender"
+
+    def engadir(nome: str, tipo: str, lingua: str, fonte: str):
+        nome = nome.strip()
+        if nome.isupper():
+            nome = _capitalizar(nome)
+        if not _nome_simple(nome):
+            return
+        r = acumulado.setdefault((nome, tipo), {"linguas": [], "fontes": []})
+        if lingua not in r["linguas"]:
+            r["linguas"].append(lingua)
+        if fonte not in r["fontes"]:
+            r["fontes"].append(fonte)
+
+    def ficheiro(nome_ficheiro: str, tipo: str, lingua: str, minimo: int):
+        for fila in _csv(dg / nome_ficheiro):
+            if len(fila) < 2 or not fila[1].strip().replace(".", "").isdigit():
+                continue
+            if int(float(fila[1])) >= minimo:
+                engadir(fila[0], tipo, lingua, "damegender")
+
+    # inglés: nomes de pía da SSA (1880-2008), apelidos do Reino Unido (ONS) e dos EUA (Census 2010)
+    for fila in list(_csv(I.CACHE / "ssa-nomes" / "baby-names.csv"))[1:]:
+        engadir(fila[1], "antropónimo", "inglés", "ssa-nomes")
+    ficheiro("gbsurnames.csv", "apelido", "inglés", 3)
+    ficheiro("ussurnames.csv", "apelido", "inglés", 5000)
+    # alemán (Destatis): nomes de pía en maiúsculas sen tremas (os que os levan engádense a man)
+    ficheiro("deall.csv", "antropónimo", "alemán", 5)
+    ficheiro("desurnames.csv", "apelido", "alemán", 3)
+    # francés (INSEE): só apelidos (os nomes de pía veñen sen acentos e engádense a man)
+    ficheiro("frsurnames.csv", "apelido", "francés", 3)
+    # portugués (INE)
+    ficheiro("ptall.csv", "antropónimo", "portugués", 1)
+    ficheiro("ptsurnames.csv", "apelido", "portugués", 1)
+    # catalán (Idescat 2022): «JÚLIA/JULIA», «ZOE VALENTINA»
+    for fila in _csv(dg / "nomscatalunya.csv"):
+        if len(fila) >= 4 and fila[0].isdigit():
+            for nome in fila[2].split("/"):
+                engadir(nome, "antropónimo", "catalán", "damegender")
+    descricion = {"antropónimo": "nome de pía", "apelido": "apelido"}
+    saida = []
+    for (nome, tipo), r in acumulado.items():
+        s = _rexistro(capa, nome, tipo, r["fontes"][0], f"{descricion[tipo]}: {', '.join(r['linguas'])}")
+        s["fontes"] = r["fontes"]
+        saida.append(s)
+    return _xuntar(saida)
+
+
+IMPORTADORES = {"cidades": importar_cidades, "clubs": importar_clubs, "nomes_outras_linguas": importar_nomes_outras_linguas}
+
+
 def main() -> None:
     config = json.loads((RAIZ / "fontes" / "capas.json").read_text(encoding="utf-8"))["capas"]
     pedidas = sys.argv[1:] or list(config)
@@ -246,7 +465,13 @@ def main() -> None:
         rag.pop("_descricion", None)
         referencia.update(rag)
 
-    config = {capa: cfg for capa, cfg in config.items() if "modulos" in cfg}   # as de «script» van á parte
+    # as de «script» van á parte; as de «importador» léñense doutras fontes (abaixo)
+    importadas = {capa: cfg for capa, cfg in config.items() if "importador" in cfg}
+    config = {capa: cfg for capa, cfg in config.items() if "modulos" in cfg}
+    for capa, cfg in importadas.items():
+        if capa in pedidas:
+            rexistros = IMPORTADORES[cfg["importador"]](capa, cfg)
+            escribir(capa, _xuntar(rexistros + importar_onomastica(capa, engadidos(cfg))))
     pedidas = [c for c in pedidas if c in config]
     rutas_capa = {capa: [r for m in cfg["modulos"] for r in ficheiros(m)] + engadidos(cfg)
                   for capa, cfg in config.items()}

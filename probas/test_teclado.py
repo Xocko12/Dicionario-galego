@@ -46,9 +46,15 @@ class ProbasTeclado(unittest.TestCase):
         for n in ("iOS", "iPhone", "iPad", "Android", "WhatsApp", "Google", "Apple", "Microsoft", "Netflix",
                   "HDMI", "5G", "Bizum", "Londres", "Madrid", "Lisboa", "Berlín", "Canberra", "York",
                   "Compostela", "Galicia", "Vigo", "Ourense", "Einstein", "Castelao", "Rosalía", "Obama",
-                  "Dépor", "ONU", "NIF", "Xoán", "Uxía"):
+                  "Dépor", "ONU", "NIF", "Xoán", "Uxía",
+                  # cidades, municipios e freguesías; clubs; nomes doutras linguas
+                  "Mumbai", "Alcobendas", "Gaia", "Hospitalet", "Bayern", "Dortmund", "Arenteiro", "Lakers",
+                  "John", "Lennon", "McCartney", "Jon", "Ander", "Pol", "Juan", "Müller", "Jürgen", "Etxeberria",
+                  "Qashqai", "Levi's", "Nutella", "Lacoste"):
             with self.subTest(nome=n):
                 self.assertTrue(n in self.formas, n)
+        # «Obradoiro» (o club) ou «Golf» (o coche) son palabras comúns (obradoiro, golf): só entra a minúscula
+        self.assertTrue("obradoiro" in self.formas and "Obradoiro" not in self.formas)
         # «Camiño» ou «Ordes» son tamén palabras comúns (camiño, orde): só entra a minúscula
         self.assertTrue("camiño" in self.formas and "Camiño" not in self.formas)
         self.assertTrue("ordes" in self.formas and "Ordes" not in self.formas)
