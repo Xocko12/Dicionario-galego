@@ -22,7 +22,7 @@ con licenza GPL e permiso explícito do ILG-RAG. **Non inclúe definicións.**
 
 | Locucións | 431 da RAG (*a pesar de*, *ao redor*, *de súpeto*), en `datos/locucions.jsonl` |
 | Sinónimos | 6 997 entradas do thesaurus do VOLGa (GPL), en `datos/sinonimos.jsonl`, con marca das formas toleradas |
-| Sentidos (WordNet) | 27 137 sentidos de 23 409 lemas (Galnet, CC BY): definición do WordNet traducida ao galego (en curso: 7 873 sentidos xa a teñen), sinónimos galegos, equivalentes es/pt/en |
+| Sentidos (WordNet) | 27 137 sentidos de 23 409 lemas (Galnet, CC BY): definición do WordNet traducida ao galego (en curso: 9 436 sentidos xa a teñen), sinónimos galegos, equivalentes es/pt/en |
 | Traducións | 30 427 lemas con equivalentes en castelán (25 718), portugués (5 430) e inglés (13 914), de Apertium (GPL) |
 | Definicións en galego | 44 125 entradas (74 737 acepcións) do Wiktionary galego, con exemplos, sinónimos e antónimos por acepción (CC BY-SA) |
 | Definicións traducidas | 10 268 entradas (15 233 acepcións) do Wiktionary inglés pasadas a galego: 7 132 palabras que o Wiktionary galego non define e acepcións que lle faltan a outras (CC BY-SA) |
