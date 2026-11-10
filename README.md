@@ -22,10 +22,10 @@ con licenza GPL e permiso explícito do ILG-RAG. **Non inclúe definicións.**
 
 | Locucións | 431 da RAG (*a pesar de*, *ao redor*, *de súpeto*), en `datos/locucions.jsonl` |
 | Sinónimos | 6 997 entradas do thesaurus do VOLGa (GPL), en `datos/sinonimos.jsonl`, con marca das formas toleradas |
-| Sentidos (WordNet) | 27 137 sentidos de 23 409 lemas (Galnet, CC BY): definición en inglés, sinónimos galegos, equivalentes es/pt/en |
+| Sentidos (WordNet) | 27 137 sentidos de 23 409 lemas (Galnet, CC BY): definición do WordNet traducida ao galego (en curso: 7 873 sentidos xa a teñen), sinónimos galegos, equivalentes es/pt/en |
 | Traducións | 30 427 lemas con equivalentes en castelán (25 718), portugués (5 430) e inglés (13 914), de Apertium (GPL) |
 | Definicións en galego | 44 125 entradas (74 737 acepcións) do Wiktionary galego, con exemplos, sinónimos e antónimos por acepción (CC BY-SA) |
-| Definicións en inglés | 21 035 entradas galegas do Wiktionary inglés (CC BY-SA) |
+| Definicións traducidas | 11 435 entradas (16 407 acepcións) do Wiktionary inglés pasadas a galego: 8 239 palabras que o Wiktionary galego non define e acepcións que lle faltan a outras (CC BY-SA) |
 | Separación silábica | patróns `hyph_gl.dic` de Trasno, en `dist/hyphenation/` |
 
 ### Definicións
@@ -35,10 +35,10 @@ abertas de definicións son:
 
 | Capa | Fonte | Licenza | Estado |
 |---|---|---|---|
-| `wordnet` | Galnet (Open Multilingual Wordnet): cada sentido coa **definición en inglés** do WordNet de Princeton, os sinónimos galegos e os equivalentes es/pt/en | CC BY 3.0 | **feita** (`ferramentas/wordnet.py`) |
+| `wordnet` | Galnet (Open Multilingual Wordnet): cada sentido coa definición do WordNet de Princeton **traducida ao galego** (`datos/traducions/definicions-wordnet.tsv`), os sinónimos galegos e os equivalentes es/pt/en | CC BY 3.0 | **feita** (`ferramentas/wordnet.py`) |
 | `traducions` | Apertium es-gl, spa-glg, pt-gl, en-gl | GPL | **feita** (`ferramentas/traducions.py`) |
 | `definicions-gl` | **Wiktionary galego**: definicións en galego, con exemplos, sinónimos e antónimos por acepción | CC BY-SA 4.0 | **feita**: 44 125 entradas, 74 737 acepcións (`ferramentas/wiktionary.py`) |
-| `definicions-en` | Wiktionary inglés (entradas galegas, vía kaikki.org): definicións en inglés, con exemplos | CC BY-SA 4.0 | **feita**: 21 035 entradas (sen as entradas de formas flexionadas) |
+| `definicions-traducidas` | Wiktionary inglés (entradas galegas, vía kaikki.org), **traducido ao galego**: só as palabras e as acepcións que `definicions-gl` non ten, con exemplos e marcas de uso | CC BY-SA 4.0 | **feita**: 11 435 entradas, 16 407 acepcións (sen as entradas de formas flexionadas) |
 
 As dúas capas de Wiktionary xéranse con `ferramentas/wiktionary.py --descargar &&
 ferramentas/wiktionary.py` (precisa acceso a dumps.wikimedia.org e kaikki.org; non
@@ -46,7 +46,18 @@ se rexeneran na integración continua: actualízanse a man de cando en vez). O
 analizador do Wiktionary galego segue os modelos reais das páxinas e descarta
 calquera acepción con restos de wikitexto. Non hai capa de definicións da RAG: o
 seu dicionario ten dereitos de autor. O Kobo, StarDict e Apple mostran as
-definicións galegas, as inglesas, as traducións e os sentidos do WordNet.
+definicións galegas, as traducidas, as traducións e os sentidos do WordNet.
+
+**Neste repositorio non hai definicións en inglés.** As glosas do Wiktionary
+inglés e as definicións do WordNet de Princeton só se gardan traducidas ao
+galego: as táboas de tradución están en `datos/traducions/` (a do Wiktionary
+identifica cada glosa polo seu resumo SHA-1, para non gardar o texto inglés) e
+as glosas de fórmula fixa (*a parish of Samos, Lugo, Galicia*) pasan por regras
+en `ferramentas/wiktionary.py`. É tradución automática, sen revisión
+lexicográfica: serve para entender a palabra, non como definición normativa.
+Unha acepción traducida que repita unha definición de `definicions-gl` non
+entra; `ferramentas/validar.py` e as probas rexeitan calquera definición en
+inglés.
 
 ### Capas opcionais (`datos/capas/`)
 
@@ -301,12 +312,12 @@ Tampouco macOS nin iOS aceptan listas de palabras para o teclado do sistema.
 |---|---|---|
 | Vocabulario do DRAG e VOLGa, vía [Hunspell-gl](https://gitlab.com/trasno/hunspell-gl) (Proxecto Trasno), versión fixada en `fontes/fontes.json` | GPL-3.0 | lemas, categorías, flexión e conxugación |
 | Thesaurus do VOLGa (Miguel Solla, 2010; extensión de LibreOffice de Trasno) | GPL-3.0 | sinónimos |
-| [Open Multilingual Wordnet 1.4](https://github.com/omwn/omw-data): Galnet (MCR), omw-en, omw-es, omw-pt | CC BY 3.0 / WordNet License | sentidos, definicións en inglés, equivalentes |
+| [Open Multilingual Wordnet 1.4](https://github.com/omwn/omw-data): Galnet (MCR), omw-en, omw-es, omw-pt | CC BY 3.0 / WordNet License | sentidos, definicións (traducidas ao galego), equivalentes |
 | [Apertium](https://github.com/apertium) es-gl, spa-glg, pt-gl, en-gl | GPL-2.0 | traducións |
 | [Apertium glg](https://github.com/apertium/apertium-glg) (monolingüe galego) | GPL-2.0 | capa `apertium`: léxico con flexión |
 | Vocabularios terminolóxicos en PDF (USC, UDC, UVigo, Termigal/CIRP, RAG, Realiter; lista en `fontes/fontes.json`) | dereitos dos seus autores e editores; só se toman os termos, non as definicións | capa `vocabularios` |
 | [ParlaMint-ES-GA](https://github.com/ILG-USC/ParlaMint-ES-GA) (actas do Parlamento de Galicia) | CC BY 4.0 | atestación do léxico administrativo engadido a man (non se copia texto) |
-| [Wiktionary galego](https://gl.wiktionary.org/) e [inglés](https://en.wiktionary.org/) (vía kaikki.org) | CC BY-SA 4.0 | definicións, exemplos, sinónimos por acepción |
+| [Wiktionary galego](https://gl.wiktionary.org/) e [inglés](https://en.wiktionary.org/) (vía kaikki.org) | CC BY-SA 4.0 | definicións (as do inglés, traducidas ao galego), exemplos, sinónimos por acepción |
 | `hyph_gl.dic` (extensión de LibreOffice de Trasno) | GPL-3.0 | separación silábica |
 | [FrequencyWords](https://github.com/hermitdave/FrequencyWords) (OpenSubtitles 2018) | CC BY-SA 4.0 | frecuencias |
 | Revisión manual | GPL-3.0 | correccións segundo as *Normas ortográficas e morfolóxicas do idioma galego* (RAG/ILG) |
