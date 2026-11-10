@@ -204,8 +204,6 @@ Brandariz	nome propio	f1c734ea78	Lugar da parroquia de Luama, no concello de Ort
 Brandarís	nome propio	49e86f98a4	Lugar da parroquia de Bardaos, no concello de Tordoia, na provincia da Coruña, en Galicia
 Brandufe	nome propio	5a564200bb	Lugar da parroquia de Vincios, no concello de Gondomar, na provincia de Pontevedra, en Galicia
 Brea	nome propio	029f62b629	Nome de numerosos lugares e aldeas de toda Galicia
-Bretanha	nome propio	a899143aa0	Grafía reintegracionista de Bretaña: rexión cultural, provincia histórica e península do noroeste de Francia
-Bretanha	nome propio	f3dfb80ba2	Grafía reintegracionista de Bretaña: rexión administrativa do noroeste de Francia, que abrangue a maior parte da rexión histórica do mesmo nome
 Brión	nome propio	4bc394eb59	Lugar da parroquia de Leiloio, no concello de Malpica de Bergantiños, na provincia da Coruña
 Brión	nome propio	61ec97b93b	Lugar da parroquia de Leiro, no concello de Rianxo, na provincia da Coruña
 Brión	nome propio	9972013491	Apelido que ten a súa orixe nun topónimo
@@ -254,7 +252,6 @@ Carriño	substantivo	faa0514f80	Osa Menor, constelación do hemisferio norte
 Carro	nome propio	43e397cf4b	Apelido
 Carro	nome propio	af41a208b5	Conxunto das sete estrelas máis brillantes da constelación da Osa Maior
 Castrove	nome propio	1855c80da0	Monte da provincia de Pontevedra, en Galicia
-Catalunha	nome propio	955b7d2370	Grafía reintegracionista de Cataluña: comunidade autónoma do nordeste de España
 Catuxa	nome propio	5e115a4990	Diminutivo do nome de muller Catarina
 Cerviño	nome propio	43e397cf4b	Apelido
 Chamorro	nome propio	43e397cf4b	Apelido
@@ -329,7 +326,6 @@ Estevo	nome propio	589790f2ff	Apelido que procede do nome de persoa
 Estevo	nome propio	9f698fe912	Santo Estevo, o primeiro mártir cristián
 Estiria	nome propio	e41188adc4	Estado federado de Austria
 Estévez	nome propio	47e736b831	Apelido de orixe patronímica
-Estónia	nome propio	75ff665f8b	Grafía reintegracionista de Estonia, país do nordeste de Europa situado na costa suroriental do mar Báltico
 Eurabia	nome propio	4eab69e86e	Nome despectivo dunha suposta Europa futura islamizada
 Eurocopa	nome propio	6aa0e74d0b	Campionato Europeo de Fútbol da UEFA, que disputan as seleccións nacionais de Europa
 Eurocámara	substantivo	bc0c366843	Institución parlamentaria da Unión Europea
@@ -374,7 +370,6 @@ Freás	nome propio	fe7ce1fbbf	Lugar da parroquia da Canda, no concello de Piñor
 Frixia	nome propio	f56d54f22b	Rexión xeográfica e antigo reino do centro-oeste de Asia Menor, na actual Turquía
 Friúce	nome propio	41c74daec0	Aldea da parroquia de Merlín, no concello de Agolada, na provincia de Pontevedra, en Galicia
 Froxán	nome propio	355e0e7c75	Apelido procedente do topónimo
-Frígia	nome propio	5b0de21537	Grafía reintegracionista de Frixia, rexión xeográfica e antigo reino da parte centro-occidental de Asia Menor, na actual Turquía
 Fórmula 1	nome propio	59d6e37b54	Modalidade de competición de automobilismo
 Fórmula Un	nome propio	59d6e37b54	Disciplina de automobilismo de competición, a de maior categoría das que se disputan en circuíto
 GPS	substantivo	41f6667131	Aparello receptor que indica a posición por satélite e guía na navegación
@@ -425,7 +420,6 @@ Hermida	nome propio	43e397cf4b	Apelido
 IA	substantivo	1b83bcf638	Sigla de intelixencia artificial
 ISIS	nome propio	548d65741a	Sigla coa que se coñece a organización Estado Islámico de Iraq e Siria
 Iair	nome propio	301ef9fdb6	Nome de home de orixe hebrea
-Ibéria	nome propio	9622519e9e	Grafía reintegracionista de Iberia, península e rexión de Europa situada ao sur dos Pireneos, formada por Andorra, España, Portugal e Xibraltar
 Imelda	nome propio	a04d1a1579	Nome propio de muller
 Insua	nome propio	b2bdac8bf0	Nome de numerosos lugares e aldeas de toda Galicia
 Insua	nome propio	d46a7b448e	Parroquia do concello de Ponte Caldelas, na provincia de Pontevedra
@@ -453,8 +447,6 @@ Louzao	nome propio	43e397cf4b	Apelido
 Louzán	nome propio	43e397cf4b	Apelido
 Luxemburgo	nome propio	7c9a559a22	Provincia de Valonia, en Bélxica
 Luxemburgo	nome propio	f3f4281dc5	Cantón de Luxemburgo, un dos doce do país, que inclúe a súa capital
-Lácio	nome propio	6739431e24	Grafía reintegracionista de Lacio, rexión histórica do centro de Italia, na que se fundou a cidade de Roma e onde esta medrou ata ser a capital do Imperio romano
-Lácio	nome propio	ea3296c8f4	Grafía reintegracionista de Lacio, rexión administrativa de Italia, situada no centro da península e con capital en Roma
 Lárnaca	nome propio	5acb3d1711	Cidade da costa sur de Chipre
 Maceda	nome propio	400855f216	Lugar da parroquia de Montecubeiro, no concello de Castroverde, na provincia de Lugo
 Macedonia	nome propio	33ccbf114f	Rexión xeográfica do suroeste de Bulgaria, chamada tamén Macedonia do Pirin ou Macedonia búlgara
@@ -1289,7 +1281,6 @@ alta	substantivo	19c6ede7a8	Ingreso nunha profesión ou nunha organización
 alta	substantivo	d4b0536114	Documento que certifica a saída dun enfermo do hospital
 altilocuencia	substantivo	ec94e7bbd1	Linguaxe pomposa e grandilocuente
 alto mar	substantivo	12e92982ef	Parte do mar que está lonxe da costa
-alto-relevo	substantivo	95966f92b6	Grafía reintegracionista de altorrelevo
 altorrelevo	substantivo	c113a61caa	Relevo escultórico no que as figuras sobresaen do fondo máis da metade do seu vulto
 altura	substantivo	55f713fdf7	Calidade de alto
 altura	substantivo	b524dfa909	Parte do mar afastada da costa, mar aberto
@@ -2172,7 +2163,6 @@ baixel	substantivo	49844f953c	Embarcación, barco
 baixo	preposición	001be9d19b	Como consecuencia ou resultado de
 baixo	preposición	c77c0de193	Nun lugar inferior a algo ou cuberto por el
 baixo	preposición	e337e62ab8	Despois de, a continuación no tempo
-baixo-relevo	substantivo	d694a57542	Grafía reintegracionista de baixorrelevo
 baladrón	substantivo	33978e405c	Persoa que presume de valente ou de méritos que non ten
 balandrán	adxectivo	664d732fbd	Que ten aspecto descoidado ou gastado
 balandrán	substantivo	5defe590ad	Vestidura longa e pesada
@@ -2481,7 +2471,6 @@ bicudo	substantivo	a161566e81	Insecto coleóptero que ataca as palmeiras (Rhynch
 bidente	substantivo	e654b16417	Macho da ovella
 bidimensional	adxectivo	8dede4816e	Que ten dúas dimensións
 bidé	substantivo	d7d7461e09	Aparello sanitario baixo que serve para lavar os xenitais e o ano
-bidê	substantivo	680838aa49	Grafía reintegracionista de bidé
 bieiteira	substantivo	337e21ef4c	Muller que cura con herbas, ensalmos e bendicións
 bieito	adxectivo	7208ea9f9f	Relativo ou pertencente á orde de san Bieito
 bieito	adxectivo	9b1054a305	Que recibiu a bendición; santo
@@ -5358,7 +5347,6 @@ eixir	verbo	cc50411990	Saír dun lugar
 el	pronome	8fd9f32740	Forma que, de maneira optativa, pode introducir unha pregunta
 el	pronome	cf5491dbe8	Pronome impersoal que se usa, de forma optativa, como suxeito dos verbos impersoais
 elas	pronome	f1fdd46d8d	Pronome persoal de terceira persoa do plural feminino
-ele	pronome	51c70ee820	Grafía reintegracionista de el, pronome persoal masculino de terceira persoa
 electo	adxectivo	de5da43614	Que foi elixido para un cargo pero aínda non tomou posesión del
 electrificar	verbo	53f7dd45e8	Dotar de electricidade ou de instalación eléctrica un lugar, unha máquina ou unha liña
 electrodo	substantivo	64f0861248	Condutor polo que entra ou sae a corrente eléctrica nun medio
@@ -8039,7 +8027,6 @@ isomorfo	adxectivo	5d435634f9	Que ten a mesma forma ou estrutura ca outro
 iónico	adxectivo	00d100749f	Relativo ou pertencente aos ións
 jactância	substantivo	4f19e2afdf	Vangloria ou presunción de quen se gaba
 jactância	substantivo	b580fe89fb	Orgullo ou arrogancia
-juntança	substantivo	7ffece35de	Grafía reintegracionista de xuntanza
 kafkiano	adxectivo	c0122dd2fe	Que ten o carácter absurdo e angustioso propio das obras de Kafka
 koala	substantivo	7a7363eeef	Mamífero marsupial arborícola de Australia, de pelame gris, que se alimenta de follas de eucalipto
 kuwaití	adxectivo	048b78ad37	Relativo ou pertencente a Kuwait ou aos seus habitantes
@@ -8918,8 +8905,6 @@ melga	substantivo	c7f656a7ac	Peixe mariño cartilaxinoso, especie de tiburón pe
 melga	substantivo	d026441a86	Porción pequena, delgada e lixeira de algo, como as folerpas de neve
 melga	substantivo	dfebbda7af	Néboa, masa de vapor de auga suspendida preto do chan
 melgacho	substantivo	d0f9b86ad4	Bebida alcohólica que se obtén da fermentación de mel con auga
-melhor	adverbio	c525b149f7	Grafía reintegracionista de mellor
-melhor	adxectivo	59a6095273	Grafía reintegracionista de mellor
 melindre	substantivo	615923d866	Doce pequeno feito con azucre
 melloramento	substantivo	992c46087d	Cambio ou progreso cara a un estado mellor
 melloría	substantivo	992c46087d	Cambio ou progreso cara a un estado mellor
@@ -9568,7 +9553,6 @@ neneira	adxectivo	a90d06d2dd	Que lle gustan os nenos e os coida
 neneira	substantivo	055c895008	Muller que coida nenos
 neneiro	substantivo	24c2c8baac	Persoa que coida nenos
 nenez	substantivo	d26dc0dbc4	Período da vida humana que vai do nacemento á adolescencia
-nengum	determinante	860919a0fa	Grafía reintegracionista de ningún
 neno de peito	substantivo	8959071f22	Neno moi pequeno, que aínda mama
 nente	adverbio	0eaa9900c0	Ningunha cousa; expresa negación
 nené	substantivo	6cf34755b9	Neno moi pequeno, de poucos meses
@@ -9736,7 +9720,6 @@ nunhas	contracción	a71ffce875	Contracción da preposición en e do artigo indet
 nuns	contracción	a71ffce875	Contracción da preposición en e o indefinido uns
 nutricionismo	substantivo	892c828d8e	Enfoque que reduce o valor dos alimentos aos nutrientes que conteñen
 náutica	substantivo	a4bb44eb96	Arte e técnica de navegar
-não	substantivo	5ff0a59c1a	Grafía reintegracionista de non
 néspera	substantivo	3725b0ad80	Froito da nespereira europea (Mespilus germanica), que se come moi maduro
 nío	substantivo	10eff6288c	Estrutura que constrúen as aves para poñer os ovos e criar
 nó	substantivo	124db4105f	Avultamento ou protuberancia en forma de vulto duro
@@ -10036,7 +10019,6 @@ paleontolóxico	adxectivo	d368374312	Relativo ou pertencente á paleontoloxía
 paleontólogo	substantivo	c45d900ced	Persoa que se dedica ao estudo dos fósiles e dos seres vivos do pasado
 palestino	adxectivo	8473d6bbc5	Relativo ou pertencente a Palestina ou aos seus habitantes
 palestino	substantivo	8473d6bbc5	Persoa natural ou habitante de Palestina
-palhaço	substantivo	fe2014efb3	Grafía reintegracionista de pallaso, pallazo
 palilleira	substantivo	f4d097cf77	Muller que fai encaixe de palillos
 palillo	substantivo	03cb522f7a	Cada un dos dous paus finos que se usan para comer nalgúns países asiáticos
 palillo	substantivo	b7a689afe9	Pau pequeno, fino e aguzado, para limpar os dentes
@@ -11267,7 +11249,6 @@ quedo	adverbio	c60db3ad30	De maneira silenciosa e sosegada, sen facer ruído
 quedo	adxectivo	774bcbd37e	Que está quieto, con pouco movemento ou actividade
 quedo	adxectivo	b606a7ffaf	Que está tranquilo, sosegado e en paz
 quedo	substantivo	db9f834dbd	Estado de tranquilidade e sosego
-queijo	substantivo	86b79cc3fc	Grafía reintegracionista de queixo
 queima	substantivo	20931db3cb	Lume grande, incendio
 queima	substantivo	25ecbf5649	Acción de queimar
 queima	substantivo	33c5162cba	Suco ou liña marcada no chan
@@ -11665,7 +11646,6 @@ regulamentar	verbo	77b2152a86	Someter algo a regras ou normas
 reindustrialización	substantivo	f9d809c6de	Acción e efecto de recuperar a actividade industrial dun territorio
 reindustrializar	verbo	b6b37ae194	Volver industrializar unha zona ou un sector
 reintegracionismo	substantivo	e39006256c	Movemento que defende que o galego e o portugués son a mesma lingua e propón aproximar a súa escrita
-reintegracionista	substantivo	943ac756e2	Persoa partidaria do reintegracionismo, corrente que defende a integración do galego no ámbito lingüístico portugués
 reira	substantivo	0f8b34aebb	Dor no ano causada pola diarrea
 reirrei	substantivo	04124ee12c	Insecto coleóptero pequeno, de corpo redondeado e élitros vermellos con pintas negras
 relación	substantivo	2d5badbd08	Conexión ou correspondencia entre dúas cousas
@@ -12603,7 +12583,6 @@ sobrealimentar	verbo	9b9ac47967	Dar a alguén máis alimento do necesario
 sobrerrepresentar	verbo	040cbe3e97	Representar algo ou a alguén nunha proporción maior da que lle corresponde
 sobresinal	substantivo	c63a3dbffb	Cuberta de adorno que se lles poñía antigamente aos cabalos
 sobresinal	substantivo	e99abd0d1c	Peza de vestir que se levaba antigamente sobre a armadura
-sobrevivência	substantivo	5ddde0ecd1	Grafía reintegracionista de sobrevivencia, supervivencia
 sobriña	substantivo	9f6b7dbb73	Filla do irmán ou da irmá dunha persoa
 sobriña neta	substantivo	965f81dafe	Filla do sobriño ou da sobriña
 sobriño	substantivo	3b07c60f45	Dedo anular, o cuarto da man
@@ -12666,7 +12645,6 @@ solto	adxectivo	0b8e42b103	Que ten diarrea
 solto	adxectivo	49dab5697b	Rápido, lixeiro
 solto	adxectivo	ab3a55886c	Que non está atado nin suxeito; libre
 solto	substantivo	bd20a35a66	Diñeiro en moedas de pouco valor
-som	substantivo	f1cb5e79e1	Grafía reintegracionista de son, sensación percibida polo oído
 somana	substantivo	c0ee32d825	Período de sete días consecutivos
 sombra	substantivo	063ce646e2	Aparición ou espírito dun morto
 sombra	substantivo	7a50336e83	Enfermidade que se atribúe á acción do espírito dun morto
@@ -13538,7 +13516,6 @@ treu	substantivo	e0d6f7db2d	Vela de forma cadrada
 trevo	substantivo	362276838b	Adorno ou figura formados por tres lóbulos
 trevo acedo	substantivo	fa346abc9d	Planta herbácea de follas acedas semellantes ás do trevo (Oxalis acetosella)
 trevos	substantivo	840cd1a2d9	Pau da baralla francesa representado por follas negras de trevo (♣)
-treze	numeral	c24f5cff02	Dez máis tres, na grafía reintegracionista
 triangular	adxectivo	3516e62cf5	Que ten tres elementos ou partes implicadas
 triatleta	substantivo	2fe52bb3db	Deportista que practica o tríatlon
 tribadismo	substantivo	13463f82f0	Práctica sexual entre mulleres que consiste en fregar as vulvas unha contra a outra
@@ -14088,7 +14065,6 @@ visitante	substantivo	660c2895ce	Persoa que vai ver a alguén ou que vai a un lu
 visión	substantivo	4f0c624368	Cousa que se ve, obxecto percibido pola vista
 visión	substantivo	618e19e3ac	Maneira de entender ou interpretar algo; opinión ou teoría
 visión	substantivo	9d56568412	Imaxe irreal que alguén cre ver
-visom	substantivo	43a8bbc987	Grafía reintegracionista de visón, mamífero carnívoro de pel moi apreciada
 visualización	substantivo	9fe98746b7	Cada unha das veces que un usuario ve un vídeo
 visualmente	adverbio	0737a0f458	Por medio da vista ou desde o punto de vista visual
 vitimismo	substantivo	5e56be37fb	Tendencia a comportarse como unha vítima

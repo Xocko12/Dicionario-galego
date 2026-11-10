@@ -25,7 +25,7 @@ con licenza GPL e permiso explícito do ILG-RAG. **Non inclúe definicións.**
 | Sentidos (WordNet) | 27 137 sentidos de 23 409 lemas (Galnet, CC BY): definición do WordNet traducida ao galego (en curso: 7 873 sentidos xa a teñen), sinónimos galegos, equivalentes es/pt/en |
 | Traducións | 30 427 lemas con equivalentes en castelán (25 718), portugués (5 430) e inglés (13 914), de Apertium (GPL) |
 | Definicións en galego | 44 125 entradas (74 737 acepcións) do Wiktionary galego, con exemplos, sinónimos e antónimos por acepción (CC BY-SA) |
-| Definicións traducidas | 11 435 entradas (16 407 acepcións) do Wiktionary inglés pasadas a galego: 8 239 palabras que o Wiktionary galego non define e acepcións que lle faltan a outras (CC BY-SA) |
+| Definicións traducidas | 10 268 entradas (15 233 acepcións) do Wiktionary inglés pasadas a galego: 7 132 palabras que o Wiktionary galego non define e acepcións que lle faltan a outras (CC BY-SA) |
 | Separación silábica | patróns `hyph_gl.dic` de Trasno, en `dist/hyphenation/` |
 
 ### Definicións
@@ -38,7 +38,7 @@ abertas de definicións son:
 | `wordnet` | Galnet (Open Multilingual Wordnet): cada sentido coa definición do WordNet de Princeton **traducida ao galego** (`datos/traducions/definicions-wordnet.tsv`), os sinónimos galegos e os equivalentes es/pt/en | CC BY 3.0 | **feita** (`ferramentas/wordnet.py`) |
 | `traducions` | Apertium es-gl, spa-glg, pt-gl, en-gl | GPL | **feita** (`ferramentas/traducions.py`) |
 | `definicions-gl` | **Wiktionary galego**: definicións en galego, con exemplos, sinónimos e antónimos por acepción | CC BY-SA 4.0 | **feita**: 44 125 entradas, 74 737 acepcións (`ferramentas/wiktionary.py`) |
-| `definicions-traducidas` | Wiktionary inglés (entradas galegas, vía kaikki.org), **traducido ao galego**: só as palabras e as acepcións que `definicions-gl` non ten, con exemplos e marcas de uso | CC BY-SA 4.0 | **feita**: 11 435 entradas, 16 407 acepcións (sen as entradas de formas flexionadas) |
+| `definicions-traducidas` | Wiktionary inglés (entradas galegas, vía kaikki.org), **traducido ao galego**: só as palabras e as acepcións que `definicions-gl` non ten, con exemplos e marcas de uso | CC BY-SA 4.0 | **feita**: 10 268 entradas, 15 233 acepcións (sen as entradas de formas flexionadas nin as grafías reintegracionistas, que non son da norma da RAG) |
 
 As dúas capas de Wiktionary xéranse con `ferramentas/wiktionary.py --descargar &&
 ferramentas/wiktionary.py` (precisa acceso a dumps.wikimedia.org e kaikki.org; non

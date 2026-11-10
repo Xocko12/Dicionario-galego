@@ -86,7 +86,9 @@ class ProbasKaikki(unittest.TestCase):
                          "Parroquia do concello do Corgo, na provincia de Lugo")
         self.assertEqual(W.traducir_por_regra("a village in Senra parish, Ortigueira, A Coruña, Galicia"),
                          "Lugar da parroquia de Senra, no concello de Ortigueira, na provincia da Coruña")
-        self.assertEqual(W.traducir_por_regra("reintegrationist spelling of cartilla"), "Grafía reintegracionista de cartilla")
+        # as grafías reintegracionistas non son da norma da RAG: fóra
+        self.assertEqual(W.traducir_por_regra("reintegrationist spelling of cartilla"), "")
+        self.assertEqual(W.traducir_por_regra("alternative form of badil"), "Forma alternativa de badil")
         self.assertEqual(W.traducir_por_regra("third-person plural preterite/pluperfect indicative of ser"), "")
         self.assertIsNone(W.traducir_por_regra("chair"))
         self.assertIsNone(W.analizar_kaikki({"word": "silla", "lang_code": "es", "pos": "noun", "senses": []}))

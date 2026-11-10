@@ -252,8 +252,9 @@ def analizar_kaikki(obx: dict) -> dict | None:
 # Formas flexionadas que wiktextract non marca como tales
 FORMA_EN = re.compile(r"^(?:(?:first|second|third)-person|inflection of|plural of|feminine (?:singular|plural) of|"
                       r"masculine plural of|past participle of|gerund of)\b.* of [^ ]+$")
-REMITE_EN = [(re.compile(r"^reintegrationist spelling of ([^;:(,]+)$"), "Grafía reintegracionista de {}"),
-             (re.compile(r"^alternative form of ([^;:(,]+)$"), "Forma alternativa de {}"),
+# As grafías reintegracionistas (beijo, agulha) non son da norma da RAG: non entran
+REINTEGRACIONISTA_EN = re.compile(r"\breintegrationist\b", re.I)
+REMITE_EN = [(re.compile(r"^alternative form of ([^;:(,]+)$"), "Forma alternativa de {}"),
              (re.compile(r"^alternative spelling of ([^;:(,]+)$"), "Grafía alternativa de {}")]
 LUGAR_EN = re.compile(r"^a (?:village|locality) in ([^;:(,]+) parish, ([^;:(,]+), ([^;:(,]+), Galicia(?:, Spain)?$")
 PARROQUIA_EN = re.compile(r"^a parish of ([^;:(,]+), ([^;:(,]+), Galicia(?:, Spain)?$")
@@ -293,9 +294,10 @@ def _de(nome: str) -> str:
 
 
 def traducir_por_regra(glosa: str) -> str | None:
-    """Glosas de fórmula fixa -> galego. '' = forma flexionada (non se garda); None = sen regra."""
+    """Glosas de fórmula fixa -> galego. '' = non se garda (forma flexionada, grafía
+    reintegracionista); None = sen regra."""
     glosa = " ".join(glosa.split())
-    if FORMA_EN.match(glosa):
+    if FORMA_EN.match(glosa) or REINTEGRACIONISTA_EN.search(glosa):
         return ""
     for patron, modelo in REMITE_EN:
         if m := patron.match(glosa):
@@ -348,10 +350,10 @@ def traducir_entrada(e: dict, traducions: dict, existentes: dict[str, set[str]])
     vistas = set(existentes.get(e["lema"], ()))
     acepcions = []
     for a in e["acepcions"]:
-        definicion = traducions.get((e["lema"], e["categoria"], clave_glosa(a["definicion"])))
+        definicion = traducir_por_regra(a["definicion"])
         if definicion is None:
-            definicion = traducir_por_regra(a["definicion"])
-        if not definicion or _normal(definicion) in vistas:
+            definicion = traducions.get((e["lema"], e["categoria"], clave_glosa(a["definicion"])))
+        if not definicion or "reintegracionista" in definicion or _normal(definicion) in vistas:
             continue
         vistas.add(_normal(definicion))
         nova = {"definicion": definicion}
