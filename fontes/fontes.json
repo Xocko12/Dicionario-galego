@@ -72,10 +72,10 @@
     "uso": "Correccións feitas a man neste proxecto (datos/correccions/)."
   },
   "omw": {
-    "nome": "Open Multilingual Wordnet 1.4: Galnet (MCR, galego), omw-en (Princeton WordNet, definicións en inglés), omw-es e omw-pt",
+    "nome": "Open Multilingual Wordnet 1.4: Galnet (MCR, galego), omw-en (Princeton WordNet, definicións, que aquí se gardan traducidas ao galego), omw-es e omw-pt",
     "web": "https://github.com/omwn/omw-data",
     "licenza": "CC-BY-3.0 (Galnet, MCR), WordNet License (omw-en), CC-BY-3.0 (es, pt)",
-    "uso": "Capa wordnet: sentidos de cada lema galego (sinónimos, definición en inglés, equivalentes es/pt/en).",
+    "uso": "Capa wordnet: sentidos de cada lema galego (sinónimos, definición traducida ao galego, equivalentes es/pt/en).",
     "arquivos": {
       "omw-1.4.tar.xz": {
         "url": "https://github.com/omwn/omw-data/releases/download/v1.4/omw-1.4.tar.xz",

@@ -115,7 +115,7 @@ def construir_sqlite(lemas, conx, frec, nomes, encl, capas) -> None:
         CREATE TABLE sinonimos (lema TEXT NOT NULL, categoria TEXT, sinonimo TEXT NOT NULL, nota TEXT,
                                 sinonimo_tolerado INTEGER NOT NULL DEFAULT 0);
         CREATE INDEX sinonimos_lema ON sinonimos(lema);
-        CREATE TABLE sentidos (lema TEXT NOT NULL, categoria TEXT, ili TEXT NOT NULL, definicion_en TEXT,
+        CREATE TABLE sentidos (lema TEXT NOT NULL, categoria TEXT, ili TEXT NOT NULL, definicion TEXT,
                                sinonimos TEXT, es TEXT, pt TEXT, en TEXT);  -- Galnet / WordNet
         CREATE INDEX sentidos_lema ON sentidos(lema);
         CREATE TABLE traducions (lema TEXT NOT NULL, categoria TEXT, lingua TEXT NOT NULL, traducion TEXT NOT NULL);
@@ -152,7 +152,7 @@ def construir_sqlite(lemas, conx, frec, nomes, encl, capas) -> None:
                    [(r["nome"], r["tipo"], r["capa"], ",".join(r["fontes"]), r.get("nota")) for r in capas["onomastica"]])
     db.executemany("INSERT INTO codigos VALUES (?,?,?)", [(r["codigo"], r["tipo"], r.get("nota")) for r in capas["codigos"]])
     db.executemany("INSERT INTO sentidos VALUES (?,?,?,?,?,?,?,?)", [
-        (r["lema"], r["categoria"], x["ili"], x.get("definicion_en"), "|".join(x.get("sinonimos", [])),
+        (r["lema"], r["categoria"], x["ili"], x.get("definicion"), "|".join(x.get("sinonimos", [])),
          "|".join(x.get("es", [])), "|".join(x.get("pt", [])), "|".join(x.get("en", [])))
         for r in capas["semantica"] for x in r["sentidos"]])
     db.executemany("INSERT INTO traducions VALUES (?,?,?,?)", [
@@ -383,11 +383,11 @@ def indice_por_lema(capas: dict) -> None:
 
 
 def html_semantica(lema: str, capas: dict) -> str:
-    """Definicións (gl, en), traducións e sentidos do WordNet dun lema."""
+    """Definicións, traducións e sentidos do WordNet dun lema."""
     partes = []
     for r in capas.get("definicions_por_lema", {}).get(lema, []):
-        lingua = "gl" if r["capa"].endswith("-gl") else "en"
-        partes.append(f"<p><i>{html.escape(r['categoria'] or '')}</i> <small>(Wiktionary {lingua})</small></p><ol>")
+        orixe = "Wiktionary galego" if r["capa"].endswith("-gl") else "Wiktionary inglés, traducido"
+        partes.append(f"<p><i>{html.escape(r['categoria'] or '')}</i> <small>({orixe})</small></p><ol>")
         for a in r["acepcions"]:
             ex = "".join(f"<br/><small>{html.escape(e)}</small>" for e in a.get("exemplos", [])[:2])
             partes.append(f"<li>{html.escape(a['definicion'])}{ex}</li>")
@@ -399,7 +399,7 @@ def html_semantica(lema: str, capas: dict) -> str:
         partes.append(f"<p><i>WordNet</i> ({html.escape(r['categoria'] or '')}):</p><ol>")
         for x in r["sentidos"][:8]:
             sin = f" <small>sin. {html.escape(', '.join(x['sinonimos']))}</small>" if x.get("sinonimos") else ""
-            partes.append(f"<li>{html.escape(x.get('definicion_en', ''))}{sin}</li>")
+            partes.append(f"<li>{html.escape(x.get('definicion', ''))}{sin}</li>")
         partes.append("</ol>")
     return "".join(partes)
 

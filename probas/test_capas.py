@@ -1,6 +1,7 @@
 """Capas opcionais e locucións: contido que ten que estar."""
 
 import json
+import re
 import unittest
 from pathlib import Path
 
@@ -161,7 +162,14 @@ class ProbasSemantica(unittest.TestCase):
         for r in ler("capas/wordnet.jsonl"):
             w.setdefault(r["lema"], []).append(r)
         can = next(r for r in w["can"] if r["categoria"] == "substantivo")
-        self.assertTrue(any("Canis" in x.get("definicion_en", "") for x in can["sentidos"]))
+        self.assertTrue(any("Canis" in x.get("definicion", "") for x in can["sentidos"]))
+        # as definicións van en galego: nin o campo inglés nin as súas palabras
+        ingles = re.compile(r"\b(the|of|and|with|which|that is|used for|having)\b")
+        for rs in w.values():
+            for r in rs:
+                for x in r["sentidos"]:
+                    self.assertNotIn("definicion_en", x)
+                    self.assertFalse(ingles.search(x.get("definicion", "")), (r["lema"], x.get("definicion")))
         self.assertTrue(any("perro" in x.get("es", []) for x in can["sentidos"]))
         self.assertGreater(len(w), 20000)
 
@@ -194,13 +202,31 @@ class ProbasDefinicions(unittest.TestCase):
             for r in rs:
                 self.assertTrue(all("{{" not in a["definicion"] and "[[" not in a["definicion"] for a in r["acepcions"]), r["lema"])
 
-    def test_definicions_inglesas(self):
-        ruta = RAIZ / "datos" / "capas" / "definicions-en.jsonl"
+    def test_sen_definicions_en_ingles(self):
+        self.assertFalse((RAIZ / "datos" / "capas" / "definicions-en.jsonl").exists())
+
+    def test_definicions_traducidas(self):
+        ruta = RAIZ / "datos" / "capas" / "definicions-traducidas.jsonl"
         if not ruta.exists():
             self.skipTest("capa opcional non xerada")
-        d = {r["lema"]: r for r in ler("capas/definicions-en.jsonl") if r["categoria"] == "substantivo"}
-        self.assertTrue(any("house" in a["definicion"] for a in d["casa"]["acepcions"]))
+        import sys
+        sys.path.insert(0, str(RAIZ / "ferramentas"))
+        import wiktionary
+        existentes = wiktionary.definicions_existentes()
+        ingles = re.compile(r"\b(the|of|and|with|which|that is|used for|having)\b")
+        d = {}
+        for r in ler("capas/definicions-traducidas.jsonl"):
+            d.setdefault(r["lema"], []).append(r)
+            vistas = set()
+            for a in r["acepcions"]:
+                self.assertFalse(ingles.search(a["definicion"]), (r["lema"], a["definicion"]))
+                # nin repite o que xa di a capa definicions-gl nin se repite a si mesma
+                normal = wiktionary._normal(a["definicion"])
+                self.assertNotIn(normal, existentes.get(r["lema"], ()), r["lema"])
+                self.assertNotIn(normal, vistas, r["lema"])
+                vistas.add(normal)
         self.assertNotIn("falas", d)
+        self.assertGreater(len(d), 8000)
 
 
 class ProbasPlurais(unittest.TestCase):

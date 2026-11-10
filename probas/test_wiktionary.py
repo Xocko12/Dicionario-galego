@@ -60,6 +60,35 @@ class ProbasKaikki(unittest.TestCase):
         self.assertEqual([a["definicion"] for a in e["acepcions"]], ["chair", "hip"])
         self.assertEqual(e["acepcions"][0]["exemplos"], ["Senta na cadeira."])
         self.assertEqual(e["acepcions"][1]["etiquetas"], ["anatomy"])
+        self.assertNotIn("capa", e)       # intermedia: en inglés non se garda
+
+    def test_traducir_entrada(self):
+        obx = {"word": "cadeira", "lang_code": "gl", "pos": "noun",
+               "senses": [{"glosses": ["chair"], "tags": ["feminine"], "examples": [{"text": "Senta na cadeira.\nSit on the chair."}]},
+                          {"glosses": ["hip"], "tags": ["feminine", "figuratively"]},
+                          {"glosses": ["seat"]},
+                          {"glosses": ["professorship"]}]}
+        e = W.analizar_kaikki(obx)
+        traducions = {("cadeira", "substantivo", W.clave_glosa("chair")): "Asento con respaldo para unha persoa",
+                      ("cadeira", "substantivo", W.clave_glosa("hip")): "Parte do corpo onde se unen a perna e o tronco",
+                      ("cadeira", "substantivo", W.clave_glosa("seat")): "(Mobiliario) Asento con respaldo, para unha persoa."}
+        existentes = {"cadeira": {W._normal("Parte do corpo onde se unen a perna e o tronco")}}
+        t = W.traducir_entrada(e, traducions, existentes)
+        self.assertEqual(t["capa"], "definicions-traducidas")
+        # fóra a que xa está en definicions-gl, a repetida e a que non ten tradución
+        self.assertEqual([a["definicion"] for a in t["acepcions"]], ["Asento con respaldo para unha persoa"])
+        self.assertEqual(t["acepcions"][0]["exemplos"], ["Senta na cadeira."])
+        self.assertNotIn("etiquetas", t["acepcions"][0])
+        self.assertIsNone(W.traducir_entrada(e, {}, {}))
+
+    def test_regras(self):
+        self.assertEqual(W.traducir_por_regra("a parish of O Corgo, Lugo, Galicia"),
+                         "Parroquia do concello do Corgo, na provincia de Lugo")
+        self.assertEqual(W.traducir_por_regra("a village in Senra parish, Ortigueira, A Coruña, Galicia"),
+                         "Lugar da parroquia de Senra, no concello de Ortigueira, na provincia da Coruña")
+        self.assertEqual(W.traducir_por_regra("reintegrationist spelling of cartilla"), "Grafía reintegracionista de cartilla")
+        self.assertEqual(W.traducir_por_regra("third-person plural preterite/pluperfect indicative of ser"), "")
+        self.assertIsNone(W.traducir_por_regra("chair"))
         self.assertIsNone(W.analizar_kaikki({"word": "silla", "lang_code": "es", "pos": "noun", "senses": []}))
 
 
