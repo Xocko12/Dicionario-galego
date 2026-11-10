@@ -90,7 +90,7 @@ class ProbasTeclado(unittest.TestCase):
         self.assertGreater(self.formas["de"], self.formas["Londres"])
         # as formas verbais sen frecuencia quedan, con 0; tamén o léxico das capas novas
         self.assertTrue("falariamos" in self.formas)
-        for f in ("dopamina", "ibuprofeno", "copago", "corresponsabilidade", "consensúo", "intermodais"):
+        for f in ("dopamina", "ibuprofeno", "copago", "corresponsabilidade", "consensúo", "intermodais", "epicondilite", "ciclohexanonas"):
             self.assertEqual(self.formas[f], 0, f)
 
 

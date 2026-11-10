@@ -1,5 +1,5 @@
 {
-  "_descricion": "Capas opcionais sobre o núcleo normativo (datos/lemas.jsonl = RAG). Cada capa vén de módulos de Hunspell-gl (GPL-3.0-or-later; https://gitlab.com/trasno/hunspell-gl, versión fixada en fontes.json). 'tipo': lexico (lemas con flexión e conxugación), siglas, onomastica (nomes propios), codigos, semantica (sentidos do WordNet), traducions, definicions. As capas sen 'modulos' xéranse con outro script ('script'). As rutas son relativas a src/ de Hunspell-gl; un cartafol inclúe todos os .dic que contén; admítense comodíns. 'engadidos': ficheiros propios deste proxecto (fontes/engadidos/*.dic, no mesmo formato dos módulos de Hunspell-gl, fonte 'engadidos') que se suman aos módulos da capa. 'importador': capas que non veñen de módulos de Hunspell-gl senón doutras fontes de fontes.json, lidas por unha función de ferramentas/capas.py.",
+  "_descricion": "Capas opcionais sobre o núcleo normativo (datos/lemas.jsonl = RAG). Cada capa vén de módulos de Hunspell-gl (GPL-3.0-or-later; https://gitlab.com/trasno/hunspell-gl, versión fixada en fontes.json). 'tipo': lexico (lemas con flexión e conxugación), siglas, onomastica (nomes propios), codigos, semantica (sentidos do WordNet), traducions, definicions. As capas sen 'modulos' xéranse con outro script ('script'). As rutas son relativas a src/ de Hunspell-gl; un cartafol inclúe todos os .dic que contén; admítense comodíns. 'engadidos': ficheiros propios deste proxecto (fontes/engadidos/*.dic, no mesmo formato dos módulos de Hunspell-gl, fonte 'engadidos') que se suman aos módulos da capa. 'importador': capas que non veñen de módulos de Hunspell-gl senón doutras fontes de fontes.json, lidas por unha función de ferramentas/capas.py. 'derivado': capas léxicas cuxo módulo .dic se xera en fontes/cache/derivados/ a partir doutras fontes (PDF).",
   "capas": {
     "digalego": {
       "tipo": "lexico",
@@ -40,6 +40,17 @@
       "engadidos": [
         "fontes/engadidos/terminoloxia.dic"
       ]
+    },
+    "vocabularios": {
+      "tipo": "lexico",
+      "nome": "Termos dos vocabularios terminolóxicos galegos en PDF (USC, UDC, UVigo, Termigal, RAG, Realiter) que non están na RAG nin nas capas anteriores, coa flexión regular",
+      "derivado": "vocabularios",
+      "modulos": [],
+      "fontes": [
+        "vocabularios-galegos"
+      ],
+      "opcional": true,
+      "nota": "Xérase con pypdf (requirements.txt) a partir dos PDF de fontes/cache/vocabularios-galegos/: capas.py extrae os termos e escribe fontes/cache/derivados/vocabularios.dic no formato de Hunspell-gl, que se le como un módulo máis. Só termos; as definicións non se copian."
     },
     "apertium": {
       "tipo": "lexico",

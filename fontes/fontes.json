@@ -263,5 +263,46 @@
     "ficheiros": {
       "apertium-glg.glg.dix": "https://raw.githubusercontent.com/apertium/apertium-glg/1b7b55b732d849d66af02330cabe782cf2eaf610/apertium-glg.glg.dix"
     }
+  },
+  "vocabularios-galegos": {
+    "nome": "Vocabularios terminolóxicos galegos en PDF: Termos esenciais (USC: dereito administrativo, civil, laboral; acceso aberto), vocabularios da UDC (16 áreas), da UVigo (xurídico-administrativo; informática en Viceversa), de Termigal/CIRP (alimentación e restauración, recursos humanos), da RAG (televisión), de Realiter (léxicos panlatinos: sida, bioética, enerxía, biocarburantes, cidades intelixentes) e un glosario de recursos humanos (Lexicool)",
+    "web": "https://www.usc.gal/gl/servizos/area/normalizacion-linguistica/mellorar/terminoloxia/dicionarios-terminoloxicos",
+    "licenza": "Dereitos dos seus autores e editores (a maioría CC BY-NC-ND ou sen licenza explícita); só se toman os termos, nunca as definicións",
+    "uso": "Capa vocabularios: termos dunha palabra que non están na RAG nin nas capas anteriores, coa categoría e o xénero que dá cada obra. Precisa pypdf.",
+    "ficheiros": {
+      "usc-dereito-administrativo.pdf": "https://minerva.usc.gal/bitstreams/c5e76ebf-45e7-4511-bc56-6e5a87e32902/download",
+      "usc-dereito-civil.pdf": "https://libros-xestion.usc.gal/index.php/spic/catalog/view/1912/2147/14495-1",
+      "usc-dereito-laboral.pdf": "https://minerva.usc.gal/bitstreams/a86153c0-1e72-421a-8a87-b29130b5abe8/download",
+      "usc-acceso-aberto.pdf": "https://minerva.usc.gal/bitstreams/215fdff9-da13-4b82-b086-df92ff4a6806/download",
+      "uvigo-viceversa-informatica.pdf": "https://revistas.uvigo.es/index.php/viceversa/article/download/2219/2254/4156",
+      "uvigo-xuridico-administrativo.pdf": "https://www.uvigo.gal/sites/uvigo.gal/files/contents/paragraph-file/2019-04/Vocabulario_xuridico_administrativo_galego_castelan.pdf",
+      "rag-television.pdf": "https://publicacions.academia.gal/index.php/rag/catalog/download/187/183/83?inline=1",
+      "cirp-alimentacion-restauracion.pdf": "https://www.cirp.es/pub/docs/cite/dicionario_alimentacion_restauracion.pdf",
+      "cirp-recursos-humanos.pdf": "https://www.cirp.es/pub/docs/cite/dicionario_recursos_humanos.pdf",
+      "lexicool-recursos-humanos.pdf": "https://static.lexicool.com/dictionary/KS7ZX215362.pdf",
+      "realiter-sida.pdf": "https://www.realiter.net/wp-content/uploads/2013/06/Vocabulari_sida.pdf",
+      "realiter-bioetica.pdf": "https://www.realiter.net/wp-content/uploads/2013/07/pan-bioV2.pdf",
+      "realiter-smart-city.pdf": "https://www.realiter.net/wp-content/uploads/2013/06/CGrimaldi_ERomagnoali-Lessico-panlatino-della-Smart-City.pdf",
+      "realiter-enerxia-xeotermica.pdf": "https://www.realiter.net/wp-content/uploads/2013/06/OTPL_EnergiaGeo_bozza.pdf",
+      "realiter-lessico-2014.pdf": "https://www.realiter.net/wp-content/uploads/2013/06/DEF_Lessico_panlatino-2014-1.pdf",
+      "realiter-enerxia.pdf": "https://www.realiter.net/wp-content/uploads/2013/06/pan-energie-power.pdf",
+      "realiter-biocarburantes.pdf": "https://www.realiter.net/wp-content/uploads/2013/06/L%C3%A8xic-biocarburants.pdf",
+      "udc-biblioteconomia.pdf": "https://www.udc.gal/export/sites/udc/snl/_galeria_down/terminoloxia/Biblioteconomia.pdf",
+      "udc-podoloxia.pdf": "https://www.udc.gal/export/sites/udc/snl/_galeria_down/terminoloxia/Podoloxia.pdf",
+      "udc-fisioterapia.pdf": "https://www.udc.gal/export/sites/udc/snl/_galeria_down/terminoloxia/Fisioterapia.pdf",
+      "udc-comunicacion-audiovisual.pdf": "https://www.udc.gal/export/sites/udc/snl/_galeria_down/terminoloxia/Com_audiovisual.pdf",
+      "udc-camiños-canais-portos.pdf": "https://www.udc.gal/export/sites/udc/snl/_galeria_down/terminoloxia/Caminhos_canais_portos.pdf",
+      "udc-enxeñaria-industrial.pdf": "https://www.udc.gal/export/sites/udc/snl/_galeria_down/terminoloxia/Enx_Ind.pdf",
+      "udc-deportes.pdf": "https://www.udc.gal/export/sites/udc/snl/_galeria_down/terminoloxia/Deportes.pdf",
+      "udc-dereito.pdf": "https://www.udc.gal/export/sites/udc/snl/_galeria_down/terminoloxia/Dereito.pdf",
+      "udc-relacions-laborais.pdf": "https://www.udc.gal/export/sites/udc/snl/_galeria_down/terminoloxia/RRLL.pdf",
+      "udc-ciencias-economicas.pdf": "https://www.udc.gal/export/sites/udc/snl/_galeria_down/terminoloxia/CCEE.pdf",
+      "udc-electricidade.pdf": "https://www.udc.gal/export/sites/udc/snl/_galeria_down/terminoloxia/Electricidade.pdf",
+      "udc-linguistica-informatica.pdf": "https://www.udc.gal/export/sites/udc/snl/_galeria_down/terminoloxia/Ling_informatica.pdf",
+      "udc-fisica-quimica.pdf": "https://www.udc.gal/export/sites/udc/snl/_galeria_down/terminoloxia/FisicaQuimica.pdf",
+      "udc-estatistica.pdf": "https://www.udc.gal/export/sites/udc/snl/_galeria_down/terminoloxia/Estatistica.pdf",
+      "udc-matematica.pdf": "https://www.udc.gal/export/sites/udc/snl/_galeria_down/terminoloxia/Matematica.pdf",
+      "udc-transporte-maritimo.pdf": "https://www.udc.gal/export/sites/udc/snl/_galeria_down/terminoloxia/Trans_Mar.pdf"
+    }
   }
 }

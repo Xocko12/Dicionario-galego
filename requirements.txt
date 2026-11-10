@@ -4,3 +4,4 @@ pyglossary==5.4.2      # construir.py --kobo
 marisa-trie==1.4.1     # requirido polo formato Kobo de pyglossary
 lxml==6.1.3            # requirido polo formato AppleDict de pyglossary
 beautifulsoup4==4.13.4 # AppleDict: limpa o HTML (XHTML válido para o Dictionary Development Kit)
+pypdf==6.17.0          # capas.py: termos dos vocabularios en PDF (capa vocabularios)

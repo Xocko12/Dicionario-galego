@@ -173,7 +173,7 @@ def construir_sqlite(lemas, conx, frec, nomes, encl, capas) -> None:
 
 # -- Teclado ----------------------------------------------------------------
 # Capas léxicas que van ao teclado e ao corrector; os nomes propios dos dous saen de nomes_propios().
-TECLADO_LEXICO = {"digalego", "comunidade", "terminoloxia", "apertium", "wiktionary"}
+TECLADO_LEXICO = {"digalego", "comunidade", "terminoloxia", "vocabularios", "apertium", "wiktionary"}
 # nomes propios, tamén as palabras con maiúscula dos nomes compostos (Nova York -> York)
 TECLADO_NOMES = {"toponimos", "antroponimos", "cidades", "nomes-outras-linguas"}
 # só os nomes dunha soa palabra (iOS, Bayern): os compostos traen palabras xenéricas doutras linguas

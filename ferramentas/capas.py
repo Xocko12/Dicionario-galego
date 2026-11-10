@@ -22,6 +22,9 @@ fontes.json, xa descargadas en fontes/cache/ (descargar.py):
   nomes_outras_linguas  nomes de pía e apelidos correntes (SSA, ONS, Census, Destatis, INSEE, INE-PT, Idescat)
   apertium              léxico (substantivos, adxectivos, adverbios) do monolingüe de Apertium, cos seus paradigmas
   wiktionary            léxico da capa definicions-gl (Wiktionary galego), coa flexión regular (flexionar)
+
+E as capas con "derivado" (vocabularios): o seu módulo .dic xérase en fontes/cache/derivados/
+a partir doutras fontes (os vocabularios en PDF, con pypdf) e lese como un módulo máis.
 """
 
 from __future__ import annotations
@@ -74,6 +77,8 @@ def engadidos(cfg: dict) -> list[Path]:
 def fonte_de(ruta: Path) -> str:
     if ruta.is_relative_to(ENGADIDOS):
         return "engadidos"
+    if ruta.is_relative_to(I.CACHE / "derivados"):
+        return {"vocabularios": "vocabularios-galegos"}.get(ruta.stem, ruta.stem)
     rel = ruta.relative_to(SRC).parts
     for n in (2, 1):
         clave = "/".join(rel[:n])
@@ -723,6 +728,274 @@ def importar_wiktionary(capa: str, cfg: dict, xa_vistos: set[str], frecuencias: 
     return sorted(rexistros.values(), key=lambda r: (I.clave_orde(r["lema"]), r["id"]))
 
 
+# -- capa derivada: termos dos vocabularios en PDF ----------------------------------
+
+DERIVADOS_DIR = I.CACHE / "derivados"
+PAL = r"[a-záéíóúñüç][a-záéíóúñüç'·-]*"
+CATEGORIAS_VOC = {"f": ("substantivo", "feminino"), "m": ("substantivo", "masculino"), "s.f.": ("substantivo", "feminino"),
+                  "s.m.": ("substantivo", "masculino"), "s.": ("substantivo", None), "adx.": ("adxectivo", None),
+                  "v.": ("verbo", None), "v.t.": ("verbo", None), "v.i.": ("verbo", None), "v.p.": ("verbo", None),
+                  "v.tr.": ("verbo", None), "v.intr.": ("verbo", None), "adv.": ("adverbio", None),
+                  "s.eadx.": ("substantivo", None), "s.m.ef.": ("substantivo", None), "n": ("substantivo", None),
+                  "nm": ("substantivo", "masculino"), "nf": ("substantivo", "feminino"), "adj": ("adxectivo", None)}
+
+
+def _categoria_voc(texto: str | None):
+    if not texto:
+        return None
+    c = re.sub(r"\s+", "", texto.lower()).strip("()").replace("s.f", "s.f.").replace("s.m", "s.m.").replace("..", ".")
+    return CATEGORIAS_VOC.get(c) or CATEGORIAS_VOC.get(c + ".") or CATEGORIAS_VOC.get(c.rstrip("."))
+
+
+def _termos_vocabulario(nome: str, texto: str):
+    """(termo, (categoria, xenero) | None) de cada entrada dun vocabulario, segundo a súa maqueta."""
+    saida = []
+
+    def eng(t, cat):
+        t = re.sub(r"\s*\([^)]*\)", "", t.strip().strip(".,;:")).strip().lower()
+        for v in re.split(r"[,;/]| ou ", t):
+            v = v.strip()
+            c = cat
+            if v.endswith("/a"):
+                v, c = v[:-2], cat or ("adxectivo", None)
+            if re.fullmatch(PAL, v) and len(v) >= 3:
+                saida.append((v, c))
+
+    if nome.startswith(("usc-", "uvigo-viceversa")):            # «22 acordo marco europeo m»
+        for m in re.finditer(r"^\s*\d{1,4}\.?\s+(.+?)\s+\(?(f pl|m pl|f|m|v|adx|adv)\)?\s*$", texto, re.M):
+            eng(m.group(1), _categoria_voc(m.group(2)))
+    elif nome in ("udc-dereito", "udc-deportes"):               # «Adopción s. f. adopción»
+        for m in re.finditer(r"^(.+?) (s\. ?[fm]\.|s\. e adx\.|s\. m\. e f\.|adx\.|v\. ?[tip]\.(?: e p\.)?|adv\.) (.+?)\.?\s*$", texto, re.M):
+            eng(m.group(3), _categoria_voc(m.group(2)))
+    elif nome in ("udc-matematica", "udc-fisica-quimica"):      # «Apotema: apotema»
+        for m in re.finditer(r"^([A-ZÁÉÍÓÚ][^:\n]*?):\s*\S", texto, re.M):
+            eng(m.group(1), None)
+    elif nome.startswith("lexicool"):                            # «Previsión: s.f. previsión»
+        for m in re.finditer(r"^([A-ZÁÉÍÓÚ][^:\n]*?):\s*(s\.[fm]\.)?", texto, re.M):
+            eng(m.group(1), _categoria_voc(m.group(2)))
+    elif nome.startswith("udc-"):                                # «Antropometría antropometría s.f.»
+        for m in re.finditer(r"^(\S+) (\S+) (s\. ?[fm]\.|adx\.|v\.(?: tr\.| intr\.)?|adv\.|[fm]\.)\s*$", texto, re.M):
+            eng(m.group(2), _categoria_voc(m.group(3)) or _categoria_voc("s." + m.group(3)))
+    elif nome == "uvigo-xuridico-administrativo":                # «12. acordo (D01) s. m.»
+        for m in re.finditer(r"^\d+\.\s+(.+?)\s+\([A-Z0-9, ]+\)\s+(s\. ?[fm]\.|adx\.|v\. ?[tip]\.|adv\.)", texto, re.M):
+            eng(m.group(1), _categoria_voc(m.group(2)))
+    elif nome.startswith(("cirp-", "rag-")):                     # «polgada s.f. Medida de...»; «gl sinónimo»
+        for m in re.finditer(r"^(" + PAL + r"(?: " + PAL + r"){0,3})\s?(loc\.)?(s\.[fm]\.|s\.|adx\.|v\.[tip]\.|v\.|adv\.)(?=\s|[A-ZÁÉÍÓÚ])", texto, re.M):
+            if not m.group(2):
+                eng(m.group(1), _categoria_voc(m.group(3)))
+        for m in re.finditer(r"^gl\s+(" + PAL + r")\s*$", texto, re.M):
+            eng(m.group(1), None)
+    elif nome.startswith("realiter-"):                           # «glg aborto euxénesico (s.m.)»
+        for m in re.finditer(r"^\s*glg?\s+(.+?)\s*(\((?:s|n)\.?\s?[mf]\.?\)|n [mf]|adj\.?|v\.?)?\s*$", texto, re.M):
+            eng(m.group(1), _categoria_voc(m.group(2)))
+    return saida
+
+
+def _categoria_inferida(lema: str):
+    """Categoría e xénero dun termo sen marca, polo final da palabra."""
+    if lema.endswith(("ar", "er", "ir")) and not lema.endswith(("ular", "olar", "ilar", "énder")):
+        return "verbo", None
+    if lema.endswith(("ico", "ivo", "oso", "ábel", "able", "íbel", "ible", "ario", "ante", "ente", "ístico", "al", "ar", "il")) and not lema.endswith(("mento", "dade")):
+        return "adxectivo", None
+    if lema.endswith(("ción", "sión", "dade", "axe", "ez", "eza", "ía", "ura", "ncia", "ite", "ose", "ase", "emia", "tude", "ice", "ie", "se", "a")):
+        return "substantivo", "feminino"
+    return "substantivo", "masculino"
+
+
+def _flags_nominal(lema: str, cat: str, mocion: bool = False) -> str:
+    """Flags de Hunspell-gl polos finais, como fai o módulo da RAG (10 plural, 12 plural en -l, 14/15/16 feminino)."""
+    polisilaba_aguda_l = lema.endswith("l") and len(re.findall(r"[aeiouáéíóú]+", lema)) > 1 and not re.search(r"[áéíóú]", lema[:-2])
+    if cat == "adxectivo":
+        if lema.endswith("o"):
+            return "10,15"
+        if lema.endswith("or"):
+            return "10,14"
+        if lema.endswith(("án", "és", "ín")):
+            return "10,15"
+        if lema.endswith("ón"):
+            return "10,16"
+        if lema.endswith("l"):
+            return "12" if polisilaba_aguda_l else "10"
+        return "" if lema.endswith(("s", "x")) else "10"
+    if lema.endswith("l"):
+        return "12" if polisilaba_aguda_l else "10"
+    if lema.endswith(("s", "x")):
+        return "10" if len(re.findall(r"[aeiouáéíóú]+", lema)) == 1 else ""
+    if mocion:
+        return "10,15" if lema.endswith("o") else "10,14" if lema.endswith("or") else "10"
+    return "10"
+
+
+_MODELOS_VERBOS: dict[str, tuple] = {}
+
+
+def _modelos_verbos() -> dict[str, tuple]:
+    """Verbos do módulo da RAG con al: (raíz acentuada) e segunda liña: {verbo: (flags, al, raíz, flags2)}."""
+    if _MODELOS_VERBOS:
+        return _MODELOS_VERBOS
+    liñas = [l.split("#")[0].strip() for l in (SRC / "rag" / "gl" / "correcto.dic").read_text(encoding="utf-8").splitlines()]
+    segunda = {}
+    for l in liñas:
+        m = re.match(r"^(\S+?)/(\S+) st:(\S+)$", l)
+        if m:
+            segunda[m.group(3)] = (m.group(1), m.group(2))
+    for l in liñas:
+        m = re.match(r"^([a-záéíóúñü]+)/([\d,]+) po:verbo.* al:(\S+)$", l)
+        if m and m.group(1) in segunda:
+            _MODELOS_VERBOS[m.group(1)] = (m.group(2), m.group(3), *segunda[m.group(1)])
+    return _MODELOS_VERBOS
+
+
+# Compostos dos verbos irregulares (transpoñer, sobrevir, predicir): non se conxugan por modelo.
+IRREGULARES = ("pór", "poñer", "ter", "vir", "dicir", "facer", "traer", "saír", "oír", "caer", "crer", "parir", "durmir",
+               "subir", "fuxir", "servir", "seguir", "sentir", "mentir", "pedir", "construír", "estar", "haber", "poder",
+               "querer", "saber", "caber", "valer", "pracer", "ver", "ler", "rir", "ir", "dar", "ser")
+PREFIXOS = ("re", "des", "pre", "con", "com", "sub", "sobre", "inter", "trans", "en", "em", "pro", "de", "per", "ante",
+            "contra", "entre", "ex", "in", "im", "super", "auto", "co", "a", "ad", "ob", "sus", "dis", "retro", "pos", "post")
+
+
+def _composto_irregular(verbo: str) -> bool:
+    for x in IRREGULARES:
+        if verbo != x and verbo.endswith(x) and verbo[: -len(x)] in PREFIXOS + tuple(p1 + p2 for p1 in PREFIXOS for p2 in PREFIXOS):
+            return True
+    return False
+
+
+def liñas_verbo_modelo(verbo: str, tipo: str = "transitiva") -> list[str] | None:
+    """As dúas liñas de Hunspell-gl dun verbo regular novo, copiando os flags e a posición do acento
+    do verbo da RAG co final máis longo en común (polo menos 4 letras): consensuar como suar.
+    Os compostos dos irregulares (transpoñer) quedan fóra: teñen a súa táboa en referencia.json."""
+    if _composto_irregular(verbo):
+        return None
+    modelos = _modelos_verbos()
+    mellor = None
+    for v in modelos:
+        n = 0
+        while n < min(len(v), len(verbo)) and v[-1 - n] == verbo[-1 - n]:
+            n += 1
+        if n >= 4 and (mellor is None or n > mellor[0]):
+            mellor = (n, v)
+    if not mellor:
+        return None
+    flags, al, _, flags2 = modelos[mellor[1]]
+    pos = next((i for i, c in enumerate(reversed(al)) if c in "áéíóú"), None)
+    if pos is None or pos >= len(verbo):
+        return None
+    acentuada = {"a": "á", "e": "é", "i": "í", "o": "ó", "u": "ú"}.get(verbo[-1 - pos])
+    if not acentuada:
+        return None
+    al_novo = verbo[:-1 - pos] + acentuada + verbo[len(verbo) - pos:]
+    return [f"{verbo}/{flags} po:verbo ts:{tipo} al:{al_novo}  # como {mellor[1]}", f"{al_novo}/{flags2} st:{verbo}"]
+
+
+# Primeiros elementos de compostos cultos: con eles non se parte a palabra ao buscar anacos pegados.
+PREFIXOS_COMPOSICION = {"electro", "micro", "macro", "hiper", "hipo", "auto", "termo", "foto", "radio", "bio", "xeo", "neuro",
+                        "cardio", "hidro", "tele", "video", "vídeo", "aero", "nano", "mono", "poli", "multi", "semi", "super",
+                        "inter", "intra", "extra", "ultra", "anti", "contra", "sobre", "ciber", "agro", "psico", "socio", "fisio",
+                        "quimio", "crono", "cripto", "homo", "hetero", "proto", "pseudo", "pseudo", "endo", "ecto", "hemi",
+                        "tetra", "penta", "hexa", "hepta", "octo", "quilo", "mili", "centi", "deci", "mega", "giga", "xiga",
+                        "audio", "áudio", "magneto", "piezo", "turbo", "servo", "ferro", "cloro", "fluor", "sulfo", "nitro",
+                        "hidroxi", "metil", "etil", "fenil", "benzo", "ciclo", "oxi", "dinamo", "estereo", "espectro", "osteo",
+                        "artro", "dermato", "gastro", "hemato", "hepato", "nefro", "onco", "oftalmo", "oto", "pneumo", "uro",
+                        "xineco", "mamo", "angio", "arterio", "bronco", "cito", "histo", "inmuno", "linfo", "mielo", "miocardio",
+                        "nasal", "odonto", "patolo", "psiquiatr", "reumato", "trombo", "vaso", "ventrículo", "electrón", "gravi",
+                        "calor", "vapor", "metal", "mineral", "cristal", "parasit", "fungi", "ovo", "espermato", "placa", "placo"}
+
+
+def derivar_vocabularios(capa: str, cfg: dict) -> Path | None:
+    """fontes/cache/derivados/vocabularios.dic: os termos dunha palabra dos vocabularios en PDF
+    (fontes/cache/vocabularios-galegos/), no formato de Hunspell-gl, para lelo como un módulo máis.
+    Só os termos: as definicións non se copian. Quedan fóra os que xa están no núcleo ou nas capas
+    anteriores (calquera categoría), as grafías erradas segundo Hunspell-gl, as que só se
+    distinguen dunha palabra coñecida polos tiles (saida/saída) e os anacos pegados."""
+    # pypdf cambia a extracción se fontTools está instalado (e nalgúns PDF sae lixo): sempre sen el,
+    # para que o resultado sexa o mesmo en calquera máquina
+    sys.modules.setdefault("fontTools", None)
+    try:
+        from pypdf import PdfReader
+    except ImportError:
+        print(f"capa {capa}: omitida (precisa pypdf; pip install -r requirements.txt)")
+        return None
+    cartafol = I.CACHE / "vocabularios-galegos"
+    if not cartafol.exists():
+        print(f"capa {capa}: omitida (sen fontes/cache/vocabularios-galegos; descargar.py)")
+        return None
+    import logging
+    logging.getLogger("pypdf").setLevel(logging.ERROR)
+    termos: dict[str, dict] = {}
+    for ruta in sorted(cartafol.glob("*.pdf")):
+        try:
+            texto = "\n".join((p.extract_text() or "") for p in PdfReader(ruta).pages)
+        except Exception as e:   # noqa: BLE001
+            print(f"capa {capa}: non se le {ruta.name}: {e}")
+            continue
+        for termo, cat in _termos_vocabulario(ruta.stem, texto):
+            r = termos.setdefault(termo, {"cats": [], "fontes": []})
+            if cat and cat not in r["cats"]:
+                r["cats"].append(cat)
+            if ruta.stem not in r["fontes"]:
+                r["fontes"].append(ruta.stem)
+    # o que xa coñecemos, con calquera categoría; e as súas formas sen tiles, para cazar «saida»
+    coñecidos, sen_tiles = set(), set()
+    for ruta in [I.DATOS / "lemas.jsonl"] + [SAIDA / f"{c}.jsonl" for c in ("digalego", "comunidade", "terminoloxia")]:
+        if ruta.exists():
+            for l in ruta.open(encoding="utf-8"):
+                r = json.loads(l)
+                formas = {r["lema"]} | {f for lista in r.get("formas", {}).values() for f in lista}
+                coñecidos.update(formas)
+                sen_tiles.update(_sen_acentos(f) for f in formas)
+    erradas = _grafias_erradas()
+    # nomes propios e siglas (en minúsculas): nos vocabularios bilingües aparecen como termos (madrid, vigo, garcía, ascii)
+    propios = set()
+    for ruta in [I.DATOS / "nomes.jsonl"] + [SAIDA / f"{c}.jsonl" for c in ("toponimos", "antroponimos", "organizacions", "clubs", "cidades", "siglas")]:
+        if ruta.exists():
+            for l in ruta.open(encoding="utf-8"):
+                r = json.loads(l)
+                nome = r.get("nome") or r.get("forma") or ""
+                if " " not in nome:
+                    propios.add(nome.lower())
+    liñas = ["# Termos dos vocabularios en PDF (fontes/cache/vocabularios-galegos/), xerado por capas.py. Só termos, sen definicións."]
+    n = 0
+    for termo in sorted(termos, key=I.clave_orde):
+        r = termos[termo]
+        if termo in coñecidos or termo in erradas or termo in propios or len(termo) > 24 or "·" in termo:
+            continue
+        if len(re.findall(r"[áéíóú]", termo)) > 1:
+            continue   # dous tiles: anacos pegados polo PDF (satélitemeteorolóxico)
+        if len(termo) >= 11 and any(termo[:i] in coñecidos and termo[i:] in coñecidos and termo[:i] not in PREFIXOS_COMPOSICION
+                                    for i in range(6, len(termo) - 4)):
+            continue   # dúas palabras coñecidas pegadas (dispositivomonolítico), non compostos (electrocinético)
+        if _sen_acentos(termo) in sen_tiles:
+            continue   # só difire polos tiles dunha palabra coñecida (saida/saída)
+        cats = r["cats"] or [_categoria_inferida(termo)]
+        for cat, xenero in cats:
+            if cat == "verbo":
+                if termo.endswith(("ar", "er", "ir")):
+                    v = liñas_verbo_modelo(termo)
+                    if v:
+                        liñas += v
+                        n += 1
+            elif cat == "adverbio":
+                liñas.append(f"{termo} po:adverbio")
+                n += 1
+            elif cat == "adxectivo":
+                liñas.append(f"{termo}/{_flags_nominal(termo, 'adxectivo')} po:adxectivo".replace("/ po:", " po:"))
+                n += 1
+            else:
+                po = f"substantivo_{xenero}" if xenero else "substantivo"
+                fl = _flags_nominal(termo, "substantivo")
+                liñas.append(f"{termo}{'/' + fl if fl else ''} po:{po}")
+                n += 1
+    DERIVADOS_DIR.mkdir(parents=True, exist_ok=True)
+    saida = DERIVADOS_DIR / f"{capa}.dic"
+    saida.write_text("\n".join(liñas) + "\n", encoding="utf-8")
+    print(f"fontes/cache/derivados/{capa}.dic: {n} entradas de {len(termos)} termos dunha palabra")
+    return saida
+
+
+DERIVADOS = {"vocabularios": derivar_vocabularios}
+
+
 IMPORTADORES_LEXICOS = {"apertium": importar_apertium, "wiktionary": importar_wiktionary}
 
 
@@ -755,6 +1028,13 @@ def main() -> None:
     pedidas = [c for c in pedidas if c in config]
     rutas_capa = {capa: [r for m in cfg["modulos"] for r in ficheiros(m)] + engadidos(cfg)
                   for capa, cfg in config.items()}
+    for capa, cfg in config.items():   # módulos derivados doutras fontes (PDF), xerados agora
+        if "derivado" in cfg:
+            ruta = DERIVADOS[cfg["derivado"]](capa, cfg)
+            if ruta:
+                rutas_capa[capa] = [ruta] + rutas_capa[capa]
+            else:
+                config = {c: k for c, k in config.items() if c != capa}
     lexicas = [c for c in config if config[c]["tipo"] == "lexico"]
     h = Hunspell(I.HUNSPELL / "gl.aff", [r for c in lexicas for r in rutas_capa[c]])
 

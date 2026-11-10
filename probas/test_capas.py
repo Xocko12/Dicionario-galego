@@ -103,11 +103,14 @@ class ProbasCapas(unittest.TestCase):
         self.assertEqual(term["ibuprofeno#substantivo"]["formas"]["mp"], ["ibuprofenos"])
         self.assertEqual(term["consensuar#verbo"]["taboa"]["indicativo.presente"][0], ["consensúo"])
         apertium = {r["id"]: r for r in ler("capas/apertium.jsonl")}
-        self.assertEqual(apertium["corresponsabilidade#substantivo"]["formas"]["fp"], ["corresponsabilidades"])
-        self.assertEqual(apertium["intermodal#adxectivo"]["formas"]["mp"], ["intermodais"])
+        ruta = RAIZ / "datos" / "capas" / "vocabularios.jsonl"
+        lexico = {**({r["id"]: r for r in ler("capas/vocabularios.jsonl")} if ruta.exists() else {}), **apertium}
+        self.assertEqual(lexico["corresponsabilidade#substantivo"]["formas"]["fp"], ["corresponsabilidades"])
+        self.assertEqual(lexico["intermodal#adxectivo"]["formas"]["mp"], ["intermodais"])
         self.assertNotIn("edificatorio#adxectivo", apertium)      # paradigma mal aplicado na fonte
         wikt = {r["id"]: r for r in ler("capas/wiktionary.jsonl")}
-        self.assertEqual(wikt["dopamina#substantivo"]["formas"], {"fs": ["dopamina"], "fp": ["dopaminas"]})
+        lexico.update(wikt)
+        self.assertEqual(lexico["dopamina#substantivo"]["formas"], {"fs": ["dopamina"], "fp": ["dopaminas"]})
         self.assertNotIn("termodinámica#adxectivo", wikt)         # «forma feminina de termodinámico»
         self.assertNotIn("estructura#substantivo", wikt)           # grafía errada segundo Hunspell-gl
         core = {r["id"] for r in ler("lemas.jsonl")}
@@ -115,6 +118,22 @@ class ProbasCapas(unittest.TestCase):
             ids = [r["id"] for r in ler(f"capas/{capa}.jsonl")]
             self.assertEqual(len(ids), len(set(ids)))
             self.assertEqual(core & set(ids), set())
+
+    def test_vocabularios(self):
+        ruta = RAIZ / "datos" / "capas" / "vocabularios.jsonl"
+        if not ruta.exists():
+            self.skipTest("capa opcional non xerada (precisa pypdf e os PDF)")
+        voc = {r["id"]: r for r in ler("capas/vocabularios.jsonl")}
+        for i in ("epicondilite#substantivo", "ciclohexanona#substantivo", "ergodicidade#substantivo", "electrocinético#adxectivo"):
+            self.assertIn(i, voc)
+        self.assertEqual(voc["ciclohexanona#substantivo"]["xenero"], "feminino")
+        self.assertNotIn("transpoñer#verbo", voc)                  # composto irregular: non vai por modelo
+        self.assertFalse(any(r.get("baleiras") for r in voc.values()))
+        core = {r["id"] for r in ler("lemas.jsonl")}
+        self.assertEqual(core & set(voc), set())
+        for r in voc.values():
+            if r["categoria"] == "verbo":
+                self.assertEqual(len(r["taboa"]["indicativo.presente"]), 6)
 
     def test_codigos(self):
         cod = {(r["codigo"], r["tipo"]) for r in ler("capas/codigos.jsonl")}
