@@ -88,8 +88,10 @@ class ProbasTeclado(unittest.TestCase):
         # os nomes propios toman a frecuencia da súa forma en minúsculas (o corpus está en minúsculas)
         self.assertGreater(self.formas["Londres"], 0)
         self.assertGreater(self.formas["de"], self.formas["Londres"])
-        # as formas verbais sen frecuencia quedan, con 0
+        # as formas verbais sen frecuencia quedan, con 0; tamén o léxico das capas novas
         self.assertTrue("falariamos" in self.formas)
+        for f in ("dopamina", "ibuprofeno", "copago", "corresponsabilidade", "consensúo", "intermodais"):
+            self.assertEqual(self.formas[f], 0, f)
 
 
 if __name__ == "__main__":

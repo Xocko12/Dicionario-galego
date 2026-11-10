@@ -1,0 +1,559 @@
+# Engadidos a man neste proxecto (GPL-3.0-or-later), no formato dos módulos de Hunspell-gl:
+#   lema/flags po:categoría[_xénero] [ts:tipo] [al:raíz_acentuada]  # nota
+# Os flags son os de Hunspell-gl (10 plural, 12 plural en -l, 14/15/16 feminino; verbos: os do modelo).
+# Capa: terminoloxia. Léxico común que falta na RAG e nas demais capas: ciencia e substancias (farmacoloxía,
+# bioquímica, medicina, física, química, informática) e léxico xurídico e administrativo (atestado no corpus
+# ParlaMint-ES-GA do Parlamento de Galicia, CC BY 4.0, e no uso xurídico corrente). Sen revisión normativa.
+
+# ciencia: substantivos
+melatonina/10 po:substantivo_feminino
+endorfina/10 po:substantivo_feminino
+cortisol/12 po:substantivo_masculino
+hidrocortisona/10 po:substantivo_feminino
+estradiol/12 po:substantivo_masculino
+levotiroxina/10 po:substantivo_feminino
+glucagón/10 po:substantivo_masculino
+leptina/10 po:substantivo_feminino
+grelina/10 po:substantivo_feminino
+interleucina/10 po:substantivo_feminino
+citocina/10 po:substantivo_feminino
+mioglobina/10 po:substantivo_feminino
+triglicérido/10 po:substantivo_masculino
+colaxeno/10 po:substantivo_masculino
+elastina/10 po:substantivo_feminino
+lisosoma/10 po:substantivo_masculino
+citoesqueleto/10 po:substantivo_masculino
+proteoma/10 po:substantivo_masculino
+plasmidio/10 po:substantivo_masculino
+retrovirus po:substantivo_masculino
+virión/10 po:substantivo_masculino
+prión/10 po:substantivo_masculino
+patóxeno/10 po:substantivo_masculino
+prebiótico/10 po:substantivo_masculino
+antiviral/12 po:substantivo_masculino
+antipsicótico/10 po:substantivo_masculino
+broncodilatador/10 po:substantivo_masculino
+ibuprofeno/10 po:substantivo_masculino
+paracetamol/12 po:substantivo_masculino
+omeprazol/12 po:substantivo_masculino
+diclofenaco/10 po:substantivo_masculino
+naproxeno/10 po:substantivo_masculino
+metformina/10 po:substantivo_feminino
+atorvastatina/10 po:substantivo_feminino
+simvastatina/10 po:substantivo_feminino
+enalapril/12 po:substantivo_masculino
+losartán/10 po:substantivo_masculino
+amlodipino/10 po:substantivo_masculino
+salbutamol/12 po:substantivo_masculino
+prednisona/10 po:substantivo_feminino
+dexametasona/10 po:substantivo_feminino
+lorazepam/10 po:substantivo_masculino
+diazepam/10 po:substantivo_masculino
+alprazolam/10 po:substantivo_masculino
+fluoxetina/10 po:substantivo_feminino
+sertralina/10 po:substantivo_feminino
+paroxetina/10 po:substantivo_feminino
+escitalopram/10 po:substantivo_masculino
+venlafaxina/10 po:substantivo_feminino
+quetiapina/10 po:substantivo_feminino
+risperidona/10 po:substantivo_feminino
+olanzapina/10 po:substantivo_feminino
+haloperidol/12 po:substantivo_masculino
+fentanilo/10 po:substantivo_masculino
+tramadol/12 po:substantivo_masculino
+oxicodona/10 po:substantivo_feminino
+buprenorfina/10 po:substantivo_feminino
+ketamina/10 po:substantivo_feminino
+metanfetamina/10 po:substantivo_feminino
+cannabinoide/10 po:substantivo_masculino
+tetrahidrocannabinol/12 po:substantivo_masculino
+triptófano/10 po:substantivo_masculino
+cisteína/10 po:substantivo_feminino
+entalpía/10 po:substantivo_feminino
+gravitón/10 po:substantivo_masculino
+nanotubo/10 po:substantivo_masculino
+grafeno/10 po:substantivo_masculino
+fullereno/10 po:substantivo_masculino
+nanopartícula/10 po:substantivo_feminino
+bioinformática/10 po:substantivo_feminino
+xenómica/10 po:substantivo_feminino
+proteómica/10 po:substantivo_feminino
+epixenética/10 po:substantivo_feminino
+psicoxeriatría/10 po:substantivo_feminino
+colonoscopia/10 po:substantivo_feminino
+hemograma/10 po:substantivo_masculino
+hipercolesterolemia/10 po:substantivo_feminino
+migraña/10 po:substantivo_feminino
+cervicalxia/10 po:substantivo_feminino
+bursite/10 po:substantivo_feminino
+varices po:substantivo_feminino
+diabete/10 po:substantivo_feminino
+hemiplexia/10 po:substantivo_feminino
+paraplexia/10 po:substantivo_feminino
+tetraplexia/10 po:substantivo_feminino
+disfemia/10 po:substantivo_feminino
+antixénico/10 po:substantivo_masculino
+mascarilla/10 po:substantivo_feminino
+próteses po:substantivo_feminino
+laparoscopia/10 po:substantivo_feminino
+comorbilidade/10 po:substantivo_feminino
+teleconsulta/10 po:substantivo_feminino
+sobremedicación/10 po:substantivo_feminino
+xenérico/10 po:substantivo_masculino
+pulsioxímetro/10 po:substantivo_masculino
+infinitésimo/10 po:substantivo_masculino
+cuántico/10 po:substantivo_masculino
+superordenador/10 po:substantivo_masculino
+cuántica/10 po:substantivo_feminino
+cifrado/10 po:substantivo_masculino
+blockchain/10 po:substantivo_masculino
+criptomoeda/10 po:substantivo_feminino
+femtosegundo/10 po:substantivo_masculino
+terabyte/10 po:substantivo_masculino
+petabyte/10 po:substantivo_masculino
+xigawatt/10 po:substantivo_masculino
+weber/10 po:substantivo_masculino
+celsius po:substantivo_masculino
+fahrenheit/10 po:substantivo_masculino
+exoluna/10 po:substantivo_feminino
+magnetar/10 po:substantivo_masculino
+hipernova/10 po:substantivo_feminino
+neutralino/10 po:substantivo_masculino
+subdución/10 po:substantivo_feminino
+permafrost/10 po:substantivo_masculino
+icebergue/10 po:substantivo_masculino
+criosfera/10 po:substantivo_feminino
+biotopo/10 po:substantivo_masculino
+bioma/10 po:substantivo_masculino
+endemismo/10 po:substantivo_masculino
+invasora/10 po:substantivo_feminino
+biogás po:substantivo_masculino
+bioetanol/12 po:substantivo_masculino
+fotovoltaica/10 po:substantivo_feminino
+eólica/10 po:substantivo_feminino
+xeotérmica/10 po:substantivo_feminino
+mareomotriz/10 po:substantivo_feminino
+undimotriz/10 po:substantivo_feminino
+nuclear/10 po:substantivo_feminino
+terras po:substantivo_feminino
+haluro/10 po:substantivo_masculino
+imina/10 po:substantivo_feminino
+sulfonamida/10 po:substantivo_feminino
+flavonoide/10 po:substantivo_masculino
+licopeno/10 po:substantivo_masculino
+ferritina/10 po:substantivo_feminino
+anxioxénese/10 po:substantivo_feminino
+neuroxénese/10 po:substantivo_feminino
+carcinoxénese/10 po:substantivo_feminino
+teratóxeno/10 po:substantivo_masculino
+canceríxeno/10 po:substantivo_masculino
+carcinóxeno/10 po:substantivo_masculino
+cancerixénico/10 po:substantivo_masculino
+deshidroxenación/10 po:substantivo_feminino
+espectroscopia/10 po:substantivo_feminino
+espectrofotometría/10 po:substantivo_feminino
+erlenmeyer/10 po:substantivo_masculino
+hidroxel/12 po:substantivo_masculino
+quilovoltio/10 po:substantivo_masculino
+megavoltio/10 po:substantivo_masculino
+electrovoltio/10 po:substantivo_masculino
+ondulador/10 po:substantivo_masculino
+termostato/10 po:substantivo_masculino
+actuador/10 po:substantivo_masculino
+coprocesador/10 po:substantivo_masculino
+middleware/10 po:substantivo_masculino
+malware/10 po:substantivo_masculino
+ransomware/10 po:substantivo_masculino
+spyware/10 po:substantivo_masculino
+adware/10 po:substantivo_masculino
+cracker/10 po:substantivo_masculino
+metaverso/10 po:substantivo_masculino
+nanorrobot/10 po:substantivo_masculino
+mecatrónica/10 po:substantivo_feminino
+inmótica/10 po:substantivo_feminino
+xeomática/10 po:substantivo_feminino
+xeorreferenciación/10 po:substantivo_feminino
+paleoclimatoloxía/10 po:substantivo_feminino
+dendrocronoloxía/10 po:substantivo_feminino
+mitilicultura/10 po:substantivo_feminino
+ostricultura/10 po:substantivo_feminino
+
+# ciencia: adxectivos
+epixenético/10,15 po:adxectivo
+proteómico/10,15 po:adxectivo
+patoxénico/10,15 po:adxectivo
+carcinóxeno/10,15 po:adxectivo
+cerebrovascular/10 po:adxectivo
+preclínico/10,15 po:adxectivo
+perinatal/12 po:adxectivo
+neurodexenerativo/10,15 po:adxectivo
+iatroxénico/10,15 po:adxectivo
+nosocomial/12 po:adxectivo
+zoonótico/10,15 po:adxectivo
+inmunizado/10,15 po:adxectivo
+antivacinas po:adxectivo
+microbiolóxico/10,15 po:adxectivo
+bioinformático/10,15 po:adxectivo
+biotecnolóxico/10,15 po:adxectivo
+submicroscópico/10,15 po:adxectivo
+probabilístico/10,15 po:adxectivo
+alxebraico/10,15 po:adxectivo
+computacional/12 po:adxectivo
+robótico/10,15 po:adxectivo
+domótico/10,15 po:adxectivo
+xeomático/10,15 po:adxectivo
+periglaciar/10 po:adxectivo
+pelaxico/10,15 po:adxectivo
+hidroxeolóxico/10,15 po:adxectivo
+ecosistémico/10,15 po:adxectivo
+biodiverso/10,15 po:adxectivo
+compostable/10 po:adxectivo
+ecotóxico/10,15 po:adxectivo
+neurotóxico/10,15 po:adxectivo
+hepatotóxico/10,15 po:adxectivo
+nefrotóxico/10,15 po:adxectivo
+cardiotóxico/10,15 po:adxectivo
+xenotóxico/10,15 po:adxectivo
+mutaxénico/10,15 po:adxectivo
+teratoxénico/10,15 po:adxectivo
+alerxénico/10,15 po:adxectivo
+broncodilatador/10,14 po:adxectivo
+psicotrópico/10,15 po:adxectivo
+opioide/10 po:adxectivo
+cannabinoide/10 po:adxectivo
+
+# xurídico e administrativo: substantivos
+empregabilidade/10 po:substantivo_feminino
+autoemenda/10 po:substantivo_feminino
+argumentario/10 po:substantivo_masculino
+interrompibilidade/10 po:substantivo_feminino
+presencialidade/10 po:substantivo_feminino
+semipresencialidade/10 po:substantivo_feminino
+copago/10 po:substantivo_masculino
+repago/10 po:substantivo_masculino
+biorresiduo/10,15 po:substantivo
+cronograma/10 po:substantivo_masculino
+intermodalidade/10 po:substantivo_feminino
+feminicidio/10 po:substantivo_masculino
+negacionismo/10 po:substantivo_masculino
+gobernanza/10 po:substantivo_feminino
+cogobernanza/10 po:substantivo_feminino
+inasistencia/10 po:substantivo_feminino
+recentralización/10 po:substantivo_feminino
+colexiación/10 po:substantivo_feminino
+anticorrupción/10 po:substantivo_feminino
+trazabilidade/10 po:substantivo_feminino
+ineficiencia/10 po:substantivo_feminino
+obviedade/10 po:substantivo_feminino
+macroenquisa/10 po:substantivo_feminino
+desregulación/10 po:substantivo_feminino
+visibilización/10 po:substantivo_feminino
+autoprotección/10 po:substantivo_feminino
+subsidiación/10 po:substantivo_feminino
+forestación/10 po:substantivo_feminino
+desestacionalización/10 po:substantivo_feminino
+intermediación/10 po:substantivo_feminino
+cuestionamento/10,15 po:substantivo
+sobreesforzo/10,15 po:substantivo
+despoboación/10 po:substantivo_feminino
+mercantilización/10 po:substantivo_feminino
+multifuncionalidade/10 po:substantivo_feminino
+realoxo/10 po:substantivo_masculino
+realoxamento/10,15 po:substantivo
+repotenciación/10 po:substantivo_feminino
+cronificación/10 po:substantivo_feminino
+prepandemia/10 po:substantivo_feminino
+empoderamento/10 po:substantivo_masculino
+ultraactividade/10 po:substantivo_feminino
+globalidade/10 po:substantivo_feminino
+interrelación/10 po:substantivo_feminino
+condicionalidade/10 po:substantivo_feminino
+ferroaliaxe/10 po:substantivo_feminino
+sobredemanda/10 po:substantivo_feminino
+expresidente/10 po:substantivo_masculino
+exconselleiro/10 po:substantivo_masculino
+exalcalde/10 po:substantivo_masculino
+exministro/10 po:substantivo_masculino
+exdeputado/10 po:substantivo_masculino
+exdirector/10 po:substantivo_masculino
+mileurista/10 po:substantivo
+micropeme/10 po:substantivo_feminino
+constitucionalista/10 po:substantivo
+frecuentación/10 po:substantivo_feminino
+plasmación/10 po:substantivo_feminino
+precariado/10 po:substantivo_masculino
+incentivación/10 po:substantivo_feminino
+vicevoceiro/10,15 po:substantivo
+inequidade/10 po:substantivo_feminino
+preconcurso/10 po:substantivo_masculino
+sobreactuación/10 po:substantivo_feminino
+conseguidor/10,14 po:substantivo
+relocalización/10 po:substantivo_feminino
+internalización/10 po:substantivo_feminino
+remunicipalización/10 po:substantivo_feminino
+reprivatización/10 po:substantivo_feminino
+desburocratización/10 po:substantivo_feminino
+readxudicación/10 po:substantivo_feminino
+preconcursal/12 po:substantivo_masculino
+querelado/10,15 po:substantivo
+demandado/10,15 po:substantivo
+imputado/10,15 po:substantivo
+investigado/10,15 po:substantivo
+procesado/10,15 po:substantivo
+absolto/10,15 po:substantivo
+prexudicialidade/10 po:substantivo_feminino
+recargo/10,15 po:substantivo
+estatutario/10,15 po:substantivo
+urbanizable/10 po:substantivo_masculino
+demanialidade/10 po:substantivo_feminino
+patrimonialidade/10 po:substantivo_feminino
+supramunicipalidade/10 po:substantivo_feminino
+desconcentración/10 po:substantivo_feminino
+alegalidade/10 po:substantivo_feminino
+criminalización/10 po:substantivo_feminino
+inimputabilidade/10 po:substantivo_feminino
+quita/10 po:substantivo_feminino
+causahabente/10 po:substantivo
+intestado/10 po:substantivo_masculino
+albacea/10 po:substantivo_masculino
+precario/10,15 po:substantivo
+poderdante/10 po:substantivo
+alimentos po:substantivo_masculino
+emerxente/10 po:substantivo_masculino
+precontrato/10 po:substantivo_masculino
+subministro/10 po:substantivo_masculino
+franquiciado/10,15 po:substantivo
+franquiciador/10,14 po:substantivo
+licenciatario/10,15 po:substantivo
+licenciante/10 po:substantivo
+royalty/10 po:substantivo_masculino
+transitoria/10 po:substantivo_feminino
+adicional/12 po:substantivo_feminino
+derradeira/10 po:substantivo_feminino
+vacatio/10 po:substantivo_feminino
+licitadora/10 po:substantivo_feminino
+modificado/10 po:substantivo_masculino
+allea/10 po:substantivo_feminino
+subhasta/10 po:substantivo_feminino
+demanial/12 po:substantivo_masculino
+patrimonial/12 po:substantivo_masculino
+comunal/12 po:substantivo_masculino
+veciñal/12 po:substantivo_masculino
+montes po:substantivo_masculino
+mancomún/10 po:substantivo_masculino
+reparcelación/10 po:substantivo_feminino
+expropiado/10,15 po:substantivo
+expropiante/10 po:substantivo
+xustiprezo/10 po:substantivo_masculino
+retaxación/10 po:substantivo_feminino
+intereses po:substantivo_masculino
+especial/12 po:substantivo_masculino
+sectorial/12 po:substantivo_masculino
+coercitiva/10 po:substantivo_feminino
+sancionadora/10 po:substantivo_feminino
+sancionador/10,14 po:substantivo
+solidario/10,15 po:substantivo
+subsidiario/10,15 po:substantivo
+mancomunado/10,15 po:substantivo
+
+# xurídico e administrativo: adxectivos
+electrointensivo/10,15 po:adxectivo
+novidoso/10,15 po:adxectivo
+privatizador/10,14 po:adxectivo
+redistributivo/10,15 po:adxectivo
+emendante/10 po:adxectivo
+monomarental/12 po:adxectivo
+concesional/12 po:adxectivo
+regulatorio/10,15 po:adxectivo
+interdepartamental/12 po:adxectivo
+intercomunitario/10,15 po:adxectivo
+interautonómico/10,15 po:adxectivo
+economicista/10 po:adxectivo
+habitacional/12 po:adxectivo
+propositivo/10,15 po:adxectivo
+infantoxuvenil/12 po:adxectivo
+corresponsable/10 po:adxectivo
+proactivo/10,15 po:adxectivo
+precarizado/10,15 po:adxectivo
+excedentario/10,15 po:adxectivo
+superreducido/10,15 po:adxectivo
+clientelar/10 po:adxectivo
+curtopracista/10 po:adxectivo
+produtivista/10 po:adxectivo
+transeuropeo/10,15 po:adxectivo
+constatable/10 po:adxectivo
+fulcral/12 po:adxectivo
+natalista/10 po:adxectivo
+cuantificable/10 po:adxectivo
+posdoutoral/12 po:adxectivo
+predoutoral/12 po:adxectivo
+tarifario/10,15 po:adxectivo
+extraorzamentario/10,15 po:adxectivo
+intertrimestral/12 po:adxectivo
+preconcursal/12 po:adxectivo
+extraconcursal/12 po:adxectivo
+subsanable/10 po:adxectivo
+insubsanable/10 po:adxectivo
+irrecorrible/10 po:adxectivo
+inimpugnable/10 po:adxectivo
+inexecutable/10 po:adxectivo
+devindicado/10,15 po:adxectivo
+liquidado/10,15 po:adxectivo
+lexitimario/10,15 po:adxectivo
+convivencial/12 po:adxectivo
+curatelar/10 po:adxectivo
+extrapatrimonial/12 po:adxectivo
+societario/10,15 po:adxectivo
+cambiario/10,15 po:adxectivo
+edificatorio/10,15 po:adxectivo
+reparcelatorio/10,15 po:adxectivo
+indemnizatorio/10,15 po:adxectivo
+resarcitorio/10,15 po:adxectivo
+sancionatorio/10,15 po:adxectivo
+bonificado/10,15 po:adxectivo
+deducible/10 po:adxectivo
+desgravable/10 po:adxectivo
+retido/10,15 po:adxectivo
+inimputable/10 po:adxectivo
+culposo/10,15 po:adxectivo
+desestimatorio/10,15 po:adxectivo
+inadmisorio/10,15 po:adxectivo
+paraadministrativo/10,15 po:adxectivo
+extraparlamentario/10,15 po:adxectivo
+motivado/10,15 po:adxectivo
+irrazoable/10 po:adxectivo
+inequitativo/10,15 po:adxectivo
+semipresencial/12 po:adxectivo
+automatizado/10,15 po:adxectivo
+interoperable/10 po:adxectivo
+homologado/10,15 po:adxectivo
+habilitado/10,15 po:adxectivo
+plurilateral/12 po:adxectivo
+
+# adverbios
+orzamentariamente po:adverbio
+meridianamente po:adverbio
+medioambientalmente po:adverbio
+ambientalmente po:adverbio
+porcentualmente po:adverbio
+coordinadamente po:adverbio
+recorrentemente po:adverbio
+contractualmente po:adverbio
+mancomunadamente po:adverbio
+supletoriamente po:adverbio
+cautelarmente po:adverbio
+presencialmente po:adverbio
+telematicamente po:adverbio
+farmacoloxicamente po:adverbio
+terapeuticamente po:adverbio
+asintomaticamente po:adverbio
+
+# verbos (polo modelo da RAG co final máis longo en común)
+consensuar/201,221 po:verbo ts:transitiva al:consensúar  # como suar
+consensúar/666,200,202,220,222 st:consensuar
+precarizar/200,201 po:verbo ts:transitiva al:precarízar  # como barbarizar
+precarízar/666,202 st:precarizar
+deslocalizar/200,201,230,231 po:verbo ts:transitiva al:deslocalízar  # como localizar
+deslocalízar/666,202,232 st:deslocalizar
+relocalizar/200,201,230,231 po:verbo ts:transitiva al:relocalízar  # como localizar
+relocalízar/666,202,232 st:relocalizar
+cofinanciar/230,231 po:verbo ts:transitiva al:cofinánciar  # como autofinanciar
+cofinánciar/666,232 st:cofinanciar
+publicitar/200,201 po:verbo ts:transitiva al:publicítar  # como explicitar
+publicítar/666,202 st:publicitar
+cogobernar/200,201 po:verbo ts:transitiva al:cogobérnar  # como desgobernar
+cogobérnar/666,202 st:cogobernar
+efectivizar/200,201 po:verbo ts:transitiva al:efectivízar  # como colectivizar
+efectivízar/666,202 st:efectivizar
+recualificar/200,201,230,231 po:verbo ts:transitiva al:recualifícar  # como cualificar
+recualifícar/666,202,232 st:recualificar
+ralentizar/200,201 po:verbo ts:transitiva al:ralentízar  # como patentizar
+ralentízar/666,202 st:ralentizar
+culpabilizar/200,201 po:verbo ts:transitiva al:culpabilízar  # como contabilizar
+culpabilízar/666,202 st:culpabilizar
+frivolizar/200,201,230,231 po:verbo ts:transitiva al:frivolízar  # como alcoholizar
+frivolízar/666,202,232 st:frivolizar
+demonizar/200,201,220,221 po:verbo ts:transitiva al:demonízar  # como harmonizar
+demonízar/666,202,222 st:demonizar
+territorializar/200,201,230,231 po:verbo ts:transitiva al:territorialízar  # como industrializar
+territorialízar/666,202,232 st:territorializar
+cronificar/200,201 po:verbo ts:transitiva al:cronifícar  # como bonificar
+cronifícar/666,202 st:cronificar
+empoderar/200,201,230,231 po:verbo ts:transitiva al:empodérar  # como apoderar
+empodérar/666,202,232 st:empoderar
+dimensionar/200,201 po:verbo ts:transitiva al:dimensiónar  # como aprisionar
+dimensiónar/666,202 st:dimensionar
+invisibilizar/200,201 po:verbo ts:transitiva al:invisibilízar  # como visibilizar
+invisibilízar/666,202 st:invisibilizar
+substanciar/200,201,230,231 po:verbo ts:transitiva al:substánciar  # como distanciar
+substánciar/666,202,232 st:substanciar
+escenificar/200,201 po:verbo ts:transitiva al:escenifícar  # como bonificar
+escenifícar/666,202 st:escenificar
+forestar/200,201 po:verbo ts:transitiva al:foréstar  # como deforestar
+foréstar/666,202 st:forestar
+promocionar/200,201 po:verbo ts:transitiva al:promociónar  # como conmocionar
+promociónar/666,202 st:promocionar
+recentralizar/200,201 po:verbo ts:transitiva al:recentralízar  # como centralizar
+recentralízar/666,202 st:recentralizar
+desestacionalizar/200,201 po:verbo ts:transitiva al:desestacionalízar  # como desnacionalizar
+desestacionalízar/666,202 st:desestacionalizar
+internalizar/200,201 po:verbo ts:transitiva al:internalízar  # como analizar
+internalízar/666,202 st:internalizar
+remunicipalizar/200,201 po:verbo ts:transitiva al:remunicipalízar  # como municipalizar
+remunicipalízar/666,202 st:remunicipalizar
+provincializar/200,201 po:verbo ts:transitiva al:provincialízar  # como comercializar
+provincialízar/666,202 st:provincializar
+desburocratizar/200,201 po:verbo ts:transitiva al:desburocratízar  # como burocratizar
+desburocratízar/666,202 st:desburocratizar
+despenalizar/200,201 po:verbo ts:transitiva al:despenalízar  # como penalizar
+despenalízar/666,202 st:despenalizar
+exentar/200,201 po:verbo ts:transitiva al:exéntar  # como rexentar
+exéntar/666,202 st:exentar
+interinar/200,201 po:verbo ts:transitiva al:interínar  # como adoutrinar
+interínar/666,202 st:interinar
+prexubilar/200,201,230,231 po:verbo ts:transitiva al:prexubílar  # como xubilar
+prexubílar/666,202,232 st:prexubilar
+reparcelar/200,201 po:verbo ts:transitiva al:reparcélar  # como parcelar
+reparcélar/666,202 st:reparcelar
+retaxar/200,201 po:verbo ts:transitiva al:retáxar  # como avantaxar
+retáxar/666,202 st:retaxar
+franquiciar/200,201 po:verbo ts:transitiva al:franquíciar  # como acariciar
+franquíciar/666,202 st:franquiciar
+protocolizar/200,201,230,231 po:verbo ts:transitiva al:protocolízar  # como alcolizar
+protocolízar/666,202,232 st:protocolizar
+codecidir/600,601,800,801 po:verbo ts:transitiva al:codecídir  # como decidir
+codecídir/666,602,802 st:codecidir
+corentenar/200,201,230,231 po:verbo ts:transitiva al:corenténar  # como concatenar
+corenténar/666,202,232 st:corentenar
+desconfinar/200,201,220,221 po:verbo ts:transitiva al:desconfínar  # como confinar
+desconfínar/666,202,222 st:desconfinar
+desescalar/200,201 po:verbo ts:intransitiva al:desescálar  # como escalar
+desescálar/666,202 st:desescalar
+sobremedicar/230,231 po:verbo ts:transitiva al:sobremedícar  # como automedicar
+sobremedícar/666,232 st:sobremedicar
+extubar/200,201 po:verbo ts:transitiva al:extúbar  # como entubar
+extúbar/666,202 st:extubar
+metastatizar/200,201 po:verbo ts:intransitiva al:metastatízar  # como acromatizar
+metastatízar/666,202 st:metastatizar
+recidivar/200,201 po:verbo ts:intransitiva al:recidívar  # como activar
+recidívar/666,202 st:recidivar
+somatizar/200,201 po:verbo ts:transitiva al:somatízar  # como acromatizar
+somatízar/666,202 st:somatizar
+despolimerizar/200,201 po:verbo ts:transitiva al:despolimerízar  # como polimerizar
+despolimerízar/666,202 st:despolimerizar
+hidrolizar/200,201 po:verbo ts:transitiva al:hidrolízar  # como electrolizar
+hidrolízar/666,202 st:hidrolizar
+computarizar/200,201 po:verbo ts:transitiva al:computarízar  # como desmilitarizar
+computarízar/666,202 st:computarizar
+algoritmizar/220,221 po:verbo ts:transitiva al:algoritmízar  # como amizar
+algoritmízar/666,222 st:algoritmizar
+xeorreferenciar/220,221 po:verbo ts:transitiva al:xeorreferénciar  # como conferenciar
+xeorreferénciar/666,222 st:xeorreferenciar
+teledetectar/200,201 po:verbo ts:transitiva al:teledetéctar  # como detectar
+teledetéctar/666,202 st:teledetectar
+secuenciar/200,201 po:verbo ts:transitiva al:secuénciar  # como influenciar
+secuénciar/666,202 st:secuenciar
+transxenizar/200,201 po:verbo ts:transitiva al:transxenízar  # como amenizar
+transxenízar/666,202 st:transxenizar
+lactar/200,201 po:verbo ts:intransitiva al:láctar  # como compactar
+láctar/666,202 st:lactar

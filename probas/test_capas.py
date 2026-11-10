@@ -95,6 +95,27 @@ class ProbasCapas(unittest.TestCase):
         self.assertIn("alemán", nomes[("Müller", "apelido")]["nota"])
         self.assertNotIn(("Mccartney", "apelido"), nomes)
 
+    def test_lexico_cientifico_e_xuridico(self):
+        term = {r["id"]: r for r in ler("capas/terminoloxia.jsonl")}
+        for i in ("ibuprofeno#substantivo", "cortisol#substantivo", "copago#substantivo", "corresponsable#adxectivo",
+                  "consensuar#verbo", "orzamentariamente#adverbio"):
+            self.assertIn(i, term)
+        self.assertEqual(term["ibuprofeno#substantivo"]["formas"]["mp"], ["ibuprofenos"])
+        self.assertEqual(term["consensuar#verbo"]["taboa"]["indicativo.presente"][0], ["consensúo"])
+        apertium = {r["id"]: r for r in ler("capas/apertium.jsonl")}
+        self.assertEqual(apertium["corresponsabilidade#substantivo"]["formas"]["fp"], ["corresponsabilidades"])
+        self.assertEqual(apertium["intermodal#adxectivo"]["formas"]["mp"], ["intermodais"])
+        self.assertNotIn("edificatorio#adxectivo", apertium)      # paradigma mal aplicado na fonte
+        wikt = {r["id"]: r for r in ler("capas/wiktionary.jsonl")}
+        self.assertEqual(wikt["dopamina#substantivo"]["formas"], {"fs": ["dopamina"], "fp": ["dopaminas"]})
+        self.assertNotIn("termodinámica#adxectivo", wikt)         # «forma feminina de termodinámico»
+        self.assertNotIn("estructura#substantivo", wikt)           # grafía errada segundo Hunspell-gl
+        core = {r["id"] for r in ler("lemas.jsonl")}
+        for capa in ("apertium", "wiktionary"):
+            ids = [r["id"] for r in ler(f"capas/{capa}.jsonl")]
+            self.assertEqual(len(ids), len(set(ids)))
+            self.assertEqual(core & set(ids), set())
+
     def test_codigos(self):
         cod = {(r["codigo"], r["tipo"]) for r in ler("capas/codigos.jsonl")}
         self.assertIn(("glg", "iso639"), cod)

@@ -254,5 +254,14 @@
     "ficheiros": {
       "en_GB.dic": "https://raw.githubusercontent.com/LibreOffice/dictionaries/c0865a85eb67dc377f2cf8e8fe2c4fa9e53f0dcb/en/en_GB.dic"
     }
+  },
+  "apertium-glg": {
+    "nome": "Dicionario monolingüe galego de Apertium (apertium-glg), con paradigmas de flexión",
+    "web": "https://github.com/apertium/apertium-glg",
+    "licenza": "GPL-2.0-or-later",
+    "uso": "Capa apertium: substantivos, adxectivos e adverbios que non están no núcleo da RAG nin nas outras capas léxicas, coa flexión dos seus paradigmas.",
+    "ficheiros": {
+      "apertium-glg.glg.dix": "https://raw.githubusercontent.com/apertium/apertium-glg/1b7b55b732d849d66af02330cabe782cf2eaf610/apertium-glg.glg.dix"
+    }
   }
 }

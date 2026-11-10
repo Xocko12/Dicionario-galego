@@ -20,6 +20,8 @@ fontes.json, xa descargadas en fontes/cache/ (descargar.py):
   cidades               GeoNames (cidades do mundo), INE (municipios de España), CAOP (Portugal)
   clubs                 openfootball (clubs de fútbol): só os nomes e as súas variantes
   nomes_outras_linguas  nomes de pía e apelidos correntes (SSA, ONS, Census, Destatis, INSEE, INE-PT, Idescat)
+  apertium              léxico (substantivos, adxectivos, adverbios) do monolingüe de Apertium, cos seus paradigmas
+  wiktionary            léxico da capa definicions-gl (Wiktionary galego), coa flexión regular (flexionar)
 """
 
 from __future__ import annotations
@@ -509,6 +511,221 @@ def importar_nomes_outras_linguas(capa: str, cfg: dict) -> list[dict]:
     return _xuntar(saida)
 
 
+# -- capas léxicas doutras fontes (Apertium, Wiktionary) --------------------------
+
+VOGAIS = "aeiouáéíóúü"
+
+
+def _silabas_aprox(palabra: str) -> int:
+    return len(re.findall(r"[aeiouáéíóúü]+", palabra))
+
+
+def _plural(lema: str) -> str | None:
+    """Plural regular segundo as regras de Hunspell-gl (SFX 10 e 12) e as Normas; None se é invariable."""
+    if lema.endswith("l"):
+        # polisílabas agudas: animal/animais, papel/papeis, fusil/fusís; graves (fácil, túnel) e monosílabas (sol): -es
+        acento_non_final = re.search(r"[áéíóú]", lema[:-1]) and not re.search(r"[áéíóú][^aeiouáéíóú]*$", lema)
+        if _silabas_aprox(lema) > 1 and not acento_non_final:
+            return lema[:-2] + "ís" if lema.endswith("il") else lema[:-1] + "is"
+        return lema + "es"
+    if lema.endswith("r"):
+        return lema + "es"
+    if lema.endswith("z"):
+        return lema[:-1] + "ces"
+    if lema.endswith("x"):
+        return None
+    if lema.endswith("s"):
+        if re.search(r"[aeiou]ís$", lema):          # país/países (hiato: queda o til)
+            return lema + "es"
+        if re.search(r"[áéíóú]s$", lema):          # compás/compases, francés/franceses, anís/anises
+            sen_til = lema[:-2] + "áéíóú aeiou".split()[1]["áéíóú".index(lema[-2])]
+            return sen_til + "ses"
+        return lema + "es" if _silabas_aprox(lema) == 1 else None   # gas/gases; lapis, martes invariables
+    if lema.endswith("h"):
+        return lema + ("es" if lema.endswith("sh") else "s")
+    return lema + "s"
+
+
+def _feminino(lema: str) -> str | None:
+    """Feminino dun adxectivo (ou substantivo con moción de xénero) segundo SFX 14/15/16 de Hunspell-gl."""
+    for fin, sub in (("o", "a"), ("án", "á"), ("ón", "ona"), ("és", "esa"), ("ín", "ina"), ("ún", "úa")):
+        if lema.endswith(fin):
+            return lema[: -len(fin)] + sub
+    if lema.endswith("or"):
+        return lema + "a"
+    return None
+
+
+def flexionar(lema: str, categoria: str, xenero: str | None) -> dict[str, list[str]]:
+    """Formas (ms, fs, mp, fp) dun lema sen paradigma propio, coas regras regulares."""
+    plural = _plural(lema)
+    if categoria == "adxectivo":
+        fem = _feminino(lema)
+        formas = {"ms": [lema]}
+        if fem:
+            formas["fs"] = [fem]
+        if plural:
+            formas["mp"] = [plural]
+        if fem:
+            formas["fp"] = [_plural(fem) or fem]
+        return formas
+    if categoria == "substantivo":
+        if xenero == "feminino":
+            return {"fs": [lema], **({"fp": [plural]} if plural else {})}
+        return {"ms": [lema], **({"mp": [plural]} if plural else {})}
+    return {"ms": [lema]}   # adverbios, como no núcleo
+
+
+def _grafias_erradas() -> set[str]:
+    """Palabras que os ficheiros .rep de Hunspell-gl marcan como erradas («^estructura$ estrutura»)."""
+    erradas = set()
+    for ruta in (SRC / "comunidade" / "suxestións").glob("*.rep"):
+        for liña in ruta.read_text(encoding="utf-8", errors="replace").splitlines():
+            m = re.match(r"^\^([^\s$]+)\$\s", liña)
+            if m:
+                erradas.add(m.group(1))
+    return erradas
+
+
+LEMA_VALIDO = re.compile(r"^[a-záéíóúñü]+(-[a-záéíóúñü]+)*$")
+
+
+def _rexistro_lexico(capa, lema, categoria, formas, xenero, fonte, frecuencias):
+    r = {"id": f"{lema}#{categoria}", "lema": lema, "categoria": categoria, "capa": capa}
+    if xenero:
+        r["xenero"] = xenero
+    if formas:
+        r["formas"] = formas
+    todas = {lema} | {f for lista in formas.values() for f in lista}
+    r["frecuencia"] = sum(frecuencias.get(f, 0) for f in todas)
+    r["fontes"] = [fonte]
+    return r
+
+
+def importar_apertium(capa: str, cfg: dict, xa_vistos: set[str], frecuencias: dict) -> list[dict]:
+    """Substantivos, adxectivos e adverbios do monolingüe de Apertium que non están nas capas
+    anteriores, coas formas que dan os seus paradigmas (sen superlativos nin nomes propios)."""
+    import xml.etree.ElementTree as ET
+    root = ET.parse(I.CACHE / "apertium-glg" / "apertium-glg.glg.dix").getroot()
+
+    def entradas(el):
+        saida = []
+        for e in el.findall("e"):
+            texto, tags, pars = "", [], []
+            for ch in e:
+                if ch.tag == "i":
+                    texto += "".join(ch.itertext())
+                elif ch.tag == "p":
+                    l, r = ch.find("l"), ch.find("r")
+                    texto += "".join(l.itertext()) if l is not None else ""
+                    if r is not None:
+                        tags += [s.get("n") for s in r.findall("s")]
+                elif ch.tag == "par":
+                    pars.append(ch.get("n"))
+            saida.append((texto, tags, pars))
+        return saida
+
+    pardefs = {pd.get("n"): entradas(pd) for pd in root.iter("pardef")}
+
+    def expandir(texto, tags, pars):
+        if not pars:
+            return [(texto, tags)]
+        saida = []
+        for ptexto, ptags, ppars in pardefs[pars[0]]:
+            for t, tg in expandir(texto + ptexto, tags + ptags, ppars):
+                saida += expandir(t, tg, pars[1:])
+        return saida
+
+    erradas = _grafias_erradas()
+    categorias = {"n": "substantivo", "adj": "adxectivo", "adv": "adverbio"}
+    rexistros = {}
+    for sec in root.findall("section"):
+        for texto, tags, pars in entradas(sec):
+            pass
+        for e in sec.findall("e"):
+            lema = e.get("lm")
+            if not lema or not LEMA_VALIDO.match(lema) or lema in erradas:
+                continue
+            texto, pars = "", []
+            for ch in e:
+                if ch.tag == "i":
+                    texto += "".join(ch.itertext())
+                elif ch.tag == "p":
+                    l = ch.find("l")
+                    texto += "".join(l.itertext()) if l is not None else ""
+                elif ch.tag == "par":
+                    pars.append(ch.get("n"))
+            formas_tags = expandir(texto, [], pars)
+            if not formas_tags or not formas_tags[0][1]:
+                continue
+            cat = categorias.get(formas_tags[0][1][0])
+            if not cat:
+                continue
+            ident = f"{lema}#{cat}"
+            if ident in xa_vistos or ident in rexistros:
+                continue
+            formas: dict[str, list[str]] = {}
+            xeneros = set()
+            for forma, tg in formas_tags:
+                if "sup" in tg or "acr" in tg or not LEMA_VALIDO.match(forma):
+                    continue
+                xen = "m" if "m" in tg else "f" if "f" in tg else "mf"
+                num = "sg" if "sg" in tg else "pl" if "pl" in tg else "sp"
+                claves = [(g, n) for g in (("m", "f") if xen == "mf" else (xen,)) for n in (("sg", "pl") if num == "sp" else (num,))]
+                for g, n in claves:
+                    xeneros.add(g)
+                    clave = g + ("s" if n == "sg" else "p")
+                    if forma not in formas.setdefault(clave, []):
+                        formas[clave].append(forma)
+            if cat == "substantivo" and xeneros == {"m", "f"} and formas.get("ms") == formas.get("fs"):
+                formas = {k: v for k, v in formas.items() if k[0] == "m"}   # estudante: común aos dous xéneros
+                xenero = None
+            elif cat == "substantivo":
+                xenero = {"m": "masculino", "f": "feminino"}.get(next(iter(xeneros), ""), None) if len(xeneros) == 1 else None
+            else:
+                xenero = None
+            if cat == "adverbio":
+                formas = {"ms": [lema]}
+            elif lema not in formas.get("ms", []) + formas.get("fs", []):
+                continue   # paradigma mal aplicado na fonte: «edificatorioo», «vehementeo»
+            if any(len(re.findall(r"[áéíóú]", f)) > 1 for lista in formas.values() for f in lista + [lema]):
+                continue   # dous tiles: «picónón», «acuátís» (erros da fonte)
+            rexistros[ident] = _rexistro_lexico(capa, lema, cat, formas, xenero, "apertium-glg", frecuencias)
+    xa_vistos.update(rexistros)
+    return sorted(rexistros.values(), key=lambda r: (I.clave_orde(r["lema"]), r["id"]))
+
+
+def importar_wiktionary(capa: str, cfg: dict, xa_vistos: set[str], frecuencias: dict) -> list[dict]:
+    """Substantivos, adxectivos e adverbios da capa definicions-gl (Wiktionary galego) que non están
+    nas capas anteriores, coa flexión regular; fóra as entradas que son grafías alternativas doutras."""
+    erradas = _grafias_erradas()
+    rexistros = {}
+    ruta = SAIDA / "definicions-gl.jsonl"
+    if not ruta.exists():
+        return []
+    for liña in ruta.open(encoding="utf-8"):
+        r = json.loads(liña)
+        lema, cat = r["lema"], r["categoria"]
+        if cat not in ("substantivo", "adxectivo", "adverbio") or not LEMA_VALIDO.match(lema) or lema in erradas:
+            continue
+        ident = f"{lema}#{cat}"
+        if ident in xa_vistos or ident in rexistros:
+            continue
+        definicions = [a["definicion"].strip().lower() for a in r["acepcions"]]
+        # entradas que só remiten a outra: grafías alternativas e formas flexionadas (feminino de, plural de)
+        remite = r"^\(?[^)]*\)?\s*(grafía|variante|forma alternativa|forma non normativa|sinónimo de|feminino|forma feminina|plural|forma plural|participio|mariñeira, feminino)"
+        if all(re.match(remite, d) for d in definicions):
+            continue
+        xenero = r.get("xenero") if cat == "substantivo" else None
+        formas = flexionar(lema, cat, xenero)
+        rexistros[ident] = _rexistro_lexico(capa, lema, cat, formas, xenero, "wiktionary-gl", frecuencias)
+    xa_vistos.update(rexistros)
+    return sorted(rexistros.values(), key=lambda r: (I.clave_orde(r["lema"]), r["id"]))
+
+
+IMPORTADORES_LEXICOS = {"apertium": importar_apertium, "wiktionary": importar_wiktionary}
+
+
 IMPORTADORES = {"cidades": importar_cidades, "clubs": importar_clubs, "nomes_outras_linguas": importar_nomes_outras_linguas}
 
 
@@ -530,8 +747,9 @@ def main() -> None:
     # as de «script» van á parte; as de «importador» léñense doutras fontes (abaixo)
     importadas = {capa: cfg for capa, cfg in config.items() if "importador" in cfg}
     config = {capa: cfg for capa, cfg in config.items() if "modulos" in cfg}
+    todas_pedidas = set(pedidas)
     for capa, cfg in importadas.items():
-        if capa in pedidas:
+        if capa in pedidas and cfg["tipo"] != "lexico":
             rexistros = IMPORTADORES[cfg["importador"]](capa, cfg)
             escribir(capa, _xuntar(rexistros + importar_onomastica(capa, engadidos(cfg))))
     pedidas = [c for c in pedidas if c in config]
@@ -548,6 +766,11 @@ def main() -> None:
         rexistros = importar_lexico(capa, rutas_capa[capa], h, frecuencias, correccions, referencia, xa_vistos)
         if capa in pedidas:
             escribir(capa, rexistros)
+    for capa, cfg in importadas.items():   # léxicas doutras fontes, despois das de Hunspell-gl
+        if cfg["tipo"] == "lexico":
+            rexistros = IMPORTADORES_LEXICOS[cfg["importador"]](capa, cfg, xa_vistos, frecuencias)
+            if capa in todas_pedidas:
+                escribir(capa, rexistros)
 
     for capa in pedidas:
         cfg = config[capa]

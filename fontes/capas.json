@@ -20,7 +20,7 @@
     },
     "terminoloxia": {
       "tipo": "lexico",
-      "nome": "Terminoloxía: bUSCatermos (USC), TERGAL, Estraviz (adaptado á norma RAG), glosario de Trasno, AETG, CLG, Galaxia, INTEF, IGE, Wikipedia en galego (vocabulario por áreas), unidades de medida",
+      "nome": "Terminoloxía: bUSCatermos (USC), TERGAL, Estraviz (adaptado á norma RAG), glosario de Trasno, AETG, CLG, Galaxia, INTEF, IGE, Wikipedia en galego (vocabulario por áreas), unidades de medida; e engadidos a man (ciencia e substancias, léxico xurídico e administrativo)",
       "modulos": [
         "usc",
         "tergal",
@@ -36,7 +36,28 @@
         "wikipedia/gl/*.dic",
         "rag/es-gl",
         "rag/gl-es"
+      ],
+      "engadidos": [
+        "fontes/engadidos/terminoloxia.dic"
       ]
+    },
+    "apertium": {
+      "tipo": "lexico",
+      "nome": "Léxico do dicionario monolingüe de Apertium que non está na RAG nin nas capas anteriores (substantivos, adxectivos e adverbios, coa flexión dos seus paradigmas)",
+      "importador": "apertium",
+      "fontes": [
+        "apertium-glg"
+      ],
+      "nota": "Sen revisión normativa: quedan fóra as grafías que Hunspell-gl marca como erradas (ficheiros .rep)."
+    },
+    "wiktionary": {
+      "tipo": "lexico",
+      "nome": "Léxico do Wiktionary galego que non está na RAG nin nas capas anteriores (substantivos, adxectivos e adverbios da capa definicions-gl, coa flexión regular)",
+      "importador": "wiktionary",
+      "fontes": [
+        "wiktionary-gl"
+      ],
+      "nota": "Sen revisión normativa: quedan fóra as grafías que Hunspell-gl marca como erradas (ficheiros .rep) e as entradas que son grafías alternativas doutras."
     },
     "siglas": {
       "tipo": "siglas",

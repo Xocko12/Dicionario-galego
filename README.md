@@ -57,7 +57,9 @@ Sobre o núcleo normativo hai capas separadas, cada unha coa súa procedencia
 |---|---|---|
 | `digalego` | léxico do Digalego (Xunta) que non está na RAG, con flexión e conxugación | 3 043 (51 verbos) |
 | `comunidade` | léxico de uso real achegado á comunidade de Hunspell-gl (informática, neoloxismos), sen revisión normativa | 816 (101 verbos) |
-| `terminoloxia` | bUSCatermos (USC), TERGAL, Estraviz adaptado, Trasno, Wikipedia galega por áreas, unidades | 378 (19 verbos) |
+| `terminoloxia` | bUSCatermos (USC), TERGAL, Estraviz adaptado, Trasno, Wikipedia galega por áreas, unidades; máis 488 engadidos a man: ciencia e substancias (*ibuprofeno, cortisol, grafeno, nanopartícula*) e léxico xurídico e administrativo atestado no Parlamento de Galicia (*copago, gobernanza, corresponsable, consensuar*) | 865 (73 verbos) |
+| `apertium` | léxico do dicionario monolingüe de Apertium (GPL) que non está na RAG nin nas capas anteriores: substantivos, adxectivos e adverbios coa flexión dos seus paradigmas (*corresponsabilidade, fiscalidade, intermodal*) | 1 710 |
+| `wiktionary` | léxico do Wiktionary galego (capa `definicions-gl`) que non está na RAG nin nas capas anteriores: substantivos, adxectivos e adverbios coa flexión regular (*dopamina, anisotrópico, magnetopausa*) | 3 802 |
 | `siglas` | siglas, abreviaturas e símbolos coa súa expansión (Concello de Santiago, UDC, UVigo, CEG, Wikipedia, DRAG); máis 285 engadidas a man (*HDMI, 5G, IA, QR, IVA, ERTE, CELGA, OCDE, TDAH*…) | 9 313 |
 | `toponimos` | lugares de Galicia, localidades, rexións e accidentes xeográficos (Wikipedia e Wiktionary galegos); máis 42 capitais e cidades engadidas a man | 24 113 |
 | `antroponimos` | nomes e apelidos de persoa en contexto galego (INE revisado, Wikipedia e Wiktionary galegos); máis 2 635 persoas coñecidas engadidas a man (política, deporte, música, cine, ciencia, arte, letras galegas e universais) | 9 343 |
@@ -75,7 +77,7 @@ nomes compostos (*Santiago de Compostela*, *Galileo Galilei*) reconstrúense das
 etiquetas de n-grama de Hunspell-gl. As capas de Hunspell-gl son GPL-3.0; a de
 WordNet, CC BY 3.0; a de Apertium, GPL-2.0.
 
-As capas `cidades`, `clubs` e `nomes-outras-linguas` non veñen de Hunspell-gl senón
+As capas `apertium`, `wiktionary`, `cidades`, `clubs` e `nomes-outras-linguas` non veñen de Hunspell-gl senón
 doutras fontes abertas (`fontes/fontes.json`, fixadas por *commit*; clave `importador` en
 `fontes/capas.json`, funcións de `ferramentas/capas.py`).
 
@@ -300,6 +302,8 @@ Tampouco macOS nin iOS aceptan listas de palabras para o teclado do sistema.
 | Thesaurus do VOLGa (Miguel Solla, 2010; extensión de LibreOffice de Trasno) | GPL-3.0 | sinónimos |
 | [Open Multilingual Wordnet 1.4](https://github.com/omwn/omw-data): Galnet (MCR), omw-en, omw-es, omw-pt | CC BY 3.0 / WordNet License | sentidos, definicións en inglés, equivalentes |
 | [Apertium](https://github.com/apertium) es-gl, spa-glg, pt-gl, en-gl | GPL-2.0 | traducións |
+| [Apertium glg](https://github.com/apertium/apertium-glg) (monolingüe galego) | GPL-2.0 | capa `apertium`: léxico con flexión |
+| [ParlaMint-ES-GA](https://github.com/ILG-USC/ParlaMint-ES-GA) (actas do Parlamento de Galicia) | CC BY 4.0 | atestación do léxico administrativo engadido a man (non se copia texto) |
 | [Wiktionary galego](https://gl.wiktionary.org/) e [inglés](https://en.wiktionary.org/) (vía kaikki.org) | CC BY-SA 4.0 | definicións, exemplos, sinónimos por acepción |
 | `hyph_gl.dic` (extensión de LibreOffice de Trasno) | GPL-3.0 | separación silábica |
 | [FrequencyWords](https://github.com/hermitdave/FrequencyWords) (OpenSubtitles 2018) | CC BY-SA 4.0 | frecuencias |
