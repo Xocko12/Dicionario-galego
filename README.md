@@ -16,7 +16,7 @@ con licenza GPL e permiso explícito do ILG-RAG. **Non inclúe definicións.**
 | Lemas | 53 402 (52 850 recomendados e 552 tolerados pola RAG) |
 | Verbos | 6 619 coa conxugación completa (12 tempos e formas nominais); **6 522 coa táboa do conxugador da RAG** como referencia (os demais non teñen conxugador na RAG) |
 | Formas | 435 661 |
-| Diminutivos | 65 355 formas en *-iño/-iña* de 30 003 substantivos (*gatiño, casiña, amiguiño, canciño, irmanciña, persoíña*), xeradas coas regras de `ferramentas/diminutivos.py` |
+| Diminutivos | 100 736 formas en *-iño/-iña* de 30 024 substantivos (*gatiño, casiña, amiguiño, canciño, irmanciña, persoíña*) e 13 695 adxectivos (*pobriño, quentiña, bonitiño, boíño*), xeradas coas regras de `ferramentas/diminutivos.py` |
 | Formas con pronomes enclíticos | 17 246 de uso real en `datos/` (*dime*, *dálle*, *díxocho*); ao construír, ~785 000 máis xeradas sistematicamente para os 600 verbos máis frecuentes (*díxoma*, *díxollelo*) |
 | Nomes propios | 1 260 nomes de persoa da *Guía de nomes galegos* da RAG |
 | Palabras gramaticais | artigos, 26 pronomes persoais, posesivos, demostrativos, indefinidos, relativos, interrogativos, exclamativos, 55 preposicións, 37 conxuncións e 50 contraccións coa súa composición (*do* = *de* + *o*, *cho* = *che* + *o*) |
@@ -127,7 +127,7 @@ probas/                 probas automáticas
 |---|---|
 | `categoria` | `substantivo`, `adxectivo`, `verbo`, `adverbio`, `artigo`, `pronome_persoal`, `posesivo`, `demostrativo`, `indefinido`, `relativo`, `interrogativo`, `exclamativo`, `numeral`, `preposición`, `conxunción`, `interxección`, `contracción` |
 | `formas` | `ms`, `fs`, `mp`, `fp` (masculino/feminino, singular/plural) |
-| `diminutivos` | substantivos: as formas en *-iño/-iña*, coas mesmas claves ca `formas` (ver «Diminutivos») |
+| `diminutivos` | substantivos e adxectivos: as formas en *-iño/-iña*, coas mesmas claves ca `formas` (ver «Diminutivos») |
 | `tipos` | verbos: `transitiva`, `intransitiva`, `pronominal`, `defectivo`, `unipersoal`… |
 | `estado` | `recomendado` ou `tolerado` (segundo a RAG) |
 | `fontes` | `drag` e/ou `volga`. Se está nos dous, os datos son os do DRAG |
@@ -234,7 +234,7 @@ Decisións tomadas onde a norma admite dúbida (revisadas, non cambiar sen motiv
 - o imperativo só ten P2 e P5, agás *vamos* (ir): *vámonos*.
 
 **Diminutivos.** Hunspell-gl non ten regras de diminutivo, así que `ferramentas/diminutivos.py`
-xéraos para cada substantivo do núcleo seguindo a ortografía das Normas. O sufixo é tónico, polo
+xéraos para cada substantivo e adxectivo do núcleo seguindo a ortografía das Normas. O sufixo é tónico, polo
 que a base perde o til (*árbore → arboriña*, *música → musiquiña*), e:
 
 - nas palabras en vogal átona, esta cae: *gato → gatiño*, *casa → casiña*, *noite → noitiña*
@@ -243,18 +243,21 @@ que a base perde o til (*árbore → arboriña*, *música → musiquiña*), e:
 - cambios gráficos: *barco → barquiño*, *amigo → amiguiño*, *praza → praciña*,
   *lingua → lingüiña*; o ditongo átono final cae: *historia → historiña*, *espacio → espaciño*;
 - se a base queda en vogal, o *i* leva til polo hiato: *persoa → persoíña*, *rúa → ruíña*,
-  *café → cafeíño*, *avó → avoíño*; os femininos en *-á* (de *-án*) fan *-anciña*: *irmá → irmanciña*;
+  *café → cafeíño*, *avó → avoíño*, e nos monosílabos: *bo → boíño* (atestado); os femininos en
+  *-á* de *-án* fan *-anciña* (*irmá → irmanciña*, *chá → chanciña*), os demais *-aíña* (*má → maíña*);
 - *-n* e ditongo final: *-ciño/-ciña* (*can → canciño*, *irmán → irmanciño*, *nai → naiciña*);
-  *-r*, *-l*, *-z*, *-s* agudo: *flor → floriña*, *papel → papeliño*, *rapaz → rapaciño*, *país → paisiño*.
+  *-r*, *-l*, *-z*, *-s* agudo: *flor → floriña*, *papel → papeliño*, *rapaz → rapaciño*, *país → paisiño*;
+- os adxectivos invariables levan os dous xéneros: *pobre → pobriño, pobriña*;
+  *quente → quentiño, quentiña*; *azul → azuliño, azuliña*.
 
 Non se dá diminutivo cando a forma resultante xa é outra palabra do catálogo, porque eses
 homógrafos teñen a súa entrada: *cociña* non é diminutivo de *coza*, nin *golfiño* de *golfo*,
-nin *camiña* (de *camiñar*) de *cama*; *noitiña* e *carriño* son lemas da RAG. Tampouco nos
+nin *camiña* (de *camiñar*) de *cama*; *noitiña*, *carriño* e *pequeniño* son lemas da RAG. Tampouco nos
 femininos en *-o* (*foto, moto*: sen uso atestado), nas palabras graves en *-s* (*lapis*), nas
-rematadas en ditongo + vogal (*raio*), noutras consoantes (*álbum*), nos monosílabos en vogal
-átona (*fe*) nin nas que teñen guión. As regras compróbanse en `probas/test_diminutivos.py`; das
-formas do corpus en *-iño/-iña* que non xeran, case todas son de adxectivos e adverbios
-(*pouquiño, pobriña, amodiño*), que polo de agora non levan diminutivo.
+rematadas en ditongo + vogal (*raio*), noutras consoantes (*álbum*) nin nas que teñen guión. As
+regras compróbanse en `probas/test_diminutivos.py`; das formas do corpus en *-iño/-iña* que non
+xeran, case todas son de indefinidos e adverbios (*pouquiño, mesmiño, todiño, amodiño*), que polo
+de agora non levan diminutivo.
 
 **`datos/nomes.jsonl`** — `{"nome": "Ádega", "tipo": "antropónimo", "fontes": ["rag-nomes"]}`
 

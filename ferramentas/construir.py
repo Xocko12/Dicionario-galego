@@ -83,7 +83,7 @@ def cargar_capas() -> dict:
 
 
 def formas_do_lema(r: dict, conx: dict):
-    """(forma, trazo) de cada forma dun lema. Os diminutivos dos substantivos
+    """(forma, trazo) de cada forma dun lema. Os diminutivos dos substantivos e adxectivos
     levan o trazo «diminutivo.ms», «diminutivo.fp»..."""
     if r["categoria"] == "verbo":
         taboa = r["taboa"] if "taboa" in r else conx[r["lema"]]["taboa"]

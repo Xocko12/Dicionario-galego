@@ -1,4 +1,4 @@
-"""Diminutivos en -iño/-iña dos substantivos.
+"""Diminutivos en -iño/-iña dos substantivos e dos adxectivos.
 
 O sufixo é tónico, así que a base perde o til (árbore → arboriña, música → musiquiña).
 Nas palabras en -o e -a o diminutivo conserva esa vogal, tamén nos masculinos en -a
@@ -12,16 +12,16 @@ Regras, segundo a terminación do singular:
   - -ia, -io, -ie átonos: cáe o ditongo (historia → historiña, espacio → espaciño);
   - se a base queda en vogal, o i do sufixo leva til polo hiato
     (persoa → persoíña, aldea → aldeíña, paseo → paseíño, rúa → ruíña);
-  - vogal tónica: -íño/-íña (café → cafeíño, avó → avoíño); os femininos en -á
-    (de -án) fan -anciña (irmá → irmanciña);
+  - vogal tónica: -íño/-íña (café → cafeíño, avó → avoíño), tamén nos monosílabos
+    (bo → boíño, atestado no corpus); os femininos en -á de -án fan -anciña
+    (irmá → irmanciña), os demais -aíña (má → maíña, caldelá → caldelaíña);
   - -n e ditongo final: -ciño/-ciña (can → canciño, irmán → irmanciño, nai → naiciña);
   - -r, -l, -s tónico, -z: -iño/-iña (flor → floriña, papel → papeliño,
     país → paisiño, rapaz → rapaciño).
 
 Quedan sen diminutivo os casos nos que a norma non é clara ou a forma sería
 estraña: os femininos en -o (foto, moto, radio: sen uso atestado), as que rematan
-en ditongo + vogal (raio, maio),
-os monosílabos en vogal átona (fe), as palabras graves en -s (lapis, martes),
+en ditongo + vogal (raio, maio), as palabras graves en -s (lapis, martes),
 as rematadas noutras consoantes (álbum, tórax), en -í ou -ú tónicos, as
 palabras con guión e as escritas con letras alleas ao galego (curaçao, röntgen).
 """
@@ -31,7 +31,7 @@ from __future__ import annotations
 VOGAIS = set("aeiouáéíóúü")
 LETRAS = set("abcdefghijklmnopqrstuvwxyzñ") | VOGAIS
 SEN_TIL = str.maketrans("áéíóú", "aeiou")
-# femininos en -á que non veñen de -án: fan -aíña, non -anciña
+# femininos en -á sen masculino que non veñen de -án: fan -aíña, non -anciña
 NON_EN_AN = {"mamá", "fideuá"}
 
 
@@ -67,8 +67,9 @@ def _unir(raiz: str, vogal: str) -> str:
     return raiz + "iñ" + vogal
 
 
-def diminutivo(forma: str, xenero: str) -> str | None:
+def diminutivo(forma: str, xenero: str, de_an: bool = True) -> str | None:
     """Diminutivo en singular dunha forma singular; xenero 'm' ou 'f'.
+    de_an: se un feminino en -á vén dun masculino en -án (irmá, chá) ou non (má).
     None se non se forma (ver o docstring do módulo)."""
     if len(forma) < 2 or not set(forma) <= LETRAS:
         return None                                       # guións, maiúsculas, curaçao, röntgen
@@ -82,8 +83,8 @@ def diminutivo(forma: str, xenero: str) -> str | None:
         if final == "a":
             vogal = "a"                                   # problema → problemiña
         raiz = forma[:-1]
-        if not _ten_vogal(raiz):
-            return None                                   # fe, pa
+        if not _ten_vogal(raiz):                          # monosílabo: vogal tónica
+            return forma + "íñ" + vogal                   # bo → boíño, fe → feíña
         if raiz[-1:] in "iu" and _vogal_previa(raiz):
             return None                                   # raio, maio: ditongo + vogal
         if raiz.endswith("i") and len(raiz) > 1:
@@ -96,7 +97,7 @@ def diminutivo(forma: str, xenero: str) -> str | None:
     # vogal tónica final
     if final in "áéó":
         raiz = forma[:-1].translate(SEN_TIL) + final.translate(SEN_TIL)
-        if final == "á" and xenero == "f" and forma not in NON_EN_AN:
+        if final == "á" and xenero == "f" and de_an and forma not in NON_EN_AN:
             return raiz + "nciña"                         # irmá → irmanciña
         return raiz + "íñ" + vogal                        # café → cafeíño
 
@@ -124,10 +125,12 @@ def diminutivo(forma: str, xenero: str) -> str | None:
     return None
 
 
-def do_lema(formas: dict[str, list[str]]) -> dict[str, list[str]]:
-    """Diminutivos dun substantivo a partir das súas formas {ms, fs, mp, fp}.
+def do_lema(formas: dict[str, list[str]], ambos_xeneros: bool = False) -> dict[str, list[str]]:
+    """Diminutivos dun substantivo ou adxectivo a partir das súas formas {ms, fs, mp, fp}.
     Os plurais saen do singular (+s). Os substantivos só en plural
-    (tesoiras, anteollos) fórmano desde o singular implícito."""
+    (tesoiras, anteollos) fórmano desde o singular implícito.
+    ambos_xeneros: a forma serve para os dous xéneros (os adxectivos invariables:
+    pobre → pobriño e pobriña, quente → quentiño e quentiña)."""
     saida: dict[str, list[str]] = {}
 
     def engadir(clave: str, forma: str) -> None:
@@ -135,13 +138,20 @@ def do_lema(formas: dict[str, list[str]]) -> dict[str, list[str]]:
         if forma not in lista:
             lista.append(forma)
 
+    masculinos = formas.get("ms", [])
+    de_an = not masculinos or any(m.translate(SEN_TIL).endswith("an") for m in masculinos)
     for x in "mf":
         singulares = formas.get(x + "s", [])
         for f in singulares:
-            d = diminutivo(f, x)
+            d = diminutivo(f, x, de_an)
             if d:
                 engadir(x + "s", d)
                 engadir(x + "p", d + "s")
+            if ambos_xeneros and x == "m":
+                d_f = diminutivo(f, "f")
+                if d_f and d_f != d:
+                    engadir("fs", d_f)
+                    engadir("fp", d_f + "s")
         if not singulares:
             for p in formas.get(x + "p", []):
                 if len(p) > 2 and p.endswith("s") and p[-2] in "ao":
@@ -151,16 +161,20 @@ def do_lema(formas: dict[str, list[str]]) -> dict[str, list[str]]:
     return {k: saida[k] for k in ("ms", "fs", "mp", "fp") if k in saida}
 
 
+CATEGORIAS = {"substantivo", "adxectivo"}
+
+
 def do_catalogo(rexistros, existentes: set[str]) -> dict[str, dict[str, list[str]]]:
-    """id -> diminutivos de cada substantivo, sen as formas que xa son palabras do
+    """id -> diminutivos de cada substantivo e adxectivo, sen as formas que xa son palabras do
     catálogo (cociña non é diminutivo de coza, nin veciño de vezo, nin camiña de
     cama): eses homógrafos teñen a súa propia entrada."""
     saida = {}
     for r in rexistros:
-        if r["categoria"] != "substantivo":
+        if r["categoria"] not in CATEGORIAS:
             continue
+        invariable = r["categoria"] == "adxectivo" and not r["formas"].get("fs") and not r["formas"].get("fp")
         dims = {}
-        for clave, lista in do_lema(r["formas"]).items():
+        for clave, lista in do_lema(r["formas"], invariable).items():
             lista = [f for f in lista if f not in existentes]
             if lista:
                 dims[clave] = lista

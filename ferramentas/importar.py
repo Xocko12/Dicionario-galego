@@ -461,7 +461,7 @@ def main() -> None:
         saidas_verbos.append(saida)
 
     # 5. Escribir datos/ --------------------------------------------------
-    # Diminutivos dos substantivos (gato -> gatiño), sen os que xa son outra palabra
+    # Diminutivos dos substantivos e adxectivos (gato -> gatiño, pobre -> pobriño), sen os que xa son outra palabra
     existentes = {r["lema"] for r in escollidos}
     existentes.update(f for r in escollidos if r["categoria"] != "verbo"
                       for lista in r["formas"].values() for f in lista)
@@ -522,7 +522,7 @@ def main() -> None:
 
     n_verbos = sum(1 for r in escollidos if r["categoria"] == "verbo")
     print(f"{len(escollidos)} lemas ({n_verbos} verbos), {len(formas_catalogo)} formas, "
-          f"{len(formas_diminutivas)} diminutivos de {len(dims)} substantivos, "
+          f"{len(formas_diminutivas)} diminutivos de {len(dims)} substantivos e adxectivos, "
           f"{len(encl)} formas con enclíticos, {n_nomes} nomes propios, {n_loc} locucións, {n_sin} entradas de sinónimos.")
     if sen_completar:
         print(f"{len(sen_completar)} verbos con celas baleiras: {', '.join(sen_completar[:40])}")
