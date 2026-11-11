@@ -9,7 +9,7 @@ de Hunspell-gl: o Dicionario da RAG (drag) e o VOLGa (volga). Se un lema está
 nos dous, úsase a versión do DRAG, que é a máis recente.
 
 Xera:
-    datos/lemas.jsonl         un lema por liña (categoría, xénero, flexión, estado, frecuencia)
+    datos/lemas.jsonl         un lema por liña (categoría, xénero, flexión, diminutivos, estado, frecuencia)
     datos/conxugacions.jsonl  táboa de conxugación de cada verbo
     datos/frecuencias.tsv     frecuencia de cada forma no corpus
     datos/nomes.jsonl         nomes propios de persoa (Guía de nomes galegos da RAG)
@@ -30,6 +30,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import compostos  # noqa: E402
 import conxugacion as C  # noqa: E402
+import diminutivos  # noqa: E402
 import encliticos  # noqa: E402
 from hunspell import Hunspell  # noqa: E402
 
@@ -460,6 +461,15 @@ def main() -> None:
         saidas_verbos.append(saida)
 
     # 5. Escribir datos/ --------------------------------------------------
+    # Diminutivos dos substantivos (gato -> gatiño), sen os que xa son outra palabra
+    existentes = {r["lema"] for r in escollidos}
+    existentes.update(f for r in escollidos if r["categoria"] != "verbo"
+                      for lista in r["formas"].values() for f in lista)
+    existentes.update(f for v in saidas_verbos for f, _, _ in C.formas(v["taboa"]))
+    dims = diminutivos.do_catalogo(
+        [{"id": r["id"], "categoria": r["categoria"], "formas": r["formas"]} for r in escollidos], existentes)
+    formas_diminutivas: set[str] = set()
+
     formas_catalogo: set[str] = set()
     with (DATOS / "lemas.jsonl").open("w", encoding="utf-8") as fh:
         for r in escollidos:
@@ -471,6 +481,9 @@ def main() -> None:
             if r["categoria"] != "verbo":
                 saida["formas"] = {k: r["formas"][k] for k in ("ms", "fs", "mp", "fp") if r["formas"].get(k)}
                 formas_catalogo.update(f for lista in saida["formas"].values() for f in lista)
+            if r["id"] in dims:
+                saida["diminutivos"] = dims[r["id"]]
+                formas_diminutivas.update(f for lista in dims[r["id"]].values() for f in lista)
             formas_catalogo.add(r["lema"])
             if r.get("composicion"):
                 saida["composicion"] = r["composicion"]
@@ -486,7 +499,7 @@ def main() -> None:
 
     with (DATOS / "frecuencias.tsv").open("w", encoding="utf-8") as fh:
         fh.write("# forma\tfrecuencia  (fonte: FrequencyWords/OpenSubtitles 2018, CC BY-SA 4.0)\n")
-        for forma in sorted(formas_catalogo, key=clave_orde):
+        for forma in sorted(formas_catalogo | formas_diminutivas, key=clave_orde):
             if frecuencias.get(forma):
                 fh.write(f"{forma}\t{frecuencias[forma]}\n")
 
@@ -509,6 +522,7 @@ def main() -> None:
 
     n_verbos = sum(1 for r in escollidos if r["categoria"] == "verbo")
     print(f"{len(escollidos)} lemas ({n_verbos} verbos), {len(formas_catalogo)} formas, "
+          f"{len(formas_diminutivas)} diminutivos de {len(dims)} substantivos, "
           f"{len(encl)} formas con enclíticos, {n_nomes} nomes propios, {n_loc} locucións, {n_sin} entradas de sinónimos.")
     if sen_completar:
         print(f"{len(sen_completar)} verbos con celas baleiras: {', '.join(sen_completar[:40])}")

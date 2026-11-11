@@ -16,6 +16,7 @@ con licenza GPL e permiso explícito do ILG-RAG. **Non inclúe definicións.**
 | Lemas | 53 402 (52 850 recomendados e 552 tolerados pola RAG) |
 | Verbos | 6 619 coa conxugación completa (12 tempos e formas nominais); **6 522 coa táboa do conxugador da RAG** como referencia (os demais non teñen conxugador na RAG) |
 | Formas | 435 661 |
+| Diminutivos | 65 355 formas en *-iño/-iña* de 30 003 substantivos (*gatiño, casiña, amiguiño, canciño, irmanciña, persoíña*), xeradas coas regras de `ferramentas/diminutivos.py` |
 | Formas con pronomes enclíticos | 17 246 de uso real en `datos/` (*dime*, *dálle*, *díxocho*); ao construír, ~785 000 máis xeradas sistematicamente para os 600 verbos máis frecuentes (*díxoma*, *díxollelo*) |
 | Nomes propios | 1 260 nomes de persoa da *Guía de nomes galegos* da RAG |
 | Palabras gramaticais | artigos, 26 pronomes persoais, posesivos, demostrativos, indefinidos, relativos, interrogativos, exclamativos, 55 preposicións, 37 conxuncións e 50 contraccións coa súa composición (*do* = *de* + *o*, *cho* = *che* + *o*) |
@@ -115,8 +116,8 @@ probas/                 probas automáticas
 
 ```json
 {"id": "casa#substantivo", "lema": "casa", "categoria": "substantivo", "xenero": "feminino",
- "formas": {"fs": ["casa"], "fp": ["casas"]}, "estado": "recomendado", "frecuencia": 1180,
- "fontes": ["drag", "volga"]}
+ "formas": {"fs": ["casa"], "fp": ["casas"]}, "diminutivos": {"fs": ["casiña"], "fp": ["casiñas"]},
+ "estado": "recomendado", "frecuencia": 1180, "fontes": ["drag", "volga"]}
 {"id": "do#contracción", "lema": "do", "categoria": "contracción",
  "formas": {"ms": ["do"], "fs": ["da"], "mp": ["dos"], "fp": ["das"]},
  "composicion": ["de", "o"], "estado": "recomendado", "frecuencia": 12580, "fontes": ["drag", "volga"]}
@@ -126,6 +127,7 @@ probas/                 probas automáticas
 |---|---|
 | `categoria` | `substantivo`, `adxectivo`, `verbo`, `adverbio`, `artigo`, `pronome_persoal`, `posesivo`, `demostrativo`, `indefinido`, `relativo`, `interrogativo`, `exclamativo`, `numeral`, `preposición`, `conxunción`, `interxección`, `contracción` |
 | `formas` | `ms`, `fs`, `mp`, `fp` (masculino/feminino, singular/plural) |
+| `diminutivos` | substantivos: as formas en *-iño/-iña*, coas mesmas claves ca `formas` (ver «Diminutivos») |
 | `tipos` | verbos: `transitiva`, `intransitiva`, `pronominal`, `defectivo`, `unipersoal`… |
 | `estado` | `recomendado` ou `tolerado` (segundo a RAG) |
 | `fontes` | `drag` e/ou `volga`. Se está nos dous, os datos son os do DRAG |
@@ -231,6 +233,29 @@ Decisións tomadas onde a norma admite dúbida (revisadas, non cambiar sen motiv
 - *vai-a*, *cai-a*, *ensai-a* son dúas sílabas: *váiase*, *cáiache*, *ensáiame*;
 - o imperativo só ten P2 e P5, agás *vamos* (ir): *vámonos*.
 
+**Diminutivos.** Hunspell-gl non ten regras de diminutivo, así que `ferramentas/diminutivos.py`
+xéraos para cada substantivo do núcleo seguindo a ortografía das Normas. O sufixo é tónico, polo
+que a base perde o til (*árbore → arboriña*, *música → musiquiña*), e:
+
+- nas palabras en vogal átona, esta cae: *gato → gatiño*, *casa → casiña*, *noite → noitiña*
+  (*-iño* no masculino e *-iña* no feminino); os masculinos en *-a* conservan o *-a*
+  (*problema → problemiña*, atestado no corpus);
+- cambios gráficos: *barco → barquiño*, *amigo → amiguiño*, *praza → praciña*,
+  *lingua → lingüiña*; o ditongo átono final cae: *historia → historiña*, *espacio → espaciño*;
+- se a base queda en vogal, o *i* leva til polo hiato: *persoa → persoíña*, *rúa → ruíña*,
+  *café → cafeíño*, *avó → avoíño*; os femininos en *-á* (de *-án*) fan *-anciña*: *irmá → irmanciña*;
+- *-n* e ditongo final: *-ciño/-ciña* (*can → canciño*, *irmán → irmanciño*, *nai → naiciña*);
+  *-r*, *-l*, *-z*, *-s* agudo: *flor → floriña*, *papel → papeliño*, *rapaz → rapaciño*, *país → paisiño*.
+
+Non se dá diminutivo cando a forma resultante xa é outra palabra do catálogo, porque eses
+homógrafos teñen a súa entrada: *cociña* non é diminutivo de *coza*, nin *golfiño* de *golfo*,
+nin *camiña* (de *camiñar*) de *cama*; *noitiña* e *carriño* son lemas da RAG. Tampouco nos
+femininos en *-o* (*foto, moto*: sen uso atestado), nas palabras graves en *-s* (*lapis*), nas
+rematadas en ditongo + vogal (*raio*), noutras consoantes (*álbum*), nos monosílabos en vogal
+átona (*fe*) nin nas que teñen guión. As regras compróbanse en `probas/test_diminutivos.py`; das
+formas do corpus en *-iño/-iña* que non xeran, case todas son de adxectivos e adverbios
+(*pouquiño, pobriña, amodiño*), que polo de agora non levan diminutivo.
+
 **`datos/nomes.jsonl`** — `{"nome": "Ádega", "tipo": "antropónimo", "fontes": ["rag-nomes"]}`
 
 ## Como se garante a calidade
@@ -280,7 +305,7 @@ python3 ferramentas/construir.py --kobo
 
 | Ficheiro | Para que serve |
 |---|---|
-| `dicionario.sqlite` | Táboas `lemas` (con `capa`: `rag` = núcleo), `formas` (forma → lema + trazo gramatical), `encliticos` (~800 000, con `orixe`), `locucions`, `sinonimos`, `sentidos` (WordNet), `traducions`, `definicions`, `siglas`, `onomastica`, `codigos`, `nomes`. ~150 MB. |
+| `dicionario.sqlite` | Táboas `lemas` (con `capa`: `rag` = núcleo), `formas` (forma → lema + trazo gramatical; os diminutivos co trazo `diminutivo.ms`, `diminutivo.fp`…), `encliticos` (~800 000, con `orixe`), `locucions`, `sinonimos`, `sentidos` (WordNet), `traducions`, `definicions`, `siglas`, `onomastica`, `codigos`, `nomes`. ~150 MB. |
 | `teclado/gl_wordlist.combined` | ~1,4 millóns de palabras (núcleo, enclíticos, capas léxicas, siglas, topónimos, cidades, antropónimos, nomes doutras linguas, organizacións, marcas, clubs e nomes galegos) con frecuencia no formato dos teclados AOSP; con `dicttool` convértese no `.dict` de HeliBoard e similares. Dos nomes compostos entran as palabras con maiúscula (*York*, *Compostela*, *Einstein*). **Non entra ningún nome propio nin sigla que sexa unha palabra común escrita con maiúsculas** (*ISO*, *Iso*, *Como*, *Paz*, *SE*, *A*): o corpus de frecuencias está en minúsculas, así que tiñan a mesma frecuencia ca *iso*, *como*, *paz*, *se* e *a*, e ao deslizar o teclado escribía a maiúscula. A maiúscula ponna quen escribe e o teclado aplícaa á suxestión. Os nomes que só veñen das capas foráneas (`cidades`, `clubs` de fóra, `nomes-outras-linguas`, `antroponimos-outras-linguas`) e non aparecen no corpus levan a frecuencia mínima (`f=1`), por debaixo de calquera palabra ou nome galego (`f=10` sen uso no corpus). Excepcións revisadas a man en `datos/correccions/teclado.json` (*Londres* sobre a forma verbal *londres*, *Luís* sobre a moeda, *Brasil*, *Xunta*…): entra o nome e a palabra común queda con frecuencia 0. |
 | `teclado/main_gl.dict` | **Dicionario do teclado** (formato binario AOSP v2) para HeliBoard e outros teclados baseados no de AOSP: en HeliBoard, Axustes > Idiomas > Galego > Engadir dicionario. Xérase só se existe `fontes/cache/dicttool_aosp.jar` (`sh ferramentas/compilar_dicttool.sh` compílao desde o código de Android; precisa un JDK). A última versión está tamén no repositorio, en `teclado/main_gl.dict`, e nas *releases*. |
 | `teclado/palabras.tsv` | `forma<TAB>frecuencia`, para outros teclados. |

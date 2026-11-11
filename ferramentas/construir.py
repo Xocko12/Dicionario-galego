@@ -83,7 +83,8 @@ def cargar_capas() -> dict:
 
 
 def formas_do_lema(r: dict, conx: dict):
-    """(forma, trazo) de cada forma dun lema."""
+    """(forma, trazo) de cada forma dun lema. Os diminutivos dos substantivos
+    levan o trazo «diminutivo.ms», «diminutivo.fp»..."""
     if r["categoria"] == "verbo":
         taboa = r["taboa"] if "taboa" in r else conx[r["lema"]]["taboa"]
         for forma, clave, persoa in C.formas(taboa):
@@ -96,6 +97,9 @@ def formas_do_lema(r: dict, conx: dict):
                 yield forma, clave
         if not vistas:
             yield r["lema"], ""
+        for clave, lista in r.get("diminutivos", {}).items():
+            for forma in lista:
+                yield forma, f"diminutivo.{clave}"
 
 
 # -- SQLite ------------------------------------------------------------------
@@ -365,6 +369,10 @@ def html_lema(r: dict, conx: dict) -> str:
     elif len(r.get("formas", {})) > 1 or any(len(v) > 1 for v in r.get("formas", {}).values()):
         partes.append("<p>" + "; ".join(
             f"{NOMES_FORMAS[k]}: {html.escape(', '.join(v))}" for k, v in r["formas"].items()) + "</p>")
+    if r.get("diminutivos"):
+        dims = [f for k in ("ms", "fs") for f in r["diminutivos"].get(k, [])] or \
+               [f for k in ("mp", "fp") for f in r["diminutivos"].get(k, [])]
+        partes.append(f"<p><i>Diminutivo:</i> {html.escape(', '.join(dims))}</p>")
     for d in r.get("definicions", []):
         partes.append(f"<p>{html.escape(d)}</p>")
     return "".join(partes)

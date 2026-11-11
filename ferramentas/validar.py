@@ -67,6 +67,15 @@ def validar_estrutura() -> tuple[list[str], set[str]]:
                 if clave not in CLAVES_FORMAS:
                     erros.append(f"{onde}: clave de forma descoñecida {clave}")
                 formas.update(lista)
+        # os diminutivos non van a «formas»: Hunspell-gl non ten regras de diminutivo
+        if "diminutivos" in r and r.get("categoria") != "substantivo":
+            erros.append(f"{onde}: só os substantivos levan diminutivos")
+        for clave, lista in r.get("diminutivos", {}).items():
+            if clave not in CLAVES_FORMAS:
+                erros.append(f"{onde}: clave de diminutivo descoñecida {clave}")
+            for f in lista:
+                if not re.fullmatch(r"[a-zñáéíóúü]+[ií]ñ[oa]" + ("s" if clave.endswith("p") else ""), f):
+                    erros.append(f"{onde}: diminutivo incorrecto {f!r} ({clave})")
         formas.add(r.get("lema", ""))
 
     con_taboa = set()
