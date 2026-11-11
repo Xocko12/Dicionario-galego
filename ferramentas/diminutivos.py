@@ -19,6 +19,8 @@ Regras, segundo a terminación do singular:
   - -r, -l, -s tónico, -z: -iño/-iña (flor → floriña, papel → papeliño,
     país → paisiño, rapaz → rapaciño).
 
+Diminutivos de uso que non saen das regras, en ENGADIDOS (bebé → bebiño, ademais de bebeíño).
+
 Quedan sen diminutivo os casos nos que a norma non é clara ou a forma sería
 estraña: os femininos en -o (foto, moto, radio: sen uso atestado), as que rematan
 en ditongo + vogal (raio, maio), as palabras graves en -s (lapis, martes),
@@ -33,6 +35,9 @@ LETRAS = set("abcdefghijklmnopqrstuvwxyzñ") | VOGAIS
 SEN_TIL = str.maketrans("áéíóú", "aeiou")
 # femininos en -á sen masculino que non veñen de -án: fan -aíña, non -anciña
 NON_EN_AN = {"mamá", "fideuá"}
+# diminutivos de uso que non seguen as regras, engadidos ao da regra (singular;
+# o plural sae con +s): bebé → bebiño ademais de bebeíño
+ENGADIDOS = {"bebé": ["bebiño"]}
 
 
 def _ten_vogal(texto: str) -> bool:
@@ -143,10 +148,10 @@ def do_lema(formas: dict[str, list[str]], ambos_xeneros: bool = False) -> dict[s
     for x in "mf":
         singulares = formas.get(x + "s", [])
         for f in singulares:
-            d = diminutivo(f, x, de_an)
-            if d:
-                engadir(x + "s", d)
-                engadir(x + "p", d + "s")
+            for d in ENGADIDOS.get(f, []) + [diminutivo(f, x, de_an)]:
+                if d:
+                    engadir(x + "s", d)
+                    engadir(x + "p", d + "s")
             if ambos_xeneros and x == "m":
                 d_f = diminutivo(f, "f")
                 if d_f and d_f != d:

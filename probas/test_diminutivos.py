@@ -30,6 +30,7 @@ REFERENCIA = {
     ("árbore", "f"): "arboriña", ("música", "f"): "musiquiña", ("lámpada", "f"): "lampadiña",
     # vogal tónica final
     ("café", "m"): "cafeíño", ("avó", "m"): "avoíño", ("sofá", "m"): "sofaíño",
+    ("bebé", "m"): "bebeíño",
     ("irmá", "f"): "irmanciña", ("mamá", "f"): "mamaíña",
     # -n e ditongo
     ("can", "m"): "canciño", ("irmán", "m"): "irmanciño", ("corazón", "m"): "corazonciño",
@@ -62,6 +63,8 @@ class ProbasRegras(unittest.TestCase):
         self.assertEqual(D.do_lema({"ms": ["gato"], "fs": ["gata"], "mp": ["gatos"], "fp": ["gatas"]}),
                          {"ms": ["gatiño"], "fs": ["gatiña"], "mp": ["gatiños"], "fp": ["gatiñas"]})
         self.assertEqual(D.do_lema({"fp": ["tesoiras"]}), {"fp": ["tesoiriñas"]})   # só plural
+        self.assertEqual(D.do_lema({"ms": ["bebé"], "mp": ["bebés"]}),          # engadido de uso
+                         {"ms": ["bebiño", "bebeíño"], "mp": ["bebiños", "bebeíños"]})
         self.assertEqual(D.do_lema({"ms": ["rapaz"], "fs": ["rapaz", "rapaza"]})["fs"], ["rapaciña"])
         # adxectivos invariables: os dous xéneros
         self.assertEqual(D.do_lema({"ms": ["pobre"], "mp": ["pobres"]}, ambos_xeneros=True),
