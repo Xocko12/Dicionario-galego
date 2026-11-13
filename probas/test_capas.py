@@ -169,6 +169,7 @@ class ProbasSemantica(unittest.TestCase):
             for r in rs:
                 for x in r["sentidos"]:
                     self.assertNotIn("definicion_en", x)
+                    self.assertTrue(x.get("definicion"), (r["lema"], x["ili"]))   # todos os sentidos, definidos en galego
                     self.assertFalse(ingles.search(x.get("definicion", "")), (r["lema"], x.get("definicion")))
         self.assertTrue(any("perro" in x.get("es", []) for x in can["sentidos"]))
         self.assertGreater(len(w), 20000)

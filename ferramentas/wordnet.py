@@ -7,7 +7,8 @@ Neste repositorio non se gardan definicións en inglés: cada sentido leva a
 definición do WordNet traducida ao galego (datos/traducions/definicions-wordnet.tsv,
 identificador do sentido -> definición), os sinónimos galegos do mesmo sentido
 e os equivalentes en castelán, portugués e inglés. É semántica aberta
-(CC BY 3.0); un sentido sen tradución queda sen definición.
+(CC BY 3.0). A táboa cobre os 19 311 sentidos (synsets) de Galnet; se unha versión
+nova trae algún máis, queda sen definición ata que se traduza.
 
 Formato:
     {"lema": "casa", "categoria": "substantivo", "capa": "wordnet",
