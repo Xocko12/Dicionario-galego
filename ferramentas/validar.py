@@ -157,6 +157,8 @@ def validar_capas(formas: set[str]) -> list[str]:
             elif cfg["tipo"] == "semantica":
                 if not r.get("lema") or not r.get("sentidos") or any("ili" not in x for x in r["sentidos"]):
                     erros.append(f"{onde}: sentido incorrecto")
+                elif any("definicion_en" in x for x in r["sentidos"]):
+                    erros.append(f"{onde}: definición en inglés (as definicións van en galego)")
             elif cfg["tipo"] == "traducions":
                 if not r.get("lema") or not any(r.get(l) for l in ("es", "pt", "en")):
                     erros.append(f"{onde}: sen traducións")

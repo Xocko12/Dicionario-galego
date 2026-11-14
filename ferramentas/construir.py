@@ -115,7 +115,7 @@ def construir_sqlite(lemas, conx, frec, nomes, encl, capas) -> None:
         CREATE TABLE sinonimos (lema TEXT NOT NULL, categoria TEXT, sinonimo TEXT NOT NULL, nota TEXT,
                                 sinonimo_tolerado INTEGER NOT NULL DEFAULT 0);
         CREATE INDEX sinonimos_lema ON sinonimos(lema);
-        CREATE TABLE sentidos (lema TEXT NOT NULL, categoria TEXT, ili TEXT NOT NULL, definicion_en TEXT,
+        CREATE TABLE sentidos (lema TEXT NOT NULL, categoria TEXT, ili TEXT NOT NULL, definicion TEXT,
                                sinonimos TEXT, es TEXT, pt TEXT, en TEXT);  -- Galnet / WordNet
         CREATE INDEX sentidos_lema ON sentidos(lema);
         CREATE TABLE traducions (lema TEXT NOT NULL, categoria TEXT, lingua TEXT NOT NULL, traducion TEXT NOT NULL);
@@ -152,7 +152,7 @@ def construir_sqlite(lemas, conx, frec, nomes, encl, capas) -> None:
                    [(r["nome"], r["tipo"], r["capa"], ",".join(r["fontes"]), r.get("nota")) for r in capas["onomastica"]])
     db.executemany("INSERT INTO codigos VALUES (?,?,?)", [(r["codigo"], r["tipo"], r.get("nota")) for r in capas["codigos"]])
     db.executemany("INSERT INTO sentidos VALUES (?,?,?,?,?,?,?,?)", [
-        (r["lema"], r["categoria"], x["ili"], x.get("definicion_en"), "|".join(x.get("sinonimos", [])),
+        (r["lema"], r["categoria"], x["ili"], x.get("definicion"), "|".join(x.get("sinonimos", [])),
          "|".join(x.get("es", [])), "|".join(x.get("pt", [])), "|".join(x.get("en", [])))
         for r in capas["semantica"] for x in r["sentidos"]])
     db.executemany("INSERT INTO traducions VALUES (?,?,?,?)", [
@@ -370,7 +370,35 @@ def html_lema(r: dict, conx: dict) -> str:
     return "".join(partes)
 
 
-NOMES_CAPAS = {"digalego": "Digalego", "comunidade": "comunidade", "terminoloxia": "terminoloxía"}
+NOMES_CAPAS = {"digalego": "Digalego", "comunidade": "comunidade", "terminoloxia": "terminoloxía",
+               "vocabularios": "vocabularios terminolóxicos", "apertium": "Apertium", "wiktionary": "Wiktionary"}
+NOMES_PROPIOS = {"nome propio", "topónimo"}
+AVISO_NON_NORMATIVA = "palabra non normativa: non está no dicionario da RAG"
+AVISO_NON_RECOLLIDA = "non recollido pola RAG"
+
+
+def so_con_definicion(capas: dict, coñecidos) -> list[dict]:
+    """Palabras que só aparecen nas capas de definicións e sentidos (Wiktionary, WordNet):
+    non están no núcleo da RAG nin nas capas léxicas, así que non van ao teclado nin ao
+    corrector. No dicionario pódense buscar, co aviso de que non son normativas."""
+    vistos = set(coñecidos)
+    saida = []
+    for r in capas["definicions"] + capas["semantica"]:
+        if r["lema"] not in vistos:
+            vistos.add(r["lema"])
+            saida.append({"lema": r["lema"], "categoria": r.get("categoria") or "", "so_definicion": True})
+    return saida
+
+
+def html_so_definicion(r: dict) -> str:
+    """Cabeceira dunha palabra que só ten definición: di sempre que a RAG non a recolle."""
+    if r["categoria"] in NOMES_PROPIOS:
+        aviso = AVISO_NON_RECOLLIDA                       # un nome propio non é normativo nin deixa de selo
+    elif " " in r["lema"]:
+        aviso = "expresión " + AVISO_NON_RECOLLIDA.replace("recollido", "recollida")
+    else:
+        aviso = AVISO_NON_NORMATIVA
+    return f"<p><b>{html.escape(r['lema'])}</b> <i>{html.escape(r['categoria'])} — {aviso}</i></p>"
 
 
 def indice_por_lema(capas: dict) -> None:
@@ -383,11 +411,11 @@ def indice_por_lema(capas: dict) -> None:
 
 
 def html_semantica(lema: str, capas: dict) -> str:
-    """Definicións (gl, en), traducións e sentidos do WordNet dun lema."""
+    """Definicións, traducións e sentidos do WordNet dun lema."""
     partes = []
     for r in capas.get("definicions_por_lema", {}).get(lema, []):
-        lingua = "gl" if r["capa"].endswith("-gl") else "en"
-        partes.append(f"<p><i>{html.escape(r['categoria'] or '')}</i> <small>(Wiktionary {lingua})</small></p><ol>")
+        orixe = "Wiktionary galego" if r["capa"].endswith("-gl") else "Wiktionary inglés, traducido"
+        partes.append(f"<p><i>{html.escape(r['categoria'] or '')}</i> <small>({orixe})</small></p><ol>")
         for a in r["acepcions"]:
             ex = "".join(f"<br/><small>{html.escape(e)}</small>" for e in a.get("exemplos", [])[:2])
             partes.append(f"<li>{html.escape(a['definicion'])}{ex}</li>")
@@ -399,7 +427,7 @@ def html_semantica(lema: str, capas: dict) -> str:
         partes.append(f"<p><i>WordNet</i> ({html.escape(r['categoria'] or '')}):</p><ol>")
         for x in r["sentidos"][:8]:
             sin = f" <small>sin. {html.escape(', '.join(x['sinonimos']))}</small>" if x.get("sinonimos") else ""
-            partes.append(f"<li>{html.escape(x.get('definicion_en', ''))}{sin}</li>")
+            partes.append(f"<li>{html.escape(x.get('definicion', ''))}{sin}</li>")
         partes.append("</ol>")
     return "".join(partes)
 
@@ -422,6 +450,8 @@ def construir_glosario(lemas, conx, encl, capas, kobo: bool) -> None:
         por_lema.setdefault(r["lema"], []).append(r)
     for r in capas["locucions"]:
         por_lema.setdefault(r["locucion"], []).append(r)
+    for r in so_con_definicion(capas, por_lema):
+        por_lema[r["lema"]] = [r]
     encl_por_lema: dict[str, list[str]] = {}
     for r in encl:
         encl_por_lema.setdefault(r["lema"], []).append(r["forma"])
@@ -432,7 +462,7 @@ def construir_glosario(lemas, conx, encl, capas, kobo: bool) -> None:
             # "dixeches" ábrese a entrada de "dicir".
             alternativas = []
             for r in rexistros:
-                if "locucion" in r:
+                if "locucion" in r or "so_definicion" in r:
                     continue
                 for forma, _ in formas_do_lema(r, conx):
                     if forma != lema and forma not in alternativas:
@@ -441,7 +471,8 @@ def construir_glosario(lemas, conx, encl, capas, kobo: bool) -> None:
                 if forma not in alternativas:
                     alternativas.append(forma)
             cabeceira = "|".join([lema] + alternativas)
-            corpo = ("<hr/>".join(html_lema(r, conx) for r in rexistros) + html_sinonimos(lema, capas)
+            corpo = ("<hr/>".join(html_so_definicion(r) if "so_definicion" in r else html_lema(r, conx)
+                                  for r in rexistros) + html_sinonimos(lema, capas)
                      + html_semantica(lema, capas))
             corpo = corpo.replace("\t", " ").replace("\r", " ").replace("\n", " ")   # unha liña por entrada
             fh.write(f"{cabeceira}\t{corpo}\n")
