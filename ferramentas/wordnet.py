@@ -2,15 +2,17 @@
 
     python3 ferramentas/wordnet.py   ->  datos/capas/wordnet.jsonl
 
-Galnet non trae definicións en galego: cada sentido leva a definición en
-inglés do WordNet de Princeton, os sinónimos galegos do mesmo sentido e os
-equivalentes en castelán, portugués e inglés. É semántica aberta (CC BY 3.0),
-non un dicionario galego; as definicións en galego van na capa de Wiktionary
-(ferramentas/wiktionary.py).
+Galnet non trae definicións en galego e o WordNet de Princeton dáas en inglés.
+Neste repositorio non se gardan definicións en inglés: cada sentido leva a
+definición do WordNet traducida ao galego (datos/traducions/definicions-wordnet.tsv,
+identificador do sentido -> definición), os sinónimos galegos do mesmo sentido
+e os equivalentes en castelán, portugués e inglés. É semántica aberta
+(CC BY 3.0). A táboa cobre os 19 311 sentidos (synsets) de Galnet; se unha versión
+nova trae algún máis, queda sen definición ata que se traduza.
 
 Formato:
     {"lema": "casa", "categoria": "substantivo", "capa": "wordnet",
-     "sentidos": [{"ili": "i...", "definicion_en": "...", "sinonimos": [...],
+     "sentidos": [{"ili": "i...", "definicion": "...", "sinonimos": [...],
                    "es": [...], "pt": [...], "en": [...]}], "fontes": [...]}
 """
 
@@ -28,6 +30,7 @@ import importar as I  # noqa: E402
 RAIZ = Path(__file__).resolve().parent.parent
 OMW = RAIZ / "fontes" / "cache" / "omw"
 SAIDA = RAIZ / "datos" / "capas" / "wordnet.jsonl"
+TRADUCIONS = RAIZ / "datos" / "traducions" / "definicions-wordnet.tsv"
 
 CATEGORIAS = {"n": "substantivo", "v": "verbo", "a": "adxectivo", "s": "adxectivo", "r": "adverbio"}
 
@@ -63,9 +66,22 @@ def ler_lexicon(ruta: Path):
     return lemas, definicions, pos_por_ili
 
 
+def ler_traducions(ruta: Path = TRADUCIONS) -> dict[str, str]:
+    """ili -> definición do WordNet en galego."""
+    traducions = {}
+    if ruta.exists():
+        with ruta.open(encoding="utf-8") as fh:
+            for liña in fh:
+                campos = liña.rstrip("\n").split("\t")
+                if len(campos) == 2 and not liña.startswith("#"):
+                    traducions[campos[0]] = campos[1]
+    return traducions
+
+
 def main() -> None:
     gl, _, pos_gl = ler_lexicon(OMW / "omw-gl" / "omw-gl.xml")
-    en, defs_en, _ = ler_lexicon(OMW / "omw-en" / "omw-en.xml")
+    en, _, _ = ler_lexicon(OMW / "omw-en" / "omw-en.xml")
+    definicions = ler_traducions()
     es, _, _ = ler_lexicon(OMW / "omw-es" / "omw-es.xml")
     pt, _, _ = ler_lexicon(OMW / "omw-pt" / "omw-pt.xml")
 
@@ -73,8 +89,8 @@ def main() -> None:
     for ili, formas in gl.items():
         categoria = CATEGORIAS.get(pos_gl.get(ili, ""), "")
         sentido_base = {"ili": ili}
-        if defs_en.get(ili):
-            sentido_base["definicion_en"] = defs_en[ili]
+        if definicions.get(ili):
+            sentido_base["definicion"] = definicions[ili]
         for lingua, dic in (("es", es), ("pt", pt), ("en", en)):
             if dic.get(ili):
                 sentido_base[lingua] = dic[ili]

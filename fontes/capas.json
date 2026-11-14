@@ -195,10 +195,11 @@
     },
     "wordnet": {
       "tipo": "semantica",
-      "nome": "Galnet (Open Multilingual Wordnet 1.4, MCR): sentidos con definición en inglés, sinónimos galegos e equivalentes es/pt/en",
+      "nome": "Galnet (Open Multilingual Wordnet 1.4, MCR): sentidos coa definición do WordNet traducida ao galego, sinónimos galegos e equivalentes es/pt/en",
       "web": "https://github.com/omwn/omw-data",
-      "licenza": "CC-BY-3.0 (Galnet), WordNet License (definicións)",
-      "script": "ferramentas/wordnet.py"
+      "licenza": "CC-BY-3.0 (Galnet), WordNet License (definicións, traducidas ao galego neste proxecto)",
+      "script": "ferramentas/wordnet.py",
+      "nota": "As definicións do WordNet de Princeton están en inglés; aquí só se gardan traducidas ao galego (datos/traducions/definicions-wordnet.tsv). Tradución automática, sen revisión lexicográfica."
     },
     "traducions": {
       "tipo": "traducions",
@@ -216,13 +217,13 @@
       "nota": "Xérase nunha máquina con acceso a wikimedia.org; opcional ata entón.",
       "opcional": true
     },
-    "definicions-en": {
+    "definicions-traducidas": {
       "tipo": "definicions",
-      "nome": "Definicións en inglés das entradas galegas do Wiktionary inglés (kaikki.org / wiktextract)",
+      "nome": "Definicións en galego traducidas das entradas galegas do Wiktionary inglés (kaikki.org / wiktextract): as palabras e as acepcións que a capa definicions-gl non ten",
       "web": "https://kaikki.org/dictionary/Galician/",
       "licenza": "CC-BY-SA-4.0",
       "script": "ferramentas/wiktionary.py",
-      "nota": "Xérase nunha máquina con acceso a kaikki.org; opcional ata entón.",
+      "nota": "Xérase nunha máquina con acceso a kaikki.org; opcional ata entón. As glosas inglesas non se gardan: pasan a galego coa táboa datos/traducions/definicions-wiktionary.tsv e cunhas regras para as de fórmula fixa. Tradución automática, sen revisión lexicográfica; non entran as acepcións que repiten unha definición de definicions-gl.",
       "opcional": true
     }
   }

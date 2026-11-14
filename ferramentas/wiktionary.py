@@ -8,9 +8,12 @@ Dúas fontes, dúas capas:
      -> datos/capas/definicions-gl.jsonl
 
   2. O **Wiktionary inglés**, entradas galegas, xa procesadas por wiktextract
-     (kaikki.org), con definicións en inglés:
+     (kaikki.org). As súas glosas están en inglés e aquí non se gardan en
+     inglés: pasan a galego coa táboa datos/traducions/definicions-wiktionary.tsv
+     e cunhas poucas regras, e só entran as acepcións que a capa definicions-gl
+     non dá xa (as palabras que lle faltan e as acepcións que lle faltan):
          https://kaikki.org/dictionary/Galician/kaikki.org-dictionary-Galician.jsonl
-     -> datos/capas/definicions-en.jsonl
+     -> datos/capas/definicions-traducidas.jsonl
      (as entradas de formas flexionadas, «falas: second-person singular of
      falar», non se gardan: a flexión xa a temos)
 
@@ -19,7 +22,7 @@ Uso:
     python3 ferramentas/wiktionary.py                      # procesa o que haxa en fontes/cache/wiktionary/
     python3 ferramentas/wiktionary.py --gl ficheiro.xml.bz2 --en ficheiro.jsonl
 
-Formato de saída (as dúas capas):
+Formato de saída (as dúas capas; a traducida leva ademais «etiquetas» por acepción):
     {"lema": "casa", "categoria": "substantivo", "xenero": "feminino", "capa": "definicions-gl",
      "acepcions": [{"definicion": "...", "exemplos": [...], "sinonimos": [...], "antonimos": [...], "nota": "..."}],
      "fontes": ["wiktionary-gl"], "licenza": "CC-BY-SA-4.0", "url": "https://gl.wiktionary.org/wiki/casa"}
@@ -33,6 +36,7 @@ notas de cada acepción; o que non recoñece queda fóra, nunca se inventa.
 from __future__ import annotations
 
 import bz2
+import hashlib
 import json
 import re
 import sys
@@ -43,6 +47,7 @@ from pathlib import Path
 RAIZ = Path(__file__).resolve().parent.parent
 CACHE = RAIZ / "fontes" / "cache" / "wiktionary"
 SAIDA = RAIZ / "datos" / "capas"
+TRADUCIONS = RAIZ / "datos" / "traducions" / "definicions-wiktionary.tsv"
 
 URL_GL = "https://dumps.wikimedia.org/glwiktionary/latest/glwiktionary-latest-pages-articles.xml.bz2"
 URL_EN = "https://kaikki.org/dictionary/Galician/kaikki.org-dictionary-Galician.jsonl"
@@ -208,7 +213,8 @@ def procesar_gl(ruta: Path) -> int:
 
 
 def analizar_kaikki(obx: dict) -> dict | None:
-    """Unha liña de kaikki.org (wiktextract) -> entrada da capa definicions-en."""
+    """Unha liña de kaikki.org (wiktextract) -> entrada intermedia, coas glosas
+    aínda en inglés. Non se garda: pasa por traducir_entrada."""
     if obx.get("lang_code") != "gl":
         return None
     acepcions = []
@@ -231,15 +237,149 @@ def analizar_kaikki(obx: dict) -> dict | None:
     if not acepcions:
         return None
     return {"lema": obx["word"], "categoria": CATEGORIAS_EN.get(obx.get("pos"), obx.get("pos")),
-            "capa": "definicions-en", "acepcions": acepcions, "fontes": ["wiktionary-en"],
-            "licenza": "CC-BY-SA-4.0", "url": f"https://en.wiktionary.org/wiki/{obx['word']}#Galician"}
+            "acepcions": acepcions, "url": f"https://en.wiktionary.org/wiki/{obx['word']}#Galician"}
+
+
+# --- Do inglés ao galego -----------------------------------------------------
+#
+# Neste repositorio non se gardan definicións en inglés. As glosas do Wiktionary
+# inglés pasan a galego por dúas vías: as de fórmula fixa («a parish of Samos,
+# Lugo, Galicia») tradúcense con regras; as demais, coa táboa
+# datos/traducions/definicions-wiktionary.tsv (lema, categoría, clave da glosa,
+# definición en galego). A clave é un resumo SHA-1 da glosa inglesa, para non
+# ter que gardar o texto inglés. O que non ten tradución queda fóra.
+
+# Formas flexionadas que wiktextract non marca como tales
+FORMA_EN = re.compile(r"^(?:(?:first|second|third)-person|inflection of|plural of|feminine (?:singular|plural) of|"
+                      r"masculine plural of|past participle of|gerund of)\b.* of [^ ]+$")
+# As grafías reintegracionistas (beijo, agulha) non son da norma da RAG: non entran
+REINTEGRACIONISTA_EN = re.compile(r"\breintegrationist\b", re.I)
+REMITE_EN = [(re.compile(r"^alternative form of ([^;:(,]+)$"), "Forma alternativa de {}"),
+             (re.compile(r"^alternative spelling of ([^;:(,]+)$"), "Grafía alternativa de {}")]
+LUGAR_EN = re.compile(r"^a (?:village|locality) in ([^;:(,]+) parish, ([^;:(,]+), ([^;:(,]+), Galicia(?:, Spain)?$")
+PARROQUIA_EN = re.compile(r"^a parish of ([^;:(,]+), ([^;:(,]+), Galicia(?:, Spain)?$")
+
+ETIQUETAS_EN = {
+    "transitive": "transitivo", "intransitive": "intransitivo", "ambitransitive": "transitivo e intransitivo",
+    "ditransitive": "ditransitivo", "pronominal": "pronominal", "reflexive": "reflexivo", "impersonal": "impersoal",
+    "auxiliary": "auxiliar", "copulative": "copulativo", "uncountable": "incontable", "countable": "contable",
+    "invariable": "invariable", "indeclinable": "invariable", "plural-only": "só en plural", "in-plural": "en plural",
+    "plural-normally": "normalmente en plural", "collective": "colectivo", "archaic": "arcaico", "dated": "anticuado",
+    "obsolete": "obsoleto", "historical": "histórico", "figuratively": "figurado", "broadly": "por extensión",
+    "metonymically": "por metonimia", "idiomatic": "idiomático", "derogatory": "pexorativo", "vulgar": "vulgar",
+    "offensive": "ofensivo", "slur": "ofensivo", "colloquial": "coloquial", "informal": "informal",
+    "familiar": "familiar", "formal": "formal", "literary": "literario", "poetic": "poético", "slang": "xerga",
+    "regional": "rexional", "dialectal": "dialectal", "rare": "raro", "uncommon": "pouco usado",
+    "humorous": "humorístico", "sarcastic": "sarcástico", "euphemistic": "eufemístico", "childish": "infantil",
+    "endearing": "afectivo", "affective": "afectivo", "proscribed": "non normativo", "nonstandard": "non normativo",
+    "misspelling": "grafía errada", "neologism": "neoloxismo", "abbreviation": "abreviatura", "initialism": "sigla",
+    "acronym": "acrónimo", "clipping": "acurtamento", "contraction": "contracción", "relational": "relacional",
+    "Internet": "Internet",
+}
+CATEGORIAS_EN.update({"proverb": "refrán", "prep_phrase": "locución", "character": "letra"})
+GLOSA_NO_EXEMPLO = re.compile(r"\s*\(“[^”]*”\)")
+
+
+def clave_glosa(glosa: str) -> str:
+    """Clave dunha glosa inglesa na táboa de traducións (SHA-1 abreviado)."""
+    return hashlib.sha1(glosa.encode("utf-8")).hexdigest()[:10]
+
+
+def _de(nome: str) -> str:
+    """«de» + nome de lugar, coa contracción do artigo: do Corgo, da Estrada."""
+    for artigo, contraccion in (("O ", "do "), ("A ", "da "), ("Os ", "dos "), ("As ", "das ")):
+        if nome.startswith(artigo):
+            return contraccion + nome[len(artigo):]
+    return "de " + nome
+
+
+def traducir_por_regra(glosa: str) -> str | None:
+    """Glosas de fórmula fixa -> galego. '' = non se garda (forma flexionada, grafía
+    reintegracionista); None = sen regra."""
+    glosa = " ".join(glosa.split())
+    if FORMA_EN.match(glosa) or REINTEGRACIONISTA_EN.search(glosa):
+        return ""
+    for patron, modelo in REMITE_EN:
+        if m := patron.match(glosa):
+            return modelo.format(m.group(1))
+    if m := LUGAR_EN.match(glosa):
+        return f"Lugar da parroquia {_de(m.group(1))}, no concello {_de(m.group(2))}, na provincia {_de(m.group(3))}"
+    if m := PARROQUIA_EN.match(glosa):
+        return f"Parroquia do concello {_de(m.group(1))}, na provincia {_de(m.group(2))}"
+    return None
+
+
+def ler_traducions(ruta: Path = TRADUCIONS) -> dict[tuple[str, str, str], str]:
+    traducions = {}
+    if ruta.exists():
+        with ruta.open(encoding="utf-8") as fh:
+            for liña in fh:
+                campos = liña.rstrip("\n").split("\t")
+                if len(campos) == 4 and not liña.startswith("#"):
+                    traducions[tuple(campos[:3])] = campos[3]
+    return traducions
+
+
+def _normal(definicion: str) -> str:
+    """Para comparar definicións: sen a marca de ámbito inicial, sen puntuación nin maiúsculas."""
+    definicion = definicion.strip()
+    while definicion.startswith("("):          # (Zooloxía) …, ((Hostalería), (Alimentación)) …
+        resto = re.sub(r"^\(+[^()]*\)+[\s,]*", "", definicion)
+        if resto == definicion:
+            break
+        definicion = resto
+    return re.sub(r"[^\w ]", "", definicion.lower()).strip()
+
+
+def definicions_existentes(ruta: Path | None = None) -> dict[str, set[str]]:
+    """lema -> definicións (normalizadas) que xa dá a capa definicions-gl."""
+    ruta = ruta or SAIDA / "definicions-gl.jsonl"
+    existentes: dict[str, set[str]] = {}
+    if ruta.exists():
+        with ruta.open(encoding="utf-8") as fh:
+            for liña in fh:
+                r = json.loads(liña)
+                existentes.setdefault(r["lema"], set()).update(_normal(a["definicion"]) for a in r["acepcions"])
+    return existentes
+
+
+def traducir_entrada(e: dict, traducions: dict, existentes: dict[str, set[str]]) -> dict | None:
+    """Entrada intermedia (glosas en inglés) -> entrada da capa definicions-traducidas, en galego.
+    Quedan fóra as acepcións sen tradución e as que repiten unha definición que
+    xa está na capa definicions-gl ou na propia entrada."""
+    vistas = set(existentes.get(e["lema"], ()))
+    acepcions = []
+    for a in e["acepcions"]:
+        definicion = traducir_por_regra(a["definicion"])
+        if definicion is None:
+            definicion = traducions.get((e["lema"], e["categoria"], clave_glosa(a["definicion"])))
+        if not definicion or "reintegracionista" in definicion or _normal(definicion) in vistas:
+            continue
+        vistas.add(_normal(definicion))
+        nova = {"definicion": definicion}
+        etiquetas = list(dict.fromkeys(ETIQUETAS_EN[t] for t in a.get("etiquetas", []) if t in ETIQUETAS_EN))
+        if etiquetas:
+            nova["etiquetas"] = etiquetas
+        # o exemplo é a primeira liña; as seguintes son a súa tradución ao inglés
+        exemplos = [GLOSA_NO_EXEMPLO.sub("", x.split("\n")[0]).strip() for x in a.get("exemplos", [])]
+        exemplos = [x for x in exemplos if x and "“" not in x]
+        if exemplos:
+            nova["exemplos"] = exemplos
+        acepcions.append(nova)
+    if not acepcions:
+        return None
+    return {"lema": e["lema"], "categoria": e["categoria"], "capa": "definicions-traducidas", "acepcions": acepcions,
+            "fontes": ["wiktionary-en"], "licenza": "CC-BY-SA-4.0", "url": e["url"]}
 
 
 def procesar_en(ruta: Path) -> int:
+    traducions = ler_traducions()
+    existentes = definicions_existentes()
     n = 0
-    with ruta.open(encoding="utf-8") as fh, (SAIDA / "definicions-en.jsonl").open("w", encoding="utf-8") as saida:
+    with ruta.open(encoding="utf-8") as fh, (SAIDA / "definicions-traducidas.jsonl").open("w", encoding="utf-8") as saida:
         for liña in fh:
             e = analizar_kaikki(json.loads(liña))
+            e = e and traducir_entrada(e, traducions, existentes)
             if e:
                 saida.write(json.dumps(e, ensure_ascii=False) + "\n")
                 n += 1
@@ -272,7 +412,7 @@ def main() -> None:
     else:
         print(f"non hai volcado do Wiktionary galego en {gl} (usa --descargar ou --gl)")
     if en.exists():
-        print(f"definicions-en.jsonl: {procesar_en(en)} entradas")
+        print(f"definicions-traducidas.jsonl: {procesar_en(en)} entradas")
     else:
         print(f"non hai ficheiro de kaikki.org en {en} (usa --descargar ou --en)")
 

@@ -16,6 +16,26 @@ class ProbasTeclado(unittest.TestCase):
         lemas, conx, frec, nomes, encl = construir.cargar()
         capas = construir.cargar_capas()
         cls.formas = construir.formas_teclado(lemas, conx, frec, nomes, encl, capas)
+        cls.capas = capas
+        cls.coñecidos = {r["lema"] for r in lemas + capas["lexico"]} | {r["locucion"] for r in capas["locucions"]}
+
+    def test_as_palabras_non_normativas_non_van_ao_teclado(self):
+        # As palabras que só teñen definición (Wiktionary, WordNet) e non están na RAG nin nas
+        # capas léxicas non entran no teclado nin no corrector, que usa a mesma lista de capas.
+        self.assertFalse({"definicions", "semantica"} & construir.TECLADO_LEXICO)
+        so = {r["lema"] for r in construir.so_con_definicion(self.capas, self.coñecidos)}
+        for palabra in ("lambaz", "estripacontos", "estanflación"):
+            with self.subTest(palabra=palabra):
+                self.assertIn(palabra, so)
+                self.assertNotIn(palabra, self.formas)
+
+    def test_o_dicionario_avisa_das_palabras_non_normativas(self):
+        so = {r["lema"]: r for r in construir.so_con_definicion(self.capas, self.coñecidos)}
+        self.assertIn("palabra non normativa: non está no dicionario da RAG", construir.html_so_definicion(so["lambaz"]))
+        # unha expresión ou un nome propio non son «palabras non normativas»: só non os recolle a RAG
+        self.assertNotIn("non normativa", construir.html_so_definicion(so["servizo militar"]))
+        self.assertIn("non recollida pola RAG", construir.html_so_definicion(so["servizo militar"]))
+        self.assertNotIn("casa", so)          # as da RAG non levan aviso
 
     def test_sen_maiusculas_das_palabras_comuns(self):
         # Ao deslizar, «ISO»/«Iso» (sigla, cidade), «SE» (sueste), «Como» (cidade), «Paz» (nome) ou «A»
