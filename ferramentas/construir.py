@@ -370,7 +370,35 @@ def html_lema(r: dict, conx: dict) -> str:
     return "".join(partes)
 
 
-NOMES_CAPAS = {"digalego": "Digalego", "comunidade": "comunidade", "terminoloxia": "terminoloxía"}
+NOMES_CAPAS = {"digalego": "Digalego", "comunidade": "comunidade", "terminoloxia": "terminoloxía",
+               "vocabularios": "vocabularios terminolóxicos", "apertium": "Apertium", "wiktionary": "Wiktionary"}
+NOMES_PROPIOS = {"nome propio", "topónimo"}
+AVISO_NON_NORMATIVA = "palabra non normativa: non está no dicionario da RAG"
+AVISO_NON_RECOLLIDA = "non recollido pola RAG"
+
+
+def so_con_definicion(capas: dict, coñecidos) -> list[dict]:
+    """Palabras que só aparecen nas capas de definicións e sentidos (Wiktionary, WordNet):
+    non están no núcleo da RAG nin nas capas léxicas, así que non van ao teclado nin ao
+    corrector. No dicionario pódense buscar, co aviso de que non son normativas."""
+    vistos = set(coñecidos)
+    saida = []
+    for r in capas["definicions"] + capas["semantica"]:
+        if r["lema"] not in vistos:
+            vistos.add(r["lema"])
+            saida.append({"lema": r["lema"], "categoria": r.get("categoria") or "", "so_definicion": True})
+    return saida
+
+
+def html_so_definicion(r: dict) -> str:
+    """Cabeceira dunha palabra que só ten definición: di sempre que a RAG non a recolle."""
+    if r["categoria"] in NOMES_PROPIOS:
+        aviso = AVISO_NON_RECOLLIDA                       # un nome propio non é normativo nin deixa de selo
+    elif " " in r["lema"]:
+        aviso = "expresión " + AVISO_NON_RECOLLIDA.replace("recollido", "recollida")
+    else:
+        aviso = AVISO_NON_NORMATIVA
+    return f"<p><b>{html.escape(r['lema'])}</b> <i>{html.escape(r['categoria'])} — {aviso}</i></p>"
 
 
 def indice_por_lema(capas: dict) -> None:
@@ -422,6 +450,8 @@ def construir_glosario(lemas, conx, encl, capas, kobo: bool) -> None:
         por_lema.setdefault(r["lema"], []).append(r)
     for r in capas["locucions"]:
         por_lema.setdefault(r["locucion"], []).append(r)
+    for r in so_con_definicion(capas, por_lema):
+        por_lema[r["lema"]] = [r]
     encl_por_lema: dict[str, list[str]] = {}
     for r in encl:
         encl_por_lema.setdefault(r["lema"], []).append(r["forma"])
@@ -432,7 +462,7 @@ def construir_glosario(lemas, conx, encl, capas, kobo: bool) -> None:
             # "dixeches" ábrese a entrada de "dicir".
             alternativas = []
             for r in rexistros:
-                if "locucion" in r:
+                if "locucion" in r or "so_definicion" in r:
                     continue
                 for forma, _ in formas_do_lema(r, conx):
                     if forma != lema and forma not in alternativas:
@@ -441,7 +471,8 @@ def construir_glosario(lemas, conx, encl, capas, kobo: bool) -> None:
                 if forma not in alternativas:
                     alternativas.append(forma)
             cabeceira = "|".join([lema] + alternativas)
-            corpo = ("<hr/>".join(html_lema(r, conx) for r in rexistros) + html_sinonimos(lema, capas)
+            corpo = ("<hr/>".join(html_so_definicion(r) if "so_definicion" in r else html_lema(r, conx)
+                                  for r in rexistros) + html_sinonimos(lema, capas)
                      + html_semantica(lema, capas))
             corpo = corpo.replace("\t", " ").replace("\r", " ").replace("\n", " ")   # unha liña por entrada
             fh.write(f"{cabeceira}\t{corpo}\n")

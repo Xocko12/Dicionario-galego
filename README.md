@@ -59,6 +59,16 @@ Unha acepción traducida que repita unha definición de `definicions-gl` non
 entra; `ferramentas/validar.py` e as probas rexeitan calquera definición en
 inglés.
 
+**Palabras non normativas.** As palabras que só aparecen nas capas de
+definicións e de sentidos (Wiktionary, WordNet) e non están no núcleo da RAG nin
+nas capas léxicas **non van ao teclado nin ao corrector**: eses só len o núcleo e
+as capas léxicas. No dicionario (Kobo, StarDict, Apple) si se poden buscar, e a
+entrada dío: *palabra non normativa: non está no dicionario da RAG* (5 881
+palabras, como *lambaz* ou *estanflación*); as expresións de varias palabras
+(*servizo militar*) e os nomes propios levan *non recollido pola RAG*. As
+palabras das capas léxicas levan o nome da capa e o mesmo aviso (*dopamina —
+vocabularios terminolóxicos, non recollido pola RAG*).
+
 ### Capas opcionais (`datos/capas/`)
 
 Sobre o núcleo normativo hai capas separadas, cada unha coa súa procedencia
