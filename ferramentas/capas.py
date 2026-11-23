@@ -695,6 +695,8 @@ def importar_apertium(capa: str, cfg: dict, xa_vistos: set[str], frecuencias: di
                 continue   # paradigma mal aplicado na fonte: «edificatorioo», «vehementeo»
             if any(len(re.findall(r"[áéíóú]", f)) > 1 for lista in formas.values() for f in lista + [lema]):
                 continue   # dous tiles: «picónón», «acuátís» (erros da fonte)
+            if lema.endswith("zz") or (lema.endswith("oo") and not lema.endswith("zoo")):
+                continue   # final duplicado no lema da fonte: «cátaroo», «honestoo», «locuazz»
             rexistros[ident] = _rexistro_lexico(capa, lema, cat, formas, xenero, "apertium-glg", frecuencias)
     xa_vistos.update(rexistros)
     return sorted(rexistros.values(), key=lambda r: (I.clave_orde(r["lema"]), r["id"]))
@@ -902,6 +904,23 @@ PREFIXOS_COMPOSICION = {"electro", "micro", "macro", "hiper", "hipo", "auto", "t
                         "calor", "vapor", "metal", "mineral", "cristal", "parasit", "fungi", "ovo", "espermato", "placa", "placo"}
 
 
+# Anacos que deixa a extracción dos PDF e que as regras de termo_roto non cazan: palabras pegadas
+# (unha delas conxugada), unha letra da columna seguinte, erratas da fonte.
+FRAGMENTOS_PDF = {"altofalanteexpoñencial", "utilidadeesperada", "estatísticabayesiana", "gatilloschmitt",
+                  "filtrouv", "coeficientea", "coeficienteb", "distribuciónf", "estatísticaf", "estatísticat",
+                  "microinxeeción", "ehernet", "fadding", "ental", "recu", "thermophilu", "domótic", "gallec", "nent"}
+
+
+def termo_roto(termo: str, coñecidos: set[str]) -> bool:
+    """Anacos da extracción dos PDF: plurais cortados (traballadore, especiai: o -s quedou na liña
+    seguinte), finais duplicados (sincronizándoo) e os de FRAGMENTOS_PDF."""
+    if termo in FRAGMENTOS_PDF:
+        return True
+    if termo[-1] in "ei" and termo + "s" in coñecidos:
+        return True
+    return termo.endswith("oo") and not termo.endswith("zoo")
+
+
 def derivar_vocabularios(capa: str, cfg: dict) -> Path | None:
     """fontes/cache/derivados/vocabularios.dic: os termos dunha palabra dos vocabularios en PDF
     (fontes/cache/vocabularios-galegos/), no formato de Hunspell-gl, para lelo como un módulo máis.
@@ -959,6 +978,8 @@ def derivar_vocabularios(capa: str, cfg: dict) -> Path | None:
     for termo in sorted(termos, key=I.clave_orde):
         r = termos[termo]
         if termo in coñecidos or termo in erradas or termo in propios or len(termo) > 24 or "·" in termo:
+            continue
+        if termo_roto(termo, coñecidos):
             continue
         if len(re.findall(r"[áéíóú]", termo)) > 1:
             continue   # dous tiles: anacos pegados polo PDF (satélitemeteorolóxico)

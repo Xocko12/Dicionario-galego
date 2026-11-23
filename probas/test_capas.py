@@ -109,6 +109,8 @@ class ProbasCapas(unittest.TestCase):
         self.assertEqual(lexico["corresponsabilidade#substantivo"]["formas"]["fp"], ["corresponsabilidades"])
         self.assertEqual(lexico["intermodal#adxectivo"]["formas"]["mp"], ["intermodais"])
         self.assertNotIn("edificatorio#adxectivo", apertium)      # paradigma mal aplicado na fonte
+        self.assertNotIn("cátaroo#adxectivo", apertium)           # final duplicado no lema da fonte
+        self.assertNotIn("locuazz#adxectivo", apertium)
         wikt = {r["id"]: r for r in ler("capas/wiktionary.jsonl")}
         lexico.update(wikt)
         self.assertEqual(lexico["dopamina#substantivo"]["formas"], {"fs": ["dopamina"], "fp": ["dopaminas"]})
@@ -129,6 +131,8 @@ class ProbasCapas(unittest.TestCase):
             self.assertIn(i, voc)
         self.assertEqual(voc["ciclohexanona#substantivo"]["xenero"], "feminino")
         self.assertNotIn("transpoñer#verbo", voc)                  # composto irregular: non vai por modelo
+        for lema in ("traballadore", "especiai", "recu", "coeficienteb", "altofalanteexpoñencial"):
+            self.assertFalse(any(r["lema"] == lema for r in voc.values()), lema)   # anacos dos PDF
         self.assertFalse(any(r.get("baleiras") for r in voc.values()))
         core = {r["id"] for r in ler("lemas.jsonl")}
         self.assertEqual(core & set(voc), set())

@@ -578,6 +578,26 @@ def _palabra_limpa(p: str) -> bool:
     return bool(p) and p[0].isalpha() and all(c.isalpha() or c in "·'’.-" for c in p) and " " not in p
 
 
+# Grafías alleas ao galego: k, w, y, ç, sh (non o de des-h), th, ph, tz, consoantes dobres (non sub-b),
+# finais noutras consoantes e en -u átono tras consoante (input, brownie, buffer, tofu, kebab).
+GRAFIA_ALLEA = re.compile(r"[kwyç]|ck|(?<!de)sh|th|ph|tz|ss|([dfgmptvz])\1|(?<!su)bb|[cdfghjmpqtv]$|[^aeiouáéíóú]u$")
+# capas léxicas sen revisión humana: os seus préstamos sen adaptar van ao dicionario e ao teclado,
+# pero non ao corrector, que os marca como en calquera texto galego (vanse en cursiva)
+CAPAS_SEN_ALLEAS = {"vocabularios", "apertium", "wiktionary"}
+
+
+def grafia_allea(palabra: str, coñecidas: set[str]) -> bool:
+    """Ten algún trazo de GRAFIA_ALLEA que non estea dentro dunha palabra coñecida de polo menos
+    catro letras (cortapizzas: pizza; autozoom: zoom; kiwiño: kiwi)."""
+    for m in GRAFIA_ALLEA.finditer(palabra):
+        ini, fin = m.span()
+        if not any(palabra[i:j] in coñecidas
+                   for i in range(ini + 1) for j in range(max(fin, i + 4), len(palabra) + 1)
+                   if (i, j) != (0, len(palabra))):
+            return True
+    return False
+
+
 def construir_hunspell(lemas, conx, nomes, encl, capas) -> int:
     """dist/hunspell/gl_ES.dic + gl_ES.aff: corrector para macOS (Pages, Mail...),
     LibreOffice, Firefox...
@@ -600,9 +620,14 @@ def construir_hunspell(lemas, conx, nomes, encl, capas) -> int:
         print("sen fontes/cache/hunspell-gl: non se constrúe o corrector")
         return 0
     palabras: set[str] = set()
-    for r in lemas + [r for r in capas["lexico"] if r["capa"] in TECLADO_LEXICO]:
+    for r in lemas + [r for r in capas["lexico"] if r["capa"] in TECLADO_LEXICO - CAPAS_SEN_ALLEAS]:
         for forma, _ in formas_do_lema(r, conx):
             palabras.add(forma)
+    # préstamos sen adaptar das capas automáticas: fóra (ver CAPAS_SEN_ALLEAS)
+    coñecidas = set(palabras)
+    for r in capas["lexico"]:
+        if r["capa"] in CAPAS_SEN_ALLEAS and r["capa"] in TECLADO_LEXICO and not grafia_allea(r["lema"], coñecidas):
+            palabras.update(forma for forma, _ in formas_do_lema(r, conx))
     palabras.update(r["forma"] for r in encl)
     palabras.update(r["forma"] for r in capas["siglas"])
     # os mesmos nomes propios ca o teclado: topónimos, cidades, antropónimos, nomes doutras linguas

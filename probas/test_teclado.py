@@ -116,3 +116,15 @@ class ProbasTeclado(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class ProbasGrafiaAllea(unittest.TestCase):
+    """Os préstamos sen adaptar das capas automáticas non van ao corrector (construir.grafia_allea)."""
+
+    def test_grafia_allea(self):
+        coñecidas = {"pizza", "zoom", "kiwi", "club", "hidratar"}
+        for p in ("input", "derrick", "brownie", "buffer", "tofu", "kebab", "bypass", "chopped", "skate"):
+            self.assertTrue(construir.grafia_allea(p, coñecidas), p)
+        for p in ("cortapizzas", "autozoom", "kiwiño", "teleclub", "deshidratase", "subbalastro",
+                  "preestrea", "protozoo", "radioouvinte", "ergodicidade", "intermodal"):
+            self.assertFalse(construir.grafia_allea(p, coñecidas), p)

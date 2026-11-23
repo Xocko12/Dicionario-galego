@@ -70,6 +70,13 @@ palabras, como *lambaz* ou *estanflación*); as expresións de varias palabras
 palabras das capas léxicas levan o nome da capa e o mesmo aviso (*dopamina —
 vocabularios terminolóxicos, non recollido pola RAG*).
 
+**Préstamos sen adaptar.** Das capas sen revisión humana (`vocabularios`, `apertium`,
+`wiktionary`), os termos con grafía allea ao galego (*input, brownie, buffer, tofu*:
+k, w, y, *sh*, *th*, consoantes dobres, finais en *-t*, *-p*…) van ao dicionario e ao
+teclado pero **non ao corrector**, que os marca como en calquera texto galego (vanse en
+cursiva). Non conta o trazo que está dentro dunha palabra coñecida (*cortapizzas*,
+*autozoom*). Ver `grafia_allea` en `ferramentas/construir.py`.
+
 ### Capas opcionais (`datos/capas/`)
 
 Sobre o núcleo normativo hai capas separadas, cada unha coa súa procedencia
@@ -80,8 +87,8 @@ Sobre o núcleo normativo hai capas separadas, cada unha coa súa procedencia
 | `digalego` | léxico do Digalego (Xunta) que non está na RAG, con flexión e conxugación | 3 043 (51 verbos) |
 | `comunidade` | léxico de uso real achegado á comunidade de Hunspell-gl (informática, neoloxismos), sen revisión normativa | 816 (101 verbos) |
 | `terminoloxia` | bUSCatermos (USC), TERGAL, Estraviz adaptado, Trasno, Wikipedia galega por áreas, unidades; máis 488 engadidos a man: ciencia e substancias (*ibuprofeno, cortisol, grafeno, nanopartícula*) e léxico xurídico e administrativo atestado no Parlamento de Galicia (*copago, gobernanza, corresponsable, consensuar*) | 865 (73 verbos) |
-| `vocabularios` | termos dos vocabularios terminolóxicos galegos en PDF que non están na RAG nin nas capas anteriores: *Termos esenciais* da USC (dereito administrativo, civil e laboral; acceso aberto), 16 vocabularios da UDC (dereito, matemáticas, física e química, electricidade, biblioteconomía, podoloxía, fisioterapia, deportes…), UVigo (xurídico-administrativo, informática), Termigal/CIRP (alimentación e restauración, recursos humanos), RAG (televisión), Realiter (léxicos panlatinos). Só os termos, coa categoría e o xénero que dá cada obra; as definicións non se copian. Xérase con pypdf (`fontes/cache/derivados/vocabularios.dic`) | 5 432 (199 verbos) |
-| `apertium` | léxico do dicionario monolingüe de Apertium (GPL) que non está na RAG nin nas capas anteriores: substantivos, adxectivos e adverbios coa flexión dos seus paradigmas (*corresponsabilidade, fiscalidade, intermodal*) | 1 599 |
+| `vocabularios` | termos dos vocabularios terminolóxicos galegos en PDF que non están na RAG nin nas capas anteriores: *Termos esenciais* da USC (dereito administrativo, civil e laboral; acceso aberto), 16 vocabularios da UDC (dereito, matemáticas, física e química, electricidade, biblioteconomía, podoloxía, fisioterapia, deportes…), UVigo (xurídico-administrativo, informática), Termigal/CIRP (alimentación e restauración, recursos humanos), RAG (televisión), Realiter (léxicos panlatinos). Só os termos, coa categoría e o xénero que dá cada obra; as definicións non se copian. Quedan fóra os anacos da extracción (plurais cortados como *traballadore*, palabras pegadas). Xérase con pypdf (`fontes/cache/derivados/vocabularios.dic`) | 5 390 (199 verbos) |
+| `apertium` | léxico do dicionario monolingüe de Apertium (GPL) que non está na RAG nin nas capas anteriores: substantivos, adxectivos e adverbios coa flexión dos seus paradigmas (*corresponsabilidade, fiscalidade, intermodal*), sen os lemas co final duplicado na fonte (*cátaroo*) | 1 573 |
 | `wiktionary` | léxico do Wiktionary galego (capa `definicions-gl`) que non está na RAG nin nas capas anteriores: substantivos, adxectivos e adverbios coa flexión regular (*dopamina, anisotrópico, magnetopausa*) | 3 468 |
 | `siglas` | siglas, abreviaturas e símbolos coa súa expansión (Concello de Santiago, UDC, UVigo, CEG, Wikipedia, DRAG); máis 285 engadidas a man (*HDMI, 5G, IA, QR, IVA, ERTE, CELGA, OCDE, TDAH*…) | 9 313 |
 | `toponimos` | lugares de Galicia, localidades, rexións e accidentes xeográficos (Wikipedia e Wiktionary galegos); máis 42 capitais e cidades engadidas a man | 24 113 |
